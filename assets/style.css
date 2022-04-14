@@ -1,2 +1,15 @@
  @font-face
  { font-family: “Segoe”; src: url(“fonts/Segoe-UI.ttf”) format(“truetype”); } *, html, body { font-family: “Segoe”, sans-serif; }
+
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url('./img/wave.svg');
+}
+

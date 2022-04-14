@@ -173,19 +173,27 @@ layout = html.Div(
                                         html.Div(
                                             [
                                                 dbc.Card(
-                                                    dbc.CardBody(
-                                                        [
-                                                            html.H2("GENERAL",
+                                                    [
+                                                        dbc.CardImg(src="assets/img/category_style.svg", top=True,
+                                                                    style={"borderRadius": "15px"}),
+                                                        dbc.CardImgOverlay(
+                                                            html.H2("Général",
                                                                     style={
-                                                                        "textAlign": "center",
-                                                                        # "font-family": "Montserrat light",
-                                                                        # "border": "1px black solid",
-                                                                        # "border-radius": "0px",
-                                                                        "borderColor": "black"
+                                                                        "color": "rgba(0,0,0,0)",
+                                                                        "text-shadow": "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black"
                                                                     }),
-                                                        ]
-                                                    ),
-                                                    className="shadow p-3 mb-5 bg-white rounded"
+                                                            style={
+                                                                "display": "flex",
+                                                                "alignItems": "center",
+                                                                "justifyContent": "left",
+                                                                "horizontalAlign": "center",
+                                                                "marginLeft": "13vh"
+                                                            }
+                                                        )
+                                                    ],
+                                                    style={"backgroundColor": "rgb(247, 247, 247)",
+                                                           "borderRadius": "15px"},
+                                                    class_name="card mb-4 border-0"
                                                 ),
                                                 dcc.Graph(
                                                     id="study_type_bar",
@@ -204,7 +212,7 @@ layout = html.Div(
                                         "display": "flex",
                                         "alignItems": "top",
                                         "justifyContent": "center",
-                                        "horizontalAlign": "center"
+                                        "horizontalAlign": "center",
                                     }
                                 )
                             ],
@@ -238,27 +246,23 @@ def AutoUpdateGraph(*args):
                                 sortasc=False)
         df = df[df["category"] == "Thyroid neoplasms"]
 
-    colors = ['rgba(38, 24, 74, 0.8)', 'rgba(71, 58, 131, 0.8)',
-              'rgba(122, 120, 168, 0.8)']
+    s_type = [x for x in df["study_type"]]
+    marker_color = ["#342883", "#4a39bb", "#6f60cf"]
 
-    x_data = [[x for x in df["nct_id"]]]
-
-    y_data = [i for i in df["study_type"]]
-
-    fig = go.Figure()
-
-    for i in range(0, len(x_data[0])):
-        for xd, yd in zip(x_data, y_data):
-            fig.add_trace(go.Bar(
-                x=[xd[i]], y=[yd],
-                orientation='h',
-                marker=dict(
-                    color=colors[i],
-                    line=dict(color='black', width=1)
-                )
-            ))
+    fig = go.Figure(data=[
+        go.Bar(name="Interventional",
+               x=df[df["study_type"] == y]["category"],
+               y=df[df["study_type"] == y]["nct_id"],
+               text=f"{df[df['study_type'] == y]['study_type'].iloc[0]}<br>{df[df['study_type'] == y]['percent'].iloc[0]}",
+               insidetextanchor="middle",
+               marker=dict(color=marker_color[x],
+                           line=dict(width=2, color="white")),
+               )
+        for x, y in enumerate(s_type)])
 
     fig.update_layout(
+        height=800,
+        width=150,
         xaxis=dict(
             showgrid=False,
             showline=False,
@@ -275,34 +279,79 @@ def AutoUpdateGraph(*args):
         barmode='stack',
         paper_bgcolor='rgba(248, 248, 255, 0)',
         plot_bgcolor='rgba(248, 248, 255, 0)',
-        margin=dict(l=80, r=0, t=0, b=0),
+        margin=dict(l=0, r=0, t=0, b=0),
         showlegend=False,
         hovermode=False
     )
-
-    annotations = []
-
-    for yd, xd in zip(y_data, x_data):
-
-        # labeling the first percentage of each bar (x_axis)
-        annotations.append(dict(xref='x', yref='y',
-                                x=xd[0] / 2, y=yd,
-                                text=str(xd[0]) + '%',
-                                font=dict(family='Arial', size=14,
-                                          color='rgb(248, 248, 255)'),
-                                showarrow=False))
-
-        space = xd[0]
-        for i in range(1, len(xd)):
-            # labeling the rest of percentages for each bar (x_axis)
-            annotations.append(dict(xref='x', yref='y',
-                                    x=space + (xd[i] / 2), y=yd,
-                                    text=str(xd[i]) + '%',
-                                    font=dict(family='Arial', size=14,
-                                              color='rgb(248, 248, 255)'),
-                                    showarrow=False))
-
-            space += xd[i]
+    # colors = ['rgba(38, 24, 74, 0.8)', 'rgba(71, 58, 131, 0.8)',
+    #           'rgba(122, 120, 168, 0.8)']
+    #
+    # x_data = [[x for x in df["nct_id"]]]
+    #
+    # y_data = [i for i in df["study_type"]]
+    # print(x_data, y_data)
+    # fig = go.Figure()
+    #
+    # for i in range(0, len(x_data[0])):
+    #     for xd, yd in zip(x_data, y_data):
+    #         print(xd, yd)
+    #         fig.add_trace(go.Bar(
+    #             x=[xd[i]], y=[yd],
+    #             orientation='h',
+    #             text=yd,
+    #             textposition="inside",
+    #             insidetextanchor="middle",
+    #             marker=dict(
+    #                 color=colors[i],
+    #                 line=dict(color='white', width=4),
+    #             )
+    #         ))
+    #
+    # fig.update_layout(
+    #     xaxis=dict(
+    #         showgrid=False,
+    #         showline=False,
+    #         showticklabels=False,
+    #         zeroline=False,
+    #         constrain="domain"
+    #     ),
+    #     yaxis=dict(
+    #         showgrid=False,
+    #         showline=False,
+    #         showticklabels=False,
+    #         zeroline=False,
+    #     ),
+    #     barmode='stack',
+    #     paper_bgcolor='rgba(248, 248, 255, 0)',
+    #     plot_bgcolor='rgba(248, 248, 255, 0)',
+    #     margin=dict(l=80, r=0, t=0, b=0),
+    #     showlegend=False,
+    #     hovermode=False
+    # )
+    #
+    # annotations = []
+    #
+    # for yd, xd in zip(y_data, x_data):
+    #
+    #     # labeling the first percentage of each bar (x_axis)
+    #     annotations.append(dict(xref='x', yref='y',
+    #                             x=xd[0] / 2, y=yd,
+    #                             text=str(xd[0]) + '%',
+    #                             font=dict(family='Arial', size=14,
+    #                                       color='rgb(248, 248, 255)'),
+    #                             showarrow=False))
+    #
+    #     space = xd[0]
+    #     for i in range(1, len(xd)):
+    #         # labeling the rest of percentages for each bar (x_axis)
+    #         annotations.append(dict(xref='x', yref='y',
+    #                                 x=space + (xd[i] / 2), y=yd,
+    #                                 text=str(xd[i]) + '%',
+    #                                 font=dict(family='Arial', size=14,
+    #                                           color='rgb(248, 248, 255)'),
+    #                                 showarrow=False))
+    #
+    #         space += xd[i]
 
     return fig
 
