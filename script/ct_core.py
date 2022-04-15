@@ -169,10 +169,8 @@ def appLaunch():
         # Explode de la colonne 1 (correspond à la colonne concaténé)
         df_dict[dataframe] = df_dict[dataframe].explode(col[1])
 
-        # Drop des lignes ayant des valeurs null
         df_dict[dataframe].dropna(axis=0, how="any", inplace=True)
 
-        # Drop des lignes dupliquées
         df_dict[dataframe].drop_duplicates(inplace=True)
 
         # Reset des index

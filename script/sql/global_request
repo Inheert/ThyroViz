@@ -12,8 +12,8 @@ LEFT JOIN calculated_values AS cv ON s.nct_id = cv.nct_id
 
 WHERE
 (LOWER(s.study_type) = 'interventional' OR LOWER(s.study_type) = 'observational' OR LOWER(s.study_type) = 'observational [patient registry]')
-AND
-(LOWER(s.overall_status) LIKE '%not yet recruiting%' OR LOWER(s.overall_status) = 'recruiting' OR LOWER(s.overall_status) LIKE '%active, not recruiting%')
+-- AND
+-- (LOWER(s.overall_status) LIKE '%not yet recruiting%' OR LOWER(s.overall_status) = 'recruiting' OR LOWER(s.overall_status) LIKE '%active, not recruiting%')
 AND
 (
 lower(downcase_mesh_term) LIKE '%hyperthyroidism%' or lower(downcase_mesh_term) LIKE '%hyperthyroid%' or lower(downcase_mesh_term) LIKE '%thyrotoxicosis%' or lower(downcase_mesh_term) LIKE '%amiodarone-induced thyrotoxicosis%'

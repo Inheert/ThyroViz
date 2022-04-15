@@ -6,11 +6,14 @@ from datetime import datetime
 import os
 import glob
 
-interval = 10
+interval = 60
 
 FONT_AWESOME = "https://use.fontawesome.com/releases/v5.7.2/css/all.css"
 
-app = dash.Dash(__name__, plugins=[dl.plugins.pages], external_stylesheets=[dbc.themes.BOOTSTRAP, dbc.icons.BOOTSTRAP, FONT_AWESOME])
+app = dash.Dash(__name__, plugins=[dl.plugins.pages], external_stylesheets=[dbc.themes.BOOTSTRAP, dbc.icons.BOOTSTRAP, FONT_AWESOME],
+                meta_tags=[
+                    {"name": "viewport", "content": "width=device-width, initial-scale=1"}
+                ])
 
 # the style arguments for the sidebar. We use position:fixed and a fixed width
 SIDEBAR_STYLE = {
@@ -18,17 +21,19 @@ SIDEBAR_STYLE = {
     "top": 0,
     "left": 0,
     "bottom": 0,
-    "width": "16rem",
+    "width": "20rem",
     "padding": "2rem 1rem",
     "backgroundColor": "#f8f9fa",
+    "backgroundImage": "url('assets/img/sidebar.svg')",
+    "backgroundPosition": "right top"
 }
 
 # the styles for the main content position it to the right of the sidebar and
 # add some padding.
 CONTENT_STYLE = {
-    "marginLeft": "16rem",
+    "marginLeft": "20rem",
     "marginRight": "2rem",
-    "padding": "2rem 1rem",
+    "padding": "2rem 1rem"
 }
 
 sidebar = html.Div(
@@ -95,7 +100,7 @@ sidebar = html.Div(
                             type="default",
                             children=html.Div(id="updateLoading"),
                             style={
-                                "marginTop": "35%"
+                                "marginTop": "41%"
                             }
                         ),
                         dcc.Interval(interval=interval * 1000, id="timerRefreshButton"),

@@ -4,6 +4,8 @@ import pandas as pd
 studies = pd.read_csv("script/sql/visualisation/CSV_files/studies.csv")
 studies["study_first_submitted_date"] = pd.to_datetime(studies["study_first_submitted_date"])
 
+studies_filter = studies = studies[studies["overall_status"].isin(["Recruiting", "Not yet recruiting", "Active, not recruiting"])]
+
 sponsors = pd.read_csv("script/sql/visualisation/CSV_files/df_sponsorsName.csv")
 investigators = pd.read_csv("script/sql/visualisation/CSV_files/df_investigators.csv")
 
@@ -17,7 +19,8 @@ def GetCategoryPercent(**kwargs):
         "groupby": None,
         "sortby": [],
         "sortasc": True,
-        "divisionby": "all"
+        "divisionby": "all",
+        "type_filter": True
     }
 
     """
@@ -56,7 +59,14 @@ def GetCategoryPercent(**kwargs):
         print(f"Function: '{name}'")
         return None
 
-    df = studies[settings["columns"]]
+    df = studies.copy()
+
+    if settings["type_filter"]:
+        df = df[df["overall_status"].isin(["Recruiting", "Not yet recruiting", "Active, not recruiting"])]
+        print(df.info())
+
+    df = df[settings["columns"]]
+
     if settings["categoryfilter"] is not None:
         df = df[df["category"].isin([settings["categoryfilter"]])]
     else:
