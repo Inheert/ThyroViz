@@ -12,6 +12,7 @@ import copy
 
 def appLaunch():
     script.ct_const.loading = True
+
     conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_HOST)
 
     cur = conn.cursor()
@@ -127,7 +128,8 @@ def appLaunch():
 
     category_clean_dict = {
         "Thyroid neoplasms": "Thyroid cancer",
-        "Hypothyroidism": "Hypothyroidism"
+        "Hypothyroidism": "Hypothyroidism",
+        "Parathyroid diseases": "Parathyroid diseases"
     }
 
     for k, v in category_clean_dict.items():
@@ -290,4 +292,5 @@ def appLaunch():
     for dataframe in df_dict:
         df_dict[dataframe].to_csv(f"{path_CSVFiles}/{dataframe}.csv", index=False)
         print(f"[DATAFRAME - {str(dataframe).upper()}] csv have been created")
+
     script.ct_const.loading = False

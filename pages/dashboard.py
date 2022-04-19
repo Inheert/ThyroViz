@@ -150,7 +150,8 @@ layout = html.Div(
                                 html.Div(
                                     [
                                         dbc.Row(
-                                            # Cette ligne contient l'en-tête de la visualisation (bannière animé + titre)
+                                            # Cette ligne contient l'en-tête de la visualisation (bannière animé +
+                                            # titre)
                                             [
                                                 dbc.Card(
                                                     [
@@ -234,7 +235,7 @@ layout = html.Div(
           [[Input(f"title-{category.loc[x]['category']}", "children"),
             Input(f"button-{category.loc[x]['category']}", "n_clicks")] for x in category.index],
           )
-def AutoUpdateGraph(*args):
+def VisualizationDataUpdate(*args):
     category_selected = [p['prop_id'] for p in dash.callback_context.triggered][0]
     if category_selected != ".":
         category_selected = category_selected.split("-")[1].split(".")[0]

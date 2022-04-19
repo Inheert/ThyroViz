@@ -43,12 +43,14 @@ kw_c3_sub10 = ["Recurrent thyroid cancer", "Recurrent thyroid tland carcinoma"]
 kw_c3_sub11 = ["Metastatic thyroid cancer", "Metastatic thyroid gland carcinoma"]
 kw_c3_sub12 = ["Struma", "Struma ovarii"]
 
-kw_c4_sub1 = ["Hyperparathyroidism", "Hyperparathyroidism, primary", "Primary hyperparathyroidism",
+kw_c4_sub1 = ["Hyperparathyroidism, primary", "Primary hyperparathyroidism",
               "Hyperparathyroidism, secondary", "Secondary Hyperparathyroidism", "Hyperparathyroidism secondary",
               "Parathyroid diseases", "parathyroid dysfunction", "Disorders of parathyroid gland",
-              "Parathyroid Disorders", "hypoparathyroidism"]
+              "Parathyroid Disorders"]
 kw_c4_sub2 = ["Parathyroid neoplasms", "Parathyroid tumor"]
 kw_c4_sub3 = ["pseudohypoparathyroidism", "pseudopseudohypoparathyroidism"]
+kw_c4_sub4 = ["hypoparathyroidism"]
+kw_c4_sub5 = ["Hyperparathyroidism"]
 
 kw_c5_sub1 = ["Hypothyroidism", "Hypothyroid", "Low T4"]
 kw_c5_sub2 = ["Secondary hypothyroidism ", "Pituitary hypothyroidism", "Central hypothyroidism"]
@@ -96,13 +98,15 @@ keys_word_dict = {
         {
             "Parathyroid diseases": kw_c4_sub1,
             "Parathyroid cancer": kw_c4_sub2,
-            "pseudohypoparathyroidism": kw_c4_sub3
+            "pseudohypoparathyroidism": kw_c4_sub3,
+            "Hypoparathyroidism": kw_c4_sub4,
+            "Hyperparathyroidism": kw_c4_sub5
         },
     "Hypothyroidism":
         {
             "Hypothyroidism": kw_c5_sub1,
             "Secondary hypothyroidism": kw_c5_sub2,
-            "Congenital hypothyroidism": kw_c5_sub3
+            "Congenital hypothyroidism": kw_c5_sub3,
         },
     "Euthyroid Sick Syndromes":
         {
