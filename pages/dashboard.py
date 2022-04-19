@@ -1,14 +1,14 @@
 import dash
-from dash import dcc, Input, Output, callback
+from dash import dcc, Input, Output, callback, html
+import dash_bootstrap_components as dbc
 
 import plotly.graph_objects as go
 from datetime import datetime
 
-from pages.dashboard_containers.containers import *
+from pages.helpers import *
+from pages.const import *
 
 dash.register_page(__name__)
-
-print(category.info())
 
 layout = html.Div(
     [
@@ -16,15 +16,141 @@ layout = html.Div(
 
         html.Div(
             [
-                dbc.Row(children=topCard),
+                dbc.Row(
+                    # Cette séction comporte les 4 cartes présentent en haut de page
+                    [
+                        dbc.Col(
+                            dbc.CardGroup(
+                                [
+                                    dbc.Card(
+                                        dbc.CardBody(
+                                            [
+                                                html.H1(f"{len(studies['nct_id'].unique())}",
+                                                        className="card-title"),
+                                                html.P("unique studies", className="card-text"),
+                                            ]
+                                        )
+                                    ),
+                                    dbc.Card(
+                                        html.Div(className="bi bi-eye", style=card_icon),
+                                        color="#247cfd",
+                                        style={"maxWidth": 75},
+                                    ),
+                                ],
+                                className="mt-4 shadow",
+                            ),
+                            width=True
+                        ),
+                        dbc.Col(
+                            [
+                                dbc.CardGroup(
+                                    [
+                                        dbc.Card(
+                                            dbc.CardBody(
+                                                [
+                                                    html.H1(
+                                                        f"{studies[(studies['study_first_submitted_date'] >= f'{datetime.now().year}-{datetime.now().month - 1}') & (studies['study_first_submitted_date'] < f'{datetime.now().year}-{datetime.now().month}')].shape[0]}",
+                                                        className="card-title"),
+                                                    html.P("new studies this month", className="card-text", ),
+                                                ]
+                                            )
+                                        ),
+                                        dbc.Card(
+                                            html.Div(className="bi bi-clipboard2-plus", style=card_icon),
+                                            color="#0D6EFD",
+                                            style={"maxWidth": 75},
+                                        ),
+                                    ],
+                                    className="mt-4 shadow",
+                                )
+                            ],
+                            width=True
+                        ),
+                        dbc.Col(
+                            [
+                                dbc.CardGroup(
+                                    [
+                                        dbc.Card(
+                                            dbc.CardBody(
+                                                [
+                                                    html.H1(
+                                                        f"{len(sponsors.name.unique())}",
+                                                        className="card-title"),
+                                                    html.P("Number of sponsors",
+                                                           className="card-text"),
+                                                ]
+                                            )
+                                        ),
+                                        dbc.Card(
+                                            html.Div(className="bi bi-people", style=card_icon),
+                                            color="#024ebf",
+                                            style={"maxWidth": 75},
+                                        ),
+                                    ],
+                                    className="mt-4 shadow",
+                                ),
+                            ],
+                            width=3
+                        ),
+                        dbc.Col(
+                            [
+                                dbc.CardGroup(
+                                    [
+                                        dbc.Card(
+                                            dbc.CardBody(
+                                                [
+                                                    html.H1(
+                                                        f"{len(investigators.investigators.unique())}",
+                                                        className="card-title"),
+                                                    html.P("Number of investigators",
+                                                           className="card-text", ),
+                                                ]
+                                            )
+                                        ),
+                                        dbc.Card(
+                                            html.Div(className="bi bi-clipboard2-plus", style=card_icon),
+                                            color="#013684",
+                                            style={"maxWidth": 75},
+                                        ),
+                                    ],
+                                    className="mt-4 shadow",
+                                ),
+                            ],
+                            width=3
+                        ), ]
+                ),
                 dbc.Row(
                     [
-                        dbc.Row(
+                        dbc.Col(
+                            # Colonne contenant les cards-buttons sur la partie gauche de la page.
+                            # Celles-ci sont générées automatiquement à l'aide d'une compréhension de liste
                             [
-                                categoryCard,
-                                dbc.Col(
+                                dbc.Card(
+                                    dbc.CardBody(
+                                        [
+                                            html.H5(f"{category.loc[x]['category']}",
+                                                    className="card-title",
+                                                    id=f"title-{category.loc[x]['category']}"),
+                                            html.P(
+                                                f"{category.loc[x]['nct_id']}%"
+                                            ),
+                                            dbc.Button(children="Développer",
+                                                       id=f"button-{category.loc[x]['category']}",
+                                                       color="primary",
+                                                       outline=True)
+                                        ],
+                                    ),
+                                    className="mb-1 shadow-sm"
+                                ) for x in category.index
+                            ],
+                            width="auto"
+                        ),
+                        dbc.Col(
+                            [
+                                html.Div(
                                     [
-                                        html.Div(
+                                        dbc.Row(
+                                            # Cette ligne contient l'en-tête de la visualisation (bannière animé + titre)
                                             [
                                                 dbc.Card(
                                                     [
@@ -54,40 +180,40 @@ layout = html.Div(
                                                     style={"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
                                                            "borderRadius": "15px"},
                                                     class_name="card mb-4 border-0"
-                                                ),
-                                                dbc.Card(
-                                                    dbc.CardBody(
-                                                        [
-                                                            dcc.Graph(
-                                                                id="study_type_bar",
-                                                                config={
-                                                                    'displayModeBar': False,
-                                                                },
-                                                                style={
-                                                                    "marginTop": "-1vh",
-                                                                }
-                                                            ),
-                                                        ]
+                                                )]
+                                        ),
+                                        dbc.Card(
+                                            dbc.CardBody(
+                                                [
+                                                    dcc.Graph(
+                                                        id="study_type_bar",
+                                                        config={
+                                                            'displayModeBar': False,
+                                                        },
+                                                        style={
+                                                            "marginTop": "-1vh",
+                                                        }
                                                     ),
-                                                    style={"backgroundColor": "rgb(247, 247, 247)",
-                                                           "borderRadius": "15px",
-                                                           "width": "18vh",
-                                                           "height": "86vh",
-                                                           },
-                                                    class_name="card mb-4 border-0"
-                                                )
-                                            ]
+                                                ]
+                                            ),
+                                            style={"backgroundColor": "rgb(247, 247, 247)",
+                                                   "borderRadius": "15px",
+                                                   "width": "18vh",
+                                                   "height": "86vh",
+                                                   },
+                                            class_name="card mb-4 border-0"
                                         )
-                                    ],
-                                    style={
-                                        "display": "flex",
-                                        "alignItems": "top",
-                                        "justifyContent": "center",
-                                        "horizontalAlign": "center",
-                                    }
+                                    ]
                                 )
                             ],
-                        ),
+                            style={
+                                "display": "flex",
+                                "alignItems": "top",
+                                "justifyContent": "center",
+                                "horizontalAlign": "center",
+                            }
+                        )
+
                     ],
                     style={
                         "margin": "auto",

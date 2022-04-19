@@ -10,6 +10,15 @@ sponsors = pd.read_csv("script/sql/visualisation/CSV_files/df_sponsorsName.csv")
 investigators = pd.read_csv("script/sql/visualisation/CSV_files/df_investigators.csv")
 
 
+def csvFilter(study_type):
+
+    df = studies
+
+    if study_type:
+        df = df[df["study_type"].isin(["Not yet recruiting", "Active, not recruiting", "Recruiting"])]
+    return df
+
+
 def GetCategoryPercent(**kwargs):
     name = "GetCategoryPercent()"
 
@@ -34,7 +43,6 @@ def GetCategoryPercent(**kwargs):
             if k not in _kwargs:
                 raise KeyError
             elif type(settings[k]) != type(v) and settings[k] is not None:
-                print(k)
                 raise TypeError
 
             if type(settings[k]) == list:
@@ -63,7 +71,6 @@ def GetCategoryPercent(**kwargs):
 
     if settings["type_filter"]:
         df = df[df["overall_status"].isin(["Recruiting", "Not yet recruiting", "Active, not recruiting"])]
-        print(df.info())
 
     df = df[settings["columns"]]
 
