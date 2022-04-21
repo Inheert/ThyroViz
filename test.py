@@ -5,5 +5,5 @@
 # https://icons.getbootstrap.com/icons/eye-fill/
 from pages.helpers import *
 
-test = GetCategoryPercent()
+True, True, True == (True, True, True)
 

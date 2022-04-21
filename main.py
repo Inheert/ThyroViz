@@ -49,7 +49,7 @@ sidebar = html.Div(
                 html.H2("THRD", className="display-4"),
                 html.Hr(),
                 html.P(
-                    "Naviguez à travers les différents outils de ThyroResearch", className="lead"
+                    "Navigate through the different tools of ThyroResearch", className="lead"
                 ),
                 dbc.Nav(
                     [
@@ -66,7 +66,7 @@ sidebar = html.Div(
                 "height": "87%"
             }
         ),
-        html.Plaintext("dernière mise à jour :"),
+        html.Plaintext("Last update:"),
         html.Plaintext(
             f"{datetime.fromtimestamp(os.path.getmtime(glob.glob(f'{os.path.abspath(os.curdir)}/script/sql/visualisation/CSV_files/studies.csv')[0])).strftime('%Y-%m-%d %H:%M')}",
             id="lastUpdate",
@@ -86,7 +86,7 @@ sidebar = html.Div(
             [
                 dbc.Col(
                     [
-                        dbc.Button("Mise à jour",
+                        dbc.Button("Update",
                                    id="updateButton",
                                    disabled=True)
 

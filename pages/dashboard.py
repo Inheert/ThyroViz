@@ -12,12 +12,12 @@ dash.register_page(__name__)
 
 layout = html.Div(
     [
-        dcc.Interval(interval=300 * 1000, id="refresh"),
+        dcc.Interval(interval=10 * 1000, id="refresh"),
 
         html.Div(
             [
                 dbc.Row(
-                    # Cette séction comporte les 4 cartes présentent en haut de page
+                    # Cette section comporte les 4 cartes présentent en haut de page
                     [
                         dbc.Col(
                             dbc.CardGroup(
@@ -134,7 +134,7 @@ layout = html.Div(
                                             html.P(
                                                 f"{category.loc[x]['nct_id']}%"
                                             ),
-                                            dbc.Button(children="Développer",
+                                            dbc.Button(children="Select",
                                                        id=f"button-{category.loc[x]['category']}",
                                                        color="primary",
                                                        outline=True)
@@ -177,32 +177,62 @@ layout = html.Div(
                                                                 "marginLeft": "3vh"
                                                             }
                                                         ),
+                                                        dbc.CardImgOverlay(
+                                                            dbc.Button("Reset",
+                                                                       id="reset"),
+                                                            style={
+                                                                "display": "flex",
+                                                                "alignItems": "center",
+                                                                "justifyContent": "right",
+                                                                "horizontalAlign": "center",
+                                                                "marginLeft": "3vh"
+                                                            }
+                                                        ),
                                                     ],
                                                     style={"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
                                                            "borderRadius": "15px"},
                                                     class_name="card mb-4 border-0"
                                                 )]
                                         ),
-                                        dbc.Card(
-                                            dbc.CardBody(
-                                                [
-                                                    dcc.Graph(
-                                                        id="study_type_bar",
-                                                        config={
-                                                            'displayModeBar': False,
-                                                        },
-                                                        style={
-                                                            "marginTop": "-1vh",
-                                                        }
-                                                    ),
-                                                ]
-                                            ),
-                                            style={"backgroundColor": "rgb(247, 247, 247)",
-                                                   "borderRadius": "15px",
-                                                   "width": "18vh",
-                                                   "height": "86vh",
-                                                   },
-                                            class_name="card mb-4 border-0"
+                                        dbc.Row(
+                                            [
+                                                dbc.Col(
+                                                    [
+                                                        dbc.Card(
+                                                            dbc.CardBody(
+                                                                [
+                                                                    dcc.Graph(
+                                                                        id="study_type_bar",
+                                                                        config={
+                                                                            'displayModeBar': False,
+                                                                        },
+                                                                        style={
+                                                                            "marginTop": "-1vh",
+                                                                        }
+                                                                    ),
+                                                                ]
+                                                            ),
+                                                            style={"backgroundColor": "rgb(247, 247, 247)",
+                                                                   "borderRadius": "15px",
+                                                                   "width": "18vh",
+                                                                   "height": "86vh",
+                                                                   },
+                                                            class_name="card mb-4 border-0"
+                                                        ),
+                                                    ],
+                                                    width="auto"
+                                                ),
+                                                dbc.Col(
+                                                    [
+                                                        dcc.Graph(
+                                                            id="new_studies_by_year",
+                                                            config={
+                                                                'displayModeBar': False,
+                                                            },
+                                                        )
+                                                    ],
+                                                )
+                                            ]
                                         )
                                     ]
                                 )
@@ -231,12 +261,19 @@ layout = html.Div(
 
 
 @callback(Output("study_type_bar", "figure"),
+          Output("new_studies_by_year", "figure"),
           Output("title", "children"),
+          Input("reset", "n_clicks"),
           [[Input(f"title-{category.loc[x]['category']}", "children"),
             Input(f"button-{category.loc[x]['category']}", "n_clicks")] for x in category.index],
           )
 def VisualizationDataUpdate(*args):
+
     category_selected = [p['prop_id'] for p in dash.callback_context.triggered][0]
+    print(category_selected)
+
+    category_selected = "." if category_selected == "reset.n_clicks" else category_selected
+
     if category_selected != ".":
         category_selected = category_selected.split("-")[1].split(".")[0]
         df = GetCategoryPercent(columns=["study_type"], groupby=["category", "study_type"],
@@ -286,4 +323,34 @@ def VisualizationDataUpdate(*args):
         hovermode=False
     )
 
-    return fig, category_selected if category_selected != "." else "Général"
+    figg = go.Figure(data=StudiesByYear(category_selected))
+
+    figg.update_layout(
+        height=250,
+        title={
+            'text': 'New and completed studies by year',
+            'y': 0.9,
+            'x': 0.5,
+            "xanchor": "center",
+            "yanchor": "top"
+        },
+        xaxis=dict(
+            showgrid=False,
+            showline=False,
+            showticklabels=True,
+            color='black',
+            zeroline=False,
+        ),
+        yaxis=dict(
+            showgrid=False,
+            showline=False,
+            showticklabels=False,
+            zeroline=False,
+        ),
+        paper_bgcolor='rgba(0, 0, 0, 0)',
+        plot_bgcolor='rgba(0, 0, 0, 0)',
+        margin=dict(l=0, r=0, t=0, b=0),
+        showlegend=False,
+    )
+
+    return fig, figg, category_selected if category_selected != "." else "Général"

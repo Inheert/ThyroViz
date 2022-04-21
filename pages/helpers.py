@@ -1,13 +1,7 @@
 import traceback
 import pandas as pd
-
-studies = pd.read_csv("script/sql/visualisation/CSV_files/studies.csv")
-studies["study_first_submitted_date"] = pd.to_datetime(studies["study_first_submitted_date"])
-
-studies_filter = studies = studies[studies["overall_status"].isin(["Recruiting", "Not yet recruiting", "Active, not recruiting"])]
-
-sponsors = pd.read_csv("script/sql/visualisation/CSV_files/df_sponsorsName.csv")
-investigators = pd.read_csv("script/sql/visualisation/CSV_files/df_investigators.csv")
+import plotly.graph_objects as go
+from pages.const import *
 
 
 def csvFilter(study_type):
@@ -102,3 +96,37 @@ def ArgumentSuggestion(funcArg, calledArg):
             if letter in k:
                 count[k] += 1
     return max(count, key=count.get)
+
+
+def StudiesByYear(category):
+    df = s_base.copy()
+
+    if category != ".":
+        df = df[df["category"] == category]
+
+    new_studies_by_year = df[["nct_id", "study_first_submitted_date"]].copy()
+    new_studies_by_year["year"] = new_studies_by_year["study_first_submitted_date"].apply(lambda x: x.year)
+    new_studies_by_year.drop(columns="study_first_submitted_date", inplace=True)
+    new_studies_by_year = new_studies_by_year.groupby("year").count().reset_index().sort_values(by="year")
+    new_studies_by_year["year"] = new_studies_by_year["year"].apply(lambda x: int(x))
+    new_studies_by_year = new_studies_by_year[new_studies_by_year["year"] >= 1999]
+
+    completed_studies_by_year = df[["nct_id", "completion_date"]].copy()
+    completed_studies_by_year["year"] = completed_studies_by_year["completion_date"].apply(lambda x: x.year)
+    completed_studies_by_year.drop(columns="completion_date", inplace=True)
+    completed_studies_by_year = completed_studies_by_year.groupby("year").count().reset_index().sort_values(by="year")
+    completed_studies_by_year["year"] = completed_studies_by_year["year"].apply(lambda x: int(x))
+    completed_studies_by_year = completed_studies_by_year[
+        (completed_studies_by_year["year"] <= datetime.now().year) & (completed_studies_by_year["year"] >= 1999)]
+
+    trace0 = go.Scatter(x=new_studies_by_year["year"], y=new_studies_by_year["nct_id"], mode="lines+text",
+                        text=new_studies_by_year["nct_id"], textposition="top center")
+    trace1 = go.Scatter(x=completed_studies_by_year["year"], y=completed_studies_by_year["nct_id"], mode="lines+text",
+                        text=completed_studies_by_year["nct_id"], textposition="bottom center")
+
+    data = [trace0, trace1]
+
+    return data
+
+
+category = GetCategoryPercent(groupby="category", sortby=["nct_id"], sortasc=False)
