@@ -3,10 +3,30 @@ from dash import dcc, Input, Output, callback, html
 import dash_bootstrap_components as dbc
 
 import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 from datetime import datetime
 
 from pages.helpers import *
 from pages.const import *
+
+""""
+Idées graphiques :
+                - Distribution des catégories d'études par type d'étude / date
+                - Distribution des sous-catégories d'études par type d'étude / date
+                - Evolution du nombre d'études par rapport à N-1 par catégorie --> sous-catégorie
+                - Mise en avant des études les plus récentes
+                - Mise en avant des études ayant une date de complétion proche
+                - Mise en avant des plus grosse fondations d'études
+                - Mise en avant des sponsors les plus important sur l'ensemble des études / par catégorie
+                - Représentation géographique des études à travers le monde 
+                - Classification des études par les tranches d'âges acceptées
+                - Classification des études par leur status
+                - Classification des études par phase
+                - Moyenne des études par mois / années
+                - Nombre d'étude déjà achevé 
+                - Nombre d'étude avec une première complétion
+                - Nombre de nouvelles études depuis le début d'année
+"""""
 
 dash.register_page(__name__)
 
@@ -90,7 +110,7 @@ layout = html.Div(
                                     className="mt-4 shadow",
                                 ),
                             ],
-                            width=3
+                            width=True
                         ),
                         dbc.Col(
                             [
@@ -116,7 +136,7 @@ layout = html.Div(
                                     className="mt-4 shadow",
                                 ),
                             ],
-                            width=3
+                            width=True
                         ), ]
                 ),
                 dbc.Row(
@@ -224,13 +244,42 @@ layout = html.Div(
                                                 ),
                                                 dbc.Col(
                                                     [
-                                                        dcc.Graph(
-                                                            id="new_studies_by_year",
-                                                            config={
-                                                                'displayModeBar': False,
-                                                            },
-                                                        )
+                                                        dbc.Row(
+                                                            [
+                                                                dbc.Col(
+                                                                    dcc.Graph(
+                                                                        id="sub_category_proportion_by_studies_type",
+                                                                        config={
+                                                                            "displayModeBar": False,
+                                                                        }
+                                                                    ),
+                                                                    style={
+                                                                        "display": "flex",
+                                                                        "alignItems": "center",
+                                                                        "justifyContent": "center",
+                                                                        "horizontalAlign": "center",
+                                                                    },
+                                                                    width=True
+                                                                )
+                                                            ]
+                                                        ),
+                                                        dbc.Row(
+                                                            [
+                                                                dbc.Col(
+                                                                    [
+                                                                        dcc.Graph(
+                                                                            id="date_studies_by_year",
+                                                                            config={
+                                                                                'displayModeBar': False,
+                                                                            },
+                                                                        )
+                                                                    ],
+                                                                    width=True
+                                                                )
+                                                            ]
+                                                        ),
                                                     ],
+                                                    width=True
                                                 )
                                             ]
                                         )
@@ -261,7 +310,8 @@ layout = html.Div(
 
 
 @callback(Output("study_type_bar", "figure"),
-          Output("new_studies_by_year", "figure"),
+          Output("date_studies_by_year", "figure"),
+          Output("sub_category_proportion_by_studies_type", "figure"),
           Output("title", "children"),
           Input("reset", "n_clicks"),
           [[Input(f"title-{category.loc[x]['category']}", "children"),
@@ -270,7 +320,6 @@ layout = html.Div(
 def VisualizationDataUpdate(*args):
 
     category_selected = [p['prop_id'] for p in dash.callback_context.triggered][0]
-    print(category_selected)
 
     category_selected = "." if category_selected == "reset.n_clicks" else category_selected
 
@@ -288,7 +337,7 @@ def VisualizationDataUpdate(*args):
     s_type = [x for x in df["study_type"]]
     marker_color = ["#342883", "#4a39bb", "#6f60cf"]
 
-    fig = go.Figure(data=[
+    study_type_bar = go.Figure(data=[
         go.Bar(name="Interventional",
                x=df[df["study_type"] == y]["category"],
                y=df[df["study_type"] == y]["nct_id"],
@@ -299,7 +348,7 @@ def VisualizationDataUpdate(*args):
                )
         for x, y in enumerate(s_type)])
 
-    fig.update_layout(
+    study_type_bar.update_layout(
         height=800,
         width=150,
         xaxis=dict(
@@ -323,9 +372,9 @@ def VisualizationDataUpdate(*args):
         hovermode=False
     )
 
-    figg = go.Figure(data=StudiesByYear(category_selected))
+    news_and_completed_study_by_year = go.Figure(data=StudiesByYear(category_selected))
 
-    figg.update_layout(
+    news_and_completed_study_by_year.update_layout(
         height=250,
         title={
             'text': 'New and completed studies by year',
@@ -353,4 +402,51 @@ def VisualizationDataUpdate(*args):
         showlegend=False,
     )
 
-    return fig, figg, category_selected if category_selected != "." else "Général"
+    sub_category_proportion_by_study_type = make_subplots(rows=1, cols=3, specs=[[{"type": "domain"}, {"type": "domain"}, {"type": "domain"}]])
+
+    color_pie = ["hsl(185.23, 100%, 52.75%)",
+                 "hsl(201.22, 95.82%, 53.14%)",
+                 "hsl(216.05, 100%, 55.29%)",
+                 "hsl(230.67, 98.25%, 55.1%)",
+                 "hsl(243.98, 100%, 55.69%)",
+                 "hsl(244.41, 100%, 86.67%)",
+                 "hsl(258.18, 78.2%, 58.63%)",
+                 "hsl(258, 77.78%, 35.29%)"]
+
+    col = 1
+    for i in s_base.study_type.sort_values().unique():
+
+        df = GetSubCategoryProportion(category_selected, i)
+
+        sub_category_proportion_by_study_type.add_trace(
+            go.Pie(
+                labels=df["view"],
+                values=df["nct_id"],
+                title=i,
+                marker_colors=color_pie),
+            1, col)
+
+        col += 1
+
+    sub_category_proportion_by_study_type.update_traces(hole=.4, hoverinfo="label+percent")
+
+    sub_category_proportion_by_study_type.update_layout(
+        height=250,
+        xaxis=dict(
+            showgrid=False,
+            showline=False,
+            zeroline=False,
+        ),
+        yaxis=dict(
+            showgrid=False,
+            showline=False,
+            showticklabels=False,
+            zeroline=False,
+        ),
+        paper_bgcolor='rgba(0, 0, 0, 0)',
+        plot_bgcolor='rgba(0, 0, 0, 0)',
+        margin=dict(l=0, r=0, t=0, b=0),
+        showlegend=False,
+    )
+
+    return study_type_bar, news_and_completed_study_by_year, sub_category_proportion_by_study_type, category_selected if category_selected != "." else "Général"

@@ -129,4 +129,20 @@ def StudiesByYear(category):
     return data
 
 
+def GetSubCategoryProportion(category, s_type):
+
+    df = s_base[["nct_id", "category", "sub_category", "study_type"]].copy()
+
+    if category == ".":
+        df = df[df["study_type"] == s_type]
+        df = df.groupby("category").count().reset_index().sort_values(by="nct_id", ascending=False)
+        df.rename(columns={"category": "view"}, inplace=True)
+    else:
+        df = df[(df["category"] == category) & (df["study_type"] == s_type)]
+        df = df.groupby("sub_category").count().reset_index().sort_values(by="nct_id", ascending=False)
+        df.rename(columns={"sub_category": "view"}, inplace=True)
+
+    return df
+
+
 category = GetCategoryPercent(groupby="category", sortby=["nct_id"], sortasc=False)

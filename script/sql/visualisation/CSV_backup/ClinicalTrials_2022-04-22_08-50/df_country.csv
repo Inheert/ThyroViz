@@ -1,20 +1,20 @@
 index,nct_id,location,continent,iso
-0,NCT00001159,United States,North America,USA
-9,NCT00001277,United States,North America,USA
+1,NCT00001159,United States,North America,USA
+11,NCT00001277,United States,North America,USA
 18,NCT00004048,United States,North America,USA
-22,NCT00004074,United States,North America,USA
+19,NCT00004074,United States,North America,USA
 25,NCT00004089,United States,North America,USA
-27,NCT00004340,United States,North America,USA
+26,NCT00004340,United States,North America,USA
 29,NCT00004351,United States,North America,USA
 33,NCT00004660,United States,North America,USA
 41,NCT00005102,United States,North America,USA
-48,NCT00037193,United States,North America,USA
+47,NCT00037193,United States,North America,USA
 64,NCT00053547,United States,North America,USA
 65,NCT00060242,United States,North America,USA
 66,NCT00061906,United States,North America,USA
 67,NCT00068497,United States,North America,USA
 74,NCT00073710,United States,North America,USA
-76,NCT00077103,United States,North America,USA
+77,NCT00077103,United States,North America,USA
 79,NCT00085293,United States,North America,USA
 87,NCT00095693,United States,North America,USA
 91,NCT00095836,United States,North America,USA
@@ -25,54 +25,54 @@ index,nct_id,location,continent,iso
 100,NCT00104871,United States,North America,USA
 102,NCT00105274,United States,North America,USA
 104,NCT00108394,United States,North America,USA
-117,NCT00118248,United States,North America,USA
-120,NCT00123461,Puerto Rico,Central America,PRI
-120,NCT00123461,United States,North America,USA
+116,NCT00118248,United States,North America,USA
+121,NCT00123461,Puerto Rico,Central America,PRI
+121,NCT00123461,United States,North America,USA
 130,NCT00134043,United States,North America,USA
 137,NCT00145366,Denmark,Europe,DNK
 140,NCT00147433,United States,North America,USA
 142,NCT00150111,Denmark,Europe,DNK
-147,NCT00150124,Denmark,Europe,DNK
-152,NCT00150137,Denmark,Europe,DNK
+146,NCT00150124,Denmark,Europe,DNK
+151,NCT00150137,Denmark,Europe,DNK
 154,NCT00150150,Denmark,Europe,DNK
-157,NCT00161109,Netherlands,Europe,NLD
-157,NCT00161109,United States,North America,USA
+158,NCT00161109,Netherlands,Europe,NLD
+158,NCT00161109,United States,North America,USA
 161,NCT00174057,Taiwan,East Asia,TWN
-166,NCT00175149,Denmark,Europe,DNK
+165,NCT00175149,Denmark,Europe,DNK
 177,NCT00209235,United States,North America,USA
-178,NCT00211939,United States,North America,USA
+179,NCT00211939,United States,North America,USA
 181,NCT00213720,France,Europe,FRA
 186,NCT00257920,United States,North America,USA
-191,NCT00261950,Belgium,Europe,BEL
-191,NCT00261950,Czech Republic,Europe,CZE
-191,NCT00261950,Hungary,Europe,HUN
-191,NCT00261950,Italy,Europe,ITA
-191,NCT00261950,"Macedonia, The Former Yugoslav Republic of",Europe,MKD
-191,NCT00261950,Poland,Europe,POL
-191,NCT00261950,Portugal,Europe,PRT
-191,NCT00261950,Spain,Europe,ESP
-191,NCT00261950,Switzerland,Europe,CHE
-191,NCT00261950,Turkey,Middle East,TUR
-191,NCT00261950,United Kingdom,Europe,GBR
-191,NCT00261950,United States,North America,USA
-200,NCT00278005,United States,North America,USA
-204,NCT00285467,United States,North America,USA
-208,NCT00287144,Norway,Europe,NOR
-211,NCT00287287,United States,North America,USA
+189,NCT00261950,Belgium,Europe,BEL
+189,NCT00261950,Czech Republic,Europe,CZE
+189,NCT00261950,Hungary,Europe,HUN
+189,NCT00261950,Italy,Europe,ITA
+189,NCT00261950,"Macedonia, The Former Yugoslav Republic of",Europe,MKD
+189,NCT00261950,Poland,Europe,POL
+189,NCT00261950,Portugal,Europe,PRT
+189,NCT00261950,Spain,Europe,ESP
+189,NCT00261950,Switzerland,Europe,CHE
+189,NCT00261950,Turkey,Middle East,TUR
+189,NCT00261950,United Kingdom,Europe,GBR
+189,NCT00261950,United States,North America,USA
+199,NCT00278005,United States,North America,USA
+205,NCT00285467,United States,North America,USA
+209,NCT00287144,Norway,Europe,NOR
+212,NCT00287287,United States,North America,USA
 213,NCT00288522,Spain,Europe,ESP
 217,NCT00288873,United States,North America,USA
 221,NCT00297297,Denmark,Europe,DNK
 226,NCT00316823,United States,North America,USA
 228,NCT00322322,France,Europe,FRA
-230,NCT00325104,United States,North America,USA
+231,NCT00325104,United States,North America,USA
 232,NCT00335062,United States,North America,USA
 241,NCT00342641,United States,North America,USA
 245,NCT00348413,Singapore,Southest Asia,SGP
 259,NCT00360074,Germany,Europe,DEU
-262,NCT00364234,United States,North America,USA
-266,NCT00374712,France,Europe,FRA
-274,NCT00381641,United States,North America,USA
-278,NCT00385983,Brazil,South America,BRA
+260,NCT00364234,United States,North America,USA
+267,NCT00374712,France,Europe,FRA
+275,NCT00381641,United States,North America,USA
+277,NCT00385983,Brazil,South America,BRA
 279,NCT00388297,United States,North America,USA
 281,NCT00390325,United States,North America,USA
 289,NCT00397475,Germany,Europe,DEU
@@ -83,80 +83,80 @@ index,nct_id,location,continent,iso
 309,NCT00418600,United States,North America,USA
 310,NCT00424151,United States,North America,USA
 314,NCT00430547,Australia,Pacifica,AUS
-326,NCT00432939,United States,North America,USA
-329,NCT00437931,Israel,Middle East,ISR
-332,NCT00446329,Greece,Europe,GRC
-341,NCT00454350,United States,North America,USA
+325,NCT00432939,United States,North America,USA
+328,NCT00437931,Israel,Middle East,ISR
+334,NCT00446329,Greece,Europe,GRC
+343,NCT00454350,United States,North America,USA
 347,NCT00463021,United States,North America,USA
-351,NCT00469599,Denmark,Europe,DNK
+350,NCT00469599,Denmark,Europe,DNK
 354,NCT00470496,United States,North America,USA
 360,NCT00480428,Kazakhstan,North Asia,KAZ
 378,NCT00507897,Russian Federation,North Asia,RUS
 386,NCT00519896,United States,North America,USA
-390,NCT00522028,Norway,Europe,NOR
+388,NCT00522028,Norway,Europe,NOR
 393,NCT00525135,United States,North America,USA
-402,NCT00528788,United States,North America,USA
+400,NCT00528788,United States,North America,USA
 403,NCT00531713,Denmark,Europe,DNK
 404,NCT00535561,Turkey,Middle East,TUR
 407,NCT00537797,United States,North America,USA
 408,NCT00537979,Mexico,North America,MEX
 417,NCT00552253,Taiwan,East Asia,TWN
-423,NCT00556530,United States,North America,USA
+422,NCT00556530,United States,North America,USA
 424,NCT00559949,Canada,North America,CAN
 424,NCT00559949,United States,North America,USA
-435,NCT00571077,Israel,Middle East,ISR
-435,NCT00571077,United States,North America,USA
+434,NCT00571077,Israel,Middle East,ISR
+434,NCT00571077,United States,North America,USA
 436,NCT00571090,Turkey,Middle East,TUR
-441,NCT00576407,United States,North America,USA
-442,NCT00576836,United States,North America,USA
+440,NCT00576407,United States,North America,USA
+443,NCT00576836,United States,North America,USA
 445,NCT00579527,United States,North America,USA
-446,NCT00579709,United States,North America,USA
+447,NCT00579709,United States,North America,USA
 449,NCT00580320,United States,North America,USA
-455,NCT00587158,United States,North America,USA
+456,NCT00587158,United States,North America,USA
 458,NCT00588432,United States,North America,USA
 460,NCT00595335,United States,North America,USA
-467,NCT00601328,United States,North America,USA
+465,NCT00601328,United States,North America,USA
 478,NCT00639405,United States,North America,USA
-481,NCT00646282,United States,North America,USA
-484,NCT00651625,United States,North America,USA
-485,NCT00654238,United States,North America,USA
-487,NCT00664430,Brazil,South America,BRA
+480,NCT00646282,United States,North America,USA
+483,NCT00651625,United States,North America,USA
+486,NCT00654238,United States,North America,USA
+489,NCT00664430,Brazil,South America,BRA
 490,NCT00665795,Brazil,South America,BRA
-494,NCT00667576,Japan,East Asia,JPN
-503,NCT00674154,Denmark,Europe,DNK
-505,NCT00677469,"Iran, Islamic Republic of",Middle East,IRN
+495,NCT00667576,Japan,East Asia,JPN
+501,NCT00674154,Denmark,Europe,DNK
+504,NCT00677469,"Iran, Islamic Republic of",Middle East,IRN
 511,NCT00697528,Brazil,South America,BRA
-515,NCT00701805,Japan,East Asia,JPN
+517,NCT00701805,Japan,East Asia,JPN
 522,NCT00729157,United States,North America,USA
-530,NCT00742716,Canada,North America,CAN
-530,NCT00742716,United States,North America,USA
-540,NCT00752401,Austria,Europe,AUT
-544,NCT00754442,United States,North America,USA
-546,NCT00768820,Israel,Middle East,ISR
-548,NCT00781417,United States,North America,USA
-552,NCT00782366,United States,North America,USA
-559,NCT00792857,United States,North America,USA
+531,NCT00742716,Canada,North America,CAN
+531,NCT00742716,United States,North America,USA
+538,NCT00752401,Austria,Europe,AUT
+542,NCT00754442,United States,North America,USA
+545,NCT00768820,Israel,Middle East,ISR
+550,NCT00781417,United States,North America,USA
+551,NCT00782366,United States,North America,USA
+560,NCT00792857,United States,North America,USA
 575,NCT00804830,Sweden,Europe,SWE
-580,NCT00823303,United States,North America,USA
+579,NCT00823303,United States,North America,USA
 584,NCT00828347,Japan,East Asia,JPN
-592,NCT00858104,Italy,Europe,ITA
-595,NCT00859612,United States,North America,USA
-597,NCT00877630,China,East Asia,CHN
+591,NCT00858104,Italy,Europe,ITA
+594,NCT00859612,United States,North America,USA
+596,NCT00877630,China,East Asia,CHN
 600,NCT00877981,Denmark,Europe,DNK
 600,NCT00877981,Sweden,Europe,SWE
-602,NCT00887107,Netherlands,Europe,NLD
+603,NCT00887107,Netherlands,Europe,NLD
 606,NCT00888069,United States,North America,USA
 610,NCT00891813,Peru,South America,PER
 614,NCT00902122,China,East Asia,CHN
-618,NCT00916955,United States,North America,USA
-619,NCT00917189,United States,North America,USA
+617,NCT00916955,United States,North America,USA
+620,NCT00917189,United States,North America,USA
 624,NCT00921050,Mexico,North America,MEX
 640,NCT00946296,United States,North America,USA
-646,NCT00958113,United States,North America,USA
+645,NCT00958113,United States,North America,USA
 653,NCT00958451,United States,North America,USA
 655,NCT00961701,Israel,Middle East,ISR
 657,NCT00962221,Israel,Middle East,ISR
-660,NCT00973336,Austria,Europe,AUT
+661,NCT00973336,Austria,Europe,AUT
 665,NCT00975221,Australia,Pacifica,AUS
 665,NCT00975221,Canada,North America,CAN
 665,NCT00975221,Hungary,Europe,HUN
@@ -164,236 +164,236 @@ index,nct_id,location,continent,iso
 665,NCT00975221,Portugal,Europe,PRT
 665,NCT00975221,Russian Federation,North Asia,RUS
 665,NCT00975221,United States,North America,USA
-667,NCT00977080,Czech Republic,Europe,CZE
-667,NCT00977080,Denmark,Europe,DNK
-667,NCT00977080,Germany,Europe,DEU
-667,NCT00977080,Greece,Europe,GRC
-667,NCT00977080,Italy,Europe,ITA
-667,NCT00977080,Netherlands,Europe,NLD
-667,NCT00977080,Portugal,Europe,PRT
-667,NCT00977080,Russian Federation,North Asia,RUS
-667,NCT00977080,Spain,Europe,ESP
-667,NCT00977080,Sweden,Europe,SWE
-667,NCT00977080,United Kingdom,Europe,GBR
-667,NCT00977080,United States,North America,USA
-672,NCT00982722,Sweden,Europe,SWE
-678,NCT00990704,Japan,East Asia,JPN
-680,NCT00995163,Japan,East Asia,JPN
-683,NCT00999037,United States,North America,USA
-690,NCT01012414,United States,North America,USA
+669,NCT00977080,Czech Republic,Europe,CZE
+669,NCT00977080,Denmark,Europe,DNK
+669,NCT00977080,Germany,Europe,DEU
+669,NCT00977080,Greece,Europe,GRC
+669,NCT00977080,Italy,Europe,ITA
+669,NCT00977080,Netherlands,Europe,NLD
+669,NCT00977080,Portugal,Europe,PRT
+669,NCT00977080,Russian Federation,North Asia,RUS
+669,NCT00977080,Spain,Europe,ESP
+669,NCT00977080,Sweden,Europe,SWE
+669,NCT00977080,United Kingdom,Europe,GBR
+669,NCT00977080,United States,North America,USA
+670,NCT00982722,Sweden,Europe,SWE
+676,NCT00990704,Japan,East Asia,JPN
+681,NCT00995163,Japan,East Asia,JPN
+684,NCT00999037,United States,North America,USA
+691,NCT01012414,United States,North America,USA
 694,NCT01025128,Israel,Middle East,ISR
-700,NCT01039818,Brazil,South America,BRA
+701,NCT01039818,Brazil,South America,BRA
 708,NCT01056419,Turkey,Middle East,TUR
 713,NCT01057732,Israel,Middle East,ISR
-715,NCT01060982,France,Europe,FRA
-718,NCT01073462,Austria,Europe,AUT
-722,NCT01081665,Greece,Europe,GRC
+716,NCT01060982,France,Europe,FRA
+717,NCT01073462,Austria,Europe,AUT
+721,NCT01081665,Greece,Europe,GRC
 725,NCT01083186,Greece,Europe,GRC
 727,NCT01083550,Canada,North America,CAN
-729,NCT01083849,Austria,Europe,AUT
-729,NCT01083849,Germany,Europe,DEU
-732,NCT01084356,Israel,Middle East,ISR
-737,NCT01087619,Sweden,Europe,SWE
-738,NCT01089335,Sweden,Europe,SWE
-745,NCT01100723,United States,North America,USA
+731,NCT01083849,Austria,Europe,AUT
+731,NCT01083849,Germany,Europe,DEU
+733,NCT01084356,Israel,Middle East,ISR
+736,NCT01087619,Sweden,Europe,SWE
+739,NCT01089335,Sweden,Europe,SWE
+744,NCT01100723,United States,North America,USA
 748,NCT01101113,"Korea, Republic of",East Asia,KOR
 753,NCT01102127,Spain,Europe,ESP
-757,NCT01103206,France,Europe,FRA
+758,NCT01103206,France,Europe,FRA
 763,NCT01106443,Canada,North America,CAN
 766,NCT01109420,United States,North America,USA
 767,NCT01114503,United Kingdom,Europe,GBR
-772,NCT01115543,Thailand,Southest Asia,THA
+771,NCT01115543,Thailand,Southest Asia,THA
 774,NCT01118065,Netherlands,Europe,NLD
-777,NCT01127503,United States,North America,USA
-781,NCT01134315,United States,North America,USA
-786,NCT01134549,Australia,Pacifica,AUS
+776,NCT01127503,United States,North America,USA
+782,NCT01134315,United States,North America,USA
+784,NCT01134549,Australia,Pacifica,AUS
 789,NCT01134562,Australia,Pacifica,AUS
 789,NCT01134562,United States,North America,USA
 790,NCT01137097,"Korea, Republic of",East Asia,KOR
-793,NCT01138475,United States,North America,USA
+791,NCT01138475,United States,North America,USA
 801,NCT01149291,Turkey,Middle East,TUR
 804,NCT01153360,"Korea, Republic of",East Asia,KOR
-806,NCT01163565,Canada,North America,CAN
+807,NCT01163565,Canada,North America,CAN
 813,NCT01164176,"Korea, Republic of",East Asia,KOR
-816,NCT01167309,Germany,Europe,DEU
-816,NCT01167309,Poland,Europe,POL
+814,NCT01167309,Germany,Europe,DEU
+814,NCT01167309,Poland,Europe,POL
 818,NCT01171690,United States,North America,USA
-822,NCT01178450,Spain,Europe,ESP
+821,NCT01178450,Spain,Europe,ESP
 826,NCT01182285,United States,North America,USA
 827,NCT01182584,Taiwan,East Asia,TWN
 837,NCT01208051,Canada,North America,CAN
 837,NCT01208051,United States,North America,USA
-842,NCT01219855,United States,North America,USA
+840,NCT01219855,United States,North America,USA
 845,NCT01220050,Italy,Europe,ITA
-848,NCT01222026,Austria,Europe,AUT
-854,NCT01224782,Bulgaria,Europe,BGR
-854,NCT01224782,Czech Republic,Europe,CZE
-854,NCT01224782,Romania,Europe,ROU
+849,NCT01222026,Austria,Europe,AUT
+853,NCT01224782,Bulgaria,Europe,BGR
+853,NCT01224782,Czech Republic,Europe,CZE
+853,NCT01224782,Romania,Europe,ROU
 856,NCT01225016,United States,North America,USA
-862,NCT01227499,China,East Asia,CHN
-867,NCT01228786,India,South Asia,IND
+865,NCT01227499,China,East Asia,CHN
+866,NCT01228786,India,South Asia,IND
 869,NCT01229865,United States,North America,USA
-875,NCT01254565,United States,North America,USA
-879,NCT01265992,Sweden,Europe,SWE
+876,NCT01254565,United States,North America,USA
+881,NCT01265992,Sweden,Europe,SWE
 884,NCT01269749,United States,North America,USA
-889,NCT01270425,Israel,Middle East,ISR
-894,NCT01272414,Canada,North America,CAN
-898,NCT01273597,Hungary,Europe,HUN
-909,NCT01286753,France,Europe,FRA
-909,NCT01286753,Italy,Europe,ITA
-909,NCT01286753,Netherlands,Europe,NLD
-909,NCT01286753,United States,North America,USA
+890,NCT01270425,Israel,Middle East,ISR
+893,NCT01272414,Canada,North America,CAN
+897,NCT01273597,Hungary,Europe,HUN
+908,NCT01286753,France,Europe,FRA
+908,NCT01286753,Italy,Europe,ITA
+908,NCT01286753,Netherlands,Europe,NLD
+908,NCT01286753,United States,North America,USA
 911,NCT01290029,Germany,Europe,DEU
 911,NCT01290029,United Kingdom,Europe,GBR
 911,NCT01290029,United States,North America,USA
 913,NCT01291498,United Kingdom,Europe,GBR
 917,NCT01295333,France,Europe,FRA
-922,NCT01297699,Spain,Europe,ESP
-928,NCT01306656,United States,North America,USA
+923,NCT01297699,Spain,Europe,ESP
+929,NCT01306656,United States,North America,USA
 931,NCT01306916,United States,North America,USA
 933,NCT01307761,Taiwan,East Asia,TWN
 935,NCT01308320,"Korea, Republic of",East Asia,KOR
 939,NCT01320813,France,Europe,FRA
 945,NCT01322165,United States,North America,USA
-950,NCT01329666,United States,North America,USA
+948,NCT01329666,United States,North America,USA
 953,NCT01335802,Denmark,Europe,DNK
 954,NCT01335828,France,Europe,FRA
-958,NCT01341782,Japan,East Asia,JPN
+959,NCT01341782,Japan,East Asia,JPN
 960,NCT01341886,"Iran, Islamic Republic of",Middle East,IRN
-968,NCT01368042,Greece,Europe,GRC
+970,NCT01368042,Greece,Europe,GRC
 972,NCT01369953,United States,North America,USA
 986,NCT01382966,Turkey,Middle East,TUR
-987,NCT01384786,Denmark,Europe,DNK
+988,NCT01384786,Denmark,Europe,DNK
 991,NCT01395134,Poland,Europe,POL
 992,NCT01396733,"Korea, Republic of",East Asia,KOR
 995,NCT01398774,United States,North America,USA
-997,NCT01401478,Russian Federation,North Asia,RUS
-1000,NCT01408368,Poland,Europe,POL
+996,NCT01401478,Russian Federation,North Asia,RUS
+1001,NCT01408368,Poland,Europe,POL
 1003,NCT01409798,United States,North America,USA
-1008,NCT01413113,United States,North America,USA
-1017,NCT01421407,Italy,Europe,ITA
-1017,NCT01421407,Spain,Europe,ESP
-1019,NCT01426724,United States,North America,USA
-1024,NCT01428167,United States,North America,USA
+1007,NCT01413113,United States,North America,USA
+1015,NCT01421407,Italy,Europe,ITA
+1015,NCT01421407,Spain,Europe,ESP
+1020,NCT01426724,United States,North America,USA
+1025,NCT01428167,United States,North America,USA
 1028,NCT01436994,United Kingdom,Europe,GBR
-1032,NCT01439867,Belgium,Europe,BEL
-1032,NCT01439867,Czechia,Europe,CZE
-1032,NCT01439867,France,Europe,FRA
-1032,NCT01439867,Germany,Europe,DEU
-1032,NCT01439867,Hungary,Europe,HUN
-1032,NCT01439867,Italy,Europe,ITA
-1032,NCT01439867,Mexico,North America,MEX
-1032,NCT01439867,Netherlands,Europe,NLD
-1032,NCT01439867,New Zealand,Pacifica,NZL
-1032,NCT01439867,Poland,Europe,POL
-1032,NCT01439867,Russian Federation,North Asia,RUS
-1032,NCT01439867,Slovakia,Europe,SVK
-1032,NCT01439867,United States,North America,USA
-1036,NCT01441154,United States,North America,USA
-1038,NCT01447368,Hong Kong,East Asia,HKG
+1033,NCT01439867,Belgium,Europe,BEL
+1033,NCT01439867,Czechia,Europe,CZE
+1033,NCT01439867,France,Europe,FRA
+1033,NCT01439867,Germany,Europe,DEU
+1033,NCT01439867,Hungary,Europe,HUN
+1033,NCT01439867,Italy,Europe,ITA
+1033,NCT01439867,Mexico,North America,MEX
+1033,NCT01439867,Netherlands,Europe,NLD
+1033,NCT01439867,New Zealand,Pacifica,NZL
+1033,NCT01439867,Poland,Europe,POL
+1033,NCT01439867,Russian Federation,North Asia,RUS
+1033,NCT01439867,Slovakia,Europe,SVK
+1033,NCT01439867,United States,North America,USA
+1035,NCT01441154,United States,North America,USA
+1039,NCT01447368,Hong Kong,East Asia,HKG
 1046,NCT01458600,Sweden,Europe,SWE
 1050,NCT01460030,Japan,East Asia,JPN
 1056,NCT01465867,Italy,Europe,ITA
 1057,NCT01471288,"Iran, Islamic Republic of",Middle East,IRN
 1060,NCT01479088,Italy,Europe,ITA
-1063,NCT01484379,Israel,Middle East,ISR
+1064,NCT01484379,Israel,Middle East,ISR
 1065,NCT01486667,Saudi Arabia,Middle East,SAU
 1082,NCT01528904,Serbia,Europe,SRB
-1085,NCT01530919,United States,North America,USA
+1086,NCT01530919,United States,North America,USA
 1087,NCT01534169,China,East Asia,CHN
 1093,NCT01539486,United States,North America,USA
 1094,NCT01539499,United States,North America,USA
 1096,NCT01545622,United States,North America,USA
 1102,NCT01558115,United States,North America,USA
 1103,NCT01560299,"Iran, Islamic Republic of",Middle East,IRN
-1108,NCT01571843,United States,North America,USA
-1112,NCT01574287,United States,North America,USA
+1107,NCT01571843,United States,North America,USA
+1113,NCT01574287,United States,North America,USA
 1114,NCT01574859,Denmark,Europe,DNK
 1118,NCT01579344,Brazil,South America,BRA
 1119,NCT01579539,Austria,Europe,AUT
-1128,NCT01598727,United Kingdom,Europe,GBR
+1127,NCT01598727,United Kingdom,Europe,GBR
 1129,NCT01599273,"Korea, Republic of",East Asia,KOR
 1133,NCT01609946,Germany,Europe,DEU
 1135,NCT01611896,Denmark,Europe,DNK
-1137,NCT01616108,United States,North America,USA
+1136,NCT01616108,United States,North America,USA
 1140,NCT01617694,"Korea, Republic of",East Asia,KOR
-1144,NCT01633853,China,East Asia,CHN
+1145,NCT01633853,China,East Asia,CHN
 1146,NCT01638533,Canada,North America,CAN
 1146,NCT01638533,United States,North America,USA
 1150,NCT01647503,India,South Asia,IND
 1155,NCT01648569,"Korea, Republic of",East Asia,KOR
-1156,NCT01649206,Italy,Europe,ITA
+1157,NCT01649206,Italy,Europe,ITA
 1158,NCT01651000,United States,North America,USA
-1162,NCT01653379,United States,North America,USA
+1161,NCT01653379,United States,North America,USA
 1164,NCT01655719,United States,North America,USA
 1170,NCT01660126,United Kingdom,Europe,GBR
 1172,NCT01661179,Japan,East Asia,JPN
-1173,NCT01665651,China,East Asia,CHN
-1177,NCT01675089,Brazil,South America,BRA
+1174,NCT01665651,China,East Asia,CHN
+1178,NCT01675089,Brazil,South America,BRA
 1180,NCT01690806,Italy,Europe,ITA
 1187,NCT01704079,United States,North America,USA
 1189,NCT01704586,Germany,Europe,DEU
-1197,NCT01725113,United States,North America,USA
-1201,NCT01727973,China,East Asia,CHN
+1199,NCT01725113,United States,North America,USA
+1202,NCT01727973,China,East Asia,CHN
 1208,NCT01738243,United States,North America,USA
 1213,NCT01739972,United States,North America,USA
 1218,NCT01744769,"Korea, Republic of",East Asia,KOR
 1221,NCT01750593,Turkey,Middle East,TUR
 1224,NCT01756534,Israel,Middle East,ISR
-1227,NCT01757834,United States,North America,USA
+1226,NCT01757834,United States,North America,USA
 1230,NCT01760421,Taiwan,East Asia,TWN
 1242,NCT01776502,France,Europe,FRA
-1244,NCT01778400,"Korea, Republic of",East Asia,KOR
+1243,NCT01778400,"Korea, Republic of",East Asia,KOR
 1245,NCT01779817,France,Europe,FRA
 1248,NCT01781923,United States,North America,USA
-1250,NCT01783002,Canada,North America,CAN
-1254,NCT01785849,Australia,Pacifica,AUS
-1254,NCT01785849,Austria,Europe,AUT
-1254,NCT01785849,Belgium,Europe,BEL
-1254,NCT01785849,Canada,North America,CAN
-1254,NCT01785849,Czechia,Europe,CZE
-1254,NCT01785849,France,Europe,FRA
-1254,NCT01785849,Germany,Europe,DEU
-1254,NCT01785849,Hungary,Europe,HUN
-1254,NCT01785849,Israel,Middle East,ISR
-1254,NCT01785849,Italy,Europe,ITA
-1254,NCT01785849,Poland,Europe,POL
-1254,NCT01785849,Russian Federation,North Asia,RUS
-1254,NCT01785849,Spain,Europe,ESP
-1254,NCT01785849,United Kingdom,Europe,GBR
-1254,NCT01785849,United States,North America,USA
-1257,NCT01785875,Australia,Pacifica,AUS
-1257,NCT01785875,Austria,Europe,AUT
-1257,NCT01785875,Belgium,Europe,BEL
-1257,NCT01785875,Canada,North America,CAN
-1257,NCT01785875,Czechia,Europe,CZE
-1257,NCT01785875,France,Europe,FRA
-1257,NCT01785875,Germany,Europe,DEU
-1257,NCT01785875,Hungary,Europe,HUN
-1257,NCT01785875,Israel,Middle East,ISR
-1257,NCT01785875,Italy,Europe,ITA
-1257,NCT01785875,Netherlands,Europe,NLD
-1257,NCT01785875,Poland,Europe,POL
-1257,NCT01785875,Russian Federation,North Asia,RUS
-1257,NCT01785875,Spain,Europe,ESP
-1257,NCT01785875,Sweden,Europe,SWE
-1257,NCT01785875,United Kingdom,Europe,GBR
-1257,NCT01785875,United States,North America,USA
-1259,NCT01788046,Australia,Pacifica,AUS
-1259,NCT01788046,Belgium,Europe,BEL
-1259,NCT01788046,Canada,North America,CAN
-1259,NCT01788046,Czechia,Europe,CZE
-1259,NCT01788046,France,Europe,FRA
-1259,NCT01788046,Germany,Europe,DEU
-1259,NCT01788046,Hungary,Europe,HUN
-1259,NCT01788046,Israel,Middle East,ISR
-1259,NCT01788046,Italy,Europe,ITA
-1259,NCT01788046,Netherlands,Europe,NLD
-1259,NCT01788046,Poland,Europe,POL
-1259,NCT01788046,Russian Federation,North Asia,RUS
-1259,NCT01788046,Spain,Europe,ESP
-1259,NCT01788046,Sweden,Europe,SWE
-1259,NCT01788046,United States,North America,USA
+1252,NCT01783002,Canada,North America,CAN
+1255,NCT01785849,Australia,Pacifica,AUS
+1255,NCT01785849,Austria,Europe,AUT
+1255,NCT01785849,Belgium,Europe,BEL
+1255,NCT01785849,Canada,North America,CAN
+1255,NCT01785849,Czechia,Europe,CZE
+1255,NCT01785849,France,Europe,FRA
+1255,NCT01785849,Germany,Europe,DEU
+1255,NCT01785849,Hungary,Europe,HUN
+1255,NCT01785849,Israel,Middle East,ISR
+1255,NCT01785849,Italy,Europe,ITA
+1255,NCT01785849,Poland,Europe,POL
+1255,NCT01785849,Russian Federation,North Asia,RUS
+1255,NCT01785849,Spain,Europe,ESP
+1255,NCT01785849,United Kingdom,Europe,GBR
+1255,NCT01785849,United States,North America,USA
+1256,NCT01785875,Australia,Pacifica,AUS
+1256,NCT01785875,Austria,Europe,AUT
+1256,NCT01785875,Belgium,Europe,BEL
+1256,NCT01785875,Canada,North America,CAN
+1256,NCT01785875,Czechia,Europe,CZE
+1256,NCT01785875,France,Europe,FRA
+1256,NCT01785875,Germany,Europe,DEU
+1256,NCT01785875,Hungary,Europe,HUN
+1256,NCT01785875,Israel,Middle East,ISR
+1256,NCT01785875,Italy,Europe,ITA
+1256,NCT01785875,Netherlands,Europe,NLD
+1256,NCT01785875,Poland,Europe,POL
+1256,NCT01785875,Russian Federation,North Asia,RUS
+1256,NCT01785875,Spain,Europe,ESP
+1256,NCT01785875,Sweden,Europe,SWE
+1256,NCT01785875,United Kingdom,Europe,GBR
+1256,NCT01785875,United States,North America,USA
+1261,NCT01788046,Australia,Pacifica,AUS
+1261,NCT01788046,Belgium,Europe,BEL
+1261,NCT01788046,Canada,North America,CAN
+1261,NCT01788046,Czechia,Europe,CZE
+1261,NCT01788046,France,Europe,FRA
+1261,NCT01788046,Germany,Europe,DEU
+1261,NCT01788046,Hungary,Europe,HUN
+1261,NCT01788046,Israel,Middle East,ISR
+1261,NCT01788046,Italy,Europe,ITA
+1261,NCT01788046,Netherlands,Europe,NLD
+1261,NCT01788046,Poland,Europe,POL
+1261,NCT01788046,Russian Federation,North Asia,RUS
+1261,NCT01788046,Spain,Europe,ESP
+1261,NCT01788046,Sweden,Europe,SWE
+1261,NCT01788046,United States,North America,USA
 1262,NCT01788982,Belgium,Europe,BEL
 1262,NCT01788982,Denmark,Europe,DNK
 1262,NCT01788982,France,Europe,FRA
@@ -408,7 +408,7 @@ index,nct_id,location,continent,iso
 1268,NCT01798966,United States,North America,USA
 1273,NCT01805856,Japan,East Asia,JPN
 1274,NCT01809444,China,East Asia,CHN
-1280,NCT01811212,United States,North America,USA
+1281,NCT01811212,United States,North America,USA
 1287,NCT01821781,United States,North America,USA
 1288,NCT01830504,France,Europe,FRA
 1290,NCT01832753,United States,North America,USA
@@ -420,14 +420,14 @@ index,nct_id,location,continent,iso
 1302,NCT01853579,Switzerland,Europe,CHE
 1303,NCT01856920,United States,North America,USA
 1306,NCT01868750,United States,North America,USA
-1309,NCT01868997,Germany,Europe,DEU
-1309,NCT01868997,Italy,Europe,ITA
-1309,NCT01868997,United Kingdom,Europe,GBR
-1309,NCT01868997,United States,North America,USA
+1308,NCT01868997,Germany,Europe,DEU
+1308,NCT01868997,Italy,Europe,ITA
+1308,NCT01868997,United Kingdom,Europe,GBR
+1308,NCT01868997,United States,North America,USA
 1315,NCT01880203,France,Europe,FRA
 1321,NCT01885533,United Kingdom,Europe,GBR
-1326,NCT01889134,Poland,Europe,POL
-1327,NCT01893450,Mexico,North America,MEX
+1324,NCT01889134,Poland,Europe,POL
+1328,NCT01893450,Mexico,North America,MEX
 1332,NCT01896232,Austria,Europe,AUT
 1332,NCT01896232,Belgium,Europe,BEL
 1332,NCT01896232,Canada,North America,CAN
@@ -450,11 +450,11 @@ index,nct_id,location,continent,iso
 1332,NCT01896232,Switzerland,Europe,CHE
 1332,NCT01896232,Turkey,Middle East,TUR
 1332,NCT01896232,United States,North America,USA
-1346,NCT01922843,United States,North America,USA
-1348,NCT01927406,United States,North America,USA
-1353,NCT01927887,United States,North America,USA
-1354,NCT01932970,United States,North America,USA
-1362,NCT01939977,Spain,Europe,ESP
+1344,NCT01922843,United States,North America,USA
+1347,NCT01927406,United States,North America,USA
+1352,NCT01927887,United States,North America,USA
+1355,NCT01932970,United States,North America,USA
+1361,NCT01939977,Spain,Europe,ESP
 1364,NCT01945762,Belgium,Europe,BEL
 1364,NCT01945762,France,Europe,FRA
 1364,NCT01945762,Germany,Europe,DEU
@@ -466,106 +466,106 @@ index,nct_id,location,continent,iso
 1366,NCT01950260,United States,North America,USA
 1373,NCT01969019,China,East Asia,CHN
 1379,NCT01985204,Morocco,,
-1383,NCT01996072,United States,North America,USA
+1381,NCT01996072,United States,North America,USA
 1385,NCT01999790,Brazil,South America,BRA
 1397,NCT02017080,Serbia,Europe,SRB
 1400,NCT02024906,United States,North America,USA
 1401,NCT02041260,United States,North America,USA
-1403,NCT02054572,United States,North America,USA
+1404,NCT02054572,United States,North America,USA
 1405,NCT02055989,United Kingdom,Europe,GBR
 1407,NCT02056730,Thailand,Southest Asia,THA
 1409,NCT02059655,United Kingdom,Europe,GBR
 1413,NCT02061111,Denmark,Europe,DNK
 1415,NCT02070211,Holy See (Vatican City State),Europe,VAT
-1419,NCT02089542,United Kingdom,Europe,GBR
+1420,NCT02089542,United Kingdom,Europe,GBR
 1422,NCT02090907,"Iran, Islamic Republic of",Middle East,IRN
-1424,NCT02102204,Australia,Pacifica,AUS
-1424,NCT02102204,Austria,Europe,AUT
-1424,NCT02102204,Belgium,Europe,BEL
-1424,NCT02102204,Canada,North America,CAN
-1424,NCT02102204,Czechia,Europe,CZE
-1424,NCT02102204,Denmark,Europe,DNK
-1424,NCT02102204,France,Europe,FRA
-1424,NCT02102204,Germany,Europe,DEU
-1424,NCT02102204,Greece,Europe,GRC
-1424,NCT02102204,Hungary,Europe,HUN
-1424,NCT02102204,Israel,Middle East,ISR
-1424,NCT02102204,Italy,Europe,ITA
-1424,NCT02102204,Latvia,Europe,LVA
-1424,NCT02102204,Lithuania,Europe,LTU
-1424,NCT02102204,Netherlands,Europe,NLD
-1424,NCT02102204,New Zealand,Pacifica,NZL
-1424,NCT02102204,Poland,Europe,POL
-1424,NCT02102204,Portugal,Europe,PRT
-1424,NCT02102204,Russian Federation,North Asia,RUS
-1424,NCT02102204,Spain,Europe,ESP
-1424,NCT02102204,Sweden,Europe,SWE
-1424,NCT02102204,Switzerland,Europe,CHE
-1424,NCT02102204,Turkey,Middle East,TUR
-1424,NCT02102204,United States,North America,USA
-1428,NCT02107794,United States,North America,USA
+1425,NCT02102204,Australia,Pacifica,AUS
+1425,NCT02102204,Austria,Europe,AUT
+1425,NCT02102204,Belgium,Europe,BEL
+1425,NCT02102204,Canada,North America,CAN
+1425,NCT02102204,Czechia,Europe,CZE
+1425,NCT02102204,Denmark,Europe,DNK
+1425,NCT02102204,France,Europe,FRA
+1425,NCT02102204,Germany,Europe,DEU
+1425,NCT02102204,Greece,Europe,GRC
+1425,NCT02102204,Hungary,Europe,HUN
+1425,NCT02102204,Israel,Middle East,ISR
+1425,NCT02102204,Italy,Europe,ITA
+1425,NCT02102204,Latvia,Europe,LVA
+1425,NCT02102204,Lithuania,Europe,LTU
+1425,NCT02102204,Netherlands,Europe,NLD
+1425,NCT02102204,New Zealand,Pacifica,NZL
+1425,NCT02102204,Poland,Europe,POL
+1425,NCT02102204,Portugal,Europe,PRT
+1425,NCT02102204,Russian Federation,North Asia,RUS
+1425,NCT02102204,Spain,Europe,ESP
+1425,NCT02102204,Sweden,Europe,SWE
+1425,NCT02102204,Switzerland,Europe,CHE
+1425,NCT02102204,Turkey,Middle East,TUR
+1425,NCT02102204,United States,North America,USA
+1427,NCT02107794,United States,North America,USA
 1430,NCT02109250,Belgium,Europe,BEL
 1431,NCT02112370,"Korea, Republic of",East Asia,KOR
 1436,NCT02114619,"Iran, Islamic Republic of",Middle East,IRN
 1442,NCT02126683,Taiwan,East Asia,TWN
-1444,NCT02133404,Japan,East Asia,JPN
-1448,NCT02138214,United States,North America,USA
-1451,NCT02138838,Belgium,Europe,BEL
-1451,NCT02138838,Czechia,Europe,CZE
-1451,NCT02138838,France,Europe,FRA
-1451,NCT02138838,Germany,Europe,DEU
-1451,NCT02138838,Greece,Europe,GRC
-1451,NCT02138838,Hungary,Europe,HUN
-1451,NCT02138838,Italy,Europe,ITA
-1451,NCT02138838,Lithuania,Europe,LTU
-1451,NCT02138838,New Zealand,Pacifica,NZL
-1451,NCT02138838,Poland,Europe,POL
-1451,NCT02138838,Portugal,Europe,PRT
-1451,NCT02138838,Russian Federation,North Asia,RUS
-1451,NCT02138838,Slovakia,Europe,SVK
-1451,NCT02138838,Spain,Europe,ESP
-1451,NCT02138838,Ukraine,Europe,UKR
-1451,NCT02138838,United States,North America,USA
-1453,NCT02140476,Brazil,South America,BRA
-1453,NCT02140476,Mexico,North America,MEX
-1456,NCT02143271,Japan,East Asia,JPN
+1446,NCT02133404,Japan,East Asia,JPN
+1447,NCT02138214,United States,North America,USA
+1449,NCT02138838,Belgium,Europe,BEL
+1449,NCT02138838,Czechia,Europe,CZE
+1449,NCT02138838,France,Europe,FRA
+1449,NCT02138838,Germany,Europe,DEU
+1449,NCT02138838,Greece,Europe,GRC
+1449,NCT02138838,Hungary,Europe,HUN
+1449,NCT02138838,Italy,Europe,ITA
+1449,NCT02138838,Lithuania,Europe,LTU
+1449,NCT02138838,New Zealand,Pacifica,NZL
+1449,NCT02138838,Poland,Europe,POL
+1449,NCT02138838,Portugal,Europe,PRT
+1449,NCT02138838,Russian Federation,North Asia,RUS
+1449,NCT02138838,Slovakia,Europe,SVK
+1449,NCT02138838,Spain,Europe,ESP
+1449,NCT02138838,Ukraine,Europe,UKR
+1449,NCT02138838,United States,North America,USA
+1454,NCT02140476,Brazil,South America,BRA
+1454,NCT02140476,Mexico,North America,MEX
+1457,NCT02143271,Japan,East Asia,JPN
 1458,NCT02143726,United States,North America,USA
-1462,NCT02147782,China,East Asia,CHN
-1463,NCT02150772,Denmark,Europe,DNK
+1461,NCT02147782,China,East Asia,CHN
+1464,NCT02150772,Denmark,Europe,DNK
 1469,NCT02152995,United States,North America,USA
 1472,NCT02155049,Israel,Middle East,ISR
 1477,NCT02169687,France,Europe,FRA
 1482,NCT02186405,France,Europe,FRA
-1490,NCT02194920,Italy,Europe,ITA
-1494,NCT02203682,China,East Asia,CHN
-1499,NCT02205801,United States,North America,USA
+1491,NCT02194920,Italy,Europe,ITA
+1497,NCT02203682,China,East Asia,CHN
+1502,NCT02205801,United States,North America,USA
 1508,NCT02210741,Taiwan,East Asia,TWN
-1513,NCT02216656,Japan,East Asia,JPN
+1511,NCT02216656,Japan,East Asia,JPN
 1519,NCT02227264,Sweden,Europe,SWE
 1525,NCT02246504,Bulgaria,Europe,BGR
 1527,NCT02258347,Italy,Europe,ITA
 1529,NCT02268734,Italy,Europe,ITA
 1531,NCT02273570,Italy,Europe,ITA
-1535,NCT02274623,United States,North America,USA
+1534,NCT02274623,United States,North America,USA
 1541,NCT02289144,United States,North America,USA
 1543,NCT02290704,China,East Asia,CHN
-1554,NCT02316691,United States,North America,USA
+1555,NCT02316691,United States,North America,USA
 1558,NCT02316743,Canada,North America,CAN
 1565,NCT02319538,Norway,Europe,NOR
 1570,NCT02332135,China,East Asia,CHN
-1573,NCT02338934,Malaysia,Southest Asia,MYS
-1580,NCT02341417,Belgium,Europe,BEL
-1580,NCT02341417,Czechia,Europe,CZE
-1580,NCT02341417,France,Europe,FRA
-1580,NCT02341417,Germany,Europe,DEU
-1580,NCT02341417,Greece,Europe,GRC
-1580,NCT02341417,Hungary,Europe,HUN
-1580,NCT02341417,Italy,Europe,ITA
-1580,NCT02341417,Poland,Europe,POL
-1580,NCT02341417,Russian Federation,North Asia,RUS
-1580,NCT02341417,Ukraine,Europe,UKR
-1580,NCT02341417,United States,North America,USA
-1583,NCT02352766,United States,North America,USA
+1572,NCT02338934,Malaysia,Southest Asia,MYS
+1579,NCT02341417,Belgium,Europe,BEL
+1579,NCT02341417,Czechia,Europe,CZE
+1579,NCT02341417,France,Europe,FRA
+1579,NCT02341417,Germany,Europe,DEU
+1579,NCT02341417,Greece,Europe,GRC
+1579,NCT02341417,Hungary,Europe,HUN
+1579,NCT02341417,Italy,Europe,ITA
+1579,NCT02341417,Poland,Europe,POL
+1579,NCT02341417,Russian Federation,North Asia,RUS
+1579,NCT02341417,Ukraine,Europe,UKR
+1579,NCT02341417,United States,North America,USA
+1584,NCT02352766,United States,North America,USA
 1587,NCT02373995,Italy,Europe,ITA
 1598,NCT02378298,Sweden,Europe,SWE
 1602,NCT02381457,Australia,Pacifica,AUS
@@ -576,13 +576,13 @@ index,nct_id,location,continent,iso
 1602,NCT02381457,United States,North America,USA
 1609,NCT02384668,Denmark,Europe,DNK
 1614,NCT02393183,"Iran, Islamic Republic of",Middle East,IRN
-1618,NCT02393690,United States,North America,USA
+1619,NCT02393690,United States,North America,USA
 1621,NCT02397109,France,Europe,FRA
 1625,NCT02398721,Hong Kong,East Asia,HKG
 1627,NCT02399475,United States,North America,USA
 1630,NCT02408887,United States,North America,USA
-1633,NCT02410928,Turkey,Middle East,TUR
-1638,NCT02417389,Italy,Europe,ITA
+1632,NCT02410928,Turkey,Middle East,TUR
+1639,NCT02417389,Italy,Europe,ITA
 1643,NCT02422368,"Iran, Islamic Republic of",Middle East,IRN
 1647,NCT02430584,United States,North America,USA
 1651,NCT02432274,France,Europe,FRA
@@ -591,61 +591,61 @@ index,nct_id,location,continent,iso
 1651,NCT02432274,Spain,Europe,ESP
 1651,NCT02432274,United Kingdom,Europe,GBR
 1651,NCT02432274,United States,North America,USA
-1653,NCT02432599,France,Europe,FRA
-1657,NCT02440581,United States,North America,USA
-1663,NCT02460328,Thailand,Southest Asia,THA
+1652,NCT02432599,France,Europe,FRA
+1656,NCT02440581,United States,North America,USA
+1662,NCT02460328,Thailand,Southest Asia,THA
 1664,NCT02462512,"Korea, Republic of",East Asia,KOR
 1667,NCT02463409,United States,North America,USA
-1670,NCT02464072,Brazil,South America,BRA
+1668,NCT02464072,Brazil,South America,BRA
 1676,NCT02491502,Bulgaria,Europe,BGR
-1678,NCT02491567,Greece,Europe,GRC
+1680,NCT02491567,Greece,Europe,GRC
 1686,NCT02500342,Ireland,Europe,IRL
 1686,NCT02500342,Switzerland,Europe,CHE
-1691,NCT02516774,France,Europe,FRA
-1694,NCT02523209,France,Europe,FRA
-1698,NCT02525796,United States,North America,USA
+1690,NCT02516774,France,Europe,FRA
+1693,NCT02523209,France,Europe,FRA
+1700,NCT02525796,United States,North America,USA
 1701,NCT02535975,"Korea, Republic of",East Asia,KOR
-1707,NCT02536287,China,East Asia,CHN
-1709,NCT02539498,France,Europe,FRA
+1705,NCT02536287,China,East Asia,CHN
+1710,NCT02539498,France,Europe,FRA
 1712,NCT02549391,Japan,East Asia,JPN
-1715,NCT02549404,Japan,East Asia,JPN
-1719,NCT02549417,Japan,East Asia,JPN
-1721,NCT02551120,Denmark,Europe,DNK
-1725,NCT02556216,Germany,Europe,DEU
+1716,NCT02549404,Japan,East Asia,JPN
+1718,NCT02549417,Japan,East Asia,JPN
+1722,NCT02551120,Denmark,Europe,DNK
+1727,NCT02556216,Germany,Europe,DEU
 1740,NCT02609685,United States,North America,USA
 1742,NCT02620085,Taiwan,East Asia,TWN
-1757,NCT02652884,Argentina,South America,ARG
+1756,NCT02652884,Argentina,South America,ARG
 1762,NCT02658552,Hong Kong,East Asia,HKG
 1764,NCT02665325,China,East Asia,CHN
 1765,NCT02681328,United States,North America,USA
 1767,NCT02685514,Hong Kong,East Asia,HKG
 1773,NCT02693808,Norway,Europe,NOR
-1779,NCT02697578,Spain,Europe,ESP
+1778,NCT02697578,Spain,Europe,ESP
 1783,NCT02708368,Germany,Europe,DEU
 1786,NCT02710799,Brazil,South America,BRA
 1793,NCT02713256,Germany,Europe,DEU
 1793,NCT02713256,United States,North America,USA
-1798,NCT02714946,Italy,Europe,ITA
+1797,NCT02714946,Italy,Europe,ITA
 1799,NCT02721992,Italy,Europe,ITA
 1807,NCT02725879,Greece,Europe,GRC
 1811,NCT02727738,Italy,Europe,ITA
 1820,NCT02764554,"Korea, Republic of",East Asia,KOR
-1830,NCT02772705,China,East Asia,CHN
-1834,NCT02778412,United States,North America,USA
+1831,NCT02772705,China,East Asia,CHN
+1836,NCT02778412,United States,North America,USA
 1839,NCT02784223,France,Europe,FRA
 1842,NCT02787486,United States,North America,USA
-1843,NCT02798965,France,Europe,FRA
+1844,NCT02798965,France,Europe,FRA
 1849,NCT02824016,France,Europe,FRA
 1850,NCT02824718,France,Europe,FRA
-1853,NCT02830789,Denmark,Europe,DNK
-1859,NCT02833857,Belgium,Europe,BEL
-1859,NCT02833857,Germany,Europe,DEU
-1859,NCT02833857,Lithuania,Europe,LTU
-1859,NCT02833857,Poland,Europe,POL
-1859,NCT02833857,United Kingdom,Europe,GBR
-1859,NCT02833857,United States,North America,USA
+1855,NCT02830789,Denmark,Europe,DNK
+1858,NCT02833857,Belgium,Europe,BEL
+1858,NCT02833857,Germany,Europe,DEU
+1858,NCT02833857,Lithuania,Europe,LTU
+1858,NCT02833857,Poland,Europe,POL
+1858,NCT02833857,United Kingdom,Europe,GBR
+1858,NCT02833857,United States,North America,USA
 1863,NCT02839655,France,Europe,FRA
-1865,NCT02843542,Israel,Middle East,ISR
+1864,NCT02843542,Israel,Middle East,ISR
 1867,NCT02845336,United States,North America,USA
 1871,NCT02854345,France,Europe,FRA
 1875,NCT02859896,Chile,South America,CHL
@@ -653,34 +653,34 @@ index,nct_id,location,continent,iso
 1888,NCT02890472,France,Europe,FRA
 1894,NCT02895906,United States,North America,USA
 1897,NCT02904330,United Kingdom,Europe,GBR
-1908,NCT02946918,United States,North America,USA
-1915,NCT02953288,China,East Asia,CHN
+1909,NCT02946918,United States,North America,USA
+1914,NCT02953288,China,East Asia,CHN
 1917,NCT02966093,China,East Asia,CHN
-1919,NCT02973802,United Kingdom,Europe,GBR
-1921,NCT02973997,United States,North America,USA
+1918,NCT02973802,United Kingdom,Europe,GBR
+1922,NCT02973997,United States,North America,USA
 1928,NCT02989103,United States,North America,USA
 1930,NCT02989428,Denmark,Europe,DNK
 1937,NCT03002623,United States,North America,USA
 1940,NCT03004209,"Korea, Republic of",East Asia,KOR
-1944,NCT03009357,"Korea, Republic of",East Asia,KOR
-1949,NCT03011736,United States,North America,USA
+1948,NCT03009357,"Korea, Republic of",East Asia,KOR
+1950,NCT03011736,United States,North America,USA
 1952,NCT03012620,France,Europe,FRA
 1953,NCT03013257,Hong Kong,East Asia,HKG
 1957,NCT03023748,Hong Kong,East Asia,HKG
-1962,NCT03027557,Denmark,Europe,DNK
+1964,NCT03027557,Denmark,Europe,DNK
 1970,NCT03032198,United States,North America,USA
 1973,NCT03036956,Pakistan,South Asia,PAK
 1976,NCT03039439,United States,North America,USA
-1982,NCT03046524,United States,North America,USA
+1983,NCT03046524,United States,North America,USA
 1988,NCT03051126,United States,North America,USA
-1989,NCT03052075,United States,North America,USA
+1991,NCT03052075,United States,North America,USA
 1995,NCT03057925,China,East Asia,CHN
 1997,NCT03061318,Chile,South America,CHL
 1999,NCT03063190,Brazil,South America,BRA
 2004,NCT03066076,Austria,Europe,AUT
 2008,NCT03072160,United States,North America,USA
-2011,NCT03082742,Brazil,South America,BRA
-2019,NCT03091140,Greece,Europe,GRC
+2013,NCT03082742,Brazil,South America,BRA
+2017,NCT03091140,Greece,Europe,GRC
 2020,NCT03093909,United States,North America,USA
 2021,NCT03094416,United States,North America,USA
 2023,NCT03096613,China,East Asia,CHN
@@ -689,7 +689,7 @@ index,nct_id,location,continent,iso
 2041,NCT03106337,United States,North America,USA
 2042,NCT03106935,China,East Asia,CHN
 2043,NCT03107078,China,East Asia,CHN
-2047,NCT03108222,United States,North America,USA
+2049,NCT03108222,United States,North America,USA
 2050,NCT03109847,United States,North America,USA
 2054,NCT03110848,Italy,Europe,ITA
 2060,NCT03114267,France,Europe,FRA
@@ -697,7 +697,7 @@ index,nct_id,location,continent,iso
 2062,NCT03120221,Israel,Middle East,ISR
 2064,NCT03122496,United States,North America,USA
 2065,NCT03122847,Denmark,Europe,DNK
-2071,NCT03123406,China,East Asia,CHN
+2069,NCT03123406,China,East Asia,CHN
 2073,NCT03128255,Germany,Europe,DEU
 2076,NCT03131206,United States,North America,USA
 2078,NCT03131726,Sweden,Europe,SWE
@@ -709,24 +709,24 @@ index,nct_id,location,continent,iso
 2096,NCT03167385,China,East Asia,CHN
 2101,NCT03174925,United States,North America,USA
 2103,NCT03178253,Egypt,Africa,EGY
-2108,NCT03182699,Austria,Europe,AUT
-2110,NCT03183752,Brazil,South America,BRA
-2115,NCT03194087,China,East Asia,CHN
+2107,NCT03182699,Austria,Europe,AUT
+2111,NCT03183752,Brazil,South America,BRA
+2113,NCT03194087,China,East Asia,CHN
 2121,NCT03199677,China,East Asia,CHN
 2126,NCT03211117,United States,North America,USA
-2130,NCT03226171,Japan,East Asia,JPN
+2129,NCT03226171,Japan,East Asia,JPN
 2132,NCT03244956,France,Europe,FRA
-2136,NCT03249012,Canada,North America,CAN
+2135,NCT03249012,Canada,North America,CAN
 2139,NCT03257930,Egypt,Africa,EGY
-2140,NCT03268785,China,East Asia,CHN
-2143,NCT03271892,Canada,North America,CAN
+2141,NCT03268785,China,East Asia,CHN
+2144,NCT03271892,Canada,North America,CAN
 2145,NCT03274258,United States,North America,USA
 2146,NCT03278964,Brazil,South America,BRA
-2150,NCT03280264,Japan,East Asia,JPN
+2151,NCT03280264,Japan,East Asia,JPN
 2155,NCT03283098,China,East Asia,CHN
 2157,NCT03284060,France,Europe,FRA
-2160,NCT03285854,United Kingdom,Europe,GBR
-2168,NCT03295955,"Korea, Republic of",East Asia,KOR
+2161,NCT03285854,United Kingdom,Europe,GBR
+2167,NCT03295955,"Korea, Republic of",East Asia,KOR
 2169,NCT03298867,Germany,Europe,DEU
 2169,NCT03298867,Italy,Europe,ITA
 2169,NCT03298867,United States,North America,USA
@@ -736,12 +736,12 @@ index,nct_id,location,continent,iso
 2173,NCT03299244,"Korea, Republic of",East Asia,KOR
 2173,NCT03299244,Malaysia,Southest Asia,MYS
 2173,NCT03299244,Taiwan,East Asia,TWN
-2176,NCT03300284,United States,North America,USA
+2177,NCT03300284,United States,North America,USA
 2181,NCT03303053,Malaysia,Southest Asia,MYS
 2182,NCT03307694,United States,North America,USA
-2185,NCT03309384,France,Europe,FRA
+2184,NCT03309384,France,Europe,FRA
 2186,NCT03309631,United States,North America,USA
-2188,NCT03324022,Taiwan,East Asia,TWN
+2189,NCT03324022,Taiwan,East Asia,TWN
 2197,NCT03324893,Canada,North America,CAN
 2200,NCT03327636,Hong Kong,East Asia,HKG
 2202,NCT03331172,Hong Kong,East Asia,HKG
@@ -759,12 +759,12 @@ index,nct_id,location,continent,iso
 2249,NCT03461211,Italy,Europe,ITA
 2249,NCT03461211,United States,North America,USA
 2256,NCT03464149,Austria,Europe,AUT
-2262,NCT03469310,United States,North America,USA
+2260,NCT03469310,United States,North America,USA
 2271,NCT03484416,"Korea, Republic of",East Asia,KOR
 2275,NCT03498183,France,Europe,FRA
 2277,NCT03498417,Italy,Europe,ITA
 2292,NCT03515863,China,East Asia,CHN
-2297,NCT03516747,Israel,Middle East,ISR
+2296,NCT03516747,Israel,Middle East,ISR
 2301,NCT03517267,Israel,Middle East,ISR
 2302,NCT03517579,United States,North America,USA
 2309,NCT03530462,China,East Asia,CHN
@@ -773,23 +773,23 @@ index,nct_id,location,continent,iso
 2325,NCT03566537,Greece,Europe,GRC
 2327,NCT03569787,United Kingdom,Europe,GBR
 2330,NCT03574051,China,East Asia,CHN
-2332,NCT03588884,United States,North America,USA
+2333,NCT03588884,United States,North America,USA
 2340,NCT03602261,United States,North America,USA
 2345,NCT03605472,France,Europe,FRA
 2346,NCT03606824,China,East Asia,CHN
 2349,NCT03614988,Brazil,South America,BRA
-2355,NCT03626246,United States,North America,USA
-2359,NCT03626948,Japan,East Asia,JPN
-2366,NCT03633708,Argentina,South America,ARG
-2366,NCT03633708,India,South Asia,IND
-2366,NCT03633708,"Korea, Republic of",East Asia,KOR
-2366,NCT03633708,Malaysia,Southest Asia,MYS
-2366,NCT03633708,Russian Federation,North Asia,RUS
-2366,NCT03633708,Singapore,Southest Asia,SGP
-2366,NCT03633708,Taiwan,East Asia,TWN
-2366,NCT03633708,Turkey,Middle East,TUR
-2366,NCT03633708,Ukraine,Europe,UKR
-2366,NCT03633708,United States,North America,USA
+2356,NCT03626246,United States,North America,USA
+2358,NCT03626948,Japan,East Asia,JPN
+2367,NCT03633708,Argentina,South America,ARG
+2367,NCT03633708,India,South Asia,IND
+2367,NCT03633708,"Korea, Republic of",East Asia,KOR
+2367,NCT03633708,Malaysia,Southest Asia,MYS
+2367,NCT03633708,Russian Federation,North Asia,RUS
+2367,NCT03633708,Singapore,Southest Asia,SGP
+2367,NCT03633708,Taiwan,East Asia,TWN
+2367,NCT03633708,Turkey,Middle East,TUR
+2367,NCT03633708,Ukraine,Europe,UKR
+2367,NCT03633708,United States,North America,USA
 2373,NCT03641638,China,East Asia,CHN
 2378,NCT03643081,France,Europe,FRA
 2379,NCT03646383,France,Europe,FRA
@@ -797,26 +797,26 @@ index,nct_id,location,continent,iso
 2392,NCT03669432,India,South Asia,IND
 2396,NCT03676647,United States,North America,USA
 2399,NCT03699098,Egypt,Africa,EGY
-2401,NCT03700762,China,East Asia,CHN
+2400,NCT03700762,China,East Asia,CHN
 2402,NCT03708627,United States,North America,USA
-2407,NCT03713671,Turkey,Middle East,TUR
+2409,NCT03713671,Turkey,Middle East,TUR
 2412,NCT03716128,Denmark,Europe,DNK
-2417,NCT03724188,Egypt,Africa,EGY
+2418,NCT03724188,Egypt,Africa,EGY
 2424,NCT03732495,France,Europe,FRA
 2428,NCT03753919,Spain,Europe,ESP
 2434,NCT03761290,United States,North America,USA
-2436,NCT03764007,United States,North America,USA
-2440,NCT03772496,China,East Asia,CHN
+2435,NCT03764007,United States,North America,USA
+2441,NCT03772496,China,East Asia,CHN
 2442,NCT03773120,"Korea, Republic of",East Asia,KOR
-2455,NCT03801980,Japan,East Asia,JPN
+2454,NCT03801980,Japan,East Asia,JPN
 2456,NCT03808779,China,East Asia,CHN
 2456,NCT03808779,Ukraine,Europe,UKR
-2463,NCT03822507,China,East Asia,CHN
-2463,NCT03822507,Hong Kong,East Asia,HKG
-2463,NCT03822507,"Korea, Republic of",East Asia,KOR
-2463,NCT03822507,Taiwan,East Asia,TWN
+2462,NCT03822507,China,East Asia,CHN
+2462,NCT03822507,Hong Kong,East Asia,HKG
+2462,NCT03822507,"Korea, Republic of",East Asia,KOR
+2462,NCT03822507,Taiwan,East Asia,TWN
 2468,NCT03830242,China,East Asia,CHN
-2470,NCT03831620,Switzerland,Europe,CHE
+2471,NCT03831620,Switzerland,Europe,CHE
 2475,NCT03835728,United States,North America,USA
 2476,NCT03836300,United States,North America,USA
 2480,NCT03845647,China,East Asia,CHN
@@ -832,32 +832,32 @@ index,nct_id,location,continent,iso
 2507,NCT03910049,Greece,Europe,GRC
 2511,NCT03922321,Canada,North America,CAN
 2515,NCT03924804,China,East Asia,CHN
-2520,NCT03931109,United States,North America,USA
-2521,NCT03935984,United States,North America,USA
+2519,NCT03931109,United States,North America,USA
+2522,NCT03935984,United States,North America,USA
 2524,NCT03937349,Russian Federation,North Asia,RUS
 2527,NCT03938545,Canada,North America,CAN
 2527,NCT03938545,Germany,Europe,DEU
 2527,NCT03938545,Italy,Europe,ITA
 2527,NCT03938545,Spain,Europe,ESP
 2527,NCT03938545,United States,North America,USA
-2531,NCT03941184,United States,North America,USA
+2532,NCT03941184,United States,North America,USA
 2538,NCT03948191,China,East Asia,CHN
 2545,NCT03957616,France,Europe,FRA
-2548,NCT03960437,United States,North America,USA
-2550,NCT03960554,United States,North America,USA
-2557,NCT03969108,Canada,North America,CAN
-2560,NCT03969329,Belgium,Europe,BEL
-2560,NCT03969329,Czechia,Europe,CZE
-2560,NCT03969329,France,Europe,FRA
-2560,NCT03969329,Germany,Europe,DEU
-2560,NCT03969329,Greece,Europe,GRC
-2560,NCT03969329,Hungary,Europe,HUN
-2560,NCT03969329,Italy,Europe,ITA
-2560,NCT03969329,Lithuania,Europe,LTU
-2560,NCT03969329,Poland,Europe,POL
-2560,NCT03969329,Portugal,Europe,PRT
-2560,NCT03969329,Spain,Europe,ESP
-2560,NCT03969329,United Kingdom,Europe,GBR
+2547,NCT03960437,United States,North America,USA
+2549,NCT03960554,United States,North America,USA
+2556,NCT03969108,Canada,North America,CAN
+2559,NCT03969329,Belgium,Europe,BEL
+2559,NCT03969329,Czechia,Europe,CZE
+2559,NCT03969329,France,Europe,FRA
+2559,NCT03969329,Germany,Europe,DEU
+2559,NCT03969329,Greece,Europe,GRC
+2559,NCT03969329,Hungary,Europe,HUN
+2559,NCT03969329,Italy,Europe,ITA
+2559,NCT03969329,Lithuania,Europe,LTU
+2559,NCT03969329,Poland,Europe,POL
+2559,NCT03969329,Portugal,Europe,PRT
+2559,NCT03969329,Spain,Europe,ESP
+2559,NCT03969329,United Kingdom,Europe,GBR
 2568,NCT03980132,Spain,Europe,ESP
 2572,NCT03986593,Brazil,South America,BRA
 2580,NCT04009863,Hong Kong,East Asia,HKG
@@ -865,30 +865,30 @@ index,nct_id,location,continent,iso
 2589,NCT04013139,"Iran, Islamic Republic of",Middle East,IRN
 2591,NCT04019379,United States,North America,USA
 2600,NCT04031638,France,Europe,FRA
-2603,NCT04040946,France,Europe,FRA
+2602,NCT04040946,France,Europe,FRA
 2606,NCT04046354,China,East Asia,CHN
-2611,NCT04053114,France,Europe,FRA
-2619,NCT04064827,Puerto Rico,Central America,PRI
-2619,NCT04064827,United States,North America,USA
+2610,NCT04053114,France,Europe,FRA
+2617,NCT04064827,Puerto Rico,Central America,PRI
+2617,NCT04064827,United States,North America,USA
 2623,NCT04075851,China,East Asia,CHN
 2626,NCT04080505,United States,North America,USA
 2631,NCT04085419,Slovenia,Europe,SVN
 2633,NCT04085913,United States,North America,USA
-2634,NCT04096612,China,East Asia,CHN
+2635,NCT04096612,China,East Asia,CHN
 2642,NCT04106596,France,Europe,FRA
 2643,NCT04106843,United States,North America,USA
-2648,NCT04126954,France,Europe,FRA
+2647,NCT04126954,France,Europe,FRA
 2652,NCT04129281,Italy,Europe,ITA
-2657,NCT04135573,China,East Asia,CHN
+2656,NCT04135573,China,East Asia,CHN
 2663,NCT04141540,France,Europe,FRA
-2666,NCT04146259,Greece,Europe,GRC
+2665,NCT04146259,Greece,Europe,GRC
 2670,NCT04171622,United States,North America,USA
 2673,NCT04175522,"Korea, Republic of",East Asia,KOR
 2675,NCT04180007,China,East Asia,CHN
 2676,NCT04193332,Denmark,Europe,DNK
 2683,NCT04216732,United States,North America,USA
-2691,NCT04239521,United Kingdom,Europe,GBR
-2705,NCT04267965,Taiwan,East Asia,TWN
+2690,NCT04239521,United Kingdom,Europe,GBR
+2704,NCT04267965,Taiwan,East Asia,TWN
 2708,NCT04270110,Egypt,Africa,EGY
 2713,NCT04281875,United States,North America,USA
 2714,NCT04284774,Puerto Rico,Central America,PRI
@@ -898,24 +898,24 @@ index,nct_id,location,continent,iso
 2719,NCT04298684,France,Europe,FRA
 2719,NCT04298684,Guadeloupe,Central America,GLP
 2719,NCT04298684,Réunion,Africa,REU
-2724,NCT04299425,United States,North America,USA
+2723,NCT04299425,United States,North America,USA
 2729,NCT04305561,Denmark,Europe,DNK
-2734,NCT04311606,United States,North America,USA
+2733,NCT04311606,United States,North America,USA
 2746,NCT04329455,Egypt,Africa,EGY
 2749,NCT04333342,"Korea, Republic of",East Asia,KOR
 2756,NCT04339127,France,Europe,FRA
 2759,NCT04339205,France,Europe,FRA
-2761,NCT04344886,Czechia,Europe,CZE
+2762,NCT04344886,Czechia,Europe,CZE
 2768,NCT04354896,Netherlands,Europe,NLD
 2768,NCT04354896,Switzerland,Europe,CHE
 2770,NCT04359979,Israel,Middle East,ISR
 2776,NCT04373226,France,Europe,FRA
 2778,NCT04383795,"Korea, Republic of",East Asia,KOR
-2789,NCT04396912,Turkey,Middle East,TUR
-2794,NCT04410601,Turkey,Middle East,TUR
+2787,NCT04396912,Turkey,Middle East,TUR
+2793,NCT04410601,Turkey,Middle East,TUR
 2798,NCT04411290,Turkey,Middle East,TUR
-2802,NCT04412694,Poland,Europe,POL
-2806,NCT04424485,Turkey,Middle East,TUR
+2801,NCT04412694,Poland,Europe,POL
+2807,NCT04424485,Turkey,Middle East,TUR
 2810,NCT04433936,Egypt,Africa,EGY
 2817,NCT04458233,Israel,Middle East,ISR
 2822,NCT04463316,Netherlands,Europe,NLD
@@ -923,93 +923,93 @@ index,nct_id,location,continent,iso
 2825,NCT04467021,United States,North America,USA
 2826,NCT04472026,United States,North America,USA
 2831,NCT04477798,China,East Asia,CHN
-2836,NCT04482907,Turkey,Middle East,TUR
-2841,NCT04484116,Mexico,North America,MEX
-2844,NCT04488406,Italy,Europe,ITA
+2834,NCT04482907,Turkey,Middle East,TUR
+2839,NCT04484116,Mexico,North America,MEX
+2845,NCT04488406,Italy,Europe,ITA
 2854,NCT04509011,Austria,Europe,AUT
 2854,NCT04509011,Norway,Europe,NOR
 2854,NCT04509011,Poland,Europe,POL
 2854,NCT04509011,Sweden,Europe,SWE
 2855,NCT04514484,United States,North America,USA
-2859,NCT04522622,Denmark,Europe,DNK
+2860,NCT04522622,Denmark,Europe,DNK
 2869,NCT04548284,China,East Asia,CHN
 2878,NCT04560127,China,East Asia,CHN
-2883,NCT04564924,China,East Asia,CHN
+2881,NCT04564924,China,East Asia,CHN
 2888,NCT04569604,Denmark,Europe,DNK
 2892,NCT04574258,China,East Asia,CHN
-2895,NCT04574947,Russian Federation,North Asia,RUS
+2897,NCT04574947,Russian Federation,North Asia,RUS
 2904,NCT04583735,United States,North America,USA
 2913,NCT04598815,Italy,Europe,ITA
-2920,NCT04601298,China,East Asia,CHN
+2919,NCT04601298,China,East Asia,CHN
 2921,NCT04604808,Spain,Europe,ESP
 2926,NCT04610723,France,Europe,FRA
 2935,NCT04614389,United States,North America,USA
 2940,NCT04632524,Egypt,Africa,EGY
 2941,NCT04637360,Taiwan,East Asia,TWN
-2945,NCT04639388,France,Europe,FRA
-2946,NCT04639960,Switzerland,Europe,CHE
-2950,NCT04647006,Turkey,Middle East,TUR
+2944,NCT04639388,France,Europe,FRA
+2947,NCT04639960,Switzerland,Europe,CHE
+2951,NCT04647006,Turkey,Middle East,TUR
 2953,NCT04647500,Switzerland,Europe,CHE
 2955,NCT04662190,Spain,Europe,ESP
 2959,NCT04663451,Belgium,Europe,BEL
-2963,NCT04666103,China,East Asia,CHN
+2964,NCT04666103,China,East Asia,CHN
 2966,NCT04671719,France,Europe,FRA
 2973,NCT04680650,China,East Asia,CHN
-2978,NCT04682340,Poland,Europe,POL
+2975,NCT04682340,Poland,Europe,POL
 2981,NCT04683575,China,East Asia,CHN
 2994,NCT04704414,Switzerland,Europe,CHE
 3001,NCT04708626,Sweden,Europe,SWE
-3006,NCT04714918,China,East Asia,CHN
-3007,NCT04730726,Netherlands,Europe,NLD
+3004,NCT04714918,China,East Asia,CHN
+3008,NCT04730726,Netherlands,Europe,NLD
 3012,NCT04731740,Russian Federation,North Asia,RUS
 3015,NCT04737330,Germany,Europe,DEU
-3021,NCT04740502,Italy,Europe,ITA
-3032,NCT04750460,Russian Federation,North Asia,RUS
+3023,NCT04740502,Italy,Europe,ITA
+3031,NCT04750460,Russian Federation,North Asia,RUS
 3047,NCT04767763,Poland,Europe,POL
 3048,NCT04776993,Italy,Europe,ITA
-3057,NCT04782856,United States,North America,USA
-3059,NCT04785443,France,Europe,FRA
-3065,NCT04789993,France,Europe,FRA
-3069,NCT04798092,France,Europe,FRA
+3056,NCT04782856,United States,North America,USA
+3060,NCT04785443,France,Europe,FRA
+3066,NCT04789993,France,Europe,FRA
+3070,NCT04798092,France,Europe,FRA
 3077,NCT04809454,Pakistan,South Asia,PAK
 3081,NCT04823728,France,Europe,FRA
 3084,NCT04842994,India,South Asia,IND
-3085,NCT04844164,Russian Federation,North Asia,RUS
+3086,NCT04844164,Russian Federation,North Asia,RUS
 3088,NCT04846010,United States,North America,USA
-3093,NCT04856488,Sweden,Europe,SWE
-3104,NCT04876534,Italy,Europe,ITA
+3092,NCT04856488,Sweden,Europe,SWE
+3103,NCT04876534,Italy,Europe,ITA
 3107,NCT04877613,United States,North America,USA
 3111,NCT04879173,"Korea, Republic of",East Asia,KOR
-3119,NCT04895631,United States,North America,USA
-3124,NCT04905641,Thailand,Southest Asia,THA
+3117,NCT04895631,United States,North America,USA
+3125,NCT04905641,Thailand,Southest Asia,THA
 3128,NCT04919694,China,East Asia,CHN
 3136,NCT04922892,China,East Asia,CHN
 3137,NCT04927416,United States,North America,USA
 3144,NCT04932135,Switzerland,Europe,CHE
 3153,NCT04942769,China,East Asia,CHN
-3159,NCT04948671,Switzerland,Europe,CHE
+3158,NCT04948671,Switzerland,Europe,CHE
 3164,NCT04953195,China,East Asia,CHN
-3168,NCT04969926,United States,North America,USA
+3167,NCT04969926,United States,North America,USA
 3178,NCT04988802,Croatia,Europe,HRV
-3183,NCT04998968,Sweden,Europe,SWE
+3182,NCT04998968,Sweden,Europe,SWE
 3184,NCT05002998,United States,North America,USA
 3191,NCT05007093,China,East Asia,CHN
-3193,NCT05012033,United Kingdom,Europe,GBR
-3197,NCT05015127,China,East Asia,CHN
+3192,NCT05012033,United Kingdom,Europe,GBR
+3198,NCT05015127,China,East Asia,CHN
 3204,NCT05017142,Switzerland,Europe,CHE
 3205,NCT05019118,Spain,Europe,ESP
-3209,NCT05022641,United States,North America,USA
+3208,NCT05022641,United States,North America,USA
 3218,NCT05043233,China,East Asia,CHN
 3224,NCT05049603,Italy,Europe,ITA
 3231,NCT05059470,United States,North America,USA
 3232,NCT05068687,Belgium,Europe,BEL
-3233,NCT05070091,Poland,Europe,POL
+3236,NCT05070091,Poland,Europe,POL
 3246,NCT05098600,Czechia,Europe,CZE
 3253,NCT05108298,United States,North America,USA
 3254,NCT05110040,China,East Asia,CHN
 3258,NCT05112211,China,East Asia,CHN
-3265,NCT05117853,Belgium,Europe,BEL
-3268,NCT05118542,Indonesia,Southest Asia,IDN
+3264,NCT05117853,Belgium,Europe,BEL
+3267,NCT05118542,Indonesia,Southest Asia,IDN
 3270,NCT05119296,United States,North America,USA
 3273,NCT05126147,Taiwan,East Asia,TWN
 3276,NCT05126706,"Korea, Republic of",East Asia,KOR
@@ -1018,24 +1018,24 @@ index,nct_id,location,continent,iso
 3287,NCT05149898,Australia,Pacifica,AUS
 3287,NCT05149898,United States,North America,USA
 3295,NCT05176639,United States,North America,USA
-3304,NCT05180214,Egypt,Africa,EGY
+3303,NCT05180214,Egypt,Africa,EGY
 3309,NCT05189314,United States,North America,USA
 3311,NCT05189808,United States,North America,USA
 3313,NCT05189821,United States,North America,USA
 3319,NCT05199103,Poland,Europe,POL
 3323,NCT05214274,China,East Asia,CHN
-3325,NCT05216718,"Korea, Republic of",East Asia,KOR
+3326,NCT05216718,"Korea, Republic of",East Asia,KOR
 3333,NCT05225883,France,Europe,FRA
-3337,NCT05229341,United States,North America,USA
+3336,NCT05229341,United States,North America,USA
 3338,NCT05239221,Hungary,Europe,HUN
 3338,NCT05239221,Netherlands,Europe,NLD
 3342,NCT05241626,Egypt,Africa,EGY
-3361,NCT05264857,United States,North America,USA
+3362,NCT05264857,United States,North America,USA
 3376,NCT05280600,United Kingdom,Europe,GBR
-3378,NCT05290493,Canada,North America,CAN
-3378,NCT05290493,United States,North America,USA
+3379,NCT05290493,Canada,North America,CAN
+3379,NCT05290493,United States,North America,USA
 3381,NCT05299437,Italy,Europe,ITA
-3384,NCT05299632,United States,North America,USA
+3383,NCT05299632,United States,North America,USA
 3386,NCT05316922,Italy,Europe,ITA
 3396,NCT02378233,Sweden,Europe,SWE
 3397,NCT02742597,Canada,North America,CAN

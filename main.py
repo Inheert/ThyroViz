@@ -6,7 +6,7 @@ from datetime import datetime
 import os
 import glob
 
-interval = 60
+interval = 10
 
 FONT_AWESOME = "https://use.fontawesome.com/releases/v5.7.2/css/all.css"
 
@@ -57,7 +57,6 @@ sidebar = html.Div(
                         for page in dash.page_registry.values()
                         if page["module"] != "pages.not_found_404"
                     ],
-
                     vertical=True,
                     pills=True,
                 ),
