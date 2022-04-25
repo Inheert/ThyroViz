@@ -13,7 +13,7 @@ FONT_AWESOME = "https://use.fontawesome.com/releases/v5.7.2/css/all.css"
 app = dash.Dash(__name__, plugins=[dl.plugins.pages], external_stylesheets=[dbc.themes.BOOTSTRAP, dbc.icons.BOOTSTRAP, FONT_AWESOME],
                 meta_tags=[
                     {"name": "viewport", "content": "width=device-width, initial-scale=1"}
-                ])
+                ], suppress_callback_exceptions=True)
 
 # the style arguments for the sidebar. We use position:fixed and a fixed width
 SIDEBAR_STYLE = {
@@ -24,7 +24,6 @@ SIDEBAR_STYLE = {
     "width": "20rem",
     "padding": "2rem 1rem",
     "backgroundColor": "#f8f9fa",
-    "backgroundImage": "url('assets/img/sidebar.svg')",
     "backgroundPosition": "right top"
 }
 
@@ -46,7 +45,7 @@ sidebar = html.Div(
 
         html.Div(
             [
-                html.H2("THRD", className="display-4"),
+                html.H2("ThyroResearch", className="display-6"),
                 html.Hr(),
                 html.P(
                     "Navigate through the different tools of ThyroResearch", className="lead"

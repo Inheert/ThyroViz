@@ -129,18 +129,57 @@ def StudiesByYear(category):
     return data
 
 
-def GetSubCategoryProportion(category, s_type):
+def GetSubCategoryProportion(category, s_type, age=None):
 
-    df = s_base[["nct_id", "category", "sub_category", "study_type"]].copy()
+    color_pie = ["hsl(201.22, 95.82%, 53.14%)",
+                 "hsl(216.05, 100%, 55.29%)",
+                 "hsl(230.67, 98.25%, 55.1%)",
+                 "hsl(243.98, 100%, 55.69%)",
+                 "hsl(244.41, 100%, 86.67%)",
+                 "hsl(258.18, 78.2%, 58.63%)",
+                 "hsl(258, 77.78%, 35.29%)",
+                 "hsl(293.5, 77.34%, 39.8%)",
+                 "hsl(293.62, 77.05%, 11.96%)",
+                 "hsl(264.1, 96.83%, 50.59%)",
+                 "hsl(185.23, 100%, 52.75%)",
+                 "hsl(264.44, 96.43%, 89.02%)"]
+
+    df = s_base[["nct_id", "category", "sub_category", "study_type", "minimum_age_num", "maximum_age_num"]].copy()
+
+    if age is not None:
+        df = df[(df["minimum_age_num"] >= age[0]) & (df["maximum_age_num"] <= age[1])]
+
+    color_dict = {}
 
     if category == ".":
-        df = df[df["study_type"] == s_type]
-        df = df.groupby("category").count().reset_index().sort_values(by="nct_id", ascending=False)
-        df.rename(columns={"category": "view"}, inplace=True)
+        idx = 0
+        for cat in df.category.sort_values().unique():
+            color_dict[cat] = color_pie[idx]
+            idx += 1
+        if s_type is None:
+            df = df.groupby("category").count().reset_index().sort_values(by="nct_id", ascending=False)
+            df.rename(columns={"category": "view"}, inplace=True)
+        else:
+            df = df[df["study_type"] == s_type]
+            df = df.groupby("category").count().reset_index().sort_values(by="nct_id", ascending=False)
+            df.rename(columns={"category": "view"}, inplace=True)
+        df["color"] = df["view"].apply(lambda x: color_dict[x])
+
     else:
-        df = df[(df["category"] == category) & (df["study_type"] == s_type)]
-        df = df.groupby("sub_category").count().reset_index().sort_values(by="nct_id", ascending=False)
-        df.rename(columns={"sub_category": "view"}, inplace=True)
+        for cat in df.category.sort_values().unique():
+            idx = 0
+            for sub in df[df["category"] == cat]["sub_category"].unique():
+                color_dict[sub] = color_pie[idx]
+                idx += 1
+        if s_type is None:
+            df = df[df["category"] == category]
+            df = df.groupby("sub_category").count().reset_index().sort_values(by="nct_id", ascending=False)
+            df.rename(columns={"sub_category": "view"}, inplace=True)
+        else:
+            df = df[(df["category"] == category) & (df["study_type"] == s_type)]
+            df = df.groupby("sub_category").count().reset_index().sort_values(by="nct_id", ascending=False)
+            df.rename(columns={"sub_category": "view"}, inplace=True)
+        df["color"] = df["view"].apply(lambda x: color_dict[x])
 
     return df
 

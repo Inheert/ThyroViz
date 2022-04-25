@@ -1,37 +1,37 @@
 index,nct_id,investigators
-1,NCT00001159,"National Institutes of Health Clinical Center, 9000 Rockville Pike"
-11,NCT00001277,"National Institutes of Health Clinical Center, 9000 Rockville Pike"
+0,NCT00001159,"National Institutes of Health Clinical Center, 9000 Rockville Pike"
+9,NCT00001277,"National Institutes of Health Clinical Center, 9000 Rockville Pike"
 18,NCT00004048,Garden State Cancer Center
 18,NCT00004048,St. Joseph's Hospital and Medical Center
-21,NCT00004074,Ohio State University Medical Center
+22,NCT00004074,Ohio State University Medical Center
 25,NCT00004089,"Robert H. Lurie Comprehensive Cancer Center, Northwestern University"
 25,NCT00004089,University of Illinois at Chicago
 25,NCT00004089,University of Chicago Cancer Research Center
 27,NCT00004340,University of California Los Angeles School of Medicine
 29,NCT00004351,Baylor College of Medicine
 33,NCT00004660,Mayo Clinic
-42,NCT00005102,Children's Hospital of Philadelphia
-47,NCT00037193,Washington University Medical School
-62,NCT00053547,Stanford University Medical Center
-62,NCT00053547,Miami Children's Hospital
-62,NCT00053547,The Children's Hospital of Buffalo
-62,NCT00053547,Texas Children's Hospital
-62,NCT00053547,University of Texas at Houston
-62,NCT00053547,Medical College of Wisconsin
+41,NCT00005102,Children's Hospital of Philadelphia
+48,NCT00037193,Washington University Medical School
+64,NCT00053547,Stanford University Medical Center
+64,NCT00053547,Miami Children's Hospital
+64,NCT00053547,The Children's Hospital of Buffalo
+64,NCT00053547,Texas Children's Hospital
+64,NCT00053547,University of Texas at Houston
+64,NCT00053547,Medical College of Wisconsin
 65,NCT00060242,Josephine Ford Cancer Center at Henry Ford Hospital
 65,NCT00060242,"Ireland Cancer Center at University Hosptials Case Medical Center, Case Comprehensive Cancer Center"
 65,NCT00060242,Hillman Cancer Center at University of Pittsburgh Cancer Institute
 66,NCT00061906,Ohio State University Comrehensive Cancer Center
 66,NCT00061906,University of Texas - MD Anderson Cancer Center
-68,NCT00068497,Southwest Oncology Group
-73,NCT00073710,Creighton University
-77,NCT00077103,Josephine Ford Cancer Center at Henry Ford Hospital
-77,NCT00077103,"Ireland Cancer Center at University Hosptials Case Medical Center, Case Comprehensive Cancer Center"
-77,NCT00077103,Hillman Cancer Center at University of Pittsburgh Cancer Institute
+67,NCT00068497,Southwest Oncology Group
+74,NCT00073710,Creighton University
+76,NCT00077103,Josephine Ford Cancer Center at Henry Ford Hospital
+76,NCT00077103,"Ireland Cancer Center at University Hosptials Case Medical Center, Case Comprehensive Cancer Center"
+76,NCT00077103,Hillman Cancer Center at University of Pittsburgh Cancer Institute
 79,NCT00085293,University of Colorado at Denver
 79,NCT00085293,Arthur G. James Cancer Hospital and Solove Research Institute at Ohio State University Medical Center
 79,NCT00085293,M D Anderson Cancer Center
-88,NCT00095693,Ohio State University Medical Center
+87,NCT00095693,Ohio State University Medical Center
 91,NCT00095836,Massachusetts General Hospital Cancer Center
 91,NCT00095836,Dana-Farber Cancer Institute
 93,NCT00098813,Memorial Sloan-Kettering Cancer Center at Suffolk
@@ -39,51 +39,51 @@ index,nct_id,investigators
 97,NCT00100828,Sidney Kimmel Comprehensive Cancer Center at Johns Hopkins
 97,NCT00100828,University of Michigan Comprehensive Cancer Center
 98,NCT00103155,UCSF Comprehensive Cancer Center
-99,NCT00104871,University of Colorado at Denver Health Sciences Center
-99,NCT00104871,Lombardi Comprehensive Cancer Center at Georgetown University
-99,NCT00104871,Emory University
-99,NCT00104871,Massachusetts General Hospital Cancer Center
-99,NCT00104871,Dana-Farber Harvard Cancer Center
-99,NCT00104871,Cleveland Clinic Foundation
-99,NCT00104871,"Cleveland Clinic Taussig Cancer Institute, Case Comprehensive Cancer Center"
-99,NCT00104871,Arthur G. James Cancer Hospital and Solove Research Institute at Ohio State University Medical Center
-99,NCT00104871,M D Anderson Cancer Center
+100,NCT00104871,University of Colorado at Denver Health Sciences Center
+100,NCT00104871,Lombardi Comprehensive Cancer Center at Georgetown University
+100,NCT00104871,Emory University
+100,NCT00104871,Massachusetts General Hospital Cancer Center
+100,NCT00104871,Dana-Farber Harvard Cancer Center
+100,NCT00104871,Cleveland Clinic Foundation
+100,NCT00104871,"Cleveland Clinic Taussig Cancer Institute, Case Comprehensive Cancer Center"
+100,NCT00104871,Arthur G. James Cancer Hospital and Solove Research Institute at Ohio State University Medical Center
+100,NCT00104871,M D Anderson Cancer Center
 102,NCT00105274,"National Institutes of Health Clinical Center, 9000 Rockville Pike"
-105,NCT00108394,VA Puget Sound Health Care System
-116,NCT00118248,Mayo Clinic
-121,NCT00123461,AKDHC Medical Research Services
-121,NCT00123461,UCLA Diabetes Reseach Center
-121,NCT00123461,Apex Research of Riverside
-121,NCT00123461,George Washington University Hospital
-121,NCT00123461,Discovery Medical Research Group
-121,NCT00123461,Nephrology Associates
-121,NCT00123461,"Georgia Kidney Associates, Inc."
-121,NCT00123461,"Michigan Kidney Consultants, P.C."
-121,NCT00123461,Twin Cities Clinical Research
-121,NCT00123461,Montefiore Medical Center
-121,NCT00123461,University of Rochester Medical Center
-121,NCT00123461,"Wake Nephrology Associates, PA"
-121,NCT00123461,Wake Forest University School of Medicine
-121,NCT00123461,Altru Health System Research Center
-121,NCT00123461,DaVita Lewiston Dialysis Center
-121,NCT00123461,Temple University
-121,NCT00123461,Virginia Commonwealth University
-121,NCT00123461,Instituto Renal del Este
-121,NCT00123461,"Jose Cangiano, MD"
-131,NCT00134043,Ohio State University Medical Center
+104,NCT00108394,VA Puget Sound Health Care System
+117,NCT00118248,Mayo Clinic
+120,NCT00123461,AKDHC Medical Research Services
+120,NCT00123461,UCLA Diabetes Reseach Center
+120,NCT00123461,Apex Research of Riverside
+120,NCT00123461,George Washington University Hospital
+120,NCT00123461,Discovery Medical Research Group
+120,NCT00123461,Nephrology Associates
+120,NCT00123461,"Georgia Kidney Associates, Inc."
+120,NCT00123461,"Michigan Kidney Consultants, P.C."
+120,NCT00123461,Twin Cities Clinical Research
+120,NCT00123461,Montefiore Medical Center
+120,NCT00123461,University of Rochester Medical Center
+120,NCT00123461,"Wake Nephrology Associates, PA"
+120,NCT00123461,Wake Forest University School of Medicine
+120,NCT00123461,Altru Health System Research Center
+120,NCT00123461,DaVita Lewiston Dialysis Center
+120,NCT00123461,Temple University
+120,NCT00123461,Virginia Commonwealth University
+120,NCT00123461,Instituto Renal del Este
+120,NCT00123461,"Jose Cangiano, MD"
+130,NCT00134043,Ohio State University Medical Center
 137,NCT00145366,"Department of Endocrinology, Odense University Hospital"
 140,NCT00147433,Foundation for Blood Research
 142,NCT00150111,"Department of Endocrinology, Odense University Hospital"
 142,NCT00150111,"Department of Hematology, Odense University Hospital"
 147,NCT00150124,"Department of Endocrinology, Odense University Hospital"
-151,NCT00150137,"Department of Endocrinology, Odense University Hospital"
+152,NCT00150137,"Department of Endocrinology, Odense University Hospital"
 154,NCT00150150,"Department of Endocrinology, Odense University Hospital"
-158,NCT00161109,"Children's Hospital of Philadelphia, Dpt of Genetics and Dpt of Child and Adolescent Psychiatry"
-158,NCT00161109,"UMC Utrecht, Dpt of Child and Adolescent Psychiatry"
+157,NCT00161109,"Children's Hospital of Philadelphia, Dpt of Genetics and Dpt of Child and Adolescent Psychiatry"
+157,NCT00161109,"UMC Utrecht, Dpt of Child and Adolescent Psychiatry"
 161,NCT00174057,Shu Lang Liao
-167,NCT00175149,"Department of Renal Medicne C, Skejby Hospital"
+166,NCT00175149,"Department of Renal Medicne C, Skejby Hospital"
 177,NCT00209235,Connecticut Children's Medical Center
-179,NCT00211939,University of Texas Health Sciences Center
+178,NCT00211939,University of Texas Health Sciences Center
 181,NCT00213720,Patrick Roger
 181,NCT00213720,Philippe Thiéblot
 181,NCT00213720,Jean-Marcel Brun
@@ -105,19 +105,19 @@ index,nct_id,investigators
 181,NCT00213720,Hopitaux Universitaires de Strasbourg
 181,NCT00213720,Philippe Caron
 181,NCT00213720,Pierre Lecomte
-187,NCT00257920,
+186,NCT00257920,
 191,NCT00261950,Research Site
 200,NCT00278005,Children's Healthcare of Atlanta
 204,NCT00285467,Indiana University School of Medicine
 208,NCT00287144,Sykehuset Telemark HF
-212,NCT00287287,University of Kentucky Markey Cancer Center
+211,NCT00287287,University of Kentucky Markey Cancer Center
 213,NCT00288522,Hospital General d'Alacant
 217,NCT00288873,Weill Cornell Medical College
 221,NCT00297297,"Outpatient clinic of The Department of Endocrinology, Herlev University Hospital"
 226,NCT00316823,UCSF Helen Diller Family Comprehensive Cancer Center
 228,NCT00322322,Assistance Publique Hopitaux de Paris
 228,NCT00322322,"HOPITAL LA PITIE SALPETRIERE, service de Néphrologie"
-229,NCT00325104,"National Institutes of Health Clinical Center, 9000 Rockville Pike"
+230,NCT00325104,"National Institutes of Health Clinical Center, 9000 Rockville Pike"
 232,NCT00335062,Childrens' Hospital Boston
 241,NCT00342641,Houston Veterans AFfairs Medical Center
 245,NCT00348413,Singapore National Centre
@@ -141,15 +141,15 @@ index,nct_id,investigators
 274,NCT00381641,Mercy Hospital Saint Louis
 274,NCT00381641,M D Anderson Cancer Center
 274,NCT00381641,Medical College of Wisconsin
-277,NCT00385983,Hospital Araujo Jorge
-277,NCT00385983,Hospital Erasto Gaertner
-277,NCT00385983,Instituto Nacional de Cancer INCA
-277,NCT00385983,Hospital do Cancer de Natal
-277,NCT00385983,Hospital do Cancer AC Camargo
-277,NCT00385983,Hospital Heliopolis
-277,NCT00385983,Hospital Sao Paulo-UNIFESP
-277,NCT00385983,Instituto Arnaldo Vieira de Carvalho
-277,NCT00385983,Santa Casa de Misericordia
+278,NCT00385983,Hospital Araujo Jorge
+278,NCT00385983,Hospital Erasto Gaertner
+278,NCT00385983,Instituto Nacional de Cancer INCA
+278,NCT00385983,Hospital do Cancer de Natal
+278,NCT00385983,Hospital do Cancer AC Camargo
+278,NCT00385983,Hospital Heliopolis
+278,NCT00385983,Hospital Sao Paulo-UNIFESP
+278,NCT00385983,Instituto Arnaldo Vieira de Carvalho
+278,NCT00385983,Santa Casa de Misericordia
 279,NCT00388297,University of Alabama - Birmingham
 279,NCT00388297,Northwestern University
 279,NCT00388297,Wayne State University
@@ -194,37 +194,37 @@ index,nct_id,investigators
 300,NCT00415233,University Hospital of North Staffordshire
 300,NCT00415233,Velindre Cancer Center at Velindre Hospital
 300,NCT00415233,Glan Clwyd Hospital
-303,NCT00415584,Montefiore Medical Center
+302,NCT00415584,Montefiore Medical Center
 304,NCT00416949,Sidney Kimmel Comprehensive Cancer Center at Johns Hopkins
-308,NCT00418600,
+309,NCT00418600,
 310,NCT00424151,"Rona Z. Silkiss, MD, FACS"
 310,NCT00424151,"Simeon A. Lauer, MD"
 314,NCT00430547,Barwon Health - The Geelong Hospital
-325,NCT00432939,Metabolic Bone Diseases Unit
+326,NCT00432939,Metabolic Bone Diseases Unit
 329,NCT00437931,"Haemek Medical Center, Department of Radiology"
-334,NCT00446329,Papageorgiou General Hospital
-342,NCT00454350,
-346,NCT00463021,
-350,NCT00469599,Aalborg University Hospital
-350,NCT00469599,Århus University Hospital Skejby
-350,NCT00469599,Hospital of Southwest Denmark Esbjerg
-350,NCT00469599,Holbæk County Hospital
-350,NCT00469599,Holstebro County Hospital
-350,NCT00469599,Odense University Hospital
-350,NCT00469599,Roskilde County Hospital
-350,NCT00469599,Viborg County Hospital
+332,NCT00446329,Papageorgiou General Hospital
+341,NCT00454350,
+347,NCT00463021,
+351,NCT00469599,Aalborg University Hospital
+351,NCT00469599,Århus University Hospital Skejby
+351,NCT00469599,Hospital of Southwest Denmark Esbjerg
+351,NCT00469599,Holbæk County Hospital
+351,NCT00469599,Holstebro County Hospital
+351,NCT00469599,Odense University Hospital
+351,NCT00469599,Roskilde County Hospital
+351,NCT00469599,Viborg County Hospital
 354,NCT00470496,Roswell Park Cancer Institute
 360,NCT00480428,Semipalatinsk State Medical Academy
 378,NCT00507897,Yaroslavl State Medical Academy
 386,NCT00519896,Fred Hutchinson Cancer Research Center/University of Washington Cancer Consortium
-388,NCT00522028,Oslo University Hospital - Rikshospitalet
+390,NCT00522028,Oslo University Hospital - Rikshospitalet
 393,NCT00525135,UCSF Comprehensive Cancer Center
-400,NCT00528788,Duke University Medical Center Dialysis Unit
+402,NCT00528788,Duke University Medical Center Dialysis Unit
 403,NCT00531713,"Dept of endocrinology , Herlev Hospital"
 404,NCT00535561,Duzce University School of Medicine
-406,NCT00537797,Washington University School of Medicine
-406,NCT00537797,St. Louis University School of Medicine
-406,NCT00537797,VAMC
+407,NCT00537797,Washington University School of Medicine
+407,NCT00537797,St. Louis University School of Medicine
+407,NCT00537797,VAMC
 408,NCT00537979,Site Ref # / Investigator 19391
 408,NCT00537979,Site Ref # / Investigator 19389
 408,NCT00537979,Site Ref # / Investigator 19390
@@ -237,35 +237,35 @@ index,nct_id,investigators
 408,NCT00537979,Site Ref # / Investigator 19399
 408,NCT00537979,Site Ref # / Investigator 19398
 408,NCT00537979,Site Ref # / Investigator 19388
-416,NCT00552253,National Taiwan University Hospital
-422,NCT00556530,Albert Einstein College of Medicine
-422,NCT00556530,Children's Hospital of Philadelphia
-425,NCT00559949,Moffitt Cancer Center
-425,NCT00559949,University of Chicago Comprehensive Cancer Center
-425,NCT00559949,UNC Lineberger Comprehensive Cancer Center
-425,NCT00559949,Fox Chase Cancer Center
-425,NCT00559949,Vanderbilt University/Ingram Cancer Center
-425,NCT00559949,University Health Network-Princess Margaret Hospital
+417,NCT00552253,National Taiwan University Hospital
+423,NCT00556530,Albert Einstein College of Medicine
+423,NCT00556530,Children's Hospital of Philadelphia
+424,NCT00559949,Moffitt Cancer Center
+424,NCT00559949,University of Chicago Comprehensive Cancer Center
+424,NCT00559949,UNC Lineberger Comprehensive Cancer Center
+424,NCT00559949,Fox Chase Cancer Center
+424,NCT00559949,Vanderbilt University/Ingram Cancer Center
+424,NCT00559949,University Health Network-Princess Margaret Hospital
 435,NCT00571077,Walter Reed Army MEdicla Center
 435,NCT00571077,Hadassah-Hebrew University Medical Center
-437,NCT00571090,Group Florence Nightingale
-440,NCT00576407,Duke University Medical Center
-443,NCT00576836,Duke University Medical Center
+436,NCT00571090,Group Florence Nightingale
+441,NCT00576407,Duke University Medical Center
+442,NCT00576836,Duke University Medical Center
 445,NCT00579527,Duke University Medical Center
-447,NCT00579709,Duke University Medical Center
-448,NCT00580320,Dartmouth Hitchcock Medical Center
-448,NCT00580320,Massey Cancer Center/Virginia Commonwealth University
+446,NCT00579709,Duke University Medical Center
+449,NCT00580320,Dartmouth Hitchcock Medical Center
+449,NCT00580320,Massey Cancer Center/Virginia Commonwealth University
 455,NCT00587158,Mayo Clinic
 458,NCT00588432,Mayo Clinic
 460,NCT00595335,Mayo Clinic
-465,NCT00601328,"Bio-Kinetic Clinical Applications, Inc."
-477,NCT00639405,SUNY Upstate Medical University
-480,NCT00646282,Emory University
+467,NCT00601328,"Bio-Kinetic Clinical Applications, Inc."
+478,NCT00639405,SUNY Upstate Medical University
+481,NCT00646282,Emory University
 484,NCT00651625,University of New Mexico Health Sciences Center
 485,NCT00654238,University of Pennsylvania - Abramson Comprehensive Cancer Center
-488,NCT00664430,Site Reference ID/Investigator# 7118
-488,NCT00664430,Site Reference ID/Investigator# 7114
-491,NCT00665795,General Hospital - University of Sao Paulo - School of Medicine
+487,NCT00664430,Site Reference ID/Investigator# 7118
+487,NCT00664430,Site Reference ID/Investigator# 7114
+490,NCT00665795,General Hospital - University of Sao Paulo - School of Medicine
 494,NCT00667576,
 503,NCT00674154,"Osteoporoseklinikken, Aarhus University Hospital, THG"
 505,NCT00677469,Endocrine and Metabolism Research Center
@@ -284,50 +284,50 @@ index,nct_id,investigators
 530,NCT00742716,Hôpital Charles-Lemoyne
 530,NCT00742716,Hôpital du Sacré-Coeur de Montréal
 530,NCT00742716,Hospital de Verdun
-538,NCT00752401,"Medical University of Vienna, Department of Internal Medicine III, Division of Nephrology and Dialysis"
+540,NCT00752401,"Medical University of Vienna, Department of Internal Medicine III, Division of Nephrology and Dialysis"
 544,NCT00754442,University of Maryland School of Medicine Division of Endocrinology
 546,NCT00768820,Schneider Children's Mediac Center of Israel
-549,NCT00781417,Atlanta VAMC
-551,NCT00782366,Mayo Clinic
-560,NCT00792857,Pivotal Reseach Centers
-560,NCT00792857,Western New England Renal and Transplant Associates
-560,NCT00792857,University of Cincinnati
-560,NCT00792857,Northeast Clinical Research
-560,NCT00792857,Vanderbilt University
-560,NCT00792857,Southwest Houston Research Ltd.
-574,NCT00804830,"Jubileumskliniken, Sahlgrenska universitetsjukhuset"
-574,NCT00804830,"Dep of Oncology, Lund University Hospital"
-574,NCT00804830,Karolinska University Hospital
-581,NCT00823303,Northwestern University
-581,NCT00823303,Northshore University Health System
-581,NCT00823303,Henry Ford Hospital
-581,NCT00823303,Washington University
-586,NCT00828347,Kumamoto University Hospital
+548,NCT00781417,Atlanta VAMC
+552,NCT00782366,Mayo Clinic
+559,NCT00792857,Pivotal Reseach Centers
+559,NCT00792857,Western New England Renal and Transplant Associates
+559,NCT00792857,University of Cincinnati
+559,NCT00792857,Northeast Clinical Research
+559,NCT00792857,Vanderbilt University
+559,NCT00792857,Southwest Houston Research Ltd.
+575,NCT00804830,"Jubileumskliniken, Sahlgrenska universitetsjukhuset"
+575,NCT00804830,"Dep of Oncology, Lund University Hospital"
+575,NCT00804830,Karolinska University Hospital
+580,NCT00823303,Northwestern University
+580,NCT00823303,Northshore University Health System
+580,NCT00823303,Henry Ford Hospital
+580,NCT00823303,Washington University
+584,NCT00828347,Kumamoto University Hospital
 592,NCT00858104,Ospedale Regina Apostolorum
 592,NCT00858104,Azienda Ospedaliera di Perugia - Osp. S.Maria della Misericordia
 592,NCT00858104,Azienda Ospedaliero-Universitaria di Pisa - Presidio di Cisanello
 592,NCT00858104,Arcispedale S. Maria Nuova
-594,NCT00859612,University of Kentucky
-596,NCT00877630,Minimally Invasive Surgical Center of Changzhang Hospital
-598,NCT00877981,"Unit of Breast and Endocrine Surgery, Surgical Department P, Aarhus University Hospital"
-598,NCT00877981,"Department of Surgery, Lund University Hospital"
-598,NCT00877981,"Uppsala University Hospital, Dept of surgery"
-603,NCT00887107,Leiden University Medical Center
-607,NCT00888069,Pivotal Research Centers
-607,NCT00888069,Research by Design
-607,NCT00888069,Western New England Renal & Transplant Associates
-607,NCT00888069,Twin Cities Clinical Research
-607,NCT00888069,DCI
-607,NCT00888069,MetroHealth Medical Center
-607,NCT00888069,Northeast Clinical Research
-607,NCT00888069,Southeast Renal Research Institute
-607,NCT00888069,Vanderbilt University Medical Center
-607,NCT00888069,Southwest Houston Research Ltd
-607,NCT00888069,Purity Dialysis Centers / Nephrology Associates
-607,NCT00888069,Gunderson Clinic Ltd.
-609,NCT00891813,Site Reference ID/Investigator# 21401
-609,NCT00891813,Site Reference ID/Investigator# 23857
-609,NCT00891813,Site Reference ID/Investigator# 10941
+595,NCT00859612,University of Kentucky
+597,NCT00877630,Minimally Invasive Surgical Center of Changzhang Hospital
+600,NCT00877981,"Unit of Breast and Endocrine Surgery, Surgical Department P, Aarhus University Hospital"
+600,NCT00877981,"Department of Surgery, Lund University Hospital"
+600,NCT00877981,"Uppsala University Hospital, Dept of surgery"
+602,NCT00887107,Leiden University Medical Center
+606,NCT00888069,Pivotal Research Centers
+606,NCT00888069,Research by Design
+606,NCT00888069,Western New England Renal & Transplant Associates
+606,NCT00888069,Twin Cities Clinical Research
+606,NCT00888069,DCI
+606,NCT00888069,MetroHealth Medical Center
+606,NCT00888069,Northeast Clinical Research
+606,NCT00888069,Southeast Renal Research Institute
+606,NCT00888069,Vanderbilt University Medical Center
+606,NCT00888069,Southwest Houston Research Ltd
+606,NCT00888069,Purity Dialysis Centers / Nephrology Associates
+606,NCT00888069,Gunderson Clinic Ltd.
+610,NCT00891813,Site Reference ID/Investigator# 21401
+610,NCT00891813,Site Reference ID/Investigator# 23857
+610,NCT00891813,Site Reference ID/Investigator# 10941
 614,NCT00902122,"West China Hospital, Sichuan University"
 618,NCT00916955,VCFS International Center
 619,NCT00917189,SUNY Upstate Medical University
@@ -335,11 +335,11 @@ index,nct_id,investigators
 624,NCT00921050,Community Health Center (Fomerrey 19)
 640,NCT00946296,UMASS Memorial Health Care
 646,NCT00958113,University of Colorado Denver
-651,NCT00958451,VA Medical Center
-654,NCT00961701,"Endocrine Institute , Haemek Medical Center"
+653,NCT00958451,VA Medical Center
+655,NCT00961701,"Endocrine Institute , Haemek Medical Center"
 657,NCT00962221,"Endocrine Institute, Haemek Medical Center"
-659,NCT00973336,Medical University of Vienna
-666,NCT00975221,Research Site
+660,NCT00973336,Medical University of Vienna
+665,NCT00975221,Research Site
 667,NCT00977080,Site Reference ID/Investigator# 22781
 667,NCT00977080,Site Reference ID/Investigator# 24342
 667,NCT00977080,Site Reference ID/Investigator# 21142
@@ -423,8 +423,8 @@ index,nct_id,investigators
 667,NCT00977080,Site Reference ID/Investigator# 23103
 667,NCT00977080,Site Reference ID/Investigator# 41982
 667,NCT00977080,Site Reference ID/Investigator# 40222
-670,NCT00982722,Karolinska UH
-670,NCT00982722,Karolinska University Hospital
+672,NCT00982722,Karolinska UH
+672,NCT00982722,Karolinska University Hospital
 678,NCT00990704,Site Ref # / Investigator 53794
 678,NCT00990704,Site Ref # / Investigator 53787
 678,NCT00990704,Site Ref # / Investigator 53786
@@ -439,27 +439,27 @@ index,nct_id,investigators
 678,NCT00990704,Site Ref # / Investigator 53785
 678,NCT00990704,Site Ref # / Investigator 53788
 678,NCT00990704,Site Ref # / Investigator 53791
-682,NCT00995163,
+680,NCT00995163,
 683,NCT00999037,UCLA
 690,NCT01012414,Thomas Jefferson University
 694,NCT01025128,"Endocrinology Clinic, Clalit Health Services"
 700,NCT01039818,"Thyroid Unit, Endocrine Division, Hospital de Clínicas de Porto Alegre"
 708,NCT01056419,"Ankara University, Medical School, Ibni Sina Hospital, Endocrinology and Metabolic Diseases Department"
 713,NCT01057732,"Endocrine Institute, Haemek Medical Center"
-716,NCT01060982,Hôpital Privé des Peupliers
-716,NCT01060982,Cochin Hospital
-717,NCT01073462,Site Reference ID/Investigator# 27447
-717,NCT01073462,Site Reference ID/Investigator# 49182
-717,NCT01073462,Site Reference ID/Investigator# 27483
-717,NCT01073462,Site Reference ID/Investigator# 52742
-717,NCT01073462,Site Reference ID/Investigator# 27487
-717,NCT01073462,Site Reference ID/Investigator# 36983
-717,NCT01073462,Site Reference ID/Investigator# 27484
-717,NCT01073462,Site Reference ID/Investigator# 27485
-717,NCT01073462,Site Reference ID/Investigator# 27446
-717,NCT01073462,Site Reference ID/Investigator# 53469
-717,NCT01073462,Site Reference ID/Investigator# 27482
-717,NCT01073462,Site Reference ID/Investigator# 10981
+715,NCT01060982,Hôpital Privé des Peupliers
+715,NCT01060982,Cochin Hospital
+718,NCT01073462,Site Reference ID/Investigator# 27447
+718,NCT01073462,Site Reference ID/Investigator# 49182
+718,NCT01073462,Site Reference ID/Investigator# 27483
+718,NCT01073462,Site Reference ID/Investigator# 52742
+718,NCT01073462,Site Reference ID/Investigator# 27487
+718,NCT01073462,Site Reference ID/Investigator# 36983
+718,NCT01073462,Site Reference ID/Investigator# 27484
+718,NCT01073462,Site Reference ID/Investigator# 27485
+718,NCT01073462,Site Reference ID/Investigator# 27446
+718,NCT01073462,Site Reference ID/Investigator# 53469
+718,NCT01073462,Site Reference ID/Investigator# 27482
+718,NCT01073462,Site Reference ID/Investigator# 10981
 722,NCT01081665,Site Reference ID/Investigator# 32055
 722,NCT01081665,Site Reference ID/Investigator# 32050
 722,NCT01081665,Site Reference ID/Investigator# 32051
@@ -479,138 +479,138 @@ index,nct_id,investigators
 722,NCT01081665,Site Reference ID/Investigator# 32054
 722,NCT01081665,Site Reference ID/Investigator# 32063
 722,NCT01081665,Site Reference ID/Investigator# 32075
-724,NCT01083186,Site Reference ID/Investigator# 47002
-724,NCT01083186,Site Reference ID/Investigator# 43772
-724,NCT01083186,Site Reference ID/Investigator# 27492
-724,NCT01083186,Site Reference ID/Investigator# 43769
-724,NCT01083186,Site Reference ID/Investigator# 38257
-724,NCT01083186,Site Reference ID/Investigator# 47003
-724,NCT01083186,Site Reference ID/Investigator# 27497
-724,NCT01083186,Site Reference ID/Investigator# 47004
-724,NCT01083186,Site Reference ID/Investigator# 27489
-724,NCT01083186,Site Reference ID/Investigator# 27495
-724,NCT01083186,Site Reference ID/Investigator# 43773
-724,NCT01083186,Site Reference ID/Investigator# 27498
-724,NCT01083186,Site Reference ID/Investigator# 38259
-724,NCT01083186,Site Reference ID/Investigator# 22121
-724,NCT01083186,Site Reference ID/Investigator# 43771
-724,NCT01083186,Site Reference ID/Investigator# 43767
-724,NCT01083186,Site Reference ID/Investigator# 27496
-724,NCT01083186,Site Reference ID/Investigator# 43768
-724,NCT01083186,Site Reference ID/Investigator# 27491
-724,NCT01083186,Site Reference ID/Investigator# 27494
-724,NCT01083186,Site Reference ID/Investigator# 27493
-724,NCT01083186,Site Reference ID/Investigator# 38255
-724,NCT01083186,Site Reference ID/Investigator# 43770
-724,NCT01083186,Site Reference ID/Investigator# 39839
-728,NCT01083550,University Health Network
-730,NCT01083849,Site Reference ID/Investigator# 64522
-730,NCT01083849,Site Reference ID/Investigator# 53506
-730,NCT01083849,Site Reference ID/Investigator# 53524
-730,NCT01083849,Site Reference ID/Investigator# 74733
-730,NCT01083849,Site Reference ID/Investigator# 64523
-730,NCT01083849,Site Reference ID/Investigator# 53525
-730,NCT01083849,Site Reference ID/Investigator# 53526
-730,NCT01083849,Site Reference ID/Investigator# 69662
-730,NCT01083849,Site Reference ID/Investigator# 53508
-730,NCT01083849,Site Reference ID/Investigator# 53523
-730,NCT01083849,Site Reference ID/Investigator# 53507
-730,NCT01083849,Site Reference ID/Investigator# 28352
-730,NCT01083849,Site Reference ID/Investigator# 28359
-730,NCT01083849,Site Reference ID/Investigator# 28305
-730,NCT01083849,Site Reference ID/Investigator# 28306
-730,NCT01083849,Site Reference ID/Investigator# 28003
-730,NCT01083849,Site Reference ID/Investigator# 81613
-730,NCT01083849,Site Reference ID/Investigator# 28017
-730,NCT01083849,Site Reference ID/Investigator# 28301
-730,NCT01083849,Site Reference ID/Investigator# 28296
-730,NCT01083849,Site Reference ID/Investigator# 28021
-730,NCT01083849,Site Reference ID/Investigator# 28024
-730,NCT01083849,Site Reference ID/Investigator# 28303
-730,NCT01083849,Site Reference ID/Investigator# 54050
-730,NCT01083849,Site Reference ID/Investigator# 28022
-730,NCT01083849,Site Reference ID/Investigator# 30862
-730,NCT01083849,Site Reference ID/Investigator# 28007
-730,NCT01083849,Site Reference ID/Investigator# 28304
-730,NCT01083849,Site Reference ID/Investigator# 28014
-730,NCT01083849,Site Reference ID/Investigator# 28023
-730,NCT01083849,Site Reference ID/Investigator# 28134
-730,NCT01083849,Site Reference ID/Investigator# 28037
-730,NCT01083849,Site Reference ID/Investigator# 43903
-730,NCT01083849,Site Reference ID/Investigator# 99777
-730,NCT01083849,Site Reference ID/Investigator# 28284
-730,NCT01083849,Site Reference ID/Investigator# 124118
-730,NCT01083849,Site Reference ID/Investigator# 54054
-730,NCT01083849,Site Reference ID/Investigator# 48864
-730,NCT01083849,Site Reference ID/Investigator# 72343
-730,NCT01083849,Site Reference ID/Investigator# 28029
-730,NCT01083849,Site Reference ID/Investigator# 28287
-730,NCT01083849,Site Reference ID/Investigator# 28276
-730,NCT01083849,Site Reference ID/Investigator# 28351
-730,NCT01083849,Site Reference ID/Investigator# 28280
-730,NCT01083849,Site Reference ID/Investigator# 48865
-730,NCT01083849,Site Reference ID/Investigator# 28300
-730,NCT01083849,Site Reference ID/Investigator# 28011
-730,NCT01083849,Site Reference ID/Investigator# 124119
-730,NCT01083849,Site Reference ID/Investigator# 28019
-730,NCT01083849,Site Reference ID/Investigator# 28135
-730,NCT01083849,Site Reference ID/Investigator# 28286
-730,NCT01083849,Site Reference ID/Investigator# 28353
-730,NCT01083849,Site Reference ID/Investigator# 28044
-730,NCT01083849,Site Reference ID/Investigator# 48863
-730,NCT01083849,Site Reference ID/Investigator# 28013
-730,NCT01083849,Site Reference ID/Investigator# 28025
-730,NCT01083849,Site Reference ID/Investigator# 28290
-730,NCT01083849,Site Reference ID/Investigator# 10982
-730,NCT01083849,Site Reference ID/Investigator# 28291
-730,NCT01083849,Site Reference ID/Investigator# 28036
-730,NCT01083849,Site Reference ID/Investigator# 28302
-730,NCT01083849,Site Reference ID/Investigator# 54051
-730,NCT01083849,Site Reference ID/Investigator# 28278
-730,NCT01083849,Site Reference ID/Investigator# 99778
-730,NCT01083849,Site Reference ID/Investigator# 99776
-730,NCT01083849,Site Reference ID/Investigator# 124120
-730,NCT01083849,Site Reference ID/Investigator# 28275
-730,NCT01083849,Site Reference ID/Investigator# 43904
-730,NCT01083849,Site Reference ID/Investigator# 28277
-730,NCT01083849,Site Reference ID/Investigator# 28297
-730,NCT01083849,Site Reference ID/Investigator# 28307
-730,NCT01083849,Site Reference ID/Investigator# 28295
-730,NCT01083849,Site Reference ID/Investigator# 28294
-730,NCT01083849,Site Reference ID/Investigator# 48862
-730,NCT01083849,Site Reference ID/Investigator# 28042
-730,NCT01083849,Site Reference ID/Investigator# 28282
-730,NCT01083849,Site Reference ID/Investigator# 28033
-730,NCT01083849,Site Reference ID/Investigator# 54052
-730,NCT01083849,Site Reference ID/Investigator# 28005
-730,NCT01083849,Site Reference ID/Investigator# 28020
-730,NCT01083849,Site Reference ID/Investigator# 28293
-730,NCT01083849,Site Reference ID/Investigator# 28018
-730,NCT01083849,Site Reference ID/Investigator# 28298
-730,NCT01083849,Site Reference ID/Investigator# 28292
-730,NCT01083849,Site Reference ID/Investigator# 48882
-730,NCT01083849,Site Reference ID/Investigator# 28299
-730,NCT01083849,Site Reference ID/Investigator# 28279
+725,NCT01083186,Site Reference ID/Investigator# 47002
+725,NCT01083186,Site Reference ID/Investigator# 43772
+725,NCT01083186,Site Reference ID/Investigator# 27492
+725,NCT01083186,Site Reference ID/Investigator# 43769
+725,NCT01083186,Site Reference ID/Investigator# 38257
+725,NCT01083186,Site Reference ID/Investigator# 47003
+725,NCT01083186,Site Reference ID/Investigator# 27497
+725,NCT01083186,Site Reference ID/Investigator# 47004
+725,NCT01083186,Site Reference ID/Investigator# 27489
+725,NCT01083186,Site Reference ID/Investigator# 27495
+725,NCT01083186,Site Reference ID/Investigator# 43773
+725,NCT01083186,Site Reference ID/Investigator# 27498
+725,NCT01083186,Site Reference ID/Investigator# 38259
+725,NCT01083186,Site Reference ID/Investigator# 22121
+725,NCT01083186,Site Reference ID/Investigator# 43771
+725,NCT01083186,Site Reference ID/Investigator# 43767
+725,NCT01083186,Site Reference ID/Investigator# 27496
+725,NCT01083186,Site Reference ID/Investigator# 43768
+725,NCT01083186,Site Reference ID/Investigator# 27491
+725,NCT01083186,Site Reference ID/Investigator# 27494
+725,NCT01083186,Site Reference ID/Investigator# 27493
+725,NCT01083186,Site Reference ID/Investigator# 38255
+725,NCT01083186,Site Reference ID/Investigator# 43770
+725,NCT01083186,Site Reference ID/Investigator# 39839
+727,NCT01083550,University Health Network
+729,NCT01083849,Site Reference ID/Investigator# 64522
+729,NCT01083849,Site Reference ID/Investigator# 53506
+729,NCT01083849,Site Reference ID/Investigator# 53524
+729,NCT01083849,Site Reference ID/Investigator# 74733
+729,NCT01083849,Site Reference ID/Investigator# 64523
+729,NCT01083849,Site Reference ID/Investigator# 53525
+729,NCT01083849,Site Reference ID/Investigator# 53526
+729,NCT01083849,Site Reference ID/Investigator# 69662
+729,NCT01083849,Site Reference ID/Investigator# 53508
+729,NCT01083849,Site Reference ID/Investigator# 53523
+729,NCT01083849,Site Reference ID/Investigator# 53507
+729,NCT01083849,Site Reference ID/Investigator# 28352
+729,NCT01083849,Site Reference ID/Investigator# 28359
+729,NCT01083849,Site Reference ID/Investigator# 28305
+729,NCT01083849,Site Reference ID/Investigator# 28306
+729,NCT01083849,Site Reference ID/Investigator# 28003
+729,NCT01083849,Site Reference ID/Investigator# 81613
+729,NCT01083849,Site Reference ID/Investigator# 28017
+729,NCT01083849,Site Reference ID/Investigator# 28301
+729,NCT01083849,Site Reference ID/Investigator# 28296
+729,NCT01083849,Site Reference ID/Investigator# 28021
+729,NCT01083849,Site Reference ID/Investigator# 28024
+729,NCT01083849,Site Reference ID/Investigator# 28303
+729,NCT01083849,Site Reference ID/Investigator# 54050
+729,NCT01083849,Site Reference ID/Investigator# 28022
+729,NCT01083849,Site Reference ID/Investigator# 30862
+729,NCT01083849,Site Reference ID/Investigator# 28007
+729,NCT01083849,Site Reference ID/Investigator# 28304
+729,NCT01083849,Site Reference ID/Investigator# 28014
+729,NCT01083849,Site Reference ID/Investigator# 28023
+729,NCT01083849,Site Reference ID/Investigator# 28134
+729,NCT01083849,Site Reference ID/Investigator# 28037
+729,NCT01083849,Site Reference ID/Investigator# 43903
+729,NCT01083849,Site Reference ID/Investigator# 99777
+729,NCT01083849,Site Reference ID/Investigator# 28284
+729,NCT01083849,Site Reference ID/Investigator# 124118
+729,NCT01083849,Site Reference ID/Investigator# 54054
+729,NCT01083849,Site Reference ID/Investigator# 48864
+729,NCT01083849,Site Reference ID/Investigator# 72343
+729,NCT01083849,Site Reference ID/Investigator# 28029
+729,NCT01083849,Site Reference ID/Investigator# 28287
+729,NCT01083849,Site Reference ID/Investigator# 28276
+729,NCT01083849,Site Reference ID/Investigator# 28351
+729,NCT01083849,Site Reference ID/Investigator# 28280
+729,NCT01083849,Site Reference ID/Investigator# 48865
+729,NCT01083849,Site Reference ID/Investigator# 28300
+729,NCT01083849,Site Reference ID/Investigator# 28011
+729,NCT01083849,Site Reference ID/Investigator# 124119
+729,NCT01083849,Site Reference ID/Investigator# 28019
+729,NCT01083849,Site Reference ID/Investigator# 28135
+729,NCT01083849,Site Reference ID/Investigator# 28286
+729,NCT01083849,Site Reference ID/Investigator# 28353
+729,NCT01083849,Site Reference ID/Investigator# 28044
+729,NCT01083849,Site Reference ID/Investigator# 48863
+729,NCT01083849,Site Reference ID/Investigator# 28013
+729,NCT01083849,Site Reference ID/Investigator# 28025
+729,NCT01083849,Site Reference ID/Investigator# 28290
+729,NCT01083849,Site Reference ID/Investigator# 10982
+729,NCT01083849,Site Reference ID/Investigator# 28291
+729,NCT01083849,Site Reference ID/Investigator# 28036
+729,NCT01083849,Site Reference ID/Investigator# 28302
+729,NCT01083849,Site Reference ID/Investigator# 54051
+729,NCT01083849,Site Reference ID/Investigator# 28278
+729,NCT01083849,Site Reference ID/Investigator# 99778
+729,NCT01083849,Site Reference ID/Investigator# 99776
+729,NCT01083849,Site Reference ID/Investigator# 124120
+729,NCT01083849,Site Reference ID/Investigator# 28275
+729,NCT01083849,Site Reference ID/Investigator# 43904
+729,NCT01083849,Site Reference ID/Investigator# 28277
+729,NCT01083849,Site Reference ID/Investigator# 28297
+729,NCT01083849,Site Reference ID/Investigator# 28307
+729,NCT01083849,Site Reference ID/Investigator# 28295
+729,NCT01083849,Site Reference ID/Investigator# 28294
+729,NCT01083849,Site Reference ID/Investigator# 48862
+729,NCT01083849,Site Reference ID/Investigator# 28042
+729,NCT01083849,Site Reference ID/Investigator# 28282
+729,NCT01083849,Site Reference ID/Investigator# 28033
+729,NCT01083849,Site Reference ID/Investigator# 54052
+729,NCT01083849,Site Reference ID/Investigator# 28005
+729,NCT01083849,Site Reference ID/Investigator# 28020
+729,NCT01083849,Site Reference ID/Investigator# 28293
+729,NCT01083849,Site Reference ID/Investigator# 28018
+729,NCT01083849,Site Reference ID/Investigator# 28298
+729,NCT01083849,Site Reference ID/Investigator# 28292
+729,NCT01083849,Site Reference ID/Investigator# 48882
+729,NCT01083849,Site Reference ID/Investigator# 28299
+729,NCT01083849,Site Reference ID/Investigator# 28279
 732,NCT01084356,"Department of Nuclear Medicine, Tel Aviv Sourasky Medical Center"
 737,NCT01087619,"Skåne University Hospital, Department of Surgery, Lund"
 738,NCT01089335,"Department of Surgery and Department of Imaging, Skåne University Hospital"
-746,NCT01100723,"Lynchburg Nephrology Associates, P.L.L.C."
-749,NCT01101113,Seoul National University Hospital
-749,NCT01101113,Kyungpook National University
-749,NCT01101113,Gil Hospital
-749,NCT01101113,Hallym University Sacred Hospital
-749,NCT01101113,Seoul National University Bundang Hospital
-749,NCT01101113,Eulji University
-749,NCT01101113,Samsung Medical Center
+745,NCT01100723,"Lynchburg Nephrology Associates, P.L.L.C."
+748,NCT01101113,Seoul National University Hospital
+748,NCT01101113,Kyungpook National University
+748,NCT01101113,Gil Hospital
+748,NCT01101113,Hallym University Sacred Hospital
+748,NCT01101113,Seoul National University Bundang Hospital
+748,NCT01101113,Eulji University
+748,NCT01101113,Samsung Medical Center
 753,NCT01102127,Complejo Asistencial de León
-758,NCT01103206,University hospital
+757,NCT01103206,University hospital
 763,NCT01106443,University of Alberta
 763,NCT01106443,Dalhouise University
-765,NCT01109420,"National Institutes of Health Clinical Center, 9000 Rockville Pike"
+766,NCT01109420,"National Institutes of Health Clinical Center, 9000 Rockville Pike"
 767,NCT01114503,GSK Investigational Site
 772,NCT01115543,Siriraj Medical School
 774,NCT01118065,Leiden University Medical Center
-776,NCT01127503,VCFS International Center
+777,NCT01127503,VCFS International Center
 781,NCT01134315,Site Reference ID/Investigator# 37082
 781,NCT01134315,Site Reference ID/Investigator# 26762
 781,NCT01134315,Site Reference ID/Investigator# 28529
@@ -629,32 +629,32 @@ index,nct_id,investigators
 781,NCT01134315,Site Reference ID/Investigator# 26758
 781,NCT01134315,Site Reference ID/Investigator# 40382
 781,NCT01134315,Site Reference ID/Investigator# 26759
-784,NCT01134549,
+786,NCT01134549,
 789,NCT01134562,
 790,NCT01137097,Samsung Medical Center
 793,NCT01138475,William Beaumont Health Center
-802,NCT01149291,Site Reference ID/Investigator# 37822
-802,NCT01149291,Site Reference ID/Investigator# 68286
-802,NCT01149291,Site Reference ID/Investigator# 40677
-802,NCT01149291,Site Reference ID/Investigator# 85153
-802,NCT01149291,Site Reference ID/Investigator# 40672
-802,NCT01149291,Site Reference ID/Investigator# 40674
-802,NCT01149291,Site Reference ID/Investigator# 40678
-802,NCT01149291,Site Reference ID/Investigator# 40686
-802,NCT01149291,Site Reference ID/Investigator# 61585
-802,NCT01149291,Site Reference ID/Investigator# 63764
-802,NCT01149291,Site Reference ID/Investigator# 63765
-802,NCT01149291,Site Reference ID/Investigator# 63766
-802,NCT01149291,Site Reference ID/Investigator# 69973
-802,NCT01149291,Site Reference ID/Investigator# 63763
-802,NCT01149291,Site Reference ID/Investigator# 48127
-802,NCT01149291,Site Reference ID/Investigator# 64444
-802,NCT01149291,Site Reference ID/Investigator# 40684
-802,NCT01149291,Site Reference ID/Investigator# 48132
-802,NCT01149291,Site Reference ID/Investigator# 68283
-802,NCT01149291,Site Reference ID/Investigator# 68281
-802,NCT01149291,Site Reference ID/Investigator# 68282
-802,NCT01149291,Site Reference ID/Investigator# 69974
+801,NCT01149291,Site Reference ID/Investigator# 37822
+801,NCT01149291,Site Reference ID/Investigator# 68286
+801,NCT01149291,Site Reference ID/Investigator# 40677
+801,NCT01149291,Site Reference ID/Investigator# 85153
+801,NCT01149291,Site Reference ID/Investigator# 40672
+801,NCT01149291,Site Reference ID/Investigator# 40674
+801,NCT01149291,Site Reference ID/Investigator# 40678
+801,NCT01149291,Site Reference ID/Investigator# 40686
+801,NCT01149291,Site Reference ID/Investigator# 61585
+801,NCT01149291,Site Reference ID/Investigator# 63764
+801,NCT01149291,Site Reference ID/Investigator# 63765
+801,NCT01149291,Site Reference ID/Investigator# 63766
+801,NCT01149291,Site Reference ID/Investigator# 69973
+801,NCT01149291,Site Reference ID/Investigator# 63763
+801,NCT01149291,Site Reference ID/Investigator# 48127
+801,NCT01149291,Site Reference ID/Investigator# 64444
+801,NCT01149291,Site Reference ID/Investigator# 40684
+801,NCT01149291,Site Reference ID/Investigator# 48132
+801,NCT01149291,Site Reference ID/Investigator# 68283
+801,NCT01149291,Site Reference ID/Investigator# 68281
+801,NCT01149291,Site Reference ID/Investigator# 68282
+801,NCT01149291,Site Reference ID/Investigator# 69974
 804,NCT01153360,Severance Hospital
 806,NCT01163565,Walter C Mackenzie Health Sciences Centre
 813,NCT01164176,Hallym University Sacred Heart Hospital
@@ -664,134 +664,134 @@ index,nct_id,investigators
 813,NCT01164176,Seoul National University Hospital
 813,NCT01164176,Yonsei Cancer Center at Yonsei University Medical Center
 813,NCT01164176,Gangnam Severance Hospital
-814,NCT01167309,CRS Clinical Research Services Kiel GmbH
-814,NCT01167309,Centralny Szpital Kliniczny MON
+816,NCT01167309,CRS Clinical Research Services Kiel GmbH
+816,NCT01167309,Centralny Szpital Kliniczny MON
 818,NCT01171690,Mayo Clinic
-820,NCT01178450,Hospital Universitari de Bellvitge
-820,NCT01178450,Hospital Clinic de Barcelona
+822,NCT01178450,Hospital Universitari de Bellvitge
+822,NCT01178450,Hospital Clinic de Barcelona
 826,NCT01182285,"National Institutes of Health Clinical Center, 9000 Rockville Pike"
 827,NCT01182584,National Taiwan University
-838,NCT01208051,City of Hope Comprehensive Cancer Center
-838,NCT01208051,USC / Norris Comprehensive Cancer Center
-838,NCT01208051,University of California Davis Comprehensive Cancer Center P2C
-838,NCT01208051,University of California Davis Comprehensive Cancer Center
-838,NCT01208051,City of Hope South Pasadena
-838,NCT01208051,University of Colorado Hospital
-838,NCT01208051,Moffitt Cancer Center
-838,NCT01208051,Northwestern University
-838,NCT01208051,University of Chicago Comprehensive Cancer Center
-838,NCT01208051,Decatur Memorial Hospital
-838,NCT01208051,NorthShore University HealthSystem-Evanston Hospital
-838,NCT01208051,Ingalls Memorial Hospital
-838,NCT01208051,UC Comprehensive Cancer Center at Silver Cross
-838,NCT01208051,Illinois CancerCare-Peoria
-838,NCT01208051,Fort Wayne Medical Oncology and Hematology Inc-Parkview
-838,NCT01208051,Indiana University/Melvin and Bren Simon Cancer Center
-838,NCT01208051,University of Maryland/Greenebaum Cancer Center
-838,NCT01208051,University of Michigan Comprehensive Cancer Center
-838,NCT01208051,Wayne State University/Karmanos Cancer Institute
-838,NCT01208051,Minnesota Oncology Hematology PA-Minneapolis
-838,NCT01208051,Metro Minnesota Community Oncology Research Consortium
-838,NCT01208051,Washington University School of Medicine
-838,NCT01208051,Mercy Hospital Saint Louis
-838,NCT01208051,Rutgers Cancer Institute of New Jersey
-838,NCT01208051,UNC Lineberger Comprehensive Cancer Center
-838,NCT01208051,Penn State Children's Hospital
-838,NCT01208051,Fox Chase Cancer Center
-838,NCT01208051,Vanderbilt University/Ingram Cancer Center
-838,NCT01208051,M D Anderson Cancer Center
-838,NCT01208051,University of Wisconsin Hospital and Clinics
-838,NCT01208051,Tom Baker Cancer Centre
-838,NCT01208051,London Regional Cancer Program
-838,NCT01208051,University Health Network-Princess Margaret Hospital
+837,NCT01208051,City of Hope Comprehensive Cancer Center
+837,NCT01208051,USC / Norris Comprehensive Cancer Center
+837,NCT01208051,University of California Davis Comprehensive Cancer Center P2C
+837,NCT01208051,University of California Davis Comprehensive Cancer Center
+837,NCT01208051,City of Hope South Pasadena
+837,NCT01208051,University of Colorado Hospital
+837,NCT01208051,Moffitt Cancer Center
+837,NCT01208051,Northwestern University
+837,NCT01208051,University of Chicago Comprehensive Cancer Center
+837,NCT01208051,Decatur Memorial Hospital
+837,NCT01208051,NorthShore University HealthSystem-Evanston Hospital
+837,NCT01208051,Ingalls Memorial Hospital
+837,NCT01208051,UC Comprehensive Cancer Center at Silver Cross
+837,NCT01208051,Illinois CancerCare-Peoria
+837,NCT01208051,Fort Wayne Medical Oncology and Hematology Inc-Parkview
+837,NCT01208051,Indiana University/Melvin and Bren Simon Cancer Center
+837,NCT01208051,University of Maryland/Greenebaum Cancer Center
+837,NCT01208051,University of Michigan Comprehensive Cancer Center
+837,NCT01208051,Wayne State University/Karmanos Cancer Institute
+837,NCT01208051,Minnesota Oncology Hematology PA-Minneapolis
+837,NCT01208051,Metro Minnesota Community Oncology Research Consortium
+837,NCT01208051,Washington University School of Medicine
+837,NCT01208051,Mercy Hospital Saint Louis
+837,NCT01208051,Rutgers Cancer Institute of New Jersey
+837,NCT01208051,UNC Lineberger Comprehensive Cancer Center
+837,NCT01208051,Penn State Children's Hospital
+837,NCT01208051,Fox Chase Cancer Center
+837,NCT01208051,Vanderbilt University/Ingram Cancer Center
+837,NCT01208051,M D Anderson Cancer Center
+837,NCT01208051,University of Wisconsin Hospital and Clinics
+837,NCT01208051,Tom Baker Cancer Centre
+837,NCT01208051,London Regional Cancer Program
+837,NCT01208051,University Health Network-Princess Margaret Hospital
 842,NCT01219855,"OPKO Health, Inc"
-844,NCT01220050,Mario Negri Institute - Clinical Research Center for Rare Diseases
-849,NCT01222026,"Medical University Vienna, General Hospital Vienna (AKH Wien)"
-853,NCT01224782,Site Reference ID/Investigator# 66544
-853,NCT01224782,Site Reference ID/Investigator# 47685
-853,NCT01224782,Site Reference ID/Investigator# 66546
-853,NCT01224782,Site Reference ID/Investigator# 47683
-853,NCT01224782,Site Reference ID/Investigator# 66543
-853,NCT01224782,Site Reference ID/Investigator# 47684
-853,NCT01224782,Site Reference ID/Investigator# 66542
-853,NCT01224782,Site Reference ID/Investigator# 66545
-853,NCT01224782,Site Reference ID/Investigator# 47687
-853,NCT01224782,Site Reference ID/Investigator# 43449
-853,NCT01224782,Site Reference ID/Investigator# 46744
-853,NCT01224782,Site Reference ID/Investigator# 73353
-853,NCT01224782,Site Reference ID/Investigator# 47690
-853,NCT01224782,Site Reference ID/Investigator# 46742
-853,NCT01224782,Site Reference ID/Investigator# 49542
-853,NCT01224782,Site Reference ID/Investigator# 67442
-853,NCT01224782,Site Reference ID/Investigator# 67443
-853,NCT01224782,Site Reference ID/Investigator# 51003
-853,NCT01224782,Site Reference ID/Investigator# 51004
-853,NCT01224782,Site Reference ID/Investigator# 43522
-853,NCT01224782,Site Reference ID/Investigator# 43523
-853,NCT01224782,Site Reference ID/Investigator# 43524
-853,NCT01224782,Site Reference ID/Investigator# 45483
-853,NCT01224782,Site Reference ID/Investigator# 43453
-853,NCT01224782,Site Reference ID/Investigator# 46743
-853,NCT01224782,Site Reference ID/Investigator# 51008
-853,NCT01224782,Site Reference ID/Investigator# 47842
-853,NCT01224782,Site Reference ID/Investigator# 68462
-853,NCT01224782,Site Reference ID/Investigator# 51009
-853,NCT01224782,Site Reference ID/Investigator# 51005
-853,NCT01224782,Site Reference ID/Investigator# 51011
-853,NCT01224782,Site Reference ID/Investigator# 48210
-853,NCT01224782,Site Reference ID/Investigator# 45487
-853,NCT01224782,Site Reference ID/Investigator# 51012
-853,NCT01224782,Site Reference ID/Investigator# 51002
-853,NCT01224782,Site Reference ID/Investigator# 43448
-853,NCT01224782,Site Reference ID/Investigator# 45485
-853,NCT01224782,Site Reference ID/Investigator# 42992
-853,NCT01224782,Site Reference ID/Investigator# 42879
-853,NCT01224782,Site Reference ID/Investigator# 42880
-853,NCT01224782,Site Reference ID/Investigator# 42881
-853,NCT01224782,Site Reference ID/Investigator# 42882
-853,NCT01224782,Site Reference ID/Investigator# 42883
-853,NCT01224782,Site Reference ID/Investigator# 42963
-853,NCT01224782,Site Reference ID/Investigator# 42970
-853,NCT01224782,Site Reference ID/Investigator# 42877
-853,NCT01224782,Site Reference ID/Investigator# 42878
-853,NCT01224782,Site Reference ID/Investigator# 42973
-853,NCT01224782,Site Reference ID/Investigator# 42975
-853,NCT01224782,Site Reference ID/Investigator# 42976
-853,NCT01224782,Site Reference ID/Investigator# 42981
-853,NCT01224782,Site Reference ID/Investigator# 42982
-853,NCT01224782,Site Reference ID/Investigator# 42980
-853,NCT01224782,Site Reference ID/Investigator# 63623
-853,NCT01224782,Site Reference ID/Investigator# 43009
-853,NCT01224782,Site Reference ID/Investigator# 43002
-853,NCT01224782,Site Reference ID/Investigator# 43003
-853,NCT01224782,Site Reference ID/Investigator# 43006
-853,NCT01224782,Site Reference ID/Investigator# 42991
-853,NCT01224782,Site Reference ID/Investigator# 42988
-853,NCT01224782,Site Reference ID/Investigator# 42989
-853,NCT01224782,Site Reference ID/Investigator# 42999
-853,NCT01224782,Site Reference ID/Investigator# 43000
-853,NCT01224782,Site Reference ID/Investigator# 42979
-853,NCT01224782,Site Reference ID/Investigator# 42984
-853,NCT01224782,Site Reference ID/Investigator# 42985
-853,NCT01224782,Site Reference ID/Investigator# 42987
-853,NCT01224782,Site Reference ID/Investigator# 42994
-853,NCT01224782,Site Reference ID/Investigator# 42995
+845,NCT01220050,Mario Negri Institute - Clinical Research Center for Rare Diseases
+848,NCT01222026,"Medical University Vienna, General Hospital Vienna (AKH Wien)"
+854,NCT01224782,Site Reference ID/Investigator# 66544
+854,NCT01224782,Site Reference ID/Investigator# 47685
+854,NCT01224782,Site Reference ID/Investigator# 66546
+854,NCT01224782,Site Reference ID/Investigator# 47683
+854,NCT01224782,Site Reference ID/Investigator# 66543
+854,NCT01224782,Site Reference ID/Investigator# 47684
+854,NCT01224782,Site Reference ID/Investigator# 66542
+854,NCT01224782,Site Reference ID/Investigator# 66545
+854,NCT01224782,Site Reference ID/Investigator# 47687
+854,NCT01224782,Site Reference ID/Investigator# 43449
+854,NCT01224782,Site Reference ID/Investigator# 46744
+854,NCT01224782,Site Reference ID/Investigator# 73353
+854,NCT01224782,Site Reference ID/Investigator# 47690
+854,NCT01224782,Site Reference ID/Investigator# 46742
+854,NCT01224782,Site Reference ID/Investigator# 49542
+854,NCT01224782,Site Reference ID/Investigator# 67442
+854,NCT01224782,Site Reference ID/Investigator# 67443
+854,NCT01224782,Site Reference ID/Investigator# 51003
+854,NCT01224782,Site Reference ID/Investigator# 51004
+854,NCT01224782,Site Reference ID/Investigator# 43522
+854,NCT01224782,Site Reference ID/Investigator# 43523
+854,NCT01224782,Site Reference ID/Investigator# 43524
+854,NCT01224782,Site Reference ID/Investigator# 45483
+854,NCT01224782,Site Reference ID/Investigator# 43453
+854,NCT01224782,Site Reference ID/Investigator# 46743
+854,NCT01224782,Site Reference ID/Investigator# 51008
+854,NCT01224782,Site Reference ID/Investigator# 47842
+854,NCT01224782,Site Reference ID/Investigator# 68462
+854,NCT01224782,Site Reference ID/Investigator# 51009
+854,NCT01224782,Site Reference ID/Investigator# 51005
+854,NCT01224782,Site Reference ID/Investigator# 51011
+854,NCT01224782,Site Reference ID/Investigator# 48210
+854,NCT01224782,Site Reference ID/Investigator# 45487
+854,NCT01224782,Site Reference ID/Investigator# 51012
+854,NCT01224782,Site Reference ID/Investigator# 51002
+854,NCT01224782,Site Reference ID/Investigator# 43448
+854,NCT01224782,Site Reference ID/Investigator# 45485
+854,NCT01224782,Site Reference ID/Investigator# 42992
+854,NCT01224782,Site Reference ID/Investigator# 42879
+854,NCT01224782,Site Reference ID/Investigator# 42880
+854,NCT01224782,Site Reference ID/Investigator# 42881
+854,NCT01224782,Site Reference ID/Investigator# 42882
+854,NCT01224782,Site Reference ID/Investigator# 42883
+854,NCT01224782,Site Reference ID/Investigator# 42963
+854,NCT01224782,Site Reference ID/Investigator# 42970
+854,NCT01224782,Site Reference ID/Investigator# 42877
+854,NCT01224782,Site Reference ID/Investigator# 42878
+854,NCT01224782,Site Reference ID/Investigator# 42973
+854,NCT01224782,Site Reference ID/Investigator# 42975
+854,NCT01224782,Site Reference ID/Investigator# 42976
+854,NCT01224782,Site Reference ID/Investigator# 42981
+854,NCT01224782,Site Reference ID/Investigator# 42982
+854,NCT01224782,Site Reference ID/Investigator# 42980
+854,NCT01224782,Site Reference ID/Investigator# 63623
+854,NCT01224782,Site Reference ID/Investigator# 43009
+854,NCT01224782,Site Reference ID/Investigator# 43002
+854,NCT01224782,Site Reference ID/Investigator# 43003
+854,NCT01224782,Site Reference ID/Investigator# 43006
+854,NCT01224782,Site Reference ID/Investigator# 42991
+854,NCT01224782,Site Reference ID/Investigator# 42988
+854,NCT01224782,Site Reference ID/Investigator# 42989
+854,NCT01224782,Site Reference ID/Investigator# 42999
+854,NCT01224782,Site Reference ID/Investigator# 43000
+854,NCT01224782,Site Reference ID/Investigator# 42979
+854,NCT01224782,Site Reference ID/Investigator# 42984
+854,NCT01224782,Site Reference ID/Investigator# 42985
+854,NCT01224782,Site Reference ID/Investigator# 42987
+854,NCT01224782,Site Reference ID/Investigator# 42994
+854,NCT01224782,Site Reference ID/Investigator# 42995
 856,NCT01225016,Universith of Alabama at Birmingham
-865,NCT01227499,Xiaolong Zhao
-866,NCT01228786,PGIMER
+862,NCT01227499,Xiaolong Zhao
+867,NCT01228786,PGIMER
 869,NCT01229865,Mayo Clinic
 869,NCT01229865,Massachusetts General Hospital
 875,NCT01254565,
-881,NCT01265992,Site Reference ID/Investigator# 47723
-881,NCT01265992,Site Reference ID/Investigator# 41084
-881,NCT01265992,Site Reference ID/Investigator# 45190
-881,NCT01265992,Site Reference ID/Investigator# 41085
-881,NCT01265992,Site Reference ID/Investigator# 41087
-881,NCT01265992,Site Reference ID/Investigator# 45188
-881,NCT01265992,Site Reference ID/Investigator# 41088
-881,NCT01265992,Site Reference ID/Investigator# 57782
-881,NCT01265992,Site Reference ID/Investigator# 41089
-881,NCT01265992,Site Reference ID/Investigator# 45191
+879,NCT01265992,Site Reference ID/Investigator# 47723
+879,NCT01265992,Site Reference ID/Investigator# 41084
+879,NCT01265992,Site Reference ID/Investigator# 45190
+879,NCT01265992,Site Reference ID/Investigator# 41085
+879,NCT01265992,Site Reference ID/Investigator# 41087
+879,NCT01265992,Site Reference ID/Investigator# 45188
+879,NCT01265992,Site Reference ID/Investigator# 41088
+879,NCT01265992,Site Reference ID/Investigator# 57782
+879,NCT01265992,Site Reference ID/Investigator# 41089
+879,NCT01265992,Site Reference ID/Investigator# 45191
 884,NCT01269749,University of Florida
 884,NCT01269749,Texas Childrens Hospital
 889,NCT01270425,Meir Medical Center
@@ -808,21 +808,21 @@ index,nct_id,investigators
 898,NCT01273597,Site Reference ID/Investigator# 46590
 898,NCT01273597,Site Reference ID/Investigator# 46591
 909,NCT01286753,
-910,NCT01290029,Research Site
+911,NCT01290029,Research Site
 913,NCT01291498,John Radcliffe Hospital
 917,NCT01295333,Assistance Publique Hopitaux de Marseille
-923,NCT01297699,Hospital Clínico de Santiago
-923,NCT01297699,Hospital Santa Creu i Sant Pau
-923,NCT01297699,Hospital Clínico San Carlos
-923,NCT01297699,Hospital Universitario Ramón y Cajal
-923,NCT01297699,Centro Oftalmológico Moreiras
-923,NCT01297699,Hospital Universitario Virgen del Rocío
-923,NCT01297699,Hospital Universitario Virgen Macarena
-923,NCT01297699,Hospital Universitario La Fe
-923,NCT01297699,Hospital Clínico Universitario Lozano Blesa
+922,NCT01297699,Hospital Clínico de Santiago
+922,NCT01297699,Hospital Santa Creu i Sant Pau
+922,NCT01297699,Hospital Clínico San Carlos
+922,NCT01297699,Hospital Universitario Ramón y Cajal
+922,NCT01297699,Centro Oftalmológico Moreiras
+922,NCT01297699,Hospital Universitario Virgen del Rocío
+922,NCT01297699,Hospital Universitario Virgen Macarena
+922,NCT01297699,Hospital Universitario La Fe
+922,NCT01297699,Hospital Clínico Universitario Lozano Blesa
 928,NCT01306656,Columbia University Medical Center
-932,NCT01306916,Walter Reed Army Medical Center
-934,NCT01307761,Far Eastern Memorial Hospital
+931,NCT01306916,Walter Reed Army Medical Center
+933,NCT01307761,Far Eastern Memorial Hospital
 935,NCT01308320,Severance Hospital
 939,NCT01320813,CHU de Nîmes - Hôpital Universitaire Carémeau
 945,NCT01322165,Queens Medical Center
@@ -832,98 +832,98 @@ index,nct_id,investigators
 945,NCT01322165,University of Pennsylvania School of Medicine
 945,NCT01322165,Baylor College of Medicine
 945,NCT01322165,University of Texas Medical School at Houston
-949,NCT01329666,Columbia University Medical Center
+950,NCT01329666,Columbia University Medical Center
 953,NCT01335802,Naestved Hospital
 954,NCT01335828,Clinical Investigation Center - Technological Innovation - Inserm 803 - University Hospital France
-959,NCT01341782,Site Reference ID/Investigator# 53485
-959,NCT01341782,Site Reference ID/Investigator# 51571
-959,NCT01341782,Site Reference ID/Investigator# 52963
-959,NCT01341782,Site Reference ID/Investigator# 52966
-959,NCT01341782,Site Reference ID/Investigator# 51578
-959,NCT01341782,Site Reference ID/Investigator# 52965
-959,NCT01341782,Site Reference ID/Investigator# 53782
-959,NCT01341782,Site Reference ID/Investigator# 57483
-959,NCT01341782,Site Reference ID/Investigator# 57487
-959,NCT01341782,Site Reference ID/Investigator# 53484
-959,NCT01341782,Site Reference ID/Investigator# 54385
-959,NCT01341782,Site Reference ID/Investigator# 51581
-959,NCT01341782,Site Reference ID/Investigator# 59164
-959,NCT01341782,Site Reference ID/Investigator# 51574
-959,NCT01341782,Site Reference ID/Investigator# 51575
-959,NCT01341782,Site Reference ID/Investigator# 52751
-959,NCT01341782,Site Reference ID/Investigator# 62025
-959,NCT01341782,Site Reference ID/Investigator# 54384
-959,NCT01341782,Site Reference ID/Investigator# 52745
-959,NCT01341782,Site Reference ID/Investigator# 51569
-959,NCT01341782,Site Reference ID/Investigator# 52964
-959,NCT01341782,Site Reference ID/Investigator# 53483
-959,NCT01341782,Site Reference ID/Investigator# 51582
-959,NCT01341782,Site Reference ID/Investigator# 54388
-959,NCT01341782,Site Reference ID/Investigator# 51576
-959,NCT01341782,Site Reference ID/Investigator# 51577
-959,NCT01341782,Site Reference ID/Investigator# 51580
-959,NCT01341782,Site Reference ID/Investigator# 52747
-959,NCT01341782,Site Reference ID/Investigator# 52748
-959,NCT01341782,Site Reference ID/Investigator# 52750
-959,NCT01341782,Site Reference ID/Investigator# 51570
-959,NCT01341782,Site Reference ID/Investigator# 54387
-959,NCT01341782,Site Reference ID/Investigator# 52746
-959,NCT01341782,Site Reference ID/Investigator# 51579
-959,NCT01341782,Site Reference ID/Investigator# 62024
-959,NCT01341782,Site Reference ID/Investigator# 51572
-959,NCT01341782,Site Reference ID/Investigator# 52752
-959,NCT01341782,Site Reference ID/Investigator# 53482
-959,NCT01341782,Site Reference ID/Investigator# 59162
-959,NCT01341782,Site Reference ID/Investigator# 59966
-959,NCT01341782,Site Reference ID/Investigator# 53783
-959,NCT01341782,Site Reference ID/Investigator# 54383
-959,NCT01341782,Site Reference ID/Investigator# 52749
-959,NCT01341782,Site Reference ID/Investigator# 52962
-959,NCT01341782,Site Reference ID/Investigator# 59163
+958,NCT01341782,Site Reference ID/Investigator# 53485
+958,NCT01341782,Site Reference ID/Investigator# 51571
+958,NCT01341782,Site Reference ID/Investigator# 52963
+958,NCT01341782,Site Reference ID/Investigator# 52966
+958,NCT01341782,Site Reference ID/Investigator# 51578
+958,NCT01341782,Site Reference ID/Investigator# 52965
+958,NCT01341782,Site Reference ID/Investigator# 53782
+958,NCT01341782,Site Reference ID/Investigator# 57483
+958,NCT01341782,Site Reference ID/Investigator# 57487
+958,NCT01341782,Site Reference ID/Investigator# 53484
+958,NCT01341782,Site Reference ID/Investigator# 54385
+958,NCT01341782,Site Reference ID/Investigator# 51581
+958,NCT01341782,Site Reference ID/Investigator# 59164
+958,NCT01341782,Site Reference ID/Investigator# 51574
+958,NCT01341782,Site Reference ID/Investigator# 51575
+958,NCT01341782,Site Reference ID/Investigator# 52751
+958,NCT01341782,Site Reference ID/Investigator# 62025
+958,NCT01341782,Site Reference ID/Investigator# 54384
+958,NCT01341782,Site Reference ID/Investigator# 52745
+958,NCT01341782,Site Reference ID/Investigator# 51569
+958,NCT01341782,Site Reference ID/Investigator# 52964
+958,NCT01341782,Site Reference ID/Investigator# 53483
+958,NCT01341782,Site Reference ID/Investigator# 51582
+958,NCT01341782,Site Reference ID/Investigator# 54388
+958,NCT01341782,Site Reference ID/Investigator# 51576
+958,NCT01341782,Site Reference ID/Investigator# 51577
+958,NCT01341782,Site Reference ID/Investigator# 51580
+958,NCT01341782,Site Reference ID/Investigator# 52747
+958,NCT01341782,Site Reference ID/Investigator# 52748
+958,NCT01341782,Site Reference ID/Investigator# 52750
+958,NCT01341782,Site Reference ID/Investigator# 51570
+958,NCT01341782,Site Reference ID/Investigator# 54387
+958,NCT01341782,Site Reference ID/Investigator# 52746
+958,NCT01341782,Site Reference ID/Investigator# 51579
+958,NCT01341782,Site Reference ID/Investigator# 62024
+958,NCT01341782,Site Reference ID/Investigator# 51572
+958,NCT01341782,Site Reference ID/Investigator# 52752
+958,NCT01341782,Site Reference ID/Investigator# 53482
+958,NCT01341782,Site Reference ID/Investigator# 59162
+958,NCT01341782,Site Reference ID/Investigator# 59966
+958,NCT01341782,Site Reference ID/Investigator# 53783
+958,NCT01341782,Site Reference ID/Investigator# 54383
+958,NCT01341782,Site Reference ID/Investigator# 52749
+958,NCT01341782,Site Reference ID/Investigator# 52962
+958,NCT01341782,Site Reference ID/Investigator# 59163
 960,NCT01341886,Mashad University of Medical Sciences
-969,NCT01368042,Site Reference ID/Investigator# 56803
-969,NCT01368042,Site Reference ID/Investigator# 53424
-969,NCT01368042,Site Reference ID/Investigator# 53425
-969,NCT01368042,Site Reference ID/Investigator# 56805
-969,NCT01368042,Site Reference ID/Investigator# 56802
-969,NCT01368042,Site Reference ID/Investigator# 66291
-969,NCT01368042,Site Reference ID/Investigator# 56809
-969,NCT01368042,Site Reference ID/Investigator# 50442
-969,NCT01368042,Site Reference ID/Investigator# 77554
-969,NCT01368042,Site Reference ID/Investigator# 77553
-969,NCT01368042,Site Reference ID/Investigator# 53422
+968,NCT01368042,Site Reference ID/Investigator# 56803
+968,NCT01368042,Site Reference ID/Investigator# 53424
+968,NCT01368042,Site Reference ID/Investigator# 53425
+968,NCT01368042,Site Reference ID/Investigator# 56805
+968,NCT01368042,Site Reference ID/Investigator# 56802
+968,NCT01368042,Site Reference ID/Investigator# 66291
+968,NCT01368042,Site Reference ID/Investigator# 56809
+968,NCT01368042,Site Reference ID/Investigator# 50442
+968,NCT01368042,Site Reference ID/Investigator# 77554
+968,NCT01368042,Site Reference ID/Investigator# 77553
+968,NCT01368042,Site Reference ID/Investigator# 53422
 972,NCT01369953,"National Human Genome Research Institute (NHGRI), 9000 Rockville Pike"
-984,NCT01382966,Rfm Renal Tedavi Merkezi
-988,NCT01384786,herlev Hospital
+986,NCT01382966,Rfm Renal Tedavi Merkezi
+987,NCT01384786,herlev Hospital
 991,NCT01395134,"Jagiellonian University, College of Medicine, Department of Endocrine Surgery, 3rd Chair of General Surgery"
 992,NCT01396733,Asan Medical Center
 995,NCT01398774,Children's Hospital of Philadelphia
-998,NCT01401478,Site Reference ID/Investigator# 57348
-998,NCT01401478,Site Reference ID/Investigator# 57347
-998,NCT01401478,Site Reference ID/Investigator# 58347
-998,NCT01401478,Site Reference ID/Investigator# 67404
-998,NCT01401478,Site Reference ID/Investigator# 57344
-998,NCT01401478,Site Reference ID/Investigator# 57346
-998,NCT01401478,Site Reference ID/Investigator# 58356
-998,NCT01401478,Site Reference ID/Investigator# 58348
-998,NCT01401478,Site Reference ID/Investigator# 57342
-998,NCT01401478,Site Reference ID/Investigator# 57364
-998,NCT01401478,Site Reference ID/Investigator# 69687
-998,NCT01401478,Site Reference ID/Investigator# 57363
-998,NCT01401478,Site Reference ID/Investigator# 69688
+997,NCT01401478,Site Reference ID/Investigator# 57348
+997,NCT01401478,Site Reference ID/Investigator# 57347
+997,NCT01401478,Site Reference ID/Investigator# 58347
+997,NCT01401478,Site Reference ID/Investigator# 67404
+997,NCT01401478,Site Reference ID/Investigator# 57344
+997,NCT01401478,Site Reference ID/Investigator# 57346
+997,NCT01401478,Site Reference ID/Investigator# 58356
+997,NCT01401478,Site Reference ID/Investigator# 58348
+997,NCT01401478,Site Reference ID/Investigator# 57342
+997,NCT01401478,Site Reference ID/Investigator# 57364
+997,NCT01401478,Site Reference ID/Investigator# 69687
+997,NCT01401478,Site Reference ID/Investigator# 57363
+997,NCT01401478,Site Reference ID/Investigator# 69688
 1000,NCT01408368,"Jagiellonian University, College of Medicine, Department of Endocrine Surgery, 3rd Chair of General Surgery"
-1004,NCT01409798,University of Iowa
-1004,NCT01409798,Kansas University Medical Center
-1004,NCT01409798,University of Minnesota
-1004,NCT01409798,University Of Missiouri
-1004,NCT01409798,University of Nebraska Medical Center
-1004,NCT01409798,Sanford School of Medicine
-1007,NCT01413113,Fred Hutchinson Cancer Research Center/University of Washington Cancer Consortium
-1015,NCT01421407,"Ospedale generale regionale ""Miulli"""
-1015,NCT01421407,Ospedale Maggiore Policlinico Mangiagalli e Regina Elena
-1015,NCT01421407,Hospital Universitario Marquès de Valdecilla
-1020,NCT01426724,University of Virginia
-1025,NCT01428167,"University of Texas Medical Branch, Galveston , Endocrine Department"
+1003,NCT01409798,University of Iowa
+1003,NCT01409798,Kansas University Medical Center
+1003,NCT01409798,University of Minnesota
+1003,NCT01409798,University Of Missiouri
+1003,NCT01409798,University of Nebraska Medical Center
+1003,NCT01409798,Sanford School of Medicine
+1008,NCT01413113,Fred Hutchinson Cancer Research Center/University of Washington Cancer Consortium
+1017,NCT01421407,"Ospedale generale regionale ""Miulli"""
+1017,NCT01421407,Ospedale Maggiore Policlinico Mangiagalli e Regina Elena
+1017,NCT01421407,Hospital Universitario Marquès de Valdecilla
+1019,NCT01426724,University of Virginia
+1024,NCT01428167,"University of Texas Medical Branch, Galveston , Endocrine Department"
 1028,NCT01436994,Royal Aberdeen Children's Hospital
 1028,NCT01436994,Birmingham Children's Hospital
 1028,NCT01436994,Addebrookes Hospital
@@ -942,8 +942,8 @@ index,nct_id,investigators
 1028,NCT01436994,Oxford Radcliffe Hospitals
 1028,NCT01436994,Sheffield Children's Hospital
 1032,NCT01439867,Research Site
-1037,NCT01441154,"National Institutes of Health Clinical Center, 9000 Rockville Pike"
-1040,NCT01447368,Queen Mary Hospital and Tung Wah Hospital
+1036,NCT01441154,"National Institutes of Health Clinical Center, 9000 Rockville Pike"
+1038,NCT01447368,Queen Mary Hospital and Tung Wah Hospital
 1046,NCT01458600,"Departmenty of Endocrinology, Skane University Hospital"
 1046,NCT01458600,"Department of Endocrinology, Karolinska Hospital"
 1046,NCT01458600,"Department of Internal Medicine, section of Endocrinology, Sodersjukhuset"
@@ -960,22 +960,22 @@ index,nct_id,investigators
 1056,NCT01465867,"Department of Gynecological/Obstetric/Urological Sciences, ""Sapienza"" University of Rome"
 1056,NCT01465867,Dpt of Experimental Medicine
 1057,NCT01471288,"Nuclear Medicine Department, Ghaem Hospital"
-1058,NCT01479088,U.O. Nefrologia e Dialisi- Ospedale Giovanni XXIII
-1058,NCT01479088,U.O. Nefrologia e Dialisi - Istituto di Ricovero e Cura a Carattere Scientifico Giannina Gaslini
-1058,NCT01479088,U.O. Nefrologia e Dialisi Pediatrica - Clinica De Marchi
-1058,NCT01479088,U.O. Nefrologia e Dialisi - Ospedale Santobono
-1058,NCT01479088,U.O. Nefrologia e Dialisi - Ospedale Bambino Gesù
-1064,NCT01484379,Rambam Health Care Campus
+1060,NCT01479088,U.O. Nefrologia e Dialisi- Ospedale Giovanni XXIII
+1060,NCT01479088,U.O. Nefrologia e Dialisi - Istituto di Ricovero e Cura a Carattere Scientifico Giannina Gaslini
+1060,NCT01479088,U.O. Nefrologia e Dialisi Pediatrica - Clinica De Marchi
+1060,NCT01479088,U.O. Nefrologia e Dialisi - Ospedale Santobono
+1060,NCT01479088,U.O. Nefrologia e Dialisi - Ospedale Bambino Gesù
+1063,NCT01484379,Rambam Health Care Campus
 1065,NCT01486667,University Sleep Disorders Center
 1082,NCT01528904,Clinic for Gynecology and Obstetrics
-1084,NCT01530919,University of Louisville
+1085,NCT01530919,University of Louisville
 1087,NCT01534169,Nanjing First Hospital Affiliated to Nanjing Medical University
 1093,NCT01539486,University of Arkansas for Medical Sciences
 1094,NCT01539499,University of Arkansas for Medical Sciences
 1096,NCT01545622,University of Arkansas for Medical Sciences
-1100,NCT01558115,Columbia University Medical Center
+1102,NCT01558115,Columbia University Medical Center
 1103,NCT01560299,Mashad University of Medical Sciences
-1109,NCT01571843,Columbia University Medical Center
+1108,NCT01571843,Columbia University Medical Center
 1112,NCT01574287,Emory University
 1114,NCT01574859,Rigshospitalet
 1118,NCT01579344,University of Sao Paulo; Ophthalmology Department
@@ -1000,7 +1000,7 @@ index,nct_id,investigators
 1135,NCT01611896,"Department of Cardiology and Endocrinology, Endocrine Unit, Hillerød Hospital"
 1135,NCT01611896,"Department of Endocrinology, Section 541, Hvidovre Hospital"
 1135,NCT01611896,"Department of Endocrinology and Metabolism, Odense University Hospital"
-1136,NCT01616108,Strabismus Research Foundation
+1137,NCT01616108,Strabismus Research Foundation
 1140,NCT01617694,Severance hospital
 1144,NCT01633853,Beijing Friedship Hospital
 1146,NCT01638533,City of Hope Comprehensive Cancer Center
@@ -1015,11 +1015,11 @@ index,nct_id,investigators
 1146,NCT01638533,Penn State Milton S Hershey Medical Center
 1146,NCT01638533,Thomas Jefferson University Hospital
 1146,NCT01638533,University Health Network-Princess Margaret Hospital
-1151,NCT01647503,PGIMER
+1150,NCT01647503,PGIMER
 1155,NCT01648569,Yonsei University College of Medicidine
-1157,NCT01649206,"""Federico II"" University of Naples, Department of Clinical and Molecular Endocrinology and Oncology"
-1159,NCT01651000,OPKO Renal
-1161,NCT01653379,
+1156,NCT01649206,"""Federico II"" University of Naples, Department of Clinical and Molecular Endocrinology and Oncology"
+1158,NCT01651000,OPKO Renal
+1162,NCT01653379,
 1164,NCT01655719,University of Colorado
 1164,NCT01655719,University of Michigan
 1164,NCT01655719,University of Pennsylvania
@@ -1029,28 +1029,28 @@ index,nct_id,investigators
 1173,NCT01665651,The first affiliated hospital of Anhui University of TCM
 1173,NCT01665651,Huadong hospital affiliated to Fudan University
 1173,NCT01665651,Longhua Hospital affiliated to Shanghai Uni of TCM
-1179,NCT01675089,Hospital das Clinicas - Faculdade de Medicina da Universidade de São Paulo
+1177,NCT01675089,Hospital das Clinicas - Faculdade de Medicina da Universidade de São Paulo
 1180,NCT01690806,ospedale San Salvatore-Reparto di Chirurgia Generale Universitaria
-1188,NCT01704079,OPKO Renal
+1187,NCT01704079,OPKO Renal
 1189,NCT01704586,"Clinic of Nuclear Medicine, University Clinic Essen"
 1189,NCT01704586,University Clinic Würzburg
-1198,NCT01725113,Winthrop University Hospital
-1202,NCT01727973,Zhongshan Ophthalmic Center
-1209,NCT01738243,Jules Stein Eye Institute
-1209,NCT01738243,The Jules Stein Eye Institute at UCLA
+1197,NCT01725113,Winthrop University Hospital
+1201,NCT01727973,Zhongshan Ophthalmic Center
+1208,NCT01738243,Jules Stein Eye Institute
+1208,NCT01738243,The Jules Stein Eye Institute at UCLA
 1213,NCT01739972,"Walter Reed National Military Medical Center, Endocrinology"
 1213,NCT01739972,Walter Reed National Military Medical Center
 1218,NCT01744769,Konkuk University Medical Center
 1221,NCT01750593,Bezmialem Vakif University medical Faculty
 1221,NCT01750593,Bezmialem Vakif University
-1223,NCT01756534,Tel Aviv Medical Center
+1224,NCT01756534,Tel Aviv Medical Center
 1227,NCT01757834,University of Washington Medical Center
 1230,NCT01760421,"Department of Internal Medicine, National Taiwan University Hospital"
-1241,NCT01776502,Angers University Hospital
-1241,NCT01776502,Limoges University Hospital
-1241,NCT01776502,Marseille University Hospital
-1241,NCT01776502,Nantes University Hospital
-1243,NCT01778400,Asan Medical Center
+1242,NCT01776502,Angers University Hospital
+1242,NCT01776502,Limoges University Hospital
+1242,NCT01776502,Marseille University Hospital
+1242,NCT01776502,Nantes University Hospital
+1244,NCT01778400,Asan Medical Center
 1245,NCT01779817,University Hospital of Amiens
 1245,NCT01779817,University Hospital of Angers
 1245,NCT01779817,Civil Hospices of Lyon
@@ -1064,11 +1064,11 @@ index,nct_id,investigators
 1245,NCT01779817,University Hospital of Reims
 1245,NCT01779817,University Hospital of Strasbourg
 1245,NCT01779817,University Hospital of Toulouse
-1249,NCT01781923,Duke University Health Systems
+1248,NCT01781923,Duke University Health Systems
 1250,NCT01783002,British Columbia Cancer Agency
-1255,NCT01785849,Research Site
-1256,NCT01785875,Research Site
-1261,NCT01788046,Research Site
+1254,NCT01785849,Research Site
+1257,NCT01785875,Research Site
+1259,NCT01788046,Research Site
 1262,NCT01788982,A.Z. St. Jan
 1262,NCT01788982,Hopitaux Universitaires Bordet-Erasme - Institut Jules Bordet
 1262,NCT01788982,Cliniques Universitaires Saint-Luc
@@ -1099,7 +1099,7 @@ index,nct_id,investigators
 1263,NCT01789541,Stockholm Arrhythmia Center
 1263,NCT01789541,"Hjärtkliniken, Karolinska Universitetssjukhuset Huddinge"
 1266,NCT01794676,Jersey Shore University Medical Center
-1267,NCT01798966,"Shiley Eye Center, University of California, San Diego"
+1268,NCT01798966,"Shiley Eye Center, University of California, San Diego"
 1273,NCT01805856,Ito Hospital
 1274,NCT01809444,Peking Union Medical College Hospital
 1274,NCT01809444,Zhongshan Ophthalmic Center
@@ -1119,7 +1119,7 @@ index,nct_id,investigators
 1288,NCT01830504,Hospices Civils de Lyon
 1290,NCT01832753,Children's National Medical Center
 1290,NCT01832753,The Children's Hospital of Philadelphia
-1293,NCT01837433,"The Second Affiliated Hospital, Third Military Medical University"
+1292,NCT01837433,"The Second Affiliated Hospital, Third Military Medical University"
 1294,NCT01837745,Institut Gustave Roussy
 1295,NCT01838031,Peking Union Medical College Hospital
 1297,NCT01838629,Hangzhou Center of Disease Control and Prevention
@@ -1128,33 +1128,33 @@ index,nct_id,investigators
 1302,NCT01853579,"University Clinic for General Internal Medicine, Bern University Hospital"
 1303,NCT01856920,NIH Clinical Center
 1306,NCT01868750,University of Virginia
-1308,NCT01868997,Jules Stein Eye Institute at UCLA
-1308,NCT01868997,University of Denver
-1308,NCT01868997,Emory University Department of Ophthalmology
-1308,NCT01868997,"University of Iowa Hospitals and Clinics, Department of Ophthalmology"
-1308,NCT01868997,Kellogg Eye Center at University of Michigan
-1308,NCT01868997,Washington University Department of Ophthalmology
-1308,NCT01868997,University of Nebraska Medical Center Department of Ophthalmology
-1308,NCT01868997,Casey Eye Institute at Oregon Health and Science University
-1308,NCT01868997,Hamilton Eye Institute at University of Tennessee
-1308,NCT01868997,Eye Wellness Center
-1308,NCT01868997,"Medical College of Wisconsin, The Eye Institute"
-1308,NCT01868997,Johannes Gutenberg University Medical Center
-1308,NCT01868997,Fondazione Ca' Granda Ospedale Policlinico Graves GO Center
-1308,NCT01868997,"University of Pisa, Azienda Ospedaliera"
-1308,NCT01868997,Moorfields Eye Hospital
+1309,NCT01868997,Jules Stein Eye Institute at UCLA
+1309,NCT01868997,University of Denver
+1309,NCT01868997,Emory University Department of Ophthalmology
+1309,NCT01868997,"University of Iowa Hospitals and Clinics, Department of Ophthalmology"
+1309,NCT01868997,Kellogg Eye Center at University of Michigan
+1309,NCT01868997,Washington University Department of Ophthalmology
+1309,NCT01868997,University of Nebraska Medical Center Department of Ophthalmology
+1309,NCT01868997,Casey Eye Institute at Oregon Health and Science University
+1309,NCT01868997,Hamilton Eye Institute at University of Tennessee
+1309,NCT01868997,Eye Wellness Center
+1309,NCT01868997,"Medical College of Wisconsin, The Eye Institute"
+1309,NCT01868997,Johannes Gutenberg University Medical Center
+1309,NCT01868997,Fondazione Ca' Granda Ospedale Policlinico Graves GO Center
+1309,NCT01868997,"University of Pisa, Azienda Ospedaliera"
+1309,NCT01868997,Moorfields Eye Hospital
 1315,NCT01880203,Centre François BACLESSE
 1315,NCT01880203,CHU
 1315,NCT01880203,Hôpital Américain de Paris
 1315,NCT01880203,Hôpital Pitié-salpétrière
 1321,NCT01885533,Newcastle upon Tyne Hospitals NHS Foundation Trust
-1325,NCT01889134,"Department of Endocrinology, Diabetology and Isotope Therapy, Wroclaw Medical University"
-1328,NCT01893450,Instituto Nacional de Ciencias Medicas y Nutricion Salvador Zubiran
-1333,NCT01896232,Research Site
-1344,NCT01922843,
-1347,NCT01927406,Stanford Hospital and Clinics
-1352,NCT01927887,Massachusetts General Hospital
-1355,NCT01932970,Research Site
+1326,NCT01889134,"Department of Endocrinology, Diabetology and Isotope Therapy, Wroclaw Medical University"
+1327,NCT01893450,Instituto Nacional de Ciencias Medicas y Nutricion Salvador Zubiran
+1332,NCT01896232,Research Site
+1346,NCT01922843,
+1348,NCT01927406,Stanford Hospital and Clinics
+1353,NCT01927887,Massachusetts General Hospital
+1354,NCT01932970,Research Site
 1362,NCT01939977,Hospital Universitari Germans Trias I Pujol de Badalona
 1362,NCT01939977,Hospital Universitari de Bellvitge
 1362,NCT01939977,Hospital Universitario Marqués de Valdecilla
@@ -1183,21 +1183,21 @@ index,nct_id,investigators
 1373,NCT01969019,"Shanghai Institute of Endocrine and Metabolic Diseases Department of Endocrine and Metabolic Diseases, Ruijin Hospital"
 1379,NCT01985204,"Universite Caddi Ayad, Faculte de Medecine et de Pharmacie"
 1379,NCT01985204,"University Cadi Ayyad, Faculte des Sciences"
-1382,NCT01996072,Hospital of the University of Pennsylvania
-1386,NCT01999790,Hospital das Clinicas - FMUSP
+1383,NCT01996072,Hospital of the University of Pennsylvania
+1385,NCT01999790,Hospital das Clinicas - FMUSP
 1397,NCT02017080,"Clinic for Gynecology and Obstetrics , Clinical Center of Serbia"
 1400,NCT02024906,University of Kansas Medical Center
 1401,NCT02041260,Abramson Cancer Center of the University of Pennsylvania
-1404,NCT02054572,DaVita Clinical Research Center
+1403,NCT02054572,DaVita Clinical Research Center
 1405,NCT02055989,Royal Marsden Hospital
-1406,NCT02056730,Chulalongkorn Memorial Hospital
+1407,NCT02056730,Chulalongkorn Memorial Hospital
 1409,NCT02059655,University Hospital of Wales
 1413,NCT02061111,Gynaecologic-Obstetrics Department Naestved Hospital
-1416,NCT02070211,Bambino Gesù Hospital and Research Institute
-1420,NCT02089542,Department of General Surgery
+1415,NCT02070211,Bambino Gesù Hospital and Research Institute
+1419,NCT02089542,Department of General Surgery
 1422,NCT02090907,Khorshid endocrinology clinic
-1426,NCT02102204,Research Site
-1427,NCT02107794,Mayo Clinic
+1424,NCT02102204,Research Site
+1428,NCT02107794,Mayo Clinic
 1430,NCT02109250,Clinique du Sud Luxembourg
 1430,NCT02109250,AZ Klina
 1430,NCT02109250,Institut Jules Bordet
@@ -1210,11 +1210,11 @@ index,nct_id,investigators
 1431,NCT02112370,Seoul National University Hospital
 1436,NCT02114619,"Nuclear Medicine Research Center, Ghaem Hospital"
 1442,NCT02126683,National Taiwan University Hospital
-1446,NCT02133404,
-1447,NCT02138214,University of Wisconsin
-1449,NCT02138838,Research Site
-1452,NCT02140476,"Hospital Das Clinicas, Universidad de Sao Paulo"
-1452,NCT02140476,Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán
+1444,NCT02133404,
+1448,NCT02138214,University of Wisconsin
+1451,NCT02138838,Research Site
+1453,NCT02140476,"Hospital Das Clinicas, Universidad de Sao Paulo"
+1453,NCT02140476,Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán
 1456,NCT02143271,Kyowa Hakko Kirin
 1458,NCT02143726,Mayo Clinic in Florida
 1458,NCT02143726,Northwestern University
@@ -1242,20 +1242,20 @@ index,nct_id,investigators
 1462,NCT02147782,Longhua hospital affiliated to Shanghai University of TCM
 1462,NCT02147782,Huadong Hospital Affiliated to Fudan University
 1463,NCT02150772,"Øre-Næse-Halsafdeling H, Aarhus University Hospital"
-1470,NCT02152995,Memorial Sloan Kettering Cancer Center
+1469,NCT02152995,Memorial Sloan Kettering Cancer Center
 1472,NCT02155049,"Ophthalmology clinics, Rabin Medical Center"
 1477,NCT02169687,Hôpital Pitié Salpetrière
 1482,NCT02186405,Nephrology Department
-1492,NCT02194920,"General Surgery Unit, ICOT Hospital"
+1490,NCT02194920,"General Surgery Unit, ICOT Hospital"
 1494,NCT02203682,Zhongshan Ophthalmic Center
-1502,NCT02205801,University of Chicago Medical Center
-1509,NCT02210741,National Taiwan University Hospital
-1511,NCT02216656,"For additional information regarding investigative sites for this trial, contact Kyowa Hakko Kirin"
-1518,NCT02227264,Karolinska University Hospital
+1499,NCT02205801,University of Chicago Medical Center
+1508,NCT02210741,National Taiwan University Hospital
+1513,NCT02216656,"For additional information regarding investigative sites for this trial, contact Kyowa Hakko Kirin"
+1519,NCT02227264,Karolinska University Hospital
 1525,NCT02246504,"Clinic of thyroid and metabolite bone disease of the Acad. of Ivan Penchev UDHATE - 2, Zdrave street"
 1527,NCT02258347,Istituto in tecnologie avanzate e modelli assistenziali in oncologia
 1529,NCT02268734,"Fondazione IRCCS Istituto Nazionale dei Tumori, Milano"
-1530,NCT02273570,Azienda Ospedaliera Sant'Anna
+1531,NCT02273570,Azienda Ospedaliera Sant'Anna
 1535,NCT02274623,Coast Hematology-Oncology Associates
 1535,NCT02274623,"Mount Sinai Medical Center, Comprehensive Cancer Center"
 1535,NCT02274623,Research by Design LLC
@@ -1264,14 +1264,14 @@ index,nct_id,investigators
 1535,NCT02274623,Inova Dwight and Martha Schar Cancer Center
 1541,NCT02289144,UT Southwestern Medical Center
 1543,NCT02290704,Zhongshan Ophthalmic Center
-1555,NCT02316691,University of Pittsburgh
+1554,NCT02316691,University of Pittsburgh
 1558,NCT02316743,Centre Hospitalier Universitaire de Sherbrooke
 1565,NCT02319538,"Telemark Hospital Trust, surgical department"
-1569,NCT02332135,Beijing Friedship Hospital
+1570,NCT02332135,Beijing Friedship Hospital
 1573,NCT02338934,"Clinical Research Centre, Penang Hospital"
 1573,NCT02338934,Penang Hospital
-1581,NCT02341417,Research Site
-1584,NCT02352766,University of Pittsburgh
+1580,NCT02341417,Research Site
+1583,NCT02352766,University of Pittsburgh
 1587,NCT02373995,Fondazione Ca' Granda Ospedale Maggiore Policlinico
 1598,NCT02378298,"Center for Endocrinology and Metabolism, Sahlgrenska University Hospital"
 1598,NCT02378298,"MedTech West, Institute of Neuro Science and Physiology, Department for Clinical Neuro Science and Rehabilitation, Sahlgrenska Academy, University of Gothenburg"
@@ -1307,7 +1307,7 @@ index,nct_id,investigators
 1609,NCT02384668,"Department of Internal Medicine, Regionhospitalet Randers"
 1609,NCT02384668,"Department of Internal Medicine, Diagnostisk Center, Regionshospitalet Silkeborg"
 1609,NCT02384668,"Department of Internal Medicine, Regionshospitalet Viborg"
-1615,NCT02393183,Rassoul Akram Hospital
+1614,NCT02393183,Rassoul Akram Hospital
 1618,NCT02393690,UC San Diego Moores Cancer Center
 1618,NCT02393690,Hoag Memorial Hospital
 1618,NCT02393690,University of Colorado Hospital
@@ -1322,9 +1322,9 @@ index,nct_id,investigators
 1621,NCT02397109,Fondation Ophtalmologique Adolphe de Rothschild
 1625,NCT02398721,Queen Mary Hospital
 1627,NCT02399475,University of Pennsylvania
-1631,NCT02408887,"National Institutes of Health Clinical Center, 9000 Rockville Pike"
-1632,NCT02410928,Diskapi Yildirim Beyazit Teaching and Research Hospital
-1639,NCT02417389,Istituto Auxologico Italiano IRCCS
+1630,NCT02408887,"National Institutes of Health Clinical Center, 9000 Rockville Pike"
+1633,NCT02410928,Diskapi Yildirim Beyazit Teaching and Research Hospital
+1638,NCT02417389,Istituto Auxologico Italiano IRCCS
 1643,NCT02422368,Private Thyroid eye disease clinic
 1643,NCT02422368,Rassoul Akram Hospital
 1647,NCT02430584,Regional Obstetrical Consultants
@@ -1350,28 +1350,28 @@ index,nct_id,investigators
 1653,NCT02432599,CHU
 1653,NCT02432599,Centre François Baclesse
 1657,NCT02440581,University of Kentucky
-1662,NCT02460328,Siriraj Hospital
+1663,NCT02460328,Siriraj Hospital
 1664,NCT02462512,Seoul St Mary's Hospital
 1667,NCT02463409,Vanderbilt Unversity
-1668,NCT02464072,University of Sao Paulo General Hospital
+1670,NCT02464072,University of Sao Paulo General Hospital
 1676,NCT02491502,University Hospital of Endocrinology USBALE
 1678,NCT02491567,"Unit of Pediatric Endocrinology, Diabetes and Metabolism-4th Department of Pediatrics, Medical School of Aristotle University of Thessaloniki"
 1686,NCT02500342,"University College Cork, National University of Ireland"
 1686,NCT02500342,Department of General Internal Medicine
 1686,NCT02500342,"Clinic for General Internal Medicine, Bern University Hospital Bern"
-1690,NCT02516774,Gustave Roussy Cancer Campus Grand Paris
-1692,NCT02523209,Chu Saint-Etienne
-1700,NCT02525796,Brigham and Women's Hospital
+1691,NCT02516774,Gustave Roussy Cancer Campus Grand Paris
+1694,NCT02523209,Chu Saint-Etienne
+1698,NCT02525796,Brigham and Women's Hospital
 1701,NCT02535975,"Endocrinology, Internal Medicine, Yonsei University College of Medicine"
 1707,NCT02536287,the Second Affiliated Hospital of Anhui Medical University
-1708,NCT02539498,Hopital Lariboisiere
-1708,NCT02539498,Hopital Cochin
-1708,NCT02539498,Hopital Europeen Georges Pompidou
-1713,NCT02549391,"For additional information regarding investigative sites for this trial, contact Kyowa Hakko Kirin"
-1717,NCT02549404,"For additional information regarding investigative sites for this trial, contact Kyowa Hakko Kirin"
+1709,NCT02539498,Hopital Lariboisiere
+1709,NCT02539498,Hopital Cochin
+1709,NCT02539498,Hopital Europeen Georges Pompidou
+1712,NCT02549391,"For additional information regarding investigative sites for this trial, contact Kyowa Hakko Kirin"
+1715,NCT02549404,"For additional information regarding investigative sites for this trial, contact Kyowa Hakko Kirin"
 1719,NCT02549417,"For additional information regarding investigative sites for this trial, contact Kyowa Hakko Kirin"
-1724,NCT02551120,Aarhus University Hospital
-1727,NCT02556216,Hannover Medical School
+1721,NCT02551120,Aarhus University Hospital
+1725,NCT02556216,Hannover Medical School
 1740,NCT02609685,Cedars-Sinai Medical Center
 1742,NCT02620085,Shyang-Rong Shih
 1757,NCT02652884,Hospital Italiano de Buenos Aires
@@ -1380,10 +1380,10 @@ index,nct_id,investigators
 1765,NCT02681328,Jonsson Comprehensive Cancer Center at UCLA
 1767,NCT02685514,Queen Mary Hospital
 1773,NCT02693808,Department of Ophthalmology Haukeland University Hospital
-1777,NCT02697578,Hospital Universitario Reina Sofía
-1784,NCT02708368,"Department of Medicine, Division of Cardiology, Pulmonary Diseases and Vascular Medicine at the University Hospital, RWTH Aachen"
-1784,NCT02708368,"Clinic for Nephrology and Diabetology, Hospital St. Franziskus (Maria-Hilf-Clinic)"
-1788,NCT02710799,Secretaria Estadual da Saúde
+1779,NCT02697578,Hospital Universitario Reina Sofía
+1783,NCT02708368,"Department of Medicine, Division of Cardiology, Pulmonary Diseases and Vascular Medicine at the University Hospital, RWTH Aachen"
+1783,NCT02708368,"Clinic for Nephrology and Diabetology, Hospital St. Franziskus (Maria-Hilf-Clinic)"
+1786,NCT02710799,Secretaria Estadual da Saúde
 1793,NCT02713256,Novartis Investigative Site
 1798,NCT02714946,Santa Maria Goretti Hospital
 1799,NCT02721992,Ospedale Cisanello-Endocrinology I and II
@@ -1430,7 +1430,7 @@ index,nct_id,investigators
 1830,NCT02772705,West China Hospital
 1830,NCT02772705,Tianjin Medical University General Hospital
 1830,NCT02772705,Zhejiang Cancer Hospital
-1836,NCT02778412,Thyroid & Endocrine Center of Florida
+1834,NCT02778412,Thyroid & Endocrine Center of Florida
 1839,NCT02784223,Centre François Baclesse
 1842,NCT02787486,Valley Perinatal
 1842,NCT02787486,Heinen Obstectrics & Gynecology
@@ -1445,48 +1445,48 @@ index,nct_id,investigators
 1849,NCT02824016,Centre Paul Strauss
 1849,NCT02824016,Institut de Cancerologie de Lorraine
 1850,NCT02824718,AP-HP Hopital Europeen Georges Pompidou
-1855,NCT02830789,"Department of Enodocrinology and Internal Medicine, Aarhus University Hospital"
-1857,NCT02833857,Research Site
+1853,NCT02830789,"Department of Enodocrinology and Internal Medicine, Aarhus University Hospital"
+1859,NCT02833857,Research Site
 1863,NCT02839655,Gustave Roussy
 1865,NCT02843542,Assuta Medical Center
 1867,NCT02845336,"Wilmer Eye Institute, Johns Hopkins University"
-1873,NCT02854345,CHU Besancon
-1876,NCT02859896,Investigational Site Number :8400022
-1876,NCT02859896,Investigational Site Number :8400023
-1876,NCT02859896,Investigational Site Number :8400033
-1876,NCT02859896,Investigational Site Number :8400005
-1876,NCT02859896,Investigational Site Number :8400029
-1876,NCT02859896,Investigational Site Number :8400006
-1876,NCT02859896,Investigational Site Number :8400008
-1876,NCT02859896,Investigational Site Number :8400020
-1876,NCT02859896,Investigational Site Number :8400036
-1876,NCT02859896,Investigational Site Number :8400014
-1876,NCT02859896,Investigational Site Number :8400015
-1876,NCT02859896,Investigational Site Number :8400010
-1876,NCT02859896,Investigational Site Number :8400016
-1876,NCT02859896,Investigational Site Number :8400017
-1876,NCT02859896,Investigational Site Number :8400007
-1876,NCT02859896,Investigational Site Number :8400021
-1876,NCT02859896,Investigational Site Number :8400034
-1876,NCT02859896,Investigational Site Number :8400025
-1876,NCT02859896,Investigational Site Number :8400004
-1876,NCT02859896,Investigational Site Number :8400035
-1876,NCT02859896,Investigational Site Number :8400028
-1876,NCT02859896,Investigational Site Number :8400027
-1876,NCT02859896,Investigational Site Number :8400024
-1876,NCT02859896,Investigational Site Number :8400013
-1876,NCT02859896,Investigational Site Number :8400019
-1876,NCT02859896,Investigational Site Number :8400026
-1876,NCT02859896,Investigational Site Number :8400009
-1876,NCT02859896,Investigational Site Number :8400001
-1876,NCT02859896,Investigational Site Number :1520004
-1876,NCT02859896,Investigational Site Number :1520003
+1871,NCT02854345,CHU Besancon
+1875,NCT02859896,Investigational Site Number :8400022
+1875,NCT02859896,Investigational Site Number :8400023
+1875,NCT02859896,Investigational Site Number :8400033
+1875,NCT02859896,Investigational Site Number :8400005
+1875,NCT02859896,Investigational Site Number :8400029
+1875,NCT02859896,Investigational Site Number :8400006
+1875,NCT02859896,Investigational Site Number :8400008
+1875,NCT02859896,Investigational Site Number :8400020
+1875,NCT02859896,Investigational Site Number :8400036
+1875,NCT02859896,Investigational Site Number :8400014
+1875,NCT02859896,Investigational Site Number :8400015
+1875,NCT02859896,Investigational Site Number :8400010
+1875,NCT02859896,Investigational Site Number :8400016
+1875,NCT02859896,Investigational Site Number :8400017
+1875,NCT02859896,Investigational Site Number :8400007
+1875,NCT02859896,Investigational Site Number :8400021
+1875,NCT02859896,Investigational Site Number :8400034
+1875,NCT02859896,Investigational Site Number :8400025
+1875,NCT02859896,Investigational Site Number :8400004
+1875,NCT02859896,Investigational Site Number :8400035
+1875,NCT02859896,Investigational Site Number :8400028
+1875,NCT02859896,Investigational Site Number :8400027
+1875,NCT02859896,Investigational Site Number :8400024
+1875,NCT02859896,Investigational Site Number :8400013
+1875,NCT02859896,Investigational Site Number :8400019
+1875,NCT02859896,Investigational Site Number :8400026
+1875,NCT02859896,Investigational Site Number :8400009
+1875,NCT02859896,Investigational Site Number :8400001
+1875,NCT02859896,Investigational Site Number :1520004
+1875,NCT02859896,Investigational Site Number :1520003
 1888,NCT02890472,CHUNimes
-1895,NCT02895906,Children's Hospital of Philadelphia
+1894,NCT02895906,Children's Hospital of Philadelphia
 1897,NCT02904330,Royal Liverpool University Hospital Clinical Research Unit
 1897,NCT02904330,Medicines Evaluation Unit
-1909,NCT02946918,University of Texas Southwestern Medical Center
-1914,NCT02953288,"Department of Endocrinology, Shanghai Tenth People's Hospital"
+1908,NCT02946918,University of Texas Southwestern Medical Center
+1915,NCT02953288,"Department of Endocrinology, Shanghai Tenth People's Hospital"
 1917,NCT02966093,1002 Eisai Trial Site
 1917,NCT02966093,1006 Eisai Trial Site
 1917,NCT02966093,1020 Eisai Trial Site
@@ -1527,15 +1527,15 @@ index,nct_id,investigators
 1921,NCT02973997,Ohio State University Comprehensive Cancer Center
 1921,NCT02973997,M D Anderson Cancer Center
 1928,NCT02989103,"Social and Scientific Systems, Inc."
-1929,NCT02989428,Aarhus University Hospital
-1936,NCT03002623,National Institutes of Health Clinical Center
+1930,NCT02989428,Aarhus University Hospital
+1937,NCT03002623,National Institutes of Health Clinical Center
 1940,NCT03004209,Seoul National University Hospital
-1946,NCT03009357,Seoul National University Bundang Hospital
-1950,NCT03011736,Roswell Park Cancer Institute
+1944,NCT03009357,Seoul National University Bundang Hospital
+1949,NCT03011736,Roswell Park Cancer Institute
 1952,NCT03012620,Gustave Roussy Cancer Campus
 1953,NCT03013257,Queen Mary Hospital
-1956,NCT03023748,Queen Mary Hospital and Tung Wah Hospital
-1964,NCT03027557,Aalborg University Hospital
+1957,NCT03023748,Queen Mary Hospital and Tung Wah Hospital
+1962,NCT03027557,Aalborg University Hospital
 1970,NCT03032198,Invision Sally Jobe
 1970,NCT03032198,UT Health Science Center
 1973,NCT03036956,Isra University hospital
@@ -1548,7 +1548,7 @@ index,nct_id,investigators
 1973,NCT03036956,Welcare Medical Centre
 1973,NCT03036956,Lady Reading hospital
 1976,NCT03039439,M D Anderson Cancer Center
-1983,NCT03046524,University of Texas MD Anderson Cancer Center
+1982,NCT03046524,University of Texas MD Anderson Cancer Center
 1988,NCT03051126,University of Texas MD Anderson Cancer Center
 1989,NCT03052075,University of Texas MD Anderson Cancer Center
 1995,NCT03057925,The First Affiliated Hospital of Wenzhou Medical University
@@ -1564,7 +1564,7 @@ index,nct_id,investigators
 1999,NCT03063190,Hospital das Clinicas
 2004,NCT03066076,Department of Surgery and Department of Ophthalmology Medical University Vienna
 2008,NCT03072160,National Institutes of Health Clinical Center
-2012,NCT03082742,Hospital das Clinicas
+2011,NCT03082742,Hospital das Clinicas
 2019,NCT03091140,"AHEPA University General Hospital, Aristotle University of Thessaloniki"
 2020,NCT03093909,The University of Texas MD Anderson Cancer Center
 2021,NCT03094416,California Head and Neck Specialists
@@ -1579,7 +1579,7 @@ index,nct_id,investigators
 2023,NCT03096613,"Chinese Academy of Medical Sciences, Fuwai Hospital"
 2029,NCT03102099,Peking University Third Hospital
 2039,NCT03105648,National Taiwan University Hospital
-2040,NCT03106337,Massachusetts General Hospital
+2041,NCT03106337,Massachusetts General Hospital
 2042,NCT03106935,Second Affiliated Hospital of Soochow University
 2043,NCT03107078,the Third Affiliated Hospital of Southern Medical University
 2047,NCT03108222,Purdue University Nutrition Science Department
@@ -1599,38 +1599,38 @@ index,nct_id,investigators
 2064,NCT03122496,Memorial Sloan Kettering Nassau
 2065,NCT03122847,Aarhus University Hospital
 2065,NCT03122847,Odense University Hospital
-2069,NCT03123406,Nanjing Jinling Hospital
+2071,NCT03123406,Nanjing Jinling Hospital
 2073,NCT03128255,University Hospital Jena
 2076,NCT03131206,"University of California, Irvine"
 2076,NCT03131206,Beth Israel Deaconess Medical Center
 2076,NCT03131206,Brigham and Women's Hospital
 2076,NCT03131206,Dana Farber Cancer Institute
-2077,NCT03131726,"Dpt. of Endocrinology, SUS Malmö"
+2078,NCT03131726,"Dpt. of Endocrinology, SUS Malmö"
 2081,NCT03134976,University of Michigan
 2089,NCT03157466,Fondazione Policlinico Universitario Agostino Gemelli
 2090,NCT03158961,Queen Mary Hospital
-2094,NCT03160482,CIUSSS de l'Estrie - CHUS
+2093,NCT03160482,CIUSSS de l'Estrie - CHUS
 2095,NCT03162627,University of Texas MD Anderson Cancer Center
 2096,NCT03167385,Tianjin Medical University Cancer Institute and Hospital
-2100,NCT03174925,"Stanford University, School of Medicine"
+2101,NCT03174925,"Stanford University, School of Medicine"
 2103,NCT03178253,Maria Hamdy
-2109,NCT03182699,Medical University of Vienna
-2109,NCT03182699,Wiener Dialysezentrum
+2108,NCT03182699,Medical University of Vienna
+2108,NCT03182699,Wiener Dialysezentrum
 2110,NCT03183752,Patricia Santos
 2115,NCT03194087,Beijing Friendship hospital
 2121,NCT03199677,"Cancer Hospital, Chinese Academy of Medical Sciences"
-2125,NCT03211117,Mayo Clinic
+2126,NCT03211117,Mayo Clinic
 2130,NCT03226171,Investigational site (there may be other sites in this country)
 2132,NCT03244956,Gustave Roussy
 2136,NCT03249012,CHU de Quebec
 2139,NCT03257930,Assiut University
-2141,NCT03268785,Xijing hospital
-2141,NCT03268785,Xijing Hospital
-2144,NCT03271892,University Health Network
+2140,NCT03268785,Xijing hospital
+2140,NCT03268785,Xijing Hospital
+2143,NCT03271892,University Health Network
 2145,NCT03274258,M D Anderson Cancer Center
 2146,NCT03278964,University of Sao Paulo General Hospital
 2150,NCT03280264,Osaka City University Hospital
-2154,NCT03283098,Research Site
+2155,NCT03283098,Research Site
 2157,NCT03284060,Hopital Vinatier
 2160,NCT03285854,Great Ormond Street Hospital for Children NHS Foundation Trust
 2168,NCT03295955,Jin Wook Yi
@@ -1655,9 +1655,9 @@ index,nct_id,investigators
 2176,NCT03300284,NYU Langone Health
 2176,NCT03300284,Memorial Sloan Kettering Cancer Center
 2176,NCT03300284,Lehigh Valley Health Network
-2179,NCT03303053,Hospital Queen Elizabeth 2
-2179,NCT03303053,Hospital Ampang
-2179,NCT03303053,Hospital Putrajaya
+2181,NCT03303053,Hospital Queen Elizabeth 2
+2181,NCT03303053,Hospital Ampang
+2181,NCT03303053,Hospital Putrajaya
 2182,NCT03307694,Emory Univeristy Hospital Midtown
 2185,NCT03309384,CHU Nancy
 2186,NCT03309631,Avantt Research
@@ -1673,12 +1673,12 @@ index,nct_id,investigators
 2211,NCT03375359,"University Hospital Tuebingen, Department of Women's Health"
 2217,NCT03382158,Children's Minnesota
 2218,NCT03387943,Zhejiang Cancer Hospital
-2223,NCT03395925,Johann-Wolfgang Goethe University
+2222,NCT03395925,Johann-Wolfgang Goethe University
 2228,NCT03420963,M D Anderson Cancer Center
 2229,NCT03425747,Campus Bio-Medico University
-2233,NCT03434067,Wen-xin ZHAO
+2232,NCT03434067,Wen-xin ZHAO
 2235,NCT03435952,University of Texas MD Anderson Cancer Center
-2239,NCT03440697,IU School of Medicine
+2238,NCT03440697,IU School of Medicine
 2243,NCT03447093,First affiliated hospital of Harbin medical university
 2249,NCT03461211,"Macro, Llc"
 2249,NCT03461211,Cedars-Sinai Medical Center
@@ -1693,18 +1693,18 @@ index,nct_id,investigators
 2249,NCT03461211,Fondazione IRCCS Ca Granda Ospedale Maggiore
 2249,NCT03461211,"University of Pisa, Department of Clinical and Experimental Medicine"
 2249,NCT03461211,Azienda Ospedaliero Universitaria Pisana
-2254,NCT03464149,"Department of Internal Medicine III, Division of Nephrology and Dialysis, Medical University of Vienna, Austria"
-2261,NCT03469310,GME General Surgery Clinic
+2256,NCT03464149,"Department of Internal Medicine III, Division of Nephrology and Dialysis, Medical University of Vienna, Austria"
+2262,NCT03469310,GME General Surgery Clinic
 2271,NCT03484416,Ewha Womans University Medical Center
 2275,NCT03498183,Centre Hospitalier et Universitaire (chu)
 2275,NCT03498183,CHU
 2275,NCT03498183,Hospices Civils
 2275,NCT03498183,Assistance publique des Hôpitaux de Paris
-2282,NCT03498417,"Endocrinology Unit I, University of Pisa"
+2277,NCT03498417,"Endocrinology Unit I, University of Pisa"
 2292,NCT03515863,"Zhognshan Ophthalmic Center, Sun Yat-sen University"
 2292,NCT03515863,the First People's Hospital of Zhaoqing
-2296,NCT03516747,Haemek Medical Center
-2300,NCT03517267,Rambam Medical Center
+2297,NCT03516747,Haemek Medical Center
+2301,NCT03517267,Rambam Medical Center
 2302,NCT03517579,Johns Hopkins Hospital
 2309,NCT03530462,"The First Affiliated Hospital, Zhejiang University"
 2314,NCT03535974,Fundatia Bio-Forum
@@ -1715,26 +1715,26 @@ index,nct_id,investigators
 2332,NCT03588884,"National Institute of Clinical Research, Inc."
 2332,NCT03588884,"Research by Design, LLC"
 2332,NCT03588884,Spaulding Clinical Research
-2339,NCT03602261,AKDHC Medical Research Services
-2339,NCT03602261,"WCCT Global, Inc."
-2339,NCT03602261,Hacienda Dialysis Center
-2339,NCT03602261,California Institute of Renal Research CKD/Dialysis & Transplant Division
-2339,NCT03602261,Long Beach Quest Dialysis Center
-2339,NCT03602261,Ontario Dialysis Center
-2339,NCT03602261,"North America Research Institute, Inc."
-2339,NCT03602261,"Laurel Canyon Dialysis, LLC"
-2339,NCT03602261,University of Colorado Denver Anschutz Medical Campus
-2339,NCT03602261,"Research by Design, LLC"
-2339,NCT03602261,Northshore University Health
-2339,NCT03602261,Renal and Transplant Associates of New England
-2339,NCT03602261,Southwest MS Nephrology
-2339,NCT03602261,Southwest Houston Research LTD
-2339,NCT03602261,Kidney & Hypertension Specialists
-2343,NCT03605472,Damien JOLLY
+2340,NCT03602261,AKDHC Medical Research Services
+2340,NCT03602261,"WCCT Global, Inc."
+2340,NCT03602261,Hacienda Dialysis Center
+2340,NCT03602261,California Institute of Renal Research CKD/Dialysis & Transplant Division
+2340,NCT03602261,Long Beach Quest Dialysis Center
+2340,NCT03602261,Ontario Dialysis Center
+2340,NCT03602261,"North America Research Institute, Inc."
+2340,NCT03602261,"Laurel Canyon Dialysis, LLC"
+2340,NCT03602261,University of Colorado Denver Anschutz Medical Campus
+2340,NCT03602261,"Research by Design, LLC"
+2340,NCT03602261,Northshore University Health
+2340,NCT03602261,Renal and Transplant Associates of New England
+2340,NCT03602261,Southwest MS Nephrology
+2340,NCT03602261,Southwest Houston Research LTD
+2340,NCT03602261,Kidney & Hypertension Specialists
+2345,NCT03605472,Damien JOLLY
 2346,NCT03606824,"Fuwai Hospital, China National Center for Cardiovascular Diseases"
 2349,NCT03614988,Hospital de Clinicas de Porto Alegre
-2354,NCT03626246,Columbia/CUMC
-2357,NCT03626948,Investigational site (there may be other sites in this country)
+2355,NCT03626246,Columbia/CUMC
+2359,NCT03626948,Investigational site (there may be other sites in this country)
 2366,NCT03633708,Childrens Hospital of Los Angeles
 2366,NCT03633708,Childrens Hospital Colorado
 2366,NCT03633708,Childrens Mercy Hospital
@@ -1781,9 +1781,9 @@ index,nct_id,investigators
 2392,NCT03669432,Gouri Pantvaidya
 2396,NCT03676647,City of Hope Medical Center
 2399,NCT03699098,"Department of clinical oncology and nuclear medicine, Cairo university"
-2400,NCT03700762,The first people's hospital of Hangzhou
-2403,NCT03708627,University of Washington
-2409,NCT03713671,Ankara Education and Research Hospital
+2401,NCT03700762,The first people's hospital of Hangzhou
+2402,NCT03708627,University of Washington
+2407,NCT03713671,Ankara Education and Research Hospital
 2412,NCT03716128,Herlev Hospital
 2417,NCT03724188,Faculty of medicine - Mansoura university
 2424,NCT03732495,CHU Angers
@@ -1816,47 +1816,47 @@ index,nct_id,investigators
 2428,NCT03753919,Instituto Valenciano de Oncología
 2428,NCT03753919,Complejo Hospitalario Universitario de Vigo (CHUVI)
 2434,NCT03761290,Vanderbilt University Medical Center
-2435,NCT03764007,"University of California, San Francisco"
+2436,NCT03764007,"University of California, San Francisco"
 2440,NCT03772496,"Cancer Hospital, Chinese Academy of Medical Science"
 2442,NCT03773120,Seoul National University Hospital
-2453,NCT03801980,Investigational site (there may be other sites in this country)
+2455,NCT03801980,Investigational site (there may be other sites in this country)
 2456,NCT03808779,"General Surgery Department, Tianjin Medical University General Hospital"
 2456,NCT03808779,"Department of Ultrasound, Second Affiliated Hospital, School of Medicine, Zhejiang University"
 2456,NCT03808779,"Interventional Oncology Centre, State Institution ""Grigoriev Intstitute for Medical Radiology NAMS of Ukraine"""
-2461,NCT03822507,Research site_29
-2461,NCT03822507,Research site_34
-2461,NCT03822507,Research site_25
-2461,NCT03822507,Research site_22
-2461,NCT03822507,Research site_23
-2461,NCT03822507,Research site_30
-2461,NCT03822507,Research site_28
-2461,NCT03822507,Research site_32
-2461,NCT03822507,Research site_33
-2461,NCT03822507,Research site_24
-2461,NCT03822507,Research site_26
-2461,NCT03822507,Research site_27
-2461,NCT03822507,Research site_31
-2461,NCT03822507,Research site_11
-2461,NCT03822507,Research site_21
-2461,NCT03822507,Research site_13
-2461,NCT03822507,Research site_15
-2461,NCT03822507,Research site_12
-2461,NCT03822507,Research site_18
-2461,NCT03822507,Research site_14
-2461,NCT03822507,Research site_17
-2461,NCT03822507,Research site_19
-2461,NCT03822507,Research site_20
-2461,NCT03822507,Research site_16
-2461,NCT03822507,Research site_2
-2461,NCT03822507,Research site_3
-2461,NCT03822507,Research site_5
-2461,NCT03822507,Research site_9
-2461,NCT03822507,Research site_4
-2461,NCT03822507,Research site_7
-2461,NCT03822507,Research site_10
-2461,NCT03822507,Research site_1
-2461,NCT03822507,Research site_6
-2461,NCT03822507,Research site_8
+2463,NCT03822507,Research site_29
+2463,NCT03822507,Research site_34
+2463,NCT03822507,Research site_25
+2463,NCT03822507,Research site_22
+2463,NCT03822507,Research site_23
+2463,NCT03822507,Research site_30
+2463,NCT03822507,Research site_28
+2463,NCT03822507,Research site_32
+2463,NCT03822507,Research site_33
+2463,NCT03822507,Research site_24
+2463,NCT03822507,Research site_26
+2463,NCT03822507,Research site_27
+2463,NCT03822507,Research site_31
+2463,NCT03822507,Research site_11
+2463,NCT03822507,Research site_21
+2463,NCT03822507,Research site_13
+2463,NCT03822507,Research site_15
+2463,NCT03822507,Research site_12
+2463,NCT03822507,Research site_18
+2463,NCT03822507,Research site_14
+2463,NCT03822507,Research site_17
+2463,NCT03822507,Research site_19
+2463,NCT03822507,Research site_20
+2463,NCT03822507,Research site_16
+2463,NCT03822507,Research site_2
+2463,NCT03822507,Research site_3
+2463,NCT03822507,Research site_5
+2463,NCT03822507,Research site_9
+2463,NCT03822507,Research site_4
+2463,NCT03822507,Research site_7
+2463,NCT03822507,Research site_10
+2463,NCT03822507,Research site_1
+2463,NCT03822507,Research site_6
+2463,NCT03822507,Research site_8
 2468,NCT03830242,"Fifth Affiliated Hospital, Sun Yat-Sen University"
 2470,NCT03831620,"Department of visceral surgery and transplant surgery, Berne University Hospital"
 2475,NCT03835728,UT Southwestern Medical Center
@@ -2434,18 +2434,18 @@ index,nct_id,investigators
 2487,NCT03878953,Keio University Hospital
 2487,NCT03878953,Tokyo Women's Medical University Hospital
 2488,NCT03880578,Department of Nuclear Medicine Klinikum Luedenscheid
-2492,NCT03887611,Xin-Wu Cui
+2491,NCT03887611,Xin-Wu Cui
 2493,NCT03889431,Hawassa University
 2501,NCT03896958,Specicare
 2502,NCT03898622,"Kidney health clinic, Civil Hospital of Guadalajara"
-2506,NCT03910049,"Unit of Endocrine Surgery, Interbalkan Medical Center, Thessaloniki, Greece"
-2506,NCT03910049,"1st Propedeutic Department of Surgery, AHEPA University General Hospital, Aristotle University of Thessaloniki"
+2507,NCT03910049,"Unit of Endocrine Surgery, Interbalkan Medical Center, Thessaloniki, Greece"
+2507,NCT03910049,"1st Propedeutic Department of Surgery, AHEPA University General Hospital, Aristotle University of Thessaloniki"
 2511,NCT03922321,UBC/VGH Eye Care Center
 2511,NCT03922321,Toronto Retina Institute
 2511,NCT03922321,University of Ottwa Eye Institute
 2511,NCT03922321,"CIUSSS de I'Est-de-I'lle-de-Montreal, Installation Maisonneuve- Rosemont"
 2515,NCT03924804,the First Hospital of China Medical University
-2518,NCT03931109,Perelman Center for Advanced Medicine/ Hospital of the University of Pennsylvania
+2520,NCT03931109,Perelman Center for Advanced Medicine/ Hospital of the University of Pennsylvania
 2521,NCT03935984,ProMedica Toledo Hospital
 2524,NCT03937349,"Saint-Petersburg State University, Clinic of advanced medical technologies n.a. N.I.Pirogov"
 2527,NCT03938545,Multispecialty Aesthetic Clinical Research Organziation (MACRO)
@@ -2480,27 +2480,27 @@ index,nct_id,investigators
 2550,NCT03960554,"Northwestern University, Feinburg School of Medicine"
 2550,NCT03960554,NorthShore University HealthSystem
 2550,NCT03960554,Columbia University Medical Center
-2555,NCT03969108,University Health Network
-2559,NCT03969329,Universitair Ziekenhuis Gent
-2559,NCT03969329,Fakultni nemocnice v Motole
-2559,NCT03969329,Hospices Civils de Lyon Hopital Femme Mere Enfant
-2559,NCT03969329,Hôpital Armand Trousseau
-2559,NCT03969329,Kindernierenzentrum Bonn
-2559,NCT03969329,Universitätsklinikum Hamburg-Eppendorf
-2559,NCT03969329,Medizinische Hochschule Hannover
-2559,NCT03969329,Zentrum für Kinder und Jugendmedizin des Universitätsklinikums Heidelberg
-2559,NCT03969329,Universitätsklinikum Köln
-2559,NCT03969329,General Children Hospital Panagioti and Aglaias Kyriakou
-2559,NCT03969329,Ippokrateio General Hospital of Thessaloniki
-2559,NCT03969329,Semmelweis Egyetem
-2559,NCT03969329,Szegedi Tudomanyegyetem Szent-Gyorgyi Albert Klinikai Kozpont Altalanos Orvostudomanyi Kar
-2559,NCT03969329,Azienda Ospedaliera Universitaria Meyer
-2559,NCT03969329,"Childrens Hospital, Affiliate of Vilnius University Hospital Santaros Klinikos"
-2559,NCT03969329,Uniwersytecki Szpital Dzieciecy w Krakowie
-2559,NCT03969329,Centro Hospitalar Universitario do Porto - Hospital de Santo Antonio
-2559,NCT03969329,Hospital Universitari Vall d Hebron
-2559,NCT03969329,Royal Hospital for Sick Children
-2559,NCT03969329,Great Ormond Street Hospital for Children
+2557,NCT03969108,University Health Network
+2560,NCT03969329,Universitair Ziekenhuis Gent
+2560,NCT03969329,Fakultni nemocnice v Motole
+2560,NCT03969329,Hospices Civils de Lyon Hopital Femme Mere Enfant
+2560,NCT03969329,Hôpital Armand Trousseau
+2560,NCT03969329,Kindernierenzentrum Bonn
+2560,NCT03969329,Universitätsklinikum Hamburg-Eppendorf
+2560,NCT03969329,Medizinische Hochschule Hannover
+2560,NCT03969329,Zentrum für Kinder und Jugendmedizin des Universitätsklinikums Heidelberg
+2560,NCT03969329,Universitätsklinikum Köln
+2560,NCT03969329,General Children Hospital Panagioti and Aglaias Kyriakou
+2560,NCT03969329,Ippokrateio General Hospital of Thessaloniki
+2560,NCT03969329,Semmelweis Egyetem
+2560,NCT03969329,Szegedi Tudomanyegyetem Szent-Gyorgyi Albert Klinikai Kozpont Altalanos Orvostudomanyi Kar
+2560,NCT03969329,Azienda Ospedaliera Universitaria Meyer
+2560,NCT03969329,"Childrens Hospital, Affiliate of Vilnius University Hospital Santaros Klinikos"
+2560,NCT03969329,Uniwersytecki Szpital Dzieciecy w Krakowie
+2560,NCT03969329,Centro Hospitalar Universitario do Porto - Hospital de Santo Antonio
+2560,NCT03969329,Hospital Universitari Vall d Hebron
+2560,NCT03969329,Royal Hospital for Sick Children
+2560,NCT03969329,Great Ormond Street Hospital for Children
 2568,NCT03980132,Hospital Universitario de Bellvitge
 2568,NCT03980132,Hospital Universitario Donostia
 2568,NCT03980132,Hospital Clínico Universitario
@@ -2525,27 +2525,27 @@ index,nct_id,investigators
 2580,NCT04009863,Queen Mary Hospital
 2582,NCT04012476,Hospital Universitari Son Espases
 2589,NCT04013139,Nooshin Dalili
-2592,NCT04019379,Indiana CTSI CRC
+2591,NCT04019379,Indiana CTSI CRC
 2600,NCT04031638,"Methodology, Biostatistics and Data Management"
 2603,NCT04040946,CHU Brest
 2603,NCT04040946,Centre François Baclesse
 2603,NCT04040946,Centre Eugène Marquis
 2603,NCT04040946,CHU
 2606,NCT04046354,Chinese PLA General Hospital
-2610,NCT04053114,Institut Bergonié
-2617,NCT04064827,Arkansas Children's Hospital /ID# 225417
-2617,NCT04064827,"University of California, Los Angeles /ID# 140668"
-2617,NCT04064827,Children's National Medical Center /ID# 225991
-2617,NCT04064827,"Holtz Childrens Hospital, University of Miami /ID# 225636"
-2617,NCT04064827,Nicklaus Children's Hospital /ID# 210517
-2617,NCT04064827,Emory Midtown Infectious Disease Clinic /ID# 140665
-2617,NCT04064827,Boston Children's Hospital /ID# 162863
-2617,NCT04064827,Levine Children's Specialty Center- Charlotte /ID# 216057
-2617,NCT04064827,Children's Hospital of Philadelphia - Main /ID# 213802
-2617,NCT04064827,University of Texas Southwestern Medical Center /ID# 210495
-2617,NCT04064827,University of Utah /ID# 140669
-2617,NCT04064827,Seattle Children's Hospital /ID# 162861
-2617,NCT04064827,School of Medicine University of Puerto Rico-Medical Science Campus /ID# 140663
+2611,NCT04053114,Institut Bergonié
+2619,NCT04064827,Arkansas Children's Hospital /ID# 225417
+2619,NCT04064827,"University of California, Los Angeles /ID# 140668"
+2619,NCT04064827,Children's National Medical Center /ID# 225991
+2619,NCT04064827,"Holtz Childrens Hospital, University of Miami /ID# 225636"
+2619,NCT04064827,Nicklaus Children's Hospital /ID# 210517
+2619,NCT04064827,Emory Midtown Infectious Disease Clinic /ID# 140665
+2619,NCT04064827,Boston Children's Hospital /ID# 162863
+2619,NCT04064827,Levine Children's Specialty Center- Charlotte /ID# 216057
+2619,NCT04064827,Children's Hospital of Philadelphia - Main /ID# 213802
+2619,NCT04064827,University of Texas Southwestern Medical Center /ID# 210495
+2619,NCT04064827,University of Utah /ID# 140669
+2619,NCT04064827,Seattle Children's Hospital /ID# 162861
+2619,NCT04064827,School of Medicine University of Puerto Rico-Medical Science Campus /ID# 140663
 2623,NCT04075851,Shandong Province Hospital
 2626,NCT04080505,Columbia University Medical Center
 2631,NCT04085419,Endocrinology Department
@@ -2564,9 +2564,9 @@ index,nct_id,investigators
 2648,NCT04126954,"Service d'Endocrinologie, Maladies Osseuses, Gynécologie, Génétique"
 2648,NCT04126954,"Unité Endocrinologie, Nutrition, Diabétologie -Hôpital Bretonneau"
 2652,NCT04129281,Istitute Nazionale Tumori - Fondazione G. Pascale
-2656,NCT04135573,Shandong Provincial Hospital
+2657,NCT04135573,Shandong Provincial Hospital
 2663,NCT04141540,Hopital Vinatier
-2665,NCT04146259,Symeon Tournis
+2666,NCT04146259,Symeon Tournis
 2670,NCT04171622,M D Anderson Cancer Center
 2673,NCT04175522,Seoul National University Hospital
 2675,NCT04180007,Nanjing First Hospital
@@ -2574,8 +2574,8 @@ index,nct_id,investigators
 2676,NCT04193332,"Dept of Otorhinolaryngology and Maxillofacial Surgery, Zealand University Hospital, Denmark"
 2683,NCT04216732,University of California San Francisco
 2683,NCT04216732,M D Anderson Cancer Center
-2690,NCT04239521,Momentum Data Ltd
-2703,NCT04267965,Fong-Fu Chou
+2691,NCT04239521,Momentum Data Ltd
+2705,NCT04267965,Fong-Fu Chou
 2708,NCT04270110,Assiut university Hospital
 2713,NCT04281875,Vanderbilt University Medical Center
 2714,NCT04284774,Children's Hospital of Alabama
@@ -2766,7 +2766,7 @@ index,nct_id,investigators
 2719,NCT04298684,CHU de la Réunion
 2724,NCT04299425,Vanderbilt University Medical Center
 2729,NCT04305561,Odense University Hospital
-2733,NCT04311606,Mass Eye and Ear
+2734,NCT04311606,Mass Eye and Ear
 2746,NCT04329455,Ahmed Gamal
 2749,NCT04333342,Chungbuk National University Hospital
 2749,NCT04333342,Chung-Ang University Hospital
@@ -2776,22 +2776,22 @@ index,nct_id,investigators
 2749,NCT04333342,The Catholic University of Korea Eunpyeong St. Mary's Hospital
 2756,NCT04339127,Hospice Civils de Lyon
 2759,NCT04339205,Hospices Civils de Lyon
-2763,NCT04344886,University Hospital Ostrava
+2761,NCT04344886,University Hospital Ostrava
 2768,NCT04354896,"Department of Gerontology and Geriatrics, Leiden University Medical Center"
 2768,NCT04354896,"Department of Public Health and Primary Care, Leiden University Medical Center"
 2768,NCT04354896,Institute for Evidence-Based Medicine in Old Age
 2768,NCT04354896,Department of General Internal Medicine
 2768,NCT04354896,"Clinic for General Internal Medicine, Bern University Hospital Bern"
-2769,NCT04359979,Sheba Medical Center
-2775,NCT04373226,Hopital Vinatier
+2770,NCT04359979,Sheba Medical Center
+2776,NCT04373226,Hopital Vinatier
 2778,NCT04383795,Seoul St. Mary hospital
 2789,NCT04396912,"Umraniye Education and Research Hospital, Health Sciences University"
 2794,NCT04410601,"Umraniye Education and Research Hospital, Health Sciences University"
-2800,NCT04411290,"Umraniye Education and Research Hospital, Health Sciences Universit"
-2801,NCT04412694,"Department of General and Oncological Surgery, Medical University of Lodz"
+2798,NCT04411290,"Umraniye Education and Research Hospital, Health Sciences Universit"
+2802,NCT04412694,"Department of General and Oncological Surgery, Medical University of Lodz"
 2806,NCT04424485,"Umraniye Education and Research Hospital, Department of General Surgery"
 2810,NCT04433936,Mansoura University
-2816,NCT04458233,Ziv Medical Center
+2817,NCT04458233,Ziv Medical Center
 2822,NCT04463316,Erasmus Medical Center
 2824,NCT04463719,University of Florida
 2824,NCT04463719,Mayo Clinic
@@ -2822,8 +2822,8 @@ index,nct_id,investigators
 2825,NCT04467021,Aurora West Allis Medical Center
 2826,NCT04472026,University of Florida
 2826,NCT04472026,Mayo Clinic
-2832,NCT04477798,Hangzhou First People's Hospital Affiliated to Zhejiang University Medical College
-2834,NCT04482907,Sabahattin Destek
+2831,NCT04477798,Hangzhou First People's Hospital Affiliated to Zhejiang University Medical College
+2836,NCT04482907,Sabahattin Destek
 2841,NCT04484116,Hospital General Ajusco Medio
 2844,NCT04488406,Ospedale Cisanello-Endocrinology I and II
 2854,NCT04509011,Rudolfstiftung
@@ -2834,95 +2834,95 @@ index,nct_id,investigators
 2855,NCT04514484,Northwestern University
 2855,NCT04514484,Montefiore Medical Center-Einstein Campus
 2855,NCT04514484,University of Pittsburgh Cancer Institute (UPCI)
-2860,NCT04522622,Steno Diabetes Center Copenhagen
-2860,NCT04522622,"Herlev and Gentofte Hospital, Herlev Hospital"
-2860,NCT04522622,Odense University Hospital
+2859,NCT04522622,Steno Diabetes Center Copenhagen
+2859,NCT04522622,"Herlev and Gentofte Hospital, Herlev Hospital"
+2859,NCT04522622,Odense University Hospital
 2869,NCT04548284,"Zhongshan Ophthalmic Center, Sun Yat-sen University"
 2878,NCT04560127,Peking Union Medical College Hospital
 2883,NCT04564924,Tongji Hospital
-2886,NCT04569604,"Clinic for Osteoporosis, Aarhus University Hospital"
+2888,NCT04569604,"Clinic for Osteoporosis, Aarhus University Hospital"
 2892,NCT04574258,Chinese PLA General Hospital
-2897,NCT04574947,St. Petersburg State University Hospital
-2905,NCT04583735,Perlman Medical Offices / UCSD
-2905,NCT04583735,MACRO Trials
-2905,NCT04583735,Univ of Colorado Dept of Ophthalmology
-2905,NCT04583735,Bascom Palmer Eye Institute / Univ of Miami
-2905,NCT04583735,Mayo Clinic
-2905,NCT04583735,Washington University
-2905,NCT04583735,Hamilton Eye Institute / U Tennessee
-2905,NCT04583735,Medical College of Wisconsin
-2912,NCT04598815,Ospedale Cisanello-Endocrinology II
+2895,NCT04574947,St. Petersburg State University Hospital
+2904,NCT04583735,Perlman Medical Offices / UCSD
+2904,NCT04583735,MACRO Trials
+2904,NCT04583735,Univ of Colorado Dept of Ophthalmology
+2904,NCT04583735,Bascom Palmer Eye Institute / Univ of Miami
+2904,NCT04583735,Mayo Clinic
+2904,NCT04583735,Washington University
+2904,NCT04583735,Hamilton Eye Institute / U Tennessee
+2904,NCT04583735,Medical College of Wisconsin
+2913,NCT04598815,Ospedale Cisanello-Endocrinology II
 2920,NCT04601298,Shanghai 10Th People'S Hospital
-2922,NCT04604808,Hospital Universitario de La princesa
+2921,NCT04604808,Hospital Universitario de La princesa
 2926,NCT04610723,Uhmontpellier
 2935,NCT04614389,USC Department of Radiology
 2940,NCT04632524,Atef
-2943,NCT04637360,Min sheng general hospital
+2941,NCT04637360,Min sheng general hospital
 2945,NCT04639388,Hopital Vinatier
 2946,NCT04639960,Developmental imaging and psychopathology lab
 2950,NCT04647006,Sisli Etfal Research Hospiatl
-2952,NCT04647500,Developmental imaging and psychopathology lab
+2953,NCT04647500,Developmental imaging and psychopathology lab
 2955,NCT04662190,Eduard Pedemonte Sarrias
 2959,NCT04663451,Universitair Ziekenhuis Brussel
-2964,NCT04666103,Zhongnan Hospital of Wuhan University
-2969,NCT04671719,Centre de compétence des maladies rares de l'insulino-sécrétion et de l'insulino-sensibilité
-2969,NCT04671719,"Centre de référence Dysplasie Fibreuse des os Service rhumatologie et pathologie osseuse Hôpital Edouard Herriot, Lyon"
-2969,NCT04671719,Centre de Référence des Maladies Rares du Métabolisme du Calcium et du Phosphate Service d'Endocrinologie et Diabète de l'Enfant Hôpital Bicêtre Paris Saclay
+2963,NCT04666103,Zhongnan Hospital of Wuhan University
+2966,NCT04671719,Centre de compétence des maladies rares de l'insulino-sécrétion et de l'insulino-sensibilité
+2966,NCT04671719,"Centre de référence Dysplasie Fibreuse des os Service rhumatologie et pathologie osseuse Hôpital Edouard Herriot, Lyon"
+2966,NCT04671719,Centre de Référence des Maladies Rares du Métabolisme du Calcium et du Phosphate Service d'Endocrinologie et Diabète de l'Enfant Hôpital Bicêtre Paris Saclay
 2973,NCT04680650,Cancer Center of Guangzhou Medical University
-2976,NCT04682340,Jagiellonian University Medical College
+2978,NCT04682340,Jagiellonian University Medical College
 2981,NCT04683575,The First affiliated hospital of Shandong First Medical University
 2994,NCT04704414,"Ophthalmology Department, University Hospital Zurich"
 3001,NCT04708626,Uppsala University
-3005,NCT04714918,Peking Union Medical College Hospital
-3005,NCT04714918,"The First Affiliated Hospital, Chongqing Medical University"
-3005,NCT04714918,Fujian Provincial Hospital
-3005,NCT04714918,"The Seventh Affiliated Hospital, Sun Yat-sen University"
-3005,NCT04714918,Xiangya Hospital of Central South University
-3005,NCT04714918,The First Hospital of China Medical University
-3005,NCT04714918,People's Hospital of Ningxia Hui Autonomous Region
-3005,NCT04714918,People's Hospital of Xinjiang Uygur Autonomous Region
-3005,NCT04714918,The Second Affiliated Hospital Zhejiang University School of Medicine
-3008,NCT04730726,University Medical Center Groningen
-3011,NCT04731740,Saint-Petersburg State University (SPSU) N.I.Pirogov Clinic of High Medical Technologies
-3016,NCT04737330,Novartis Investigative Site
+3006,NCT04714918,Peking Union Medical College Hospital
+3006,NCT04714918,"The First Affiliated Hospital, Chongqing Medical University"
+3006,NCT04714918,Fujian Provincial Hospital
+3006,NCT04714918,"The Seventh Affiliated Hospital, Sun Yat-sen University"
+3006,NCT04714918,Xiangya Hospital of Central South University
+3006,NCT04714918,The First Hospital of China Medical University
+3006,NCT04714918,People's Hospital of Ningxia Hui Autonomous Region
+3006,NCT04714918,People's Hospital of Xinjiang Uygur Autonomous Region
+3006,NCT04714918,The Second Affiliated Hospital Zhejiang University School of Medicine
+3007,NCT04730726,University Medical Center Groningen
+3012,NCT04731740,Saint-Petersburg State University (SPSU) N.I.Pirogov Clinic of High Medical Technologies
+3015,NCT04737330,Novartis Investigative Site
 3021,NCT04740502,Policlinico di Monserrato
-3031,NCT04750460,Saint-Petersburg State University Hospital
+3032,NCT04750460,Saint-Petersburg State University Hospital
 3047,NCT04767763,Medical University of Gdansk - Departament of Anesthesiology and Intensive Care
 3048,NCT04776993,Endocrinology Unit II
-3055,NCT04782856,Virginia Commonwealth University
+3057,NCT04782856,Virginia Commonwealth University
 3059,NCT04785443,CHRU de Brest
-3064,NCT04789993,Hôpital d'Enfants de Brabois
-3070,NCT04798092,CHRU Nancy
+3065,NCT04789993,Hôpital d'Enfants de Brabois
+3069,NCT04798092,CHRU Nancy
 3077,NCT04809454,Mehwish Iftikhar
 3081,NCT04823728,Hôpital Neurologique
 3084,NCT04842994,Tata Memorial Hospital
 3085,NCT04844164,"Endocrinology Research Centre, Moscow"
 3088,NCT04846010,"All Natural Medicine Clinic, LLC"
-3091,NCT04856488,"Department of Endocrinology, Karolinska University Hospital"
-3103,NCT04876534,Istituto Auxologico Italiano
-3103,NCT04876534,"Azienda Ospedaliero, Universitaria Pisana"
-3103,NCT04876534,"Azienda Ospedaliera ""Sant'Andrea"""
-3103,NCT04876534,Mauriziano Umberto I Hospital
+3093,NCT04856488,"Department of Endocrinology, Karolinska University Hospital"
+3104,NCT04876534,Istituto Auxologico Italiano
+3104,NCT04876534,"Azienda Ospedaliero, Universitaria Pisana"
+3104,NCT04876534,"Azienda Ospedaliera ""Sant'Andrea"""
+3104,NCT04876534,Mauriziano Umberto I Hospital
 3107,NCT04877613,University of Pennsylvania
 3111,NCT04879173,Seoul St. Mary hospital
-3118,NCT04895631,"University of California, San Francisco"
+3119,NCT04895631,"University of California, San Francisco"
 3124,NCT04905641,"Faculty of Medicine Siriraj Hospital, Mahidol University"
 3128,NCT04919694,"Zhongshan Ophthalmic Center, Sun Yat-sen University"
-3134,NCT04922892,NanjingMU
+3136,NCT04922892,NanjingMU
 3137,NCT04927416,National Institutes of Health Clinical Center
-3145,NCT04932135,University Hospital Basel
+3144,NCT04932135,University Hospital Basel
 3153,NCT04942769,"Beijing Chao-Yang Hospital, Capital Medical University"
 3159,NCT04948671,Patrizia D'amelio
 3164,NCT04953195,"Beijing Chao-Yang Hospital, Capital Medical University"
-3167,NCT04969926,National Institutes of Health Clinical Center
+3168,NCT04969926,National Institutes of Health Clinical Center
 3178,NCT04988802,Dubrava University Hospital
-3182,NCT04998968,Uppsala University Hospital
+3183,NCT04998968,Uppsala University Hospital
 3184,NCT05002998,University of Colorado - Eye Center
 3184,NCT05002998,Bascom Palmer Eye Institute
 3184,NCT05002998,Washington University in St. Louis
 3184,NCT05002998,University of Nebraska Medical Center
 3191,NCT05007093,Peking Union Medical College Hospital
-3192,NCT05012033,Imperial College Healthcare NHS Trust
+3193,NCT05012033,Imperial College Healthcare NHS Trust
 3197,NCT05015127,"Shanghai Ninth People's Hospital, Shanghai Jiaotong University School of Medicine"
 3204,NCT05017142,Kantonsspital Aarau
 3204,NCT05017142,Kantonsspital Graubünden
@@ -2942,27 +2942,27 @@ index,nct_id,investigators
 3224,NCT05049603,Ospedale Cisanello-Endocrinology II
 3231,NCT05059470,M D Anderson Cancer Center
 3232,NCT05068687,Ghent University Hospital
-3235,NCT05070091,7 Szpital Marynarki Wojennej
-3235,NCT05070091,Medical University of Gdansk
+3233,NCT05070091,7 Szpital Marynarki Wojennej
+3233,NCT05070091,Medical University of Gdansk
 3246,NCT05098600,Teaching Hospital of Royal Vineguards
 3253,NCT05108298,Wake Forest School of Medicine
 3254,NCT05110040,Zhongshan Ophthalmic Center
 3258,NCT05112211,Zhongshan Ophthalmic Center
-3264,NCT05117853,Onze Lieve Vrouw Hospital
-3267,NCT05118542,University of Indonesia
-3269,NCT05119296,Stanford University
-3272,NCT05126147,National Taiwan University Hospital
+3265,NCT05117853,Onze Lieve Vrouw Hospital
+3268,NCT05118542,University of Indonesia
+3270,NCT05119296,Stanford University
+3273,NCT05126147,National Taiwan University Hospital
 3276,NCT05126706,Seoul National University Hospital
 3278,NCT05130476,Odense University Hospital
 3283,NCT05142904,Rijnstate Hospital
 3283,NCT05142904,"Amsterdam UMC, location VUMC"
-3288,NCT05149898,Greenwood Genetic Center
-3288,NCT05149898,Lady Cilento Children's Hospital - South Brisbane
-3288,NCT05149898,Genetics Clinics Australia
+3287,NCT05149898,Greenwood Genetic Center
+3287,NCT05149898,Lady Cilento Children's Hospital - South Brisbane
+3287,NCT05149898,Genetics Clinics Australia
 3295,NCT05176639,Sarasota Retina Institute
 3295,NCT05176639,"TKL Research, Inc."
 3295,NCT05176639,Neuro-Eye Clinical Trials
-3303,NCT05180214,Sohag University Faculty of Medicine
+3304,NCT05180214,Sohag University Faculty of Medicine
 3309,NCT05189314,Columbia University
 3311,NCT05189808,Columbia University
 3313,NCT05189821,Columbia University
@@ -2976,7 +2976,7 @@ index,nct_id,investigators
 3323,NCT05214274,The First Affiliated Hospital of Xinjiang Medical University
 3325,NCT05216718,Dong sik Bae
 3333,NCT05225883,Centre de référence des syndromes neurologiques paranéoplasiques et encéphalites auto-immunes
-3336,NCT05229341,City of Hope Medical Center
+3337,NCT05229341,City of Hope Medical Center
 3338,NCT05239221,Amolyt Pharma Investigational Site Hungary
 3338,NCT05239221,PRA-EDS
 3342,NCT05241626,Minia Faculty of medicine
@@ -2988,9 +2988,9 @@ index,nct_id,investigators
 3378,NCT05290493,The Hospital for Sick Children (SickKids)
 3381,NCT05299437,"Nuclear Medicine, Ospedale Sacro Cuore - Don Calabria"
 3381,NCT05299437,"Nuclear Medicine, Fondazione IRCCS Istituto Nazionale Tumori"
-3382,NCT05299632,Emory Saint Joseph's Hospital
-3382,NCT05299632,Emory University Hospital (EUH)
-3382,NCT05299632,Emory Johns Creek Hospital
+3384,NCT05299632,Emory Saint Joseph's Hospital
+3384,NCT05299632,Emory University Hospital (EUH)
+3384,NCT05299632,Emory Johns Creek Hospital
 3386,NCT05316922,Fondazione IRCCS Istituto Nazionale dei Tumori
 3396,NCT02378233,Health Care center
 3397,NCT02742597,Western University
