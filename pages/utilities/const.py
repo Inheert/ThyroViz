@@ -29,3 +29,25 @@ card_icon2 = {
     "fontSize": 30,
     "margin": "auto",
 }
+
+tabs_styles = {
+    'height': '44px',
+    "width": "1000px"
+}
+tab_style = {
+    "display": "flex",
+    "justify-content": "center",
+    "align-items": "center",
+    'borderBottom': '1px solid #d6d6d6',
+    'fontWeight': 'bold'
+}
+
+tab_selected_style = {
+    "display": "flex",
+    "justify-content": "center",
+    "align-items": "center",
+    'borderTop': '1px solid #d6d6d6',
+    'borderBottom': '1px solid #d6d6d6',
+    'backgroundColor': '#119DFF',
+    'color': 'white',
+}
