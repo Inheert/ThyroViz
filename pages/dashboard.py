@@ -3,8 +3,8 @@ from dash import dcc, Input, Output, callback, html
 import dash_bootstrap_components as dbc
 from plotly.subplots import make_subplots
 
-from pages.helpers import *
-from pages.const import *
+from pages.utilities.helpers import *
+from pages.utilities.const import *
 
 """"
 Idées graphiques :
@@ -169,7 +169,7 @@ layout = html.Div(
                                 dbc.Card(
                                     dbc.CardBody(
                                         [
-                                            html.H5(f"{category.loc[x]['category']}",
+                                            html.H6(f"{category.loc[x]['category']}",
                                                     className="card-title",
                                                     id=f"title-{category.loc[x]['category']}"),
                                             html.P(
@@ -243,7 +243,7 @@ layout = html.Div(
                                                             dbc.CardBody(
                                                                 [
                                                                     dcc.Graph(
-                                                                        id="study_type_bar",
+                                                                        id="studyTypeBar",
                                                                         config={
                                                                             'displayModeBar': False,
                                                                         },
@@ -268,6 +268,7 @@ layout = html.Div(
                                                         dbc.Row(
                                                             [
                                                                 html.H3("Category / Sub-category repartition:",
+                                                                        id="tabPieTitle",
                                                                         style={
                                                                             "textAlign": "center",
                                                                         }),
@@ -280,7 +281,7 @@ layout = html.Div(
                                                                                     selected_style=tab_selected_style,
                                                                                     children=[
                                                                                         dcc.Graph(
-                                                                                            id="sub_category_proportion",
+                                                                                            id="subCategoryProportion",
                                                                                             config={
                                                                                                 "displayModeBar": False
                                                                                             }
@@ -294,7 +295,7 @@ layout = html.Div(
                                                                                     selected_style=tab_selected_style,
                                                                                     children=[
                                                                                         dcc.Graph(
-                                                                                            id="sub_category_proportion_by_studies_type",
+                                                                                            id="subCategoryProportionByStudiesType",
                                                                                             config={
                                                                                                 "displayModeBar": False,
                                                                                             }
@@ -339,7 +340,7 @@ layout = html.Div(
                                                                 dbc.Col(
                                                                     [
                                                                         dcc.Graph(
-                                                                            id="date_studies_by_year",
+                                                                            id="studiesDateEventByYear",
                                                                             config={
                                                                                 'displayModeBar': False,
                                                                             },
@@ -357,16 +358,6 @@ layout = html.Div(
                                                         ),
                                                     ],
                                                 ),
-                                                dbc.Row(
-                                                    [
-                                                        dbc.Col(
-                                                            [
-                                                                html.H3("zfẑekog"),
-                                                                html.H5("zrozbgp")
-                                                            ]
-                                                        )
-                                                    ]
-                                                )
                                             ]
                                         )
                                     ]
@@ -385,7 +376,8 @@ layout = html.Div(
                         "margin": "auto",
                         "marginTop": "25px"
                     }
-                )
+                ),
+                dcc.Store(id="selected-card")
             ],
         )
     ],
@@ -394,47 +386,74 @@ layout = html.Div(
     }
 )
 
-
-@callback(Output("study_type_bar", "figure"),
-          Output("sub_category_proportion", "figure"),
-          Output("sub_category_proportion_by_studies_type", "figure"),
-          Output("date_studies_by_year", "figure"),
-          Output("title", "children"),
-          Output("category_button", "data"),
-          Input("category_button", "data"),
-          Input("age_range_slider", "value"),
+"""
+########################################################################################################################
+THIS CALLBACK UPDATE STORE COMPONENT USED TO DEFINE
+IF A CATEGORY HAS BEEN SELECTED OR NOT
+OR IF THE RESET BUTTON IS SELECTED
+########################################################################################################################
+"""
+@callback(Output("selected-card", "data"),
           Input("reset", "n_clicks"),
-          [[Input(f"title-{category.loc[x]['category']}", "children"),
-            Input(f"button-{category.loc[x]['category']}", "n_clicks")] for x in category.index],
-          )
-def VisualizationDataUpdate(data, range, *args):
-    category_selected = [p['prop_id'] for p in dash.callback_context.triggered][0]
+          [Input(f"button-{category.loc[x]['category']}", "n_clicks") for x in category.index])
+def StoredDataUpdate(data, *args):
+    trigger_button = [p['prop_id'] for p in dash.callback_context.triggered][0]
 
-    data = None if category_selected == "reset.n_clicks" else data
+    try:
+        trigger_button = trigger_button.split("-")[1].split(".")[0]
 
-    category_selected = "." if category_selected in ["reset.n_clicks", "age_range_slider.value"] else category_selected
+        if trigger_button in all_category:
+            return trigger_button
+        else:
+            return data
+    except IndexError:
+        if trigger_button == "reset.n_clicks":
+            return None
+        else:
+            return data
 
-    data = category_selected if category_selected != "." else data
 
-    if data is not None:
-        try:
-            category_selected = data.split("-")[1].split(".")[0]
-        except IndexError:
-            pass
-
-        df = GetCategoryPercent(columns=["study_type"], groupby=["category", "study_type"],
-                                sortby=["category", "nct_id"],
-                                sortasc=False, divisionby="selection", categoryfilter=category_selected)
+"""
+########################################################################################################################
+THIS CALLBACK IS USED TO UPDATES ALL TEXT COMPONENT 
+########################################################################################################################
+"""
+@callback(Output("title", "children"),
+          Output("tabPieTitle", "children"),
+          Input("selected-card", "data"))
+def TextUpdate(data):
+    if data in all_category:
+        return data, "Sub-category repartition:"
     else:
-        df = GetCategoryPercent(columns=["study_type"], groupby=["category", "study_type"],
+        return "Overview", "Category repartition:"
+
+
+"""
+########################################################################################################################
+THIS CALLBACK IS USED TO UPDATE THE VERTICAL BAR CHART BY STUDY_TYPE
+########################################################################################################################
+"""
+@callback(Output("studyTypeBar", "figure"),
+          Input("selected-card", "data"))
+def BarChartUpdate(data):
+    if data in all_category:
+        df = GetCategoryPercent(columns=["study_type"],
+                                groupby=["category", "study_type"],
+                                sortby=["category", "nct_id"],
+                                sortasc=False,
+                                divisionby="selection",
+                                categoryfilter=data)
+    else:
+        df = GetCategoryPercent(columns=["study_type"],
+                                groupby=["study_type"],
                                 sortby=["category", "nct_id"],
                                 sortasc=False)
-        df = df[df["category"] == "Thyroid neoplasms"]
+        df["category"] = "All"
 
     s_type = [x for x in df["study_type"]]
     marker_color = ["#342883", "#4a39bb", "#6f60cf"]
 
-    study_type_bar = go.Figure(data=[
+    fig = go.Figure(data=[
         go.Bar(name="Interventional",
                x=df[df["study_type"] == y]["category"],
                y=df[df["study_type"] == y]["nct_id"],
@@ -445,7 +464,7 @@ def VisualizationDataUpdate(data, range, *args):
                )
         for x, y in enumerate(s_type)])
 
-    study_type_bar.update_layout(
+    fig.update_layout(
         height=800,
         width=150,
         xaxis=dict(
@@ -469,17 +488,21 @@ def VisualizationDataUpdate(data, range, *args):
         hovermode=False
     )
 
-    color_pie = ["hsl(185.23, 100%, 52.75%)",
-                 "hsl(201.22, 95.82%, 53.14%)",
-                 "hsl(216.05, 100%, 55.29%)",
-                 "hsl(230.67, 98.25%, 55.1%)",
-                 "hsl(243.98, 100%, 55.69%)",
-                 "hsl(244.41, 100%, 86.67%)",
-                 "hsl(258.18, 78.2%, 58.63%)",
-                 "hsl(258, 77.78%, 35.29%)"]
+    return fig
 
-    df = GetSubCategoryProportion(category_selected, None, range)
-    sub_category_proportion = go.Figure(data=[go.Pie(
+
+"""
+########################################################################################################################
+THIS CALLBACK IS USED TO UPDATE THE PIE CHART FROM THE "NO FILTER" TAB
+########################################################################################################################
+"""
+@callback(Output("subCategoryProportion", "figure"),
+          Input("selected-card", "data"),
+          Input("age_range_slider", "value"))
+def pieNoFilterUpdate(data, age_range):
+    age_range = list((map(lambda x: int(float(x)), age_range)))
+    df = GetSubCategoryProportion(data, None, age_range)
+    fig = go.Figure(data=[go.Pie(
         labels=df["view"],
         values=df["nct_id"],
         marker=dict(
@@ -487,9 +510,9 @@ def VisualizationDataUpdate(data, range, *args):
         )
     )])
 
-    sub_category_proportion.update_traces(hole=.4, hoverinfo="label+percent")
+    fig.update_traces(hole=.4, hoverinfo="label+percent")
 
-    sub_category_proportion.update_layout(
+    fig.update_layout(
         height=290,
         width=900,
         xaxis=dict(
@@ -516,16 +539,27 @@ def VisualizationDataUpdate(data, range, *args):
             # )
         )
     )
+    return fig
 
-    sub_category_proportion_by_study_type = make_subplots(rows=1, cols=3, specs=[[{"type": "domain"},
-                                                                                  {"type": "domain"},
-                                                                                  {"type": "domain"}]])
+
+"""
+########################################################################################################################
+THIS CALLBACK IS USED TO UPDATES PIES CHARTS FROM THE "BY STUDIES TYPE" TAB
+########################################################################################################################
+"""
+@callback(Output("subCategoryProportionByStudiesType", "figure"),
+          Input("selected-card", "data"),
+          Input("age_range_slider", "value"))
+def pieByStudiesTypeUpdate(data, age_range):
+    fig = make_subplots(rows=1, cols=3, specs=[[{"type": "domain"},
+                                                {"type": "domain"},
+                                                {"type": "domain"}]])
 
     col = 1
     for i in s_base.study_type.sort_values().unique():
-        df = GetSubCategoryProportion(category_selected, i, range)
+        df = GetSubCategoryProportion(data, i, age_range)
 
-        sub_category_proportion_by_study_type.add_trace(
+        fig.add_trace(
             go.Pie(
                 labels=df["view"],
                 values=df["nct_id"],
@@ -538,10 +572,10 @@ def VisualizationDataUpdate(data, range, *args):
 
         col += 1
 
-    sub_category_proportion_by_study_type.update_traces(hole=.4,
-                                                        hoverinfo="label+percent")
+    fig.update_traces(hole=.4,
+                      hoverinfo="label+percent")
 
-    sub_category_proportion_by_study_type.update_layout(
+    fig.update_layout(
         height=290,
         width=900,
         xaxis=dict(
@@ -568,10 +602,20 @@ def VisualizationDataUpdate(data, range, *args):
             # )
         )
     )
+    return fig
 
-    news_and_completed_study_by_year = go.Figure(data=StudiesByYear(category_selected))
 
-    news_and_completed_study_by_year.update_layout(
+"""
+########################################################################################################################
+THIS CALLBACK IS USED TO UPDATE THE LINE CHART WITH NEW AND COMPLETED STUDIES
+########################################################################################################################
+"""
+@callback(Output("studiesDateEventByYear", "figure"),
+          Input("selected-card", "data"))
+def LinePlotByYearUpdate(data):
+    fig = go.Figure(data=StudiesByYear(data))
+
+    fig.update_layout(
         height=250,
         width=950,
         title={
@@ -599,10 +643,61 @@ def VisualizationDataUpdate(data, range, *args):
         margin=dict(l=0, r=0, t=0, b=0),
         showlegend=False,
     )
+    return fig
 
-    return study_type_bar, \
-           sub_category_proportion, \
-           sub_category_proportion_by_study_type, \
-           news_and_completed_study_by_year, \
-           category_selected if category_selected != "." else "Overview", \
-           data
+# @callback(Output("category_button", "data"),
+#           Input("category_button", "data"),
+#           Input("reset", "n_clicks"),
+#           [[Input(f"title-{category.loc[x]['category']}", "children"),
+#             Input(f"button-{category.loc[x]['category']}", "n_clicks")] for x in category.index],
+#           )
+# def VisualizationDataUpdate(data, range, *args):
+#     category_selected = [p['prop_id'] for p in dash.callback_context.triggered][0]
+#
+#     data = None if category_selected == "reset.n_clicks" else data
+#
+#     category_selected = "." if category_selected in ["reset.n_clicks", "age_range_slider.value"] else category_selected
+#
+#     data = category_selected if category_selected != "." else data
+#
+#     color_pie = ["hsl(185.23, 100%, 52.75%)",
+#                  "hsl(201.22, 95.82%, 53.14%)",
+#                  "hsl(216.05, 100%, 55.29%)",
+#                  "hsl(230.67, 98.25%, 55.1%)",
+#                  "hsl(243.98, 100%, 55.69%)",
+#                  "hsl(244.41, 100%, 86.67%)",
+#                  "hsl(258.18, 78.2%, 58.63%)",
+#                  "hsl(258, 77.78%, 35.29%)"]
+#
+#     news_and_completed_study_by_year = go.Figure(data=StudiesByYear(category_selected))
+#
+#     news_and_completed_study_by_year.update_layout(
+#         height=250,
+#         width=950,
+#         title={
+#             'text': 'New and completed studies by year',
+#             'y': 0.9,
+#             'x': 0.5,
+#             "xanchor": "center",
+#             "yanchor": "top"
+#         },
+#         xaxis=dict(
+#             showgrid=False,
+#             showline=False,
+#             showticklabels=True,
+#             color='black',
+#             zeroline=False,
+#         ),
+#         yaxis=dict(
+#             showgrid=False,
+#             showline=False,
+#             showticklabels=False,
+#             zeroline=False,
+#         ),
+#         paper_bgcolor='rgba(0, 0, 0, 0)',
+#         plot_bgcolor='rgba(0, 0, 0, 0)',
+#         margin=dict(l=0, r=0, t=0, b=0),
+#         showlegend=False,
+#     )
+#
+#     return data

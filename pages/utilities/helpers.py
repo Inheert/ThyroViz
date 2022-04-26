@@ -1,7 +1,5 @@
-import traceback
-import pandas as pd
 import plotly.graph_objects as go
-from pages.const import *
+from pages.utilities.const import *
 
 
 def csvFilter(study_type):
@@ -101,21 +99,21 @@ def ArgumentSuggestion(funcArg, calledArg):
 def StudiesByYear(category):
     df = s_base.copy()
 
-    if category != ".":
+    if category in all_category:
         df = df[df["category"] == category]
 
     new_studies_by_year = df[["nct_id", "study_first_submitted_date"]].copy()
     new_studies_by_year["year"] = new_studies_by_year["study_first_submitted_date"].apply(lambda x: x.year)
     new_studies_by_year.drop(columns="study_first_submitted_date", inplace=True)
     new_studies_by_year = new_studies_by_year.groupby("year").count().reset_index().sort_values(by="year")
-    new_studies_by_year["year"] = new_studies_by_year["year"].apply(lambda x: int(x))
+    new_studies_by_year["year"] = pd.to_numeric(new_studies_by_year["year"])
     new_studies_by_year = new_studies_by_year[new_studies_by_year["year"] >= 1999]
 
     completed_studies_by_year = df[["nct_id", "completion_date"]].copy()
     completed_studies_by_year["year"] = completed_studies_by_year["completion_date"].apply(lambda x: x.year)
     completed_studies_by_year.drop(columns="completion_date", inplace=True)
     completed_studies_by_year = completed_studies_by_year.groupby("year").count().reset_index().sort_values(by="year")
-    completed_studies_by_year["year"] = completed_studies_by_year["year"].apply(lambda x: int(x))
+    completed_studies_by_year["year"] = pd.to_numeric(completed_studies_by_year["year"])
     completed_studies_by_year = completed_studies_by_year[
         (completed_studies_by_year["year"] <= datetime.now().year) & (completed_studies_by_year["year"] >= 1999)]
 
@@ -129,7 +127,7 @@ def StudiesByYear(category):
     return data
 
 
-def GetSubCategoryProportion(category, s_type, age=None):
+def GetSubCategoryProportion(selected, s_type, age):
 
     color_pie = ["hsl(201.22, 95.82%, 53.14%)",
                  "hsl(216.05, 100%, 55.29%)",
@@ -147,11 +145,12 @@ def GetSubCategoryProportion(category, s_type, age=None):
     df = s_base[["nct_id", "category", "sub_category", "study_type", "minimum_age_num", "maximum_age_num"]].copy()
 
     if age is not None:
+        age = list((map(lambda x: int(float(x)), age)))
         df = df[(df["minimum_age_num"] >= age[0]) & (df["maximum_age_num"] <= age[1])]
 
     color_dict = {}
 
-    if category == ".":
+    if selected == "." or selected is None:
         idx = 0
         for cat in df.category.sort_values().unique():
             color_dict[cat] = color_pie[idx]
@@ -172,11 +171,11 @@ def GetSubCategoryProportion(category, s_type, age=None):
                 color_dict[sub] = color_pie[idx]
                 idx += 1
         if s_type is None:
-            df = df[df["category"] == category]
+            df = df[df["category"] == selected]
             df = df.groupby("sub_category").count().reset_index().sort_values(by="nct_id", ascending=False)
             df.rename(columns={"sub_category": "view"}, inplace=True)
         else:
-            df = df[(df["category"] == category) & (df["study_type"] == s_type)]
+            df = df[(df["category"] == selected) & (df["study_type"] == s_type)]
             df = df.groupby("sub_category").count().reset_index().sort_values(by="nct_id", ascending=False)
             df.rename(columns={"sub_category": "view"}, inplace=True)
         df["color"] = df["view"].apply(lambda x: color_dict[x])

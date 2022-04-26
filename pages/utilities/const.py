@@ -1,5 +1,5 @@
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, date
 
 s_base = pd.read_csv("script/sql/visualisation/CSV_files/studies.csv")
 s_base["study_first_submitted_date"] = pd.to_datetime(s_base["study_first_submitted_date"])
@@ -13,6 +13,8 @@ sponsors = sponsors[sponsors["nct_id"].isin(studies.nct_id)]
 
 investigators = pd.read_csv("script/sql/visualisation/CSV_files/df_investigators.csv")
 investigators = investigators[investigators["nct_id"].isin(studies.nct_id)]
+
+all_category = [x for x in s_base.category.unique()]
 
 card_icon = {
     "color": "white",
