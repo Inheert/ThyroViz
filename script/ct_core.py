@@ -78,6 +78,8 @@ def appLaunch():
 
     df["category_age"] = df["category_age"].apply(lambda x: CategoryAge(x))
 
+    df["overall_status"] = df["overall_status"].apply(lambda x: x.replace(",", ""))
+
     # ----------------------------#
 
     # Copie de la dataframe original pour définir les conditions manquantes

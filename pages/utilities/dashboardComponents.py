@@ -1,6 +1,6 @@
 import dash_bootstrap_components as dbc
+import dash_daq
 from dash import html, dcc
-import dash_daq as daq
 from pages.utilities.const import *
 from pages.utilities.helpers import category
 
@@ -93,7 +93,7 @@ topCard4 = \
         className="mt-4 shadow",
     )
 
-leftCategoryCard = \
+DEPRECATED_leftCategoryCard = \
     [
         dbc.Card(
             dbc.CardBody(
@@ -113,6 +113,52 @@ leftCategoryCard = \
             className="mb-1 shadow-sm"
         ) for x in category.index
     ]
+
+leftCategoryCard = \
+                dcc.Tabs(id="leftSideTab",
+                         value="tab2",
+                         children=[
+                             dcc.Tab(label="Category",
+                                     value="tab1",
+                                     id="leftTab1",
+                                     style=tab_style,
+                                     selected_style=tab_selected_style,
+                                     children=[
+                                         dbc.Card(
+                                             dbc.CardBody(
+                                                 [
+                                                     html.H6(f"{category.loc[x]['category']}",
+                                                             className="card-title",
+                                                             id=f"title-{category.loc[x]['category']}"),
+                                                     html.P(
+                                                         f"{category.loc[x]['nct_id']}%"
+                                                     ),
+                                                     dbc.Button(children="Select",
+                                                                id=f"button-{category.loc[x]['category']}",
+                                                                color="primary",
+                                                                outline=True)
+                                                 ],
+                                             ),
+                                             className="mb-1 shadow-sm"
+                                         ) for x in category.index
+                                     ]
+                                     ),
+
+                             dcc.Tab(label="Parameters",
+                                     value="tab2",
+                                     id="leftTab2",
+                                     style=tab_style,
+                                     selected_style=tab_selected_style,
+                                     children=[
+                                         html.Div(id="test"),
+                                         html.Div(id="testt"),
+                                     ]),
+                         ],
+                         style={
+                             "width": "300px"
+                         }
+                         )
+
 
 topAnimatedBanner = \
     dbc.Card(
@@ -169,12 +215,17 @@ barPlotByStudiesType = \
                         "marginTop": "-1vh",
                     }
                 ),
+                dash_daq.BooleanSwitch(
+                    id="boolBarStudiesType",
+                    on=False,
+                    color="#0D6EFD"),
             ]
         ),
         class_name="card mb-4 border-0",
         style={"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
                "borderRadius": "15px"}
     )
+
 tabWithMultipleCharts = \
     dbc.Card(
         dbc.CardBody(
@@ -193,6 +244,23 @@ tabWithMultipleCharts = \
                                              config={
                                                  "displayModeBar": False
                                              }
+                                         ),
+                                         dbc.Row(
+                                             [
+                                                 dbc.Col(
+                                                     dash_daq.BooleanSwitch(
+                                                         id="boolCategoryRepartition",
+                                                         on=False,
+                                                         color="#0D6EFD"),
+                                                     style={
+                                                         "display": "flex",
+                                                         "alignItems": "center",
+                                                         "justifyContent": "right",
+                                                         "horizontalAlign": "center",
+                                                         "marginLeft": "3vh"
+                                                     }
+                                                 )
+                                             ]
                                          )
                                      ]
                                      ),
@@ -208,7 +276,7 @@ tabWithMultipleCharts = \
                                              config={
                                                  "displayModeBar": False,
                                              }
-                                         )
+                                         ),
                                      ]),
                          ],
                          style=tabs_styles

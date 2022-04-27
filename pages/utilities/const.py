@@ -36,16 +36,17 @@ tabs_styles = {
 }
 tab_style = {
     "display": "flex",
-    "justify-content": "center",
-    "align-items": "center",
+    "justifyContent": "center",
+    "alignItems": "center",
     'borderBottom': '1px solid #d6d6d6',
-    'fontWeight': 'bold'
+    'fontWeight': 'bold',
+    "backgroundColor": "rgba(0,0,0,0)"
 }
 
 tab_selected_style = {
     "display": "flex",
-    "justify-content": "center",
-    "align-items": "center",
+    "justifyContent": "center",
+    "alignItems": "center",
     'borderTop': '1px solid #d6d6d6',
     'borderBottom': '1px solid #d6d6d6',
     'backgroundColor': '#119DFF',

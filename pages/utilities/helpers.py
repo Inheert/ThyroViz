@@ -127,7 +127,12 @@ def StudiesByYear(category):
     return data
 
 
-def GetSubCategoryProportion(selected, s_type, age):
+def GetSubCategoryProportion(selected, s_type, s_status, age):
+
+    if s_type is None:
+        s_type = []
+    if s_status is None:
+        s_status = []
 
     color_pie = ["hsl(201.22, 95.82%, 53.14%)",
                  "hsl(216.05, 100%, 55.29%)",
@@ -142,26 +147,26 @@ def GetSubCategoryProportion(selected, s_type, age):
                  "hsl(185.23, 100%, 52.75%)",
                  "hsl(264.44, 96.43%, 89.02%)"]
 
-    df = s_base[["nct_id", "category", "sub_category", "study_type", "minimum_age_num", "maximum_age_num"]].copy()
+    df = s_base[["nct_id", "category", "sub_category", "study_type", "overall_status", "minimum_age_num", "maximum_age_num"]].copy()
 
     if age is not None:
         age = list((map(lambda x: int(float(x)), age)))
         df = df[(df["minimum_age_num"] >= age[0]) & (df["maximum_age_num"] <= age[1])]
 
     color_dict = {}
-
     if selected == "." or selected is None:
         idx = 0
         for cat in df.category.sort_values().unique():
             color_dict[cat] = color_pie[idx]
             idx += 1
-        if s_type is None:
-            df = df.groupby("category").count().reset_index().sort_values(by="nct_id", ascending=False)
-            df.rename(columns={"category": "view"}, inplace=True)
-        else:
-            df = df[df["study_type"] == s_type]
-            df = df.groupby("category").count().reset_index().sort_values(by="nct_id", ascending=False)
-            df.rename(columns={"category": "view"}, inplace=True)
+
+        if len(s_type) > 0:
+            df = df[df["study_type"].isin(s_type if isinstance(s_type, list) else [s_type])]
+        if len(s_status) > 0:
+            df = df[df["overall_status"].isin(s_status if isinstance(s_status, list) else [s_status])]
+
+        df = df.groupby("category").count().reset_index().sort_values(by="nct_id", ascending=False)
+        df.rename(columns={"category": "view"}, inplace=True)
         df["color"] = df["view"].apply(lambda x: color_dict[x])
 
     else:
@@ -170,14 +175,16 @@ def GetSubCategoryProportion(selected, s_type, age):
             for sub in df[df["category"] == cat]["sub_category"].unique():
                 color_dict[sub] = color_pie[idx]
                 idx += 1
-        if s_type is None:
-            df = df[df["category"] == selected]
-            df = df.groupby("sub_category").count().reset_index().sort_values(by="nct_id", ascending=False)
-            df.rename(columns={"sub_category": "view"}, inplace=True)
-        else:
-            df = df[(df["category"] == selected) & (df["study_type"] == s_type)]
-            df = df.groupby("sub_category").count().reset_index().sort_values(by="nct_id", ascending=False)
-            df.rename(columns={"sub_category": "view"}, inplace=True)
+
+        df = df[df["category"] == selected]
+
+        if len(s_type) > 0:
+            df = df[df["study_type"].isin(s_type if isinstance(s_type, list) else [s_type])]
+        if len(s_status) > 0:
+            df = df[df["overall_status"].isin(s_type if isinstance(s_status, list) else [s_status])]
+
+        df = df.groupby("sub_category").count().reset_index().sort_values(by="nct_id", ascending=False)
+        df.rename(columns={"sub_category": "view"}, inplace=True)
         df["color"] = df["view"].apply(lambda x: color_dict[x])
 
     return df

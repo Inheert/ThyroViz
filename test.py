@@ -4,5 +4,6 @@
 # https://getbootstrap.com/docs/4.1/utilities/shadows/
 # https://icons.getbootstrap.com/icons/eye-fill/
 
-print(True, True, True == (True, True, True))
+a = [9, 5]
+print(isinstance(a, list))
 

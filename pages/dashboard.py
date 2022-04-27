@@ -1,11 +1,12 @@
 import dash
-from dash import dcc, Input, Output, callback, html
+from dash import dcc, Input, Output, State, callback, html
 import dash_bootstrap_components as dbc
 from plotly.subplots import make_subplots
 
 from pages.utilities.helpers import *
 from pages.utilities.const import *
 from pages.utilities.dashboardComponents import *
+from pages.utilities.dashboardParameters import *
 
 """"
 Idées graphiques :
@@ -155,7 +156,9 @@ layout = html.Div(
                         "marginTop": "25px"
                     }
                 ),
-                dcc.Store(id="selected-card")
+                dcc.Store(id="selected-card"),
+                dcc.Store(id="dataSliderButton",
+                          data=False)
             ],
         )
     ],
@@ -277,10 +280,13 @@ THIS CALLBACK IS USED TO UPDATE THE PIE CHART FROM THE "NO FILTER" TAB
 """
 @callback(Output("subCategoryProportion", "figure"),
           Input("selected-card", "data"),
-          Input("age_range_slider", "value"))
-def pieNoFilterUpdate(data, age_range):
+          Input("age_range_slider", "value"),
+          State("CRP_studiesType", "value"),
+          State("CRP_studiesStatus", "value"),
+          Input("boolCategoryRepartition", "on"))
+def pieNoFilterUpdate(data, age_range, s_type, s_status, *args):
     age_range = list((map(lambda x: int(float(x)), age_range)))
-    df = GetSubCategoryProportion(data, None, age_range)
+    df = GetSubCategoryProportion(data, s_type, s_status, age_range)
     fig = go.Figure(data=[go.Pie(
         labels=df["view"],
         values=df["nct_id"],
@@ -328,15 +334,17 @@ THIS CALLBACK IS USED TO UPDATES PIES CHARTS FROM THE "BY STUDIES TYPE" TAB
 """
 @callback(Output("subCategoryProportionByStudiesType", "figure"),
           Input("selected-card", "data"),
-          Input("age_range_slider", "value"))
-def pieByStudiesTypeUpdate(data, age_range):
+          State("CRP_studiesStatus", "value"),
+          State("age_range_slider", "value"),
+          Input("boolCategoryRepartition", "on"))
+def pieByStudiesTypeUpdate(data, s_status, age_range, *args):
     fig = make_subplots(rows=1, cols=3, specs=[[{"type": "domain"},
                                                 {"type": "domain"},
                                                 {"type": "domain"}]])
 
     col = 1
     for i in s_base.study_type.sort_values().unique():
-        df = GetSubCategoryProportion(data, i, age_range)
+        df = GetSubCategoryProportion(data, i, s_status, age_range)
 
         fig.add_trace(
             go.Pie(
@@ -412,17 +420,27 @@ def LinePlotByYearUpdate(data):
             zeroline=False,
         ),
         yaxis=dict(
-            showgrid=False,
-            showline=False,
-            showticklabels=False,
+            showgrid=True,
+            showline=True,
+            showticklabels=True,
             zeroline=False,
         ),
         paper_bgcolor='rgba(0, 0, 0, 0)',
         plot_bgcolor='rgba(0, 0, 0, 0)',
         margin=dict(l=0, r=0, t=0, b=0),
-        showlegend=False,
+        showlegend=True,
     )
     return fig
+
+
+@callback(Output("test", "children"),
+          Output("testt", "children"),
+          Input("boolCategoryRepartition", "on"),
+          Input("boolBarStudiesType", "on"))
+def ParametersTabUpdating(*args):
+    return categoryRepartitionPie if args[0] else default, \
+           "True2" if args[1] else None
+
 
 # @callback(Output("category_button", "data"),
 #           Input("category_button", "data"),
