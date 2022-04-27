@@ -4,5 +4,5 @@
 # https://getbootstrap.com/docs/4.1/utilities/shadows/
 # https://icons.getbootstrap.com/icons/eye-fill/
 
-True, True, True == (True, True, True)
+print(True, True, True == (True, True, True))
 

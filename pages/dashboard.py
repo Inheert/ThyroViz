@@ -79,11 +79,6 @@ layout = html.Div(
                                                     [
                                                         dbc.Row(
                                                             [
-                                                                html.H3("Category / Sub-category repartition:",
-                                                                        id="tabPieTitle",
-                                                                        style={
-                                                                            "textAlign": "center",
-                                                                        }),
                                                                 dbc.Col(
                                                                     tabWithMultipleCharts,
                                                                     style={
@@ -98,7 +93,10 @@ layout = html.Div(
                                                         ),
                                                         dbc.Row(
                                                             [
-                                                                html.Plaintext("Age range")
+                                                                html.Plaintext("Age range",
+                                                                               style={
+                                                                                   "fontSize": "15px"
+                                                                               })
                                                             ],
                                                             justify="center", align="center",
                                                             style={
@@ -199,13 +197,14 @@ THIS CALLBACK IS USED TO UPDATES ALL TEXT COMPONENT
 ########################################################################################################################
 """
 @callback(Output("title", "children"),
-          Output("tabPieTitle", "children"),
+          Output("Pietab1", "label"),
+          Output("Pietab2", "label"),
           Input("selected-card", "data"))
 def TextUpdate(data):
     if data in all_category:
-        return data, "Sub-category repartition:"
+        return data, "Sub-category repartition", "Sub-category repartition by studies type"
     else:
-        return "Overview", "Category repartition:"
+        return "Overview", "Category repartition", "Category repartition by studies type"
 
 
 """
@@ -263,7 +262,7 @@ def BarChartUpdate(data):
         barmode='stack',
         paper_bgcolor='rgba(0, 0, 0, 0)',
         plot_bgcolor='rgba(0, 0, 0, 0)',
-        margin=dict(l=0, r=0, t=0, b=0),
+        margin=dict(l=0, r=0, t=0, b=30),
         showlegend=False,
         hovermode=False
     )

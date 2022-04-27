@@ -1,6 +1,6 @@
 import dash_bootstrap_components as dbc
 from dash import html, dcc
-
+import dash_daq as daq
 from pages.utilities.const import *
 from pages.utilities.helpers import category
 
@@ -171,44 +171,51 @@ barPlotByStudiesType = \
                 ),
             ]
         ),
-        style={"backgroundColor": "rgb(247, 247, 247)",
-               "borderRadius": "15px",
-               "width": "18vh",
-               "height": "86vh",
-               },
-        class_name="card mb-4 border-0"
+        class_name="card mb-4 border-0",
+        style={"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
+               "borderRadius": "15px"}
     )
-
 tabWithMultipleCharts = \
-    dcc.Tabs(id="pie-tabs",
-             value="tab1",
-             children=[
-                 dcc.Tab(label="No filter",
+    dbc.Card(
+        dbc.CardBody(
+            [
+                dcc.Tabs(id="pie-tabs",
                          value="tab1",
-                         style=tab_style,
-                         selected_style=tab_selected_style,
                          children=[
-                             dcc.Graph(
-                                 id="subCategoryProportion",
-                                 config={
-                                     "displayModeBar": False
-                                 }
-                             )
-                         ]
-                         ),
+                             dcc.Tab(label="Category repartition",
+                                     value="tab1",
+                                     id="Pietab1",
+                                     style=tab_style,
+                                     selected_style=tab_selected_style,
+                                     children=[
+                                         dcc.Graph(
+                                             id="subCategoryProportion",
+                                             config={
+                                                 "displayModeBar": False
+                                             }
+                                         )
+                                     ]
+                                     ),
 
-                 dcc.Tab(label="By studies type",
-                         value="tab2",
-                         style=tab_style,
-                         selected_style=tab_selected_style,
-                         children=[
-                             dcc.Graph(
-                                 id="subCategoryProportionByStudiesType",
-                                 config={
-                                     "displayModeBar": False,
-                                 }
-                             )
-                         ]),
-             ],
-             style=tabs_styles
-             )
+                             dcc.Tab(label="Category repartition by studies type",
+                                     value="tab2",
+                                     id="Pietab2",
+                                     style=tab_style,
+                                     selected_style=tab_selected_style,
+                                     children=[
+                                         dcc.Graph(
+                                             id="subCategoryProportionByStudiesType",
+                                             config={
+                                                 "displayModeBar": False,
+                                             }
+                                         )
+                                     ]),
+                         ],
+                         style=tabs_styles
+                         )
+            ]
+        ),
+        class_name="card mb-4 border-0",
+        style={"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
+               "borderRadius": "15px"}
+    )
