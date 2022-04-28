@@ -115,50 +115,49 @@ DEPRECATED_leftCategoryCard = \
     ]
 
 leftCategoryCard = \
-                dcc.Tabs(id="leftSideTab",
-                         value="tab2",
+    dcc.Tabs(id="leftSideTab",
+             value="tab2",
+             children=[
+                 dcc.Tab(label="Category",
+                         value="tab1",
+                         id="leftTab1",
+                         style=tab_style,
+                         selected_style=tab_selected_style,
                          children=[
-                             dcc.Tab(label="Category",
-                                     value="tab1",
-                                     id="leftTab1",
-                                     style=tab_style,
-                                     selected_style=tab_selected_style,
-                                     children=[
-                                         dbc.Card(
-                                             dbc.CardBody(
-                                                 [
-                                                     html.H6(f"{category.loc[x]['category']}",
-                                                             className="card-title",
-                                                             id=f"title-{category.loc[x]['category']}"),
-                                                     html.P(
-                                                         f"{category.loc[x]['nct_id']}%"
-                                                     ),
-                                                     dbc.Button(children="Select",
-                                                                id=f"button-{category.loc[x]['category']}",
-                                                                color="primary",
-                                                                outline=True)
-                                                 ],
-                                             ),
-                                             className="mb-1 shadow-sm"
-                                         ) for x in category.index
-                                     ]
-                                     ),
+                             dbc.Card(
+                                 dbc.CardBody(
+                                     [
+                                         html.H6(f"{category.loc[x]['category']}",
+                                                 className="card-title",
+                                                 id=f"title-{category.loc[x]['category']}"),
+                                         html.P(
+                                             f"{category.loc[x]['nct_id']}%"
+                                         ),
+                                         dbc.Button(children="Select",
+                                                    id=f"button-{category.loc[x]['category']}",
+                                                    color="primary",
+                                                    outline=True)
+                                     ],
+                                 ),
+                                 className="mb-1 shadow-sm"
+                             ) for x in category.index
+                         ]
+                         ),
 
-                             dcc.Tab(label="Parameters",
-                                     value="tab2",
-                                     id="leftTab2",
-                                     style=tab_style,
-                                     selected_style=tab_selected_style,
-                                     children=[
-                                         html.Div(id="test"),
-                                         html.Div(id="testt"),
-                                     ]),
-                         ],
-                         style={
-                             "width": "300px"
-                         }
-                         )
-
+                 dcc.Tab(label="Parameters",
+                         value="tab2",
+                         id="leftTab2",
+                         style=tab_style,
+                         selected_style=tab_selected_style,
+                         children=[
+                             html.Div(id="param1"),
+                             html.Div(id="param2"),
+                         ]),
+             ],
+             style={
+                 "width": "300px"
+             }
+             )
 
 topAnimatedBanner = \
     dbc.Card(
@@ -281,6 +280,28 @@ tabWithMultipleCharts = \
                          ],
                          style=tabs_styles
                          )
+            ]
+        ),
+        class_name="card mb-4 border-0",
+        style={"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
+               "borderRadius": "15px"}
+    )
+
+
+studiesDateOverview = \
+    dbc.Card(
+        dbc.CardBody(
+            [
+                dcc.Graph(
+                    id="studiesDateEventByYear",
+                    config={
+                        'displayModeBar': False,
+                    },
+                ),
+                dash_daq.BooleanSwitch(
+                    id="SDO_bool",
+                    on=True,
+                    color="#0D6EFD"),
             ]
         ),
         class_name="card mb-4 border-0",

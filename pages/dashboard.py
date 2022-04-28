@@ -68,7 +68,10 @@ layout = html.Div(
                                 html.Div(
                                     [
                                         dbc.Row(
-                                            topAnimatedBanner
+                                            dbc.Col(
+                                                topAnimatedBanner,
+                                                width="auto"
+                                            )
                                         ),
                                         dbc.Row(
                                             [
@@ -92,38 +95,12 @@ layout = html.Div(
                                                                 )
                                                             ]
                                                         ),
-                                                        dbc.Row(
-                                                            [
-                                                                html.Plaintext("Age range",
-                                                                               style={
-                                                                                   "fontSize": "15px"
-                                                                               })
-                                                            ],
-                                                            justify="center", align="center",
-                                                            style={
-                                                                "textAlign": "center"
-                                                            }
-                                                        ),
-                                                        dbc.Row(
-                                                            [
-                                                                dcc.RangeSlider(min=0,
-                                                                                max=100,
-                                                                                step=5,
-                                                                                value=[0, 100],
-                                                                                id="age_range_slider")
-                                                            ]
-                                                        ),
                                                         html.Br(),
                                                         dbc.Row(
                                                             [
                                                                 dbc.Col(
                                                                     [
-                                                                        dcc.Graph(
-                                                                            id="studiesDateEventByYear",
-                                                                            config={
-                                                                                'displayModeBar': False,
-                                                                            },
-                                                                        )
+                                                                        studiesDateOverview
                                                                     ],
                                                                     style={
                                                                         "display": "flex",
@@ -158,7 +135,9 @@ layout = html.Div(
                 ),
                 dcc.Store(id="selected-card"),
                 dcc.Store(id="dataSliderButton",
-                          data=False)
+                          data=False),
+                dbc.Col(CRP_default),
+                dbc.Col(SDO_default)
             ],
         )
     ],
@@ -174,6 +153,8 @@ IF A CATEGORY HAS BEEN SELECTED OR NOT
 OR IF THE RESET BUTTON IS SELECTED
 ########################################################################################################################
 """
+
+
 @callback(Output("selected-card", "data"),
           Input("reset", "n_clicks"),
           [Input(f"button-{category.loc[x]['category']}", "n_clicks") for x in category.index])
@@ -199,6 +180,8 @@ def StoredDataUpdate(data, *args):
 THIS CALLBACK IS USED TO UPDATES ALL TEXT COMPONENT 
 ########################################################################################################################
 """
+
+
 @callback(Output("title", "children"),
           Output("Pietab1", "label"),
           Output("Pietab2", "label"),
@@ -215,6 +198,8 @@ def TextUpdate(data):
 THIS CALLBACK IS USED TO UPDATE THE VERTICAL BAR CHART BY STUDY_TYPE
 ########################################################################################################################
 """
+
+
 @callback(Output("studyTypeBar", "figure"),
           Input("selected-card", "data"))
 def BarChartUpdate(data):
@@ -278,15 +263,17 @@ def BarChartUpdate(data):
 THIS CALLBACK IS USED TO UPDATE THE PIE CHART FROM THE "NO FILTER" TAB
 ########################################################################################################################
 """
+
+
 @callback(Output("subCategoryProportion", "figure"),
           Input("selected-card", "data"),
-          Input("age_range_slider", "value"),
-          State("CRP_studiesType", "value"),
-          State("CRP_studiesStatus", "value"),
+          Input("CRP_studiesType", "value"),
+          Input("CRP_studiesStatus", "value"),
+          Input("CRP_minAge", "value"),
+          Input("CRP_maxAge", "value"),
           Input("boolCategoryRepartition", "on"))
-def pieNoFilterUpdate(data, age_range, s_type, s_status, *args):
-    age_range = list((map(lambda x: int(float(x)), age_range)))
-    df = GetSubCategoryProportion(data, s_type, s_status, age_range)
+def pieNoFilterUpdate(data, s_type, s_status, minAge, maxAge, *args):
+    df = GetSubCategoryProportion(data, s_type, s_status, minAge, maxAge)
     fig = go.Figure(data=[go.Pie(
         labels=df["view"],
         values=df["nct_id"],
@@ -332,19 +319,22 @@ def pieNoFilterUpdate(data, age_range, s_type, s_status, *args):
 THIS CALLBACK IS USED TO UPDATES PIES CHARTS FROM THE "BY STUDIES TYPE" TAB
 ########################################################################################################################
 """
+
+
 @callback(Output("subCategoryProportionByStudiesType", "figure"),
           Input("selected-card", "data"),
-          State("CRP_studiesStatus", "value"),
-          State("age_range_slider", "value"),
+          Input("CRP_studiesStatus", "value"),
+          Input("CRP_minAge", "value"),
+          Input("CRP_maxAge", "value"),
           Input("boolCategoryRepartition", "on"))
-def pieByStudiesTypeUpdate(data, s_status, age_range, *args):
+def pieByStudiesTypeUpdate(data, s_status, minAge, maxAge, *args):
     fig = make_subplots(rows=1, cols=3, specs=[[{"type": "domain"},
                                                 {"type": "domain"},
                                                 {"type": "domain"}]])
 
     col = 1
     for i in s_base.study_type.sort_values().unique():
-        df = GetSubCategoryProportion(data, i, s_status, age_range)
+        df = GetSubCategoryProportion(data, i, s_status, minAge, maxAge)
 
         fig.add_trace(
             go.Pie(
@@ -397,10 +387,18 @@ def pieByStudiesTypeUpdate(data, s_status, age_range, *args):
 THIS CALLBACK IS USED TO UPDATE THE LINE CHART WITH NEW AND COMPLETED STUDIES
 ########################################################################################################################
 """
+
+
 @callback(Output("studiesDateEventByYear", "figure"),
-          Input("selected-card", "data"))
-def LinePlotByYearUpdate(data):
-    fig = go.Figure(data=StudiesByYear(data))
+          Input("selected-card", "data"),
+          Input("SDO_checklist", "value"),
+          Input("SDO_minYear", "value"),
+          Input("SDO_maxYear", "value"),
+          Input("SDO_monthDisplay", "value"),
+          Input("SDO_radioItems", "value"))
+def FigureHistoricalUpdate(data, dateColumn, minYear, maxYear, periodDisplay, figure):
+    dateColumn = dateColumn if isinstance(dateColumn, list) else []
+    fig = go.Figure(data=StudiesByYear(data, dateColumn, minYear, maxYear, periodDisplay, figure))
 
     fig.update_layout(
         height=250,
@@ -416,7 +414,6 @@ def LinePlotByYearUpdate(data):
             showgrid=False,
             showline=False,
             showticklabels=True,
-            color='black',
             zeroline=False,
         ),
         yaxis=dict(
@@ -433,68 +430,18 @@ def LinePlotByYearUpdate(data):
     return fig
 
 
-@callback(Output("test", "children"),
-          Output("testt", "children"),
+@callback(Output("param1", "children"),
           Input("boolCategoryRepartition", "on"),
-          Input("boolBarStudiesType", "on"))
+          Input("reset", "n_clicks"),
+          Input("CRP_reset", "n_clicks"))
 def ParametersTabUpdating(*args):
-    return categoryRepartitionPie if args[0] else default, \
-           "True2" if args[1] else None
+    return categoryRepartitionParameters if args[0] else CRP_default
 
 
-# @callback(Output("category_button", "data"),
-#           Input("category_button", "data"),
-#           Input("reset", "n_clicks"),
-#           [[Input(f"title-{category.loc[x]['category']}", "children"),
-#             Input(f"button-{category.loc[x]['category']}", "n_clicks")] for x in category.index],
-#           )
-# def VisualizationDataUpdate(data, range, *args):
-#     category_selected = [p['prop_id'] for p in dash.callback_context.triggered][0]
-#
-#     data = None if category_selected == "reset.n_clicks" else data
-#
-#     category_selected = "." if category_selected in ["reset.n_clicks", "age_range_slider.value"] else category_selected
-#
-#     data = category_selected if category_selected != "." else data
-#
-#     color_pie = ["hsl(185.23, 100%, 52.75%)",
-#                  "hsl(201.22, 95.82%, 53.14%)",
-#                  "hsl(216.05, 100%, 55.29%)",
-#                  "hsl(230.67, 98.25%, 55.1%)",
-#                  "hsl(243.98, 100%, 55.69%)",
-#                  "hsl(244.41, 100%, 86.67%)",
-#                  "hsl(258.18, 78.2%, 58.63%)",
-#                  "hsl(258, 77.78%, 35.29%)"]
-#
-#     news_and_completed_study_by_year = go.Figure(data=StudiesByYear(category_selected))
-#
-#     news_and_completed_study_by_year.update_layout(
-#         height=250,
-#         width=950,
-#         title={
-#             'text': 'New and completed studies by year',
-#             'y': 0.9,
-#             'x': 0.5,
-#             "xanchor": "center",
-#             "yanchor": "top"
-#         },
-#         xaxis=dict(
-#             showgrid=False,
-#             showline=False,
-#             showticklabels=True,
-#             color='black',
-#             zeroline=False,
-#         ),
-#         yaxis=dict(
-#             showgrid=False,
-#             showline=False,
-#             showticklabels=False,
-#             zeroline=False,
-#         ),
-#         paper_bgcolor='rgba(0, 0, 0, 0)',
-#         plot_bgcolor='rgba(0, 0, 0, 0)',
-#         margin=dict(l=0, r=0, t=0, b=0),
-#         showlegend=False,
-#     )
-#
-#     return data
+@callback(Output("param2", "children"),
+          Input("SDO_bool", "on"),
+          Input("reset", "n_clicks"),
+          Input("SDO_reset", "n_clicks")
+          )
+def ParametersTabUpdating(*args):
+    return studiesDateOverviewParameters if args[0] else SDO_default

@@ -3,6 +3,7 @@ from datetime import datetime, date
 
 s_base = pd.read_csv("script/sql/visualisation/CSV_files/studies.csv")
 s_base["study_first_submitted_date"] = pd.to_datetime(s_base["study_first_submitted_date"])
+s_base["primary_completion_date"] = pd.to_datetime(s_base["primary_completion_date"])
 s_base["completion_date"] = pd.to_datetime(s_base["completion_date"])
 
 studies = s_base.copy()
