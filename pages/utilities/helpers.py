@@ -112,9 +112,9 @@ def StudiesByYear(category, dateColumn, minYear, maxYear, periodDisplay, figure)
     if maxYear is None:
         maxYear = datetime.now().year
 
-    if periodDisplay is None:
+    if periodDisplay is None or len(periodDisplay) < 1:
         period = "Y"
-    elif len(periodDisplay) > 0 and periodDisplay[0] == "month":
+    elif periodDisplay[0] == "month":
         period = "M"
     else:
         period = "Y"
