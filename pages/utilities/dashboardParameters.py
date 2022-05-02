@@ -115,7 +115,6 @@ studiesDateOverviewParameters = \
             options=["Line", "Bar"],
             value="Line"
         ),
-        html.Hr(),
         html.Plaintext("Columns displaying:",
                        style={
                            "marginBottom": "0px"

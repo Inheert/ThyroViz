@@ -116,7 +116,7 @@ DEPRECATED_leftCategoryCard = \
 
 leftCategoryCard = \
     dcc.Tabs(id="leftSideTab",
-             value="tab2",
+             value="tab1",
              children=[
                  dcc.Tab(label="Category",
                          value="tab1",
@@ -234,7 +234,7 @@ tabWithMultipleCharts = \
                          children=[
                              dcc.Tab(label="Category repartition",
                                      value="tab1",
-                                     id="Pietab1",
+                                     id="pieTab1",
                                      style=tab_style,
                                      selected_style=tab_selected_style,
                                      children=[
@@ -266,7 +266,7 @@ tabWithMultipleCharts = \
 
                              dcc.Tab(label="Category repartition by studies type",
                                      value="tab2",
-                                     id="Pietab2",
+                                     id="pieTab2",
                                      style=tab_style,
                                      selected_style=tab_selected_style,
                                      children=[
@@ -292,16 +292,39 @@ studiesDateOverview = \
     dbc.Card(
         dbc.CardBody(
             [
-                dcc.Graph(
-                    id="studiesDateEventByYear",
-                    config={
-                        'displayModeBar': False,
-                    },
-                ),
-                dash_daq.BooleanSwitch(
-                    id="SDO_bool",
-                    on=True,
-                    color="#0D6EFD"),
+                dcc.Tabs(
+                    id="date-tabs",
+                    value="tab1",
+                    children=[
+                        dcc.Tab(
+                            label="Historical date overview",
+                            value="tab1",
+                            id="historicalTab1",
+                            style=tab_style,
+                            selected_style=tab_selected_style,
+                            children=[
+                                dcc.Graph(
+                                    id="studiesDateEventByYear",
+                                    config={
+                                        'displayModeBar': False,
+                                    },
+                                ),
+                                dash_daq.BooleanSwitch(
+                                    id="SDO_bool",
+                                    on=False,
+                                    color="#0D6EFD"),
+                            ]
+                        ),
+                        dcc.Tab(
+                            label="Historical studies overview",
+                            value="tab2",
+                            id="historicalTab2",
+                            style=tab_style,
+                            selected_style=tab_selected_style
+                        )
+                    ],
+                    style=tabs_styles
+                )
             ]
         ),
         class_name="card mb-4 border-0",

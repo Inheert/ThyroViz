@@ -1,5 +1,5 @@
 import dash
-from dash import dcc, Input, Output, State, callback, html
+from dash import Input, Output, callback, dash_table
 import dash_bootstrap_components as dbc
 from plotly.subplots import make_subplots
 
@@ -115,6 +115,37 @@ layout = html.Div(
                                                     ],
                                                 ),
                                             ]
+                                        ),
+                                        dbc.Row(
+                                            [
+                                                dbc.Col([
+                                                    dcc.Dropdown(options=[
+                                                        x for x in s_base.category.unique()
+                                                    ])
+                                                ]),
+                                                dbc.Col([
+                                                    dcc.Dropdown(options=[
+                                                        x for x in s_base.sub_category.unique()
+                                                    ])
+                                                ])
+                                            ],
+                                        ),
+                                        dbc.Row(
+                                            dbc.Col(
+                                                [
+                                                    dash_table.DataTable(
+                                                        s_base.to_dict('records'),
+                                                        [{"name": i, "id": i} for i in s_base[["nct_id", "sub_category", "category"]].columns])
+                                                ],
+                                                width=True,
+                                                style={
+                                                    "display": "flex",
+                                                    "alignItems": "center",
+                                                    "justifyContent": "center",
+                                                    "horizontalAlign": "center",
+                                                    "marginLeft": "3vh"
+                                                }
+                                            )
                                         )
                                     ]
                                 )
@@ -183,8 +214,8 @@ THIS CALLBACK IS USED TO UPDATES ALL TEXT COMPONENT
 
 
 @callback(Output("title", "children"),
-          Output("Pietab1", "label"),
-          Output("Pietab2", "label"),
+          Output("pieTab1", "label"),
+          Output("pieTab2", "label"),
           Input("selected-card", "data"))
 def TextUpdate(data):
     if data in all_category:
@@ -300,7 +331,7 @@ def pieNoFilterUpdate(data, s_type, s_status, minAge, maxAge, *args):
         ),
         paper_bgcolor='rgba(0, 0, 0, 0)',
         plot_bgcolor='rgba(0, 0, 0, 0)',
-        margin=dict(l=0, r=0, t=0, b=0),
+        margin=dict(l=0, r=0, t=25, b=0),
         showlegend=True,
         legend=dict(
             x=1.1,
@@ -368,7 +399,7 @@ def pieByStudiesTypeUpdate(data, s_status, minAge, maxAge, *args):
         ),
         paper_bgcolor='rgba(0, 0, 0, 0)',
         plot_bgcolor='rgba(0, 0, 0, 0)',
-        margin=dict(l=0, r=0, t=0, b=0),
+        margin=dict(l=0, r=0, t=25, b=0),
         showlegend=True,
         legend=dict(
             x=1.1,
@@ -401,15 +432,8 @@ def FigureHistoricalUpdate(data, dateColumn, minYear, maxYear, periodDisplay, fi
     fig = go.Figure(data=StudiesByYear(data, dateColumn, minYear, maxYear, periodDisplay, figure))
 
     fig.update_layout(
-        height=250,
+        height=350,
         width=950,
-        title={
-            'text': 'New and completed studies by year',
-            'y': 0.9,
-            'x': 0.5,
-            "xanchor": "center",
-            "yanchor": "top"
-        },
         xaxis=dict(
             showgrid=False,
             showline=False,
@@ -424,7 +448,7 @@ def FigureHistoricalUpdate(data, dateColumn, minYear, maxYear, periodDisplay, fi
         ),
         paper_bgcolor='rgba(0, 0, 0, 0)',
         plot_bgcolor='rgba(0, 0, 0, 0)',
-        margin=dict(l=0, r=0, t=0, b=0),
+        margin=dict(l=0, r=0, t=25, b=0),
         showlegend=True,
     )
     return fig
