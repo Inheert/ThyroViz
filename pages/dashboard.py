@@ -177,9 +177,16 @@ layout = html.Div(
                                 )
                             ],
                             style={
-                                "marginLeft": "8px"
+                                "marginLeft": "27px"
                             }
                         ),
+                    ],
+                    style={
+                        "marginTop": "25px"
+                    }
+                ),
+                dbc.Row(
+                    [
                         dbc.Col(
                             [
                                 dash_table.DataTable(
@@ -214,7 +221,7 @@ layout = html.Div(
                         )
                     ],
                     style={
-                        "marginTop": "25px"
+                        "marginTop": "10px"
                     }
                 ),
 
@@ -389,7 +396,6 @@ def BarChartUpdate(data):
                                 groupby=["category", "study_type"],
                                 sortby=["category", "nct_id"],
                                 sortasc=False,
-                                divisionby="selection",
                                 categoryfilter=data)
     else:
         df = GetCategoryPercent(columns=["study_type"],
