@@ -2,8 +2,9 @@ import pandas as pd
 import plotly.graph_objects as go
 from pages.utilities.const import *
 
+
 def csvFilter(study_type):
-    df = studies
+    df = s_base
 
     if study_type:
         df = df[df["study_type"].isin(["Not yet recruiting", "Active, not recruiting", "Recruiting"])]
@@ -18,9 +19,9 @@ def GetCategoryPercent(**kwargs):
         "categoryfilter": None,
         "groupby": None,
         "sortby": [],
-        "sortasc": True,
-        "divisionby": "all",
-        "type_filter": True
+        "sortasc": False,
+        "type_filter": False,
+        "drop_duplicates": []
     }
 
     """
@@ -58,7 +59,10 @@ def GetCategoryPercent(**kwargs):
         print(f"Function: '{name}'")
         return None
 
-    df = studies.copy()
+    df = s_base.copy()
+
+    if len(settings["drop_duplicates"]) > 0:
+        df.drop_duplicates(subset=settings["drop_duplicates"], keep="first", inplace=True)
 
     if settings["type_filter"]:
         df = df[df["overall_status"].isin(["Recruiting", "Not yet recruiting", "Active, not recruiting"])]
@@ -70,17 +74,13 @@ def GetCategoryPercent(**kwargs):
     else:
         pass
 
-    if settings["divisionby"] == "all":
-        division = studies.shape[0]
-    elif settings["divisionby"] == "selection":
-        division = df.shape[0]
+    division = df.shape[0]
 
     df = df.groupby(settings["groupby"]).count().reset_index().sort_values(by=settings["sortby"],
                                                                            ascending=settings["sortasc"])
     df.reset_index(drop=True, inplace=True)
     df["nct_id"] = round((df["nct_id"] / division) * 100, 2)
     df["percent"] = df["nct_id"].apply(lambda x: f"{x}%")
-
     return df
 
 
@@ -97,7 +97,7 @@ def ArgumentSuggestion(funcArg, calledArg):
 
 def StudiesByYear(category, dateColumn, minYear, maxYear, periodDisplay, figure):
     df = s_base.copy()
-
+    df.drop_duplicates(subset="nct_id", keep="first", inplace=True)
     date_limit = ["primary_completion_date", "completion_date"]
     data = []
 
@@ -127,13 +127,18 @@ def StudiesByYear(category, dateColumn, minYear, maxYear, periodDisplay, figure)
         dff = dff.groupby(pd.Grouper(freq=period)).count().reset_index().sort_values(by=col)
         dff = dff[(dff[col] >= datetime(minYear, 1, 1)) & (dff[col] <= datetime(maxYear, 12, 31))]
         if figure is None or figure.lower() == "line":
-            trace = go.Scatter(x=dff[col], y=dff["nct_id"], mode="lines+text",
+            trace = go.Scatter(x=dff[col],
+                               y=dff["nct_id"],
+                               name=col.replace("_", " "),
+                               mode="lines+text",
                                text=dff["nct_id"],
                                textposition="bottom center" if col == "completion_date" else "top center")
         elif figure.lower() == "bar":
-            trace = go.Bar(x=dff[col], y=dff["nct_id"], base="lines+text",
-                               text=dff["nct_id"],
-                               textposition="inside" if col == "completion_date" else "outside")
+            trace = go.Bar(x=dff[col],
+                           y=dff["nct_id"],
+                           name=col.replace("_", " "),
+                           text=dff["nct_id"],
+                           textposition="outside")
         data.append(trace)
 
     return data
@@ -174,6 +179,8 @@ def GetSubCategoryProportion(selected, s_type, s_status, ageMin, ageMax):
             color_dict[cat] = color_pie[idx]
             idx += 1
 
+        df.drop_duplicates(subset=["category", "nct_id"], keep="first", inplace=True)
+
         if len(s_type) > 0:
             df = df[df["study_type"].isin(s_type if isinstance(s_type, list) else [s_type])]
         if len(s_status) > 0:
@@ -199,6 +206,8 @@ def GetSubCategoryProportion(selected, s_type, s_status, ageMin, ageMax):
         df = df[df["maximum_age_num"] <= ageMax]
     elif ageMin > 0 and ageMax >= 100:
         df = df[df["minimum_age_num"] >= ageMin]
+    elif ageMin <= 0 and ageMax >= 100:
+        pass
     else:
         df = df[(df["minimum_age_num"] >= ageMin) & (df["maximum_age_num"] <= ageMax)]
 
@@ -207,4 +216,4 @@ def GetSubCategoryProportion(selected, s_type, s_status, ageMin, ageMax):
     return df
 
 
-category = GetCategoryPercent(groupby="category", sortby=["nct_id"], sortasc=False)
+category = GetCategoryPercent(groupby="category", sortby=["nct_id"], drop_duplicates=["category", "nct_id"])

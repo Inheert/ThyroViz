@@ -1,5 +1,5 @@
 import dash
-from dash import Input, Output, callback, dash_table
+from dash import Input, Output, State, callback, dash_table
 import dash_bootstrap_components as dbc
 from plotly.subplots import make_subplots
 
@@ -121,32 +121,35 @@ layout = html.Div(
                                                 dbc.Col([
                                                     dcc.Dropdown(options=[
                                                         x for x in s_base.category.unique()
-                                                    ])
-                                                ]),
-                                                dbc.Col([
+                                                    ],
+                                                        value="Thyroid neoplasms",
+                                                        clearable=False
+                                                    ),
                                                     dcc.Dropdown(options=[
                                                         x for x in s_base.sub_category.unique()
-                                                    ])
-                                                ])
+                                                    ],
+                                                        multi=True,
+                                                        style={
+                                                            "marginTop": "5px"
+                                                        })
+                                                ],
+                                                    style={
+                                                        "maxWidth": "400px"
+                                                    }
+                                                ),
+                                                dbc.Col([
+                                                    html.H5(id="test"),
+                                                ],
+                                                    style={
+                                                        "display": "flex",
+                                                        "alignItems": "center",
+                                                        "justifyContent": "center",
+                                                        "horizontalAlign": "center",
+                                                        "marginLeft": "3vh"
+                                                    }
+                                                )
                                             ],
                                         ),
-                                        dbc.Row(
-                                            dbc.Col(
-                                                [
-                                                    dash_table.DataTable(
-                                                        s_base.to_dict('records'),
-                                                        [{"name": i, "id": i} for i in s_base[["nct_id", "sub_category", "category"]].columns])
-                                                ],
-                                                width=True,
-                                                style={
-                                                    "display": "flex",
-                                                    "alignItems": "center",
-                                                    "justifyContent": "center",
-                                                    "horizontalAlign": "center",
-                                                    "marginLeft": "3vh"
-                                                }
-                                            )
-                                        )
                                     ]
                                 )
                             ],
@@ -164,11 +167,137 @@ layout = html.Div(
                         "marginTop": "25px"
                     }
                 ),
+                dbc.Row(
+                    [
+                        dbc.Col(
+                            [
+                                dbc.Button(
+                                    id="moreStudyInfo",
+                                    children="More informations"
+                                )
+                            ],
+                            style={
+                                "marginLeft": "8px"
+                            }
+                        ),
+                        dbc.Col(
+                            [
+                                dash_table.DataTable(
+                                    id="datatable",
+                                    data=s_base.to_dict('records'),
+                                    columns=[{"name": i, "id": i} for i in
+                                             s_base[["nct_id", "category", "sub_category", "study_first_submitted_date",
+                                                     "primary_completion_date", "completion_date", "study_type",
+                                                     "overall_status", "study_phases", "minimum_age_num",
+                                                     "maximum_age_num"]].columns],
+                                    page_size=15,
+                                    filter_action="native",
+                                    sort_action="native",
+                                    row_selectable="single",
+                                    style_data_conditional=[
+                                        {
+                                            'if': {'row_index': 'odd'},
+                                            'backgroundColor': 'gray',
+                                            'color': 'white'
+                                        }
+                                    ]
+                                )
+                            ],
+                            width=True,
+                            style={
+                                "display": "flex",
+                                "alignItems": "center",
+                                "justifyContent": "center",
+                                "horizontalAlign": "center",
+                                "marginLeft": "3vh"
+                            }
+                        )
+                    ],
+                    style={
+                        "marginTop": "25px"
+                    }
+                ),
+
+                dbc.Modal(
+                    [
+                        dbc.ModalHeader(dbc.ModalTitle("Header")),
+                        dbc.ModalBody(
+                            [
+                                dbc.Row(
+                                    [
+                                        dbc.Col(
+                                            [
+                                                dbc.CardGroup(
+                                                    [
+                                                        dbc.Card(
+                                                            dbc.CardBody(
+                                                                [
+                                                                    html.H4("Nct ID:"),
+                                                                    html.H6("NCT465464615648446")
+                                                                ]
+                                                            ),
+                                                            className="mt-4 shadow",
+                                                            style={
+                                                                "borderRadius": "5px",
+                                                                "marginRight": "10px"
+                                                            }
+                                                        ),
+                                                        dbc.Card(
+                                                            dbc.CardBody(
+                                                                [
+                                                                    html.H4("Category:"),
+                                                                    html.H6("Thyroid neoplasms")
+                                                                ]
+                                                            ),
+                                                            className="mt-4 shadow",
+                                                            style={
+                                                                "borderRadius": "5px",
+                                                                "marginRight": "10px"
+                                                            }
+                                                        ),
+                                                        dbc.Card(
+                                                            dbc.CardBody(
+                                                                [
+                                                                    html.H4("Sub-category:"),
+                                                                    html.H6("Thyroid cancers")
+                                                                ]
+                                                            ),
+                                                            className="mt-4 shadow",
+                                                            style={
+                                                                "borderRadius": "5px"
+                                                            }
+                                                        )
+                                                    ]
+                                                )
+                                            ],
+                                            style={
+                                                "display": "flex",
+                                                "alignItems": "center",
+                                                "justifyContent": "center",
+                                                "horizontalAlign": "center",
+                                            }
+                                        )
+                                    ],
+                                    style={
+                                        "display": "flex",
+                                        "alignItems": "center",
+                                        "justifyContent": "center",
+                                        "horizontalAlign": "center"
+                                    }
+                                )
+                            ]
+                        )
+                    ],
+                    id="studiesModal",
+                    is_open=False,
+                    size="xl"
+                ),
+
                 dcc.Store(id="selected-card"),
                 dcc.Store(id="dataSliderButton",
                           data=False),
-                dbc.Col(CRP_default),
-                dbc.Col(SDO_default)
+                dbc.Row(CRP_default),
+                dbc.Row(SDO_default)
             ],
         )
     ],
@@ -176,6 +305,27 @@ layout = html.Div(
         # "overflow": "scroll"
     }
 )
+
+
+@callback(Output("studiesModal", "is_open"),
+          Output("moreStudyInfo", "n_clicks"),
+          Input("datatable", "selected_rows"),
+          Input("moreStudyInfo", "n_clicks"),
+          State("studiesModal", "is_open"))
+def OpenStudyModal(row, n_clicks, is_open):
+    if n_clicks and row:
+        return not is_open, None
+    return is_open, None
+
+
+@callback(Output("test", "children"),
+          Input("datatable", "selected_rows"))
+def test(selected):
+    if selected is None:
+        return None
+    else:
+        return s_base.loc[selected]["nct_id"]
+
 
 """
 ########################################################################################################################
