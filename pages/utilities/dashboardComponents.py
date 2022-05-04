@@ -342,8 +342,6 @@ def ModalStudiesInfo(row, isOpen):
     for col in row:
         row[col] = row[col].apply(lambda x: None if x is np.nan or x is pd.NaT or x is None else x)
 
-    print(type(row.official_title[0]))
-    print(type(np.nan))
     layout = \
         dbc.Modal(
             [
