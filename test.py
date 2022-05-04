@@ -7,3 +7,9 @@
 a = [9, 5]
 print(isinstance(a, list))
 
+a = None
+
+if not a:
+    print("ok")
+else:
+    print('nop')

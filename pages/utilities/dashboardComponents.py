@@ -1,5 +1,7 @@
 import dash_bootstrap_components as dbc
 import dash_daq
+import numpy as np
+import pandas as pd
 from dash import html, dcc
 from pages.utilities.const import *
 from pages.utilities.helpers import category
@@ -287,7 +289,6 @@ tabWithMultipleCharts = \
                "borderRadius": "15px"}
     )
 
-
 studiesDateOverview = \
     dbc.Card(
         dbc.CardBody(
@@ -331,3 +332,75 @@ studiesDateOverview = \
         style={"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
                "borderRadius": "15px"}
     )
+
+
+def ModalStudiesInfo(row, isOpen):
+    _s_base = s_base.sort_values(by="category")
+    row = _s_base.loc[row].reset_index(drop=True)
+    df = s_base[s_base["nct_id"] == row["nct_id"][0]].reset_index(drop=True).copy()
+
+    for col in row:
+        row[col] = row[col].apply(lambda x: None if x is np.nan or x is pd.NaT or x is None else x)
+
+    print(type(row.official_title[0]))
+    print(type(np.nan))
+    layout = \
+        dbc.Modal(
+            [
+                dbc.ModalHeader(row.nct_id),
+                dbc.ModalTitle(row.official_title if row.official_title[0] is not None else row.brief_title,
+                               style={
+                                   "fontSize": '25px',
+                                   "fontWeight": "bold",
+                                   "marginLeft": "5px"
+                               }),
+                dbc.ModalBody(
+                    [
+                        dbc.Row(
+                            [
+                                dbc.Col(
+                                    [
+                                        dcc.Markdown(f'''
+                                        **Funded by:** {df.funded_bys.unique()[0]}
+                                        \n
+                                        **Study type:** {df.study_type.unique()[0]}
+                                        \n
+                                        **Overall status:** {df.overall_status.unique()[0]}
+                                        \n
+                                        **Study phases:** {df.study_phases.unique()[0]}
+                                        \n
+                                        **Minimum age:** {int(df.minimum_age_num.unique()[0])} years old
+                                        \n
+                                        **Maximum age:** {int(df.maximum_age_num.unique()[0])} years old
+                                        \n
+                                        **First submitted date:** {df.study_first_submitted_date[0].strftime("%Y-%m-%d")}
+                                        \n
+                                        **Estimated primary completion date:** {'Not provided' if df.primary_completion_date[0] is pd.NaT else df.primary_completion_date[0].strftime("%Y-%m-%d")}
+                                        \n
+                                        **Estimated completion date:** {'Not provided' if df.completion_date[0] is pd.NaT else df.completion_date[0].strftime("%Y-%m-%d")}
+                                        ''')
+                                    ],
+                                    style={
+                                        "display": "flex",
+                                        "alignItems": "center",
+                                        "justifyContent": "left",
+                                        "horizontalAlign": "center",
+                                    }
+                                )
+                            ],
+                            style={
+                                "display": "flex",
+                                "alignItems": "center",
+                                "justifyContent": "center",
+                                "horizontalAlign": "center"
+                            }
+                        )
+                    ]
+                )
+            ],
+            id="studyModal",
+            is_open=isOpen,
+            size="xl"
+        )
+
+    return layout

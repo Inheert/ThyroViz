@@ -1,4 +1,4 @@
-SELECT s.nct_id, bc.downcase_mesh_term, s.official_title, c.names AS all_conditions, s.study_first_submitted_date, s.primary_completion_date, s.completion_date, s.study_type, s.overall_status, s.phase AS study_phases, s.source AS funded_bys, ap.names AS sponsors_name, af.names as investigators, ait.names AS intervention_types, ac.names AS location, cv.minimum_age_num, cv.minimum_age_unit, cv.maximum_age_num, cv.maximum_age_unit
+SELECT s.nct_id, bc.downcase_mesh_term, s.official_title, s.brief_title, c.names AS all_conditions, s.study_first_submitted_date, s.primary_completion_date, s.completion_date, s.study_type, s.overall_status, s.phase AS study_phases, s.source AS funded_bys, ap.names AS sponsors_name, af.names as investigators, ait.names AS intervention_types, ac.names AS location, cv.minimum_age_num, cv.minimum_age_unit, cv.maximum_age_num, cv.maximum_age_unit
 FROM studies AS s
 
 LEFT JOIN browse_conditions AS bc ON s.nct_id = bc.nct_id

@@ -116,40 +116,6 @@ layout = html.Div(
                                                 ),
                                             ]
                                         ),
-                                        dbc.Row(
-                                            [
-                                                dbc.Col([
-                                                    dcc.Dropdown(options=[
-                                                        x for x in s_base.category.unique()
-                                                    ],
-                                                        value="Thyroid neoplasms",
-                                                        clearable=False
-                                                    ),
-                                                    dcc.Dropdown(options=[
-                                                        x for x in s_base.sub_category.unique()
-                                                    ],
-                                                        multi=True,
-                                                        style={
-                                                            "marginTop": "5px"
-                                                        })
-                                                ],
-                                                    style={
-                                                        "maxWidth": "400px"
-                                                    }
-                                                ),
-                                                dbc.Col([
-                                                    html.H5(id="test"),
-                                                ],
-                                                    style={
-                                                        "display": "flex",
-                                                        "alignItems": "center",
-                                                        "justifyContent": "center",
-                                                        "horizontalAlign": "center",
-                                                        "marginLeft": "3vh"
-                                                    }
-                                                )
-                                            ],
-                                        ),
                                     ]
                                 )
                             ],
@@ -224,80 +190,10 @@ layout = html.Div(
                         "marginTop": "10px"
                     }
                 ),
-
-                dbc.Modal(
-                    [
-                        dbc.ModalHeader(dbc.ModalTitle("Header")),
-                        dbc.ModalBody(
-                            [
-                                dbc.Row(
-                                    [
-                                        dbc.Col(
-                                            [
-                                                dbc.CardGroup(
-                                                    [
-                                                        dbc.Card(
-                                                            dbc.CardBody(
-                                                                [
-                                                                    html.H4("Nct ID:"),
-                                                                    html.H6("NCT465464615648446")
-                                                                ]
-                                                            ),
-                                                            className="mt-4 shadow",
-                                                            style={
-                                                                "borderRadius": "5px",
-                                                                "marginRight": "10px"
-                                                            }
-                                                        ),
-                                                        dbc.Card(
-                                                            dbc.CardBody(
-                                                                [
-                                                                    html.H4("Category:"),
-                                                                    html.H6("Thyroid neoplasms")
-                                                                ]
-                                                            ),
-                                                            className="mt-4 shadow",
-                                                            style={
-                                                                "borderRadius": "5px",
-                                                                "marginRight": "10px"
-                                                            }
-                                                        ),
-                                                        dbc.Card(
-                                                            dbc.CardBody(
-                                                                [
-                                                                    html.H4("Sub-category:"),
-                                                                    html.H6("Thyroid cancers")
-                                                                ]
-                                                            ),
-                                                            className="mt-4 shadow",
-                                                            style={
-                                                                "borderRadius": "5px"
-                                                            }
-                                                        )
-                                                    ]
-                                                )
-                                            ],
-                                            style={
-                                                "display": "flex",
-                                                "alignItems": "center",
-                                                "justifyContent": "center",
-                                                "horizontalAlign": "center",
-                                            }
-                                        )
-                                    ],
-                                    style={
-                                        "display": "flex",
-                                        "alignItems": "center",
-                                        "justifyContent": "center",
-                                        "horizontalAlign": "center"
-                                    }
-                                )
-                            ]
-                        )
-                    ],
-                    id="studiesModal",
-                    is_open=False,
-                    size="xl"
+                dcc.Store(id="studyIndex"),
+                html.Div(
+                    ModalStudiesInfo([0], False),
+                    id="studiesModal"
                 ),
 
                 dcc.Store(id="selected-card"),
@@ -312,17 +208,34 @@ layout = html.Div(
         # "overflow": "scroll"
     }
 )
+@callback(Output("studyIndex", "data"),
+          Input("datatable", "selected_rows"))
+def SelectedStudy(row):
+    return row
 
 
-@callback(Output("studiesModal", "is_open"),
+@callback(Output("studiesModal", "children"),
           Output("moreStudyInfo", "n_clicks"),
-          Input("datatable", "selected_rows"),
-          Input("moreStudyInfo", "n_clicks"),
-          State("studiesModal", "is_open"))
-def OpenStudyModal(row, n_clicks, is_open):
-    if n_clicks and row:
-        return not is_open, None
-    return is_open, None
+          Input("studyIndex", "data"),
+          Input("moreStudyInfo", "n_clicks"))
+def OpenStudiesModal(data, n_clicks):
+    if n_clicks:
+        return ModalStudiesInfo(data if data is not None else [0], True), None
+    else:
+        return ModalStudiesInfo(data if data is not None else [0], True), None
+
+
+# @callback(Output("studiesModal", "is_open"),
+#           Output("moreStudyInfo", "n_clicks"),
+#           Input("datatable", "selected_rows"),
+#           Input("moreStudyInfo", "n_clicks"),
+#           State("studiesModal", "is_open"))
+# def OpenStudyModal(row, n_clicks, is_open):
+#     if n_clicks and row:
+#         ModalStudiesInfo(row)
+#         print(s_base.loc[row])
+#         return not is_open, None
+#     return is_open, None
 
 
 @callback(Output("test", "children"),
