@@ -178,51 +178,53 @@ def appLaunch():
         df_dict[dataframe].drop_duplicates(inplace=True)
 
         # Reset des index
-        df_dict[dataframe].reset_index(inplace=True)
+        df_dict[dataframe].reset_index(drop=True, inplace=True)
 
-        if dataframe == "df_sponsorsName":
-            print("[CSV - SPONSORS] Ajout des données...")
+        if dataframe == "df_sponsorsName" or dataframe == "df_investigators":
+            print(f"[CSV - {dataframe}] Ajout des données...")
             # Générer une requête SQL avec une condition : WHERE (nct_id = * AND name = *)
             condition_list = []
+            df_dict[dataframe].drop_duplicates(subset="nct_id", inplace=True)
 
             for e in df_dict[dataframe].index:
-                name = df_dict[dataframe].sponsors_name[e].replace("'", "''").lower()
                 condition_list.append(
-                    f"(LOWER(nct_id) = '{df_dict[dataframe].nct_id[e].lower()}' AND LOWER(name) = '{name}')")
+                    f"'{df_dict[dataframe].nct_id[e].lower()}'")
 
-            final_condition = ""
+            text = ""
 
             for idx, value in enumerate(condition_list):
-                final_condition += value
+                text += value
                 if idx < len(condition_list) - 1:
-                    final_condition += " OR "
+                    text += ", "
+
+            text = f"({text})"
 
             conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_HOST)
 
             cur = conn.cursor()
 
             request = f"""SELECT *
-              FROM sponsors
-              WHERE {final_condition}"""
+                          FROM {'sponsors' if dataframe == 'df_sponsorsName' else 'facilities'}
+                          WHERE LOWER(nct_id) in {text}"""
 
             cur.execute(request)
 
-            df_sponsors = pd.DataFrame(cur.fetchall(), columns=[i[0] for i in cur.description])
+            dff = pd.DataFrame(cur.fetchall(), columns=[i[0] for i in cur.description])
 
             cur.close()
             conn.close()
 
-            # Dictionnaire contenant les infos utile à la classification des sponsors
+            if dataframe == "df_sponsorsName":
+                # Dictionnaire contenant les infos utile à la classification des sponsors
 
-            df_sponsors["new_class"] = None
+                dff["new_class"] = None
 
-            # Classification des sponsors via la fonction GetGoodClass() for key, value in class_dict.items():
-            # df_sponsors["new_class"] = [key if df_sponsors.agency_class.iloc[x] in value else
-            # df_sponsors.new_class.iloc[x] for x in df_sponsors["new_class"].index]
+                dff["new_class"] = dff["id"].apply(lambda x: GetGoodClass(x, dff))
+                df_dict[dataframe] = dff
+            elif dataframe == "df_investigators":
+                df_dict[dataframe] = dff
 
-            df_sponsors["new_class"] = df_sponsors["id"].apply(lambda x: GetGoodClass(x, df_sponsors))
-            df_dict[dataframe] = df_sponsors
-            print("[CSV- SPONSORS] Données ajoutées !")
+            print(f"[CSV- {dataframe}] Données ajoutées !")
 
     df_dict["df_country"]["continent"] = df_dict["df_country"]["location"].apply(lambda x: GetContinent(x, "continent"))
     df_dict["df_country"]["iso"] = df_dict["df_country"]["location"].apply(lambda x: GetContinent(x, "Iso"))

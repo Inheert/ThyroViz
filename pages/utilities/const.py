@@ -11,10 +11,14 @@ studies = s_base.copy()
 studies = studies[studies["overall_status"].isin(["Recruiting", "Not yet recruiting", "Active, not recruiting"])]
 
 sponsors = pd.read_csv("script/sql/visualisation/CSV_files/df_sponsorsName.csv")
-sponsors = sponsors[sponsors["nct_id"].isin(studies.nct_id)]
+# sponsors = sponsors[sponsors["nct_id"].isin(studies.nct_id)]
 
 investigators = pd.read_csv("script/sql/visualisation/CSV_files/df_investigators.csv")
-investigators = investigators[investigators["nct_id"].isin(studies.nct_id)]
+# investigators = investigators[investigators["nct_id"].isin(studies.nct_id)]
+
+intervention_types = pd.read_csv("script/sql/visualisation/CSV_files/df_intervention_types.csv")
+
+country = pd.read_csv("script/sql/visualisation/CSV_files/df_country.csv")
 
 all_category = [x for x in s_base.category.unique()]
 

@@ -2,7 +2,9 @@ import dash_bootstrap_components as dbc
 import dash_daq
 import numpy as np
 import pandas as pd
-from dash import html, dcc
+from dash import html, dcc, dash_table
+import plotly.express as px
+
 from pages.utilities.const import *
 from pages.utilities.helpers import category
 
@@ -338,7 +340,9 @@ def ModalStudiesInfo(row, isOpen):
     _s_base = s_base.sort_values(by="category")
     row = _s_base.loc[row].reset_index(drop=True)
     df = s_base[s_base["nct_id"] == row["nct_id"][0]].reset_index(drop=True).copy()
-
+    sp = sponsors[sponsors["nct_id"] == row["nct_id"][0]]
+    inv = investigators[investigators["nct_id"] == row["nct_id"][0]]
+    loc = country[country["nct_id"] == row["nct_id"][0]]
     for col in row:
         row[col] = row[col].apply(lambda x: None if x is np.nan or x is pd.NaT or x is None else x)
 
@@ -384,6 +388,16 @@ def ModalStudiesInfo(row, isOpen):
                                         "justifyContent": "left",
                                         "horizontalAlign": "center",
                                     }
+                                ),
+                                dbc.Col(
+                                    [
+                                        dcc.Graph(
+                                            figure=px.scatter_geo(loc,
+                                                                  locations="iso",
+                                                                  color="continent",
+                                                                  projection="orthographic")
+                                        )
+                                    ]
                                 )
                             ],
                             style={
@@ -392,6 +406,64 @@ def ModalStudiesInfo(row, isOpen):
                                 "justifyContent": "center",
                                 "horizontalAlign": "center"
                             }
+                        ),
+                        html.Br(),
+                        dbc.Row(
+                            [
+                                dbc.Col(
+                                    [
+                                        dash_table.DataTable(
+                                            data=df.to_dict('records'),
+                                            columns=[
+                                                {"name": i, "id": i}
+                                                for i in df[["category", "sub_category"]].columns
+                                            ],
+                                            style_data={
+                                                "whiteSpace": "normal",
+                                                "height": "auto"
+                                            }
+                                        )
+                                    ],
+                                    width="auto"
+                                ),
+                                dbc.Col(
+                                    [
+                                        dash_table.DataTable(
+                                            data=sp.to_dict('records'),
+                                            columns=[
+                                                {"name": i, "id": i}
+                                                for i in sp[["name", "lead_or_collaborator", "new_class"]]
+                                            ],
+                                            style_data={
+                                                "whiteSpace": "normal",
+                                                "height": "auto"
+                                            }
+                                        ),
+                                        html.Br(),
+                                        dash_table.DataTable(
+                                            data=inv.to_dict('records'),
+                                            columns=[
+                                                {"name": i, "id": i}
+                                                for i in inv[["investigators"]]
+                                            ],
+                                            style_data={
+                                                "whiteSpace": "normal",
+                                                "height": "auto"
+                                            }
+                                        )
+                                    ],
+                                    width="auto"
+                                )
+                            ]
+                        ),
+                        dbc.Row(
+                            [
+                                dbc.Col(
+                                    [
+                                    ],
+                                    width="auto"
+                                )
+                            ]
                         )
                     ]
                 )
