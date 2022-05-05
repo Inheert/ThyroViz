@@ -1,8 +1,41 @@
 from script.ct_const import *
+import psycopg2
+import os
+import pandas as pd
+from script.ct_connection_infos import *
 
 # FONCTIONS UTILISES
+def AactRequestSQL(request):
+    conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_HOST)
 
+    cur = conn.cursor()
+    print("[SQL] Connexion réussi ! Curseur créé.")
 
+    path_original = f"{os.path.abspath(os.curdir)}/script/sql"
+    path_original = path_original.replace("\\", "/")
+
+    if not os.path.isdir(path_original):
+        os.mkdir(path_original)
+        # print("[AACT RETRIEVE] FOLDER HAVE BEEN CREATED")
+    else:
+        pass
+        # print("[AACT RETRIEVE] FOLDER ALREADY EXIST")
+
+    if request == "global":
+        with open(f"{path_original}/global_request", 'r') as file:
+            cur.execute(file.read())
+    elif request == "non_specific":
+        with open(f"{path_original}/non_specific_request", "r") as file:
+            cur.execute(file.read())
+
+    request_response = cur.fetchall()
+
+    df = pd.DataFrame(request_response, columns=[i[0] for i in cur.description])
+    df.to_csv(f"{path_original}/{request}.csv")
+
+    cur.close()
+    conn.close()
+    print("[SQL] Fin de connexion.")
 # Fonction permettant de transformer les colonnes possédant plusieurs valeurs (colonnes concaténés) en une list pour
 # réaliser un "explode" de la colonne
 def ColumnTransform(stringChain):

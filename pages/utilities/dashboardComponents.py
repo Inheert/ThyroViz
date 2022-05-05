@@ -81,7 +81,7 @@ topCard4 = \
                 dbc.CardBody(
                     [
                         html.H1(
-                            f"{len(investigators.investigators.unique())}",
+                            f"{len(investigators.name.unique())}",
                             className="card-title"),
                         html.P("Number of investigators",
                                className="card-text", ),
@@ -341,7 +341,9 @@ def ModalStudiesInfo(row, isOpen):
     row = _s_base.loc[row].reset_index(drop=True)
     df = s_base[s_base["nct_id"] == row["nct_id"][0]].reset_index(drop=True).copy()
     sp = sponsors[sponsors["nct_id"] == row["nct_id"][0]]
+
     inv = investigators[investigators["nct_id"] == row["nct_id"][0]]
+
     loc = country[country["nct_id"] == row["nct_id"][0]]
     for col in row:
         row[col] = row[col].apply(lambda x: None if x is np.nan or x is pd.NaT or x is None else x)
@@ -392,7 +394,7 @@ def ModalStudiesInfo(row, isOpen):
                                 dbc.Col(
                                     [
                                         dcc.Graph(
-                                            figure=px.scatter_geo(loc,
+                                            figure=px.scatter_geo(inv,
                                                                   locations="iso",
                                                                   color="continent",
                                                                   projection="orthographic")
@@ -444,7 +446,7 @@ def ModalStudiesInfo(row, isOpen):
                                             data=inv.to_dict('records'),
                                             columns=[
                                                 {"name": i, "id": i}
-                                                for i in inv[["investigators"]]
+                                                for i in inv[["name"]]
                                             ],
                                             style_data={
                                                 "whiteSpace": "normal",

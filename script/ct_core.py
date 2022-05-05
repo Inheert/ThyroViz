@@ -8,39 +8,25 @@ import os
 import glob
 from datetime import datetime
 import copy
-
+import threading
 
 def appLaunch():
     script.ct_const.loading = True
 
-    conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_HOST)
+    req1 = threading.Thread(target=AactRequestSQL, args=["global"])
+    req2 = threading.Thread(target=AactRequestSQL, args=["non_specific"])
 
-    cur = conn.cursor()
-    print(r"[SQL] Connexion réussi ! Curseur créé.")
+    req1.start()
+    req2.start()
+
+    req1.join()
+    req2.join()
 
     path_original = f"{os.path.abspath(os.curdir)}/script/sql"
     path_original = path_original.replace("\\", "/")
 
-    if not os.path.isdir(path_original):
-        os.mkdir(path_original)
-        # print("[AACT RETRIEVE] FOLDER HAVE BEEN CREATED")
-    else:
-        pass
-        # print("[AACT RETRIEVE] FOLDER ALREADY EXIST")
-
-    with open(f"{path_original}/global_request", 'r') as file:
-        cur.execute(file.read())
-
-    request_response = cur.fetchall()
-
-    df = pd.DataFrame(request_response, columns=[i[0] for i in cur.description])
-
-    with open(f"{path_original}/non_specific_request", "r") as file:
-        cur.execute(file.read())
-
-    request_response = cur.fetchall()
-
-    non_specific = pd.DataFrame(request_response, columns=[i[0] for i in cur.description])
+    df = pd.read_csv(f"{path_original}/global.csv")
+    non_specific = pd.read_csv(f"{path_original}/non_specific.csv")
 
     nct_id_list = []
 
@@ -52,14 +38,6 @@ def appLaunch():
     df = pd.concat([df, non_specific])
     df.reset_index(inplace=True)
     df.drop(labels=["index"], axis=1, inplace=True)
-
-    df.to_csv(f"{path_original}/base_csv.csv", index=False)
-    # print("[SQL] Nouvelle dataframe enregistrée.")
-
-    cur.close()
-
-    conn.close()
-    print("[SQL] Fin de connexion.\n")
 
     # Valeur par défaut "1" pour les lignes dont la colonne "minimum_age_unit" est égale à "Month"
     df["minimum_age_num"] = [1 if df["minimum_age_unit"][x] == "Month" else df["minimum_age_num"][x] for x in
@@ -222,6 +200,8 @@ def appLaunch():
                 dff["new_class"] = dff["id"].apply(lambda x: GetGoodClass(x, dff))
                 df_dict[dataframe] = dff
             elif dataframe == "df_investigators":
+                dff["continent"] = dff["country"].apply(lambda x: GetContinent(x, 'continent'))
+                dff["iso"] = dff["country"].apply(lambda x: GetContinent(x, 'Iso'))
                 df_dict[dataframe] = dff
 
             print(f"[CSV- {dataframe}] Données ajoutées !")
@@ -238,7 +218,7 @@ def appLaunch():
         # print("[VISUALISATION] FOLDER CREATED")
     else:
         pass
-        # print("[VISULAISATION] FOLDER ALREADY EXIST")
+        # print("[VISUALISATION] FOLDER ALREADY EXIST")
 
     # Chemin des CSV utilisés pour la visualisation
     path_CSVFiles = f"{path}/CSV_files"

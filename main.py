@@ -152,7 +152,7 @@ def confirmButton(timer, button):
         buttonDisable = False if datetime.now().timestamp() - datetime.fromtimestamp(
             os.path.getmtime(glob.glob(
                 f'{os.path.abspath(os.curdir)}/script/sql/visualisation/CSV_files/studies.csv')[
-                                 0])).timestamp() > 300 else True
+                                 0])).timestamp() > 100 else True
         if not buttonDisable:
             return False, False, None
         else:
