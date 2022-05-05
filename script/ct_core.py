@@ -10,6 +10,7 @@ from datetime import datetime
 import copy
 import threading
 
+
 def appLaunch():
     script.ct_const.loading = True
 
@@ -113,9 +114,7 @@ def appLaunch():
     }
 
     for k, v in category_clean_dict.items():
-        df["useless"] = [True if df.loc[x, "sub_category"] == v and
-                                 df[(df["nct_id"] == df.loc[x, "nct_id"]) & (df["category"] == k)].shape[
-                                     0] > 1 else False
+        df["useless"] = [True if df.loc[x, "sub_category"] == v and df[(df["nct_id"] == df.loc[x, "nct_id"]) & (df["category"] == k)].shape[0] > 1 else False
                          for x in df["nct_id"].index]
         df = df[df["useless"] != True]
         df.drop(columns=["useless"], axis=1, inplace=True)
