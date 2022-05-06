@@ -29,9 +29,6 @@ def appLaunch():
     df = pd.read_csv(f"{path_original}/temp_global.csv")
     non_specific = pd.read_csv(f"{path_original}/temp_non_specific.csv")
 
-    os.remove(f"{path_original}/temp_global.csv")
-    os.remove(f"{path_original}/temp_non_specific.csv")
-
     nct_id_list = []
 
     for nct_id in df.nct_id.unique():
@@ -221,9 +218,6 @@ def appLaunch():
     df_dict["df_sponsorsName"] = pd.read_csv(f"{path_original}/temp_sponsors.csv")
     df_dict["df_investigators"] = pd.read_csv(f"{path_original}/temp_investigators.csv")
 
-    os.remove(f"{path_original}/temp_investigators.csv")
-    os.remove(f"{path_original}/temp_sponsors.csv")
-
     df_dict["df_country"]["continent"] = df_dict["df_country"]["location"].apply(lambda x: GetGeoInfos(x, "continent"))
     df_dict["df_country"]["iso"] = df_dict["df_country"]["location"].apply(lambda x: GetGeoInfos(x, "Iso"))
 
@@ -294,5 +288,11 @@ def appLaunch():
     for dataframe in df_dict:
         df_dict[dataframe].to_csv(f"{path_CSVFiles}/{dataframe}.csv", index=False)
         print(f"[DATAFRAME - {str(dataframe).upper()}] csv have been created")
+
+    for file in glob.glob(f"{path_original}/*.csv"):
+        file = file.replace("\\", "/")
+        file_name = file.split("/")[-1]
+        if "temp" in file_name:
+            os.remove(file)
 
     script.ct_const.loading = False
