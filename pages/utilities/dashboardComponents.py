@@ -352,10 +352,31 @@ def ModalStudiesInfo(row, isOpen):
     inv["lat"] = inv["city_country"].apply(lambda x: geoloc.geocode(x).latitude)
     inv["long"] = inv["city_country"].apply(lambda x: geoloc.geocode(x).longitude)
 
-    print(inv[["city", "country", "lat", "long"]])
-
     for col in row:
         row[col] = row[col].apply(lambda x: None if x is np.nan or x is pd.NaT or x is None else x)
+
+    data = [go.Scattergeo(
+        lat=inv["lat"],
+        lon=inv["long"],
+        text=inv["name"],
+        mode="markers",
+        hovertemplate=
+        "<b>%{text}</b><br><br>"
+    )]
+
+    layout = go.Layout(
+        margin=dict(l=0, r=0, t=0, b=0),
+        height=350,
+        width=350,
+        showlegend=False,
+        geo=go.layout.Geo(
+            projection=dict(type="orthographic"),
+            showland=True,
+            showcountries=True
+        )
+    )
+
+    fig = go.Figure(data=data, layout=layout)
 
     layout = \
         dbc.Modal(
@@ -403,13 +424,19 @@ def ModalStudiesInfo(row, isOpen):
                                 dbc.Col(
                                     [
                                         dcc.Graph(
-                                            figure=px.scatter_geo(inv,
-                                                                  lat="lat",
-                                                                  lon="long",
-                                                                  color="continent",
-                                                                  projection="orthographic")
+                                            figure=fig,
+                                            config={
+                                                'displayModeBar': False,
+                                            }
                                         ),
-                                    ]
+                                    ],
+                                    style={
+                                        "marginLeft": "20px",
+                                        "display": "flex",
+                                        "alignItems": "center",
+                                        "justifyContent": "center",
+                                        "horizontalAlign": "center"
+                                    }
                                 )
                             ],
                             style={

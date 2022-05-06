@@ -6,7 +6,7 @@ from script.ct_connection_infos import *
 from geopy.geocoders import Nominatim
 
 # FONCTIONS UTILISES
-def AactRequestSQL(request):
+def AactRequestSQL(request=None, request_source="static", dataframe=None):
     conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_HOST)
 
     cur = conn.cursor()
@@ -22,26 +22,69 @@ def AactRequestSQL(request):
         pass
         # print("[AACT RETRIEVE] FOLDER ALREADY EXIST")
 
-    if request == "global":
-        with open(f"{path_original}/global_request", 'r') as file:
-            cur.execute(file.read())
-    elif request == "non_specific":
-        with open(f"{path_original}/non_specific_request", "r") as file:
-            cur.execute(file.read())
+    if request_source == "static":
 
-    request_response = cur.fetchall()
+        if request == "global":
+            with open(f"{path_original}/global_request", 'r') as file:
+                cur.execute(file.read())
+        elif request == "non_specific":
+            with open(f"{path_original}/non_specific_request", "r") as file:
+                cur.execute(file.read())
 
-    df = pd.DataFrame(request_response, columns=[i[0] for i in cur.description])
-    df.to_csv(f"{path_original}/{request}.csv")
+        request_response = cur.fetchall()
+
+        df = pd.DataFrame(request_response, columns=[i[0] for i in cur.description])
+        df.to_csv(f"{path_original}/temp_{request}.csv")
+
+    elif request_source == "dynamic":
+        print(f"[CSV - {request}] Ajout des données...")
+        # Générer une requête SQL avec une condition : WHERE (nct_id = * AND name = *)
+        condition_list = []
+        dataframe.drop_duplicates(subset="nct_id", inplace=True)
+
+        for e in dataframe.index:
+            condition_list.append(
+                f"'{dataframe.nct_id[e].lower()}'")
+
+        text = ""
+
+        for idx, value in enumerate(condition_list):
+            text += value
+            if idx < len(condition_list) - 1:
+                text += ", "
+
+        text = f"({text})"
+
+        sql_request = f"""SELECT *
+                      FROM {'sponsors' if request == 'sponsors' else 'facilities'}
+                      WHERE LOWER(nct_id) in {text}"""
+
+        cur.execute(sql_request)
+
+        df = pd.DataFrame(cur.fetchall(), columns=[i[0] for i in cur.description])
+
+        if request == "sponsors":
+            # Dictionnaire contenant les infos utile à la classification des sponsors
+
+            df["new_class"] = None
+
+            df["new_class"] = df["id"].apply(lambda x: GetGoodClass(x, df))
+            dataframe = df
+        elif request == "investigators":
+            df["continent"] = df["country"].apply(lambda x: GetGeoInfos(x, 'continent'))
+            df["iso"] = df["country"].apply(lambda x: GetGeoInfos(x, 'Iso'))
+
+        df.to_csv(f"{path_original}/temp_{request}.csv")
+        print(f"[CSV- {request}] Données ajoutées !")
 
     cur.close()
     conn.close()
     print("[SQL] Fin de connexion.")
+
+
 # Fonction permettant de transformer les colonnes possédant plusieurs valeurs (colonnes concaténés) en une list pour
 # réaliser un "explode" de la colonne
 def ColumnTransform(stringChain):
-    # c'est qu'un test pour tenter de régler une erreur sortant sur l'apply de la fonction)
-    stringChain
 
     # Si le format de la chaine de caractère n'est pas un string dans ce cas on la renvoit tel quel dans la Dataframe
     if type(stringChain) != str:

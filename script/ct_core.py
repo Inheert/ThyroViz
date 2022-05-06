@@ -26,8 +26,11 @@ def appLaunch():
     path_original = f"{os.path.abspath(os.curdir)}/script/sql"
     path_original = path_original.replace("\\", "/")
 
-    df = pd.read_csv(f"{path_original}/global.csv")
-    non_specific = pd.read_csv(f"{path_original}/non_specific.csv")
+    df = pd.read_csv(f"{path_original}/temp_global.csv")
+    non_specific = pd.read_csv(f"{path_original}/temp_non_specific.csv")
+
+    os.remove(f"{path_original}/temp_global.csv")
+    os.remove(f"{path_original}/temp_non_specific.csv")
 
     nct_id_list = []
 
@@ -157,69 +160,69 @@ def appLaunch():
         # Reset des index
         df_dict[dataframe].reset_index(drop=True, inplace=True)
 
-        if dataframe == "df_sponsorsName" or dataframe == "df_investigators":
-            print(f"[CSV - {dataframe}] Ajout des données...")
-            # Générer une requête SQL avec une condition : WHERE (nct_id = * AND name = *)
-            condition_list = []
-            df_dict[dataframe].drop_duplicates(subset="nct_id", inplace=True)
+        # if dataframe == "df_sponsorsName" or dataframe == "df_investigators":
+        #     print(f"[CSV - {dataframe}] Ajout des données...")
+        #     # Générer une requête SQL avec une condition : WHERE (nct_id = * AND name = *)
+        #     condition_list = []
+        #     df_dict[dataframe].drop_duplicates(subset="nct_id", inplace=True)
+        #
+        #     for e in df_dict[dataframe].index:
+        #         condition_list.append(
+        #             f"'{df_dict[dataframe].nct_id[e].lower()}'")
+        #
+        #     text = ""
+        #
+        #     for idx, value in enumerate(condition_list):
+        #         text += value
+        #         if idx < len(condition_list) - 1:
+        #             text += ", "
+        #
+        #     text = f"({text})"
+        #
+        #     conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_HOST)
+        #
+        #     cur = conn.cursor()
+        #
+        #     request = f"""SELECT *
+        #                   FROM {'sponsors' if dataframe == 'df_sponsorsName' else 'facilities'}
+        #                   WHERE LOWER(nct_id) in {text}"""
+        #
+        #     cur.execute(request)
+        #
+        #     dff = pd.DataFrame(cur.fetchall(), columns=[i[0] for i in cur.description])
+        #
+        #     cur.close()
+        #     conn.close()
+        #
+        #     if dataframe == "df_sponsorsName":
+        #         # Dictionnaire contenant les infos utile à la classification des sponsors
+        #
+        #         dff["new_class"] = None
+        #
+        #         dff["new_class"] = dff["id"].apply(lambda x: GetGoodClass(x, dff))
+        #         df_dict[dataframe] = dff
+        #     elif dataframe == "df_investigators":
+        #         dff["continent"] = dff["country"].apply(lambda x: GetGeoInfos(x, 'continent'))
+        #         dff["iso"] = dff["country"].apply(lambda x: GetGeoInfos(x, 'Iso'))
+        #
+        #         df_dict[dataframe] = dff
+        #
+        #     print(f"[CSV- {dataframe}] Données ajoutées !")
 
-            for e in df_dict[dataframe].index:
-                condition_list.append(
-                    f"'{df_dict[dataframe].nct_id[e].lower()}'")
+    req1 = threading.Thread(target=AactRequestSQL, args=["sponsors", "dynamic", df_dict["df_sponsorsName"]])
+    req2 = threading.Thread(target=AactRequestSQL, args=["investigators", "dynamic", df_dict["df_investigators"]])
 
-            text = ""
+    req1.start()
+    req2.start()
 
-            for idx, value in enumerate(condition_list):
-                text += value
-                if idx < len(condition_list) - 1:
-                    text += ", "
+    req1.join()
+    req2.join()
 
-            text = f"({text})"
+    df_dict["df_sponsorsName"] = pd.read_csv(f"{path_original}/temp_sponsors.csv")
+    df_dict["df_investigators"] = pd.read_csv(f"{path_original}/temp_investigators.csv")
 
-            conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_HOST)
-
-            cur = conn.cursor()
-
-            request = f"""SELECT *
-                          FROM {'sponsors' if dataframe == 'df_sponsorsName' else 'facilities'}
-                          WHERE LOWER(nct_id) in {text}"""
-
-            cur.execute(request)
-
-            dff = pd.DataFrame(cur.fetchall(), columns=[i[0] for i in cur.description])
-
-            cur.close()
-            conn.close()
-
-            if dataframe == "df_sponsorsName":
-                # Dictionnaire contenant les infos utile à la classification des sponsors
-
-                dff["new_class"] = None
-
-                dff["new_class"] = dff["id"].apply(lambda x: GetGoodClass(x, dff))
-                df_dict[dataframe] = dff
-            elif dataframe == "df_investigators":
-                dff["continent"] = dff["country"].apply(lambda x: GetGeoInfos(x, 'continent'))
-                dff["iso"] = dff["country"].apply(lambda x: GetGeoInfos(x, 'Iso'))
-
-                dff["geo_TEMP"] = dff[["city", "country"]].agg(','.join, axis=1)
-
-                d = {}
-
-                for loc in dff["geo_TEMP"].unique():
-                    d[loc] = [GetGeoInfos(loc, "geo")]
-
-                dff["lat"] = dff["geo_TEMP"].apply(lambda x: d[x])
-                dff["long"] = dff["geo_TEMP"].apply(lambda x: d[x])
-
-                # dff["lat"] = dff["geo_TEMP"].apply(lambda x: GetGeoInfos(x, "lat"))
-                # dff["long"] = dff["geo_TEMP"].apply(lambda x: GetGeoInfos(x, "long"))
-
-                dff.drop(columns=["geo_TEMP"], axis=1, inplace=True)
-
-                df_dict[dataframe] = dff
-
-            print(f"[CSV- {dataframe}] Données ajoutées !")
+    os.remove(f"{path_original}/temp_investigators.csv")
+    os.remove(f"{path_original}/temp_sponsors.csv")
 
     df_dict["df_country"]["continent"] = df_dict["df_country"]["location"].apply(lambda x: GetGeoInfos(x, "continent"))
     df_dict["df_country"]["iso"] = df_dict["df_country"]["location"].apply(lambda x: GetGeoInfos(x, "Iso"))
