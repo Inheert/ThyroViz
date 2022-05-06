@@ -2,7 +2,6 @@ SELECT s.nct_id, bc.downcase_mesh_term, s.official_title, s.brief_title, c.names
 FROM studies AS s
 
 LEFT JOIN browse_conditions AS bc ON s.nct_id = bc.nct_id
-LEFT JOIN all_browse_conditions AS abc ON s.nct_id = abc.nct_id
 LEFT JOIN all_conditions AS c ON s.nct_id = c.nct_id
 LEFT JOIN all_sponsors AS ap ON s.nct_id = ap.nct_id
 LEFT JOIN all_facilities AS af ON s.nct_id = af.nct_id

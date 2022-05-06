@@ -3,13 +3,14 @@ import psycopg2
 import os
 import pandas as pd
 from script.ct_connection_infos import *
+from geopy.geocoders import Nominatim
 
 # FONCTIONS UTILISES
 def AactRequestSQL(request):
     conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_HOST)
 
     cur = conn.cursor()
-    print("[SQL] Connexion réussi ! Curseur créé.")
+    print("[SQL] Connexion réussi ! Curseur créé")
 
     path_original = f"{os.path.abspath(os.curdir)}/script/sql"
     path_original = path_original.replace("\\", "/")
@@ -53,7 +54,7 @@ def ColumnTransform(stringChain):
 
 
 # Fonction pour récupérer les continents ou les code Iso des continents
-def GetContinent(rowCountry, key):
+def GetGeoInfos(rowCountry, key):
     # Dictionnaire de pays avec comme valeur le continent et le code Iso
     dico_continent = {'Algeria': {'Continent': 'Africa', 'Iso': 'DZA'},
                       'Argentina': {'Continent': 'South America', 'Iso': 'ARG'},
@@ -160,6 +161,16 @@ def GetContinent(rowCountry, key):
     elif key.lower() == "iso":
         if rowCountry in dico_continent:
             return dico_continent[rowCountry]["Iso"]
+
+    elif key.lower() == "geo":
+        rowCountry = rowCountry.replace("Korea, Republic of", "Republic of Korea").replace("D.F.", "DF").replace("Ã©", "é").replace("Dist", "District")
+        rowCountry = rowCountry.split(" ")[0] if "cedex" in rowCountry.lower() else rowCountry
+        print(rowCountry)
+
+        geolocator = Nominatim(user_agent="ThyroResearch")
+
+        loc = geolocator.geocode(rowCountry)
+        return [loc.latitude, loc.longitude]
 
 
 # Fonction retournant un string concatenant les différentes tranches d'âge par étude

@@ -4,6 +4,8 @@ import numpy as np
 import pandas as pd
 from dash import html, dcc, dash_table
 import plotly.express as px
+from geopy.geocoders import Nominatim
+import plotly.graph_objects as go
 
 from pages.utilities.const import *
 from pages.utilities.helpers import category
@@ -342,9 +344,16 @@ def ModalStudiesInfo(row, isOpen):
     df = s_base[s_base["nct_id"] == row["nct_id"][0]].reset_index(drop=True).copy()
     sp = sponsors[sponsors["nct_id"] == row["nct_id"][0]]
 
-    inv = investigators[investigators["nct_id"] == row["nct_id"][0]]
+    inv = investigators[investigators["nct_id"] == row["nct_id"][0]].__deepcopy__()
+    inv["city_country"] = inv[["city", "country"]].agg(", ".join, axis=1)
 
-    loc = country[country["nct_id"] == row["nct_id"][0]]
+    geoloc = Nominatim(user_agent="ThyroResearch")
+
+    inv["lat"] = inv["city_country"].apply(lambda x: geoloc.geocode(x).latitude)
+    inv["long"] = inv["city_country"].apply(lambda x: geoloc.geocode(x).longitude)
+
+    print(inv[["city", "country", "lat", "long"]])
+
     for col in row:
         row[col] = row[col].apply(lambda x: None if x is np.nan or x is pd.NaT or x is None else x)
 
@@ -395,10 +404,11 @@ def ModalStudiesInfo(row, isOpen):
                                     [
                                         dcc.Graph(
                                             figure=px.scatter_geo(inv,
-                                                                  locations="iso",
+                                                                  lat="lat",
+                                                                  lon="long",
                                                                   color="continent",
                                                                   projection="orthographic")
-                                        )
+                                        ),
                                     ]
                                 )
                             ],

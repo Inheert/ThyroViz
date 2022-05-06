@@ -199,14 +199,30 @@ def appLaunch():
                 dff["new_class"] = dff["id"].apply(lambda x: GetGoodClass(x, dff))
                 df_dict[dataframe] = dff
             elif dataframe == "df_investigators":
-                dff["continent"] = dff["country"].apply(lambda x: GetContinent(x, 'continent'))
-                dff["iso"] = dff["country"].apply(lambda x: GetContinent(x, 'Iso'))
+                dff["continent"] = dff["country"].apply(lambda x: GetGeoInfos(x, 'continent'))
+                dff["iso"] = dff["country"].apply(lambda x: GetGeoInfos(x, 'Iso'))
+
+                dff["geo_TEMP"] = dff[["city", "country"]].agg(','.join, axis=1)
+
+                d = {}
+
+                for loc in dff["geo_TEMP"].unique():
+                    d[loc] = [GetGeoInfos(loc, "geo")]
+
+                dff["lat"] = dff["geo_TEMP"].apply(lambda x: d[x])
+                dff["long"] = dff["geo_TEMP"].apply(lambda x: d[x])
+
+                # dff["lat"] = dff["geo_TEMP"].apply(lambda x: GetGeoInfos(x, "lat"))
+                # dff["long"] = dff["geo_TEMP"].apply(lambda x: GetGeoInfos(x, "long"))
+
+                dff.drop(columns=["geo_TEMP"], axis=1, inplace=True)
+
                 df_dict[dataframe] = dff
 
             print(f"[CSV- {dataframe}] Données ajoutées !")
 
-    df_dict["df_country"]["continent"] = df_dict["df_country"]["location"].apply(lambda x: GetContinent(x, "continent"))
-    df_dict["df_country"]["iso"] = df_dict["df_country"]["location"].apply(lambda x: GetContinent(x, "Iso"))
+    df_dict["df_country"]["continent"] = df_dict["df_country"]["location"].apply(lambda x: GetGeoInfos(x, "continent"))
+    df_dict["df_country"]["iso"] = df_dict["df_country"]["location"].apply(lambda x: GetGeoInfos(x, "Iso"))
 
     # Chemin d'enregistrement des CSV exploitables ainsi que des backups
 
