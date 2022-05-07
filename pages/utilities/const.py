@@ -58,3 +58,49 @@ tab_selected_style = {
     'backgroundColor': '#119DFF',
     'color': 'white',
 }
+
+left_tab_style = {
+    "display": "flex",
+    "justifyContent": "center",
+    "alignItems": "center",
+    'borderBottom': '1px solid #d6d6d6',
+    'fontWeight': 'bold',
+    "backgroundColor": "rgba(0,0,0,0)",
+    "borderTopLeftRadius": "15px",
+    "borderBottomLeftRadius": "15px"
+}
+
+left_tab_selected_style = {
+    "display": "flex",
+    "justifyContent": "center",
+    "alignItems": "center",
+    'borderTop': '1px solid #d6d6d6',
+    'borderBottom': '1px solid #d6d6d6',
+    'backgroundColor': '#119DFF',
+    'color': 'white',
+    "borderTopLeftRadius": "15px",
+    "borderBottomLeftRadius": "15px"
+}
+
+right_tab_style = {
+    "display": "flex",
+    "justifyContent": "center",
+    "alignItems": "center",
+    'borderBottom': '1px solid #d6d6d6',
+    'fontWeight': 'bold',
+    "backgroundColor": "rgba(0,0,0,0)",
+    "borderTopRightRadius": "15px",
+    "borderBottomRightRadius": "15px"
+}
+
+right_tab_selected_style = {
+    "display": "flex",
+    "justifyContent": "center",
+    "alignItems": "center",
+    'borderTop': '1px solid #d6d6d6',
+    'borderBottom': '1px solid #d6d6d6',
+    'backgroundColor': '#119DFF',
+    'color': 'white',
+    "borderTopRightRadius": "15px",
+    "borderBottomRightRadius": "15px"
+}

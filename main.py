@@ -1,7 +1,7 @@
 import dash
 import dash_labs as dl
 import dash_bootstrap_components as dbc
-from dash import Dash, dcc, html, Input, Output, callback
+from dash import Dash, dcc, html, Input, Output, State, callback
 from datetime import datetime
 import os
 import glob
@@ -25,113 +25,138 @@ SIDEBAR_STYLE = {
     "bottom": 0,
     "width": "20rem",
     "padding": "2rem 1rem",
-    "backgroundColor": "#f8f9fa",
+    "backgroundColor": "rgba(0,0,0,0)",
     "backgroundPosition": "right top"
 }
 
 # the styles for the main content position it to the right of the sidebar and
 # add some padding.
 CONTENT_STYLE = {
-    "marginLeft": "20rem",
+    "marginLeft": "0rem",
     "marginRight": "2rem",
     "padding": "2rem 1rem"
 }
 
-sidebar = html.Div(
-    [
+sidebar = \
+    html.Div(
+        [
+            dbc.Button(">", id="slideMenuButton"),
+            dbc.Offcanvas(
+                id="slideMenu",
+                is_open=True,
+                style={
+                    "width": "22rem",
+                    "backgroundColor": "#f8f9fa",
+                },
+                children=[
+                    html.Div(
+                        [
 
-        # Div de la sidebar comprennant les éléments suivants :
-        #     - Titre
-        #     - tiret de séparation
-        #     - les différentes pages (trouvable dans le dossier page du projet)
+                            # Div de la sidebar comprennant les éléments suivants :
+                            #     - Titre
+                            #     - tiret de séparation
+                            #     - les différentes pages (trouvable dans le dossier page du projet)
 
-        html.Div(
-            [
-                html.H2("ThyroResearch", className="display-6"),
-                html.Hr(),
-                html.P(
-                    "Navigate through the different tools of ThyroResearch", className="lead"
-                ),
-                dbc.Nav(
-                    [
-                        dbc.NavLink(page["name"], href=page["path"], active="exact")
-                        for page in dash.page_registry.values()
-                        if page["module"] != "pages.not_found_404"
-                    ],
-                    vertical=True,
-                    pills=True,
-                ),
-            ],
-            style={
-                "height": "87%"
-            }
-        ),
-        html.Plaintext("Last update:"),
-        html.Plaintext(
-            f"{datetime.fromtimestamp(os.path.getmtime(glob.glob(f'{os.path.abspath(os.curdir)}/script/sql/visualisation/CSV_files/studies.csv')[0])).strftime('%Y-%m-%d %H:%M')}",
-            id="lastUpdate",
-            style={
-                "marginTop": "-15px"
-            }),
+                            html.Div(
+                                [
+                                    html.H2("ThyroResearch", className="display-6"),
+                                    html.Hr(),
+                                    html.P(
+                                        "Navigate through the different tools of ThyroResearch", className="lead"
+                                    ),
+                                    dbc.Nav(
+                                        [
+                                            dbc.NavLink(page["name"], href=page["path"], active="exact")
+                                            for page in dash.page_registry.values()
+                                            if page["module"] != "pages.not_found_404"
+                                        ],
+                                        vertical=True,
+                                        pills=True,
+                                    ),
+                                ],
+                                style={
+                                    "height": "87%"
+                                }
+                            ),
+                            html.Plaintext("Last update:"),
+                            html.Plaintext(
+                                f"{datetime.fromtimestamp(os.path.getmtime(glob.glob(f'{os.path.abspath(os.curdir)}/script/sql/visualisation/CSV_files/studies.csv')[0])).strftime('%Y-%m-%d %H:%M')}",
+                                id="lastUpdate",
+                                style={
+                                    "marginTop": "-15px"
+                                }),
 
-        # Layout comprennant les éléments suivants :
-        #     - texte "dernière mise à jour"
-        #     - date de dernière mise à jour
-        #     - bouton mise à jour
-        #     - loading component
-        #     - timer
-        #     - boite de dialogue
+                            # Layout comprennant les éléments suivants :
+                            #     - texte "dernière mise à jour"
+                            #     - date de dernière mise à jour
+                            #     - bouton mise à jour
+                            #     - loading component
+                            #     - timer
+                            #     - boite de dialogue
 
-        dbc.Row(
-            [
-                dbc.Col(
-                    [
-                        dbc.Button("Update",
-                                   id="updateButton",
-                                   disabled=True)
+                            dbc.Row(
+                                [
+                                    dbc.Col(
+                                        [
+                                            dbc.Button("Update",
+                                                       id="updateButton",
+                                                       disabled=True)
 
-                    ],
-                    width="auto"
-                ),
-                dbc.Col(
-                    [
-                        dcc.Loading(
-                            id="loading-1",
-                            type="default",
-                            children=html.Div(id="updateLoading"),
-                            style={
-                                "marginTop": "41%"
-                            }
-                        ),
-                        dcc.Interval(interval=interval * 1000, id="timerRefreshButton"),
-                        dcc.ConfirmDialog(
-                            id='confirm-update',
-                            message='Voulez-vous mettre les données à jour ?',
-                        ),
+                                        ],
+                                        width="auto"
+                                    ),
+                                    dbc.Col(
+                                        [
+                                            dcc.Loading(
+                                                id="loading-1",
+                                                type="default",
+                                                children=html.Div(id="updateLoading"),
+                                                style={
+                                                    "marginTop": "41%"
+                                                }
+                                            ),
+                                            dcc.Interval(interval=interval * 1000, id="timerRefreshButton"),
+                                            dcc.ConfirmDialog(
+                                                id='confirm-update',
+                                                message='Voulez-vous mettre les données à jour ?',
+                                            ),
 
-                    ]
-                )
-            ],
-            style={
-                "display": "flex",
-                "alignItems": "top",
-                "justifyContent": "center",
-                "horizontalAlign": "center"
-            }
-        )
+                                        ]
+                                    )
+                                ],
+                                style={
+                                    "display": "flex",
+                                    "alignItems": "top",
+                                    "justifyContent": "center",
+                                    "horizontalAlign": "center"
+                                }
+                            )
 
-        #     style={
-        #         "backgroundColor": "black",
-        #         "display": "flex",
-        #         "alignItems": "flex-end",
-        #
-        #     }
-        # )
+                            #     style={
+                            #         "backgroundColor": "black",
+                            #         "display": "flex",
+                            #         "alignItems": "flex-end",
+                            #
+                            #     }
+                            # )
 
-    ],
-    style=SIDEBAR_STYLE,
-)
+                        ],
+                        style=SIDEBAR_STYLE,
+                    )
+                ]
+            )
+        ]
+    )
 
+
+@callback(Output('slideMenu', 'is_open'),
+          Input('slideMenuButton', 'n_clicks'),
+          [State('slideMenu', 'is_open')]
+          )
+def ToggleSlideMenu(n1, is_open):
+    if n1:
+        return not is_open
+    return is_open
 
 # Callback réagissant au clique du bouton de mise à jour afin d'afficher une notif d'avertissement pour le lancement
 # de la mise à jour des données
@@ -181,7 +206,10 @@ def updatingData(submit_n_clicks):
 content = html.Div(dl.plugins.page_container, style=CONTENT_STYLE)
 # app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
 app.layout = html.Div(
-    [sidebar, content]
+    dbc.Row(
+        [dbc.Col(sidebar, width="auto"),
+         dbc.Col(content)]
+    ),
 )
 
 if __name__ == "__main__":

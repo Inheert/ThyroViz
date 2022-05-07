@@ -145,7 +145,10 @@ leftCategoryCard = \
                                                     outline=True)
                                      ],
                                  ),
-                                 className="mb-1 shadow-sm"
+                                 className="mb-1 shadow-sm",
+                                 style={
+                                     "backgroundColor": "rgba(0,0,0,0)"
+                                 }
                              ) for x in category.index
                          ]
                          ),
@@ -220,13 +223,9 @@ barPlotByStudiesType = \
                         "marginTop": "-1vh",
                     }
                 ),
-                dash_daq.BooleanSwitch(
-                    id="boolBarStudiesType",
-                    on=False,
-                    color="#0D6EFD"),
             ]
         ),
-        class_name="card mb-4 border-0",
+        class_name="card mb-4 border-1",
         style={"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
                "borderRadius": "15px"}
     )
@@ -241,8 +240,8 @@ tabWithMultipleCharts = \
                              dcc.Tab(label="Category repartition",
                                      value="tab1",
                                      id="pieTab1",
-                                     style=tab_style,
-                                     selected_style=tab_selected_style,
+                                     style=left_tab_style,
+                                     selected_style=left_tab_selected_style,
                                      children=[
                                          dcc.Graph(
                                              id="subCategoryProportion",
@@ -273,8 +272,8 @@ tabWithMultipleCharts = \
                              dcc.Tab(label="Category repartition by studies type",
                                      value="tab2",
                                      id="pieTab2",
-                                     style=tab_style,
-                                     selected_style=tab_selected_style,
+                                     style=right_tab_style,
+                                     selected_style=right_tab_selected_style,
                                      children=[
                                          dcc.Graph(
                                              id="subCategoryProportionByStudiesType",
@@ -288,7 +287,7 @@ tabWithMultipleCharts = \
                          )
             ]
         ),
-        class_name="card mb-4 border-0",
+        class_name="card mb-4 border-1",
         style={"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
                "borderRadius": "15px"}
     )
@@ -305,8 +304,8 @@ studiesDateOverview = \
                             label="Historical date overview",
                             value="tab1",
                             id="historicalTab1",
-                            style=tab_style,
-                            selected_style=tab_selected_style,
+                            style=left_tab_style,
+                            selected_style=left_tab_selected_style,
                             children=[
                                 dcc.Graph(
                                     id="studiesDateEventByYear",
@@ -324,17 +323,17 @@ studiesDateOverview = \
                             label="Historical studies overview",
                             value="tab2",
                             id="historicalTab2",
-                            style=tab_style,
-                            selected_style=tab_selected_style
+                            style=right_tab_style,
+                            selected_style=right_tab_selected_style
                         )
                     ],
                     style=tabs_styles
                 )
             ]
         ),
-        class_name="card mb-4 border-0",
         style={"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
-               "borderRadius": "15px"}
+               "borderRadius": "15px",
+               "marginTop": "-15px"}
     )
 
 

@@ -163,15 +163,22 @@ layout = html.Div(
                                                      "primary_completion_date", "completion_date", "study_type",
                                                      "overall_status", "study_phases", "minimum_age_num",
                                                      "maximum_age_num"]].columns],
-                                    page_size=15,
+                                    page_size=40,
                                     filter_action="native",
                                     sort_action="native",
                                     row_selectable="single",
+                                    style_header={
+                                        'backgroundColor': "white"
+                                    },
                                     style_data_conditional=[
                                         {
                                             'if': {'row_index': 'odd'},
-                                            'backgroundColor': 'gray',
-                                            'color': 'white'
+                                            'backgroundColor': 'rgb(223, 226, 232)',
+                                            'color': 'black'
+                                        },
+                                        {
+                                            'if': {'row_index': 'even'},
+                                            'backgroundColor': 'rgb(245, 249, 255)'
                                         }
                                     ]
                                 )
@@ -208,6 +215,7 @@ layout = html.Div(
         # "overflow": "scroll"
     }
 )
+
 @callback(Output("studyIndex", "data"),
           Input("datatable", "selected_rows"))
 def SelectedStudy(row):
@@ -222,7 +230,7 @@ def OpenStudiesModal(data, n_clicks):
     if n_clicks:
         return ModalStudiesInfo(data if data is not None else [0], True), None
     else:
-        return ModalStudiesInfo(data if data is not None else [0], True), None
+        return None, None
 
 
 # @callback(Output("studiesModal", "is_open"),
