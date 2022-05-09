@@ -185,8 +185,6 @@ layout = html.Div(
                 dcc.Store(id="selected-card"),
                 dcc.Store(id="dataSliderButton",
                           data=False),
-                dbc.Row(CRP_default),
-                dbc.Row(SDO_default)
             ],
         )
     ],
@@ -405,8 +403,9 @@ THIS CALLBACK IS USED TO UPDATE THE PIE CHART FROM THE "NO FILTER" TAB
           Input("CRP_studiesStatus", "value"),
           Input("CRP_minAge", "value"),
           Input("CRP_maxAge", "value"),
-          Input("boolCategoryRepartition", "on"))
+          )
 def pieNoFilterUpdate(data, s_type, s_status, minAge, maxAge, *args):
+    print(s_type, s_status, minAge, maxAge)
     df = GetSubCategoryProportion(data, s_type, s_status, minAge, maxAge)
     fig = go.Figure(data=[go.Pie(
         labels=df["view"],
@@ -460,7 +459,7 @@ THIS CALLBACK IS USED TO UPDATES PIES CHARTS FROM THE "BY STUDIES TYPE" TAB
           Input("CRP_studiesStatus", "value"),
           Input("CRP_minAge", "value"),
           Input("CRP_maxAge", "value"),
-          Input("boolCategoryRepartition", "on"))
+          )
 def pieByStudiesTypeUpdate(data, s_status, minAge, maxAge, *args):
     fig = make_subplots(rows=1, cols=3, specs=[[{"type": "domain"},
                                                 {"type": "domain"},
@@ -557,18 +556,21 @@ def FigureHistoricalUpdate(data, dateColumn, minYear, maxYear, periodDisplay, fi
     return fig
 
 
-@callback(Output("param1", "children"),
-          Input("boolCategoryRepartition", "on"),
+@callback(Output("parametersItem1", "children"),
           Input("reset", "n_clicks"),
           Input("CRP_reset", "n_clicks"))
 def ParametersTabUpdating(*args):
-    return categoryRepartitionParameters if args[0] else CRP_default
+    if args[0] or args[1]:
+        return parametersItem1
+    else:
+        return parametersItem1
 
 
-@callback(Output("param2", "children"),
-          Input("SDO_bool", "on"),
+@callback(Output("parametersItem2", "children"),
           Input("reset", "n_clicks"),
-          Input("SDO_reset", "n_clicks")
-          )
+          Input("SDO_reset", "n_clicks"))
 def ParametersTabUpdating(*args):
-    return studiesDateOverviewParameters if args[0] else SDO_default
+    if args[0] or args[1]:
+        return parametersItem2
+    else:
+        return parametersItem2

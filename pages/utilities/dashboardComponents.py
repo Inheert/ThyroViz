@@ -10,6 +10,7 @@ import plotly.graph_objects as go
 
 from pages.utilities.const import *
 from pages.utilities.helpers import category
+from pages.utilities.dashboardParameters import *
 
 topCard1 = \
     dbc.CardGroup(
@@ -221,30 +222,9 @@ lightStatistics = \
                 class_name="card mb-4 border-1",
                 style={"backgroundColor": "#fdfdfd",
                        "borderRadius": "15px"}
-            )
+            ),
         ]
     )
-
-DEPRECATED_leftCategoryCard = \
-    [
-        dbc.Card(
-            dbc.CardBody(
-                [
-                    html.H6(f"{category.loc[x]['category']}",
-                            className="card-title",
-                            id=f"title-{category.loc[x]['category']}"),
-                    html.P(
-                        f"{category.loc[x]['nct_id']}%"
-                    ),
-                    dbc.Button(children="Select",
-                               id=f"button-{category.loc[x]['category']}",
-                               color="primary",
-                               outline=True)
-                ],
-            ),
-            className="mb-1 shadow-sm"
-        ) for x in category.index
-    ]
 
 leftCategoryCard = \
     dcc.Tabs(id="leftSideTab",
@@ -285,6 +265,21 @@ leftCategoryCard = \
                          style=tab_style,
                          selected_style=tab_selected_style,
                          children=[
+                             dbc.Accordion(
+                                 always_open=True,
+                                 children=[
+                                     dbc.AccordionItem(
+                                         title="Category/Sub-category repartition",
+                                         id="parametersItem1",
+                                         children=parametersItem1
+                                     ),
+                                     dbc.AccordionItem(
+                                         title="Studies overview based on date",
+                                         id="parametersItem2",
+                                         children=parametersItem2
+                                     )
+                                 ]
+                             ),
                              html.Div(id="param1"),
                              html.Div(id="param2"),
                          ]),
@@ -372,23 +367,6 @@ tabWithMultipleCharts = \
                                                  "displayModeBar": False
                                              }
                                          ),
-                                         dbc.Row(
-                                             [
-                                                 dbc.Col(
-                                                     dash_daq.BooleanSwitch(
-                                                         id="boolCategoryRepartition",
-                                                         on=False,
-                                                         color="#0D6EFD"),
-                                                     style={
-                                                         "display": "flex",
-                                                         "alignItems": "center",
-                                                         "justifyContent": "right",
-                                                         "horizontalAlign": "center",
-                                                         "marginLeft": "3vh"
-                                                     }
-                                                 )
-                                             ]
-                                         )
                                      ]
                                      ),
 
@@ -436,10 +414,6 @@ studiesDateOverview = \
                                         'displayModeBar': False,
                                     },
                                 ),
-                                dash_daq.BooleanSwitch(
-                                    id="SDO_bool",
-                                    on=False,
-                                    color="#0D6EFD"),
                             ]
                         ),
                         dcc.Tab(
