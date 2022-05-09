@@ -76,8 +76,9 @@ layout = html.Div(
                                         dbc.Row(
                                             [
                                                 dbc.Col(
-                                                    barPlotByStudiesType,
-                                                    width="auto"
+                                                    [
+                                                        lightStatistics
+                                                    ]
                                                 ),
                                                 dbc.Col(
                                                     [
@@ -88,7 +89,7 @@ layout = html.Div(
                                                                     style={
                                                                         "display": "flex",
                                                                         "alignItems": "center",
-                                                                        "justifyContent": "center",
+                                                                        "justifyContent": "right",
                                                                         "horizontalAlign": "center",
                                                                     },
                                                                     width=True
@@ -105,7 +106,7 @@ layout = html.Div(
                                                                     style={
                                                                         "display": "flex",
                                                                         "alignItems": "top",
-                                                                        "justifyContent": "center",
+                                                                        "justifyContent": "right",
                                                                         "horizontalAlign": "center",
                                                                     },
                                                                     width=True
@@ -113,6 +114,10 @@ layout = html.Div(
                                                             ]
                                                         ),
                                                     ],
+                                                ),
+                                                dbc.Col(
+                                                    barPlotByStudiesType,
+                                                    width="auto"
                                                 ),
                                             ]
                                         ),
@@ -155,33 +160,7 @@ layout = html.Div(
                     [
                         dbc.Col(
                             [
-                                dash_table.DataTable(
-                                    id="datatable",
-                                    data=s_base.to_dict('records'),
-                                    columns=[{"name": i, "id": i} for i in
-                                             s_base[["nct_id", "category", "sub_category", "study_first_submitted_date",
-                                                     "primary_completion_date", "completion_date", "study_type",
-                                                     "overall_status", "study_phases", "minimum_age_num",
-                                                     "maximum_age_num"]].columns],
-                                    page_size=40,
-                                    filter_action="native",
-                                    sort_action="native",
-                                    row_selectable="single",
-                                    style_header={
-                                        'backgroundColor': "white"
-                                    },
-                                    style_data_conditional=[
-                                        {
-                                            'if': {'row_index': 'odd'},
-                                            'backgroundColor': 'rgb(223, 226, 232)',
-                                            'color': 'black'
-                                        },
-                                        {
-                                            'if': {'row_index': 'even'},
-                                            'backgroundColor': 'rgb(245, 249, 255)'
-                                        }
-                                    ]
-                                )
+                                studiesDatatable
                             ],
                             width=True,
                             style={
@@ -233,19 +212,6 @@ def OpenStudiesModal(data, n_clicks):
         return None, None
 
 
-# @callback(Output("studiesModal", "is_open"),
-#           Output("moreStudyInfo", "n_clicks"),
-#           Input("datatable", "selected_rows"),
-#           Input("moreStudyInfo", "n_clicks"),
-#           State("studiesModal", "is_open"))
-# def OpenStudyModal(row, n_clicks, is_open):
-#     if n_clicks and row:
-#         ModalStudiesInfo(row)
-#         print(s_base.loc[row])
-#         return not is_open, None
-#     return is_open, None
-
-
 @callback(Output("test", "children"),
           Input("datatable", "selected_rows"))
 def test(selected):
@@ -294,12 +260,72 @@ THIS CALLBACK IS USED TO UPDATES ALL TEXT COMPONENT
 @callback(Output("title", "children"),
           Output("pieTab1", "label"),
           Output("pieTab2", "label"),
-          Input("selected-card", "data"))
+          Input("selected-card", "data"),)
 def TextUpdate(data):
     if data in all_category:
         return data, "Sub-category repartition", "Sub-category repartition by studies type"
     else:
         return "Overview", "Category repartition", "Category repartition by studies type"
+
+
+"""
+########################################################################################################################
+
+########################################################################################################################
+"""
+@callback(Output("card1Output1", "children"),
+          Output("card1Output2", "children"),
+          Input("card1Input1", "value"),
+          Input("card1Input2", "value"),
+          Input("selected-card", "data"),
+          )
+def CardStatUpdate(firstYear, secondYear, data):
+    if data is None:
+        df = s_base[["nct_id", "study_first_submitted_date"]].copy()
+    else:
+        df = s_base[s_base["category"] == data][["nct_id", "study_first_submitted_date"]].copy()
+
+    now = datetime.now()
+    if firstYear == datetime.now().year or secondYear == datetime.now().year:
+        actualYear = df[(df["study_first_submitted_date"] >= datetime(firstYear, 1, 1)) & (df["study_first_submitted_date"] <= datetime(firstYear, now.month, now.day))].shape[0]
+        pastYear = df[(df["study_first_submitted_date"] >= datetime(secondYear, 1, 1)) & (df["study_first_submitted_date"] <= datetime(secondYear, now.month, now.day))].shape[0]
+    else:
+        actualYear = df[(df["study_first_submitted_date"] >= datetime(firstYear, 1, 1)) & (df["study_first_submitted_date"] <= datetime(firstYear, 12, 30))].shape[0]
+        pastYear = df[(df["study_first_submitted_date"] >= datetime(secondYear, 1, 1)) & (df["study_first_submitted_date"] <= datetime(secondYear, 12, 30))].shape[0]
+
+    variation = round(((actualYear-pastYear)/pastYear)*100, 2)
+
+    if variation > 0:
+        return html.Div(className="bi bi-chevron-up",
+                        style={
+                            "fontSize": 20,
+                            "color": "#2CEC47"
+                        }), \
+               html.H3(f"{variation}%",
+                       style={
+                           "color": "#2CEC47"
+                       })
+    elif variation < 0:
+        return html.Div(className="bi bi-chevron-down",
+                        style={
+                            "fontSize": 20,
+                            "color": "#F50C0C"
+                        }), \
+               html.H3(f"{variation}%",
+                       id="card1Output2",
+                       style={
+                           "color": "#F50C0C"
+                       })
+    else:
+        return html.Div(className="bi bi-dash-lg",
+                        style={
+                            "fontSize": 20,
+                        }), \
+               html.H3(f"{variation}%",
+                       id="card1Output2",
+                       style={
+                           "color": "black"
+                       })
 
 
 """

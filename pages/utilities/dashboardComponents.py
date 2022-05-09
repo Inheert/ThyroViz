@@ -5,6 +5,7 @@ import pandas as pd
 from dash import html, dcc, dash_table
 import plotly.express as px
 from geopy.geocoders import Nominatim
+from geopy.exc import GeocoderTimedOut
 import plotly.graph_objects as go
 
 from pages.utilities.const import *
@@ -99,6 +100,131 @@ topCard4 = \
         className="mt-4 shadow",
     )
 
+lightStatistics = \
+    html.Div(
+        [
+            dbc.Card(
+                dbc.CardBody(
+                    [
+                        dbc.Row(
+                            [
+                                html.P("Number of new studies by year"),
+                                html.Hr()
+                            ],
+                        ),
+                        dbc.Row(
+                            [
+                                dbc.Col(
+                                    html.Div(
+                                        id="card1Output1",
+                                        style={
+                                            "fontSize": 20
+                                        },
+                                    ),
+                                    width="auto",
+                                    style={
+                                        "display": "flex",
+                                        "alignItems": "center",
+                                        "justifyContent": "left",
+                                    }
+                                ),
+                                dbc.Col(
+                                    html.H3('-- %',
+                                            id="card1Output2",
+                                            ),
+                                    width="auto"
+                                ),
+                            ]
+                        ),
+                        dbc.Row(
+                            [
+                                dbc.Col(
+                                    dash_daq.NumericInput(
+                                        id="card1Input1",
+                                        value=2022,
+                                        min=1999,
+                                        max=datetime.now().year,
+                                        size=65
+                                    ),
+                                    width="auto",
+                                    style={
+                                    }
+                                ),
+                                dbc.Col(
+                                    html.P("compared to: ",
+                                           style={
+                                               "verticalAlign": "bottom",
+                                               "alignItems": "end"
+                                           }),
+                                    width="auto",
+                                    style={
+                                        "marginLeft": "-10px",
+                                        "marginRight": "-10px",
+                                        "display": "flex",
+                                        "alignItems": "end",
+                                        "justifyContent": "left",
+                                    }
+                                ),
+                                dbc.Col(
+                                    dash_daq.NumericInput(
+                                        id="card1Input2",
+                                        value=2021,
+                                        min=1999,
+                                        max=datetime.now().year,
+                                        size=65
+                                    ),
+                                    width="auto",
+                                    style={
+                                    }
+                                ),
+                                dbc.Col(
+                                    [
+                                        html.Div(
+                                            className="bi bi-question-circle",
+                                            id="cardInfo1",
+                                            style={
+                                                "fontSize": 15
+                                            }
+                                        ),
+                                        dbc.Popover(
+                                            dbc.PopoverBody(
+                                                children="Compare the new studies this year to N-X\n"
+                                                         "(N is the actual year, X is the selected number)."
+                                                         "\n\n"
+                                                         "To calculate this field we do a evolution rate.\n"
+                                                         "With: starting value: first box\n"
+                                                         "            arrival value: second box"
+                                                         "\n\n"
+                                                         "If any of the selections is equal to actual year\n"
+                                                         "then the studies taken into account have a date\n"
+                                                         "less than or equal to the current day and month.",
+                                                style={
+                                                    "whiteSpace": 'pre'
+                                                }
+                                            ),
+                                            target="cardInfo1",
+                                            body=True,
+                                            trigger="hover"
+                                        )
+                                    ]
+                                    ,
+                                    width="auto",
+                                    style={
+                                        "display": "flex",
+                                        "alignItems": "center",
+                                    }
+                                )
+                            ]
+                        ),
+                    ]
+                ),
+                class_name="card mb-4 border-1",
+                style={"backgroundColor": "#fdfdfd",
+                       "borderRadius": "15px"}
+            )
+        ]
+    )
+
 DEPRECATED_leftCategoryCard = \
     [
         dbc.Card(
@@ -150,7 +276,7 @@ leftCategoryCard = \
                                      "backgroundColor": "rgba(0,0,0,0)"
                                  }
                              ) for x in category.index
-                         ]
+                         ],
                          ),
 
                  dcc.Tab(label="Parameters",
@@ -163,9 +289,6 @@ leftCategoryCard = \
                              html.Div(id="param2"),
                          ]),
              ],
-             style={
-                 "width": "300px"
-             }
              )
 
 topAnimatedBanner = \
@@ -346,7 +469,7 @@ def ModalStudiesInfo(row, isOpen):
     inv = investigators[investigators["nct_id"] == row["nct_id"][0]].__deepcopy__()
     inv["city_country"] = inv[["city", "country"]].agg(", ".join, axis=1)
 
-    geoloc = Nominatim(user_agent="ThyroResearch")
+    geoloc = Nominatim(user_agent="ThyroResearch", timeout=3)
 
     inv["lat"] = inv["city_country"].apply(lambda x: geoloc.geocode(x).latitude)
     inv["long"] = inv["city_country"].apply(lambda x: geoloc.geocode(x).longitude)
@@ -512,3 +635,33 @@ def ModalStudiesInfo(row, isOpen):
         )
 
     return layout
+
+
+studiesDatatable = \
+    dash_table.DataTable(
+        id="datatable",
+        data=s_base.to_dict('records'),
+        columns=[{"name": i, "id": i} for i in
+                 s_base[["nct_id", "category", "sub_category", "study_first_submitted_date",
+                         "primary_completion_date", "completion_date", "study_type",
+                         "overall_status", "study_phases", "minimum_age_num",
+                         "maximum_age_num"]].columns],
+        page_size=40,
+        filter_action="native",
+        sort_action="native",
+        row_selectable="single",
+        style_header={
+            'backgroundColor': "white"
+        },
+        style_data_conditional=[
+            {
+                'if': {'row_index': 'odd'},
+                'backgroundColor': 'rgb(223, 226, 232)',
+                'color': 'black'
+            },
+            {
+                'if': {'row_index': 'even'},
+                'backgroundColor': 'rgb(245, 249, 255)'
+            }
+        ]
+    )

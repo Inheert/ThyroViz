@@ -43,7 +43,7 @@ sidebar = \
             dbc.Button(">", id="slideMenuButton"),
             dbc.Offcanvas(
                 id="slideMenu",
-                is_open=True,
+                is_open=False,
                 style={
                     "width": "22rem",
                     "backgroundColor": "#f8f9fa",
