@@ -641,7 +641,7 @@ studiesDatatable = \
                     [
                         dash_table.DataTable(
                             id="datatable",
-                            data=s_base.to_dict('records'),
+                            data=s_base[s_base["category"] == "Thyroid neoplasms"].to_dict('records'),
                             columns=[{"name": i, "id": i} for i in
                                      s_base[["nct_id", "category", "sub_category",
                                              "study_type", "overall_status", "observational_model",
@@ -673,7 +673,7 @@ studiesDatatable = \
                     style={
                         "display": "flex",
                         "alignItems": "center",
-                        "justifyContent": "right",
+                        "justifyContent": "left",
                         "horizontalAlign": "center",
                         "marginLeft": "3vh"
                     }

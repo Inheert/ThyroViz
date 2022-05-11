@@ -122,10 +122,9 @@ layout = html.Div(
                                             ]
                                         ),
                                         dbc.Row(
-                                            studiesDatatable
-                                        ),
-                                        dbc.Row(
-
+                                            [
+                                                dbc.Col(id="investigators_datatable")
+                                            ]
                                         )
                                     ]
                                 )
@@ -144,6 +143,10 @@ layout = html.Div(
                         "marginTop": "25px"
                     }
                 ),
+                dbc.Row(
+                    studiesDatatable
+                ),
+
                 dcc.Store(id="studyIndex"),
                 html.Div(
                     ModalStudiesInfo([0], False),
@@ -160,6 +163,7 @@ layout = html.Div(
         # "overflow": "scroll"
     }
 )
+
 
 @callback(Output("studyIndex", "data"),
           Input("datatable", "selected_rows"))
@@ -226,7 +230,7 @@ THIS CALLBACK IS USED TO UPDATES ALL TEXT COMPONENT
 @callback(Output("title", "children"),
           Output("pieTab1", "label"),
           Output("pieTab2", "label"),
-          Input("selected-card", "data"),)
+          Input("selected-card", "data"), )
 def TextUpdate(data):
     if data in all_category:
         return data, "Sub-category repartition", "Sub-category repartition by studies type"
@@ -239,6 +243,8 @@ def TextUpdate(data):
 
 ########################################################################################################################
 """
+
+
 @callback(Output("card1Output1", "children"),
           Output("card1Output2", "children"),
           Input("card1Input1", "value"),
@@ -253,13 +259,17 @@ def CardStatUpdate(firstYear, secondYear, data):
 
     now = datetime.now()
     if firstYear == datetime.now().year or secondYear == datetime.now().year:
-        actualYear = df[(df["study_first_submitted_date"] >= datetime(firstYear, 1, 1)) & (df["study_first_submitted_date"] <= datetime(firstYear, now.month, now.day))].shape[0]
-        pastYear = df[(df["study_first_submitted_date"] >= datetime(secondYear, 1, 1)) & (df["study_first_submitted_date"] <= datetime(secondYear, now.month, now.day))].shape[0]
+        actualYear = df[(df["study_first_submitted_date"] >= datetime(firstYear, 1, 1)) & (
+                df["study_first_submitted_date"] <= datetime(firstYear, now.month, now.day))].shape[0]
+        pastYear = df[(df["study_first_submitted_date"] >= datetime(secondYear, 1, 1)) & (
+                df["study_first_submitted_date"] <= datetime(secondYear, now.month, now.day))].shape[0]
     else:
-        actualYear = df[(df["study_first_submitted_date"] >= datetime(firstYear, 1, 1)) & (df["study_first_submitted_date"] <= datetime(firstYear, 12, 30))].shape[0]
-        pastYear = df[(df["study_first_submitted_date"] >= datetime(secondYear, 1, 1)) & (df["study_first_submitted_date"] <= datetime(secondYear, 12, 30))].shape[0]
+        actualYear = df[(df["study_first_submitted_date"] >= datetime(firstYear, 1, 1)) & (
+                df["study_first_submitted_date"] <= datetime(firstYear, 12, 30))].shape[0]
+        pastYear = df[(df["study_first_submitted_date"] >= datetime(secondYear, 1, 1)) & (
+                df["study_first_submitted_date"] <= datetime(secondYear, 12, 30))].shape[0]
 
-    variation = round(((actualYear-pastYear)/pastYear)*100, 2)
+    variation = round(((actualYear - pastYear) / pastYear) * 100, 2)
 
     if variation > 0:
         return html.Div(className="bi bi-chevron-up",
@@ -373,7 +383,6 @@ THIS CALLBACK IS USED TO UPDATE THE PIE CHART FROM THE "NO FILTER" TAB
           Input("CRP_maxAge", "value"),
           )
 def pieNoFilterUpdate(data, s_type, s_status, minAge, maxAge, *args):
-
     df = GetSubCategoryProportion(data, s_type, s_status, minAge, maxAge)
     fig = go.Figure(data=[go.Pie(
         labels=df["view"],
@@ -542,3 +551,47 @@ def ParametersTabUpdating(*args):
         return parametersItem2
     else:
         return parametersItem2
+
+
+@callback(Output("investigators_datatable", "children"),
+          Input("selected-card", "data"))
+def SponsorsDatatableUpdating(data):
+    df = s_base[s_base["category"] == data] if data in all_category else s_base
+    inv = investigators[investigators["nct_id"].isin(df.nct_id)]
+
+    # count = inv[["name", "nct_id"]].groupby("name").count().reset_index()
+
+    table = \
+        dash_table.DataTable(
+            id="datatable",
+            data=inv.to_dict('records'),
+            columns=[{"name": i, "id": i} for i in
+                     inv[["name", "city", "state",
+                          "zip", "country", "continent"]].columns],
+            page_size=10,
+            filter_action="native",
+            sort_action="native",
+            style_cell={
+                "maxWidth": 150,
+                "width": 150
+            },
+            style_header={
+                'backgroundColor': "#0D6986",
+                "color": "white",
+                "fontWeight": 900,
+                "fontSize": "12px"
+            },
+            style_data_conditional=[
+                {
+                    'if': {'row_index': 'odd'},
+                    'backgroundColor': 'rgb(223, 226, 232)',
+                    'color': 'black'
+                },
+                {
+                    'if': {'row_index': 'even'},
+                    'backgroundColor': 'rgb(245, 249, 255)'
+                }
+            ]
+        )
+
+    return table
