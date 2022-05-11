@@ -121,6 +121,12 @@ layout = html.Div(
                                                 ),
                                             ]
                                         ),
+                                        dbc.Row(
+                                            studiesDatatable
+                                        ),
+                                        dbc.Row(
+
+                                        )
                                     ]
                                 )
                             ],
@@ -136,44 +142,6 @@ layout = html.Div(
                     style={
                         "margin": "auto",
                         "marginTop": "25px"
-                    }
-                ),
-                dbc.Row(
-                    [
-                        dbc.Col(
-                            [
-                                dbc.Button(
-                                    id="moreStudyInfo",
-                                    children="More informations"
-                                )
-                            ],
-                            style={
-                                "marginLeft": "27px"
-                            }
-                        ),
-                    ],
-                    style={
-                        "marginTop": "25px"
-                    }
-                ),
-                dbc.Row(
-                    [
-                        dbc.Col(
-                            [
-                                studiesDatatable
-                            ],
-                            width=True,
-                            style={
-                                "display": "flex",
-                                "alignItems": "center",
-                                "justifyContent": "center",
-                                "horizontalAlign": "center",
-                                "marginLeft": "3vh"
-                            }
-                        )
-                    ],
-                    style={
-                        "marginTop": "10px"
                     }
                 ),
                 dcc.Store(id="studyIndex"),
@@ -405,7 +373,7 @@ THIS CALLBACK IS USED TO UPDATE THE PIE CHART FROM THE "NO FILTER" TAB
           Input("CRP_maxAge", "value"),
           )
 def pieNoFilterUpdate(data, s_type, s_status, minAge, maxAge, *args):
-    print(s_type, s_status, minAge, maxAge)
+
     df = GetSubCategoryProportion(data, s_type, s_status, minAge, maxAge)
     fig = go.Figure(data=[go.Pie(
         labels=df["view"],

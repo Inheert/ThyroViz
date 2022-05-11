@@ -278,7 +278,7 @@ leftCategoryCard = \
                                          id="parametersItem2",
                                          children=parametersItem2
                                      )
-                                 ]
+                                 ],
                              ),
                              html.Div(id="param1"),
                              html.Div(id="param2"),
@@ -478,7 +478,8 @@ def ModalStudiesInfo(row, isOpen):
         dbc.Modal(
             [
                 dbc.ModalHeader(row.nct_id),
-                dbc.ModalTitle(row.official_title if row.official_title[0] is not None else row.brief_title,
+                dbc.ModalTitle(dcc.Link(children=f"{row.official_title[0]}", href=df.URL.unique()[0], target="_blank") if row.official_title[0] is not None else dcc.Link(children=f"{row.brief_title[0]}", href=df.URL.unique()[0], target="_blank"),
+                               id="modalTitle",
                                style={
                                    "fontSize": '25px',
                                    "fontWeight": "bold",
@@ -612,30 +613,81 @@ def ModalStudiesInfo(row, isOpen):
 
 
 studiesDatatable = \
-    dash_table.DataTable(
-        id="datatable",
-        data=s_base.to_dict('records'),
-        columns=[{"name": i, "id": i} for i in
-                 s_base[["nct_id", "category", "sub_category", "study_first_submitted_date",
-                         "primary_completion_date", "completion_date", "study_type",
-                         "overall_status", "study_phases", "minimum_age_num",
-                         "maximum_age_num"]].columns],
-        page_size=40,
-        filter_action="native",
-        sort_action="native",
-        row_selectable="single",
-        style_header={
-            'backgroundColor': "white"
-        },
-        style_data_conditional=[
-            {
-                'if': {'row_index': 'odd'},
-                'backgroundColor': 'rgb(223, 226, 232)',
-                'color': 'black'
-            },
-            {
-                'if': {'row_index': 'even'},
-                'backgroundColor': 'rgb(245, 249, 255)'
+    [
+        dbc.Row(
+            [
+                dbc.Col(
+                    [
+                        dbc.Button(
+                            id="moreStudyInfo",
+                            children="More informations"
+                        )
+                    ],
+                    style={
+                        "display": "flex",
+                        "alignItems": "center",
+                        "justifyContent": "left",
+                        "marginLeft": "16vh"
+                    }
+                ),
+            ],
+            style={
+                "marginTop": "25px"
             }
+        ),
+        dbc.Row(
+            [
+                dbc.Col(
+                    [
+                        dash_table.DataTable(
+                            id="datatable",
+                            data=s_base.to_dict('records'),
+                            columns=[{"name": i, "id": i} for i in
+                                     s_base[["nct_id", "category", "sub_category",
+                                             "study_type", "overall_status", "observational_model",
+                                             "intervention_model", "time_perspective"]].columns],
+                            page_size=10,
+                            filter_action="native",
+                            sort_action="native",
+                            row_selectable="single",
+                            style_header={
+                                'backgroundColor': "#0D6986",
+                                "color": "white",
+                                "fontWeight": 900,
+                                "fontSize": "12px"
+                            },
+                            style_data_conditional=[
+                                {
+                                    'if': {'row_index': 'odd'},
+                                    'backgroundColor': 'rgb(223, 226, 232)',
+                                    'color': 'black'
+                                },
+                                {
+                                    'if': {'row_index': 'even'},
+                                    'backgroundColor': 'rgb(245, 249, 255)'
+                                }
+                            ]
+                        )
+                    ],
+                    width=True,
+                    style={
+                        "display": "flex",
+                        "alignItems": "center",
+                        "justifyContent": "right",
+                        "horizontalAlign": "center",
+                        "marginLeft": "3vh"
+                    }
+                )
+            ],
+            style={
+                "marginTop": "10px"
+            }
+        )
+    ]
+
+sponsorsView = \
+    html.Div(
+        [
+
         ]
     )

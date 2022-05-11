@@ -54,7 +54,7 @@ def AactRequestSQL(request=None, request_source="static", dataframe=None):
                 text += ", "
 
         text = f"({text})"
-
+        print(text)
         sql_request = f"""SELECT *
                       FROM {'sponsors' if request == 'sponsors' else 'facilities'}
                       WHERE LOWER(nct_id) in {text}"""

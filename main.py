@@ -40,7 +40,7 @@ CONTENT_STYLE = {
 sidebar = \
     html.Div(
         [
-            dbc.Button(">", id="slideMenuButton"),
+            dbc.Button(">", id="slideMenuButton", style={"position": "fixed"}),
             dbc.Offcanvas(
                 id="slideMenu",
                 is_open=False,

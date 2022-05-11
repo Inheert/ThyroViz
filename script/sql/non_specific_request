@@ -1,14 +1,16 @@
-SELECT s.nct_id, bc.downcase_mesh_term, s.official_title, s.brief_title, c.names AS all_conditions, s.study_first_submitted_date, s.primary_completion_date, s.completion_date, s.study_type, s.overall_status, s.phase AS study_phases, s.source AS funded_bys, ap.names AS sponsors_name, af.names as investigators, ait.names AS intervention_types, ac.names AS location, cv.minimum_age_num, cv.minimum_age_unit, cv.maximum_age_num, cv.maximum_age_unit
+SELECT s.nct_id, bc.downcase_mesh_term, s.official_title, s.brief_title, c.names AS all_conditions, s.study_first_submitted_date, s.primary_completion_date, s.completion_date, s.enrollment, d.observational_model, d.intervention_model, d.time_perspective, s.study_type, s.overall_status, s.phase AS study_phases, s.source AS funded_bys, ap.names AS sponsors_name, af.names as investigators, ait.names AS intervention_types, ac.names AS location, cv.minimum_age_num, cv.minimum_age_unit, cv.maximum_age_num, cv.maximum_age_unit
 FROM studies AS s
 
 LEFT JOIN browse_conditions AS bc ON s.nct_id = bc.nct_id
-LEFT JOIN all_browse_conditions AS abc ON s.nct_id = abc.nct_id
 LEFT JOIN all_conditions AS c ON s.nct_id = c.nct_id
 LEFT JOIN all_sponsors AS ap ON s.nct_id = ap.nct_id
 LEFT JOIN all_facilities AS af ON s.nct_id = af.nct_id
 LEFT JOIN all_intervention_types AS ait ON s.nct_id = ait.nct_id
 LEFT JOIN all_countries AS ac ON s.nct_id = ac.nct_id
+LEFT JOIN designs as d ON s.nct_id = d.nct_id
 LEFT JOIN calculated_values AS cv ON s.nct_id = cv.nct_id
+
+
 
 WHERE
 (LOWER(s.study_type) = 'interventional' OR LOWER(s.study_type) = 'observational' OR LOWER(s.study_type) = 'observational [patient registry]')
