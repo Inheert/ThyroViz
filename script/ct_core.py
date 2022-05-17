@@ -84,7 +84,7 @@ def appLaunch():
 
     # Création des colonnes catégories et sous-catégories vides.
     df[["category", "sub_category"]] = None
-    print("catégorie")
+
     # Boucle sur les sous catégories des catégories du dictionnaire
     for category, sub_category in keys_word_dict.items():
 
@@ -112,7 +112,7 @@ def appLaunch():
         "Hypothyroidism": "Hypothyroidism",
         "Parathyroid diseases": "Parathyroid diseases"
     }
-    print("useless")
+
     for k, v in category_clean_dict.items():
         df["useless"] = [True if df.loc[x, "sub_category"] == v and df[(df["nct_id"] == df.loc[x, "nct_id"]) & (df["category"] == k)].shape[0] > 1 else False
                          for x in df["nct_id"].index]

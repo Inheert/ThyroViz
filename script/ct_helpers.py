@@ -5,6 +5,7 @@ import pandas as pd
 from script.ct_connection_infos import *
 from geopy.geocoders import Nominatim
 
+
 # FONCTIONS UTILISES
 def AactRequestSQL(request=None, request_source="static", dataframe=None):
     conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_HOST)
@@ -54,7 +55,6 @@ def AactRequestSQL(request=None, request_source="static", dataframe=None):
                 text += ", "
 
         text = f"({text})"
-        print(text)
         sql_request = f"""SELECT *
                       FROM {'sponsors' if request == 'sponsors' else 'facilities'}
                       WHERE LOWER(nct_id) in {text}"""
@@ -64,12 +64,11 @@ def AactRequestSQL(request=None, request_source="static", dataframe=None):
         df = pd.DataFrame(cur.fetchall(), columns=[i[0] for i in cur.description])
 
         if request == "sponsors":
-            # Dictionnaire contenant les infos utile à la classification des sponsors
+            # Dictionnaire contenant les infos utiles à la classification des sponsors
 
             df["new_class"] = None
 
             df["new_class"] = df["id"].apply(lambda x: GetGoodClass(x, df))
-            dataframe = df
         elif request == "investigators":
             df["continent"] = df["country"].apply(lambda x: GetGeoInfos(x, 'continent'))
             df["iso"] = df["country"].apply(lambda x: GetGeoInfos(x, 'Iso'))
@@ -82,15 +81,14 @@ def AactRequestSQL(request=None, request_source="static", dataframe=None):
     print("[SQL] Fin de connexion.")
 
 
-# Fonction permettant de transformer les colonnes possédant plusieurs valeurs (colonnes concaténés) en une list pour
+# Fonction permettant de transformer les colonnes possédant plusieurs valeurs (colonnes concaténées) en une list pour
 # réaliser un "explode" de la colonne
 def ColumnTransform(stringChain):
-
-    # Si le format de la chaine de caractère n'est pas un string dans ce cas on la renvoit tel quel dans la Dataframe
+    # Si le format de la chaine de caractère n'est pas un string dans ce cas, on le renvoie tel quel dans la Dataframe
     if type(stringChain) != str:
         return stringChain
     # Dans le cas contraire les "," sont remplacé par une chaine vide, la chaine est convertie en liste via un split
-    # du charactère "|"
+    # du character "|"
     else:
         stringChain = stringChain.split("|")
         return stringChain
@@ -136,7 +134,7 @@ def GetGeoInfos(rowCountry, key):
                       'Hong Kong': {'Continent': 'East Asia', 'Iso': 'HKG'},
                       'Hungary': {'Continent': 'Europe', 'Iso': 'HUN'},
                       'India': {'Continent': 'South Asia', 'Iso': 'IND'},
-                      'Indonesia': {'Continent': 'Southest Asia', 'Iso': 'IDN'},
+                      'Indonesia': {'Continent': 'Southeast Asia', 'Iso': 'IDN'},
                       'Iran': {'Continent': 'Middle East', 'Iso': 'IRN'},
                       'Iran, Islamic Republic of': {'Continent': 'Middle East', 'Iso': 'IRN'},
                       'Ireland': {'Continent': 'Europe', 'Iso': 'IRL'},
@@ -152,7 +150,7 @@ def GetGeoInfos(rowCountry, key):
                       'Lebanon': {'Continent': 'Middle East', 'Iso': 'LBN'},
                       'Lithuania': {'Continent': 'Europe', 'Iso': 'LTU'},
                       'Macedonia, The Former Yugoslav Republic of': {'Continent': 'Europe', 'Iso': 'MKD'},
-                      'Malaysia': {'Continent': 'Southest Asia', 'Iso': 'MYS'},
+                      'Malaysia': {'Continent': 'Southeast Asia', 'Iso': 'MYS'},
                       'Martinique': {'Continent': 'Central America', 'Iso': 'MTQ'},
                       'Mexico': {'Continent': 'North America', 'Iso': 'MEX'},
                       'Monaco': {'Continent': 'Europe', 'Iso': 'MCO'},
@@ -161,7 +159,7 @@ def GetGeoInfos(rowCountry, key):
                       'Norway': {'Continent': 'Europe', 'Iso': 'NOR'},
                       'Pakistan': {'Continent': 'South Asia', 'Iso': 'PAK'},
                       'Peru': {'Continent': 'South America', 'Iso': 'PER'},
-                      'Philippines': {'Continent': 'Southest Asia', 'Iso': 'PHL'},
+                      'Philippines': {'Continent': 'Southeast Asia', 'Iso': 'PHL'},
                       'Poland': {'Continent': 'Europe', 'Iso': 'POL'},
                       'Portugal': {'Continent': 'Europe', 'Iso': 'PRT'},
                       'Puerto Rico': {'Continent': 'Central America', 'Iso': 'PRI'},
@@ -173,7 +171,7 @@ def GetGeoInfos(rowCountry, key):
                       'Saudi Arabia': {'Continent': 'Middle East', 'Iso': 'SAU'},
                       'Scotland': {'Continent': 'Europe', 'Iso': 'GBR'},
                       'Serbia': {'Continent': 'Europe', 'Iso': 'SRB'},
-                      'Singapore': {'Continent': 'Southest Asia', 'Iso': 'SGP'},
+                      'Singapore': {'Continent': 'Southeast Asia', 'Iso': 'SGP'},
                       'Slovakia': {'Continent': 'Europe', 'Iso': 'SVK'},
                       'Slovenia': {'Continent': 'Europe', 'Iso': 'SVN'},
                       'South Africa': {'Continent': 'Africa', 'Iso': 'ZAF'},
@@ -182,7 +180,7 @@ def GetGeoInfos(rowCountry, key):
                       'Sweden': {'Continent': 'Europe', 'Iso': 'SWE'},
                       'Switzerland': {'Continent': 'Europe', 'Iso': 'CHE'},
                       'Taiwan': {'Continent': 'East Asia', 'Iso': 'TWN'},
-                      'Thailand': {'Continent': 'Southest Asia', 'Iso': 'THA'},
+                      'Thailand': {'Continent': 'Southeast Asia', 'Iso': 'THA'},
                       'Tunisia': {'Continent': 'Africa', 'Iso': 'TUN'},
                       'Turkey': {'Continent': 'Middle East', 'Iso': 'TUR'},
                       'Uganda': {'Continent': 'Africa', 'Iso': 'UGA'}, 'Ukraine': {'Continent': 'Europe', 'Iso': 'UKR'},
@@ -192,7 +190,7 @@ def GetGeoInfos(rowCountry, key):
                       'Uzbekistan': {'Continent': 'North Asia', 'Iso': 'UZB'},
                       'Venezuela': {'Continent': 'South America', 'Iso': 'VEN'}}
 
-    # Condition pour retirer un élement en particulier du dictionnaire
+    # Condition pour retirer un element en particulier du dictionnaire
     if key.lower() == "continent":
 
         if rowCountry in dico_continent:
@@ -206,11 +204,12 @@ def GetGeoInfos(rowCountry, key):
             return dico_continent[rowCountry]["Iso"]
 
     elif key.lower() == "geo":
-        rowCountry = rowCountry.replace("Korea, Republic of", "Republic of Korea").replace("D.F.", "DF").replace("Ã©", "é").replace("Dist", "District")
+        rowCountry = rowCountry.replace("Korea, Republic of", "Republic of Korea").replace("D.F.", "DF").replace("Ã©",
+                                                                                                                 "é").replace(
+            "Dist", "District")
         rowCountry = rowCountry.split(" ")[0] if "cedex" in rowCountry.lower() else rowCountry
-        print(rowCountry)
 
-        geolocator = Nominatim(user_agent="ThyroResearch")
+        geolocator = Nominatim(user_agent="ThyroResearch", timeout=3)
 
         loc = geolocator.geocode(rowCountry)
         return [loc.latitude, loc.longitude]
@@ -241,10 +240,10 @@ def CategoryAge(categoryRange):
         if rang in range_dictionary["thirdRange"][0]:
             range_dictionary["thirdRange"][1] = True
 
-    if range_dictionary["firstRange"][1] == True and range_dictionary["thirdRange"][1] == True:
+    if range_dictionary["firstRange"][1] and range_dictionary["thirdRange"][1]:
         range_dictionary["secondRange"][1] = True
 
-    # Création de la chaine de caractère finale (chaine concaténé)
+    # Création de la chaine de caractère finale (chaine concaténée)
     for key, value in range_dictionary.items():
         if value[1]:
             returnString += value[2] + "|"
@@ -258,14 +257,14 @@ def GetAllThyroidConditions(x):
     good_condition = []
     x = x.strip()
     all_conditions = x.split("|")
-    all_conditions = list((map(lambda x: x.lower(), all_conditions)))
-    all_conditions = list((map(lambda x: x.replace("\xa0", " "), all_conditions)))
+    all_conditions = list((map(lambda y: x.lower(), all_conditions)))
+    all_conditions = list((map(lambda y: x.replace("\xa0", " "), all_conditions)))
 
     for category, sub_category in keys_word_dict.items():
         # boucle sur les listes des sous catégories du dictionnaire
         for sub_key, key_word_list in sub_category.items():
-            key_word_list = list((map(lambda x: x.lower(), key_word_list)))
-            key_word_list = list((map(lambda x: x.replace("\xa0", " "), key_word_list)))
+            key_word_list = list((map(lambda y: x.lower(), key_word_list)))
+            key_word_list = list((map(lambda y: x.replace("\xa0", " "), key_word_list)))
 
             for condition in all_conditions:
                 if condition in key_word_list:

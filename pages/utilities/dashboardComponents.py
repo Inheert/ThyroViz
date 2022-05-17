@@ -101,7 +101,7 @@ topCard4 = \
         className="mt-4 shadow",
     )
 
-lightStatistics = \
+lightStatistic1 = \
     html.Div(
         [
             dbc.Card(
@@ -135,6 +135,16 @@ lightStatistics = \
                                             ),
                                     width="auto"
                                 ),
+                                dbc.Col(
+                                    html.Plaintext('--',
+                                                   id="card1Output3"),
+                                    width="auto",
+                                    style={
+                                        "display": "flex",
+                                        "alignItems": "end",
+                                        "justifyContent": "left",
+                                    }
+                                )
                             ]
                         ),
                         dbc.Row(
@@ -175,8 +185,6 @@ lightStatistics = \
                                         size=65
                                     ),
                                     width="auto",
-                                    style={
-                                    }
                                 ),
                                 dbc.Col(
                                     [
@@ -224,6 +232,88 @@ lightStatistics = \
                        "borderRadius": "15px"}
             ),
         ]
+    )
+
+lightStatistic2 = \
+    html.Div(
+        dbc.Card(
+            dbc.CardBody(
+                [
+                    dbc.Row(
+                        [
+                            html.P("Studies repartition by sponsors class"),
+                            html.Hr()
+                        ]
+                    ),
+                    dbc.Row(
+                        [
+                            dbc.Col(
+                                html.Div(
+                                    id="card2Output1",
+                                    style={
+                                        "fontSize": 20
+                                    },
+                                ),
+                                width="auto",
+                                style={
+                                    "display": "flex",
+                                    "alignItems": "center",
+                                    "justifyContent": "left",
+                                }
+                            ),
+                            dbc.Col(
+                                html.H3('-- %',
+                                        id="card2Output2",
+                                        ),
+                                width="auto"
+                            ),
+                            dbc.Col(
+                                html.Plaintext('--',
+                                               id="card2Output3"),
+                                width="auto",
+                                style={
+                                    "display": "flex",
+                                    "alignItems": "end",
+                                    "justifyContent": "left",
+                                }
+                            )
+                        ]
+                    ),
+                    dbc.Row(
+                        [
+                            dbc.Col(
+                                [
+                                    html.P("Sponsors class:",
+                                           style={
+                                               "verticalAlign": "bottom",
+                                               "alignItems": "end"
+                                           }
+                                           )
+                                ],
+                                width="auto",
+                                style={
+                                    "display": "flex",
+                                    "alignItems": "end",
+                                    "justifyContent": "left",
+                                }
+                            ),
+                            dbc.Col(
+                                [
+                                    dcc.Dropdown(
+                                        id="card2Input1",
+                                        options=[x for x in sponsors.new_class.unique()],
+                                        value="Industry"
+                                    )
+                                ]
+                            )
+                        ]
+                    )
+                ]
+            ),
+            class_name="card mb-4 border-1",
+            style={"backgroundColor": "#fdfdfd",
+                   "borderRadius": "15px"}
+        )
     )
 
 leftCategoryCard = \
@@ -478,13 +568,16 @@ def ModalStudiesInfo(row, isOpen):
         dbc.Modal(
             [
                 dbc.ModalHeader(row.nct_id),
-                dbc.ModalTitle(dcc.Link(children=f"{row.official_title[0]}", href=df.URL.unique()[0], target="_blank") if row.official_title[0] is not None else dcc.Link(children=f"{row.brief_title[0]}", href=df.URL.unique()[0], target="_blank"),
-                               id="modalTitle",
-                               style={
-                                   "fontSize": '25px',
-                                   "fontWeight": "bold",
-                                   "marginLeft": "5px"
-                               }),
+                dbc.ModalTitle(
+                    dcc.Link(children=f"{row.official_title[0]}", href=df.URL.unique()[0], target="_blank") if
+                    row.official_title[0] is not None else dcc.Link(children=f"{row.brief_title[0]}",
+                                                                    href=df.URL.unique()[0], target="_blank"),
+                    id="modalTitle",
+                    style={
+                        "fontSize": '25px',
+                        "fontWeight": "bold",
+                        "marginLeft": "5px"
+                    }),
                 dbc.ModalBody(
                     [
                         dbc.Row(

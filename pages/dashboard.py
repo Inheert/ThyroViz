@@ -77,7 +77,8 @@ layout = html.Div(
                                             [
                                                 dbc.Col(
                                                     [
-                                                        lightStatistics
+                                                        lightStatistic1,
+                                                        lightStatistic2
                                                     ]
                                                 ),
                                                 dbc.Col(
@@ -165,6 +166,53 @@ layout = html.Div(
 )
 
 
+@callback(Output("investigators_datatable", "children"),
+          Input("selected-card", "data"))
+def SponsorsDatatableUpdating(data):
+    df = s_base[s_base["category"] == data] if data in all_category else s_base
+    inv = investigators[investigators["nct_id"].isin(df.nct_id)]
+
+    # count = inv[["name", "nct_id"]].groupby("name").count().reset_index()
+
+    table = \
+        dash_table.DataTable(
+            id="datatable",
+            data=inv.to_dict('records'),
+            columns=[{"name": i, "id": i} for i in
+                     inv[["name", "city", "state",
+                          "zip", "country", "continent"]].columns],
+            page_size=10,
+            filter_action="native",
+            sort_action="native",
+            style_table={'overflowX': 'auto'},
+            style_cell={
+                'height': 'auto',
+                # all three widths are needed
+                'minWidth': '180px', 'width': '180px', 'maxWidth': '200px',
+                'whiteSpace': 'normal'
+            },
+            style_header={
+                'backgroundColor': "#0D6986",
+                "color": "white",
+                "fontWeight": 900,
+                "fontSize": "12px"
+            },
+            style_data_conditional=[
+                {
+                    'if': {'row_index': 'odd'},
+                    'backgroundColor': 'rgb(223, 226, 232)',
+                    'color': 'black'
+                },
+                {
+                    'if': {'row_index': 'even'},
+                    'backgroundColor': 'rgb(245, 249, 255)'
+                }
+            ]
+        )
+
+    return table
+
+
 @callback(Output("studyIndex", "data"),
           Input("datatable", "selected_rows"))
 def SelectedStudy(row):
@@ -245,8 +293,16 @@ def TextUpdate(data):
 """
 
 
+@callback(Output("card1Input1", "value"),
+          Output("card1Input2", "value"),
+          Input("reset", "n_clicks"))
+def ResetLightStats(reset):
+    return 2022, 2021
+
+
 @callback(Output("card1Output1", "children"),
           Output("card1Output2", "children"),
+          Output("card1Output3", "children"),
           Input("card1Input1", "value"),
           Input("card1Input2", "value"),
           Input("selected-card", "data"),
@@ -258,19 +314,15 @@ def CardStatUpdate(firstYear, secondYear, data):
         df = s_base[s_base["category"] == data][["nct_id", "study_first_submitted_date"]].copy()
 
     now = datetime.now()
-    if firstYear == datetime.now().year or secondYear == datetime.now().year:
-        actualYear = df[(df["study_first_submitted_date"] >= datetime(firstYear, 1, 1)) & (
-                df["study_first_submitted_date"] <= datetime(firstYear, now.month, now.day))].shape[0]
-        pastYear = df[(df["study_first_submitted_date"] >= datetime(secondYear, 1, 1)) & (
-                df["study_first_submitted_date"] <= datetime(secondYear, now.month, now.day))].shape[0]
-    else:
-        actualYear = df[(df["study_first_submitted_date"] >= datetime(firstYear, 1, 1)) & (
-                df["study_first_submitted_date"] <= datetime(firstYear, 12, 30))].shape[0]
-        pastYear = df[(df["study_first_submitted_date"] >= datetime(secondYear, 1, 1)) & (
-                df["study_first_submitted_date"] <= datetime(secondYear, 12, 30))].shape[0]
+    decision = firstYear == datetime.now().year or secondYear == datetime.now().year
+
+    actualYear = df[(df["study_first_submitted_date"] >= datetime(firstYear, 1, 1)) & (
+            df["study_first_submitted_date"] <= datetime(firstYear, now.month if decision else 12, now.day if decision else 30))].shape[0]
+    pastYear = df[(df["study_first_submitted_date"] >= datetime(secondYear, 1, 1)) & (
+            df["study_first_submitted_date"] <= datetime(secondYear, now.month if decision else 12, now.day if decision else 30))].shape[0]
 
     variation = round(((actualYear - pastYear) / pastYear) * 100, 2)
-
+    diff = actualYear - pastYear
     if variation > 0:
         return html.Div(className="bi bi-chevron-up",
                         style={
@@ -280,7 +332,11 @@ def CardStatUpdate(firstYear, secondYear, data):
                html.H3(f"{variation}%",
                        style={
                            "color": "#2CEC47"
-                       })
+                       }), \
+               html.Plaintext(f"+{diff} étude(s)",
+                              style={
+                                  "color": "#2CEC47"
+                              }),
     elif variation < 0:
         return html.Div(className="bi bi-chevron-down",
                         style={
@@ -291,7 +347,11 @@ def CardStatUpdate(firstYear, secondYear, data):
                        id="card1Output2",
                        style={
                            "color": "#F50C0C"
-                       })
+                       }), \
+               html.Plaintext(f"{diff} étude(s)",
+                              style={
+                                  "color": "#F50C0C"
+                              }),
     else:
         return html.Div(className="bi bi-dash-lg",
                         style={
@@ -301,7 +361,45 @@ def CardStatUpdate(firstYear, secondYear, data):
                        id="card1Output2",
                        style={
                            "color": "black"
-                       })
+                       }), \
+               html.Plaintext(f"--"),
+
+
+@callback(Output("card2Output1", "children"),
+          Output("card2Output2", "children"),
+          Output("card2Output3", "children"),
+          Input("card2Input1", "value"),
+          Input("selected-card", "data"))
+def CardStat2Update(sp_class, data):
+    if data in all_category:
+        df = s_base[s_base["category"] == data]
+    else:
+        df = s_base[["nct_id", "category"]]
+
+    sp = sponsors[sponsors["nct_id"].isin(df.nct_id)]
+    studiesCount = sp[sp["new_class"] == sp_class].shape[0]
+    repartition = round((studiesCount / sp.shape[0]) * 100, 2)
+
+    if sp_class == "University":
+        icon = "bi bi-mortarboard"
+    elif sp_class == "Health care Institution":
+        icon = "bi bi-hospital"
+    elif sp_class == "Industry":
+        icon = "bi bi-building"
+    elif sp_class == "Government Agency":
+        icon = "bi bi-bank"
+    elif sp_class == "Other":
+        icon = "bi bi-people"
+    else:
+        icon = None
+
+    return \
+        html.Div(className=icon,
+                 style={
+                     "fontSize": 20,
+                 }), \
+        html.H3(f"{repartition}%"), \
+        html.Plaintext(f"{studiesCount} études"),
 
 
 """
@@ -551,47 +649,3 @@ def ParametersTabUpdating(*args):
         return parametersItem2
     else:
         return parametersItem2
-
-
-@callback(Output("investigators_datatable", "children"),
-          Input("selected-card", "data"))
-def SponsorsDatatableUpdating(data):
-    df = s_base[s_base["category"] == data] if data in all_category else s_base
-    inv = investigators[investigators["nct_id"].isin(df.nct_id)]
-
-    # count = inv[["name", "nct_id"]].groupby("name").count().reset_index()
-
-    table = \
-        dash_table.DataTable(
-            id="datatable",
-            data=inv.to_dict('records'),
-            columns=[{"name": i, "id": i} for i in
-                     inv[["name", "city", "state",
-                          "zip", "country", "continent"]].columns],
-            page_size=10,
-            filter_action="native",
-            sort_action="native",
-            style_cell={
-                "maxWidth": 150,
-                "width": 150
-            },
-            style_header={
-                'backgroundColor': "#0D6986",
-                "color": "white",
-                "fontWeight": 900,
-                "fontSize": "12px"
-            },
-            style_data_conditional=[
-                {
-                    'if': {'row_index': 'odd'},
-                    'backgroundColor': 'rgb(223, 226, 232)',
-                    'color': 'black'
-                },
-                {
-                    'if': {'row_index': 'even'},
-                    'backgroundColor': 'rgb(245, 249, 255)'
-                }
-            ]
-        )
-
-    return table
