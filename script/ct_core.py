@@ -39,7 +39,6 @@ def appLaunch():
     df = pd.concat([df, non_specific])
     df.reset_index(inplace=True)
     df.drop(labels=["index"], axis=1, inplace=True)
-
     # Valeur par défaut "1" pour les lignes dont la colonne "minimum_age_unit" est égale à "Month"
     df["minimum_age_num"] = [1 if df["minimum_age_unit"][x] == "Month" else df["minimum_age_num"][x] for x in
                              df["minimum_age_unit"].index]
@@ -72,7 +71,7 @@ def appLaunch():
     # Explode de la dataframe + nettoyage et mise en forme de celle-ci
     df_explode = df_explode.explode("Thyroid conditions")
     df_explode = df_explode[df_explode["Thyroid conditions"].notna()]
-    df_explode["downcase_mesh_term"] = df_explode["Thyroid conditions"].apply(lambda x: x)
+    df_explode["downcase_mesh_term"] = df_explode["Thyroid conditions"]
 
     df = pd.concat([df, df_explode])
 
@@ -84,7 +83,7 @@ def appLaunch():
 
     # Création des colonnes catégories et sous-catégories vides.
     df[["category", "sub_category"]] = None
-
+    print("woa")
     # Boucle sur les sous catégories des catégories du dictionnaire
     for category, sub_category in keys_word_dict.items():
 
@@ -103,7 +102,7 @@ def appLaunch():
             df["sub_category"] = [sub_key if df.downcase_mesh_term.iloc[x] in key_word_list else df.sub_category.iloc[x]
                                   for
                                   x in df["downcase_mesh_term"].index]
-
+    print("giga long wsh")
     # Suppression des lignes dupliquées sur nct_id, category et sous-category
     df.drop_duplicates(subset=["nct_id", "category", "sub_category"], keep="last", inplace=True)
 

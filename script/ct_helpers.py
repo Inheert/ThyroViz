@@ -72,6 +72,7 @@ def AactRequestSQL(request=None, request_source="static", dataframe=None):
         elif request == "investigators":
             df["continent"] = df["country"].apply(lambda x: GetGeoInfos(x, 'continent'))
             df["iso"] = df["country"].apply(lambda x: GetGeoInfos(x, 'Iso'))
+            df["name"] = df["id"].apply(lambda x: FillNaWithSimilarRow(df, x, "name"))
 
         df.to_csv(f"{path_original}/temp_{request}.csv")
         print(f"[CSV- {request}] Données ajoutées !")
@@ -80,6 +81,23 @@ def AactRequestSQL(request=None, request_source="static", dataframe=None):
     conn.close()
     print("[SQL] Fin de connexion.")
 
+
+def FillNaWithSimilarRow(df, idx, column):
+    row = df[df["id"] == idx]
+
+    if idx == "43127570" or idx == 43127570:
+        print("FIND")
+        print(row["name"].iloc[0])
+        print(type(row["name"].iloc[0]))
+
+    if row["name"].iloc[0] is None:
+        print("None", type(idx))
+        dff = df[(df["city"] == row["city"].iloc[0]) & (df["country"] == row["country"].iloc[0]) & (~df[column].isnull())]
+        print(len(dff[column]))
+        return dff[column].iloc[0] if len(dff[column]) > 0 else None
+    else:
+        print("name", idx)
+        return row["name"].iloc[0]
 
 # Fonction permettant de transformer les colonnes possédant plusieurs valeurs (colonnes concaténées) en une list pour
 # réaliser un "explode" de la colonne
@@ -256,15 +274,12 @@ def CategoryAge(categoryRange):
 def GetAllThyroidConditions(x):
     good_condition = []
     x = x.strip()
-    all_conditions = x.split("|")
-    all_conditions = list((map(lambda y: x.lower(), all_conditions)))
-    all_conditions = list((map(lambda y: x.replace("\xa0", " "), all_conditions)))
+    all_conditions = x.replace("\xa0", " ").lower().split("|")
 
     for category, sub_category in keys_word_dict.items():
         # boucle sur les listes des sous catégories du dictionnaire
         for sub_key, key_word_list in sub_category.items():
-            key_word_list = list((map(lambda y: x.lower(), key_word_list)))
-            key_word_list = list((map(lambda y: x.replace("\xa0", " "), key_word_list)))
+            key_word_list = list((map(lambda y: y.lower().replace("\xa0", " "), key_word_list)))
 
             for condition in all_conditions:
                 if condition in key_word_list:

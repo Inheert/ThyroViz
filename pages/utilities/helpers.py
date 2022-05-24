@@ -78,6 +78,8 @@ def GetCategoryPercent(**kwargs):
 
     df = df.groupby(settings["groupby"]).count().reset_index().sort_values(by=settings["sortby"],
                                                                            ascending=settings["sortasc"])
+    division = df.nct_id.sum()
+
     df.reset_index(drop=True, inplace=True)
     df["nct_id"] = round((df["nct_id"] / division) * 100, 2)
     df["percent"] = df["nct_id"].apply(lambda x: f"{x}%")

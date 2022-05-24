@@ -12,6 +12,139 @@ from pages.utilities.const import *
 from pages.utilities.helpers import category
 from pages.utilities.dashboardParameters import *
 
+topCardNav1 = dbc.Nav(
+    [
+        dbc.NavItem(dbc.NavLink(
+            children=
+            dbc.CardGroup(
+                [
+                    dbc.Card(
+                        dbc.CardBody(
+                            [
+                                html.H1(f"{len(studies['nct_id'].unique())}",
+                                        className="card-title"),
+                                html.P("studies in progress", className="card-text"),
+                            ],
+                        ),
+                    ),
+                    dbc.Card(
+                        html.Div(className="bi bi-eye", style=card_icon),
+                        color="#247cfd",
+                        style={"maxWidth": 75},
+                    ),
+                ],
+                className="mt-4 shadow",
+            ),
+            active="exact",
+            href="/studies"
+        ),
+        )
+    ],
+    vertical=False,
+    fill=True
+)
+
+topCardNav2 = dbc.Nav(
+    [
+        dbc.NavItem(dbc.NavLink(
+            children=
+            dbc.CardGroup(
+                [
+                    dbc.Card(
+                        dbc.CardBody(
+                            [
+                                html.H1(
+                                    f"{studies[(studies['study_first_submitted_date'] >= f'{datetime.now().year}-{datetime.now().month - 1}') & (studies['study_first_submitted_date'] < f'{datetime.now().year}-{datetime.now().month}')].shape[0]}",
+                                    className="card-title"),
+                                html.P("new studies this month", className="card-text", ),
+                            ]
+                        )
+                    ),
+                    dbc.Card(
+                        html.Div(className="bi bi-clipboard2-plus", style=card_icon),
+                        color="#0D6EFD",
+                        style={"maxWidth": 75},
+                    ),
+                ],
+                className="mt-4 shadow",
+            ),
+            active="exact",
+            href="/studies"
+        ),
+        )
+    ],
+    vertical=False,
+    fill=True
+)
+
+topCardNav3 = dbc.Nav(
+    [
+        dbc.NavItem(dbc.NavLink(
+            children=
+            dbc.CardGroup(
+                [
+                    dbc.Card(
+                        dbc.CardBody(
+                            [
+                                html.H1(
+                                    f"{len(sponsors.name.unique())}",
+                                    className="card-title"),
+                                html.P("Number of sponsors",
+                                       className="card-text"),
+                            ]
+                        )
+                    ),
+                    dbc.Card(
+                        html.Div(className="bi bi-people", style=card_icon),
+                        color="#024ebf",
+                        style={"maxWidth": 75},
+                    ),
+                ],
+                className="mt-4 shadow",
+            ),
+            active="exact",
+            href="/sponsors"
+        ),
+        )
+    ],
+    vertical=False,
+    fill=True
+)
+
+topCardNav4 = dbc.Nav(
+    [
+        dbc.NavItem(dbc.NavLink(
+            children=
+            dbc.CardGroup(
+                [
+                    dbc.Card(
+                        dbc.CardBody(
+                            [
+                                html.H1(
+                                    f"{len(investigators.name.unique())}",
+                                    className="card-title"),
+                                html.P("Number of investigators",
+                                       className="card-text", ),
+                            ]
+                        )
+                    ),
+                    dbc.Card(
+                        html.Div(className="bi bi-clipboard2-plus", style=card_icon),
+                        color="#013684",
+                        style={"maxWidth": 75},
+                    ),
+                ],
+                className="mt-4 shadow",
+            ),
+            active="exact",
+            href="/investigators"
+        ),
+        )
+    ],
+    vertical=False,
+    fill=True
+)
+
 topCard1 = \
     dbc.CardGroup(
         [
@@ -117,11 +250,11 @@ lightStatistic1 = \
                             [
                                 dbc.Col(
                                     html.Div(
-                                        id="card1Output1",
                                         style={
                                             "fontSize": 20
                                         },
                                     ),
+                                    id="card1Output1",
                                     width="auto",
                                     style={
                                         "display": "flex",
@@ -131,18 +264,24 @@ lightStatistic1 = \
                                 ),
                                 dbc.Col(
                                     html.H3('-- %',
-                                            id="card1Output2",
                                             ),
-                                    width="auto"
-                                ),
-                                dbc.Col(
-                                    html.Plaintext('--',
-                                                   id="card1Output3"),
                                     width="auto",
+                                    id="card1Output2",
+                                ),
+                            ]
+                        ),
+                        dbc.Row(
+                            [
+                                dbc.Col(
+                                    html.Plaintext('--'),
+                                    width="auto",
+                                    id="card1Output3",
                                     style={
                                         "display": "flex",
                                         "alignItems": "end",
-                                        "justifyContent": "left",
+                                        "justifyContent": "center",
+                                        "marginTop": "-25px",
+                                        "marginLeft": "45px"
                                     }
                                 )
                             ]
@@ -162,7 +301,7 @@ lightStatistic1 = \
                                     }
                                 ),
                                 dbc.Col(
-                                    html.P("compared to: ",
+                                    html.P("to: ",
                                            style={
                                                "verticalAlign": "bottom",
                                                "alignItems": "end"

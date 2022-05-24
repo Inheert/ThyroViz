@@ -41,19 +41,19 @@ layout = html.Div(
                     # Cette section comporte les 4 cartes présentent en haut de page
                     [
                         dbc.Col(
-                            topCard1,
+                            topCardNav1,
                             width=True
                         ),
                         dbc.Col(
-                            topCard2,
+                            topCardNav2,
                             width=True
                         ),
                         dbc.Col(
-                            topCard3,
+                            topCardNav3,
                             width=True
                         ),
                         dbc.Col(
-                            topCard4,
+                            topCardNav4,
                             width=True
                         ), ]
                 ),
@@ -122,11 +122,6 @@ layout = html.Div(
                                                 ),
                                             ]
                                         ),
-                                        dbc.Row(
-                                            [
-                                                dbc.Col(id="investigators_datatable")
-                                            ]
-                                        )
                                     ]
                                 )
                             ],
@@ -155,8 +150,6 @@ layout = html.Div(
                 ),
 
                 dcc.Store(id="selected-card"),
-                dcc.Store(id="dataSliderButton",
-                          data=False),
             ],
         )
     ],
@@ -228,16 +221,6 @@ def OpenStudiesModal(data, n_clicks):
         return ModalStudiesInfo(data if data is not None else [0], True), None
     else:
         return None, None
-
-
-@callback(Output("test", "children"),
-          Input("datatable", "selected_rows"))
-def test(selected):
-    if selected is None:
-        return None
-    else:
-        return s_base.loc[selected]["nct_id"]
-
 
 """
 ########################################################################################################################
@@ -333,7 +316,7 @@ def CardStatUpdate(firstYear, secondYear, data):
                        style={
                            "color": "#2CEC47"
                        }), \
-               html.Plaintext(f"+{diff} étude(s)",
+               html.Plaintext(f"+{diff} études",
                               style={
                                   "color": "#2CEC47"
                               }),
@@ -348,7 +331,7 @@ def CardStatUpdate(firstYear, secondYear, data):
                        style={
                            "color": "#F50C0C"
                        }), \
-               html.Plaintext(f"{diff} étude(s)",
+               html.Plaintext(f"{diff} études",
                               style={
                                   "color": "#F50C0C"
                               }),
