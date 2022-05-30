@@ -93,7 +93,7 @@ layout = html.Div(
                                                                         "justifyContent": "right",
                                                                         "horizontalAlign": "center",
                                                                     },
-                                                                    width=True
+                                                                    width="auto"
                                                                 )
                                                             ]
                                                         ),
@@ -118,7 +118,7 @@ layout = html.Div(
                                                 ),
                                                 dbc.Col(
                                                     barPlotByStudiesType,
-                                                    width="auto"
+                                                    width="auto",
                                                 ),
                                             ]
                                         ),
@@ -158,6 +158,44 @@ layout = html.Div(
     }
 )
 
+
+@callback(Output("CRP_card", "class_name"),
+          Output("CRP_card", "style"),
+          Input("CRP_highlight", "value"))
+def HighlightPieTabs(highlight):
+    if highlight:
+        return "card mb-4 border-3", {"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
+                                      "borderRadius": "15px",
+                                      "borderColor": "#F8DF09"}
+    else:
+        return "card mb-4 border-1", {"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
+                                      "borderRadius": "15px"}
+
+
+@callback(Output("SDO_card", "class_name"),
+          Output("SDO_card", "style"),
+          Input("SDO_highlight", "value"))
+def HighlightPieTabs(highlight):
+    if highlight:
+        return "card mb-4 border-3", {"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
+                                      "borderRadius": "15px",
+                                      "borderColor": "#F8DF09"}
+    else:
+        return "card mb-4 border-1", {"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
+                                      "borderRadius": "15px"}
+
+
+@callback(Output("SR_card", "class_name"),
+          Output("SR_card", "style"),
+          Input("SR_highlight", "value"))
+def HighlightBarPlot(highlight):
+    if highlight:
+        return "card mb-4 border-3", {"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
+                                      "borderRadius": "15px",
+                                      "borderColor": "#F8DF09"}
+    else:
+        return "card mb-4 border-1", {"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
+                                      "borderRadius": "15px"}
 
 @callback(Output("investigators_datatable", "children"),
           Input("selected-card", "data"))
@@ -221,6 +259,7 @@ def OpenStudiesModal(data, n_clicks):
         return ModalStudiesInfo(data if data is not None else [0], True), None
     else:
         return None, None
+
 
 """
 ########################################################################################################################
@@ -300,9 +339,11 @@ def CardStatUpdate(firstYear, secondYear, data):
     decision = firstYear == datetime.now().year or secondYear == datetime.now().year
 
     actualYear = df[(df["study_first_submitted_date"] >= datetime(firstYear, 1, 1)) & (
-            df["study_first_submitted_date"] <= datetime(firstYear, now.month if decision else 12, now.day if decision else 30))].shape[0]
+            df["study_first_submitted_date"] <= datetime(firstYear, now.month if decision else 12,
+                                                         now.day if decision else 30))].shape[0]
     pastYear = df[(df["study_first_submitted_date"] >= datetime(secondYear, 1, 1)) & (
-            df["study_first_submitted_date"] <= datetime(secondYear, now.month if decision else 12, now.day if decision else 30))].shape[0]
+            df["study_first_submitted_date"] <= datetime(secondYear, now.month if decision else 12,
+                                                         now.day if decision else 30))].shape[0]
 
     variation = round(((actualYear - pastYear) / pastYear) * 100, 2)
     diff = actualYear - pastYear
@@ -393,31 +434,38 @@ THIS CALLBACK IS USED TO UPDATE THE VERTICAL BAR CHART BY STUDY_TYPE
 
 
 @callback(Output("studyTypeBar", "figure"),
-          Input("selected-card", "data"))
-def BarChartUpdate(data):
+          Input("selected-card", "data"),
+          Input("SR_dropdown", "value"),
+          Input("SR_radioItems", "value"))
+def BarChartUpdate(data, selection, divide):
     if data in all_category:
-        df = GetCategoryPercent(columns=["study_type"],
-                                groupby=["category", "study_type"],
+        df = GetCategoryPercent(columns=[selection],
+                                groupby=["category", selection],
                                 sortby=["category", "nct_id"],
                                 sortasc=False,
-                                categoryfilter=data)
+                                categoryfilter=data,
+                                divide=divide,
+                                divide_col=selection)
     else:
-        df = GetCategoryPercent(columns=["study_type"],
-                                groupby=["study_type"],
+        df = GetCategoryPercent(columns=[selection],
+                                groupby=[selection],
                                 sortby=["category", "nct_id"],
-                                sortasc=False)
+                                sortasc=False,
+                                divide=divide,
+                                divide_col=selection)
         df["category"] = "All"
 
-    s_type = [x for x in df["study_type"]]
-    marker_color = ["#342883", "#4a39bb", "#6f60cf"]
+    s_type = [x for x in df[selection]]
+    marker_color = ["#072770", "#031438", "#051d54", "#08318c", "#0a3ba8", "#2866F2", "#4f82f4", "#769ef7", "#9db9f9",
+                    "#c4d5fb", "#ebf1fe"]
 
     fig = go.Figure(data=[
         go.Bar(name="Interventional",
-               x=df[df["study_type"] == y]["category"],
-               y=df[df["study_type"] == y]["nct_id"],
-               text=f"{df[df['study_type'] == y]['study_type'].iloc[0]}<br>{df[df['study_type'] == y]['percent'].iloc[0]}",
+               x=df[df[selection] == y]["category"],
+               y=df[df[selection] == y]["nct_id"],
+               text=f"{df[df[selection] == y][selection].iloc[0]}<br>{df[df[selection] == y]['percent'].iloc[0]}",
                insidetextanchor="middle",
-               marker=dict(color=marker_color[x],
+               marker=dict(color=marker_color[-x],
                            line=dict(width=2, color="white")),
                )
         for x, y in enumerate(s_type)])
@@ -443,7 +491,6 @@ def BarChartUpdate(data):
         plot_bgcolor='rgba(0, 0, 0, 0)',
         margin=dict(l=0, r=0, t=0, b=30),
         showlegend=False,
-        hovermode=False
     )
 
     return fig
@@ -632,3 +679,13 @@ def ParametersTabUpdating(*args):
         return parametersItem2
     else:
         return parametersItem2
+
+
+@callback(Output("parametersItem3", "children"),
+          Input("reset", "n_clicks"),
+          Input("SR_reset", "n_clicks"))
+def ParametersTabUpdating(*args):
+    if args[0] or args[1]:
+        return parametersItem3
+    else:
+        return parametersItem3

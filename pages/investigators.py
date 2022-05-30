@@ -16,13 +16,17 @@ layout = html.Div(
                 dbc.Col(
                     [
                         dcc.Dropdown(id="categorySelection",
-                                     options=[x for x in all_category]),
+                                     options=[x for x in all_category],
+                                     multi=True),
                         dcc.Dropdown(id="stypeSelection",
-                                     options=[x for x in all_stype]),
+                                     options=[x for x in all_stype],
+                                     multi=True),
                         dcc.Dropdown(id="statusSelection",
-                                     options=[x for x in all_status]),
+                                     options=[x for x in all_status],
+                                     multi=True),
                         dcc.Dropdown(id="phasesSelection",
-                                     options=[x for x in all_phases]),
+                                     options=['Unknow' if x is None else x for x in all_phases],
+                                     multi=True),
                     ]
                 ),
                 dbc.Col(
@@ -34,30 +38,49 @@ layout = html.Div(
                                   ),
                     ],
                     width=7
-                )
+                ),
             ]
         ),
-        dbc.Card(
-            dbc.CardBody(
-                [
-                    dbc.Row(
-                        [
-                            dbc.Col(id="mapOutput1", width="auto"),
-                        ]
-                    )
-                ]
-            ),
-            style={"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
-                   "borderRadius": "15px",
-                   "marginTop": "15px"}
-        )
+        dbc.Row(
+            [
+                dbc.Col(
+                    [
+                        dbc.Card(
+                            dbc.CardBody(
+                                [
+                                    dbc.Row(dbc.Col(id="mapOutput1", width="auto"),),
+                                ]
+                            ),
+                            style={"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
+                                   "borderRadius": "15px",
+                                   "marginTop": "15px"}
+                        )
+                    ],
+                    width="auto"
+                ),
+            ]
+        ),
     ]
 ),
 
 @callback(Output("investigators_map", "figure"),
-          Input("categorySelection", "value"))
-def GeoInvestigatorsUpdate(data):
-    inv = investigators[investigators["nct_id"].isin(s_base[s_base.category == data]["nct_id"])].copy() if data in all_category else investigators.copy()
+          Input("categorySelection", "value"),
+          Input("stypeSelection", "value"),
+          Input("statusSelection", "value"),
+          Input("phasesSelection", "value"))
+def GeoInvestigatorsUpdate(category, stype, status, phase):
+    inv = investigators.copy()
+
+    if category:
+        inv = inv[inv["nct_id"].isin(s_base[s_base.category.isin(category)]["nct_id"])]
+    if stype:
+        inv = inv[inv["nct_id"].isin(s_base[s_base.study_type.isin(stype)]["nct_id"])]
+    if status:
+        inv = inv[inv["nct_id"].isin(s_base[s_base.overall_status.isin(status)]["nct_id"])]
+    if phase:
+        print(phase)
+        inv = inv[inv["nct_id"].isin(s_base[s_base.study_phases.isin(phase)]["nct_id"])]
+
     inv.drop_duplicates(subset=["name", "city", "country"], keep="first", inplace=True)
     count = inv[["name", "iso"]]
     count = count.groupby("iso").count().reset_index().sort_values(by="name", ascending=False)
@@ -114,9 +137,9 @@ def DatatableUpdating(inp):
             columns=[{"name": i, "id": i} for i in
                      count[["name", "studies_count", "repartition"]].columns],
             page_size=10,
+            row_selectable="single",
             filter_action="native",
             sort_action="native",
-            style_table={'overflowX': 'auto'},
             style_cell={
                 'height': 'auto',
                 # all three widths are needed
@@ -128,6 +151,11 @@ def DatatableUpdating(inp):
                 "color": "white",
                 "fontWeight": 900,
                 "fontSize": "12px"
+            },
+            style_table={
+                'borderRadius': '15px',
+                'overflow': 'hidden',
+                'overflowX': 'auto'
             },
             style_data_conditional=[
                 {

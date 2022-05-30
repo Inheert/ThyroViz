@@ -506,6 +506,11 @@ leftCategoryCard = \
                                          title="Studies overview based on date",
                                          id="parametersItem2",
                                          children=parametersItem2
+                                     ),
+                                     dbc.AccordionItem(
+                                         title="Studies repartition",
+                                         id="parametersItem3",
+                                         children=parametersItem3
                                      )
                                  ],
                              ),
@@ -572,6 +577,7 @@ barPlotByStudiesType = \
                 ),
             ]
         ),
+        id="SR_card",
         class_name="card mb-4 border-1",
         style={"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
                "borderRadius": "15px"}
@@ -617,6 +623,7 @@ tabWithMultipleCharts = \
                          )
             ]
         ),
+        id="CRP_card",
         class_name="card mb-4 border-1",
         style={"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
                "borderRadius": "15px"}
@@ -657,6 +664,8 @@ studiesDateOverview = \
                 )
             ]
         ),
+        id="SDO_card",
+        class_name="card mb-4 border-1",
         style={"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
                "borderRadius": "15px",
                "marginTop": "-15px"}
@@ -878,7 +887,7 @@ studiesDatatable = \
                                      s_base[["nct_id", "category", "sub_category",
                                              "study_type", "overall_status", "observational_model",
                                              "intervention_model", "time_perspective"]].columns],
-                            page_size=10,
+                            page_size=15,
                             filter_action="native",
                             sort_action="native",
                             row_selectable="single",

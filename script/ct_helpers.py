@@ -59,17 +59,19 @@ def AactRequestSQL(request=None, request_source="static", dataframe=None):
                       FROM {'sponsors' if request == 'sponsors' else 'facilities'}
                       WHERE LOWER(nct_id) in {text}"""
 
-        cur.execute(sql_request)
-
-        df = pd.DataFrame(cur.fetchall(), columns=[i[0] for i in cur.description])
-
         if request == "sponsors":
-            # Dictionnaire contenant les infos utiles à la classification des sponsors
+            cur.execute(sql_request)
+
+            df = pd.DataFrame(cur.fetchall(), columns=[i[0] for i in cur.description])
 
             df["new_class"] = None
 
             df["new_class"] = df["id"].apply(lambda x: GetGoodClass(x, df))
         elif request == "investigators":
+            cur.execute(sql_request)
+
+            df = pd.DataFrame(cur.fetchall(), columns=[i[0] for i in cur.description])
+
             df["continent"] = df["country"].apply(lambda x: GetGeoInfos(x, 'continent'))
             df["iso"] = df["country"].apply(lambda x: GetGeoInfos(x, 'Iso'))
             df["name"] = df["id"].apply(lambda x: FillNaWithSimilarRow(df, x, "name"))
@@ -85,19 +87,7 @@ def AactRequestSQL(request=None, request_source="static", dataframe=None):
 def FillNaWithSimilarRow(df, idx, column):
     row = df[df["id"] == idx]
 
-    if idx == "43127570" or idx == 43127570:
-        print("FIND")
-        print(row["name"].iloc[0])
-        print(type(row["name"].iloc[0]))
-
-    if row["name"].iloc[0] is None:
-        print("None", type(idx))
-        dff = df[(df["city"] == row["city"].iloc[0]) & (df["country"] == row["country"].iloc[0]) & (~df[column].isnull())]
-        print(len(dff[column]))
-        return dff[column].iloc[0] if len(dff[column]) > 0 else None
-    else:
-        print("name", idx)
-        return row["name"].iloc[0]
+    return row["city"].iloc[0] if row["name"].iloc[0] is None else row["name"].iloc[0]
 
 # Fonction permettant de transformer les colonnes possédant plusieurs valeurs (colonnes concaténées) en une list pour
 # réaliser un "explode" de la colonne

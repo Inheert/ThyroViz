@@ -1,3 +1,5 @@
+import numpy as np
+
 import script.ct_const
 from script.ct_helpers import *
 from script.ct_const import *
@@ -39,6 +41,9 @@ def appLaunch():
     df = pd.concat([df, non_specific])
     df.reset_index(inplace=True)
     df.drop(labels=["index"], axis=1, inplace=True)
+
+    df["study_phases"] = df["study_phases"].apply(lambda x: x if isinstance(x, str) else "No phases")
+
     # Valeur par défaut "1" pour les lignes dont la colonne "minimum_age_unit" est égale à "Month"
     df["minimum_age_num"] = [1 if df["minimum_age_unit"][x] == "Month" else df["minimum_age_num"][x] for x in
                              df["minimum_age_unit"].index]
@@ -83,7 +88,7 @@ def appLaunch():
 
     # Création des colonnes catégories et sous-catégories vides.
     df[["category", "sub_category"]] = None
-    print("woa")
+
     # Boucle sur les sous catégories des catégories du dictionnaire
     for category, sub_category in keys_word_dict.items():
 
@@ -102,7 +107,7 @@ def appLaunch():
             df["sub_category"] = [sub_key if df.downcase_mesh_term.iloc[x] in key_word_list else df.sub_category.iloc[x]
                                   for
                                   x in df["downcase_mesh_term"].index]
-    print("giga long wsh")
+
     # Suppression des lignes dupliquées sur nct_id, category et sous-category
     df.drop_duplicates(subset=["nct_id", "category", "sub_category"], keep="last", inplace=True)
 
@@ -155,55 +160,6 @@ def appLaunch():
 
         # Reset des index
         df_dict[dataframe].reset_index(drop=True, inplace=True)
-
-        # if dataframe == "df_sponsorsName" or dataframe == "df_investigators":
-        #     print(f"[CSV - {dataframe}] Ajout des données...")
-        #     # Générer une requête SQL avec une condition : WHERE (nct_id = * AND name = *)
-        #     condition_list = []
-        #     df_dict[dataframe].drop_duplicates(subset="nct_id", inplace=True)
-        #
-        #     for e in df_dict[dataframe].index:
-        #         condition_list.append(
-        #             f"'{df_dict[dataframe].nct_id[e].lower()}'")
-        #
-        #     text = ""
-        #
-        #     for idx, value in enumerate(condition_list):
-        #         text += value
-        #         if idx < len(condition_list) - 1:
-        #             text += ", "
-        #
-        #     text = f"({text})"
-        #
-        #     conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS, host=DB_HOST)
-        #
-        #     cur = conn.cursor()
-        #
-        #     request = f"""SELECT *
-        #                   FROM {'sponsors' if dataframe == 'df_sponsorsName' else 'facilities'}
-        #                   WHERE LOWER(nct_id) in {text}"""
-        #
-        #     cur.execute(request)
-        #
-        #     dff = pd.DataFrame(cur.fetchall(), columns=[i[0] for i in cur.description])
-        #
-        #     cur.close()
-        #     conn.close()
-        #
-        #     if dataframe == "df_sponsorsName":
-        #         # Dictionnaire contenant les infos utile à la classification des sponsors
-        #
-        #         dff["new_class"] = None
-        #
-        #         dff["new_class"] = dff["id"].apply(lambda x: GetGoodClass(x, dff))
-        #         df_dict[dataframe] = dff
-        #     elif dataframe == "df_investigators":
-        #         dff["continent"] = dff["country"].apply(lambda x: GetGeoInfos(x, 'continent'))
-        #         dff["iso"] = dff["country"].apply(lambda x: GetGeoInfos(x, 'Iso'))
-        #
-        #         df_dict[dataframe] = dff
-        #
-        #     print(f"[CSV- {dataframe}] Données ajoutées !")
 
     req1 = threading.Thread(target=AactRequestSQL, args=["sponsors", "dynamic", df_dict["df_sponsorsName"]])
     req2 = threading.Thread(target=AactRequestSQL, args=["investigators", "dynamic", df_dict["df_investigators"]])

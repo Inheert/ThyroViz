@@ -20,10 +20,10 @@ intervention_types = pd.read_csv("script/sql/visualisation/CSV_files/df_interven
 
 country = pd.read_csv("script/sql/visualisation/CSV_files/df_country.csv")
 
-all_category = [x for x in s_base.category.unique()]
-all_stype = [x for x in s_base.study_type.unique()]
-all_status = [x for x in s_base.overall_status.unique()]
-all_phases = [x for x in s_base.study_phases.unique()]
+all_category = [x for x in s_base.category.sort_values().unique()]
+all_stype = [x for x in s_base.study_type.sort_values().unique()]
+all_status = [x for x in s_base.overall_status.sort_values().unique()]
+all_phases = [x for x in s_base.study_phases.sort_values().unique()]
 
 card_icon = {
     "color": "white",

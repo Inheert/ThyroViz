@@ -21,7 +21,9 @@ def GetCategoryPercent(**kwargs):
         "sortby": [],
         "sortasc": False,
         "type_filter": False,
-        "drop_duplicates": []
+        "drop_duplicates": [],
+        "divide": "all",
+        "divide_col": ""
     }
 
     """
@@ -60,6 +62,7 @@ def GetCategoryPercent(**kwargs):
         return None
 
     df = s_base.copy()
+    df = df.drop_duplicates(subset=["nct_id"], keep="first")
 
     if len(settings["drop_duplicates"]) > 0:
         df.drop_duplicates(subset=settings["drop_duplicates"], keep="first", inplace=True)
@@ -74,11 +77,10 @@ def GetCategoryPercent(**kwargs):
     else:
         pass
 
-    division = df.shape[0]
+    division = df.shape[0] if settings["divide"].lower() == "all" else df[~df[settings["divide_col"]].isnull()].shape[0]
 
     df = df.groupby(settings["groupby"]).count().reset_index().sort_values(by=settings["sortby"],
                                                                            ascending=settings["sortasc"])
-    division = df.nct_id.sum()
 
     df.reset_index(drop=True, inplace=True)
     df["nct_id"] = round((df["nct_id"] / division) * 100, 2)
