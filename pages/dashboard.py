@@ -79,7 +79,8 @@ layout = html.Div(
                                                     [
                                                         lightStatistic1,
                                                         lightStatistic2
-                                                    ]
+                                                    ],
+                                                    width="auto"
                                                 ),
                                                 dbc.Col(
                                                     [
@@ -110,11 +111,12 @@ layout = html.Div(
                                                                         "justifyContent": "right",
                                                                         "horizontalAlign": "center",
                                                                     },
-                                                                    width=True
+                                                                    width="auto"
                                                                 )
                                                             ]
                                                         ),
                                                     ],
+                                                    width="auto"
                                                 ),
                                                 dbc.Col(
                                                     barPlotByStudiesType,
