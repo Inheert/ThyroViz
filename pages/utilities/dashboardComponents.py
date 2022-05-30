@@ -15,8 +15,7 @@ from pages.utilities.dashboardParameters import *
 topCardNav1 = dbc.Nav(
     [
         dbc.NavItem(dbc.NavLink(
-            children=
-            dbc.CardGroup(
+            children=dbc.CardGroup(
                 [
                     dbc.Card(
                         dbc.CardBody(
@@ -30,7 +29,7 @@ topCardNav1 = dbc.Nav(
                     dbc.Card(
                         html.Div(className="bi bi-eye", style=card_icon),
                         color="#247cfd",
-                        style={"maxWidth": 75},
+                        style={"maxWidth": "4vw"},
                     ),
                 ],
                 className="mt-4 shadow",
@@ -54,7 +53,7 @@ topCardNav2 = dbc.Nav(
                         dbc.CardBody(
                             [
                                 html.H1(
-                                    f"{studies[(studies['study_first_submitted_date'] >= f'{datetime.now().year}-{datetime.now().month - 1}') & (studies['study_first_submitted_date'] < f'{datetime.now().year}-{datetime.now().month}')].shape[0]}",
+                                    f"{s_base[(s_base['study_first_submitted_date'] >= f'{datetime.now().year}-{datetime.now().month - 1}') & (s_base['study_first_submitted_date'] < f'{datetime.now().year}-{datetime.now().month}')].shape[0]}",
                                     className="card-title"),
                                 html.P("new studies this month", className="card-text", ),
                             ]
@@ -63,7 +62,7 @@ topCardNav2 = dbc.Nav(
                     dbc.Card(
                         html.Div(className="bi bi-clipboard2-plus", style=card_icon),
                         color="#0D6EFD",
-                        style={"maxWidth": 75},
+                        style={"maxWidth": "4vw"},
                     ),
                 ],
                 className="mt-4 shadow",
@@ -97,7 +96,7 @@ topCardNav3 = dbc.Nav(
                     dbc.Card(
                         html.Div(className="bi bi-people", style=card_icon),
                         color="#024ebf",
-                        style={"maxWidth": 75},
+                        style={"maxWidth": "4vw"},
                     ),
                 ],
                 className="mt-4 shadow",
@@ -131,7 +130,7 @@ topCardNav4 = dbc.Nav(
                     dbc.Card(
                         html.Div(className="bi bi-clipboard2-plus", style=card_icon),
                         color="#013684",
-                        style={"maxWidth": 75},
+                        style={"maxWidth": "4vw"},
                     ),
                 ],
                 className="mt-4 shadow",
@@ -144,95 +143,6 @@ topCardNav4 = dbc.Nav(
     vertical=False,
     fill=True
 )
-
-topCard1 = \
-    dbc.CardGroup(
-        [
-            dbc.Card(
-                dbc.CardBody(
-                    [
-                        html.H1(f"{len(studies['nct_id'].unique())}",
-                                className="card-title"),
-                        html.P("studies in progress", className="card-text"),
-                    ]
-                )
-            ),
-            dbc.Card(
-                html.Div(className="bi bi-eye", style=card_icon),
-                color="#247cfd",
-                style={"maxWidth": 75},
-            ),
-        ],
-        className="mt-4 shadow",
-    ),
-
-topCard2 = \
-    dbc.CardGroup(
-        [
-            dbc.Card(
-                dbc.CardBody(
-                    [
-                        html.H1(
-                            f"{studies[(studies['study_first_submitted_date'] >= f'{datetime.now().year}-{datetime.now().month - 1}') & (studies['study_first_submitted_date'] < f'{datetime.now().year}-{datetime.now().month}')].shape[0]}",
-                            className="card-title"),
-                        html.P("new studies this month", className="card-text", ),
-                    ]
-                )
-            ),
-            dbc.Card(
-                html.Div(className="bi bi-clipboard2-plus", style=card_icon),
-                color="#0D6EFD",
-                style={"maxWidth": 75},
-            ),
-        ],
-        className="mt-4 shadow",
-    )
-
-topCard3 = \
-    dbc.CardGroup(
-        [
-            dbc.Card(
-                dbc.CardBody(
-                    [
-                        html.H1(
-                            f"{len(sponsors.name.unique())}",
-                            className="card-title"),
-                        html.P("Number of sponsors",
-                               className="card-text"),
-                    ]
-                )
-            ),
-            dbc.Card(
-                html.Div(className="bi bi-people", style=card_icon),
-                color="#024ebf",
-                style={"maxWidth": 75},
-            ),
-        ],
-        className="mt-4 shadow",
-    )
-
-topCard4 = \
-    dbc.CardGroup(
-        [
-            dbc.Card(
-                dbc.CardBody(
-                    [
-                        html.H1(
-                            f"{len(investigators.name.unique())}",
-                            className="card-title"),
-                        html.P("Number of investigators",
-                               className="card-text", ),
-                    ]
-                )
-            ),
-            dbc.Card(
-                html.Div(className="bi bi-clipboard2-plus", style=card_icon),
-                color="#013684",
-                style={"maxWidth": 75},
-            ),
-        ],
-        className="mt-4 shadow",
-    )
 
 lightStatistic1 = \
     html.Div(
@@ -249,12 +159,7 @@ lightStatistic1 = \
                         dbc.Row(
                             [
                                 dbc.Col(
-                                    html.Div(
-                                        style={
-                                            "fontSize": 20
-                                        },
-                                    ),
-                                    id="card1Output1",
+                                    html.Div(id="card1Output1",),
                                     width="auto",
                                     style={
                                         "display": "flex",
@@ -263,28 +168,15 @@ lightStatistic1 = \
                                     }
                                 ),
                                 dbc.Col(
-                                    html.H3('-- %',
-                                            ),
+                                    html.Div(id="card1Output2"),
                                     width="auto",
-                                    id="card1Output2",
                                 ),
-                            ]
-                        ),
-                        dbc.Row(
-                            [
                                 dbc.Col(
-                                    html.Plaintext('--'),
+                                    html.Div(id="card1Output3"),
                                     width="auto",
-                                    id="card1Output3",
-                                    style={
-                                        "display": "flex",
-                                        "alignItems": "end",
-                                        "justifyContent": "center",
-                                        "marginTop": "-25px",
-                                        "marginLeft": "45px"
-                                    }
                                 )
-                            ]
+                            ],
+                            align="end"
                         ),
                         dbc.Row(
                             [
@@ -325,43 +217,6 @@ lightStatistic1 = \
                                     ),
                                     width="auto",
                                 ),
-                                dbc.Col(
-                                    [
-                                        html.Div(
-                                            className="bi bi-question-circle",
-                                            id="cardInfo1",
-                                            style={
-                                                "fontSize": 15
-                                            }
-                                        ),
-                                        dbc.Popover(
-                                            dbc.PopoverBody(
-                                                children="Compare the new studies this year to N-X\n"
-                                                         "(N is the actual year, X is the selected number)."
-                                                         "\n\n"
-                                                         "To calculate this field we do a evolution rate.\n"
-                                                         "With: starting value: first box\n"
-                                                         "            arrival value: second box"
-                                                         "\n\n"
-                                                         "If any of the selections is equal to actual year\n"
-                                                         "then the studies taken into account have a date\n"
-                                                         "less than or equal to the current day and month.",
-                                                style={
-                                                    "whiteSpace": 'pre'
-                                                }
-                                            ),
-                                            target="cardInfo1",
-                                            body=True,
-                                            trigger="hover"
-                                        )
-                                    ]
-                                    ,
-                                    width="auto",
-                                    style={
-                                        "display": "flex",
-                                        "alignItems": "center",
-                                    }
-                                )
                             ]
                         ),
                     ]
@@ -389,9 +244,6 @@ lightStatistic2 = \
                             dbc.Col(
                                 html.Div(
                                     id="card2Output1",
-                                    style={
-                                        "fontSize": 20
-                                    },
                                 ),
                                 width="auto",
                                 style={
@@ -404,19 +256,15 @@ lightStatistic2 = \
                                 html.H3('-- %',
                                         id="card2Output2",
                                         ),
-                                width="auto"
+                                width="auto",
                             ),
                             dbc.Col(
                                 html.Plaintext('--',
                                                id="card2Output3"),
                                 width="auto",
-                                style={
-                                    "display": "flex",
-                                    "alignItems": "end",
-                                    "justifyContent": "left",
-                                }
                             )
-                        ]
+                        ],
+                        align="end"
                     ),
                     dbc.Row(
                         [
@@ -457,7 +305,11 @@ lightStatistic2 = \
 
 leftCategoryCard = \
     dcc.Tabs(id="leftSideTab",
-             value="tab1",
+             value="tab2",
+             style={
+                 'maxHeight': '5vmax',
+                 'maxWidth': "20vmax"
+             },
              children=[
                  dcc.Tab(label="Category",
                          value="tab1",
@@ -476,13 +328,18 @@ leftCategoryCard = \
                                          ),
                                          dbc.Button(children="Select",
                                                     id=f"button-{category.loc[x]['category']}",
+                                                    style={
+                                                        'fontSize': '0.5vmax',
+                                                        'maxHeight': '2vmax'
+                                                    },
                                                     color="primary",
                                                     outline=True)
                                      ],
                                  ),
                                  className="mb-1 shadow-sm",
                                  style={
-                                     "backgroundColor": "rgba(0,0,0,0)"
+                                     "backgroundColor": "rgba(0,0,0,0)",
+                                     "maxWidth": "20vmax",
                                  }
                              ) for x in category.index
                          ],
@@ -491,9 +348,7 @@ leftCategoryCard = \
                  dcc.Tab(label="Parameters",
                          value="tab2",
                          id="leftTab2",
-                         style={
-                             "width": "10vw"
-                         },
+                         style=tab_style,
                          selected_style=tab_selected_style,
                          children=[
                              dbc.Accordion(
@@ -502,7 +357,7 @@ leftCategoryCard = \
                                      dbc.AccordionItem(
                                          title="Category/Sub-category repartition",
                                          id="parametersItem1",
-                                         children=parametersItem1
+                                         children=parametersItem1,
                                      ),
                                      dbc.AccordionItem(
                                          title="Studies overview based on date",
@@ -515,6 +370,10 @@ leftCategoryCard = \
                                          children=parametersItem3
                                      )
                                  ],
+                                 style={
+                                     "maxWidth": "20vmax",
+                                     'fontSize': "0.6vmax"
+                                 }
                              ),
                              html.Div(id="param1"),
                              html.Div(id="param2"),
@@ -549,7 +408,11 @@ topAnimatedBanner = \
             ),
             dbc.CardImgOverlay(
                 dbc.Button("Reset",
-                           id="reset"),
+                           id="reset",
+                           style={
+                               'maxHeight': "2vmax"
+                           }
+                           ),
                 style={
                     "display": "flex",
                     "alignItems": "center",
@@ -662,6 +525,10 @@ studiesDateOverview = \
                             children=[
                                 dcc.Graph(
                                     id="studiesDateEventByYear",
+                                    style={
+                                        "height": "37vh",
+                                        "width": "60vw"
+                                    },
                                     config={
                                         'displayModeBar': False,
                                     },

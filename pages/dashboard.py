@@ -357,7 +357,7 @@ def CardStatUpdate(firstYear, secondYear, data):
     if variation > 0:
         return html.Div(className="bi bi-chevron-up",
                         style={
-                            "fontSize": 20,
+                            "fontSize": "1.2vmax",
                             "color": "#2CEC47"
                         }), \
                html.H3(f"{variation}%",
@@ -371,7 +371,7 @@ def CardStatUpdate(firstYear, secondYear, data):
     elif variation < 0:
         return html.Div(className="bi bi-chevron-down",
                         style={
-                            "fontSize": 20,
+                            "fontSize": "1.2vmax",
                             "color": "#F50C0C"
                         }), \
                html.H3(f"{variation}%",
@@ -427,7 +427,7 @@ def CardStat2Update(sp_class, data):
     return \
         html.Div(className=icon,
                  style={
-                     "fontSize": 20,
+                     "fontSize": "1.2vmax",
                  }), \
         html.H3(f"{repartition}%"), \
         html.Plaintext(f"{studiesCount} études"),
@@ -640,8 +640,6 @@ def FigureHistoricalUpdate(data, dateColumn, minYear, maxYear, periodDisplay, fi
     fig = go.Figure(data=StudiesByYear(data, dateColumn, minYear, maxYear, periodDisplay, figure))
 
     fig.update_layout(
-        height=350,
-        width=950,
         xaxis=dict(
             showgrid=False,
             showline=False,

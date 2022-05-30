@@ -2,8 +2,8 @@ import pandas as pd
 from datetime import datetime, date
 from screeninfo import get_monitors
 
-screenWidth = get_monitors()[0]
-print(screenWidth)
+# screenWidth = get_monitors()[0]
+# print(screenWidth)
 
 s_base = pd.read_csv("script/sql/visualisation/CSV_files/studies.csv")
 s_base["study_first_submitted_date"] = pd.to_datetime(s_base["study_first_submitted_date"])
@@ -32,7 +32,7 @@ all_phases = [x for x in s_base.study_phases.sort_values().unique()]
 card_icon = {
     "color": "white",
     "textAlign": "center",
-    "fontSize": 30,
+    "fontSize": "2vmax",
     "margin": "auto",
 }
 
@@ -53,7 +53,8 @@ tab_style = {
     "alignItems": "center",
     'borderBottom': '1px solid #d6d6d6',
     'fontWeight': 'bold',
-    "backgroundColor": "rgba(0,0,0,0)"
+    "backgroundColor": "rgba(0,0,0,0)",
+    'fontSize': '0.8vmax',
 }
 
 tab_selected_style = {
@@ -63,6 +64,7 @@ tab_selected_style = {
     'borderTop': '1px solid #d6d6d6',
     'borderBottom': '1px solid #d6d6d6',
     'backgroundColor': '#119DFF',
+    'fontSize': '0.8vmax',
     'color': 'white',
 }
 

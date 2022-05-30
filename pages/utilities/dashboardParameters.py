@@ -14,10 +14,14 @@ parametersItem1 = \
                 ),
                 dbc.Col(
                     dbc.Button("Reset",
-                               id="CRP_reset"),
+                               id="CRP_reset",
+                               style={
+                                   'maxHeight': "2vmax"
+                               }),
                     width="auto"
                 )
-            ]
+            ],
+            align="center"
         ),
         html.Hr(),
         html.Plaintext("Studies type:",
@@ -30,7 +34,7 @@ parametersItem1 = \
             value=[],
             multi=True,
             style={
-                "maxWidth": "300px"
+                "maxWidth": "300px",
             }),
 
         html.Plaintext("Studies status:",
@@ -43,7 +47,7 @@ parametersItem1 = \
             value=[],
             multi=True,
             style={
-                "maxWidth": "300px"
+                "maxWidth": "300px",
             }),
         html.Plaintext("Studies age selection:",
                        style={
@@ -107,10 +111,15 @@ parametersItem2 = \
                 ),
                 dbc.Col(
                     dbc.Button("Reset",
-                               id="SDO_reset"),
+                               id="SDO_reset",
+                               style={
+                                   'maxHeight': "2vmax"
+                               }
+                               ),
                     width="auto"
                 )
-            ]
+            ],
+            align="center"
         ),
         html.Hr(),
         html.Plaintext("Figure type:",
@@ -219,10 +228,15 @@ parametersItem3 = \
                 ),
                 dbc.Col(
                     dbc.Button("Reset",
-                               id="SR_reset"),
+                               id="SR_reset",
+                               style={
+                                   'maxHeight': "2vmax"
+                               }
+                               ),
                     width="auto"
                 )
-            ]
+            ],
+            align="center"
         ),
         html.Hr(),
         html.Plaintext("Repartition source:",
