@@ -98,12 +98,6 @@ layout = html.Div(
                                                             [
                                                                 dbc.Col(
                                                                     tabWithMultipleCharts,
-                                                                    style={
-                                                                        "display": "flex",
-                                                                        "alignItems": "center",
-                                                                        "justifyContent": "right",
-                                                                        "horizontalAlign": "center",
-                                                                    },
                                                                     width="auto",
                                                                 )
                                                             ]
@@ -484,8 +478,6 @@ def BarChartUpdate(data, selection, divide):
         for x, y in enumerate(s_type)])
 
     fig.update_layout(
-        height=800,
-        width=150,
         xaxis=dict(
             showgrid=False,
             showline=False,
@@ -536,8 +528,6 @@ def pieNoFilterUpdate(data, s_type, s_status, minAge, maxAge, *args):
     fig.update_traces(hole=.4, hoverinfo="label+percent")
 
     fig.update_layout(
-        height=290,
-        width=900,
         xaxis=dict(
             showgrid=False,
             showline=False,
@@ -604,8 +594,6 @@ def pieByStudiesTypeUpdate(data, s_status, minAge, maxAge, *args):
                       hoverinfo="label+percent")
 
     fig.update_layout(
-        height=290,
-        width=900,
         xaxis=dict(
             showgrid=False,
             showline=False,

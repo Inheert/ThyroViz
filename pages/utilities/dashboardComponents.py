@@ -491,7 +491,9 @@ leftCategoryCard = \
                  dcc.Tab(label="Parameters",
                          value="tab2",
                          id="leftTab2",
-                         style=tab_style,
+                         style={
+                             "width": "10vw"
+                         },
                          selected_style=tab_selected_style,
                          children=[
                              dbc.Accordion(
@@ -573,6 +575,8 @@ barPlotByStudiesType = \
                     },
                     style={
                         "marginTop": "-1vh",
+                        'height': '91vh',
+                        "width": "10vw",
                     }
                 ),
             ]
@@ -580,7 +584,8 @@ barPlotByStudiesType = \
         id="SR_card",
         class_name="card mb-4 border-1",
         style={"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
-               "borderRadius": "15px"}
+               "borderRadius": "15px",
+               }
     )
 
 tabWithMultipleCharts = \
@@ -596,12 +601,16 @@ tabWithMultipleCharts = \
                                      style=left_tab_style,
                                      selected_style=left_tab_selected_style,
                                      children=[
-                                         dcc.Graph(
+                                         dbc.Row([dcc.Graph(
                                              id="subCategoryProportion",
+                                             style={
+                                                 "width": "55vw",
+                                                 "height": "40vh",
+                                             },
                                              config={
                                                  "displayModeBar": False
                                              }
-                                         ),
+                                         )], justify="center"),
                                      ]
                                      ),
 
@@ -611,15 +620,22 @@ tabWithMultipleCharts = \
                                      style=right_tab_style,
                                      selected_style=right_tab_selected_style,
                                      children=[
-                                         dcc.Graph(
+                                         dbc.Row([dcc.Graph(
                                              id="subCategoryProportionByStudiesType",
+                                             style={
+                                                 "width": "60vw",
+                                                 "height": "40vh"
+                                             },
                                              config={
                                                  "displayModeBar": False,
                                              }
-                                         ),
+                                         )], justify="center"),
                                      ]),
                          ],
-                         style=tabs_styles
+                         style={
+                             'height': '3vh',
+                             "width": "60vw"
+                         }
                          )
             ]
         ),
@@ -660,7 +676,10 @@ studiesDateOverview = \
                             selected_style=right_tab_selected_style
                         )
                     ],
-                    style=tabs_styles
+                    style={
+                        'height': '3vh',
+                        "width": "60vw"
+                    }
                 )
             ]
         ),

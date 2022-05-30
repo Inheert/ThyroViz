@@ -44,8 +44,8 @@ card_icon2 = {
 }
 
 tabs_styles = {
-    'height': '44px',
-    "width": "1000px"
+    'height': '44vh',
+    "width": "60vw"
 }
 tab_style = {
     "display": "flex",
