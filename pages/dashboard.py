@@ -104,7 +104,7 @@ layout = html.Div(
                                                                         "justifyContent": "right",
                                                                         "horizontalAlign": "center",
                                                                     },
-                                                                    width="auto"
+                                                                    width="auto",
                                                                 )
                                                             ]
                                                         ),

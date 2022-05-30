@@ -1,5 +1,9 @@
 import pandas as pd
 from datetime import datetime, date
+from screeninfo import get_monitors
+
+screenWidth = get_monitors()[0]
+print(screenWidth)
 
 s_base = pd.read_csv("script/sql/visualisation/CSV_files/studies.csv")
 s_base["study_first_submitted_date"] = pd.to_datetime(s_base["study_first_submitted_date"])
