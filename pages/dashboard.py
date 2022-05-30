@@ -78,10 +78,20 @@ layout = html.Div(
                                                 dbc.Col(
                                                     [
                                                         lightStatistic1,
+                                                    ],
+                                                    width="auto"
+                                                ),
+                                                dbc.Col(
+                                                    [
                                                         lightStatistic2
                                                     ],
                                                     width="auto"
                                                 ),
+                                            ],
+                                            align="center", justify="center"
+                                        ),
+                                        dbc.Row(
+                                            [
                                                 dbc.Col(
                                                     [
                                                         dbc.Row(
@@ -122,7 +132,8 @@ layout = html.Div(
                                                     barPlotByStudiesType,
                                                     width="auto",
                                                 ),
-                                            ]
+                                            ],
+                                            justify="center",
                                         ),
                                     ]
                                 )
