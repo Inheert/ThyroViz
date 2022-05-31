@@ -3,7 +3,6 @@ import dash_daq
 import numpy as np
 import pandas as pd
 from dash import html, dcc, dash_table
-import plotly.express as px
 from geopy.geocoders import Nominatim
 from geopy.exc import GeocoderTimedOut
 import plotly.graph_objects as go

@@ -39,8 +39,7 @@ def appLaunch():
     non_specific = non_specific[~non_specific["nct_id"].isin(nct_id_list)]
 
     df = pd.concat([df, non_specific])
-    df.reset_index(inplace=True)
-    df.drop(labels=["index"], axis=1, inplace=True)
+    df.reset_index(drop=True, inplace=True)
 
     df["study_phases"] = df["study_phases"].apply(lambda x: x if isinstance(x, str) else "No phases")
 
