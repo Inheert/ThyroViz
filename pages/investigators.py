@@ -71,6 +71,15 @@ layout = html.Div(
 ),
 
 
+@callback(Output("invDataMapOutput", "selected_rows"),
+          Input("categorySelection", "value"),
+          Input("stypeSelection", "value"),
+          Input("statusSelection", "value"),
+          Input("phasesSelection", "value"))
+def SelectedRowVerification(a, *args):
+    return []
+
+
 @callback(Output("investigators_map", "figure"),
           Output("filtersInfos", "children"),
           Input("categorySelection", "value"),
@@ -128,7 +137,7 @@ def GeoInvestigatorsUpdate(category, stype, status, phase):
 
     fig.data[0].colorbar.x = 0.80
 
-    filterInfo = f"Filters return {round((df.shape[0] / s_base.shape[0]) * 100, 2)}% of the total number of studies"
+    filterInfo = f"Filters return {round((df.nct_id.unique().shape[0] / s_base.nct_id.unique().shape[0]) * 100, 2)}% of the total number of studies"
 
     return fig, filterInfo
 
