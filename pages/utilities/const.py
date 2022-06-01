@@ -1,7 +1,7 @@
 import pandas as pd
 from datetime import datetime, date
-from screeninfo import get_monitors
 
+# from screeninfo import get_monitors
 # screenWidth = get_monitors()[0]
 # print(screenWidth)
 

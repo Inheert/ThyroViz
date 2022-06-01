@@ -130,7 +130,11 @@ investigatorInfos = \
                         [
                             dbc.Col(
                                 [
-
+                                    dcc.Markdown("**Name:** ", id="name",),
+                                    dcc.Markdown("**City:** ", id="city"),
+                                    dcc.Markdown("**State:** ", id="state"),
+                                    dcc.Markdown("**Country:** ", id="country"),
+                                    dcc.Markdown("**Continent:** ", id="continent")
                                 ]
                             ),
                         ]

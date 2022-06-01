@@ -76,11 +76,10 @@ def GetCategoryPercent(**kwargs):
     else:
         pass
 
-    division = df.nct_id.unique().shape[0] if settings["divide"].lower() == "all" else df[~df[settings["divide_col"]].isnull()].nct_id.unique().shape[0]
+    division = df.nct_id.shape[0] if settings["divide"].lower() == "all" else df[~df[settings["divide_col"]].isnull()].nct_id.unique().shape[0]
 
     df = df.groupby(settings["groupby"]).count().reset_index().sort_values(by=settings["sortby"],
                                                                            ascending=settings["sortasc"])
-
     df.reset_index(drop=True, inplace=True)
     df["nct_id"] = round((df["nct_id"] / division) * 100, 2)
     df["percent"] = df["nct_id"].apply(lambda x: f"{x}%")
@@ -147,7 +146,7 @@ def StudiesByYear(category, dateColumn, minYear, maxYear, periodDisplay, figure)
     return data
 
 
-def GetSubCategoryProportion(selected, s_type, s_status, ageMin, ageMax):
+def GetSubCategoryProportion(selected=None, s_type=None, s_status=None, ageMin=0, ageMax=100):
     if s_type is None:
         s_type = []
     if s_status is None:
@@ -217,6 +216,3 @@ def GetSubCategoryProportion(selected, s_type, s_status, ageMin, ageMax):
     df = df.groupby("view").count().reset_index().sort_values(by="nct_id", ascending=False)
     df["color"] = df["view"].apply(lambda x: color_dict[x])
     return df
-
-
-category = GetCategoryPercent(groupby="category", sortby=["nct_id"], drop_duplicates=["category", "nct_id"])

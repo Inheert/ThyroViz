@@ -7,6 +7,7 @@ from plotly.subplots import make_subplots
 
 from pages.utilities.const import *
 from pages.utilities.investigatorsComponents import *
+from pages.utilities.helpers import *
 
 dash.register_page(__name__)
 
@@ -71,12 +72,31 @@ layout = html.Div(
 ),
 
 
+@callback(Output("name", "children"),
+          Output("city", "children"),
+          Output("state", "children"),
+          Output("country", "children"),
+          Output("continent", "children"),
+          Input("invDataMapOutput", "selected_rows"),
+          Input("dfStored", "data"))
+def InvestigatorInfosUpdate(idx, dfLoc):
+    df = pd.DataFrame(dfLoc)
+    if idx:
+        row = dict(investigators[investigators.name == df.loc[idx, "name"].iloc[0]].iloc[0])
+        rows = investigators[investigators.name == df.loc[idx, "name"].iloc[0]]
+        city, state, country, continent = [x for x in rows.city.unique()], [x for x in rows.state.unique()], [x for x in rows.country.unique()], [x for x in rows.continent.unique()]
+        print(city, state, country, continent)
+        return f"**Name:** {row['name']}", f"**City:** {row['city']}", f"**State:** {row['state']}", f"**Country:** {row['country']}", f"**Continent:** {row['continent']}"
+
+    return "**Name:** ", "**City:** ", "**State:** ", "**Country:** ", "**Continent:** "
+
+
 @callback(Output("invDataMapOutput", "selected_rows"),
           Input("categorySelection", "value"),
           Input("stypeSelection", "value"),
           Input("statusSelection", "value"),
           Input("phasesSelection", "value"))
-def SelectedRowVerification(a, *args):
+def SelectedRowVerification(*args):
     return []
 
 
@@ -86,13 +106,13 @@ def SelectedRowVerification(a, *args):
           Input("stypeSelection", "value"),
           Input("statusSelection", "value"),
           Input("phasesSelection", "value"))
-def GeoInvestigatorsUpdate(category, stype, status, phase):
+def GeoInvestigatorsUpdate(cat, stype, status, phase):
     inv = investigators.copy()
     df = s_base.copy()
 
-    if category:
-        inv = inv[inv["nct_id"].isin(s_base[s_base.category.isin(category)]["nct_id"])]
-        df = df[df.category.isin(category)]
+    if cat:
+        inv = inv[inv["nct_id"].isin(s_base[s_base.category.isin(cat)]["nct_id"])]
+        df = df[df.category.isin(cat)]
     if stype:
         inv = inv[inv["nct_id"].isin(s_base[s_base.study_type.isin(stype)]["nct_id"])]
         df = df[df.study_type.isin(stype)]
@@ -137,7 +157,12 @@ def GeoInvestigatorsUpdate(category, stype, status, phase):
 
     fig.data[0].colorbar.x = 0.80
 
-    filterInfo = f"Filters return {round((df.nct_id.unique().shape[0] / s_base.nct_id.unique().shape[0]) * 100, 2)}% of the total number of studies"
+    _s_base = s_base.copy()
+
+    _s_base.drop_duplicates(subset=["nct_id", "category"], keep="first", inplace=True)
+    df.drop_duplicates(subset=["nct_id", "category"], keep="first", inplace=True)
+
+    filterInfo = f"Filters return {round((df.nct_id.shape[0] / _s_base.nct_id.shape[0]) * 100, 2)}% of the total number of studies"
 
     return fig, filterInfo
 
@@ -151,13 +176,13 @@ def GeoInvestigatorsUpdate(category, stype, status, phase):
           Input("statusSelection", "value"),
           Input("phasesSelection", "value")
           )
-def DatatableUpdating(inp, category, stype, status, phase):
+def DatatableUpdating(inp, cat, stype, status, phase):
     if inp is None:
         df = investigators.copy()
     else:
         df = investigators[investigators["iso"] == inp["points"][0]["location"]].copy()
-    if category:
-        df = df[df["nct_id"].isin(s_base[s_base.category.isin(category)]["nct_id"])]
+    if cat:
+        df = df[df["nct_id"].isin(s_base[s_base.category.isin(cat)]["nct_id"])]
     if stype:
         df = df[df["nct_id"].isin(s_base[s_base.study_type.isin(stype)]["nct_id"])]
     if status:

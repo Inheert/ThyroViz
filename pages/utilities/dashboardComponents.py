@@ -8,7 +8,7 @@ from geopy.exc import GeocoderTimedOut
 import plotly.graph_objects as go
 
 from pages.utilities.const import *
-from pages.utilities.helpers import category
+from pages.utilities.helpers import *
 from pages.utilities.dashboardParameters import *
 
 topCardNav1 = dbc.Nav(
@@ -302,6 +302,7 @@ lightStatistic2 = \
         )
     )
 
+category = GetCategoryPercent(groupby="category", sortby=["nct_id"], drop_duplicates=["category", "nct_id"])
 leftCategoryCard = \
     dcc.Tabs(id="leftSideTab",
              value="tab2",

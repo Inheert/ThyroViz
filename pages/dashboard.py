@@ -452,14 +452,16 @@ def BarChartUpdate(data, selection, divide):
                                 sortasc=False,
                                 categoryfilter=data,
                                 divide=divide,
-                                divide_col=selection)
+                                divide_col=selection,
+                                drop_duplicates=["nct_id"])
     else:
         df = GetCategoryPercent(columns=[selection],
                                 groupby=[selection],
                                 sortby=["category", "nct_id"],
                                 sortasc=False,
                                 divide=divide,
-                                divide_col=selection)
+                                divide_col=selection,
+                                drop_duplicates=["nct_id"])
         df["category"] = "All"
 
     s_type = [x for x in df[selection]]
