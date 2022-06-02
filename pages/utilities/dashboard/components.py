@@ -1,15 +1,10 @@
-import dash_bootstrap_components as dbc
 import dash_daq
 import numpy as np
-import pandas as pd
-from dash import html, dcc, dash_table
+from dash import dash_table
 from geopy.geocoders import Nominatim
-from geopy.exc import GeocoderTimedOut
-import plotly.graph_objects as go
 
-from pages.utilities.const import *
 from pages.utilities.helpers import *
-from pages.utilities.dashboardParameters import *
+from pages.utilities.dashboard.graphParameters import *
 
 topCardNav1 = dbc.Nav(
     [
@@ -305,7 +300,7 @@ lightStatistic2 = \
 category = GetCategoryPercent(groupby="category", sortby=["nct_id"], drop_duplicates=["category", "nct_id"])
 leftCategoryCard = \
     dcc.Tabs(id="leftSideTab",
-             value="tab2",
+             value="tab1",
              style={
                  'maxHeight': '5vmax',
                  'maxWidth': "20vmax"

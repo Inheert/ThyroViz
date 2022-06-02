@@ -1,12 +1,7 @@
 import dash
-from dash import Input, Output, State, callback, dash_table, html, dcc
-import dash_bootstrap_components as dbc
-import plotly.graph_objects as go
+from dash import Input, Output, callback
 
-from plotly.subplots import make_subplots
-
-from pages.utilities.const import *
-from pages.utilities.investigatorsComponents import *
+from pages.utilities.investigators.components import *
 from pages.utilities.helpers import *
 
 dash.register_page(__name__)
