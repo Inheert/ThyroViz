@@ -17,6 +17,8 @@ app = dash.Dash(__name__, plugins=[dl.plugins.pages], external_stylesheets=[dbc.
                     {"name": "viewport", "content": "width=device-width, initial-scale=1"}
                 ], suppress_callback_exceptions=True)
 
+server = app.server
+
 # the style arguments for the sidebar. We use position:fixed and a fixed width
 SIDEBAR_STYLE = {
     "position": "fixed",
