@@ -42,7 +42,6 @@ layout = html.Div(
                             topCardNav1,
                             width=True
                         ),
-                        html.H2("caca"),
                         dbc.Col(
                             topCardNav2,
                             width=True
