@@ -79,10 +79,10 @@ invDatatable = \
                     data=count.to_dict('records'),
                     columns=[{"name": i, "id": i} for i in
                              count[["name", "studies_count", "repartition"]].columns],
-                    page_size=10,
-                    row_selectable="single",
+                    page_size=15,
                     filter_action="native",
                     sort_action="native",
+                    row_selectable="single",
                     style_cell={
                         'height': 'auto',
                         # all three widths are needed

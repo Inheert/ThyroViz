@@ -1060,12 +1060,12 @@ NCT04658524,Brazil,South America,BRA
 NCT04708704,United States,North America,USA
 NCT04936698,Taiwan,East Asia,TWN
 NCT04991493,China,East Asia,CHN
-NCT05016518,"Korea, Republic of",East Asia,KOR
 NCT05103774,Egypt,Africa,EGY
 NCT05126108,France,Europe,FRA
 NCT05151120,France,Europe,FRA
 NCT05251194,"Korea, Republic of",East Asia,KOR
 NCT05323539,Turkey,Middle East,TUR
+NCT05396703,Netherlands,Europe,NLD
 NCT00001160,United States,North America,USA
 NCT00001242,United States,North America,USA
 NCT00001304,United States,North America,USA
@@ -2250,6 +2250,7 @@ NCT05294393,Greece,Europe,GRC
 NCT05314790,Italy,Europe,ITA
 NCT05328076,Italy,Europe,ITA
 NCT05346419,Mexico,North America,MEX
+NCT05355701,United States,North America,USA
 NCT05385029,Saudi Arabia,Middle East,SAU
 NCT05387070,China,East Asia,CHN
 NCT05395429,China,East Asia,CHN
