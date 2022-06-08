@@ -1,6 +1,8 @@
 import dash_bootstrap_components as dbc
 from dash import html, dcc, dash_table
-
+import numpy as np
+import plotly.graph_objects as go
+from geopy import Nominatim
 from pages.utilities.const import *
 
 newStudiesTitle = \
@@ -14,7 +16,7 @@ newStudiesTitle = \
                             dcc.Dropdown(
                                 id="newStudiesDate",
                                 options=["day", "week", "month", "year"],
-                                value="week",
+                                value="month",
                                 multi=False,
                                 clearable=False,
                                 style={
@@ -25,7 +27,8 @@ newStudiesTitle = \
                         ),
                         dbc.Col(
                             dbc.Button(children="More informations",
-                                       style={"marginLeft": "3.5vw"})
+                                       id="newStudiesInfos",
+                                       style={"marginLeft": "9vw"})
                         ),
                         html.Hr(style={"marginTop": "1.5vh", "marginBottom": "1.5vh"})
                     ]
@@ -37,17 +40,171 @@ newStudiesTitle = \
 newStudiesDatatable = \
     dash_table.DataTable(
         id="newStudiesDatatable",
-        data=s_base.to_dict('records'),
+        data=s_base.drop_duplicates(subset="nct_id").to_dict('records'),
         columns=[{"name": i, "id": i} for i in
-                 s_base[["nct_id", "category", "sub_category", "study_first_submitted_date"]].columns],
-        page_size=15,
+                 s_base[["nct_id", "study_type", "overall_status", "study_first_submitted_date"]].columns],
+        page_size=10,
         filter_action="native",
         sort_action="native",
         row_selectable="single",
         style_cell={
             'height': 'auto',
             # all three widths are needed
-            'minWidth': '150px', 'width': '150px', 'maxWidth': '150px',
+            'minWidth': '200px', 'width': '200px', 'maxWidth': '200px',
+            'whiteSpace': 'normal'
+        },
+        style_header={
+            'backgroundColor': "#0D6986",
+            "color": "white",
+            "fontWeight": 900,
+            "fontSize": "12px"
+        },
+        style_table={
+            'borderRadius': '15px',
+            'overflow': 'hidden',
+            'overflowX': 'auto'
+        },
+        style_data_conditional=[
+            {
+                'if': {'row_index': 'odd'},
+                'backgroundColor': 'rgb(223, 226, 232)',
+                'color': 'black'
+            },
+            {
+                'if': {'row_index': 'even'},
+                'backgroundColor': 'rgb(245, 249, 255)'
+            }
+        ]
+    )
+
+newStudiesModal = \
+    html.Div(id="newStudiesModal")
+
+completedStudiesTitle = \
+    dbc.Row(
+        [
+            dbc.Col(
+                dbc.Row(
+                    [
+                        dbc.Col(html.H5("Completed studies this"), width="auto"),
+                        dbc.Col(
+                            dcc.Dropdown(
+                                id="CompletedStudiesDate",
+                                options=["day", "week", "month", "year"],
+                                value="month",
+                                multi=False,
+                                clearable=False,
+                                style={
+                                    "width": "5vw",
+                                    "marginTop": "0.5vh",
+                                }
+                            ),
+                        ),
+                        dbc.Col(
+                            dbc.Button(children="More informations",
+                                       id="completedStudiesInfos",
+                                       style={"marginLeft": "7vw"})
+                        ),
+                        html.Hr(style={"marginTop": "1.5vh", "marginBottom": "1.5vh"})
+                    ]
+                ),
+            ),
+        ]
+    )
+
+completedStudiesDatatable = \
+    dash_table.DataTable(
+        id="completedStudiesDatatable",
+        data=s_base.drop_duplicates(subset="nct_id").to_dict('records'),
+        columns=[{"name": i, "id": i} for i in
+                 s_base[["nct_id", "study_type", "overall_status", "completion_date"]].columns],
+        page_size=10,
+        filter_action="native",
+        sort_action="native",
+        row_selectable="single",
+        style_cell={
+            'height': 'auto',
+            # all three widths are needed
+            'minWidth': '200px', 'width': '200px', 'maxWidth': '200px',
+            'whiteSpace': 'normal'
+        },
+        style_header={
+            'backgroundColor': "#0D6986",
+            "color": "white",
+            "fontWeight": 900,
+            "fontSize": "12px"
+        },
+        style_table={
+            'borderRadius': '15px',
+            'overflow': 'hidden',
+            'overflowX': 'auto'
+        },
+        style_data_conditional=[
+            {
+                'if': {'row_index': 'odd'},
+                'backgroundColor': 'rgb(223, 226, 232)',
+                'color': 'black'
+            },
+            {
+                'if': {'row_index': 'even'},
+                'backgroundColor': 'rgb(245, 249, 255)'
+            }
+        ]
+    )
+
+completedStudiesModal = \
+    html.Div(id="completedStudiesModal")
+
+
+allStudiesHeader = \
+    dbc.Row([
+        dbc.Col([
+            dcc.Dropdown(
+                options=[x for x in all_category],
+                placeholder="Category...",
+                multi=True,
+            )
+        ]),
+        dbc.Col([
+            dcc.Dropdown(
+                options=[x for x in s_base.sub_category.unique()],
+                placeholder="Sub-category..."
+            )
+        ]),
+        dbc.Col([
+            dcc.Dropdown(
+                options=[x for x in all_stype],
+                placeholder="Study type...",
+            )
+        ]),
+        dbc.Col([
+            dcc.Dropdown(
+                options=[x for x in all_phases],
+                placeholder="Study phases..."
+            )
+        ]),
+        dbc.Col([
+            dcc.Dropdown(
+                options=[x for x in all_status],
+                placeholder="Study status..."
+            )
+        ])
+    ])
+
+allStudiesDatatable = \
+    dash_table.DataTable(
+        id="allStudiesDatatable",
+        data=s_base.to_dict('records'),
+        columns=[{"name": i, "id": i} for i in
+                 s_base.drop(columns=["Unnamed: 0", "intervention_types", "investigators", "sponsors_name", "downcase_mesh_term", "minimum_age_num", "maximum_age_num", "intervention_model", "observational_model", "time_perspective"]).columns],
+        page_size=10,
+        filter_action="native",
+        sort_action="native",
+        row_selectable="single",
+        style_cell={
+            'height': 'auto',
+            # all three widths are needed
+            'minWidth': '150px', 'width': '150px', 'maxWidth': '200px',
             'whiteSpace': 'normal'
         },
         style_header={
@@ -75,9 +232,14 @@ newStudiesDatatable = \
     )
 
 
-def ModalStudiesInfo(row, isOpen):
-    _s_base = s_base.sort_values(by="category")
-    row = _s_base.loc[row].reset_index(drop=True)
+def ModalStudiesInfo(row, isOpen, df=None):
+    if df:
+        _s_base = pd.DataFrame(df).sort_values(by="category")
+        row = _s_base.loc[row].reset_index(drop=True)
+    else:
+        _s_base = s_base.sort_values(by="category")
+        row = _s_base.loc[row].reset_index(drop=True)
+
     df = s_base[s_base["nct_id"] == row["nct_id"][0]].reset_index(drop=True).copy()
     sp = sponsors[sponsors["nct_id"] == row["nct_id"][0]]
 
@@ -144,9 +306,17 @@ def ModalStudiesInfo(row, isOpen):
                                         \n
                                         **Study phases:** {df.study_phases.unique()[0]}
                                         \n
+                                        **Observational model:** {df.observational_model.unique()[0]}
+                                        \n
+                                        **Intervention model:** {df.intervention_model.unique()[0]}
+                                        \n
+                                        **Enrollment:** {int(df.enrollment.unique()[0])}
+                                        \n
                                         **Minimum age:** {int(df.minimum_age_num.unique()[0])} years old
                                         \n
                                         **Maximum age:** {int(df.maximum_age_num.unique()[0])} years old
+                                        \n
+                                        **Time perspective:** {df.time_perspective.unique()[0]}
                                         \n
                                         **First submitted date:** {df.study_first_submitted_date[0].strftime("%Y-%m-%d")}
                                         \n
@@ -190,6 +360,30 @@ def ModalStudiesInfo(row, isOpen):
                         html.Br(),
                         dbc.Row(
                             [
+                                dbc.Accordion([
+                                    dbc.AccordionItem(title="Categories",
+                                                      children=[
+                                                          html.Div([
+                                                            dbc.Row(
+                                                                [
+                                                                    dbc.Col([
+                                                                        dbc.Button(children=category,
+                                                                                   id=f"{category}Button"),
+                                                                        dbc.Popover(
+                                                                            children=f"{[x for x in df[df.category == category]['sub_category'].unique()]}".replace("[", "").replace("]", ""),
+                                                                            target=f"{category}Button",
+                                                                            body=True, trigger="hover", placement="bottom",
+                                                                            style={"fontSize": "1.3vh"}
+                                                                        )
+                                                                    ], width="auto")
+                                                                    for category in df.category.unique()
+                                                                ]
+                                                            )
+                                                          ])
+                                                      ]),
+                                    dbc.AccordionItem(title="Sponsors"),
+                                    dbc.AccordionItem(title="Investigators sites")
+                                ]),
                                 dbc.Col(
                                     [
                                         dash_table.DataTable(

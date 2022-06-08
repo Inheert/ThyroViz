@@ -1,12 +1,11 @@
 import datetime
-
 import dash
 import dash_bootstrap_components as dbc
 from dash import Input, Output, State, callback, dash_table, html, dcc
 from dateutil.relativedelta import relativedelta
 
 from pages.utilities.studies.components import *
-
+from pages.utilities.studies.callbacks import *
 
 dash.register_page(__name__)
 
@@ -20,27 +19,22 @@ layout = html.Div(
         html.Br(),
         dbc.Row(
             [
-                dbc.Col([newStudiesTitle, newStudiesDatatable], width="auto"),
+                dbc.Col([newStudiesTitle, newStudiesDatatable, newStudiesModal], width="auto"),
+                dbc.Col(),
+                dbc.Col([completedStudiesTitle, completedStudiesDatatable, completedStudiesModal], width='auto')
             ]
+        ),
+        html.Br(),
+        dbc.Row(
+            [
+                dbc.Col([allStudiesHeader]),
+            ]
+        ),
+        html.Br(),
+        dbc.Row(
+          [
+              dbc.Col(allStudiesDatatable)
+          ]
         )
     ]
 ),
-
-
-@callback(Output("newStudiesDatatable", "data"),
-          Input("newStudiesDate", "value"))
-def UpdateNewStudiesDatatable(selection):
-    df = s_base.copy()
-    now = datetime.now().strftime("%Y-%m-%d")
-    now = datetime.strptime(now, "%Y-%m-%d")
-
-    if selection == "day":
-        pass
-    elif selection == "week":
-        pass
-    elif selection == "month":
-        pass
-    elif selection == "year":
-        pass
-
-    return df.to_dict('records')

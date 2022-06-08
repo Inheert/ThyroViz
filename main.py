@@ -160,6 +160,7 @@ def ToggleSlideMenu(n1, is_open):
         return not is_open
     return is_open
 
+
 # Callback réagissant au clique du bouton de mise à jour afin d'afficher une notif d'avertissement pour le lancement
 # de la mise à jour des données
 # Le callback possède également un timer afin de vérifier tout les x temps la disponibilité du bouton mise à jour
@@ -205,14 +206,30 @@ def updatingData(submit_n_clicks):
     return None, lastUpdate
 
 
-content = html.Div(dl.plugins.page_container, style=CONTENT_STYLE)
+content = html.Div(dl.plugins.page_container, style=CONTENT_STYLE, id="page-content")
 # app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
 app.layout = html.Div(
     dbc.Row(
-        [dbc.Col(sidebar, width="auto"),
-         dbc.Col(content)]
+        [
+            dcc.Location(id="url"),
+            dbc.Col(sidebar, width="auto"),
+            dbc.Col(content)
+        ]
     ),
 )
 
+
+@callback(
+    [Output(f"page-{i}-link", "active") for i in range(1, 4)],
+    [Input("url", "pathname")],
+)
+def toggle_active_links(pathname):
+    if pathname == "/":
+        # Treat page 1 as the homepage / index
+        return True, False, False
+    return [pathname == f"/page-{i}" for i in range(1, 4)]
+
+
 if __name__ == "__main__":
+    print(dl.plugins.page_container)
     app.run_server(debug=True)
