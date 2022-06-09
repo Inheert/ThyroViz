@@ -25,6 +25,8 @@ layout = html.Div(
             ]
         ),
         html.Br(),
+        html.Hr(),
+        html.Br(),
         dbc.Row(
             [
                 dbc.Col([allStudiesHeader, allStudiesModal]),

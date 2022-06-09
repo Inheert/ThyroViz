@@ -820,6 +820,8 @@ NCT03831620,Switzerland,Europe,CHE
 NCT03835728,United States,North America,USA
 NCT03836300,United States,North America,USA
 NCT03845647,China,East Asia,CHN
+NCT03866382,Puerto Rico,Central America,PRI
+NCT03866382,United States,North America,USA
 NCT03872284,France,Europe,FRA
 NCT03878953,Japan,East Asia,JPN
 NCT03880578,Germany,Europe,DEU
@@ -889,6 +891,8 @@ NCT04239521,United Kingdom,Europe,GBR
 NCT04267965,Taiwan,East Asia,TWN
 NCT04270110,Egypt,Africa,EGY
 NCT04281875,United States,North America,USA
+NCT04284774,Puerto Rico,Central America,PRI
+NCT04284774,United States,North America,USA
 NCT04288115,United States,North America,USA
 NCT04288531,Portugal,Europe,PRT
 NCT04298684,France,Europe,FRA
@@ -926,6 +930,7 @@ NCT04509011,Austria,Europe,AUT
 NCT04509011,Norway,Europe,NOR
 NCT04509011,Poland,Europe,POL
 NCT04509011,Sweden,Europe,SWE
+NCT04514484,United States,North America,USA
 NCT04522622,Denmark,Europe,DNK
 NCT04548284,China,East Asia,CHN
 NCT04560127,China,East Asia,CHN
@@ -979,10 +984,12 @@ NCT04895631,United States,North America,USA
 NCT04905641,Thailand,Southeast Asia,THA
 NCT04919694,China,East Asia,CHN
 NCT04922892,China,East Asia,CHN
+NCT04927416,United States,North America,USA
 NCT04932135,Switzerland,Europe,CHE
 NCT04942769,China,East Asia,CHN
 NCT04948671,Switzerland,Europe,CHE
 NCT04953195,China,East Asia,CHN
+NCT04969926,United States,North America,USA
 NCT04988802,Croatia,Europe,HRV
 NCT04998968,Sweden,Europe,SWE
 NCT05002998,Spain,Europe,ESP
@@ -1982,6 +1989,7 @@ NCT03787121,France,Europe,FRA
 NCT03794375,Brazil,South America,BRA
 NCT03823859,Switzerland,Europe,CHE
 NCT03826680,Turkey,Middle East,TUR
+NCT03841617,United States,North America,USA
 NCT03871387,"Korea, Republic of",East Asia,KOR
 NCT03889769,Italy,Europe,ITA
 NCT03892993,United States,North America,USA
@@ -1997,6 +2005,7 @@ NCT03899792,Spain,Europe,ESP
 NCT03899792,United Kingdom,Europe,GBR
 NCT03899792,United States,North America,USA
 NCT03905369,Netherlands,Europe,NLD
+NCT03914300,United States,North America,USA
 NCT03926585,Denmark,Europe,DNK
 NCT03942380,Denmark,Europe,DNK
 NCT03951532,France,Europe,FRA

@@ -288,7 +288,10 @@ def GetGoodClass(id, df):
             key_word = key_word.lower()
             if key_word in data["name"].lower():
                 return k
-    return "Other"
+
+    if data["agency_class"] != "OTHER":
+        return data["agency_class"]
+    return "Other organization"
 
 
 """

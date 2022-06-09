@@ -397,64 +397,34 @@ def ModalStudiesInfo(row, isOpen, df=None):
                                                               )
                                                           ])
                                                       ]),
-                                    dbc.AccordionItem(title="Sponsors"),
-                                    dbc.AccordionItem(title="Investigators sites")
+                                    dbc.AccordionItem(title="Sponsors",
+                                                      children=[
+                                                          dbc.Col([
+                                                              html.Plaintext(f"{id}"),
+                                                              dcc.Markdown(f"**Name:** {sp[sp.id == id]['name'].iloc[0]}"),
+                                                              dcc.Markdown(f"**Class:** {sp[sp.id == id]['new_class'].iloc[0]}"),
+                                                              dcc.Markdown(f"**Status:** {sp[sp.id == id]['lead_or_collaborator'].iloc[0]}"),
+                                                              html.Hr()
+                                                          ])
+                                                          for id in sp["id"]
+                                                      ]),
+                                    dbc.AccordionItem(title="Investigators sites",
+                                                      children=[
+                                                          dbc.Col([
+                                                              html.Plaintext(f"{id}"),
+                                                              dcc.Markdown(f"**Name:** {inv[inv.id == id]['name'].iloc[0]}"),
+                                                              dcc.Markdown(f"**Status:** {inv[inv.id == id]['status'].iloc[0]}"),
+                                                              dcc.Markdown(f"**City:** {inv[inv.id == id]['city'].iloc[0]}"),
+                                                              dcc.Markdown(f"**State:** {inv[inv.id == id]['state'].iloc[0]}"),
+                                                              dcc.Markdown(f"**Country:** {inv[inv.id == id]['country'].iloc[0]}"),
+                                                              dcc.Markdown(f"**Continent:** {inv[inv.id == id]['continent'].iloc[0]}"),
+                                                              html.Hr()
+                                                          ])
+                                                          for id in inv["id"]
+                                                      ])
                                 ]),
-                                dbc.Col(
-                                    [
-                                        dash_table.DataTable(
-                                            data=df.to_dict('records'),
-                                            columns=[
-                                                {"name": i, "id": i}
-                                                for i in df[["category", "sub_category"]].columns
-                                            ],
-                                            style_data={
-                                                "whiteSpace": "normal",
-                                                "height": "auto"
-                                            }
-                                        )
-                                    ],
-                                    width="auto"
-                                ),
-                                dbc.Col(
-                                    [
-                                        dash_table.DataTable(
-                                            data=sp.to_dict('records'),
-                                            columns=[
-                                                {"name": i, "id": i}
-                                                for i in sp[["name", "lead_or_collaborator", "new_class"]]
-                                            ],
-                                            style_data={
-                                                "whiteSpace": "normal",
-                                                "height": "auto"
-                                            }
-                                        ),
-                                        html.Br(),
-                                        dash_table.DataTable(
-                                            data=inv.to_dict('records'),
-                                            columns=[
-                                                {"name": i, "id": i}
-                                                for i in inv[["name"]]
-                                            ],
-                                            style_data={
-                                                "whiteSpace": "normal",
-                                                "height": "auto"
-                                            }
-                                        )
-                                    ],
-                                    width="auto"
-                                )
                             ]
                         ),
-                        dbc.Row(
-                            [
-                                dbc.Col(
-                                    [
-                                    ],
-                                    width="auto"
-                                )
-                            ]
-                        )
                     ]
                 )
             ],
