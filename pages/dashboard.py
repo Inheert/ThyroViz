@@ -144,16 +144,7 @@ layout = html.Div(
                         "marginTop": "25px"
                     }
                 ),
-                dbc.Row(
-                    studiesDatatable
-                ),
-
                 dcc.Store(id="studyIndex"),
-                html.Div(
-                    ModalStudiesInfo([0], False),
-                    id="studiesModal"
-                ),
-
                 dcc.Store(id="selected-card"),
             ],
         )

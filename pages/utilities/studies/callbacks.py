@@ -6,6 +6,7 @@ from dateutil.relativedelta import relativedelta
 
 from pages.utilities.studies.components import *
 
+
 @callback(Output("newStudiesDatatable", "data"),
           Input("newStudiesDate", "value"))
 def UpdateNewStudiesDatatable(selection):
@@ -25,7 +26,8 @@ def UpdateNewStudiesDatatable(selection):
         df = df[df["study_first_submitted_date"] >= datetime.strptime(f"{now.year}-01-01", "%Y-%m-%d")]
         pass
 
-    return df.drop_duplicates(subset="nct_id").sort_values(by="study_first_submitted_date", ascending=False).to_dict('records')
+    return df.drop_duplicates(subset="nct_id").sort_values(by="study_first_submitted_date", ascending=False).to_dict(
+        'records')
 
 
 @callback(Output("newStudiesModal", "children"),
@@ -68,6 +70,74 @@ def UpdateCompletedStudiesDatatable(selection):
           Input("completedStudiesDatatable", "selected_rows"),
           Input("completedStudiesInfos", "n_clicks"),
           Input("completedStudiesDatatable", "data"))
+def CompletedStudiesModal(data, n_clicks, df):
+    if n_clicks and data:
+        return ModalStudiesInfo(data if data is not None else [0], True, df), None
+    else:
+        return None, None
+
+
+@callback(Output("category", "options"),
+          Output("sub_category", "options"),
+          Output("study_type", "options"),
+          Output("study_phases", "options"),
+          Output("study_status", "options"),
+          Input("category", "value"),
+          Input("sub_category", "value"),
+          Input("study_type", "value"),
+          Input("study_phases", "value"),
+          Input("study_status", "value")
+          )
+def UpdateDataframeFilters(category, sub_category, stype, sphases, sstatus):
+    _s_base = s_base.copy()
+
+    if category:
+        _s_base = _s_base[_s_base.category.isin(category if isinstance(category, list) else [category])]
+    if sub_category:
+        _s_base = _s_base[_s_base.sub_category.isin(sub_category if isinstance(sub_category, list) else [sub_category])]
+    if stype:
+        _s_base = _s_base[_s_base.study_type.isin(stype if isinstance(stype, list) else [stype])]
+    if sphases:
+        _s_base = _s_base[_s_base.study_phases.isin(sphases if isinstance(sphases, list) else [sphases])]
+    if sstatus:
+        _s_base = _s_base[_s_base.overall_status.isin(sstatus if isinstance(sstatus, list) else [sstatus])]
+
+    return [x for x in _s_base.category.sort_values().unique()], \
+           [x for x in _s_base.sub_category.sort_values().unique()], \
+           [x for x in _s_base.study_type.sort_values().unique()], \
+           [x for x in _s_base.study_phases.sort_values().unique()], \
+           [x for x in _s_base.overall_status.sort_values().unique()], \
+
+
+
+@callback(Output("allStudiesDatatable", "data"),
+          Input("category", "value"),
+          Input("sub_category", "value"),
+          Input("study_type", "value"),
+          Input("study_phases", "value"),
+          Input("study_status", "value"))
+def UpdateStudiesDataframe(category, sub_category, stype, sphases, sstatus):
+    _s_base = s_base.copy()
+
+    if category:
+        _s_base = _s_base[_s_base.category.isin(category if isinstance(category, list) else [category])]
+    if sub_category:
+        _s_base = _s_base[_s_base.sub_category.isin(sub_category if isinstance(sub_category, list) else [sub_category])]
+    if stype:
+        _s_base = _s_base[_s_base.study_type.isin(stype if isinstance(stype, list) else [stype])]
+    if sphases:
+        _s_base = _s_base[_s_base.study_phases.isin(sphases if isinstance(sphases, list) else [sphases])]
+    if sstatus:
+        _s_base = _s_base[_s_base.overall_status.isin(sstatus if isinstance(sstatus, list) else [sstatus])]
+
+    return _s_base.to_dict('records')
+
+
+@callback(Output("allStudiesModal", "children"),
+          Output("allStudiesInfos", "n_clicks"),
+          Input("allStudiesDatatable", "selected_rows"),
+          Input("allStudiesInfos", "n_clicks"),
+          Input("allStudiesDatatable", "data"))
 def CompletedStudiesModal(data, n_clicks, df):
     if n_clicks and data:
         return ModalStudiesInfo(data if data is not None else [0], True, df), None

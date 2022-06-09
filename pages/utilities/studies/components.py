@@ -155,11 +155,16 @@ completedStudiesDatatable = \
 completedStudiesModal = \
     html.Div(id="completedStudiesModal")
 
-
 allStudiesHeader = \
     dbc.Row([
+        dbc.Col(
+            [dbc.Button(children="More informations",
+                        id="allStudiesInfos")],
+            width='auto'
+        ),
         dbc.Col([
             dcc.Dropdown(
+                id="category",
                 options=[x for x in all_category],
                 placeholder="Category...",
                 multi=True,
@@ -167,28 +172,32 @@ allStudiesHeader = \
         ]),
         dbc.Col([
             dcc.Dropdown(
+                id="sub_category",
                 options=[x for x in s_base.sub_category.unique()],
                 placeholder="Sub-category..."
             )
         ]),
         dbc.Col([
             dcc.Dropdown(
+                id="study_type",
                 options=[x for x in all_stype],
                 placeholder="Study type...",
             )
         ]),
         dbc.Col([
             dcc.Dropdown(
+                id="study_phases",
                 options=[x for x in all_phases],
                 placeholder="Study phases..."
             )
         ]),
         dbc.Col([
             dcc.Dropdown(
+                id="study_status",
                 options=[x for x in all_status],
                 placeholder="Study status..."
             )
-        ])
+        ]),
     ])
 
 allStudiesDatatable = \
@@ -196,7 +205,9 @@ allStudiesDatatable = \
         id="allStudiesDatatable",
         data=s_base.to_dict('records'),
         columns=[{"name": i, "id": i} for i in
-                 s_base.drop(columns=["Unnamed: 0", "intervention_types", "investigators", "sponsors_name", "downcase_mesh_term", "minimum_age_num", "maximum_age_num", "intervention_model", "observational_model", "time_perspective"]).columns],
+                 s_base.drop(columns=["Unnamed: 0", "intervention_types", "investigators", "sponsors_name",
+                                      "downcase_mesh_term", "minimum_age_num", "maximum_age_num", "intervention_model",
+                                      "observational_model", "time_perspective"]).columns],
         page_size=10,
         filter_action="native",
         sort_action="native",
@@ -230,6 +241,9 @@ allStudiesDatatable = \
             }
         ]
     )
+
+allStudiesModal = \
+    html.Div(id="allStudiesModal")
 
 
 def ModalStudiesInfo(row, isOpen, df=None):
@@ -364,21 +378,23 @@ def ModalStudiesInfo(row, isOpen, df=None):
                                     dbc.AccordionItem(title="Categories",
                                                       children=[
                                                           html.Div([
-                                                            dbc.Row(
-                                                                [
-                                                                    dbc.Col([
-                                                                        dbc.Button(children=category,
-                                                                                   id=f"{category}Button"),
-                                                                        dbc.Popover(
-                                                                            children=f"{[x for x in df[df.category == category]['sub_category'].unique()]}".replace("[", "").replace("]", ""),
-                                                                            target=f"{category}Button",
-                                                                            body=True, trigger="hover", placement="bottom",
-                                                                            style={"fontSize": "1.3vh"}
-                                                                        )
-                                                                    ], width="auto")
-                                                                    for category in df.category.unique()
-                                                                ]
-                                                            )
+                                                              dbc.Row(
+                                                                  [
+                                                                      dbc.Col([
+                                                                          dbc.Button(children=category,
+                                                                                     id=f"{category}Button"),
+                                                                          dbc.Popover(
+                                                                              children=f"{[x for x in df[df.category == category]['sub_category'].unique()]}".replace(
+                                                                                  "[", "").replace("]", ""),
+                                                                              target=f"{category}Button",
+                                                                              body=True, trigger="hover",
+                                                                              placement="bottom",
+                                                                              style={"fontSize": "1.3vh"}
+                                                                          )
+                                                                      ], width="auto")
+                                                                      for category in df.category.unique()
+                                                                  ]
+                                                              )
                                                           ])
                                                       ]),
                                     dbc.AccordionItem(title="Sponsors"),

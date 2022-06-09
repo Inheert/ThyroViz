@@ -231,5 +231,4 @@ def toggle_active_links(pathname):
 
 
 if __name__ == "__main__":
-    print(dl.plugins.page_container)
     app.run_server(debug=True)
