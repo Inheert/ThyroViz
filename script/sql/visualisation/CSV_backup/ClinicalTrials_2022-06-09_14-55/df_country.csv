@@ -889,8 +889,6 @@ NCT04239521,United Kingdom,Europe,GBR
 NCT04267965,Taiwan,East Asia,TWN
 NCT04270110,Egypt,Africa,EGY
 NCT04281875,United States,North America,USA
-NCT04284774,Puerto Rico,Central America,PRI
-NCT04284774,United States,North America,USA
 NCT04288115,United States,North America,USA
 NCT04288531,Portugal,Europe,PRT
 NCT04298684,France,Europe,FRA
@@ -981,12 +979,10 @@ NCT04895631,United States,North America,USA
 NCT04905641,Thailand,Southeast Asia,THA
 NCT04919694,China,East Asia,CHN
 NCT04922892,China,East Asia,CHN
-NCT04927416,United States,North America,USA
 NCT04932135,Switzerland,Europe,CHE
 NCT04942769,China,East Asia,CHN
 NCT04948671,Switzerland,Europe,CHE
 NCT04953195,China,East Asia,CHN
-NCT04969926,United States,North America,USA
 NCT04988802,Croatia,Europe,HRV
 NCT04998968,Sweden,Europe,SWE
 NCT05002998,Spain,Europe,ESP
@@ -1986,7 +1982,6 @@ NCT03787121,France,Europe,FRA
 NCT03794375,Brazil,South America,BRA
 NCT03823859,Switzerland,Europe,CHE
 NCT03826680,Turkey,Middle East,TUR
-NCT03841617,United States,North America,USA
 NCT03871387,"Korea, Republic of",East Asia,KOR
 NCT03889769,Italy,Europe,ITA
 NCT03892993,United States,North America,USA
@@ -2064,6 +2059,7 @@ NCT04211337,Spain,Europe,ESP
 NCT04211337,Taiwan,East Asia,TWN
 NCT04211337,United Kingdom,Europe,GBR
 NCT04211337,United States,North America,USA
+NCT04224792,United States,North America,USA
 NCT04238624,United States,North America,USA
 NCT04240821,United States,North America,USA
 NCT04248166,"Korea, Republic of",East Asia,KOR
@@ -2249,8 +2245,6 @@ NCT05355701,United States,North America,USA
 NCT05385029,Saudi Arabia,Middle East,SAU
 NCT05387070,China,East Asia,CHN
 NCT05395429,China,East Asia,CHN
-NCT05412680,Brazil,South America,BRA
-NCT05412979,United States,North America,USA
 NCT03191188,United States,North America,USA
 NCT03369405,United States,North America,USA
 NCT03414021,France,Europe,FRA

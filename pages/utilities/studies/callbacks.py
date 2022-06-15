@@ -109,7 +109,6 @@ def UpdateDataframeFilters(category, sub_category, stype, sphases, sstatus):
            [x for x in _s_base.overall_status.sort_values().unique()], \
 
 
-
 @callback(Output("allStudiesDatatable", "data"),
           Input("category", "value"),
           Input("sub_category", "value"),

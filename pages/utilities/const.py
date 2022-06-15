@@ -25,9 +25,15 @@ intervention_types = pd.read_csv("script/sql/visualisation/CSV_files/df_interven
 country = pd.read_csv("script/sql/visualisation/CSV_files/df_country.csv")
 
 all_category = [x for x in s_base.category.sort_values().unique()]
+all_sub_category = [x for x in s_base.sub_category.sort_values().unique()]
 all_stype = [x for x in s_base.study_type.sort_values().unique()]
 all_status = [x for x in s_base.overall_status.sort_values().unique()]
 all_phases = [x for x in s_base.study_phases.sort_values().unique()]
+all_time_perspective = [x for x in s_base.time_perspective.sort_values().unique()]
+all_int_models = [x for x in s_base.intervention_model.sort_values().unique()]
+all_obs_models = [x for x in s_base.observational_model.sort_values().unique()]
+
+all_sponsors_class = [x for x in sponsors.new_class.sort_values().unique()]
 
 card_icon = {
     "color": "white",
