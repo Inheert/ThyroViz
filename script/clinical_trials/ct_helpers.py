@@ -13,7 +13,7 @@ def AactRequestSQL(request=None, request_source="static", dataframe=None):
     cur = conn.cursor()
     print("[SQL] Connexion réussi ! Curseur créé")
 
-    path_original = f"{os.path.abspath(os.curdir)}/script/sql"
+    path_original = f"{os.path.abspath(os.curdir)}/script/clinical_trials/sql"
     path_original = path_original.replace("\\", "/")
 
     if not os.path.isdir(path_original):
@@ -56,10 +56,10 @@ def AactRequestSQL(request=None, request_source="static", dataframe=None):
 
         text = f"({text})"
         sql_request = f"""SELECT *
-                      FROM {'ct_sponsors' if request == 'ct_sponsors' else 'facilities'}
+                      FROM {'sponsors' if request == 'sponsors' else 'facilities'}
                       WHERE LOWER(nct_id) in {text}"""
 
-        if request == "ct_sponsors":
+        if request == "sponsors":
             cur.execute(sql_request)
 
             df = pd.DataFrame(cur.fetchall(), columns=[i[0] for i in cur.description])
@@ -67,7 +67,7 @@ def AactRequestSQL(request=None, request_source="static", dataframe=None):
             df["new_class"] = None
 
             df["new_class"] = df["id"].apply(lambda x: GetGoodClass(x, df))
-        elif request == "ct_investigators":
+        elif request == "investigators":
             cur.execute(sql_request)
 
             df = pd.DataFrame(cur.fetchall(), columns=[i[0] for i in cur.description])

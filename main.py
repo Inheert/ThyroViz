@@ -143,7 +143,7 @@ sidebar = \
                                                     "marginTop": "41%"
                                                 }
                                             ),
-                                            dcc.Interval(interval=interval * 1000, id="timerRefreshButton"),
+                                            dcc.Interval(interval=interval * 100, id="timerRefreshButton"),
                                             dcc.ConfirmDialog(
                                                 id='confirm-update',
                                                 message='Voulez-vous mettre les données à jour ?',
@@ -203,10 +203,13 @@ def confirmButton(timer, button):
         return True, True, None
 
     if timer and not loading:
-        buttonDisable = False if datetime.now().timestamp() - datetime.fromtimestamp(
-            os.path.getmtime(glob.glob(
-                f'{os.path.abspath(os.curdir)}/script/clinical_trials/sql/visualisation/CSV_files/studies.csv')[
-                                 0])).timestamp() > 100 else True
+        try:
+            buttonDisable = False if datetime.now().timestamp() - datetime.fromtimestamp(
+                os.path.getmtime(glob.glob(
+                    f'{os.path.abspath(os.curdir)}/script/clinical_trials/sql/visualisation/CSV_files/studies.csv')[
+                                     0])).timestamp() > 100 else True
+        except FileNotFoundError:
+            buttonDisable = True
         if not buttonDisable:
             return False, False, None
         else:

@@ -21,7 +21,7 @@ def appLaunch():
     req1.join()
     req2.join()
 
-    path_original = f"{os.path.abspath(os.curdir)}/script/sql"
+    path_original = f"{os.path.abspath(os.curdir)}/script/clinical_trials/sql"
     path_original = path_original.replace("\\", "/")
 
     df = pd.read_csv(f"{path_original}/temp_global.csv")
@@ -132,7 +132,7 @@ def appLaunch():
 
     df_dict = {
         "df_sponsorsName": copy.deepcopy(df[["nct_id", "sponsors_name"]]),
-        "df_investigators": copy.deepcopy(df[["nct_id", "ct_investigators"]]),
+        "df_investigators": copy.deepcopy(df[["nct_id", "investigators"]]),
         "df_intervention_types": copy.deepcopy(df[["nct_id", "intervention_types"]]),
         "df_country": copy.deepcopy(df[["nct_id", "location"]]),
         "df_age_range": copy.deepcopy(df[["nct_id", "category_age"]])
@@ -156,8 +156,8 @@ def appLaunch():
         # Reset des index
         df_dict[dataframe].reset_index(drop=True, inplace=True)
 
-    req1 = threading.Thread(target=AactRequestSQL, args=["ct_sponsors", "dynamic", df_dict["df_sponsorsName"]])
-    req2 = threading.Thread(target=AactRequestSQL, args=["ct_investigators", "dynamic", df_dict["df_investigators"]])
+    req1 = threading.Thread(target=AactRequestSQL, args=["sponsors", "dynamic", df_dict["df_sponsorsName"]])
+    req2 = threading.Thread(target=AactRequestSQL, args=["investigators", "dynamic", df_dict["df_investigators"]])
 
     req1.start()
     req2.start()
@@ -207,7 +207,7 @@ def appLaunch():
     # Vérificiation de l'existance de .csv dans le dossier CSV_files, si des fichiers existent alors :
     if len(glob.glob(f"{path_CSVFiles}/*.csv")) > 0:
 
-        # Récupération de la date à laquelle le .csv "ct_studies" a été créé
+        # Récupération de la date à laquelle le .csv "studies" a été créé
         backup_date = datetime.fromtimestamp(os.path.getmtime(glob.glob(f"{path_CSVFiles}/studies.csv")[0]))
         backup_date = backup_date.strftime("%Y-%m-%d_%H-%M")
 
@@ -216,8 +216,8 @@ def appLaunch():
 
         # Boucle sur l'ensemble des .csv présent dans le dossier CSV_files
         for file in glob.glob(f"{path_CSVFiles}/*.csv"):
-            # La variable "file" ressort un chemin (ex : monDossier/CSV_files/ct_studies.csv), la chaine de caractère est
-            # split puis le dernier élément est récupéré (ct_studies.csv)
+            # La variable "file" ressort un chemin (ex : monDossier/CSV_files/studies.csv), la chaine de caractère est
+            # split puis le dernier élément est récupéré (studies.csv)
             file = file.replace("\\", "/")
             try:
                 file_name = file.split("/")
@@ -230,7 +230,7 @@ def appLaunch():
                 pass
                 # print(f"error : {file}")
 
-    # Enregistrement du .csv ct_studies dans le dossier "CSV_files"
+    # Enregistrement du .csv studies dans le dossier "CSV_files"
     df.to_csv(f"{path_CSVFiles}/studies.csv", index=False)
     # print("\n[DATAFRAME - STUDIES] csv have been created")
 

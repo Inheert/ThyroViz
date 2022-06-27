@@ -3,5 +3,3 @@ venv
 .env
 .DS_Store
 
-/script/clinical_trials/sql/visualisation/CSV_files/
-/script/clinical_trials/sql/visualisation/CSV_backup/

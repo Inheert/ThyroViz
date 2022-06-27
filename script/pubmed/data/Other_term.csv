@@ -174,7 +174,7 @@
 4489,31376092,genetic interaction analysis---goiter---hif-1α---multifactor dimensionality reduction methodology---polymorphisms---vegf---vegfr-2
 4490,31468286,anaplastic thyroid carcinoma---ham-1---in situ hybridization---long non-coding rna---pca3---pcr array---papillary thyroid carcinoma---rt-pcr---thyroid carcinoma
 4495,32233333,nodules---thyroid
-4500,31512191,graves’ disease---graves’s orbithopathy---lenin---theodor kocher
+4499,31512191,graves’ disease---graves’s orbithopathy---lenin---theodor kocher
 4501,30835061,euthyroid---medical diagnosis---portrait
 4506,30504400,graves' disease---ki-67---metallothionein---nodular goiter---thyroid
 4507,30918569,hyperthyroidism---surgery---thyroidectomy cois
@@ -468,9 +468,9 @@
 4973,30426886,*graves' disease---*tsh receptor antibody---*incidence---*neonatal hyperthyroidism---*radioiodine therapy
 4974,29633307,*graves’ disease---*thypro---*thyrotoxicosis---*treatment choice---*treatment satisfaction
 4975,29023978,body mass index---levothyroxine---radioactive iodine ablation
-4976,31424978,etiopathogenesis---graves’ disease---genetic factors---thyroid-associated orbitopathy---vitamin d receptor
-4977,30843179,graves’ disease---n-glycosylation---tshr---sialylation---thyroid
-4979,29573939,"*shear wave---*cancer---*elastography---*thyroid nodules---*ultrasound cois device or technology referenced in this paper. ag, mb, vk, bhk, jw, ddm, mr, jmk, mf, and aa have no competing financial interests in the technology described in this study. the content is solely the responsibility of the authors and does not necessarily represent the official views of the national institutes of health."
+4976,29573939,"*shear wave---*cancer---*elastography---*thyroid nodules---*ultrasound cois device or technology referenced in this paper. ag, mb, vk, bhk, jw, ddm, mr, jmk, mf, and aa have no competing financial interests in the technology described in this study. the content is solely the responsibility of the authors and does not necessarily represent the official views of the national institutes of health."
+4977,31424978,etiopathogenesis---graves’ disease---genetic factors---thyroid-associated orbitopathy---vitamin d receptor
+4978,30843179,graves’ disease---n-glycosylation---tshr---sialylation---thyroid
 4982,31369161,*grave's---*cancer---*nodules---*thyroid
 4983,31124148,*immunology---*immunosuppression---*thyroid diseases---*vasculitis
 4984,31079052,*cosmesis---*eye lids---*orbit cois
@@ -730,9 +730,9 @@
 5423,31473202,biotin---biotin interference---biotin supplements---immunoassay
 5425,31554206,b lymphocytes---graves’ disease---t lymphocytes---toll-like receptor 2---toll-like receptor 4---cytokines cois
 5426,30413933,aggressiveness---id genes---thyroid cancer---bhlh
-5427,31134819,*graves’ disease---*treg-th17-related immunosuppressive cytokines---*dihydrotestosterone---*mice---*oxidative stress
-5429,29372654,*functional tsh receptor antibodies---*autoimmune thyroid diseases---*bioassays---*children---*drug delivery---*thyroid associated orbitopathy---*thyroid blocking antibodies---*thyroid stimulating antibodies
-5430,29199443,inferior laryngeal nerve---nonrecurrent laryngeal nerve---thyroid surgery
+5428,31134819,*graves’ disease---*treg-th17-related immunosuppressive cytokines---*dihydrotestosterone---*mice---*oxidative stress
+5430,29372654,*functional tsh receptor antibodies---*autoimmune thyroid diseases---*bioassays---*children---*drug delivery---*thyroid associated orbitopathy---*thyroid blocking antibodies---*thyroid stimulating antibodies
+5431,29199443,inferior laryngeal nerve---nonrecurrent laryngeal nerve---thyroid surgery
 5432,31881874,acdf---anterior cervical discectomy and fusion---c7/t1 anterior discectomy---cervicothoracic junction---hemithyroidectomy cois
 5433,29336230,*dnmt---*graves' disease---*autoimmune thyroid disease---*global dna methylation---*lymphocyte
 5434,31387553,diagnostic criteria---metastasis---painful goiter---subacute thyroiditis---thyroid cancer cois
@@ -836,13 +836,13 @@
 5581,30168266,inguinal hernia---uroflowmetry---visual analog scale---voiding dysfunction
 5582,31619220,calcitonin---carcinoembryogenic antigen---medullary thyroid carcinoma---thyroid cancer cois
 5583,29340973,age---iodine status---reference intervals---thyroid dysfunction---thyrotropin
-5585,31914295,lymphatic metastasis---melatonin---melatonin receptor---papillary thyroid cancer cois relevant financial relationships with commercial interests to disclose.
-5586,31190472,cold nodule---cytology---histopathology---hot nodule---warm nodule
-5589,30639646,autoimmune thyroid diseases---autoimmune thyroiditis---celiac disease---chronic autoimmune gastritis---graves' diseases---graves' ophthalmopathy---multiple sclerosis---polymyalgia rheumatica---rheumatoid arthritis---sarcoidosis---sjogren disease---systemic lupus erythematosus---type 1 diabetes (type 1)---vitiligo
-5590,30058426,electrophoresis---mass spectrometry---proteomics---serum---thyroid cancer
-5591,29698806,14q32 deletion---cancer---dicer1 syndrome
-5592,29650436,concentración urinaria de yodo---epidemiological survey---escolares---estudio epidemiológico---schoolchildren---tsh en sangre capilar---tsh in capillary blood---urinary iodine concentration
-5593,29459556,autoimmune polyglandular syndrome---hashimoto’s thyroiditis---pulmonary hypertension---type 1 diabetes
+5584,31914295,lymphatic metastasis---melatonin---melatonin receptor---papillary thyroid cancer cois relevant financial relationships with commercial interests to disclose.
+5585,31190472,cold nodule---cytology---histopathology---hot nodule---warm nodule
+5588,30639646,autoimmune thyroid diseases---autoimmune thyroiditis---celiac disease---chronic autoimmune gastritis---graves' diseases---graves' ophthalmopathy---multiple sclerosis---polymyalgia rheumatica---rheumatoid arthritis---sarcoidosis---sjogren disease---systemic lupus erythematosus---type 1 diabetes (type 1)---vitiligo
+5589,30058426,electrophoresis---mass spectrometry---proteomics---serum---thyroid cancer
+5590,29698806,14q32 deletion---cancer---dicer1 syndrome
+5591,29650436,concentración urinaria de yodo---epidemiological survey---escolares---estudio epidemiológico---schoolchildren---tsh en sangre capilar---tsh in capillary blood---urinary iodine concentration
+5592,29459556,autoimmune polyglandular syndrome---hashimoto’s thyroiditis---pulmonary hypertension---type 1 diabetes
 5595,31383578,hypocalcemia---hypoparathyroidism---pediatric population---total thyroidectomy
 5596,31301659,autopsy---goiter---malignancy---metastatic disease---thyroid---thyroid nodule
 5597,30909759,*statement---*minimally invasive treatments---*percutaneous thermal ablation---*thyroid gland---*thyroid nodule---*ultrasonography
@@ -1112,8 +1112,8 @@
 6007,32640447,*autoimmune diseases---*costimulatory molecules---*degranulation---*mast cells---*thyroid hormones
 6008,34987480,*graves’ disease---*adhesion molecules---*carotid intima media thickness---*hyperthyroidism---*methimazole---*propylthiouracil---*pulse wave velocity---*vascular atherosclerosis cois commercial or financial relationships that could be construed as a potential conflict of interest.
 6010,32466854,*hypocalcemia---*thyroidectomy---*vitamin d deficiency
-6011,34418335,graves’ disease---hypothyroidism---radioiodine therapy---thyroid peroxidase antibody (tpoab)---thyrotropin receptor antibody (trab)
-6012,33169897,goiter---imaging mass spectrometry---obesity---thyroglobulin---thyroid disease---thyroid tissue
+6011,33169897,goiter---imaging mass spectrometry---obesity---thyroglobulin---thyroid disease---thyroid tissue
+6012,34418335,graves’ disease---hypothyroidism---radioiodine therapy---thyroid peroxidase antibody (tpoab)---thyrotropin receptor antibody (trab)
 6014,33199029,dfnb4---missense mutations---next-generation sequencing---pendred syndrome---slc26a4 gene
 6016,32425952,*autoantibodies---*autoimmune---*nephropathy---*phospholipase a2 receptor---*thyroid disease
 6019,33380646,immunohistochemistry---molecular genetics---thyroid paraganglioma---thyroid tumor---total thyroidectomy cois
@@ -1160,8 +1160,8 @@
 6077,31789139,ccl5---cav-1---chemokine---hashimoto’s thyroiditis---pparγ---pioglitazone.
 6078,33400175,*anti-thyroid drugs---*hyperthyroidism---*outcome---*radioactive iodine therapy
 6081,32306294,*exophthalmos---*graves’ disease---*graves’ orbitopathy---*igf-1 receptor---*teprotumumab---*thyroid eye disease
-6082,32527127,prolonged endotracheal intubation---retrosternal goitre (rsg)---tracheomalacia
-6083,33023116,endemic congenital hypothyroidism---endemic goitre---familial aggregation---iodine deficiency---thyroid metabolism cois
+6082,33023116,endemic congenital hypothyroidism---endemic goitre---familial aggregation---iodine deficiency---thyroid metabolism cois
+6083,32527127,prolonged endotracheal intubation---retrosternal goitre (rsg)---tracheomalacia
 6085,33072219,relapse risk---benign focal pathology---nodular goiter---thyroid gland
 6089,31994506,aortic window---ectopia---hyperparathyroidism---parathyroid adenoma---thoracoscopy
 6090,33035689,*cell free mtdna---*nd4/nd1---*thyroid cancer---*mtdna copy number---*mtdna integrity
@@ -1717,11 +1717,11 @@
 6905,33327837,"*hyperthyroidism, graves' disease---*liver abnormalities---*liver dysfunction"
 6908,32573180,*graves’ disease---*autoimmunity---*peptides---*thyroid
 6909,32854689,coexistent primary and secondary hyperthyroidism---graves’ disease---tsh-secreting pituitary adenoma---tshoma---thyrotropinoma cois disorders editorial board.
-6911,32199749,*trab---*antithyroid drugs---*hyperthyroidism---*methimazole---*propylthiouracil cois of interests.
-6912,33333891,rthβ---thrb---hypercholesterolemia---hypothyroidism---resistance to thyroid hormones---thyroid---thyroid hormone receptor cois
-6913,33180037,tshr mutation---hyperthyroidism---neonatal---nonautoimmune
-6914,32631402,graves’ disease---hyperthyroidism---scintigraphy---thyroid uptake---thyrotoxicosis cois
-6915,32484412,diode---laser---metastatic---thyroid---trachea
+6911,33333891,rthβ---thrb---hypercholesterolemia---hypothyroidism---resistance to thyroid hormones---thyroid---thyroid hormone receptor cois
+6912,33180037,tshr mutation---hyperthyroidism---neonatal---nonautoimmune
+6913,32631402,graves’ disease---hyperthyroidism---scintigraphy---thyroid uptake---thyrotoxicosis cois
+6914,32484412,diode---laser---metastatic---thyroid---trachea
+6915,32199749,*trab---*antithyroid drugs---*hyperthyroidism---*methimazole---*propylthiouracil cois of interests.
 6916,32166365,*child---*congenital hypothyroidism---*gland---*intrathyroid thymus---*nodules---*thyroid---*thyroiditis---*ultrasonography
 6918,32977740,*graves' orbitopathy---*hif-1α---*caveolin-1---*deiodinase 3---*enos---*oxidative stress
 6919,34431326,covid-19---sars-cov-2---goiter---surgery---thyroid cancer---thyroidectomy
@@ -1813,11 +1813,11 @@
 7051,33346472,covid-19---russia---epidemic---iodine deficiency---iodized salt
 7052,32851577,*cd71---*primary immune deficiency---*tfr1---*a mutation in tfrc---*combined immunodeficiency cois
 7053,32500518,*covid-19---*endocrine emergencies---*endocrine surgery---*thyroid cancer cois
-7054,33121876,*graves' disease---*interferon---*interleukin---*thyroid-stimulating hormone receptor antibody---*tumor necrosis factor
-7055,34680057,*graves’ ophthalmopathy---*c-jun n-terminal kinase---*orbital fibroblast---*p38---*pirfenidone---*transforming growth factor-β1 cois
-7056,32276716,*graves’ disease---*outpatient surgery---*pediatric surgery---*thyroid cancer---*thyroid nodule---*thyroidectomy cois conflicts of interest to disclose.
-7057,31867598,*tg---*tpo---*congenital hypothyroidism---*goiter
-7058,32760349,*lymph node metastasis---*papillary thyroid cancer---*thyroglobulin antibodies---*thyroid nodule---*thyroidectomy
+7054,32276716,*graves’ disease---*outpatient surgery---*pediatric surgery---*thyroid cancer---*thyroid nodule---*thyroidectomy cois conflicts of interest to disclose.
+7055,31867598,*tg---*tpo---*congenital hypothyroidism---*goiter
+7056,32760349,*lymph node metastasis---*papillary thyroid cancer---*thyroglobulin antibodies---*thyroid nodule---*thyroidectomy
+7057,33121876,*graves' disease---*interferon---*interleukin---*thyroid-stimulating hormone receptor antibody---*tumor necrosis factor
+7058,34680057,*graves’ ophthalmopathy---*c-jun n-terminal kinase---*orbital fibroblast---*p38---*pirfenidone---*transforming growth factor-β1 cois
 7061,32714280,*cushing's disease---*dicer1---*corticotropinoma---*disease-modifying gene---*pituitary neuroendocrine tumor
 7062,32037778,*fine needle aspiration cytology---*focus number---*malignancy---*predictivity---*thyroid nodules
 7063,33868176,"*graves’ orbitopathy---*t cell immunity---*effector t cell---*fibrocyte---*orbital fibroblast---*thyroid-associated ophthalmology cois (81930024, 81761168037, 81770974, 81800695, 82071003, 82000879, 81570883, 81600766, 31701046, 31600971, and 31500714), the national key r&d program of china (2018yfc1106100, 2018yfc1106101), the shanghai sailing program (18yf1412300), the research grant of the shanghai science and technology committee (20dz2270800, 17dz2260100, 19410761100, and 19dz2331400), the clinical research plan of shdc (shdc2020cr3051b), the project of medical robots (imr-nph202002) from the clinical joint research center of the institute of medical robots, shanghai jiaotong university-shanghai ninth people’s hospital, the collaborative research project of translational medicine collaborative innovation center, shanghai jiaotong university school of medicine (tm201718), the shanghai municipal education commission—gaofeng clinical medicine grant support (20152228), the shanghai jiaotong university translational medicine crossed research grant (zh2018zda12, zh2018qna07), the sample database project of shanghai ninth people’s hospital (ybkb201901), and the joint innovation team for young physicians of shanghai ninth people’s hospital (qc202002).the authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest."
@@ -2307,7 +2307,7 @@
 12190,27107937,*coexpression---*graves' disease---*ox40/ox40l---*t cell activation
 12191,29246597,*autoantibody---*encephalitis---*hashimoto's encephalopathy---*intravenous immunoglobulin
 12197,27143020,intraoperative neuromonitoring---prognostic value---recurrent laryngeal nerve---staged thyroidectomy---thyroid surgery cois interest: author małgorzata stopa declares that she has no conflict of interest. author marcin barczyński declares that he has no conflict of interest. ethical approval: all procedures performed in studies involving human participants were in accordance with the ethical standards of the institutional and/or national research committee and with the 1964 helsinki declaration and its later amendments or comparable ethical standards. informed consent: informed consent was obtained from all individual participants included in the study.
-12203,28119492,*antibody---*gene polymorphism---*hla-dq---*ocular myasthenia gravis---*tnf-α---*thyroid associated ophthalmopathy cois manuscript.
+12204,28119492,*antibody---*gene polymorphism---*hla-dq---*ocular myasthenia gravis---*tnf-α---*thyroid associated ophthalmopathy cois manuscript.
 12206,28569114,children---goiter---iodine deficiency disorders---thyroid volume---urinary iodine
 12207,28196954,*metformin---*thyroid cancer---*thyroid disease---*thyroid nodule---*thyrotropin
 12209,28604619,cancer---flavonoid---invasiveness---iodide uptake---phytochemical---proliferation---radioiodine therapy---sodium iodide symporter (nis)---thyroid cois
@@ -2483,7 +2483,7 @@
 12572,25661375,autophagy---autophagy-related protein light chain 3 (lc3)-ii---papillary thyroid cancer
 12574,26826478,hypoparathyroidism---outcome---recurrent laryngeal nerve palsy---surgery---thyroid---à venir
 12576,25157987,cervical approach---complications---elderly---mediastinal goiter---thyroidectomy
-12578,26327954,histology---pre-sternale---surgery---thyroid enlargement
+12577,26327954,histology---pre-sternale---surgery---thyroid enlargement
 12592,26475096,ectopic lymphoid tissue---hashimoto's thyroiditis---human parvovirus b19---pathogenesis---positive regulatory domain zinc finger protein 1
 12594,24595624,airway management---airway obstruction---endotracheal intubation---goiter---intubation---nodular
 12596,25305147,estrogen---fsh---lh---progesterone---thyroid neoplasms
@@ -2606,7 +2606,7 @@
 13135,26293122,basedow---graves---autoimmunity---chemokines---thyroid
 13144,24994866,inflammatory cytokine---lacrimal gland---ocular surface---tears---thyroid-associated ophthalmopathy
 13150,25670394,autoimmune disease---graves’ disease---interleukin-23---single nucleotide polymorphism
-13158,25361748,orbit
+13159,25361748,orbit
 13169,24502333,dysthyroid optic neuropathy---graves orbitopathy---intraocular pressure---orbital decompression---superior ophthalmic vein
 13173,25244551,diplopia---graves’ disease---orbital decompression---repeat---thyroid ophthalmopathy
 13174,25188661,hiv---antiretroviral therapy---hyperthyroidism---hypothyroidism---thyroid
@@ -2726,9 +2726,9 @@
 13618,26041374,h271d---resistance to thyroid hormones---thyroid hormone receptor beta gene (thrβ)
 13621,25175810,new sporadic neoplastic syndrome---papillary and medullary carcinomas---urothelial
 13622,24493789,barriers---discharge---outpatient---thyroidectomy
-13626,26408676,thyroid sarcoma---clinical sign---review---thyroid imaging
-13628,25917998,levothyroxine---preoperative localization---primary hyperparathyroidism---sestamibi scintigraphy---ultrasound
-13629,25837167,braf---dna---biomarker---papillary thyroid carcinoma---plasma cois
+13623,26408676,thyroid sarcoma---clinical sign---review---thyroid imaging
+13625,25917998,levothyroxine---preoperative localization---primary hyperparathyroidism---sestamibi scintigraphy---ultrasound
+13626,25837167,braf---dna---biomarker---papillary thyroid carcinoma---plasma cois
 13639,25256279,anca---hyperthyroidism---propylthiouracil---vasculitis
 13642,25172242,ccl2---cxcl10---chemokines---extra-ocular muscles---graves' ophthalmopathy
 13645,25457466,compressive optic neuropathy---graves' orbitopathy---spontaneous decompression
@@ -2756,7 +2756,7 @@
 14062,21274344,pendred syndrome---congenital hypothyroidism---pseudo−pendred syndrome---thyroid peroxidase defect
 14221,21274318,thyrotropin receptor---germline mutation---nonautoimmune hyperthyroidism
 14251,21274321,congenital hypothyroidism---thyroxine
-14442,20808683,mutation---thyroid hormone receptor---thyroid hormone receptors beta---thyroid hormone resistance syndrom---thyroid neoplasms
+14441,20808683,mutation---thyroid hormone receptor---thyroid hormone receptors beta---thyroid hormone resistance syndrom---thyroid neoplasms
 14540,21052505,clinical course---optic nerve diseases---risk factors---thyroid-associated orbitopathy cois
 14650,21274336,hyperthyroidism---isolated---neonatal---sialadenitis---submandibular
 14686,21716594,"biological assay---graves disease---immunoglobulins, thyroid-stimulating---receptors, thyrotropin---thyrotropin-binding inhibitory immunoglobulin cois"
@@ -2808,8 +2808,8 @@
 15111,35528009,hashimoto thyroiditis---anti-parietal cell antibodies---gastric malignancies---organ-specific autoimmunity---systemic autoimmunity cois commercial or financial relationships that could be construed as a potential conflict of interest.
 15112,35734176,graves’ disease---auto-immune thyroiditis---kidney biopsy---membranous nephropathy---renal pathology cois commercial or financial relationships that could be construed as a potential conflict of interest.
 15113,35580958,gynecological cancer---obstetrics and gynaecology cois
-15114,35418378,"contraindications and precautions---ear, nose and throat/otolaryngology---eye---ophthalmology---thyroid disease cois"
-15115,35413468,covid-19---graves' disease---graves' ophthalmopathy---sars-cov-2---vaccine cois personal relationships that could have appeared to influence the work reported in this paper.
+15114,35413468,covid-19---graves' disease---graves' ophthalmopathy---sars-cov-2---vaccine cois personal relationships that could have appeared to influence the work reported in this paper.
+15115,35418378,"contraindications and precautions---ear, nose and throat/otolaryngology---eye---ophthalmology---thyroid disease cois"
 15116,35627231,graves’ disease---x chromosome---covariates---logistic regression---robust cois
 15118,35707463,graves orbitopathy---adipogenesis---fibroblasts---fibrosis---inflammation---periostin cois commercial or financial relationships that could be construed as a potential conflict of interest.
 15120,35390148,benign multinodular goiter---postoperative morbidity---total thyroidectomy---vocal cord palsy---weight of specimen
@@ -2833,19 +2833,19 @@
 15146,35441746,benign thyroid nodule---papillary thyroid carcinoma---platelet count---platelet distribution width---thyroglobulin cois
 15148,35522861,autoimmune thyroiditis---ctla---graves’ disease---hashimoto’s thyroiditis (ht)---il-17---il-23
 15152,34752624,*graves disease---*amygdala---*cognition---*depression---*hippocampus---*longitudinal
-15153,35429598,autoimmune thyroid diseases---high-throughput sequencing---immune repertoires---t cells receptor
-15154,35663306,erk---graves’ ophthalmopathy---stat3---dihydroartemisinin---fibrosis---inflammation---orbital fibroblast cois commercial or financial relationships that could be construed as a potential conflict of interest.
-15155,35066781,*blood markers---*clinical biomarkers---*graves’ ophthalmopathy---*orbital imaging---*tear cytokines
+15153,35663306,erk---graves’ ophthalmopathy---stat3---dihydroartemisinin---fibrosis---inflammation---orbital fibroblast cois commercial or financial relationships that could be construed as a potential conflict of interest.
+15154,35429598,autoimmune thyroid diseases---high-throughput sequencing---immune repertoires---t cells receptor
+15155,35244288,99mtechnetium uptake---grave's disease---trab---nonuniform uptake
 15156,35610583,bayesian method---graves’ disease data---minnesota center for twin and family research data---penalized fieller’s method---skewed x chromosome inactivation cois
-15157,35244288,99mtechnetium uptake---grave's disease---trab---nonuniform uptake
+15157,35066781,*blood markers---*clinical biomarkers---*graves’ ophthalmopathy---*orbital imaging---*tear cytokines
 15158,35614367,compressive optic neuropathy (con)---diplopia---dysthyroid optic neuropathy (don)---graves ophthalmopathy (go)---teprotumumab---thyroid eye disease (ted)
 15160,35273577,*il-11---*clinical activity score---*fibrosis---*orbital fibroblast---*thyroid-associated ophthalmopathy cois commercial or financial relationships that could be construed as a potential conflict of interest.
 15161,35563653,graves’ orbitopathy---disulfiram---fibrosis---myofibroblasts---perimysial orbital fibroblasts cois
 15162,35504602,*graves disease---*hashimoto disease---*immunoglobulin g4---*riedel thyroiditis---*thyroid diseases cois was reported.
 15165,35398834,dysthyroid optic neuropathy---fat decompression---grave’s disease---orbital decompression---thyroid eye disease
 15167,35018816,*italy---*age-standardized rates---*thyroid surgery---*thyroidectomies---*time trends
-15168,35565939,graves’ disease---antithyroid drugs---neonate---thyroid volume---ultrasound cois
-15169,35300630,intraocular pressure---strabismus---surgery---thyroid eye disease cois
+15168,35300630,intraocular pressure---strabismus---surgery---thyroid eye disease cois
+15170,35565939,graves’ disease---antithyroid drugs---neonate---thyroid volume---ultrasound cois
 15171,35091101,graves' disease---trab---bioassay---diagnosis---thyroid-stimulating immunoglobulin---thyrotoxicosis
 15173,34489313,*cardiomyopathies---*diastolic---*heart failure---*systolic cois
 15174,35135806,general surgery---head and neck surgery---otolaryngology / ent---thyroid disease---thyrotoxicosis cois
@@ -2856,9 +2856,9 @@
 15181,35624535,graves’ disease---hyperthyroidism---hypercalcemia---liver damage---palpitation---vomiting cois non-financial interests to disclose.
 15182,35628410,smad---tgfβ---adipogenesis---hpmscs---thyroid disease---thyroid-associated ophthalmopathy cois
 15183,35338690,*childhood cancer survivors---*head and neck radiation---*hypoparathyroidism---*pediatric thyroidectomy---*recurrent laryngeal nerve paralysis
-15184,35187713,elisa---graves’ disease---tsh-receptor antibody---diagnostic performance---dot blot assay cois
-15185,35713042,"multinodular goitre, complications of total thyroidectomy, surgeons' experience  in thyroid surgery."
-15186,35220890,graves’ disease---nrcam---th1 cells---lncrna runx1-it1 cois
+15184,35713042,"multinodular goitre, complications of total thyroidectomy, surgeons' experience  in thyroid surgery."
+15185,35220890,graves’ disease---nrcam---th1 cells---lncrna runx1-it1 cois
+15186,35187713,elisa---graves’ disease---tsh-receptor antibody---diagnostic performance---dot blot assay cois
 15187,35443720,case report---germ cell tumor---human chorionic gonadotropin---hyperthyroidism---paraneoplastic syndrome cois
 15188,35396078,ethanol---radiofrequency---thermal ablation---thyroid cancer---thyroid nodule
 15189,35667695,"*ear, nose and throat---*genetics---*thyroid disease cois"
@@ -2877,9 +2877,9 @@
 15210,35615718,graves’ disease---graves’ orbitopathy---antithymocyte globulin---proptosis---thyroid eye disease cois commercial or financial relationships that could be construed as a potential conflict of interest.
 15211,35189399,*cd4(+) t cells---*graves’ disease (gd)---*immune---*regulatory t cells---*t helper cells 17
 15212,35413779,"*blood flow velocity---*graves disease---*receptors, thyrotropin---*thyroiditis---*thyrotoxicosis---*ultrasonography, doppler, color cois samsung medison co., ltd. (seoul, korea). the sponsor had no role in the writing of the manuscript or in the decision to submit the manuscript for publication."
-15213,34979862,central choroidal thickness---choroidal vascularity index---clinical activity score---non-inflammatory active ted---thyroid eye disease
-15214,35405579,clinical activity score prediction---disease activity differentiation---magnetic resonance imaging---magnetization transfer---thyroid-associated ophthalmopathy
-15215,35235144,angptl3---graves’ disease---hdl subfractions---hyperthyroidsim---hypothyroidism---pre-β1 hdl
+15213,35405579,clinical activity score prediction---disease activity differentiation---magnetic resonance imaging---magnetization transfer---thyroid-associated ophthalmopathy
+15214,35235144,angptl3---graves’ disease---hdl subfractions---hyperthyroidsim---hypothyroidism---pre-β1 hdl
+15215,34979862,central choroidal thickness---choroidal vascularity index---clinical activity score---non-inflammatory active ted---thyroid eye disease
 15216,35229626,*graves' disease---*autoimmune thyroid disease---*primary thyroid lymphoma
 15218,35307774,dicer1---multinodular goiter---pediatric poorly differentiated thyroid carcinoma---thyroblastoma cois
 15220,35018442,*individual participant data---*meta-analysis---*muscle strength---*quality of life---*vitamin d
@@ -2900,8 +2900,8 @@
 15242,34861792,*graves' disease---*mica---*mendelian randomization---*nkg2d---*community-based cohort---*phenome-wide association
 15243,35064543,bone mineral density---graves’ disease---muscle mass---thyroid hormone
 15244,34928110,pediatric age.---thyroid cancer---grave's disease
-15246,35465762,"*goiter---*thyroid---*thyroid nodule---*thyroiditis---*ultrasound cois conflicts of interest with respect to the research, authorship, and/or publication of this article."
-15247,35720300,graves’ disease---hashimoto’s thyroiditis---cell communication---immune dysregulation---thyroid tissue cois commercial or financial relationships that could be construed as a potential conflict of interest.
+15246,35720300,graves’ disease---hashimoto’s thyroiditis---cell communication---immune dysregulation---thyroid tissue cois commercial or financial relationships that could be construed as a potential conflict of interest.
+15248,35465762,"*goiter---*thyroid---*thyroid nodule---*thyroiditis---*ultrasound cois conflicts of interest with respect to the research, authorship, and/or publication of this article."
 15250,35090420,acute transient thyroid swelling---adenomatous goiter---airway obstruction---aortic regurgitation---fine-needle aspiration---nodular goiter---thyroid gland---tracheal intubation cois
 15251,35592782,diffusion tensor imaging---dysthyroid optic neuropathy---magnetic resonance imaging---optic nerve---thyroid-associated ophthalmopathy cois commercial or financial relationships that could be construed as a potential conflict of interest.
 15254,35088381,antithyroid drug---graves’ disease---long-term---methimazole---remission---thionamides
@@ -2914,8 +2914,8 @@
 15267,35094312,*antithyroid drugs---*efficacy---*graves---*hyperthyroidism---*therapeutic plasma exchange
 15268,34779257,*graves'---*autoimmunity---*disease---*orbitopathy---*preclinical mouse model
 15270,35619700,cd40---pd-l1---t cell---orbital fibroblast---thyroid associated ophthalmopathy cois commercial or financial relationships that could be construed as a potential conflict of interest.
-15272,35579208,aneurysmal bone cyst---graves’ disease---moyamoya disease---case report---ischemic cerebral infarction---proximal femur cois conflict of interest.
-15273,35039349,immunological products and vaccines---lung cancer (oncology)---safety---therapeutic indications---thyroid disease cois
+15272,35039349,immunological products and vaccines---lung cancer (oncology)---safety---therapeutic indications---thyroid disease cois
+15273,35579208,aneurysmal bone cyst---graves’ disease---moyamoya disease---case report---ischemic cerebral infarction---proximal femur cois conflict of interest.
 15274,35088429,graves' disease---graves' ophthalmopathy---autoimmune diseases---hyperthyroidism---thyroid diseases
 15276,35413827,antithyroid drug---maternal subtotal thyroidectomy---neonatal hyperthyroidism---thyroid function---thyroid-stimulating hormone receptor antibody cois
 15278,35538553,intraocular pressure---lateral gaze---primary gaze---teprotumumab---thyroid eye disease---upgaze cois
