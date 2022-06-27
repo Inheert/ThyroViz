@@ -1,0 +1,62 @@
+SELECT s.nct_id, bc.downcase_mesh_term, s.official_title, s.brief_title, c.names AS all_conditions, s.study_first_submitted_date, s.primary_completion_date, s.completion_date, s.enrollment, d.observational_model, d.intervention_model, d.time_perspective, s.study_type, s.overall_status, s.phase AS study_phases, s.source AS funded_bys, ap.names AS sponsors_name, af.names as investigators, ait.names AS intervention_types, ac.names AS location, cv.minimum_age_num, cv.minimum_age_unit, cv.maximum_age_num, cv.maximum_age_unit
+FROM studies AS s
+
+LEFT JOIN browse_conditions AS bc ON s.nct_id = bc.nct_id
+LEFT JOIN all_conditions AS c ON s.nct_id = c.nct_id
+LEFT JOIN all_sponsors AS ap ON s.nct_id = ap.nct_id
+LEFT JOIN all_facilities AS af ON s.nct_id = af.nct_id
+LEFT JOIN all_intervention_types AS ait ON s.nct_id = ait.nct_id
+LEFT JOIN all_countries AS ac ON s.nct_id = ac.nct_id
+LEFT JOIN designs as d ON s.nct_id = d.nct_id
+LEFT JOIN calculated_values AS cv ON s.nct_id = cv.nct_id
+
+WHERE
+(LOWER(s.study_type) = 'interventional' OR LOWER(s.study_type) = 'observational' OR LOWER(s.study_type) = 'observational [patient registry]')
+-- AND
+-- (LOWER(s.overall_status) LIKE '%not yet recruiting%' OR LOWER(s.overall_status) = 'recruiting' OR LOWER(s.overall_status) LIKE '%active, not recruiting%')
+AND
+(
+lower(downcase_mesh_term) LIKE '%hyperthyroidism%' or lower(downcase_mesh_term) LIKE '%hyperthyroid%' or lower(downcase_mesh_term) LIKE '%thyrotoxicosis%' or lower(downcase_mesh_term) LIKE '%amiodarone-induced thyrotoxicosis%'
+or lower(downcase_mesh_term) LIKE '%graves disease%' or lower(downcase_mesh_term) LIKE '%basedow disease%' or lower(downcase_mesh_term) LIKE '%autoimmune hyperthyroidism%'
+or lower(downcase_mesh_term) LIKE '%orbitopathy%' or lower(downcase_mesh_term) LIKE '%graves ophthalmopathy%' or lower(downcase_mesh_term) LIKE '%graves orbitopathies%' or lower(downcase_mesh_term) LIKE '%thyroid eye disease%' or lower(downcase_mesh_term) LIKE '%thyroid associated ophthalmopathies%' or lower(downcase_mesh_term) LIKE '%thyroid orbitopathy%' or lower(downcase_mesh_term) LIKE '%dysthyroid ophthalmopathies%' or lower(downcase_mesh_term) LIKE '%dysthyroid orbitopathy%' or lower(downcase_mesh_term) LIKE '%thyroid ophthalmopathy%'
+
+or lower(downcase_mesh_term) LIKE '%hashimoto disease%' or lower(downcase_mesh_term) LIKE '%hashimoto%' or lower(downcase_mesh_term) LIKE '%lymphocytic thyroiditis%' or lower(downcase_mesh_term) LIKE '%chronic lymphocytic thyroiditis%' or lower(downcase_mesh_term) LIKE '%chronic thyroiditis%' or lower(downcase_mesh_term) LIKE '%autoimmune thyroiditis%' or lower(downcase_mesh_term) LIKE '%thyroiditis, autoimmune%' or lower(downcase_mesh_term) LIKE '%thyroiditis autoimmune%' or lower(downcase_mesh_term) LIKE '%thyroiditis%'
+or lower(downcase_mesh_term) LIKE '%giant cell thyroiditis%' or lower(downcase_mesh_term) LIKE '%thyroiditis, subacute%' or lower(downcase_mesh_term) LIKE '%subacute thyroiditis%' or lower(downcase_mesh_term) LIKE '%de quervains thyroiditis%' or lower(downcase_mesh_term) LIKE '%subacute thyroiditis%'
+or lower(downcase_mesh_term) LIKE '%others thyroiditis%' or lower(downcase_mesh_term) LIKE '%riedel’s thyroiditis%' or lower(downcase_mesh_term) LIKE '%postpartum thyroiditis%'
+
+or lower(downcase_mesh_term) LIKE '%thyroid neoplasms%' or lower(downcase_mesh_term) LIKE '%thyroid cancer%' or lower(downcase_mesh_term) LIKE '%thyroid gland neoplasm%' or lower(downcase_mesh_term) LIKE '%carcinoma of the thyroid%' or lower(downcase_mesh_term) LIKE '%thyroid neoplasia%' or lower(downcase_mesh_term) LIKE '%cancer of thyroid%' or lower(downcase_mesh_term) LIKE '%carcinoma of thyroid%' or lower(downcase_mesh_term) LIKE '%tumor of the thyroid%' or lower(downcase_mesh_term) LIKE '%thyroid gland cancer%' or lower(downcase_mesh_term) LIKE '%neoplasm of the thyroid%' or lower(downcase_mesh_term) LIKE '%tumor of thyroid%' or lower(downcase_mesh_term) LIKE '%thyroid carcinoma, anaplastic%'
+or lower(downcase_mesh_term) LIKE '%thyroid cancer, papillary%' or lower(downcase_mesh_term) LIKE '%papillary thyroid cancer%' or lower(downcase_mesh_term) LIKE '%papillary thyroid carcinoma%' or lower(downcase_mesh_term) LIKE '%thyroid gland papillary carcinomapapillary thyroid carcinoma%' or lower(downcase_mesh_term) LIKE '%thyroid papillary carcinoma%' or lower(downcase_mesh_term) LIKE '%papillary carcinoma of thyroid%' or lower(downcase_mesh_term) LIKE '%papillary carcinoma of the thyroid%' OR LOWER(downcase_mesh_term) LIKE '%tall cell variant thyroid cancer%' OR LOWER(downcase_mesh_term) LIKE '%columnar cell variant thyroid gland papillary carcinoma%' OR LOWER(downcase_mesh_term) LIKE '%follicular variant thyroid gland papillary carcinoma%' OR LOWER(downcase_mesh_term) LIKE '%tall cell variant thyroid gland papillary carcinoma%'
+OR LOWER(downcase_mesh_term) LIKE '%thyroid cancer, follicular%' OR LOWER(downcase_mesh_term) LIKE '%thyroid cancer (follicular cell)%' OR LOWER(downcase_mesh_term) LIKE '%follicular thyroid cancer%' OR LOWER(downcase_mesh_term) LIKE '%thyroid gland follicular carcinoma%' OR LOWER(downcase_mesh_term) LIKE '%follicular thyroid cancer lymph node metastasis%' OR LOWER(downcase_mesh_term) LIKE '%follicular thyroid carcinoma%' OR LOWER(downcase_mesh_term) LIKE '%adenocarcinoma, follicular%' OR LOWER(downcase_mesh_term) LIKE '%carcinoma, follicular%'
+
+OR LOWER(downcase_mesh_term) LIKE '%huerthle cell thyroid cancer%' OR LOWER(downcase_mesh_term) LIKE '%hurthle cell thyroid cancer%' OR LOWER(downcase_mesh_term) LIKE '%thyroid gland hurthle cell carcinoma%' OR LOWER(downcase_mesh_term) LIKE '%hurthle cell tumor%' OR LOWER(downcase_mesh_term) LIKE '%hurthle cell thyroid neoplasia%' OR LOWER(downcase_mesh_term) LIKE '%thyroid gland oncocytic follicular carcinoma%' OR LOWER(downcase_mesh_term) LIKE '%hurthle cell carcinoma of the thyroid%'
+
+OR LOWER(downcase_mesh_term) LIKE '%differentiated thyroid cancer%'
+
+OR LOWER(downcase_mesh_term) LIKE '%insular thyroid cancer%' OR LOWER(downcase_mesh_term) LIKE '%poorly differentiated thyroid gland carcinoma%'
+
+OR LOWER(downcase_mesh_term) LIKE '%anaplastic thyroid cancer%' OR LOWER(downcase_mesh_term) LIKE '%thyroid gland anaplastic carcinoma%' OR LOWER(downcase_mesh_term) LIKE '%thyroid cancer, anaplastic%' OR LOWER(downcase_mesh_term) LIKE '%thyroid carcinoma, anaplastic%' OR LOWER(downcase_mesh_term) LIKE '%undifferentiated thyroid cancer%' OR LOWER(downcase_mesh_term) LIKE '%anaplastic thyroid carcinoma%' OR LOWER(downcase_mesh_term) LIKE '%anaplastic carcinoma of the thyroid%'
+
+OR LOWER(downcase_mesh_term) LIKE '%thyroid gland squamous cell carcinoma%'
+
+OR LOWER(downcase_mesh_term) LIKE '%medullary thyroid cancer%' OR LOWER(downcase_mesh_term) LIKE '%medullary thyroid carcinoma%' OR LOWER(downcase_mesh_term) LIKE '%thyroid gland medullary carcinoma%' OR LOWER(downcase_mesh_term) LIKE '%thyroid cancer, medullary%'
+
+OR LOWER(downcase_mesh_term) LIKE '%recurrent thyroid cancer%' OR LOWER(downcase_mesh_term) LIKE '%recurrent thyroid tland carcinoma%'
+
+OR LOWER(downcase_mesh_term) LIKE '%metastatic thyroid cancer%' OR LOWER(downcase_mesh_term) LIKE '%metastatic thyroid gland carcinoma%'
+or lower(downcase_mesh_term) LIKE '%struma%' or lower(downcase_mesh_term) LIKE '%struma ovarii%'
+
+or lower(downcase_mesh_term) LIKE '%hyperparathyroidism%' or lower(downcase_mesh_term) LIKE '%hyperparathyroidism, primary%' or lower(downcase_mesh_term) LIKE '%primary hyperparathyroidism%' or lower(downcase_mesh_term) LIKE '%hyperparathyroidism, secondary%' or lower(downcase_mesh_term) LIKE '%secondary hyperparathyroidism%' or lower(downcase_mesh_term) LIKE '%hyperparathyroidism secondary%' or lower(downcase_mesh_term) LIKE '%parathyroid diseases%' or lower(downcase_mesh_term) LIKE '%parathyroid dysfunction%' or lower(downcase_mesh_term) LIKE '%disorders of parathyroid gland%' or lower(downcase_mesh_term) LIKE '%parathyroid disorders%' or lower(downcase_mesh_term) LIKE '%hypoparathyroidism%'
+or lower(downcase_mesh_term) LIKE '%parathyroid cancer%' or lower(downcase_mesh_term) LIKE '%parathyroid neoplasms%' or lower(downcase_mesh_term) LIKE '%parathyroid tumor%'
+or lower(downcase_mesh_term) LIKE '%pseudohypoparathyroidism%' or lower(downcase_mesh_term) LIKE '%pseudopseudohypoparathyroidism%'
+
+or lower(downcase_mesh_term) LIKE '%hypothyroidism%' or lower(downcase_mesh_term) LIKE '%hypothyroid%' or lower(downcase_mesh_term) LIKE '%low t4%'
+or downcase_mesh_term LIKE '%secondary hypothyroidism%' OR downcase_mesh_term LIKE '%pituitary hypothyroidism%' OR downcase_mesh_term LIKE '%central hypothyroidism%' OR downcase_mesh_term LIKE '%secondary hypothyroidism %'
+or lower(downcase_mesh_term) LIKE '%congenital hypothyroidism%' or lower(downcase_mesh_term) LIKE '%cretinism%' or lower(downcase_mesh_term) LIKE '%thyroid dysgenesis%'
+
+or lower(downcase_mesh_term) LIKE '%euthyroid sick syndromes%' or lower(downcase_mesh_term) LIKE '%non thyroidal illness syndrome%' or lower(downcase_mesh_term) LIKE '%low t3 syndrome%' or lower(downcase_mesh_term) LIKE '%low triiodothyronine syndrome%'
+
+or lower(downcase_mesh_term) LIKE '%goiter%' or lower(downcase_mesh_term) LIKE '%goiter / nodule%' or lower(downcase_mesh_term) LIKE '%thyroid gland nodule%' or lower(downcase_mesh_term) LIKE '%goiter%' or lower(downcase_mesh_term) LIKE '%goiter, nodular%' or lower(downcase_mesh_term) LIKE '%goitre, nodular%'or lower(downcase_mesh_term) LIKE '%nodular goiter%' or lower(downcase_mesh_term) LIKE '%nodular goitre%' or lower(downcase_mesh_term) LIKE '%multinodular goiter%' or lower(downcase_mesh_term) LIKE '%recurrent goiter%'
+or lower(downcase_mesh_term) LIKE '%thyroid nodule%'
+)
+
+ORDER BY s.nct_id

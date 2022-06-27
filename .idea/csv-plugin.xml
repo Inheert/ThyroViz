@@ -3,6 +3,34 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="/Full_author_name.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-04-22_11-45/df_age_range.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-04-22_11-45/df_country.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-04-22_11-45/df_intervention_types.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-04-22_11-45/df_investigators.csv">
           <value>
             <Attribute>
@@ -18,6 +46,412 @@
           </value>
         </entry>
         <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-04-22_11-45/studies.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-11_16-41/df_age_range.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-11_16-41/df_country.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-11_16-41/df_intervention_types.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-11_16-41/df_investigators.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-11_16-41/df_sponsorsName.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-23_15-32/df_age_range.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-23_15-32/df_country.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-23_15-32/df_intervention_types.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-23_15-32/df_investigators.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-23_15-32/df_sponsorsName.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_14-41/df_age_range.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_14-41/df_country.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_14-41/df_intervention_types.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_14-41/df_investigators.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_14-41/df_sponsorsName.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_14-41/studies.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_14-58/df_age_range.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_14-58/df_country.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_14-58/df_intervention_types.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_14-58/df_investigators.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_14-58/df_sponsorsName.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_14-58/studies.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_15-02/df_age_range.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_15-02/df_country.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_15-02/df_intervention_types.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_15-02/df_investigators.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_15-02/df_sponsorsName.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_15-02/studies.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_15-55/df_age_range.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_15-55/df_country.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_15-55/df_intervention_types.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_15-55/df_investigators.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_15-55/df_sponsorsName.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_15-55/studies.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_16-00/df_age_range.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_16-00/df_country.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_16-00/df_intervention_types.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_16-00/df_investigators.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_16-00/df_sponsorsName.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-05-24_16-00/studies.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-06-08_08-45/df_age_range.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-06-08_08-45/df_country.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-06-08_08-45/df_intervention_types.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-06-08_08-45/df_investigators.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-06-08_08-45/df_sponsorsName.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-06-08_08-45/studies.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-06-08_09-22/df_age_range.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-06-08_09-22/df_country.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-06-08_09-22/df_intervention_types.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-06-08_09-22/df_investigators.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-06-08_09-22/df_sponsorsName.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-06-08_09-22/studies.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-06-09_14-55/df_age_range.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-06-09_14-55/df_country.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-06-09_14-55/df_intervention_types.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-06-09_14-55/df_investigators.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-06-09_14-55/df_sponsorsName.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/script/sql/visualisation/CSV_backup/ClinicalTrials_2022-06-09_14-55/studies.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

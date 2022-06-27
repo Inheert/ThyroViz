@@ -2,3 +2,6 @@ venv
 *.pyc
 .env
 .DS_Store
+script/clinical_trials/sql/visualisation/*
+!script/clinical_trials/sql/visualisation/global_request
+!script/clinical_trials/sql/visualisation/non_specific_request

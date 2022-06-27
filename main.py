@@ -1,7 +1,7 @@
 import dash
 import dash_labs as dl
 import dash_bootstrap_components as dbc
-from dash import Dash, dcc, html, Input, Output, State, callback
+from dash import dcc, html, Input, Output, State, callback
 from datetime import datetime
 import os
 import glob
@@ -9,6 +9,8 @@ import glob
 interval = 10
 
 FONT_AWESOME = "https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+clinical_trials_pages = ["pages.clinical_trials.dashboard", "pages.clinical_trials.investigators", "pages.clinical_trials.sponsors", "pages.clinical_trials.studies"]
+pubmed_pages = ["pages.pubmed.dashboard"]
 
 app = dash.Dash(__name__, plugins=[dl.plugins.pages], external_stylesheets=[dbc.themes.BOOTSTRAP,
                                                                             dbc.icons.BOOTSTRAP,
@@ -45,7 +47,7 @@ sidebar = \
             dbc.Button(">", id="slideMenuButton", style={"position": "fixed"}),
             dbc.Offcanvas(
                 id="slideMenu",
-                is_open=False,
+                is_open=True,
                 style={
                     "width": "22rem",
                     "backgroundColor": "#f8f9fa",
@@ -66,15 +68,39 @@ sidebar = \
                                     html.P(
                                         "Navigate through the different tools of ThyroResearch", className="lead"
                                     ),
+                                    html.Br(),
+
+                                    html.P("Clinical Trials",
+                                           style={
+                                               "fontWeight": 800,
+                                               "color": '#096BFE'
+                                           }),
+                                    html.Hr(),
                                     dbc.Nav(
                                         [
                                             dbc.NavLink(page["name"], href=page["path"], active="exact")
                                             for page in dash.page_registry.values()
-                                            if page["module"] != "pages.not_found_404"
+                                            if page["module"] in clinical_trials_pages
                                         ],
                                         vertical=True,
                                         pills=True,
                                     ),
+                                    html.Br(),
+
+                                    html.P("Pubmed",
+                                           style={"fontWeight": 800,
+                                                  "color": "#096BFE"}),
+                                    html.Hr(),
+                                    dbc.Nav(
+                                        [
+                                            dbc.NavLink(page["name"], href=page["path"], active="exact")
+                                            for page in dash.page_registry.values()
+                                            if page["module"] in pubmed_pages
+                                        ],
+                                        vertical=True,
+                                        pills=True,
+                                    ),
+
                                 ],
                                 style={
                                     "height": "87%"
@@ -82,7 +108,7 @@ sidebar = \
                             ),
                             html.Plaintext("Last update:"),
                             html.Plaintext(
-                                f"{datetime.fromtimestamp(os.path.getmtime(glob.glob(f'{os.path.abspath(os.curdir)}/script/sql/visualisation/CSV_files/studies.csv')[0])).strftime('%Y-%m-%d %H:%M')}",
+                                f"{datetime.fromtimestamp(os.path.getmtime(glob.glob(f'{os.path.abspath(os.curdir)}/script/clinical_trials/sql/visualisation/CSV_files/studies.csv')[0])).strftime('%Y-%m-%d %H:%M')}",
                                 id="lastUpdate",
                                 style={
                                     "marginTop": "-15px"
@@ -172,14 +198,14 @@ def ToggleSlideMenu(n1, is_open):
           Input("timerRefreshButton", "n_intervals"),
           Input("updateButton", "n_clicks"))
 def confirmButton(timer, button):
-    from script.ct_const import loading
+    from script.clinical_trials.ct_const import loading
     if button:
         return True, True, None
 
     if timer and not loading:
         buttonDisable = False if datetime.now().timestamp() - datetime.fromtimestamp(
             os.path.getmtime(glob.glob(
-                f'{os.path.abspath(os.curdir)}/script/sql/visualisation/CSV_files/studies.csv')[
+                f'{os.path.abspath(os.curdir)}/script/clinical_trials/sql/visualisation/CSV_files/studies.csv')[
                                  0])).timestamp() > 100 else True
         if not buttonDisable:
             return False, False, None
@@ -197,10 +223,10 @@ def confirmButton(timer, button):
           Output("lastUpdate", "children"),
           Input("confirm-update", "submit_n_clicks"))
 def updatingData(submit_n_clicks):
-    lastUpdate = f"{datetime.fromtimestamp(os.path.getmtime(glob.glob(f'{os.path.abspath(os.curdir)}/script/sql/visualisation/CSV_files/studies.csv')[0])).strftime('%Y-%m-%d %H:%M')}"
+    lastUpdate = f"{datetime.fromtimestamp(os.path.getmtime(glob.glob(f'{os.path.abspath(os.curdir)}/script/clinical_trials/sql/visualisation/CSV_files/studies.csv')[0])).strftime('%Y-%m-%d %H:%M')}"
 
     if submit_n_clicks:
-        from script.ct_core import appLaunch
+        from script.clinical_trials.ct_core import appLaunch
         appLaunch()
         return None, lastUpdate
     return None, lastUpdate
