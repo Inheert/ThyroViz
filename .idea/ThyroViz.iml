@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/script/clinical_trials/sql/visualisation/CSV_backup/ClinicalTrials_2022-06-08_08-45" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.10 (ThyroViz)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
