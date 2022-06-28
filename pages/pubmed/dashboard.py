@@ -1,10 +1,40 @@
 import dash
-from dash import html, Input, Output, callback
 from script.pubmed.PubmedGroup import *
+from pages.utilities.pubmed_dashboard.callbacks import *
 
 dash.register_page(__name__)
 
 layout = html.Div([
+    dcc.Interval(id="first_interval"),
+    dbc.Row(
+        [
+            dbc.Col(topCard1, width=2),
+            dbc.Col(topCard2, width=2),
+            dbc.Col(topCard3, width=2)
+        ],
+        justify="center"
+    ),
+    html.Br(style={"marginTop": "2vh"}),
+
+    dbc.Row(
+        general_filters
+    ),
+
+    html.Br(style={"marginTop": "2vh"}),
+    dbc.Row(
+        [
+            dbc.Col(
+                [categoryRepartition, html.H5(id="test")],
+                width="auto"
+            ),
+            dbc.Col(
+                articlesDateOverview,
+                width="auto"
+            )
+        ],
+        justify="between"
+    ),
+
     html.Button(id="test_retrieve", children="Pubmed Retrieve")
 ])
 

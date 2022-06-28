@@ -1,5 +1,6 @@
 from script.pubmed.modules import *
 
+
 class Pubmed:
 
     # Ajouter les filtres pubmed en argument
@@ -58,12 +59,12 @@ class Pubmed:
                 print("The number of file. is not equal to what he should be, articles retrieve will restart.\n"
                       "If this problem persist using PubmedGroup class try to reduce threading threadingObject parameters (default = 3)\n"
                       "Else increase time.sleep or count max from RetrieveArticles Pubmed method.")
-                shutil.rmtree(self.directory)
                 driver.quit()
+                shutil.rmtree(self.directory)
                 self.directory = f"{os.path.abspath(os.curdir)}/data/temp/{self.uid}"
                 self.directory = self.directory if platform.system() == "Linux" else self.directory.replace("/", "\\")
                 self.RetrieveArticles()
-                break
+                return None
 
         if self.is_already_done:
             return None
@@ -85,7 +86,7 @@ class Pubmed:
 
         self.is_already_done = True
 
-# Ensemble des actions réalisées par Selenium
+    # Ensemble des actions réalisées par Selenium
     def _SeleniumActions(self, _driver):
 
         open_save_window = _driver.find_element(by=By.ID, value='save-results-panel-trigger')
@@ -132,17 +133,13 @@ class Pubmed:
         for file in object_files:
             file = open(file, "r", encoding='utf-8').read()
 
-            self.dictionary = {"AB": [], "AD": [], "AID": [], "DP": [], "FAU": [], "IR": [], "JT": [], "MH": [],
-                               "OT": [],
-                               "PL": [], "PMID": [], "PT": [], "RN": [], "TI": []}
+            dictionary = {x: [] for x in Pubmed.valid_tag}
 
             articles = file.split("\n\n")
 
             for article in articles:
 
-                article_dictionary = {"AB": "", "AD": "", "AID": "", "DP": "", "FAU": "", "IR": "", "JT": "", "MH": "",
-                                      "OT": "",
-                                      "PL": "", "PMID": "", "PT": "", "RN": "", "TI": ""}
+                article_dictionary = {x: "" for x in Pubmed.valid_tag}
 
                 article = article.split("\n")
 
@@ -155,22 +152,24 @@ class Pubmed:
                     if name_tag not in Pubmed.valid_tag:
                         if name_tag not in Pubmed.all_tag and last_tag in Pubmed.valid_tag:
                             if last_tag == "AD":
-                                article_dictionary["FAU"] += f" {name_tag.lower()}"
+                                # article_dictionary["FAU"] += f" {name_tag.lower()}"
+                                pass
                             else:
                                 article_dictionary[last_tag] += f" {name_tag.lower()}"
                         else:
                             continue
-                    elif last_tag == "AD":
-                        article_dictionary["FAU"] += "/SPLIT/" + tag[1].lower()
+                    # elif last_tag == "AD":
+                    #     article_dictionary["FAU"] += "/SPLIT/" + tag[1].lower()
                     else:
-                        article_dictionary[name_tag] += tag[1].lower() if len(article_dictionary[name_tag]) < 1 else "---" + \
-                                                                                                             tag[1].lower()
+                        article_dictionary[name_tag] += tag[1].lower() if len(
+                            article_dictionary[name_tag]) < 1 else "---" + \
+                                                                   tag[1].lower()
                         last_tag = name_tag
 
                 for k, v in article_dictionary.items():
-                    self.dictionary[k].append(v)
+                    dictionary[k].append(v)
 
-            df = pd.DataFrame(self.dictionary)
+            df = pd.DataFrame(dictionary)
             dataframe_list.append(df)
 
         return dataframe_list
@@ -265,16 +264,16 @@ class Pubmed:
 
         return df
 
-#
-# Les méthodes ci-dessous servent à l'initialisation de l'objet:
-#    - InitializeObjectVariables : ensembles des variables/paramètres
-#
-#    - InitializeURL : créer la base de l'url de l'objet
-#
-#    - InitializeSelenium : initialisation et configuration du moteur de recherche (ici chrome), pour utiliser selenium
-#      il faut générer un jeton API via les paramètres développeurs de github.
-#
-#
+    #
+    # Les méthodes ci-dessous servent à l'initialisation de l'objet:
+    #    - InitializeObjectVariables : ensembles des variables/paramètres
+    #
+    #    - InitializeURL : créer la base de l'url de l'objet
+    #
+    #    - InitializeSelenium : initialisation et configuration du moteur de recherche (ici chrome), pour utiliser selenium
+    #      il faut générer un jeton API via les paramètres développeurs de github.
+    #
+    #
 
     def __InitializeObjectVariables__(self, pathologie: str, delay: float):
         self.uid = uuid4().hex
@@ -307,17 +306,21 @@ class Pubmed:
         prefs = {"download.default_directory": self.directory}
         self.options.add_experimental_option("prefs", prefs)
 
-    all_tag = ["AB", "AD", "AID", "AU", "BTI", "CI", "CIN", "CN", "COI", "CON", "CP", "CRDT", "CRF", "CRI", "CTDT", "CTI",
-               "DCOM", "DDIN", "DRIN", "DEP", "DP", "DRDT", "ECF", "ECI", "EDAT", "EFR", "EIN", "ED", "EN", "FAU", "FED", "FIR",
+    all_tag = ["AB", "AD", "AID", "AU", "BTI", "CI", "CIN", "CN", "COI", "CON", "CP", "CRDT", "CRF", "CRI", "CTDT",
+               "CTI",
+               "DCOM", "DDIN", "DRIN", "DEP", "DP", "DRDT", "ECF", "ECI", "EDAT", "EFR", "EIN", "ED", "EN", "FAU",
+               "FED", "FIR",
                "FPS", "GN", "GR", "GS", "IP", "IR", "IRAD", "IS", "ISBN", "JID", "JT", "LA", "LID", "LR", "MH", "MHDA",
-               "OAB", "OABL", "OCI", "OID", "ORI", "OT", "OTO", "OWN", "PB", "PG", "PHST", "PL", "PMCR", "PMID", "PS", "PST",
-               "PT", "RF", "RIN", "RN", "ROF", "RPF", "RPI", "RRI", "RRF", "SB", "SFM", "SI", "SO", "SPIN", "STAT", "TA", "TI",
+               "OAB", "OABL", "OCI", "OID", "ORI", "OT", "OTO", "OWN", "PB", "PG", "PHST", "PL", "PMCR", "PMID", "PS",
+               "PST",
+               "PT", "RF", "RIN", "RN", "ROF", "RPF", "RPI", "RRI", "RRF", "SB", "SFM", "SI", "SO", "SPIN", "STAT",
+               "TA", "TI",
                "TT", "UIN", "UOF", "VI", "VTI"]
 
-    valid_tag = ["AB", "AD", "AID", "DP", "FAU", "IR", "JT", "MH", "OT", "PL", "PMID", "PT", "RN", "TI"]
+    valid_tag = ["AB", "AD", "AID", "DP", "EDAT", "FAU", "IR", "JT", "MH", "OT", "PL", "PMID", "PT", "RN", "TI"]
 
     tag_translation = {"AB": "Abstract", "AD": "Affiliation", "AID": "Article_identifier",
-                       "DP": "Publication_date", "FAU": "Full_author_name", "IR": "Investigator",
+                       "DP": "Publication_date", "EDAT": "Entrez_date", "FAU": "Full_author_name", "IR": "Investigator",
                        "JT": "Full_journal", "MH": "Mesh_terms", "OT": "Other_term",
                        "PL": "Place_of_publication", "PMID": "PMID", "PT": "Publication_type",
                        "RN": "Chemical", "TI": "Title"}
@@ -352,16 +355,23 @@ class Pubmed:
     category = {
         "euthyroid sick syndromes": ["euthyroid sick syndromes"],
         "goiter": ["goiter", "goiter, endemic", "goiter, nodular", "goiter, substernal", "lingual goiter"],
-        "hyperthyroidism": ["hyperthyroidism", "graves disease", "graves' disease", "graves ophthalmopathy", "thyrotoxicosis", "thyroid crisis"],
-        "hyperthyroxinemia": ["hyperthyroxinemia", "hyperthyroxinemia, familial dysalbuminemic", "thyroid hormone resistance syndrome"],
-        "hypothyroidism": ["congenital hypothyroidism", "thyroid dysgenesis", "lingual thyroid", "lingual goiter", "hypothyroidism"],
+        "hyperthyroidism": ["hyperthyroidism", "graves disease", "graves' disease", "graves ophthalmopathy",
+                            "thyrotoxicosis", "thyroid crisis"],
+        "hyperthyroxinemia": ["hyperthyroxinemia", "hyperthyroxinemia, familial dysalbuminemic",
+                              "thyroid hormone resistance syndrome"],
+        "hypothyroidism": ["congenital hypothyroidism", "thyroid dysgenesis", "lingual thyroid", "lingual goiter",
+                           "hypothyroidism"],
         "thyroid neoplasms": ["thyroid neoplasms", "thyroid cancer, papillary", "thyroid carcinoma, anaplastic"],
         "thyroid nodule": ["thyroid nodule"],
-        "thyroiditis": ["thyroiditis, autoimmune", "hashimoto disease", "postpartum thyroiditis", "thyroiditis, subacute", "thyroiditis, suppurative"],
+        "thyroiditis": ["thyroiditis, autoimmune", "hashimoto disease", "postpartum thyroiditis",
+                        "thyroiditis, subacute", "thyroiditis, suppurative"],
         "thyroid disease": ["thyroid disease", "thyroid diseases", "thyroid gland"]
     }
 
-    observational_study_characteristics = ["case-control studies", "retrospective studies", "cohort studies", "follow-up studies",
-                                           "longitudinal studies", "prospective studies", "controlled before-after studies", "cross-sectional studies",
-                                           "historically controlled study", "interrupted time series analysis", "case-control", "retrospective", "cohort",
+    observational_study_characteristics = ["case-control studies", "retrospective studies", "cohort studies",
+                                           "follow-up studies",
+                                           "longitudinal studies", "prospective studies",
+                                           "controlled before-after studies", "cross-sectional studies",
+                                           "historically controlled study", "interrupted time series analysis",
+                                           "case-control", "retrospective", "cohort",
                                            "longitudinal", "prospective", "cross-sectional"]

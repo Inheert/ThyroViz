@@ -326,7 +326,7 @@
 156,12544137,radiopharmaceuticals)
 156,12544137,sodium pertechnetate tc 99m)
 157,12225640,iodine radioisotopes)
-159,12132533,thyroid hormones)
+158,12132533,thyroid hormones)
 161,11982740,thyrotropin)
 161,11982740,thyroxine)
 162,12713257,biomarkers)
@@ -503,17 +503,17 @@
 223,11916292,membrane glycoproteins)
 223,11916292,receptor protein-tyrosine kinases)
 223,11916292,"receptor, tie-2)"
-225,12727994,"biomarkers, tumor)"
-225,12727994,neoplasm proteins)
-225,12727994,proliferating cell nuclear antigen)
-225,12727994,"rna, messenger)"
-225,12727994,"receptors, fibroblast growth factor)"
-225,12727994,securin)
-225,12727994,"pituitary tumor-transforming protein 1, human)"
-225,12727994,fibroblast growth factor 2)
-226,12574230,"antibodies, monoclonal)"
-226,12574230,capsid proteins)
-226,12574230,"vp1 protein, polyomavirus)"
+225,12574230,"antibodies, monoclonal)"
+225,12574230,capsid proteins)
+225,12574230,"vp1 protein, polyomavirus)"
+226,12727994,"biomarkers, tumor)"
+226,12727994,neoplasm proteins)
+226,12727994,proliferating cell nuclear antigen)
+226,12727994,"rna, messenger)"
+226,12727994,"receptors, fibroblast growth factor)"
+226,12727994,securin)
+226,12727994,"pituitary tumor-transforming protein 1, human)"
+226,12727994,fibroblast growth factor 2)
 232,12845632,"antibodies, neoplasm)"
 232,12845632,mucins)
 232,12845632,"rna, messenger)"
@@ -613,13 +613,13 @@
 272,14595788,"antigens, differentiation, myelomonocytic)"
 272,14595788,biomarkers)
 272,14595788,"cd68 antigen, human)"
-273,12845488,diuretics)
-273,12845488,iodine radioisotopes)
-273,12845488,furosemide)
-273,12845488,iodine)
-274,12581471,"sodium chloride, dietary)"
-274,12581471,iodized salt)
-274,12581471,iodine)
+273,12581471,"sodium chloride, dietary)"
+273,12581471,iodized salt)
+273,12581471,iodine)
+274,12845488,diuretics)
+274,12845488,iodine radioisotopes)
+274,12845488,furosemide)
+274,12845488,iodine)
 275,11807618,antithyroid agents)
 275,11807618,iodine radioisotopes)
 276,14690034,"sodium chloride, dietary)"
@@ -1326,8 +1326,8 @@
 651,12049696,amiodarone)
 652,12762641,autoantibodies)
 652,12762641,iodine)
-654,12324715,methimazole)
-654,12324715,thyroxine)
+655,12324715,methimazole)
+655,12324715,thyroxine)
 665,12011748,interferon-alpha)
 666,11851085,gonadal steroid hormones)
 666,11851085,sex hormone-binding globulin)
@@ -1657,13 +1657,13 @@
 858,12974744,"slc26a4 protein, human)"
 858,12974744,sulfate transporters)
 858,12974744,connexin 26)
-860,14583975,antithyroid agents)
-860,14583975,thyroxine)
-862,12152249,"antigens, cd34)"
-862,12152249,"biomarkers, tumor)"
-862,12152249,mucin-1)
-862,12152249,factor viii)
-862,12152249,thyroglobulin)
+860,12152249,"antigens, cd34)"
+860,12152249,"biomarkers, tumor)"
+860,12152249,mucin-1)
+860,12152249,factor viii)
+860,12152249,thyroglobulin)
+861,14583975,antithyroid agents)
+861,14583975,thyroxine)
 863,12727967,"antibodies, antineutrophil cytoplasmic)"
 863,12727967,antimicrobial cationic peptides)
 863,12727967,antithyroid agents)
@@ -3460,14 +3460,14 @@
 1436,17683709,antirheumatic agents)
 1436,17683709,hydroxychloroquine)
 1436,17683709,glucosamine)
-1437,16776189,thyroid hormones)
-1437,16776189,iodine)
-1438,16776188,thyroid hormones)
-1438,16776188,povidone-iodine)
-1438,16776188,iodine)
-1439,16776187,iodine radioisotopes)
-1439,16776187,radiopharmaceuticals)
-1439,16776187,thyroxine)
+1437,16776187,iodine radioisotopes)
+1437,16776187,radiopharmaceuticals)
+1437,16776187,thyroxine)
+1438,16776189,thyroid hormones)
+1438,16776189,iodine)
+1439,16776188,thyroid hormones)
+1439,16776188,povidone-iodine)
+1439,16776188,iodine)
 1440,16956503,iodine)
 1441,16434453,recombinant proteins)
 1441,16434453,thyrotropin)
@@ -5036,23 +5036,23 @@
 2313,17630106,x-linked inhibitor of apoptosis protein)
 2314,17163105,"biomarkers, tumor)"
 2315,17545694,radioactive fallout)
-2316,16556712,"antibodies, monoclonal)"
-2316,16556712,"antibodies, monoclonal, murine-derived)"
-2316,16556712,autoantibodies)
-2316,16556712,"immunoglobulins, thyroid-stimulating)"
-2316,16556712,immunologic factors)
-2316,16556712,immunosuppressive agents)
-2316,16556712,"receptors, thyrotropin)"
-2316,16556712,thyroid microsomal antibodies)
-2316,16556712,thyrotropin-binding inhibitory immunoglobulin)
-2316,16556712,rituximab)
-2316,16556712,thyrotropin)
-2316,16556712,thyroxine)
-2316,16556712,methylprednisolone)
-2317,18030041,technetium tc 99m sestamibi)
-2318,17311498,homocysteine)
-2318,17311498,folic acid)
-2318,17311498,vitamin b 12)
+2316,18030041,technetium tc 99m sestamibi)
+2317,17311498,homocysteine)
+2317,17311498,folic acid)
+2317,17311498,vitamin b 12)
+2318,16556712,"antibodies, monoclonal)"
+2318,16556712,"antibodies, monoclonal, murine-derived)"
+2318,16556712,autoantibodies)
+2318,16556712,"immunoglobulins, thyroid-stimulating)"
+2318,16556712,immunologic factors)
+2318,16556712,immunosuppressive agents)
+2318,16556712,"receptors, thyrotropin)"
+2318,16556712,thyroid microsomal antibodies)
+2318,16556712,thyrotropin-binding inhibitory immunoglobulin)
+2318,16556712,rituximab)
+2318,16556712,thyrotropin)
+2318,16556712,thyroxine)
+2318,16556712,methylprednisolone)
 2320,16910883,antibodies)
 2320,16910883,radioisotopes)
 2320,16910883,"receptors, thyrotropin)"
@@ -12351,8 +12351,8 @@
 5725,34956094,contrast media)
 5726,32769997,thyrotropin)
 5726,32769997,thyroglobulin)
-5728,32616715,"receptors, thyrotropin)"
-5728,32616715,"tshr protein, human)"
+5727,32616715,"receptors, thyrotropin)"
+5727,32616715,"tshr protein, human)"
 5729,34570048,covid-19 vaccines)
 5731,33011882,"cyb5r1 protein, human)"
 5731,33011882,cytochrome-b(5) reductase)
@@ -12527,8 +12527,8 @@
 5862,33396135,minerals)
 5862,33396135,trace elements)
 5862,33396135,iodine)
-5864,32893226,thyrotropin)
-5864,32893226,hydrocortisone)
+5863,32893226,thyrotropin)
+5863,32893226,hydrocortisone)
 5865,32377868,iodine)
 5867,34224544,pendred syndrome
 5869,34245984,trace elements)
@@ -12584,12 +12584,12 @@
 5902,32590739,fibroblast growth factor 2)
 5904,33980774,iodine radioisotopes)
 5904,33980774,methimazole)
-5905,33939906,ethanol)
-5906,33994519,antithyroid agents)
-5906,33994519,triiodothyronine)
-5906,33994519,potassium iodide)
-5906,33994519,methimazole)
-5906,33994519,thyroxine)
+5905,33994519,antithyroid agents)
+5905,33994519,triiodothyronine)
+5905,33994519,potassium iodide)
+5905,33994519,methimazole)
+5905,33994519,thyroxine)
+5906,33939906,ethanol)
 5908,33569041,antithyroid agents)
 5908,33569041,thyroxine)
 5909,34465342,b7-h1 antigen)
@@ -12906,8 +12906,8 @@
 6110,32316214,"sodium chloride, dietary)"
 6110,32316214,iodized salt)
 6110,32316214,iodine)
-6111,32812043,iodine radioisotopes)
-6112,32812038,iodine radioisotopes)
+6111,32812038,iodine radioisotopes)
+6112,32812043,iodine radioisotopes)
 6113,32988358,radiopharmaceuticals)
 6114,33252592,"immunoglobulins, thyroid-stimulating)"
 6115,32341696,immunoglobulins)
@@ -17909,19 +17909,19 @@
 8546,11082224,congo red)
 8547,11837501,iodine)
 8552,11456234,iodine)
-8553,10868226,carrier proteins)
-8553,10868226,membrane transport proteins)
-8553,10868226,"slc26a4 protein, human)"
-8553,10868226,sulfate transporters)
-8553,10868226,sulfates)
-8554,11704986,carrier proteins)
-8554,11704986,membrane transport proteins)
-8554,11704986,perchlorates)
-8554,11704986,"slc26a4 protein, human)"
-8554,11704986,sodium compounds)
-8554,11704986,sulfate transporters)
-8554,11704986,thyroid hormones)
-8554,11704986,sodium perchlorate)
+8553,11704986,carrier proteins)
+8553,11704986,membrane transport proteins)
+8553,11704986,perchlorates)
+8553,11704986,"slc26a4 protein, human)"
+8553,11704986,sodium compounds)
+8553,11704986,sulfate transporters)
+8553,11704986,thyroid hormones)
+8553,11704986,sodium perchlorate)
+8554,10868226,carrier proteins)
+8554,10868226,membrane transport proteins)
+8554,10868226,"slc26a4 protein, human)"
+8554,10868226,sulfate transporters)
+8554,10868226,sulfates)
 8555,10871160,insulin-like growth factor i)
 8555,10871160,thyrotropin)
 8555,10871160,growth hormone)
@@ -18526,13 +18526,13 @@
 8806,11508827,thyroid nuclear factor 1)
 8806,11508827,transcription factors)
 8806,11508827,thyrotropin)
-8807,10700715,iodine)
-8808,10713742,thyroid hormones)
-8808,10713742,iodized oil)
-8808,10713742,thyrotropin)
-8808,10713742,iodine)
-8808,10713742,selenium)
-8808,10713742,thyroxine)
+8807,10713742,thyroid hormones)
+8807,10713742,iodized oil)
+8807,10713742,thyrotropin)
+8807,10713742,iodine)
+8807,10713742,selenium)
+8807,10713742,thyroxine)
+8808,10700715,iodine)
 8809,11708610,"sodium chloride, dietary)"
 8809,11708610,iodized salt)
 8809,11708610,iodine)
@@ -18755,13 +18755,13 @@
 8996,10965445,nitrates)
 8996,10965445,"water pollutants, chemical)"
 8998,11517869,iodine)
-8999,11096833,iodides)
-9000,10832342,"estrogens, non-steroidal)"
-9000,10832342,isoflavones)
-9000,10832342,phytoestrogens)
-9000,10832342,plant preparations)
-9000,10832342,tretinoin)
-9000,10832342,selenium)
+8999,10832342,"estrogens, non-steroidal)"
+8999,10832342,isoflavones)
+8999,10832342,phytoestrogens)
+8999,10832342,plant preparations)
+8999,10832342,tretinoin)
+8999,10832342,selenium)
+9000,11096833,iodides)
 9001,19306531,antithyroid agents)
 9001,19306531,iodine radioisotopes)
 9003,10851860,antithyroid agents)
@@ -19059,13 +19059,13 @@
 9108,11873870,thyroxine)
 9112,11147882,ec 3.4.21.
 9112,11147882,urokinase-type plasminogen activator)
-9113,11729509,cd40 antigens)
-9113,11729509,hla-dr antigens)
-9113,11729509,interleukin-4)
-9113,11729509,interferon-gamma)
-9113,11729509,prolactin)
-9114,11625682,iodine compounds)
-9114,11625682,iodine)
+9113,11625682,iodine compounds)
+9113,11625682,iodine)
+9114,11729509,cd40 antigens)
+9114,11729509,hla-dr antigens)
+9114,11729509,interleukin-4)
+9114,11729509,interferon-gamma)
+9114,11729509,prolactin)
 9119,11488088,anti-inflammatory agents)
 9119,11488088,"immunoglobulins, intravenous)"
 9119,11488088,steroids)
@@ -24380,9 +24380,9 @@
 11440,28323992,ribonuclease iii)
 11440,28323992,dead-box rna helicases)
 11440,28323992,"thyroid cancer, follicular"
-11441,28060697,euthyroid goiter
-11442,28039723,"biomarkers, tumor)"
-11442,28039723,"thyroid cancer, medullary"
+11441,28039723,"biomarkers, tumor)"
+11441,28039723,"thyroid cancer, medullary"
+11442,28060697,euthyroid goiter
 11445,28537560,biomarkers)
 11445,28537560,vitamins)
 11445,28537560,calcitriol)
@@ -24556,11 +24556,11 @@
 11528,27090092,"receptors, thyrotropin)"
 11529,27256639,biomarkers)
 11529,27256639,proteins)
-11531,28091472,membrane transport proteins)
-11531,28091472,"slc26a4 protein, human)"
-11531,28091472,sulfate transporters)
-11531,28091472,"deafness, autosomal recessive 4"
-11531,28091472,pendred syndrome
+11530,28091472,membrane transport proteins)
+11530,28091472,"slc26a4 protein, human)"
+11530,28091472,sulfate transporters)
+11530,28091472,"deafness, autosomal recessive 4"
+11530,28091472,pendred syndrome
 11532,27125087,cyanoacrylates)
 11532,27125087,hemostatics)
 11532,27125087,glubran 2)
@@ -25229,7 +25229,7 @@
 11960,27301499,autoantibodies)
 11960,27301499,biomarkers)
 11960,27301499,thyroglobulin)
-11963,28476227,thyroid hormones)
+11961,28476227,thyroid hormones)
 11964,28508540,autoantibodies)
 11964,28508540,"receptors, thyrotropin)"
 11965,28392335,antithyroid agents)
@@ -26731,7 +26731,7 @@
 12669,24513604,autoantibodies)
 12669,24513604,thyroid hormones)
 12669,24513604,thyrotropin)
-12672,26404426,thyrotropin)
+12671,26404426,thyrotropin)
 12673,25290043,connexins)
 12673,25290043,membrane transport proteins)
 12673,25290043,"slc26a4 protein, human)"
@@ -29425,10 +29425,10 @@
 13963,19826830,dna)
 13963,19826830,ec 3.6.1.
 13963,19826830,"gtp-binding protein alpha subunits, gs)"
-13965,21704276,membrane transport proteins)
-13965,21704276,"slc26a4 protein, human)"
-13965,21704276,sulfate transporters)
-13965,21704276,pendred syndrome
+13964,21704276,membrane transport proteins)
+13964,21704276,"slc26a4 protein, human)"
+13964,21704276,sulfate transporters)
+13964,21704276,pendred syndrome
 13966,21553231,biomarkers)
 13966,21553231,"dna, complementary)"
 13966,21553231,platelet-derived growth factor)
@@ -29616,12 +29616,12 @@
 14065,20205099,parathyroid hormone)
 14065,20205099,thyrotropin)
 14065,20205099,thyroxine)
-14066,20188007,"sodium chloride, dietary)"
-14066,20188007,iodized salt)
-14066,20188007,iodine)
-14067,21985800,biomarkers)
-14067,21985800,iodine)
-14067,21985800,creatinine)
+14066,21985800,biomarkers)
+14066,21985800,iodine)
+14066,21985800,creatinine)
+14067,20188007,"sodium chloride, dietary)"
+14067,20188007,iodized salt)
+14067,20188007,iodine)
 14072,20733190,biomarkers)
 14073,20583542,adiponectin)
 14073,20583542,leptin)
@@ -31819,17 +31819,17 @@
 15148,35522861,interleukin-17)
 15148,35522861,interleukin-23)
 15152,34752624,"immunoglobulins, thyroid-stimulating)"
-15153,35663306,anti-inflammatory agents)
-15153,35663306,artemisinins)
-15153,35663306,transforming growth factor beta1)
-15153,35663306,artenimol)
-15153,35663306,hyaluronic acid)
-15154,35429598,oligopeptides)
-15154,35429598,"receptors, antigen, t-cell)"
-15155,35244288,antithyroid agents)
-15155,35244288,autoantibodies)
-15155,35244288,isotopes)
-15155,35244288,"receptors, thyrotropin)"
+15153,35429598,oligopeptides)
+15153,35429598,"receptors, antigen, t-cell)"
+15154,35663306,anti-inflammatory agents)
+15154,35663306,artemisinins)
+15154,35663306,transforming growth factor beta1)
+15154,35663306,artenimol)
+15154,35663306,hyaluronic acid)
+15156,35244288,antithyroid agents)
+15156,35244288,autoantibodies)
+15156,35244288,isotopes)
+15156,35244288,"receptors, thyrotropin)"
 15157,35066781,biomarkers)
 15157,35066781,thyrotropin)
 15159,35442371,cdx2 transcription factor)
@@ -31872,16 +31872,16 @@
 15181,35624535,antithyroid agents)
 15181,35624535,calcium)
 15182,35628410,transforming growth factor beta)
-15185,35220890,cell adhesion molecules)
-15185,35220890,"chemokines, cxc)"
-15185,35220890,core binding factor alpha 2 subunit)
-15185,35220890,"nrcam protein, human)"
-15185,35220890,neural cell adhesion molecules)
-15185,35220890,"rna, long noncoding)"
-15185,35220890,"runx1-it1 long non-coding rna, human)"
-15185,35220890,tumor suppressor protein p53)
-15186,35187713,autoantibodies)
-15186,35187713,"receptors, thyrotropin)"
+15184,35187713,autoantibodies)
+15184,35187713,"receptors, thyrotropin)"
+15186,35220890,cell adhesion molecules)
+15186,35220890,"chemokines, cxc)"
+15186,35220890,core binding factor alpha 2 subunit)
+15186,35220890,"nrcam protein, human)"
+15186,35220890,neural cell adhesion molecules)
+15186,35220890,"rna, long noncoding)"
+15186,35220890,"runx1-it1 long non-coding rna, human)"
+15186,35220890,tumor suppressor protein p53)
 15187,35443720,chorionic gonadotropin)
 15187,35443720,"chorionic gonadotropin, beta subunit, human)"
 15187,35443720,methimazole)
@@ -31976,10 +31976,10 @@
 15245,35006119,iodine radioisotopes)
 15245,35006119,iodine-131)
 15245,35006119,iodine-123)
-15246,35720300,nf-kappa b)
-15246,35720300,"receptors, antigen, t-cell)"
-15247,35647837,antithyroid agents)
-15247,35647837,iodine radioisotopes)
+15247,35720300,nf-kappa b)
+15247,35720300,"receptors, antigen, t-cell)"
+15248,35647837,antithyroid agents)
+15248,35647837,iodine radioisotopes)
 15249,35136950,antithyroid agents)
 15249,35136950,iodine radioisotopes)
 15252,34661561,iodine radioisotopes)
@@ -32032,8 +32032,8 @@
 15270,35619700,programmed cell death 1 receptor)
 15270,35619700,cd40 ligand)
 15270,35619700,hyaluronic acid)
-15272,35039349,biomarkers)
-15273,35579208,moyamoya disease 1
+15272,35579208,moyamoya disease 1
+15273,35039349,biomarkers)
 15274,35088429,antithyroid agents)
 15274,35088429,autoantibodies)
 15274,35088429,"receptors, thyrotropin)"

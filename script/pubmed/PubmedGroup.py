@@ -112,6 +112,9 @@ class PubmedGroup:
                 df["Category"] = df[column].apply(
                     lambda x: self._GetCategoryCondition(x))
 
+            elif column == "Full_author_name":
+                df["Without_special_character"] = df[column].apply(lambda x: x.replace(",", ""))
+
             self.dataframes[column] = df
             self.dataframes[column].to_csv(f"{PubmedGroup.directory}/{column}.csv")
 
@@ -120,7 +123,7 @@ class PubmedGroup:
         self.dataframes["pubmedArticles"] = self.dataframes["pubmedArticles"].drop(columns=[col for col in PubmedGroup.col_to_drop])
         self.dataframes["pubmedArticles"] = self.dataframes["pubmedArticles"].drop_duplicates()
         self.dataframes["pubmedArticles"] = self.dataframes["pubmedArticles"][["PMID", "PII", "DOI", "Title",
-                                                                               "Publication_date", "Place_of_publication",
+                                                                               "Publication_date", "Entrez_date", "Place_of_publication",
                                                                                "Full_journal", "Investigator", "Abstract"]]
         self.dataframes["pubmedArticles"].to_csv(f"{PubmedGroup.directory}/pubmedArticles.csv")
 

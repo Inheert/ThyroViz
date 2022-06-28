@@ -16,7 +16,7 @@ topCardNav1 = dbc.Nav(
                             [
                                 html.H1(f"{len(studies['nct_id'].unique())}",
                                         className="card-title"),
-                                html.P("ct_studies in progress", className="card-text"),
+                                html.P("studies in progress", className="card-text"),
                             ],
                         ),
                     ),
@@ -49,7 +49,7 @@ topCardNav2 = dbc.Nav(
                                 html.H1(
                                     f"{s_base[(s_base['study_first_submitted_date'] >= f'{datetime.now().year}-{datetime.now().month - 1}') & (s_base['study_first_submitted_date'] < f'{datetime.now().year}-{datetime.now().month}')].shape[0]}",
                                     className="card-title"),
-                                html.P("new ct_studies this month", className="card-text", ),
+                                html.P("new studies this month", className="card-text", ),
                             ]
                         )
                     ),
@@ -82,7 +82,7 @@ topCardNav3 = dbc.Nav(
                                 html.H1(
                                     f"{len(sponsors.name.unique())}",
                                     className="card-title"),
-                                html.P("Number of ct_sponsors",
+                                html.P("Number of sponsors",
                                        className="card-text"),
                             ]
                         )
@@ -116,7 +116,7 @@ topCardNav4 = dbc.Nav(
                                 html.H1(
                                     f"{len(investigators.name.unique())}",
                                     className="card-title"),
-                                html.P("Number of ct_investigators",
+                                html.P("Number of investigators",
                                        className="card-text", ),
                             ]
                         )
@@ -146,7 +146,7 @@ lightStatistic1 = \
                     [
                         dbc.Row(
                             [
-                                html.P("Number of new ct_studies by year"),
+                                html.P("Number of new studies by year"),
                                 html.Hr()
                             ],
                         ),
@@ -229,7 +229,7 @@ lightStatistic2 = \
                 [
                     dbc.Row(
                         [
-                            html.P("Studies repartition by ct_sponsors class"),
+                            html.P("Studies repartition by sponsors class"),
                             html.Hr()
                         ]
                     ),
@@ -379,7 +379,7 @@ leftCategoryCard = \
 topAnimatedBanner = \
     dbc.Card(
         [
-            dbc.CardImg(src="assets/img/category_style.svg", top=True,
+            dbc.CardImg(src="/assets/img/category_style.svg", top=True,
                         style={
                             "borderRadius": "15px",
                             "transform": "rotate(180deg)"
@@ -472,7 +472,7 @@ tabWithMultipleCharts = \
                                      ]
                                      ),
 
-                             dcc.Tab(label="Category repartition by ct_studies type",
+                             dcc.Tab(label="Category repartition by studies type",
                                      value="tab2",
                                      id="pieTab2",
                                      style=right_tab_style,
@@ -531,7 +531,7 @@ studiesDateOverview = \
                             ]
                         ),
                         dcc.Tab(
-                            label="Historical ct_studies overview",
+                            label="Historical studies overview",
                             value="tab2",
                             id="historicalTab2",
                             style=right_tab_style,
