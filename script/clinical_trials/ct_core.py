@@ -246,3 +246,6 @@ def appLaunch():
             os.remove(file)
 
     script.clinical_trials.ct_const.loading = False
+
+
+appLaunch()

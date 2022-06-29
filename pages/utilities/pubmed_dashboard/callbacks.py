@@ -78,10 +78,17 @@ def DisplayCategoryRepartitionChart(figure, p_type, author, pop):
           Input("population", "value"),
           Input("dateCondition", "value"),
           Input("dateFrequency", "value"),
-          Input("dateMin", "value"),
-          Input("dateMax", "value"),
+          Input("datePickerRange", "initial_visible_month"),
+          Input("datePickerRange", "end_date"),
           Input("date_checklist", "value"))
-def DisplayArticlesDateOverview(figure, p_type, author, pop, cond, freq, ymin, ymax, checklist):
+def DisplayArticlesDateOverview(figure, p_type, author, pop, cond, freq, startDate, endDate, checklist):
+
+    startDate = startDate.split("-")
+    startDate = [int(x) for x in startDate]
+
+    endDate = endDate.split("-")
+    endDate = [int(x) for x in endDate]
+
     df = articles.copy()
 
     if len(p_type) > 0:
@@ -98,7 +105,8 @@ def DisplayArticlesDateOverview(figure, p_type, author, pop, cond, freq, ymin, y
             dff = df[df.PMID.isin(condition[condition.Category == category]["PMID"])]
             dff = dff.groupby(pd.Grouper(key="Entrez_date", freq=freq[0])).count().reset_index().sort_values(
                 by="Entrez_date")
-            dff = dff[(dff["Entrez_date"] >= datetime(ymin, 1, 1)) & (dff["Entrez_date"] <= datetime(ymax, 12, 31))]
+            dff = dff[(dff["Entrez_date"] >= datetime(startDate[0], startDate[1], startDate[2])) &
+                      (dff["Entrez_date"] <= datetime(endDate[0], endDate[1], endDate[2]))]
 
             trace = go.Scatter(x=dff["Entrez_date"],
                                y=dff["PMID"],
@@ -114,7 +122,7 @@ def DisplayArticlesDateOverview(figure, p_type, author, pop, cond, freq, ymin, y
             df = df[df.PMID.isin(condition[condition.Condition.isin(cond)]["PMID"])]
 
         df = df.groupby(pd.Grouper(key="Entrez_date", freq=freq[0])).count().reset_index().sort_values(by="Entrez_date")
-        df = df[(df["Entrez_date"] >= datetime(ymin, 1, 1)) & (df["Entrez_date"] <= datetime(ymax, 12, 31))]
+        df = df[(df["Entrez_date"] >= datetime(startDate[0], startDate[1], startDate[2])) & (df["Entrez_date"] <= datetime(endDate[0], endDate[1], endDate[2]))]
         trace = go.Scatter(x=df["Entrez_date"],
                            y=df["PMID"],
                            name="sum of published articles in a period",
@@ -146,8 +154,18 @@ def DisplayArticlesDateOverview(figure, p_type, author, pop, cond, freq, ymin, y
     return fig
 
 
+@callback(Output("dateCondition", "value"),
+          Input("selectAllCategory", "value"),
+          Input("dateCondition", "options"),
+          Input("dateCondition", "value"))
+def SelectAllCategory(check, dropdown_options, actual_value):
+    if check is not None and len(check) == 1:
+        return dropdown_options
+    else:
+        return actual_value
+
 @callback(Output("test", "children"),
-          Input("articleDateOverview", "selectedData"))
+          Input("articleDateOverview", "clickData"))
 def TestClick(value):
     print(value)
     return None

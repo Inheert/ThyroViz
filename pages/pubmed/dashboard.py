@@ -24,13 +24,13 @@ layout = html.Div([
     dbc.Row(
         [
             dbc.Col(
-                [categoryRepartition, html.H5(id="test")],
+                articlesDateOverview,
                 width="auto"
             ),
             dbc.Col(
-                articlesDateOverview,
+                [categoryRepartition, html.H5(id="test")],
                 width="auto"
-            )
+            ),
         ],
         justify="between"
     ),

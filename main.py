@@ -8,13 +8,12 @@ import glob
 
 interval = 10
 
-FONT_AWESOME = "https://use.fontawesome.com/releases/v5.7.2/css/all.css"
 clinical_trials_pages = ["pages.clinical_trials.dashboard", "pages.clinical_trials.investigators", "pages.clinical_trials.sponsors", "pages.clinical_trials.studies"]
 pubmed_pages = ["pages.pubmed.dashboard"]
 
 app = dash.Dash(__name__, plugins=[dl.plugins.pages], external_stylesheets=[dbc.themes.BOOTSTRAP,
                                                                             dbc.icons.BOOTSTRAP,
-                                                                            FONT_AWESOME],
+                                                                            "https://use.fontawesome.com/releases/v5.7.2/css/all.css"],
                 meta_tags=[
                     {"name": "viewport", "content": "width=device-width, initial-scale=1"}
                 ], suppress_callback_exceptions=True)

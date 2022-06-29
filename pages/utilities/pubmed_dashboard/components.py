@@ -1,7 +1,7 @@
 from dash import dcc, html, Input, Output, callback
 import dash_bootstrap_components as dbc
 import dash_daq as daq
-from datetime import datetime
+from datetime import datetime, date
 
 from pages.utilities.pubmed_const import *
 
@@ -154,67 +154,40 @@ articlesDateOverview = \
                 dbc.AccordionItem(title="Filters",
                                   children=[
                                       dbc.Row([
+
                                           dbc.Col([
                                               html.Plaintext("Frequency:"),
                                               dcc.RadioItems(id="dateFrequency",
-                                                             options=["Year", "Month"],
-                                                             value="Year")
-                                          ], width="auto"),
+                                                             options=["Year", "Month", "Weekly", "Day"],
+                                                             value="Year",
+                                                             inputStyle={
+                                                                 "marginRight": "6px"
+                                                             })
+                                          ],
+                                              width="auto"),
+
                                           dbc.Col([
-                                              dbc.Row([
-                                                  html.Plaintext("Year range:", style={"textAlign": "center"}),
-                                                  dbc.Col(
-                                                      daq.NumericInput(
-                                                          id="dateMin",
-                                                          min=1999,
-                                                          max=datetime.now().year - 1,
-                                                          value=2000,
-                                                          size=65
-                                                      ),
-                                                      style={
-                                                          "display": "flex",
-                                                          "alignItems": "center",
-                                                          "justifyContent": "center",
-                                                          "horizontalAlign": "center",
-                                                      },
-                                                      width="auto"
-                                                  ),
-                                                  dbc.Col(html.Plaintext("to"),
-                                                          style={
-                                                              "display": "flex",
-                                                              "alignItems": "end",
-                                                              "verticalAlign": "bottom",
-                                                          },
-                                                          width="auto"),
-                                                  dbc.Col(
-                                                      daq.NumericInput(
-                                                          id="dateMax",
-                                                          min=2000,
-                                                          max=datetime.now().year,
-                                                          value=datetime.now().year,
-                                                          size=65
-                                                      ),
-                                                      style={
-                                                          "display": "flex",
-                                                          "alignItems": "center",
-                                                          "justifyContent": "center",
-                                                          "horizontalAlign": "center",
-                                                      },
-                                                      width="auto"
-                                                  )
-                                              ], justify="center"),
-                                          ], width="auto"),
-                                          dbc.Col(
-                                              [
-                                                  dcc.Checklist(
-                                                      id="date_checklist",
-                                                      options=["Show graph by conditions"],
-                                                      inputStyle={
-                                                          "marginRight": "6px"
-                                                      }
-                                                  )
-                                              ]
-                                          )
+                                              html.Plaintext("Year range:"),
+                                              dcc.DatePickerRange(
+                                                  id="datePickerRange",
+                                                  min_date_allowed=date(2000, 1, 1),
+                                                  max_date_allowed=date(datetime.now().year + 1, 12, 31),
+                                                  initial_visible_month=date(2000, 1, 1),
+                                                  end_date=date(datetime.now().year + 1, 12, 31)),
+                                              html.Br(style={"marginTop": "2vh"}),
+                                              dcc.Checklist(
+                                                  id="date_checklist",
+                                                  options=["Show graph by conditions"],
+                                                  inputStyle={
+                                                      "marginRight": "6px"
+                                                  }
+                                              )
+                                          ],
+                                              width="auto",
+                                              style={
+                                                  "marginLeft": "2vw",
+                                              }),
+
                                       ], align="center"),
 
                                       html.Br(),
@@ -228,6 +201,11 @@ articlesDateOverview = \
                                           style={
                                               "maxWidth": "50vmax"
                                           }
+                                      ),
+                                      dcc.Checklist(
+                                          id="selectAllCategory",
+                                          options=["Select all category"],
+                                          inputStyle={"marginRight": "6px"}
                                       )
                                   ])
             ],
