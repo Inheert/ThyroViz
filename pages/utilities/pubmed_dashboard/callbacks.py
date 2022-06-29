@@ -167,5 +167,5 @@ def SelectAllCategory(check, dropdown_options, actual_value):
 @callback(Output("test", "children"),
           Input("articleDateOverview", "clickData"))
 def TestClick(value):
-    print(value)
+    # print(value)
     return None

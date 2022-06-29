@@ -34,7 +34,13 @@ class Pubmed:
                 print(f"Error from {self.uid}, pathologie: {self.pathologie}, new try.\n\n")
 
                 driver.refresh()
+
             except ElementNotInteractableException as error:
+                result = driver.find_element(by=By.CLASS_NAME, value="results-amount").text.strip()
+                if result == "No results were found.":
+                    year_range = [x + 2 for x in year_range]
+                    continue
+
                 print(str(error).split("Stacktrace:")[0])
                 print(f"Error from {self.uid}, pathologie: {self.pathologie}, new try.\n\n")
 
@@ -94,8 +100,13 @@ class Pubmed:
 
         time.sleep(self.delay)
 
-        select_result = Select(_driver.find_element(by=By.ID, value='save-action-selection'))
-        select_result.select_by_visible_text('All results')
+        try:
+            is_displayed = _driver.find_element(by=By.ID, value="save-action-selection").is_displayed()
+            if is_displayed:
+                select_result = Select(_driver.find_element(by=By.ID, value='save-action-selection'))
+                select_result.select_by_visible_text('All results')
+        except:
+            pass
 
         time.sleep(self.delay)
 
@@ -104,8 +115,8 @@ class Pubmed:
 
         time.sleep(self.delay)
 
-        save_button = _driver.find_element(by=By.CLASS_NAME, value='action-panel-submit')
-        _driver.execute_script("arguments[0].click();", save_button)
+        WebDriverWait(_driver, 20).until(
+            EC.element_to_be_clickable((By.XPATH, "//button[@class='action-panel-submit' and @type='submit']"))).click()
 
     def _UnifyFiles(self):
 
