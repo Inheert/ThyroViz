@@ -54,23 +54,24 @@ class Pubmed:
 
         file_count = len([file for file in glob.glob(f"{self.directory}/*.txt")])
 
-        # Après 15 secondes la récupération des articles et relancé
+        # Après 2 minutes la récupération des articles et relancé
         count = 0
         while file_count < download_count:
             file_count = len([file for file in glob.glob(f"{self.directory}/*.txt")])
             print(f'{self.pathologie}: {file_count}, {download_count}')
             time.sleep(1)
             count += 1
-            if count == 120:
+            if count == 300:
                 print("The number of file. is not equal to what he should be, articles retrieve will restart.\n"
                       "If this problem persist using PubmedGroup class try to reduce threading threadingObject parameters (default = 3)\n"
                       "Else increase time.sleep or count max from RetrieveArticles Pubmed method.")
                 driver.quit()
                 shutil.rmtree(self.directory)
-                self.directory = f"{os.path.abspath(os.curdir)}/data/temp/{self.uid}"
-                self.directory = self.directory if platform.system() == "Linux" else self.directory.replace("/", "\\")
-                self.RetrieveArticles()
-                return None
+                raise TimeoutError
+                # self.directory = f"{os.path.abspath(os.curdir)}/data/temp/{self.uid}"
+                # self.directory = self.directory if platform.system() == "Linux" else self.directory.replace("/", "\\")
+                # self.RetrieveArticles()
+                # return None
 
         if self.is_already_done:
             return None
@@ -226,19 +227,20 @@ class Pubmed:
                         continue
 
                     for mesh_terms in df.loc[idx, 'Mesh_terms']:
-                        mesh_term_without_slash = mesh_terms.replace("*", "").split("/")
+                        mesh_term_without_slash = mesh_terms.split("/")
                         mesh_term_without_slash = [x.strip() for x in mesh_term_without_slash]
+                        for mesh_term in mesh_term_without_slash:
 
-                        if term in mesh_term_without_slash:
-                            df.loc[idx, "Condition"].append(term)
-                            break
+                            if term in mesh_term or term == mesh_term:
+                                df.loc[idx, "Condition"].append(term)
+                                break
 
                     for mesh_terms in df.loc[idx, "Other_term"]:
-                        mesh_term_without_slash = mesh_terms.replace("*", "").split("/")
-
-                        if term in mesh_term_without_slash:
-                            df.loc[idx, "Condition"].append(term)
-                            break
+                        mesh_term_without_slash = mesh_terms.split("/")
+                        for mesh_term in mesh_term_without_slash:
+                            if term in mesh_term or term == mesh_term:
+                                df.loc[idx, "Condition"].append(term)
+                                break
 
         return df
 
@@ -259,19 +261,19 @@ class Pubmed:
                     continue
 
                 for mesh_terms in df.loc[idx, 'Mesh_terms']:
-                    mesh_term_without_slash = mesh_terms.replace("*", "").split("/")
+                    mesh_term_without_slash = mesh_terms.split("/")
                     mesh_term_without_slash = [x.strip() for x in mesh_term_without_slash]
-
-                    if term in mesh_term_without_slash:
-                        df.loc[idx, "Observational_study_characteristics"].append(term)
-                        break
+                    for mesh_term in mesh_term_without_slash:
+                        if term in mesh_term or term == mesh_term:
+                            df.loc[idx, "Observational_study_characteristics"].append(term)
+                            break
 
                 for mesh_terms in df.loc[idx, "Other_term"]:
                     mesh_term_without_slash = mesh_terms.replace("*", "").split("/")
-
-                    if term in mesh_term_without_slash:
-                        df.loc[idx, "Observational_study_characteristics"].append(term)
-                        break
+                    for mesh_term in mesh_term_without_slash:
+                        if term in mesh_term or term == mesh_term:
+                            df.loc[idx, "Observational_study_characteristics"].append(term)
+                            break
 
         return df
 
@@ -375,8 +377,8 @@ class Pubmed:
         "thyroid neoplasms": ["thyroid neoplasms", "thyroid cancer, papillary", "thyroid carcinoma, anaplastic"],
         "thyroid nodule": ["thyroid nodule"],
         "thyroiditis": ["thyroiditis, autoimmune", "hashimoto disease", "postpartum thyroiditis",
-                        "thyroiditis, subacute", "thyroiditis, suppurative"],
-        "thyroid disease": ["thyroid disease", "thyroid diseases", "thyroid gland"]
+                        "thyroiditis, subacute", "thyroiditis, suppurative", "thyroiditis"],
+        "thyroid disease": ["thyroid disease", "thyroid diseases", "thyroid gland", "thyroidectomy"]
     }
 
     observational_study_characteristics = ["case-control studies", "retrospective studies", "cohort studies",

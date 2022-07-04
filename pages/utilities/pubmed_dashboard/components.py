@@ -172,9 +172,9 @@ articlesDateOverview = \
                                                   id="datePickerRange",
                                                   min_date_allowed=date(2000, 1, 1),
                                                   max_date_allowed=date(datetime.now().year + 1, 12, 31),
-                                                  initial_visible_month=date(2000, 1, 1),
+                                                  start_date=date(2000, 1, 1),
                                                   end_date=date(datetime.now().year + 1, 12, 31)),
-                                              html.Br(style={"marginTop": "2vh"}),
+                                              html.Br(style={"marginTop": "0vh"}),
                                               dcc.Checklist(
                                                   id="date_checklist",
                                                   options=["Show graph by conditions"],
@@ -188,7 +188,7 @@ articlesDateOverview = \
                                                   "marginLeft": "2vw",
                                               }),
 
-                                      ], align="center"),
+                                      ], align="start"),
 
                                       html.Br(),
 
@@ -218,3 +218,31 @@ articlesDateOverview = \
                "borderRadius": "15px",
                "marginTop": "-15px"}
     )
+
+
+dateGraphKPI = \
+    dbc.Card(
+        dbc.CardBody(
+            [
+                dbc.Row(
+                    [
+                        html.H5("Statistics", style={"textAlign": "center"})
+                    ]
+                ),
+                dbc.Row(
+                    [
+                        dbc.Col(
+                            [
+                                html.P("Average:", id="stat_average"),
+                            ]
+                        )
+                    ]
+                )
+            ]
+        ),
+        class_name="card mb-4 border-1 shadow",
+        style={"backgroundColor": "hsl(247.74, 52.54%, 98.43%",
+               "borderRadius": "15px",
+               }
+    )
+

@@ -84,6 +84,10 @@ class PubmedGroup:
         self.dataframes["pubmedArticles"] = dataframe
 
         for column in new_dataframe:
+
+            if column not in self.dataframes["pubmedArticles"]:
+                continue
+
             df = pd.DataFrame(self.dataframes["pubmedArticles"][["PMID", column]].explode(column))
             df = df.drop_duplicates()
 
@@ -125,6 +129,9 @@ class PubmedGroup:
         self.dataframes["pubmedArticles"] = self.dataframes["pubmedArticles"][["PMID", "PII", "DOI", "Title",
                                                                                "Publication_date", "Entrez_date", "Place_of_publication",
                                                                                "Full_journal", "Investigator", "Abstract"]]
+        # dataframe = self.dataframes["pubmedArticles"]
+        # dataframe = dataframe[~dataframe.PMID.isin(self.dataframes["Condition"].PMID)]
+        # self.dataframes["pubmedArticles"] = dataframe
         self.dataframes["pubmedArticles"].to_csv(f"{PubmedGroup.directory}/pubmedArticles.csv")
 
     def _CreateNewDataframes(self, newCol, column):

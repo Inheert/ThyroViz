@@ -29,7 +29,7 @@ topCardNav1 = dbc.Nav(
                 className="mt-4 shadow",
             ),
             active="exact",
-            href="/ct_studies"
+            href="/clinical-trials/studies"
         ),
         )
     ],
@@ -62,7 +62,7 @@ topCardNav2 = dbc.Nav(
                 className="mt-4 shadow",
             ),
             active="exact",
-            href="/ct_studies"
+            href="/clinical-trials/studies"
         ),
         )
     ],
@@ -96,7 +96,7 @@ topCardNav3 = dbc.Nav(
                 className="mt-4 shadow",
             ),
             active="exact",
-            href="/ct_sponsors"
+            href="/clinical-trials/sponsors"
         ),
         )
     ],
@@ -130,7 +130,7 @@ topCardNav4 = dbc.Nav(
                 className="mt-4 shadow",
             ),
             active="exact",
-            href="/ct_investigators"
+            href="/clinical-trials/investigators"
         ),
         )
     ],

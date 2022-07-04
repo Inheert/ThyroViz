@@ -28,7 +28,7 @@ layout = html.Div([
                 width="auto"
             ),
             dbc.Col(
-                [categoryRepartition, html.H5(id="test")],
+                [categoryRepartition, html.H5(id="test"), dateGraphKPI],
                 width="auto"
             ),
         ],
@@ -43,7 +43,7 @@ layout = html.Div([
           Input("test_retrieve", "n_clicks"))
 def RetrieveData(click):
     if click:
-        group = PubmedGroup(pathologies=["((cardiac telerehabilitation[MesH Terms] OR (cardiac telerehabilitation[Text Word]"], filters=["humans"], threadingObject=5, delay=0.8)
+        group = PubmedGroup(pathologies=["goiter"], filters=["humans"], threadingObject=5, delay=0.8)
         group.StartRetrieve()
         group.JoinAndCleanDataframe()
     return None
