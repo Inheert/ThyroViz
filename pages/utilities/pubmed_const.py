@@ -14,8 +14,8 @@ full_author_name = pd.read_csv("script/pubmed/data/Full_author_name.csv", index_
 # all_authors = {df.loc[idx, "Full_author_name"]: df.loc[idx, "Without_special_character"] for idx in df.index}
 all_authors = [x for x in full_author_name.sort_values(by="Without_special_character").Without_special_character.unique()]
 
-condition = pd.read_csv("script/pubmed/data/Condition.csv", index_col=[0])
-all_conditions = [x for x in condition.sort_values(by="Category").Category.unique()]
+df_condition = pd.read_csv("script/pubmed/data/Condition.csv", index_col=[0])
+all_conditions = [x for x in df_condition.sort_values(by="Category").Category.unique()]
 
 other_term = pd.read_csv("script/pubmed/data/Other_term.csv", index_col=[0])
 observational = pd.read_csv("script/pubmed/data/Observational_study_characteristics.csv", index_col=[0])

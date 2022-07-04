@@ -9,7 +9,7 @@ import plotly.graph_objects as go
           Input("author", "value"),
           Input("population", "value"))
 def DisplayCategoryRepartitionChart(figure, p_type, author, pop):
-    df = condition.copy()
+    df = df_condition.copy()
     df = df[["PMID", "Category"]]
 
     if len(p_type) > 0:
@@ -90,7 +90,7 @@ def DisplayArticlesDateOverview(figure, p_type, author, pop, cond, freq, startDa
     endDate = [int(x) for x in endDate]
 
     df = articles.copy()
-    dff = condition.copy()
+    dff = df_condition.copy()
 
     df = df[df.PMID.isin(dff.PMID)]
 
@@ -105,7 +105,7 @@ def DisplayArticlesDateOverview(figure, p_type, author, pop, cond, freq, startDa
     if checklist and "Show graph by conditions" in checklist:
         for category in cond:
 
-            dff = df[df.PMID.isin(condition[condition.Category == category]["PMID"])]
+            dff = df[df.PMID.isin(df_condition[df_condition.Category == category]["PMID"])]
             dff = dff.groupby(pd.Grouper(key="Entrez_date", freq=freq[0])).count().reset_index().sort_values(
                 by="Entrez_date")
             dff = dff[(dff["Entrez_date"] >= datetime(startDate[0], startDate[1], startDate[2])) &
@@ -122,7 +122,7 @@ def DisplayArticlesDateOverview(figure, p_type, author, pop, cond, freq, startDa
 
     else:
         if len(cond) > 0:
-            df = df[df.PMID.isin(condition[condition.Category.isin(cond)]["PMID"])]
+            df = df[df.PMID.isin(df_condition[df_condition.Category.isin(cond)]["PMID"])]
 
         df = df.groupby(pd.Grouper(key="Entrez_date", freq=freq[0])).count().reset_index().sort_values(by="Entrez_date")
         df = df[(df["Entrez_date"] >= datetime(startDate[0], startDate[1], startDate[2])) & (df["Entrez_date"] <= datetime(endDate[0], endDate[1], endDate[2]))]
@@ -174,18 +174,19 @@ def TestClick(value):
     return None
 
 
-@callback(Output("stat_average", "children"),
-          Input("articleDateOverview", "clickData"),
-          Input("dateCondition", "value"),
-          Input("dateFrequency", "value"))
-def CreateDataframeForStatistics(graph_data, conditions, frequency):
-    df = articles.copy()
-
-    if graph_data:
-        print(df.shape)
-        df["Year"] = df["Entrez_date"].apply(lambda x: x.year)
-        date = datetime.strptime(graph_data["points"][0]["x"], "%Y-%m-%d")
-        df = df[df.Year == date.year]
-        print(df.shape)
-    else:
-        return "Average:"
+# @callback(Output("stat_average", "children"),
+#           Input("articleDateOverview", "clickData"),
+#           Input("dateCondition", "value"),
+#           Input("dateFrequency", "value"))
+# def CreateDataframeForStatistics(graph_data, conditions, frequency):
+#     df = articles.copy()
+#
+#     if graph_data:
+#         print(graph_data)
+#         print(df.shape)
+#         df["Year"] = df["Entrez_date"].apply(lambda x: x.year)
+#         date = datetime.strptime(graph_data["points"][0]["x"], "%Y-%m-%d")
+#         df = df[df.Year == date.year]
+#         print(df.shape)
+#     else:
+#         return "Average:"

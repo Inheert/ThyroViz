@@ -1,7 +1,7 @@
 from dash import dcc, html, Input, Output, callback
 import dash_bootstrap_components as dbc
 import dash_daq as daq
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 
 from pages.utilities.pubmed_const import *
 
@@ -246,3 +246,39 @@ dateGraphKPI = \
                }
     )
 
+accordionArticles = \
+    dbc.Card(
+        dbc.CardBody(
+            [
+                dbc.Row(
+                    [
+                        dbc.Col(
+                            [
+                                html.P("Sort by:"),
+                                dcc.Dropdown(id="accordion_sortby",
+                                             options=["most recent", "older"],
+                                             value="most recent",
+                                             style={
+                                                 "maxWidth": "50vmax"
+                                             }
+                                             )
+                            ],
+                            style={"display": "flex"}
+                        )
+                    ]
+                ),
+                dbc.Row(
+                    [
+                        dbc.Col(
+                            [
+                                html.Div(id="accordionArticles")
+                            ]
+                        ),
+                    ]
+                ),
+            ]
+        ),
+        class_name="card mb-4 border-1 shadow",
+        style={"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
+               "borderRadius": "15px"}
+    )
