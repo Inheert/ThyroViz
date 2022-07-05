@@ -145,8 +145,8 @@
 300,12919152,cross-sectional
 301,12870222,cross-sectional studies
 301,12870222,cross-sectional
-303,12581471,cross-sectional studies
-303,12581471,cross-sectional
+302,12581471,cross-sectional studies
+302,12581471,cross-sectional
 305,14974907,cross-sectional
 306,12733841,cohort
 307,12236085,retrospective studies
@@ -159,16 +159,16 @@
 311,12444889,prospective
 314,12658827,prospective studies
 314,12658827,prospective
-318,12508180,retrospective
+319,12508180,retrospective
 320,12906364,case-control studies
 320,12906364,prospective studies
 320,12906364,case-control
 320,12906364,prospective
-322,12463429,retrospective studies
-322,12463429,cohort studies
-322,12463429,follow-up studies
-322,12463429,retrospective
-322,12463429,cohort
+321,12463429,retrospective studies
+321,12463429,cohort studies
+321,12463429,follow-up studies
+321,12463429,retrospective
+321,12463429,cohort
 323,12699595,prospective studies
 323,12699595,prospective
 325,12605179,prospective
@@ -222,10 +222,10 @@
 401,12371388,retrospective studies
 401,12371388,retrospective
 404,14655457,follow-up studies
-407,14586508,cross-sectional studies
-407,14586508,cross-sectional
-408,12739739,retrospective studies
-408,12739739,retrospective
+407,12739739,retrospective studies
+407,12739739,retrospective
+408,14586508,cross-sectional studies
+408,14586508,cross-sectional
 409,12148388,cross-sectional studies
 409,12148388,cross-sectional
 410,11942013,follow-up studies
@@ -241,9 +241,9 @@
 419,12602531,cohort
 422,12407349,retrospective studies
 422,12407349,retrospective
-427,12695922,follow-up studies
-427,12695922,prospective studies
-427,12695922,prospective
+426,12695922,follow-up studies
+426,12695922,prospective studies
+426,12695922,prospective
 433,12224455,retrospective studies
 433,12224455,retrospective
 436,12354133,follow-up studies
@@ -905,8 +905,8 @@
 1671,29346358,retrospective
 1673,29325833,retrospective studies
 1673,29325833,retrospective
-1674,30827828,cohort studies
-1674,30827828,cohort
+1675,30827828,cohort studies
+1675,30827828,cohort
 1676,30918165,retrospective studies
 1676,30918165,follow-up studies
 1676,30918165,retrospective
@@ -917,12 +917,12 @@
 1682,29915191,prospective studies
 1682,29915191,cohort
 1682,29915191,prospective
-1687,28450378,retrospective studies
-1687,28450378,follow-up studies
-1687,28450378,retrospective
-1688,29905638,retrospective studies
-1688,29905638,follow-up studies
-1688,29905638,retrospective
+1687,29905638,retrospective studies
+1687,29905638,follow-up studies
+1687,29905638,retrospective
+1688,28450378,retrospective studies
+1688,28450378,follow-up studies
+1688,28450378,retrospective
 1689,30949910,case-control studies
 1689,30949910,case-control
 1692,31132076,case-control studies
@@ -960,9 +960,9 @@
 1732,31869260,case-control
 1735,29234848,prospective studies
 1735,29234848,prospective
-1741,30537006,case-control studies
-1741,30537006,case-control
-1741,30537006,cohort
+1740,30537006,case-control studies
+1740,30537006,case-control
+1740,30537006,cohort
 1742,30184561,cross-sectional studies
 1742,30184561,cross-sectional
 1746,30865069,follow-up studies
@@ -1002,12 +1002,12 @@
 1771,30862149,retrospective studies
 1771,30862149,follow-up studies
 1771,30862149,retrospective
-1774,30173328,cross-sectional studies
-1774,30173328,cross-sectional
-1775,30688164,case-control studies
-1775,30688164,prospective studies
-1775,30688164,case-control
-1775,30688164,prospective
+1774,30688164,case-control studies
+1774,30688164,prospective studies
+1774,30688164,case-control
+1774,30688164,prospective
+1775,30173328,cross-sectional studies
+1775,30173328,cross-sectional
 1776,30924917,case-control studies
 1776,30924917,retrospective studies
 1776,30924917,case-control
@@ -1029,11 +1029,11 @@
 1789,30457413,retrospective
 1791,29325052,case-control studies
 1791,29325052,case-control
-1792,31655515,case-control studies
-1792,31655515,retrospective studies
-1792,31655515,case-control
-1792,31655515,retrospective
-1793,30760283,cohort
+1792,30760283,cohort
+1793,31655515,case-control studies
+1793,31655515,retrospective studies
+1793,31655515,case-control
+1793,31655515,retrospective
 1795,29532142,retrospective studies
 1795,29532142,retrospective
 1796,30880636,cross-sectional studies
@@ -1109,29 +1109,29 @@
 1845,31237847,prospective
 1847,29590674,retrospective studies
 1847,29590674,retrospective
-1848,30217613,retrospective studies
-1848,30217613,retrospective
-1848,30217613,cohort
-1849,30217607,retrospective studies
-1849,30217607,retrospective
-1850,29851756,retrospective studies
-1850,29851756,follow-up studies
-1850,29851756,retrospective
-1852,31023276,retrospective studies
-1852,31023276,follow-up studies
-1852,31023276,retrospective
-1852,31023276,prospective
-1853,30132285,case-control studies
-1853,30132285,cross-sectional studies
-1853,30132285,case-control
-1853,30132285,cross-sectional
-1854,31641884,retrospective studies
-1854,31641884,follow-up studies
-1854,31641884,case-control
-1854,31641884,retrospective
-1855,30862763,retrospective studies
-1855,30862763,follow-up studies
-1855,30862763,retrospective
+1848,29851756,retrospective studies
+1848,29851756,follow-up studies
+1848,29851756,retrospective
+1849,30217613,retrospective studies
+1849,30217613,retrospective
+1849,30217613,cohort
+1850,30217607,retrospective studies
+1850,30217607,retrospective
+1852,31641884,retrospective studies
+1852,31641884,follow-up studies
+1852,31641884,case-control
+1852,31641884,retrospective
+1853,30862763,retrospective studies
+1853,30862763,follow-up studies
+1853,30862763,retrospective
+1854,31023276,retrospective studies
+1854,31023276,follow-up studies
+1854,31023276,retrospective
+1854,31023276,prospective
+1855,30132285,case-control studies
+1855,30132285,cross-sectional studies
+1855,30132285,case-control
+1855,30132285,cross-sectional
 1857,30049435,retrospective studies
 1857,30049435,retrospective
 1858,30696370,cross-sectional studies
@@ -1196,8 +1196,8 @@
 1908,30667296,cohort
 1909,30392997,retrospective studies
 1909,30392997,retrospective
-1910,31065775,prospective
-1911,31677639,follow-up studies
+1910,31677639,follow-up studies
+1911,31065775,prospective
 1912,31860407,prospective studies
 1912,31860407,prospective
 1914,29768627,case-control studies
@@ -1207,11 +1207,11 @@
 1918,30834273,prospective
 1919,29722836,cross-sectional studies
 1919,29722836,cross-sectional
-1921,30593716,follow-up studies
-1921,30593716,prospective studies
-1921,30593716,cross-sectional studies
-1921,30593716,prospective
-1921,30593716,cross-sectional
+1920,30593716,follow-up studies
+1920,30593716,prospective studies
+1920,30593716,cross-sectional studies
+1920,30593716,prospective
+1920,30593716,cross-sectional
 1925,30701793,case-control studies
 1925,30701793,case-control
 1926,29446011,cross-sectional studies
@@ -1236,9 +1236,9 @@
 1939,30219088,prospective
 1943,30885146,prospective studies
 1943,30885146,prospective
-1946,29026936,follow-up studies
-1946,29026936,prospective studies
-1946,29026936,prospective
+1945,29026936,follow-up studies
+1945,29026936,prospective studies
+1945,29026936,prospective
 1947,30572375,cohort studies
 1947,30572375,cohort
 1950,29764405,cross-sectional studies
@@ -2201,13 +2201,13 @@
 2924,35230257,retrospective
 2925,35422184,prospective studies
 2925,35422184,prospective
-2929,34487995,retrospective studies
-2929,34487995,retrospective
-2930,33775197,retrospective studies
-2930,33775197,retrospective
-2932,35536720,prospective
-2933,34663089,longitudinal
-2933,34663089,prospective
+2929,33775197,retrospective studies
+2929,33775197,retrospective
+2930,34487995,retrospective studies
+2930,34487995,retrospective
+2932,34663089,longitudinal
+2932,34663089,prospective
+2934,35536720,prospective
 2935,35315985,prospective studies
 2935,35315985,prospective
 2940,35600602,follow-up studies
@@ -2230,8 +2230,8 @@
 2954,35130567,retrospective
 2954,35130567,cohort
 2954,35130567,cross-sectional
-2961,34250837,retrospective studies
-2961,34250837,retrospective
+2960,34250837,retrospective studies
+2960,34250837,retrospective
 2963,34642808,retrospective studies
 2963,34642808,retrospective
 2966,34812182,retrospective studies
@@ -2261,27 +2261,27 @@
 2992,34752624,longitudinal
 2993,35022743,prospective studies
 2993,35022743,prospective
-2999,35182078,case-control studies
-2999,35182078,case-control
-3003,33059514,retrospective studies
-3003,33059514,retrospective
-3004,35432203,retrospective studies
-3004,35432203,retrospective
-3005,35482336,cross-sectional studies
-3005,35482336,cross-sectional
-3007,35528009,case-control studies
-3007,35528009,case-control
-3007,35528009,cohort
+2998,35182078,case-control studies
+2998,35182078,case-control
+3003,35432203,retrospective studies
+3003,35432203,retrospective
+3004,35482336,cross-sectional studies
+3004,35482336,cross-sectional
+3005,33059514,retrospective studies
+3005,33059514,retrospective
+3006,35528009,case-control studies
+3006,35528009,case-control
+3006,35528009,cohort
 3009,33172865,retrospective
 3018,34874894,cross-sectional studies
 3018,34874894,cross-sectional
 3020,34843685,retrospective studies
 3020,34843685,retrospective
 3020,34843685,cohort
-3027,35338690,retrospective studies
-3027,35338690,retrospective
-3029,34799942,case-control studies
-3029,34799942,case-control
+3027,34799942,case-control studies
+3027,34799942,case-control
+3029,35338690,retrospective studies
+3029,35338690,retrospective
 3031,34291345,retrospective studies
 3031,34291345,retrospective
 3033,35522861,case-control studies
@@ -2289,17 +2289,17 @@
 3034,35093687,cross-sectional studies
 3034,35093687,cross-sectional
 3036,35145479,prospective
-3039,35692889,cross-sectional studies
-3039,35692889,cross-sectional
+3039,32878536,retrospective studies
+3039,32878536,cross-sectional studies
+3039,32878536,retrospective
+3039,32878536,cross-sectional
 3040,35381687,retrospective studies
 3040,35381687,retrospective
 3040,35381687,cohort
-3041,32878536,retrospective studies
-3041,32878536,cross-sectional studies
-3041,32878536,retrospective
-3041,32878536,cross-sectional
-3052,35184917,retrospective studies
-3052,35184917,retrospective
+3041,35692889,cross-sectional studies
+3041,35692889,cross-sectional
+3053,35184917,retrospective studies
+3053,35184917,retrospective
 3055,35220164,prospective studies
 3055,35220164,prospective
 3060,35398834,retrospective studies
@@ -2307,21 +2307,21 @@
 3061,34861792,cohort
 3063,35241008,prospective studies
 3063,35241008,prospective
-3064,35615718,prospective studies
-3064,35615718,prospective
-3065,35300630,prospective studies
-3065,35300630,prospective
-3066,34549377,prospective
-3067,35015120,retrospective studies
-3067,35015120,retrospective
-3067,35015120,cohort
+3064,35300630,prospective studies
+3064,35300630,prospective
+3065,34549377,prospective
+3066,35015120,retrospective studies
+3066,35015120,retrospective
+3066,35015120,cohort
+3067,35615718,prospective studies
+3067,35615718,prospective
 3068,34532987,retrospective studies
 3068,34532987,retrospective
-3070,34988642,cohort studies
-3070,34988642,prospective studies
-3070,34988642,cohort
-3070,34988642,prospective
-3071,35508893,retrospective
+3071,34988642,cohort studies
+3071,34988642,prospective studies
+3071,34988642,cohort
+3071,34988642,prospective
+3072,35508893,retrospective
 3074,35518570,case-control studies
 3074,35518570,case-control
 3075,34347224,retrospective studies
@@ -2330,9 +2330,9 @@
 3076,33390059,prospective studies
 3076,33390059,retrospective
 3076,33390059,prospective
-3079,35428798,retrospective studies
-3079,35428798,retrospective
-3079,35428798,cohort
+3077,35428798,retrospective studies
+3077,35428798,retrospective
+3077,35428798,cohort
 3081,35276742,prospective studies
 3081,35276742,prospective
 3082,34773561,prospective
@@ -2340,13 +2340,13 @@
 3090,35405683,retrospective studies
 3090,35405683,retrospective
 3090,35405683,cohort
+3096,34489313,retrospective studies
+3096,34489313,retrospective
+3097,34060342,cohort studies
+3097,34060342,cohort
 3098,35713042,prospective studies
 3098,35713042,cohort
 3098,35713042,prospective
-3101,34489313,retrospective studies
-3101,34489313,retrospective
-3102,34060342,cohort studies
-3102,34060342,cohort
 3103,35064543,cohort studies
 3103,35064543,cross-sectional studies
 3103,35064543,cohort
@@ -2354,30 +2354,30 @@
 3107,35568525,cohort studies
 3107,35568525,cohort
 3111,34671950,cohort
-3112,34293782,retrospective studies
-3112,34293782,retrospective
-3113,35439657,retrospective studies
-3113,35439657,retrospective
-3114,35342747,retrospective
+3112,35439657,retrospective studies
+3112,35439657,retrospective
+3113,35342747,retrospective
+3115,34293782,retrospective studies
+3115,34293782,retrospective
 3116,34714163,cohort studies
 3116,34714163,cross-sectional studies
 3116,34714163,cohort
 3116,34714163,cross-sectional
-3124,35278055,retrospective studies
-3124,35278055,retrospective
-3125,35555881,retrospective studies
-3125,35555881,retrospective
-3135,34743487,case-control studies
-3135,34743487,retrospective studies
-3135,34743487,case-control
-3135,34743487,retrospective
-3137,35413779,prospective studies
-3137,35413779,prospective
-3138,35144579,retrospective studies
-3138,35144579,retrospective
-3139,34330200,prospective studies
-3139,34330200,prospective
-3142,35405579,prospective
+3123,35278055,retrospective studies
+3123,35278055,retrospective
+3124,35555881,retrospective studies
+3124,35555881,retrospective
+3133,34743487,case-control studies
+3133,34743487,retrospective studies
+3133,34743487,case-control
+3133,34743487,retrospective
+3137,34330200,prospective studies
+3137,34330200,prospective
+3138,35413779,prospective studies
+3138,35413779,prospective
+3139,35144579,retrospective studies
+3139,35144579,retrospective
+3141,35405579,prospective
 3144,34979862,prospective studies
 3144,34979862,cross-sectional studies
 3144,34979862,prospective
@@ -2412,28 +2412,28 @@
 3173,34477926,cross-sectional
 3176,35476054,cross-sectional studies
 3176,35476054,cross-sectional
-3177,34544076,case-control studies
-3177,34544076,case-control
-3178,34851466,retrospective studies
-3178,34851466,prospective studies
-3178,34851466,retrospective
-3178,34851466,prospective
-3180,35647837,retrospective studies
-3180,35647837,retrospective
-3182,33731890,retrospective studies
-3182,33731890,prospective studies
-3182,33731890,retrospective
-3182,33731890,prospective
-3183,35698208,retrospective studies
-3183,35698208,retrospective
-3187,35229626,retrospective studies
-3187,35229626,retrospective
-3187,35229626,cohort
+3177,34851466,retrospective studies
+3177,34851466,prospective studies
+3177,34851466,retrospective
+3177,34851466,prospective
+3178,34544076,case-control studies
+3178,34544076,case-control
+3179,35647837,retrospective studies
+3179,35647837,retrospective
+3182,35698208,retrospective studies
+3182,35698208,retrospective
+3183,33731890,retrospective studies
+3183,33731890,prospective studies
+3183,33731890,retrospective
+3183,33731890,prospective
+3186,35229626,retrospective studies
+3186,35229626,retrospective
+3186,35229626,cohort
 3189,34607373,retrospective studies
 3189,34607373,retrospective
 3189,34607373,cohort
-3190,34593713,prospective studies
-3190,34593713,prospective
+3191,34593713,prospective studies
+3191,34593713,prospective
 3193,34580763,cohort
 3194,35370990,follow-up studies
 3194,35370990,prospective studies
@@ -2587,14 +2587,14 @@
 3449,28363119,retrospective studies
 3449,28363119,case-control
 3449,28363119,retrospective
-3451,27609530,retrospective studies
-3451,27609530,retrospective
-3453,28606263,retrospective studies
-3453,28606263,retrospective
-3454,29890100,retrospective studies
-3454,29890100,retrospective
-3458,26331303,retrospective studies
-3458,26331303,retrospective
+3450,29890100,retrospective studies
+3450,29890100,retrospective
+3452,28606263,retrospective studies
+3452,28606263,retrospective
+3454,27609530,retrospective studies
+3454,27609530,retrospective
+3459,26331303,retrospective studies
+3459,26331303,retrospective
 3462,26927707,retrospective studies
 3462,26927707,retrospective
 3462,26927707,prospective
@@ -2641,7 +2641,7 @@
 3533,28457178,cross-sectional studies
 3533,28457178,retrospective
 3533,28457178,cross-sectional
-3535,28389809,prospective
+3534,28389809,prospective
 3537,27426718,retrospective studies
 3537,27426718,retrospective
 3539,27090092,prospective studies
@@ -2677,8 +2677,8 @@
 3567,29120123,cross-sectional
 3568,27172524,retrospective studies
 3568,27172524,retrospective
-3569,28077500,prospective
-3570,26337375,follow-up studies
+3569,26337375,follow-up studies
+3570,28077500,prospective
 3571,27923250,follow-up studies
 3571,27923250,retrospective
 3575,27050179,retrospective studies
@@ -2736,15 +2736,15 @@
 3648,28225858,cross-sectional studies
 3648,28225858,prospective
 3648,28225858,cross-sectional
-3649,27600197,prospective
-3650,27241825,retrospective studies
-3650,27241825,retrospective
+3649,27241825,retrospective studies
+3649,27241825,retrospective
+3650,27600197,prospective
 3655,28719405,follow-up studies
 3655,28719405,longitudinal studies
 3655,28719405,longitudinal
 3655,28719405,prospective
-3657,27553396,cross-sectional studies
-3657,27553396,cross-sectional
+3658,27553396,cross-sectional studies
+3658,27553396,cross-sectional
 3659,27040416,case-control studies
 3659,27040416,case-control
 3660,26066526,cross-sectional studies
@@ -3730,8 +3730,8 @@
 4844,10891822,prospective
 4845,10802519,retrospective studies
 4845,10802519,retrospective
-4848,10713742,longitudinal studies
-4848,10713742,longitudinal
+4847,10713742,longitudinal studies
+4847,10713742,longitudinal
 4849,11589682,cross-sectional studies
 4849,11589682,cross-sectional
 4850,10700715,follow-up studies
@@ -4443,8 +4443,8 @@
 6173,19757207,cross-sectional studies
 6173,19757207,cross-sectional
 6174,20358791,prospective
-6175,19262285,follow-up studies
-6176,19468796,prospective
+6175,19468796,prospective
+6176,19262285,follow-up studies
 6177,19265492,prospective studies
 6177,19265492,prospective
 6179,18703546,follow-up studies
@@ -4452,11 +4452,11 @@
 6180,20045803,retrospective
 6183,18407753,prospective studies
 6183,18407753,prospective
-6184,18506473,follow-up studies
-6185,18232004,retrospective studies
-6185,18232004,retrospective
-6186,18343210,prospective studies
-6186,18343210,prospective
+6184,18343210,prospective studies
+6184,18343210,prospective
+6185,18506473,follow-up studies
+6186,18232004,retrospective studies
+6186,18232004,retrospective
 6187,19644631,retrospective studies
 6187,19644631,retrospective
 6191,18505435,case-control studies
@@ -5422,7 +5422,7 @@
 7443,31950881,prospective
 7445,35138700,retrospective studies
 7445,35138700,retrospective
-7456,32729049,retrospective
+7455,32729049,retrospective
 7463,32326785,retrospective studies
 7463,32326785,retrospective
 7466,32200809,retrospective studies
@@ -5445,9 +5445,9 @@
 7513,33782324,cohort
 7518,34195868,prospective studies
 7518,34195868,prospective
-7529,33587422,retrospective studies
-7529,33587422,retrospective
-7530,34061770,cohort
+7529,34061770,cohort
+7530,33587422,retrospective studies
+7530,33587422,retrospective
 7536,33899194,retrospective studies
 7536,33899194,retrospective
 7540,34725062,retrospective studies
@@ -5465,30 +5465,30 @@
 7569,32199035,cohort
 7570,31373985,retrospective studies
 7570,31373985,retrospective
-7577,33688954,prospective studies
-7577,33688954,prospective
-7578,34192497,retrospective studies
-7578,34192497,longitudinal studies
-7578,34192497,cross-sectional studies
-7578,34192497,retrospective
-7578,34192497,cohort
-7578,34192497,longitudinal
-7578,34192497,cross-sectional
-7579,33914772,prospective studies
-7579,33914772,prospective
-7584,34560868,cross-sectional studies
-7584,34560868,cross-sectional
-7585,34224544,retrospective studies
-7585,34224544,retrospective
-7587,32847459,prospective studies
-7587,32847459,cohort
-7587,32847459,prospective
+7577,34192497,retrospective studies
+7577,34192497,longitudinal studies
+7577,34192497,cross-sectional studies
+7577,34192497,retrospective
+7577,34192497,cohort
+7577,34192497,longitudinal
+7577,34192497,cross-sectional
+7578,33914772,prospective studies
+7578,33914772,prospective
+7579,33688954,prospective studies
+7579,33688954,prospective
+7584,32847459,prospective studies
+7584,32847459,cohort
+7584,32847459,prospective
+7586,34560868,cross-sectional studies
+7586,34560868,cross-sectional
+7587,34224544,retrospective studies
+7587,34224544,retrospective
 7590,32553518,prospective studies
 7590,32553518,prospective
-7591,33530368,case-control studies
-7591,33530368,case-control
-7592,32968816,case-control studies
-7592,32968816,case-control
+7591,32968816,case-control studies
+7591,32968816,case-control
+7592,33530368,case-control studies
+7592,33530368,case-control
 7593,33532627,retrospective studies
 7593,33532627,case-control
 7593,33532627,retrospective
@@ -5498,8 +5498,8 @@
 7600,34774035,case-control
 7608,32924380,case-control studies
 7608,32924380,case-control
-7612,32427725,retrospective studies
-7612,32427725,retrospective
+7613,32427725,retrospective studies
+7613,32427725,retrospective
 7615,33779950,retrospective studies
 7615,33779950,cohort studies
 7615,33779950,retrospective
@@ -5511,10 +5511,10 @@
 7617,32705333,case-control
 7617,32705333,cohort
 7617,32705333,longitudinal
-7619,33060509,retrospective studies
-7619,33060509,retrospective
-7619,33060509,cohort
-7619,33060509,longitudinal
+7620,33060509,retrospective studies
+7620,33060509,retrospective
+7620,33060509,cohort
+7620,33060509,longitudinal
 7622,33926416,case-control studies
 7622,33926416,case-control
 7627,33966669,cross-sectional studies
@@ -5532,10 +5532,10 @@
 7631,32705522,retrospective
 7634,33106982,case-control studies
 7634,33106982,case-control
-7636,34194397,retrospective studies
-7636,34194397,retrospective
-7637,34689799,retrospective studies
-7637,34689799,retrospective
+7637,34194397,retrospective studies
+7637,34194397,retrospective
+7638,34689799,retrospective studies
+7638,34689799,retrospective
 7640,34448415,retrospective studies
 7640,34448415,cohort studies
 7640,34448415,retrospective
@@ -5552,15 +5552,15 @@
 7647,33193994,cross-sectional studies
 7647,33193994,retrospective
 7647,33193994,cross-sectional
-7652,33474918,retrospective studies
-7652,33474918,retrospective
-7653,33345558,cohort
-7653,33345558,prospective
-7655,34331946,case-control studies
-7655,34331946,case-control
-7656,32449092,case-control studies
-7656,32449092,follow-up studies
-7656,32449092,case-control
+7651,33474918,retrospective studies
+7651,33474918,retrospective
+7654,34331946,case-control studies
+7654,34331946,case-control
+7655,32449092,case-control studies
+7655,32449092,follow-up studies
+7655,32449092,case-control
+7656,33345558,cohort
+7656,33345558,prospective
 7657,33791385,prospective
 7658,32057544,retrospective studies
 7658,32057544,retrospective
@@ -5573,11 +5573,11 @@
 7664,31980413,retrospective
 7667,32999109,cross-sectional studies
 7667,32999109,cross-sectional
-7674,34823306,retrospective studies
-7674,34823306,retrospective
-7677,34164724,retrospective studies
-7677,34164724,retrospective
-7677,34164724,cross-sectional
+7675,34823306,retrospective studies
+7675,34823306,retrospective
+7676,34164724,retrospective studies
+7676,34164724,retrospective
+7676,34164724,cross-sectional
 7681,34300095,cross-sectional studies
 7681,34300095,cross-sectional
 7683,34260410,longitudinal studies
@@ -5592,20 +5592,20 @@
 7687,33544540,cross-sectional
 7688,34252869,retrospective studies
 7688,34252869,retrospective
-7690,32166667,cross-sectional studies
-7690,32166667,cross-sectional
-7691,32798996,retrospective studies
-7691,32798996,follow-up studies
-7691,32798996,retrospective
+7690,32798996,retrospective studies
+7690,32798996,follow-up studies
+7690,32798996,retrospective
+7691,32166667,cross-sectional studies
+7691,32166667,cross-sectional
 7693,33860431,retrospective studies
 7693,33860431,retrospective
 7693,33860431,cohort
-7694,34381549,retrospective studies
-7694,34381549,cross-sectional studies
-7694,34381549,retrospective
-7694,34381549,cross-sectional
-7695,32734611,retrospective studies
-7695,32734611,retrospective
+7694,32734611,retrospective studies
+7694,32734611,retrospective
+7695,34381549,retrospective studies
+7695,34381549,cross-sectional studies
+7695,34381549,retrospective
+7695,34381549,cross-sectional
 7696,34120661,retrospective studies
 7696,34120661,retrospective
 7697,34806437,cross-sectional studies
@@ -5620,9 +5620,9 @@
 7700,32461446,cross-sectional studies
 7700,32461446,cohort
 7700,32461446,cross-sectional
-7701,31910731,longitudinal
-7702,33439464,retrospective studies
-7702,33439464,retrospective
+7701,33439464,retrospective studies
+7701,33439464,retrospective
+7702,31910731,longitudinal
 7703,34659126,retrospective studies
 7703,34659126,cohort studies
 7703,34659126,retrospective
@@ -5636,12 +5636,12 @@
 7707,33136026,prospective studies
 7707,33136026,retrospective
 7707,33136026,prospective
+7709,32527127,retrospective studies
+7709,32527127,cross-sectional studies
+7709,32527127,retrospective
+7709,32527127,cross-sectional
 7710,33023116,cohort studies
 7710,33023116,cohort
-7712,32527127,retrospective studies
-7712,32527127,cross-sectional studies
-7712,32527127,retrospective
-7712,32527127,cross-sectional
 7713,33947272,retrospective studies
 7713,33947272,retrospective
 7714,32358735,cross-sectional studies
@@ -5655,11 +5655,11 @@
 7718,32602151,retrospective studies
 7718,32602151,retrospective
 7725,32188795,follow-up studies
-7727,32316214,retrospective studies
-7727,32316214,retrospective
-7728,32451608,retrospective studies
-7728,32451608,retrospective
-7728,32451608,cross-sectional
+7727,32451608,retrospective studies
+7727,32451608,retrospective
+7727,32451608,cross-sectional
+7728,32316214,retrospective studies
+7728,32316214,retrospective
 7733,32487052,retrospective studies
 7733,32487052,retrospective
 7738,32504380,retrospective studies
@@ -5682,12 +5682,12 @@
 7746,32640447,prospective
 7747,33211758,cross-sectional studies
 7747,33211758,cross-sectional
-7749,32658864,longitudinal studies
-7749,32658864,longitudinal
-7750,32474767,prospective studies
-7750,32474767,cross-sectional studies
-7750,32474767,prospective
-7750,32474767,cross-sectional
+7749,32474767,prospective studies
+7749,32474767,cross-sectional studies
+7749,32474767,prospective
+7749,32474767,cross-sectional
+7750,32658864,longitudinal studies
+7750,32658864,longitudinal
 7753,32593739,prospective studies
 7753,32593739,prospective
 7760,32789681,cohort studies
@@ -6739,18 +6739,18 @@
 8937,15868978,retrospective
 8938,15167731,cohort studies
 8938,15167731,cohort
-8942,15654642,retrospective studies
-8942,15654642,retrospective
+8941,15654642,retrospective studies
+8941,15654642,retrospective
 8943,16478704,retrospective studies
 8943,16478704,retrospective
 8944,15545707,retrospective studies
 8944,15545707,cohort studies
 8944,15545707,retrospective
 8944,15545707,cohort
-8946,14722777,prospective studies
-8946,14722777,prospective
-8947,15024315,retrospective studies
-8947,15024315,retrospective
+8946,15024315,retrospective studies
+8946,15024315,retrospective
+8947,14722777,prospective studies
+8947,14722777,prospective
 8948,15521969,follow-up studies
 8948,15521969,prospective studies
 8948,15521969,cohort
@@ -7694,8 +7694,8 @@
 10402,22100533,retrospective
 10403,22044565,retrospective studies
 10403,22044565,retrospective
-10406,22960778,case-control studies
-10406,22960778,case-control
+10407,22960778,case-control studies
+10407,22960778,case-control
 10409,24709784,retrospective studies
 10409,24709784,retrospective
 10410,23280318,cohort studies
@@ -7771,8 +7771,8 @@
 10488,23047567,retrospective
 10489,22053869,cross-sectional studies
 10489,22053869,cross-sectional
-10491,23690528,retrospective studies
-10491,23690528,retrospective
+10493,23690528,retrospective studies
+10493,23690528,retrospective
 10494,23414115,retrospective studies
 10494,23414115,cross-sectional studies
 10494,23414115,retrospective
@@ -7784,22 +7784,22 @@
 10495,23317391,cross-sectional
 10496,23428758,cross-sectional studies
 10496,23428758,cross-sectional
-10498,23206325,cross-sectional studies
-10498,23206325,cross-sectional
+10499,23206325,cross-sectional studies
+10499,23206325,cross-sectional
 10500,22833451,prospective
 10505,23679109,cross-sectional studies
 10505,23679109,cross-sectional
-10508,22543510,retrospective studies
-10508,22543510,retrospective
-10509,22434524,prospective studies
-10509,22434524,prospective
+10507,22543510,retrospective studies
+10507,22543510,retrospective
+10508,22434524,prospective studies
+10508,22434524,prospective
 10510,23149095,prospective studies
 10510,23149095,prospective
-10512,22287186,retrospective studies
-10512,22287186,cohort studies
-10512,22287186,retrospective
-10512,22287186,cohort
-10513,22893523,follow-up studies
+10512,22893523,follow-up studies
+10513,22287186,retrospective studies
+10513,22287186,cohort studies
+10513,22287186,retrospective
+10513,22287186,cohort
 10514,22484994,retrospective
 10515,24144816,retrospective studies
 10515,24144816,retrospective
@@ -7819,9 +7819,9 @@
 10532,24081791,cohort studies
 10532,24081791,retrospective
 10532,24081791,cohort
-10535,22960961,retrospective studies
-10535,22960961,retrospective
-10535,22960961,prospective
+10534,22960961,retrospective studies
+10534,22960961,retrospective
+10534,22960961,prospective
 10536,22234657,retrospective studies
 10536,22234657,cohort studies
 10536,22234657,prospective studies
@@ -7923,15 +7923,15 @@
 10619,24204772,longitudinal
 10623,22420618,cross-sectional studies
 10623,22420618,cross-sectional
-10624,23395200,case-control studies
-10624,23395200,prospective studies
-10624,23395200,case-control
-10624,23395200,prospective
-10625,23721189,case-control studies
-10625,23721189,case-control
-10629,24203649,prospective
-10630,22314228,cross-sectional studies
-10630,22314228,cross-sectional
+10624,23721189,case-control studies
+10624,23721189,case-control
+10625,23395200,case-control studies
+10625,23395200,prospective studies
+10625,23395200,case-control
+10625,23395200,prospective
+10629,22314228,cross-sectional studies
+10629,22314228,cross-sectional
+10630,24203649,prospective
 10633,22763296,retrospective studies
 10633,22763296,retrospective
 10642,23473435,prospective studies
@@ -11021,9 +11021,9 @@
 14690,17497977,retrospective
 14691,16480531,cross-sectional studies
 14691,16480531,cross-sectional
-14696,17199694,cross-sectional studies
-14696,17199694,cross-sectional
-14697,16681541,prospective
+14696,16681541,prospective
+14697,17199694,cross-sectional studies
+14697,17199694,cross-sectional
 14698,16848110,cross-sectional studies
 14698,16848110,cross-sectional
 14699,17209470,cross-sectional studies
@@ -11200,8 +11200,8 @@
 14895,16780745,follow-up studies
 14897,16645011,longitudinal studies
 14897,16645011,longitudinal
-14904,16669286,cross-sectional studies
-14904,16669286,cross-sectional
+14903,16669286,cross-sectional studies
+14903,16669286,cross-sectional
 14908,17315787,retrospective studies
 14908,17315787,retrospective
 14912,16808398,retrospective studies

@@ -6,16 +6,13 @@ import math
 @callback(Output("categoryRepartition", "figure"),
           Input("categoryRepartition", "figure"),
           Input("publication_type", "value"),
-          Input("author", "value"),
           Input("population", "value"))
-def DisplayCategoryRepartitionChart(figure, p_type, author, pop):
+def DisplayCategoryRepartitionChart(figure, p_type, pop):
     df = df_condition.copy()
     df = df[["PMID", "Category"]]
 
     if len(p_type) > 0:
         df = df[df.PMID.isin(publication_type[publication_type.Publication_type.isin(p_type)]["PMID"])]
-    if len(author) > 0:
-        df = df[df.PMID.isin(full_author_name[full_author_name.Without_special_character.isin(author)]["PMID"])]
     if len(pop) > 0:
         df = df[df.PMID.isin(population[population.Population.isin(pop)]["PMID"])]
 
@@ -62,26 +59,16 @@ def DisplayCategoryRepartitionChart(figure, p_type, author, pop):
     return fig
 
 
-# @callback(Output("dateCondition", "value"),
-#           Input("date_checklist", "value"),
-#           Input("dateCondition", "value"))
-# def UpdateConditionDropdown(checklist, cond):
-#     if checklist is None:
-#         return cond
-#     return all_conditions if "Show graph by conditions" in checklist else cond
-
-
 @callback(Output("articleDateOverview", "figure"),
           Input("articleDateOverview", "figure"),
           Input("publication_type", "value"),
-          Input("author", "value"),
           Input("population", "value"),
-          Input("dateCondition", "value"),
+          Input("dateCategory", "value"),
           Input("dateFrequency", "value"),
           Input("datePickerRange", "start_date"),
           Input("datePickerRange", "end_date"),
           Input("date_checklist", "value"))
-def DisplayArticlesDateOverview(figure, p_type, author, pop, cond, freq, startDate, endDate, checklist):
+def DisplayArticlesDateOverview(figure, p_type, pop, cond, freq, startDate, endDate, checklist):
 
     startDate = startDate.split("-")
     startDate = [int(x) for x in startDate]
@@ -96,8 +83,6 @@ def DisplayArticlesDateOverview(figure, p_type, author, pop, cond, freq, startDa
 
     if len(p_type) > 0:
         df = df[df.PMID.isin(publication_type[publication_type.Publication_type.isin(p_type)]["PMID"])]
-    if len(author) > 0:
-        df = df[df.PMID.isin(full_author_name[full_author_name.Without_special_character.isin(author)]["PMID"])]
     if len(pop) > 0:
         df = df[df.PMID.isin(population[population.Population.isin(pop)]["PMID"])]
 
@@ -157,10 +142,10 @@ def DisplayArticlesDateOverview(figure, p_type, author, pop, cond, freq, startDa
     return fig
 
 
-@callback(Output("dateCondition", "value"),
+@callback(Output("dateCategory", "value"),
           Input("selectAllCategory", "value"),
-          Input("dateCondition", "options"),
-          Input("dateCondition", "value"))
+          Input("dateCategory", "options"),
+          Input("dateCategory", "value"))
 def SelectAllCategory(check, dropdown_options, actual_value):
     if check is not None and len(check) == 1:
         return dropdown_options

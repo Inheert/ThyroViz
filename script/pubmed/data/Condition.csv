@@ -933,10 +933,10 @@
 300,12919152,thyroid gland,thyroid disease
 301,12870222,goiter,goiter
 301,12870222,"goiter, endemic",goiter
-302,12845488,goiter,goiter
-302,12845488,thyroid gland,thyroid disease
-303,12581471,goiter,goiter
-303,12581471,thyroid gland,thyroid disease
+302,12581471,goiter,goiter
+302,12581471,thyroid gland,thyroid disease
+303,12845488,goiter,goiter
+303,12845488,thyroid gland,thyroid disease
 304,14690034,goiter,goiter
 304,14690034,"goiter, endemic",goiter
 304,14690034,hypothyroidism,hypothyroidism
@@ -983,26 +983,26 @@
 316,12699588,thyroid gland,thyroid disease
 317,12915634,goiter,goiter
 317,12915634,hypothyroidism,hypothyroidism
-318,12508180,goiter,goiter
-318,12508180,"goiter, nodular",goiter
-318,12508180,thyroid nodule,thyroid nodule
-318,12508180,"thyroiditis, autoimmune",thyroiditis
-318,12508180,thyroiditis,thyroiditis
-318,12508180,thyroid disease,thyroid disease
-318,12508180,thyroid diseases,thyroid disease
-319,14751036,goiter,goiter
-319,14751036,congenital hypothyroidism,hypothyroidism
-319,14751036,hypothyroidism,hypothyroidism
-319,14751036,thyroid gland,thyroid disease
+318,14751036,goiter,goiter
+318,14751036,congenital hypothyroidism,hypothyroidism
+318,14751036,hypothyroidism,hypothyroidism
+318,14751036,thyroid gland,thyroid disease
+319,12508180,goiter,goiter
+319,12508180,"goiter, nodular",goiter
+319,12508180,thyroid nodule,thyroid nodule
+319,12508180,"thyroiditis, autoimmune",thyroiditis
+319,12508180,thyroiditis,thyroiditis
+319,12508180,thyroid disease,thyroid disease
+319,12508180,thyroid diseases,thyroid disease
 320,12906364,goiter,goiter
 320,12906364,"goiter, endemic",goiter
-321,11819103,goiter,goiter
-321,11819103,"goiter, substernal",goiter
-321,11819103,thyroid neoplasms,thyroid neoplasms
-322,12463429,goiter,goiter
-322,12463429,"goiter, nodular",goiter
-322,12463429,thyroid nodule,thyroid nodule
-322,12463429,thyroidectomy,thyroid disease
+321,12463429,goiter,goiter
+321,12463429,"goiter, nodular",goiter
+321,12463429,thyroid nodule,thyroid nodule
+321,12463429,thyroidectomy,thyroid disease
+322,11819103,goiter,goiter
+322,11819103,"goiter, substernal",goiter
+322,11819103,thyroid neoplasms,thyroid neoplasms
 323,12699595,goiter,goiter
 323,12699595,hyperthyroidism,hyperthyroidism
 323,12699595,hypothyroidism,hypothyroidism
@@ -1162,13 +1162,13 @@
 370,12116555,goiter,goiter
 370,12116555,"goiter, endemic",goiter
 371,12720530,graves disease,hyperthyroidism
-372,12376780,goiter,goiter
-372,12376780,"goiter, nodular",goiter
-372,12376780,thyroid nodule,thyroid nodule
-373,12532684,goiter,goiter
-373,12532684,"goiter, endemic",goiter
-373,12532684,thyroid neoplasms,thyroid neoplasms
-373,12532684,thyroid gland,thyroid disease
+372,12532684,goiter,goiter
+372,12532684,"goiter, endemic",goiter
+372,12532684,thyroid neoplasms,thyroid neoplasms
+372,12532684,thyroid gland,thyroid disease
+373,12376780,goiter,goiter
+373,12376780,"goiter, nodular",goiter
+373,12376780,thyroid nodule,thyroid nodule
 374,12134778,goiter,goiter
 374,12134778,"goiter, nodular",goiter
 375,12748250,goiter,goiter
@@ -1187,15 +1187,15 @@
 379,12213665,hyperthyroidism,hyperthyroidism
 379,12213665,thyroid gland,thyroid disease
 379,12213665,thyroidectomy,thyroid disease
-380,11751062,goiter,goiter
-380,11751062,"goiter, endemic",goiter
-380,11751062,thyroid neoplasms,thyroid neoplasms
-380,11751062,"thyroiditis, autoimmune",thyroiditis
-380,11751062,thyroiditis,thyroiditis
-380,11751062,thyroid gland,thyroid disease
-381,11889201,goiter,goiter
-381,11889201,"goiter, nodular",goiter
-381,11889201,thyroid gland,thyroid disease
+380,11889201,goiter,goiter
+380,11889201,"goiter, nodular",goiter
+380,11889201,thyroid gland,thyroid disease
+381,11751062,goiter,goiter
+381,11751062,"goiter, endemic",goiter
+381,11751062,thyroid neoplasms,thyroid neoplasms
+381,11751062,"thyroiditis, autoimmune",thyroiditis
+381,11751062,thyroiditis,thyroiditis
+381,11751062,thyroid gland,thyroid disease
 382,12925983,goiter,goiter
 382,12925983,"goiter, nodular",goiter
 382,12925983,thyroid nodule,thyroid nodule
@@ -1286,11 +1286,11 @@
 406,12773996,goiter,goiter
 406,12773996,thyroid gland,thyroid disease
 406,12773996,thyroidectomy,thyroid disease
-407,14586508,goiter,goiter
-407,14586508,"goiter, endemic",goiter
-408,12739739,goiter,goiter
-408,12739739,"goiter, endemic",goiter
-408,12739739,thyroid nodule,thyroid nodule
+407,12739739,goiter,goiter
+407,12739739,"goiter, endemic",goiter
+407,12739739,thyroid nodule,thyroid nodule
+408,14586508,goiter,goiter
+408,14586508,"goiter, endemic",goiter
 409,12148388,goiter,goiter
 410,11942013,goiter,goiter
 410,11942013,"goiter, nodular",goiter
@@ -1345,13 +1345,13 @@
 423,12951976,graves disease,hyperthyroidism
 424,12072037,graves disease,hyperthyroidism
 425,15072284,goiter,goiter
-426,14595788,goiter,goiter
-426,14595788,"goiter, nodular",goiter
-426,14595788,thyroid neoplasms,thyroid neoplasms
-426,14595788,thyroid nodule,thyroid nodule
-427,12695922,goiter,goiter
-427,12695922,thyroid neoplasms,thyroid neoplasms
-427,12695922,thyroidectomy,thyroid disease
+426,12695922,goiter,goiter
+426,12695922,thyroid neoplasms,thyroid neoplasms
+426,12695922,thyroidectomy,thyroid disease
+427,14595788,goiter,goiter
+427,14595788,"goiter, nodular",goiter
+427,14595788,thyroid neoplasms,thyroid neoplasms
+427,14595788,thyroid nodule,thyroid nodule
 428,12424934,goiter,goiter
 429,12411067,goiter,goiter
 429,12411067,thyroid gland,thyroid disease
@@ -1495,12 +1495,12 @@
 475,12478541,thyroid neoplasms,thyroid neoplasms
 475,12478541,thyroidectomy,thyroid disease
 476,12371398,graves disease,hyperthyroidism
-477,12882135,goiter,goiter
-477,12882135,hyperthyroidism,hyperthyroidism
-478,12660648,goiter,goiter
-478,12660648,thyroidectomy,thyroid disease
-479,15027738,goiter,goiter
-480,14650793,graves disease,hyperthyroidism
+477,12660648,goiter,goiter
+477,12660648,thyroidectomy,thyroid disease
+478,12882135,goiter,goiter
+478,12882135,hyperthyroidism,hyperthyroidism
+479,14650793,graves disease,hyperthyroidism
+480,15027738,goiter,goiter
 481,12955050,goiter,goiter
 481,12955050,hypothyroidism,hypothyroidism
 481,12955050,thyroidectomy,thyroid disease
@@ -4902,12 +4902,12 @@
 1673,29325833,graves disease,hyperthyroidism
 1673,29325833,graves' disease,hyperthyroidism
 1673,29325833,thyroidectomy,thyroid disease
-1674,30827828,graves disease,hyperthyroidism
-1674,30827828,graves' disease,hyperthyroidism
-1675,31208677,goiter,goiter
-1675,31208677,"goiter, substernal",goiter
-1675,31208677,thyroid gland,thyroid disease
-1675,31208677,thyroidectomy,thyroid disease
+1674,31208677,goiter,goiter
+1674,31208677,"goiter, substernal",goiter
+1674,31208677,thyroid gland,thyroid disease
+1674,31208677,thyroidectomy,thyroid disease
+1675,30827828,graves disease,hyperthyroidism
+1675,30827828,graves' disease,hyperthyroidism
 1676,30918165,goiter,goiter
 1676,30918165,hyperthyroidism,hyperthyroidism
 1676,30918165,graves disease,hyperthyroidism
@@ -4944,8 +4944,8 @@
 1685,29525760,thyroid disease,thyroid disease
 1685,29525760,thyroidectomy,thyroid disease
 1686,29721730,goiter,goiter
-1687,28450378,graves ophthalmopathy,hyperthyroidism
-1688,29905638,graves ophthalmopathy,hyperthyroidism
+1687,29905638,graves ophthalmopathy,hyperthyroidism
+1688,28450378,graves ophthalmopathy,hyperthyroidism
 1689,30949910,graves disease,hyperthyroidism
 1689,30949910,graves' disease,hyperthyroidism
 1690,31424978,graves' disease,hyperthyroidism
@@ -4989,10 +4989,10 @@
 1701,31496266,graves ophthalmopathy,hyperthyroidism
 1702,31449767,graves disease,hyperthyroidism
 1702,31449767,graves' disease,hyperthyroidism
-1703,30929897,goiter,goiter
-1703,30929897,thyroidectomy,thyroid disease
-1704,30742572,hyperthyroidism,hyperthyroidism
-1704,30742572,graves disease,hyperthyroidism
+1703,30742572,hyperthyroidism,hyperthyroidism
+1703,30742572,graves disease,hyperthyroidism
+1704,30929897,goiter,goiter
+1704,30929897,thyroidectomy,thyroid disease
 1705,30742569,graves disease,hyperthyroidism
 1706,29027675,goiter,goiter
 1706,29027675,"goiter, nodular",goiter
@@ -5109,11 +5109,11 @@
 1738,29803209,graves disease,hyperthyroidism
 1738,29803209,graves' disease,hyperthyroidism
 1739,31859550,graves ophthalmopathy,hyperthyroidism
-1740,31155292,goiter,goiter
-1740,31155292,"goiter, nodular",goiter
-1741,30537006,graves disease,hyperthyroidism
-1741,30537006,graves' disease,hyperthyroidism
-1741,30537006,thyroidectomy,thyroid disease
+1740,30537006,graves disease,hyperthyroidism
+1740,30537006,graves' disease,hyperthyroidism
+1740,30537006,thyroidectomy,thyroid disease
+1741,31155292,goiter,goiter
+1741,31155292,"goiter, nodular",goiter
 1742,30184561,goiter,goiter
 1742,30184561,"goiter, nodular",goiter
 1742,30184561,hyperthyroidism,hyperthyroidism
@@ -5224,15 +5224,15 @@
 1773,30197021,graves disease,hyperthyroidism
 1773,30197021,graves' disease,hyperthyroidism
 1773,30197021,thyroid nodule,thyroid nodule
-1774,30173328,hyperthyroidism,hyperthyroidism
-1774,30173328,graves disease,hyperthyroidism
-1774,30173328,graves' disease,hyperthyroidism
-1774,30173328,graves ophthalmopathy,hyperthyroidism
-1774,30173328,thyroid gland,thyroid disease
-1775,30688164,hyperthyroidism,hyperthyroidism
-1775,30688164,graves disease,hyperthyroidism
-1775,30688164,graves' disease,hyperthyroidism
-1775,30688164,graves ophthalmopathy,hyperthyroidism
+1774,30688164,hyperthyroidism,hyperthyroidism
+1774,30688164,graves disease,hyperthyroidism
+1774,30688164,graves' disease,hyperthyroidism
+1774,30688164,graves ophthalmopathy,hyperthyroidism
+1775,30173328,hyperthyroidism,hyperthyroidism
+1775,30173328,graves disease,hyperthyroidism
+1775,30173328,graves' disease,hyperthyroidism
+1775,30173328,graves ophthalmopathy,hyperthyroidism
+1775,30173328,thyroid gland,thyroid disease
 1776,30924917,goiter,goiter
 1776,30924917,"goiter, nodular",goiter
 1776,30924917,thyroid neoplasms,thyroid neoplasms
@@ -5284,17 +5284,17 @@
 1791,29325052,"thyroiditis, autoimmune",thyroiditis
 1791,29325052,thyroiditis,thyroiditis
 1791,29325052,thyroid gland,thyroid disease
-1792,31655515,goiter,goiter
-1792,31655515,graves disease,hyperthyroidism
-1792,31655515,thyrotoxicosis,hyperthyroidism
-1792,31655515,thyroid neoplasms,thyroid neoplasms
-1792,31655515,"thyroiditis, subacute",thyroiditis
-1792,31655515,thyroiditis,thyroiditis
-1793,30760283,goiter,goiter
-1793,30760283,thyroid neoplasms,thyroid neoplasms
-1793,30760283,"thyroid cancer, papillary",thyroid neoplasms
-1793,30760283,thyroid nodule,thyroid nodule
-1793,30760283,thyroid gland,thyroid disease
+1792,30760283,goiter,goiter
+1792,30760283,thyroid neoplasms,thyroid neoplasms
+1792,30760283,"thyroid cancer, papillary",thyroid neoplasms
+1792,30760283,thyroid nodule,thyroid nodule
+1792,30760283,thyroid gland,thyroid disease
+1793,31655515,goiter,goiter
+1793,31655515,graves disease,hyperthyroidism
+1793,31655515,thyrotoxicosis,hyperthyroidism
+1793,31655515,thyroid neoplasms,thyroid neoplasms
+1793,31655515,"thyroiditis, subacute",thyroiditis
+1793,31655515,thyroiditis,thyroiditis
 1794,31323889,goiter,goiter
 1794,31323889,hypothyroidism,hypothyroidism
 1795,29532142,goiter,goiter
@@ -5394,11 +5394,11 @@
 1830,29759035,goiter,goiter
 1830,29759035,congenital hypothyroidism,hypothyroidism
 1830,29759035,hypothyroidism,hypothyroidism
-1831,29332250,goiter,goiter
-1831,29332250,"goiter, nodular",goiter
-1831,29332250,hyperthyroidism,hyperthyroidism
-1832,30135996,graves' disease,hyperthyroidism
-1832,30135996,graves ophthalmopathy,hyperthyroidism
+1831,30135996,graves' disease,hyperthyroidism
+1831,30135996,graves ophthalmopathy,hyperthyroidism
+1832,29332250,goiter,goiter
+1832,29332250,"goiter, nodular",goiter
+1832,29332250,hyperthyroidism,hyperthyroidism
 1833,29066572,goiter,goiter
 1833,29066572,thyroid neoplasms,thyroid neoplasms
 1833,29066572,thyroid gland,thyroid disease
@@ -5437,26 +5437,26 @@
 1847,29590674,graves' disease,hyperthyroidism
 1847,29590674,graves ophthalmopathy,hyperthyroidism
 1847,29590674,thyroid gland,thyroid disease
-1848,30217613,graves disease,hyperthyroidism
-1848,30217613,graves' disease,hyperthyroidism
-1848,30217613,graves ophthalmopathy,hyperthyroidism
-1849,30217607,graves ophthalmopathy,hyperthyroidism
-1850,29851756,graves ophthalmopathy,hyperthyroidism
+1848,29851756,graves ophthalmopathy,hyperthyroidism
+1849,30217613,graves disease,hyperthyroidism
+1849,30217613,graves' disease,hyperthyroidism
+1849,30217613,graves ophthalmopathy,hyperthyroidism
+1850,30217607,graves ophthalmopathy,hyperthyroidism
 1851,29546048,goiter,goiter
 1851,29546048,graves disease,hyperthyroidism
 1851,29546048,graves' disease,hyperthyroidism
 1851,29546048,thyroid neoplasms,thyroid neoplasms
 1851,29546048,thyroid gland,thyroid disease
-1852,31023276,graves disease,hyperthyroidism
-1852,31023276,graves' disease,hyperthyroidism
-1853,30132285,graves disease,hyperthyroidism
-1853,30132285,graves' disease,hyperthyroidism
-1853,30132285,graves ophthalmopathy,hyperthyroidism
-1853,30132285,thyroiditis,thyroiditis
-1854,31641884,graves ophthalmopathy,hyperthyroidism
-1855,30862763,graves disease,hyperthyroidism
-1855,30862763,graves' disease,hyperthyroidism
-1855,30862763,hypothyroidism,hypothyroidism
+1852,31641884,graves ophthalmopathy,hyperthyroidism
+1853,30862763,graves disease,hyperthyroidism
+1853,30862763,graves' disease,hyperthyroidism
+1853,30862763,hypothyroidism,hypothyroidism
+1854,31023276,graves disease,hyperthyroidism
+1854,31023276,graves' disease,hyperthyroidism
+1855,30132285,graves disease,hyperthyroidism
+1855,30132285,graves' disease,hyperthyroidism
+1855,30132285,graves ophthalmopathy,hyperthyroidism
+1855,30132285,thyroiditis,thyroiditis
 1856,31340806,graves disease,hyperthyroidism
 1856,31340806,thyroidectomy,thyroid disease
 1857,30049435,graves disease,hyperthyroidism
@@ -5628,11 +5628,11 @@
 1909,30392997,graves disease,hyperthyroidism
 1909,30392997,thyroid neoplasms,thyroid neoplasms
 1909,30392997,thyroidectomy,thyroid disease
-1910,31065775,goiter,goiter
-1910,31065775,thyroid neoplasms,thyroid neoplasms
-1910,31065775,thyroid gland,thyroid disease
-1911,31677639,goiter,goiter
-1911,31677639,thyroid gland,thyroid disease
+1910,31677639,goiter,goiter
+1910,31677639,thyroid gland,thyroid disease
+1911,31065775,goiter,goiter
+1911,31065775,thyroid neoplasms,thyroid neoplasms
+1911,31065775,thyroid gland,thyroid disease
 1912,31860407,graves disease,hyperthyroidism
 1912,31860407,graves' disease,hyperthyroidism
 1912,31860407,graves ophthalmopathy,hyperthyroidism
@@ -5662,8 +5662,8 @@
 1918,30834273,thyroid gland,thyroid disease
 1919,29722836,goiter,goiter
 1919,29722836,thyroid gland,thyroid disease
-1920,31691654,graves ophthalmopathy,hyperthyroidism
-1921,30593716,graves ophthalmopathy,hyperthyroidism
+1920,30593716,graves ophthalmopathy,hyperthyroidism
+1921,31691654,graves ophthalmopathy,hyperthyroidism
 1922,30577987,goiter,goiter
 1922,30577987,thyroid neoplasms,thyroid neoplasms
 1922,30577987,thyroidectomy,thyroid disease
@@ -5737,9 +5737,9 @@
 1943,30885146,thyroid nodule,thyroid nodule
 1943,30885146,thyroid gland,thyroid disease
 1944,28656526,graves ophthalmopathy,hyperthyroidism
-1945,29983514,goiter,goiter
-1945,29983514,thyroidectomy,thyroid disease
-1946,29026936,graves ophthalmopathy,hyperthyroidism
+1945,29026936,graves ophthalmopathy,hyperthyroidism
+1946,29983514,goiter,goiter
+1946,29983514,thyroidectomy,thyroid disease
 1947,30572375,goiter,goiter
 1947,30572375,thyroid gland,thyroid disease
 1948,28832090,goiter,goiter
@@ -8274,9 +8274,9 @@
 2888,35313358,goiter,goiter
 2888,35313358,thyroid nodule,thyroid nodule
 2889,33218789,goiter,goiter
-2890,35048575,graves ophthalmopathy,hyperthyroidism
-2891,34144800,graves disease,hyperthyroidism
-2891,34144800,graves ophthalmopathy,hyperthyroidism
+2890,34144800,graves disease,hyperthyroidism
+2890,34144800,graves ophthalmopathy,hyperthyroidism
+2891,35048575,graves ophthalmopathy,hyperthyroidism
 2892,35144345,goiter,goiter
 2892,35144345,hyperthyroidism,hyperthyroidism
 2892,35144345,graves disease,hyperthyroidism
@@ -8377,37 +8377,37 @@
 2926,35466606,graves disease,hyperthyroidism
 2926,35466606,graves' disease,hyperthyroidism
 2926,35466606,graves ophthalmopathy,hyperthyroidism
-2927,33908335,goiter,goiter
-2927,33908335,hyperthyroidism,hyperthyroidism
-2927,33908335,graves disease,hyperthyroidism
-2927,33908335,graves' disease,hyperthyroidism
-2927,33908335,thyroidectomy,thyroid disease
-2928,35287535,hyperthyroidism,hyperthyroidism
-2928,35287535,graves disease,hyperthyroidism
-2928,35287535,graves' disease,hyperthyroidism
-2928,35287535,graves ophthalmopathy,hyperthyroidism
-2928,35287535,hypothyroidism,hypothyroidism
-2928,35287535,thyroid neoplasms,thyroid neoplasms
-2928,35287535,thyroidectomy,thyroid disease
-2929,34487995,graves ophthalmopathy,hyperthyroidism
-2930,33775197,hyperthyroidism,hyperthyroidism
-2930,33775197,graves ophthalmopathy,hyperthyroidism
+2927,35287535,hyperthyroidism,hyperthyroidism
+2927,35287535,graves disease,hyperthyroidism
+2927,35287535,graves' disease,hyperthyroidism
+2927,35287535,graves ophthalmopathy,hyperthyroidism
+2927,35287535,hypothyroidism,hypothyroidism
+2927,35287535,thyroid neoplasms,thyroid neoplasms
+2927,35287535,thyroidectomy,thyroid disease
+2928,33908335,goiter,goiter
+2928,33908335,hyperthyroidism,hyperthyroidism
+2928,33908335,graves disease,hyperthyroidism
+2928,33908335,graves' disease,hyperthyroidism
+2928,33908335,thyroidectomy,thyroid disease
+2929,33775197,hyperthyroidism,hyperthyroidism
+2929,33775197,graves ophthalmopathy,hyperthyroidism
+2930,34487995,graves ophthalmopathy,hyperthyroidism
 2931,34954838,hyperthyroidism,hyperthyroidism
 2931,34954838,graves disease,hyperthyroidism
 2931,34954838,graves' disease,hyperthyroidism
 2931,34954838,thyroid neoplasms,thyroid neoplasms
 2931,34954838,thyroidectomy,thyroid disease
-2932,35536720,graves ophthalmopathy,hyperthyroidism
-2933,34663089,hyperthyroidism,hyperthyroidism
-2933,34663089,graves disease,hyperthyroidism
-2933,34663089,graves' disease,hyperthyroidism
-2933,34663089,thyroidectomy,thyroid disease
-2934,35534869,graves disease,hyperthyroidism
-2934,35534869,graves' disease,hyperthyroidism
-2934,35534869,hashimoto disease,thyroiditis
-2934,35534869,thyroiditis,thyroiditis
-2934,35534869,thyroid disease,thyroid disease
-2934,35534869,thyroid diseases,thyroid disease
+2932,34663089,hyperthyroidism,hyperthyroidism
+2932,34663089,graves disease,hyperthyroidism
+2932,34663089,graves' disease,hyperthyroidism
+2932,34663089,thyroidectomy,thyroid disease
+2933,35534869,graves disease,hyperthyroidism
+2933,35534869,graves' disease,hyperthyroidism
+2933,35534869,hashimoto disease,thyroiditis
+2933,35534869,thyroiditis,thyroiditis
+2933,35534869,thyroid disease,thyroid disease
+2933,35534869,thyroid diseases,thyroid disease
+2934,35536720,graves ophthalmopathy,hyperthyroidism
 2935,35315985,graves disease,hyperthyroidism
 2935,35315985,graves' disease,hyperthyroidism
 2935,35315985,graves ophthalmopathy,hyperthyroidism
@@ -8473,15 +8473,15 @@
 2955,35662442,thyroidectomy,thyroid disease
 2956,35069441,graves' disease,hyperthyroidism
 2956,35069441,graves ophthalmopathy,hyperthyroidism
-2957,34637160,graves disease,hyperthyroidism
-2958,34240778,goiter,goiter
+2957,34240778,goiter,goiter
+2958,34637160,graves disease,hyperthyroidism
 2959,35039921,thyroid neoplasms,thyroid neoplasms
-2960,34515780,graves disease,hyperthyroidism
-2960,34515780,graves' disease,hyperthyroidism
-2961,34250837,graves disease,hyperthyroidism
-2961,34250837,graves' disease,hyperthyroidism
-2962,33884704,graves disease,hyperthyroidism
-2962,33884704,graves' disease,hyperthyroidism
+2960,34250837,graves disease,hyperthyroidism
+2960,34250837,graves' disease,hyperthyroidism
+2961,33884704,graves disease,hyperthyroidism
+2961,33884704,graves' disease,hyperthyroidism
+2962,34515780,graves disease,hyperthyroidism
+2962,34515780,graves' disease,hyperthyroidism
 2963,34642808,graves ophthalmopathy,hyperthyroidism
 2964,35413468,graves' disease,hyperthyroidism
 2964,35413468,graves ophthalmopathy,hyperthyroidism
@@ -8506,9 +8506,9 @@
 2972,34365588,goiter,goiter
 2972,34365588,thyroid neoplasms,thyroid neoplasms
 2972,34365588,thyroidectomy,thyroid disease
-2973,35488596,graves disease,hyperthyroidism
-2973,35488596,graves ophthalmopathy,hyperthyroidism
-2974,34983925,graves ophthalmopathy,hyperthyroidism
+2973,34983925,graves ophthalmopathy,hyperthyroidism
+2974,35488596,graves disease,hyperthyroidism
+2974,35488596,graves ophthalmopathy,hyperthyroidism
 2975,34895729,hyperthyroidism,hyperthyroidism
 2975,34895729,graves ophthalmopathy,hyperthyroidism
 2976,35119087,thyroid neoplasms,thyroid neoplasms
@@ -8571,33 +8571,33 @@
 2994,35606042,thyroidectomy,thyroid disease
 2996,35037368,graves ophthalmopathy,hyperthyroidism
 2997,35614367,graves ophthalmopathy,hyperthyroidism
-2998,33865565,graves disease,hyperthyroidism
-2998,33865565,graves' disease,hyperthyroidism
-2998,33865565,thyroid neoplasms,thyroid neoplasms
-2998,33865565,thyroid disease,thyroid disease
-2998,33865565,thyroid diseases,thyroid disease
-2999,35182078,graves disease,hyperthyroidism
-2999,35182078,graves' disease,hyperthyroidism
-2999,35182078,hashimoto disease,thyroiditis
-2999,35182078,thyroiditis,thyroiditis
-2999,35182078,thyroid disease,thyroid disease
+2998,35182078,graves disease,hyperthyroidism
+2998,35182078,graves' disease,hyperthyroidism
+2998,35182078,hashimoto disease,thyroiditis
+2998,35182078,thyroiditis,thyroiditis
+2998,35182078,thyroid disease,thyroid disease
+2999,33865565,graves disease,hyperthyroidism
+2999,33865565,graves' disease,hyperthyroidism
+2999,33865565,thyroid neoplasms,thyroid neoplasms
+2999,33865565,thyroid disease,thyroid disease
+2999,33865565,thyroid diseases,thyroid disease
 3000,34347269,goiter,goiter
 3001,33910662,graves ophthalmopathy,hyperthyroidism
 3002,34487739,graves ophthalmopathy,hyperthyroidism
-3003,33059514,graves ophthalmopathy,hyperthyroidism
-3004,35432203,graves disease,hyperthyroidism
-3004,35432203,graves' disease,hyperthyroidism
-3004,35432203,thyroid disease,thyroid disease
-3004,35432203,thyroid diseases,thyroid disease
-3005,35482336,graves ophthalmopathy,hyperthyroidism
-3006,35628410,graves ophthalmopathy,hyperthyroidism
-3006,35628410,thyroid disease,thyroid disease
-3007,35528009,graves disease,hyperthyroidism
-3007,35528009,graves' disease,hyperthyroidism
-3007,35528009,thyroid neoplasms,thyroid neoplasms
-3007,35528009,"thyroid cancer, papillary",thyroid neoplasms
-3007,35528009,hashimoto disease,thyroiditis
-3007,35528009,thyroiditis,thyroiditis
+3003,35432203,graves disease,hyperthyroidism
+3003,35432203,graves' disease,hyperthyroidism
+3003,35432203,thyroid disease,thyroid disease
+3003,35432203,thyroid diseases,thyroid disease
+3004,35482336,graves ophthalmopathy,hyperthyroidism
+3005,33059514,graves ophthalmopathy,hyperthyroidism
+3006,35528009,graves disease,hyperthyroidism
+3006,35528009,graves' disease,hyperthyroidism
+3006,35528009,thyroid neoplasms,thyroid neoplasms
+3006,35528009,"thyroid cancer, papillary",thyroid neoplasms
+3006,35528009,hashimoto disease,thyroiditis
+3006,35528009,thyroiditis,thyroiditis
+3007,35628410,graves ophthalmopathy,hyperthyroidism
+3007,35628410,thyroid disease,thyroid disease
 3008,35466605,graves ophthalmopathy,hyperthyroidism
 3009,33172865,graves ophthalmopathy,hyperthyroidism
 3010,34970859,graves disease,hyperthyroidism
@@ -8641,16 +8641,16 @@
 3025,35459655,thyroid disease,thyroid disease
 3025,35459655,thyroidectomy,thyroid disease
 3026,34599283,goiter,goiter
-3027,35338690,graves disease,hyperthyroidism
-3027,35338690,graves' disease,hyperthyroidism
-3027,35338690,thyroid neoplasms,thyroid neoplasms
-3027,35338690,thyroidectomy,thyroid disease
+3027,34799942,graves disease,hyperthyroidism
+3027,34799942,graves' disease,hyperthyroidism
+3027,34799942,hashimoto disease,thyroiditis
+3027,34799942,thyroiditis,thyroiditis
+3027,34799942,thyroid disease,thyroid disease
 3028,34193409,graves ophthalmopathy,hyperthyroidism
-3029,34799942,graves disease,hyperthyroidism
-3029,34799942,graves' disease,hyperthyroidism
-3029,34799942,hashimoto disease,thyroiditis
-3029,34799942,thyroiditis,thyroiditis
-3029,34799942,thyroid disease,thyroid disease
+3029,35338690,graves disease,hyperthyroidism
+3029,35338690,graves' disease,hyperthyroidism
+3029,35338690,thyroid neoplasms,thyroid neoplasms
+3029,35338690,thyroidectomy,thyroid disease
 3030,34933777,graves disease,hyperthyroidism
 3030,34933777,graves' disease,hyperthyroidism
 3031,34291345,graves ophthalmopathy,hyperthyroidism
@@ -8679,33 +8679,33 @@
 3037,35135806,thyroid disease,thyroid disease
 3037,35135806,thyroidectomy,thyroid disease
 3038,35024887,goiter,goiter
-3039,35692889,graves disease,hyperthyroidism
-3039,35692889,graves' disease,hyperthyroidism
-3039,35692889,hashimoto disease,thyroiditis
-3039,35692889,thyroiditis,thyroiditis
+3039,32878536,graves ophthalmopathy,hyperthyroidism
 3040,35381687,hyperthyroidism,hyperthyroidism
 3040,35381687,graves disease,hyperthyroidism
 3040,35381687,graves' disease,hyperthyroidism
-3041,32878536,graves ophthalmopathy,hyperthyroidism
+3041,35692889,graves disease,hyperthyroidism
+3041,35692889,graves' disease,hyperthyroidism
+3041,35692889,hashimoto disease,thyroiditis
+3041,35692889,thyroiditis,thyroiditis
 3042,35624535,hyperthyroidism,hyperthyroidism
 3042,35624535,graves disease,hyperthyroidism
 3042,35624535,graves' disease,hyperthyroidism
-3043,35273577,graves ophthalmopathy,hyperthyroidism
-3044,34788857,graves ophthalmopathy,hyperthyroidism
-3045,34324163,graves disease,hyperthyroidism
-3045,34324163,graves' disease,hyperthyroidism
-3045,34324163,graves ophthalmopathy,hyperthyroidism
-3045,34324163,thyroid disease,thyroid disease
-3045,34324163,thyroid diseases,thyroid disease
-3046,35429598,graves disease,hyperthyroidism
-3046,35429598,graves' disease,hyperthyroidism
-3046,35429598,hashimoto disease,thyroiditis
-3046,35429598,thyroiditis,thyroiditis
-3046,35429598,thyroid disease,thyroid disease
-3046,35429598,thyroid diseases,thyroid disease
-3047,35078654,hyperthyroidism,hyperthyroidism
-3047,35078654,graves disease,hyperthyroidism
-3048,35663306,graves ophthalmopathy,hyperthyroidism
+3043,34788857,graves ophthalmopathy,hyperthyroidism
+3044,35273577,graves ophthalmopathy,hyperthyroidism
+3045,35663306,graves ophthalmopathy,hyperthyroidism
+3046,34324163,graves disease,hyperthyroidism
+3046,34324163,graves' disease,hyperthyroidism
+3046,34324163,graves ophthalmopathy,hyperthyroidism
+3046,34324163,thyroid disease,thyroid disease
+3046,34324163,thyroid diseases,thyroid disease
+3047,35429598,graves disease,hyperthyroidism
+3047,35429598,graves' disease,hyperthyroidism
+3047,35429598,hashimoto disease,thyroiditis
+3047,35429598,thyroiditis,thyroiditis
+3047,35429598,thyroid disease,thyroid disease
+3047,35429598,thyroid diseases,thyroid disease
+3048,35078654,hyperthyroidism,hyperthyroidism
+3048,35078654,graves disease,hyperthyroidism
 3049,35018442,graves disease,hyperthyroidism
 3049,35018442,graves' disease,hyperthyroidism
 3050,35119800,hyperthyroidism,hyperthyroidism
@@ -8716,11 +8716,11 @@
 3050,35119800,thyroiditis,thyroiditis
 3050,35119800,thyroid disease,thyroid disease
 3050,35119800,thyroid diseases,thyroid disease
-3051,35610583,graves disease,hyperthyroidism
-3051,35610583,graves' disease,hyperthyroidism
-3052,35184917,graves ophthalmopathy,hyperthyroidism
-3053,35244288,graves disease,hyperthyroidism
-3053,35244288,graves' disease,hyperthyroidism
+3051,35244288,graves disease,hyperthyroidism
+3051,35244288,graves' disease,hyperthyroidism
+3052,35610583,graves disease,hyperthyroidism
+3052,35610583,graves' disease,hyperthyroidism
+3053,35184917,graves ophthalmopathy,hyperthyroidism
 3054,35066781,hyperthyroidism,hyperthyroidism
 3054,35066781,graves disease,hyperthyroidism
 3054,35066781,graves' disease,hyperthyroidism
@@ -8750,30 +8750,30 @@
 3062,35189399,graves' disease,hyperthyroidism
 3063,35241008,goiter,goiter
 3063,35241008,thyroid nodule,thyroid nodule
-3064,35615718,graves ophthalmopathy,hyperthyroidism
-3065,35300630,graves ophthalmopathy,hyperthyroidism
-3066,34549377,graves ophthalmopathy,hyperthyroidism
-3067,35015120,graves disease,hyperthyroidism
-3067,35015120,graves' disease,hyperthyroidism
-3067,35015120,thyroidectomy,thyroid disease
+3064,35300630,graves ophthalmopathy,hyperthyroidism
+3065,34549377,graves ophthalmopathy,hyperthyroidism
+3066,35015120,graves disease,hyperthyroidism
+3066,35015120,graves' disease,hyperthyroidism
+3066,35015120,thyroidectomy,thyroid disease
+3067,35615718,graves ophthalmopathy,hyperthyroidism
 3068,34532987,graves ophthalmopathy,hyperthyroidism
 3069,35565939,hyperthyroidism,hyperthyroidism
 3069,35565939,graves disease,hyperthyroidism
 3069,35565939,graves' disease,hyperthyroidism
-3070,34988642,goiter,goiter
-3070,34988642,thyroidectomy,thyroid disease
-3071,35508893,goiter,goiter
-3071,35508893,"goiter, nodular",goiter
-3071,35508893,hyperthyroidism,hyperthyroidism
-3071,35508893,graves disease,hyperthyroidism
-3071,35508893,graves' disease,hyperthyroidism
-3071,35508893,thyrotoxicosis,hyperthyroidism
-3072,33103521,graves disease,hyperthyroidism
-3072,33103521,graves' disease,hyperthyroidism
-3072,33103521,hashimoto disease,thyroiditis
-3072,33103521,thyroiditis,thyroiditis
-3072,33103521,thyroid disease,thyroid disease
-3072,33103521,thyroid diseases,thyroid disease
+3070,33103521,graves disease,hyperthyroidism
+3070,33103521,graves' disease,hyperthyroidism
+3070,33103521,hashimoto disease,thyroiditis
+3070,33103521,thyroiditis,thyroiditis
+3070,33103521,thyroid disease,thyroid disease
+3070,33103521,thyroid diseases,thyroid disease
+3071,34988642,goiter,goiter
+3071,34988642,thyroidectomy,thyroid disease
+3072,35508893,goiter,goiter
+3072,35508893,"goiter, nodular",goiter
+3072,35508893,hyperthyroidism,hyperthyroidism
+3072,35508893,graves disease,hyperthyroidism
+3072,35508893,graves' disease,hyperthyroidism
+3072,35508893,thyrotoxicosis,hyperthyroidism
 3073,34850456,graves disease,hyperthyroidism
 3073,34850456,graves' disease,hyperthyroidism
 3073,34850456,hashimoto disease,thyroiditis
@@ -8788,12 +8788,12 @@
 3075,34347224,graves' disease,hyperthyroidism
 3075,34347224,graves ophthalmopathy,hyperthyroidism
 3076,33390059,graves ophthalmopathy,hyperthyroidism
-3077,34871593,graves disease,hyperthyroidism
-3077,34871593,graves' disease,hyperthyroidism
-3077,34871593,thyroid disease,thyroid disease
-3078,35386700,graves disease,hyperthyroidism
-3078,35386700,graves' disease,hyperthyroidism
-3079,35428798,graves ophthalmopathy,hyperthyroidism
+3077,35428798,graves ophthalmopathy,hyperthyroidism
+3078,34871593,graves disease,hyperthyroidism
+3078,34871593,graves' disease,hyperthyroidism
+3078,34871593,thyroid disease,thyroid disease
+3079,35386700,graves disease,hyperthyroidism
+3079,35386700,graves' disease,hyperthyroidism
 3080,34605662,graves ophthalmopathy,hyperthyroidism
 3081,35276742,graves disease,hyperthyroidism
 3081,35276742,graves' disease,hyperthyroidism
@@ -8831,22 +8831,22 @@
 3095,34982065,graves disease,hyperthyroidism
 3095,34982065,graves' disease,hyperthyroidism
 3095,34982065,graves ophthalmopathy,hyperthyroidism
-3096,35187713,hyperthyroidism,hyperthyroidism
-3096,35187713,graves disease,hyperthyroidism
-3096,35187713,graves' disease,hyperthyroidism
-3097,34778997,graves disease,hyperthyroidism
-3097,34778997,graves' disease,hyperthyroidism
+3096,34489313,hyperthyroidism,hyperthyroidism
+3096,34489313,graves disease,hyperthyroidism
+3096,34489313,graves' disease,hyperthyroidism
+3097,34060342,graves disease,hyperthyroidism
+3097,34060342,graves' disease,hyperthyroidism
+3097,34060342,thyroidectomy,thyroid disease
 3098,35713042,goiter,goiter
 3098,35713042,thyroidectomy,thyroid disease
 3099,35671049,graves ophthalmopathy,hyperthyroidism
 3100,35220890,graves disease,hyperthyroidism
 3100,35220890,graves' disease,hyperthyroidism
-3101,34489313,hyperthyroidism,hyperthyroidism
-3101,34489313,graves disease,hyperthyroidism
-3101,34489313,graves' disease,hyperthyroidism
-3102,34060342,graves disease,hyperthyroidism
-3102,34060342,graves' disease,hyperthyroidism
-3102,34060342,thyroidectomy,thyroid disease
+3101,35187713,hyperthyroidism,hyperthyroidism
+3101,35187713,graves disease,hyperthyroidism
+3101,35187713,graves' disease,hyperthyroidism
+3102,34778997,graves disease,hyperthyroidism
+3102,34778997,graves' disease,hyperthyroidism
 3103,35064543,graves disease,hyperthyroidism
 3103,35064543,graves' disease,hyperthyroidism
 3104,33637620,graves ophthalmopathy,hyperthyroidism
@@ -8870,13 +8870,13 @@
 3110,34545512,graves' disease,hyperthyroidism
 3110,34545512,graves ophthalmopathy,hyperthyroidism
 3111,34671950,graves ophthalmopathy,hyperthyroidism
-3112,34293782,graves ophthalmopathy,hyperthyroidism
-3113,35439657,graves' disease,hyperthyroidism
-3113,35439657,graves ophthalmopathy,hyperthyroidism
-3114,35342747,graves ophthalmopathy,hyperthyroidism
-3115,34613563,hyperthyroidism,hyperthyroidism
-3115,34613563,graves disease,hyperthyroidism
-3115,34613563,graves ophthalmopathy,hyperthyroidism
+3112,35439657,graves' disease,hyperthyroidism
+3112,35439657,graves ophthalmopathy,hyperthyroidism
+3113,35342747,graves ophthalmopathy,hyperthyroidism
+3114,34613563,hyperthyroidism,hyperthyroidism
+3114,34613563,graves disease,hyperthyroidism
+3114,34613563,graves ophthalmopathy,hyperthyroidism
+3115,34293782,graves ophthalmopathy,hyperthyroidism
 3116,34714163,graves disease,hyperthyroidism
 3116,34714163,graves' disease,hyperthyroidism
 3116,34714163,graves ophthalmopathy,hyperthyroidism
@@ -8891,25 +8891,25 @@
 3118,35320246,thyroiditis,thyroiditis
 3119,34973718,graves disease,hyperthyroidism
 3119,34973718,graves' disease,hyperthyroidism
-3120,35477705,hyperthyroidism,hyperthyroidism
-3120,35477705,graves disease,hyperthyroidism
-3120,35477705,graves' disease,hyperthyroidism
-3121,34544941,hyperthyroidism,hyperthyroidism
-3121,34544941,graves disease,hyperthyroidism
-3121,34544941,graves' disease,hyperthyroidism
-3121,34544941,graves ophthalmopathy,hyperthyroidism
-3121,34544941,hypothyroidism,hypothyroidism
+3120,34544941,hyperthyroidism,hyperthyroidism
+3120,34544941,graves disease,hyperthyroidism
+3120,34544941,graves' disease,hyperthyroidism
+3120,34544941,graves ophthalmopathy,hyperthyroidism
+3120,34544941,hypothyroidism,hypothyroidism
+3121,35477705,hyperthyroidism,hyperthyroidism
+3121,35477705,graves disease,hyperthyroidism
+3121,35477705,graves' disease,hyperthyroidism
 3122,35089242,hyperthyroidism,hyperthyroidism
 3122,35089242,graves disease,hyperthyroidism
-3123,34781042,hyperthyroidism,hyperthyroidism
-3123,34781042,graves disease,hyperthyroidism
-3123,34781042,graves' disease,hyperthyroidism
-3123,34781042,graves ophthalmopathy,hyperthyroidism
-3123,34781042,thyroid neoplasms,thyroid neoplasms
-3124,35278055,goiter,goiter
-3124,35278055,"goiter, nodular",goiter
-3124,35278055,thyroid neoplasms,thyroid neoplasms
-3125,35555881,graves ophthalmopathy,hyperthyroidism
+3123,35278055,goiter,goiter
+3123,35278055,"goiter, nodular",goiter
+3123,35278055,thyroid neoplasms,thyroid neoplasms
+3124,35555881,graves ophthalmopathy,hyperthyroidism
+3125,34781042,hyperthyroidism,hyperthyroidism
+3125,34781042,graves disease,hyperthyroidism
+3125,34781042,graves' disease,hyperthyroidism
+3125,34781042,graves ophthalmopathy,hyperthyroidism
+3125,34781042,thyroid neoplasms,thyroid neoplasms
 3126,34241830,goiter,goiter
 3126,34241830,graves' disease,hyperthyroidism
 3126,34241830,thyroid neoplasms,thyroid neoplasms
@@ -8931,30 +8931,30 @@
 3132,35330515,goiter,goiter
 3132,35330515,thyroid neoplasms,thyroid neoplasms
 3132,35330515,thyroiditis,thyroiditis
-3133,34714162,hyperthyroidism,hyperthyroidism
-3133,34714162,graves disease,hyperthyroidism
-3133,34714162,graves' disease,hyperthyroidism
-3133,34714162,graves ophthalmopathy,hyperthyroidism
-3134,35136950,graves disease,hyperthyroidism
-3134,35136950,graves' disease,hyperthyroidism
-3134,35136950,thyroid neoplasms,thyroid neoplasms
-3135,34743487,graves disease,hyperthyroidism
-3135,34743487,graves ophthalmopathy,hyperthyroidism
-3136,35592782,graves ophthalmopathy,hyperthyroidism
-3137,35413779,graves disease,hyperthyroidism
-3137,35413779,graves' disease,hyperthyroidism
-3137,35413779,thyrotoxicosis,hyperthyroidism
-3137,35413779,thyroiditis,thyroiditis
-3138,35144579,graves ophthalmopathy,hyperthyroidism
-3139,34330200,graves ophthalmopathy,hyperthyroidism
+3133,34743487,graves disease,hyperthyroidism
+3133,34743487,graves ophthalmopathy,hyperthyroidism
+3134,35592782,graves ophthalmopathy,hyperthyroidism
+3135,35136950,graves disease,hyperthyroidism
+3135,35136950,graves' disease,hyperthyroidism
+3135,35136950,thyroid neoplasms,thyroid neoplasms
+3136,34714162,hyperthyroidism,hyperthyroidism
+3136,34714162,graves disease,hyperthyroidism
+3136,34714162,graves' disease,hyperthyroidism
+3136,34714162,graves ophthalmopathy,hyperthyroidism
+3137,34330200,graves ophthalmopathy,hyperthyroidism
+3138,35413779,graves disease,hyperthyroidism
+3138,35413779,graves' disease,hyperthyroidism
+3138,35413779,thyrotoxicosis,hyperthyroidism
+3138,35413779,thyroiditis,thyroiditis
+3139,35144579,graves ophthalmopathy,hyperthyroidism
 3140,34774300,goiter,goiter
 3140,34774300,thyroid gland,thyroid disease
-3141,34637060,graves ophthalmopathy,hyperthyroidism
-3142,35405579,graves ophthalmopathy,hyperthyroidism
-3143,35235144,hyperthyroidism,hyperthyroidism
-3143,35235144,graves disease,hyperthyroidism
-3143,35235144,graves' disease,hyperthyroidism
-3143,35235144,hypothyroidism,hypothyroidism
+3141,35405579,graves ophthalmopathy,hyperthyroidism
+3142,35235144,hyperthyroidism,hyperthyroidism
+3142,35235144,graves disease,hyperthyroidism
+3142,35235144,graves' disease,hyperthyroidism
+3142,35235144,hypothyroidism,hypothyroidism
+3143,34637060,graves ophthalmopathy,hyperthyroidism
 3144,34979862,graves ophthalmopathy,hyperthyroidism
 3145,35370997,graves disease,hyperthyroidism
 3145,35370997,graves' disease,hyperthyroidism
@@ -8966,10 +8966,10 @@
 3147,34453884,graves ophthalmopathy,hyperthyroidism
 3148,34029245,graves disease,hyperthyroidism
 3148,34029245,graves ophthalmopathy,hyperthyroidism
-3149,35006119,hyperthyroidism,hyperthyroidism
-3149,35006119,graves disease,hyperthyroidism
-3150,34645767,graves disease,hyperthyroidism
-3150,34645767,graves' disease,hyperthyroidism
+3149,34645767,graves disease,hyperthyroidism
+3149,34645767,graves' disease,hyperthyroidism
+3150,35006119,hyperthyroidism,hyperthyroidism
+3150,35006119,graves disease,hyperthyroidism
 3151,35094312,goiter,goiter
 3151,35094312,hyperthyroidism,hyperthyroidism
 3151,35094312,graves disease,hyperthyroidism
@@ -9008,10 +9008,10 @@
 3161,34779257,graves ophthalmopathy,hyperthyroidism
 3162,35265076,graves' disease,hyperthyroidism
 3162,35265076,graves ophthalmopathy,hyperthyroidism
-3163,35321340,hyperthyroidism,hyperthyroidism
-3163,35321340,graves disease,hyperthyroidism
-3163,35321340,graves' disease,hyperthyroidism
-3164,35175308,graves ophthalmopathy,hyperthyroidism
+3163,35175308,graves ophthalmopathy,hyperthyroidism
+3164,35321340,hyperthyroidism,hyperthyroidism
+3164,35321340,graves disease,hyperthyroidism
+3164,35321340,graves' disease,hyperthyroidism
 3165,33637966,graves ophthalmopathy,hyperthyroidism
 3166,35667695,goiter,goiter
 3166,35667695,"goiter, nodular",goiter
@@ -9041,48 +9041,48 @@
 3175,34874354,goiter,goiter
 3175,34874354,thyroid gland,thyroid disease
 3176,35476054,graves disease,hyperthyroidism
-3177,34544076,graves disease,hyperthyroidism
-3177,34544076,graves' disease,hyperthyroidism
-3178,34851466,graves ophthalmopathy,hyperthyroidism
-3179,35720300,graves disease,hyperthyroidism
-3179,35720300,graves' disease,hyperthyroidism
-3179,35720300,hashimoto disease,thyroiditis
-3179,35720300,thyroiditis,thyroiditis
-3180,35647837,graves disease,hyperthyroidism
-3180,35647837,graves' disease,hyperthyroidism
-3180,35647837,thyroid neoplasms,thyroid neoplasms
+3177,34851466,graves ophthalmopathy,hyperthyroidism
+3178,34544076,graves disease,hyperthyroidism
+3178,34544076,graves' disease,hyperthyroidism
+3179,35647837,graves disease,hyperthyroidism
+3179,35647837,graves' disease,hyperthyroidism
+3179,35647837,thyroid neoplasms,thyroid neoplasms
+3180,35720300,graves disease,hyperthyroidism
+3180,35720300,graves' disease,hyperthyroidism
+3180,35720300,hashimoto disease,thyroiditis
+3180,35720300,thyroiditis,thyroiditis
 3181,35721705,hyperthyroidism,hyperthyroidism
 3181,35721705,graves disease,hyperthyroidism
 3181,35721705,graves' disease,hyperthyroidism
-3182,33731890,graves ophthalmopathy,hyperthyroidism
-3183,35698208,graves ophthalmopathy,hyperthyroidism
+3182,35698208,graves ophthalmopathy,hyperthyroidism
+3183,33731890,graves ophthalmopathy,hyperthyroidism
 3184,35413827,hyperthyroidism,hyperthyroidism
 3184,35413827,graves disease,hyperthyroidism
 3184,35413827,hypothyroidism,hypothyroidism
 3184,35413827,thyroidectomy,thyroid disease
-3185,35088429,hyperthyroidism,hyperthyroidism
-3185,35088429,graves disease,hyperthyroidism
-3185,35088429,graves' disease,hyperthyroidism
-3185,35088429,graves ophthalmopathy,hyperthyroidism
-3185,35088429,thyroid disease,thyroid disease
-3185,35088429,thyroid diseases,thyroid disease
-3186,35644958,graves ophthalmopathy,hyperthyroidism
-3187,35229626,graves disease,hyperthyroidism
-3187,35229626,graves' disease,hyperthyroidism
-3187,35229626,thyroid neoplasms,thyroid neoplasms
-3187,35229626,hashimoto disease,thyroiditis
-3187,35229626,thyroiditis,thyroiditis
-3187,35229626,thyroid disease,thyroid disease
-3188,34468829,graves ophthalmopathy,hyperthyroidism
+3185,35644958,graves ophthalmopathy,hyperthyroidism
+3186,35229626,graves disease,hyperthyroidism
+3186,35229626,graves' disease,hyperthyroidism
+3186,35229626,thyroid neoplasms,thyroid neoplasms
+3186,35229626,hashimoto disease,thyroiditis
+3186,35229626,thyroiditis,thyroiditis
+3186,35229626,thyroid disease,thyroid disease
+3187,34468829,graves ophthalmopathy,hyperthyroidism
+3188,35088429,hyperthyroidism,hyperthyroidism
+3188,35088429,graves disease,hyperthyroidism
+3188,35088429,graves' disease,hyperthyroidism
+3188,35088429,graves ophthalmopathy,hyperthyroidism
+3188,35088429,thyroid disease,thyroid disease
+3188,35088429,thyroid diseases,thyroid disease
 3189,34607373,goiter,goiter
 3189,34607373,hypothyroidism,hypothyroidism
 3189,34607373,"thyroiditis, autoimmune",thyroiditis
 3189,34607373,thyroiditis,thyroiditis
-3190,34593713,graves disease,hyperthyroidism
-3190,34593713,graves' disease,hyperthyroidism
-3190,34593713,graves ophthalmopathy,hyperthyroidism
-3191,35566351,graves' disease,hyperthyroidism
-3191,35566351,graves ophthalmopathy,hyperthyroidism
+3190,35566351,graves' disease,hyperthyroidism
+3190,35566351,graves ophthalmopathy,hyperthyroidism
+3191,34593713,graves disease,hyperthyroidism
+3191,34593713,graves' disease,hyperthyroidism
+3191,34593713,graves ophthalmopathy,hyperthyroidism
 3192,33913798,graves disease,hyperthyroidism
 3192,33913798,graves' disease,hyperthyroidism
 3192,33913798,thyroid neoplasms,thyroid neoplasms
@@ -9108,12 +9108,12 @@
 3197,35465762,thyroiditis,thyroiditis
 3198,35502113,graves ophthalmopathy,hyperthyroidism
 3199,35538553,graves ophthalmopathy,hyperthyroidism
-3200,35144533,hyperthyroidism,hyperthyroidism
-3200,35144533,graves disease,hyperthyroidism
-3200,35144533,graves' disease,hyperthyroidism
-3201,33443352,hyperthyroidism,hyperthyroidism
-3201,33443352,graves disease,hyperthyroidism
-3201,33443352,thyroid nodule,thyroid nodule
+3200,33443352,hyperthyroidism,hyperthyroidism
+3200,33443352,graves disease,hyperthyroidism
+3200,33443352,thyroid nodule,thyroid nodule
+3201,35144533,hyperthyroidism,hyperthyroidism
+3201,35144533,graves disease,hyperthyroidism
+3201,35144533,graves' disease,hyperthyroidism
 3202,35767887,goiter,goiter
 3202,35767887,graves disease,hyperthyroidism
 3202,35767887,graves' disease,hyperthyroidism
@@ -9325,11 +9325,11 @@
 3274,26585265,goiter,goiter
 3274,26585265,thyroid nodule,thyroid nodule
 3274,26585265,thyroidectomy,thyroid disease
-3275,28079342,graves disease,hyperthyroidism
-3275,28079342,graves' disease,hyperthyroidism
-3276,28079341,graves disease,hyperthyroidism
-3277,28076710,graves disease,hyperthyroidism
-3277,28076710,graves' disease,hyperthyroidism
+3275,28076710,graves disease,hyperthyroidism
+3275,28076710,graves' disease,hyperthyroidism
+3276,28079342,graves disease,hyperthyroidism
+3276,28079342,graves' disease,hyperthyroidism
+3277,28079341,graves disease,hyperthyroidism
 3278,26742784,graves disease,hyperthyroidism
 3278,26742784,graves ophthalmopathy,hyperthyroidism
 3279,27381469,goiter,goiter
@@ -9697,13 +9697,13 @@
 3394,27304444,thyroid neoplasms,thyroid neoplasms
 3394,27304444,"thyroid cancer, papillary",thyroid neoplasms
 3394,27304444,thyroidectomy,thyroid disease
-3395,28748866,graves ophthalmopathy,hyperthyroidism
-3396,27981628,graves disease,hyperthyroidism
-3396,27981628,graves' disease,hyperthyroidism
-3397,28899873,goiter,goiter
-3397,28899873,"goiter, nodular",goiter
-3397,28899873,thyroid nodule,thyroid nodule
-3397,28899873,thyroid disease,thyroid disease
+3395,28899873,goiter,goiter
+3395,28899873,"goiter, nodular",goiter
+3395,28899873,thyroid nodule,thyroid nodule
+3395,28899873,thyroid disease,thyroid disease
+3396,28748866,graves ophthalmopathy,hyperthyroidism
+3397,27981628,graves disease,hyperthyroidism
+3397,27981628,graves' disease,hyperthyroidism
 3398,27806818,goiter,goiter
 3398,27806818,"goiter, substernal",goiter
 3398,27806818,thyroid gland,thyroid disease
@@ -9761,9 +9761,9 @@
 3417,27780830,graves' disease,hyperthyroidism
 3418,27169853,goiter,goiter
 3418,27169853,thyroid gland,thyroid disease
-3419,27464276,goiter,goiter
-3420,27620717,goiter,goiter
-3420,27620717,"goiter, nodular",goiter
+3419,27620717,goiter,goiter
+3419,27620717,"goiter, nodular",goiter
+3420,27464276,goiter,goiter
 3421,27795799,goiter,goiter
 3421,27795799,graves disease,hyperthyroidism
 3421,27795799,thyroiditis,thyroiditis
@@ -9854,30 +9854,30 @@
 3448,27362288,graves' disease,hyperthyroidism
 3449,28363119,graves disease,hyperthyroidism
 3449,28363119,thyroid gland,thyroid disease
-3450,28278511,graves ophthalmopathy,hyperthyroidism
-3451,27609530,graves ophthalmopathy,hyperthyroidism
-3452,28755510,hyperthyroidism,hyperthyroidism
-3452,28755510,graves disease,hyperthyroidism
-3452,28755510,graves' disease,hyperthyroidism
-3452,28755510,graves ophthalmopathy,hyperthyroidism
-3453,28606263,graves ophthalmopathy,hyperthyroidism
-3454,29890100,goiter,goiter
-3454,29890100,"goiter, nodular",goiter
-3454,29890100,thyroid neoplasms,thyroid neoplasms
-3454,29890100,thyroid nodule,thyroid nodule
-3454,29890100,thyroidectomy,thyroid disease
+3450,29890100,goiter,goiter
+3450,29890100,"goiter, nodular",goiter
+3450,29890100,thyroid neoplasms,thyroid neoplasms
+3450,29890100,thyroid nodule,thyroid nodule
+3450,29890100,thyroidectomy,thyroid disease
+3451,28755510,hyperthyroidism,hyperthyroidism
+3451,28755510,graves disease,hyperthyroidism
+3451,28755510,graves' disease,hyperthyroidism
+3451,28755510,graves ophthalmopathy,hyperthyroidism
+3452,28606263,graves ophthalmopathy,hyperthyroidism
+3453,28278511,graves ophthalmopathy,hyperthyroidism
+3454,27609530,graves ophthalmopathy,hyperthyroidism
 3455,27157821,graves disease,hyperthyroidism
 3456,27213802,graves ophthalmopathy,hyperthyroidism
 3457,28436636,goiter,goiter
 3457,28436636,hyperthyroidism,hyperthyroidism
 3457,28436636,hashimoto disease,thyroiditis
 3457,28436636,thyroiditis,thyroiditis
-3458,26331303,goiter,goiter
-3458,26331303,"goiter, nodular",goiter
-3459,27647872,goiter,goiter
-3459,27647872,"goiter, nodular",goiter
-3459,27647872,hyperthyroidism,hyperthyroidism
-3459,27647872,thyroid nodule,thyroid nodule
+3458,27647872,goiter,goiter
+3458,27647872,"goiter, nodular",goiter
+3458,27647872,hyperthyroidism,hyperthyroidism
+3458,27647872,thyroid nodule,thyroid nodule
+3459,26331303,goiter,goiter
+3459,26331303,"goiter, nodular",goiter
 3460,28635216,goiter,goiter
 3460,28635216,"goiter, nodular",goiter
 3460,28635216,thyroid neoplasms,thyroid neoplasms
@@ -9914,9 +9914,9 @@
 3469,27438374,thyroid neoplasms,thyroid neoplasms
 3469,27438374,thyroiditis,thyroiditis
 3469,27438374,thyroidectomy,thyroid disease
-3470,27855978,graves ophthalmopathy,hyperthyroidism
-3471,27555041,goiter,goiter
-3471,27555041,"goiter, nodular",goiter
+3470,27555041,goiter,goiter
+3470,27555041,"goiter, nodular",goiter
+3471,27855978,graves ophthalmopathy,hyperthyroidism
 3472,27402179,goiter,goiter
 3472,27402179,thyroid nodule,thyroid nodule
 3472,27402179,thyroid gland,thyroid disease
@@ -9955,10 +9955,10 @@
 3481,27281483,graves ophthalmopathy,hyperthyroidism
 3482,29140920,hyperthyroidism,hyperthyroidism
 3482,29140920,graves disease,hyperthyroidism
-3483,27769546,goiter,goiter
-3483,27769546,"goiter, substernal",goiter
-3484,27848230,graves disease,hyperthyroidism
-3484,27848230,graves' disease,hyperthyroidism
+3483,27848230,graves disease,hyperthyroidism
+3483,27848230,graves' disease,hyperthyroidism
+3484,27769546,goiter,goiter
+3484,27769546,"goiter, substernal",goiter
 3485,26932403,goiter,goiter
 3485,26932403,thyroiditis,thyroiditis
 3485,26932403,thyroid gland,thyroid disease
@@ -9994,19 +9994,19 @@
 3499,28906601,graves' disease,hyperthyroidism
 3500,26809019,goiter,goiter
 3500,26809019,"goiter, substernal",goiter
-3501,28039723,goiter,goiter
-3501,28039723,"goiter, nodular",goiter
-3501,28039723,thyroid neoplasms,thyroid neoplasms
-3501,28039723,"thyroid cancer, papillary",thyroid neoplasms
-3501,28039723,thyroidectomy,thyroid disease
-3502,26669296,graves ophthalmopathy,hyperthyroidism
-3503,28060697,goiter,goiter
-3503,28060697,"goiter, nodular",goiter
-3503,28060697,graves ophthalmopathy,hyperthyroidism
-3503,28060697,hashimoto disease,thyroiditis
-3503,28060697,thyroiditis,thyroiditis
-3504,27468062,graves disease,hyperthyroidism
-3504,27468062,graves ophthalmopathy,hyperthyroidism
+3501,28060697,goiter,goiter
+3501,28060697,"goiter, nodular",goiter
+3501,28060697,graves ophthalmopathy,hyperthyroidism
+3501,28060697,hashimoto disease,thyroiditis
+3501,28060697,thyroiditis,thyroiditis
+3502,27468062,graves disease,hyperthyroidism
+3502,27468062,graves ophthalmopathy,hyperthyroidism
+3503,28039723,goiter,goiter
+3503,28039723,"goiter, nodular",goiter
+3503,28039723,thyroid neoplasms,thyroid neoplasms
+3503,28039723,"thyroid cancer, papillary",thyroid neoplasms
+3503,28039723,thyroidectomy,thyroid disease
+3504,26669296,graves ophthalmopathy,hyperthyroidism
 3505,28173935,graves disease,hyperthyroidism
 3505,28173935,graves' disease,hyperthyroidism
 3505,28173935,thyroidectomy,thyroid disease
@@ -10036,8 +10036,8 @@
 3515,27216455,goiter,goiter
 3515,27216455,"goiter, substernal",goiter
 3516,28606261,graves ophthalmopathy,hyperthyroidism
-3517,27791247,graves disease,hyperthyroidism
-3518,27807691,graves ophthalmopathy,hyperthyroidism
+3517,27807691,graves ophthalmopathy,hyperthyroidism
+3518,27791247,graves disease,hyperthyroidism
 3519,27383156,goiter,goiter
 3519,27383156,"goiter, nodular",goiter
 3519,27383156,thyroid neoplasms,thyroid neoplasms
@@ -10081,11 +10081,11 @@
 3533,28457178,graves' disease,hyperthyroidism
 3533,28457178,thyroid neoplasms,thyroid neoplasms
 3533,28457178,thyroidectomy,thyroid disease
-3534,28389359,graves disease,hyperthyroidism
-3535,28389809,goiter,goiter
-3535,28389809,"goiter, nodular",goiter
-3535,28389809,thyroid neoplasms,thyroid neoplasms
-3535,28389809,thyroid gland,thyroid disease
+3534,28389809,goiter,goiter
+3534,28389809,"goiter, nodular",goiter
+3534,28389809,thyroid neoplasms,thyroid neoplasms
+3534,28389809,thyroid gland,thyroid disease
+3535,28389359,graves disease,hyperthyroidism
 3536,26813240,goiter,goiter
 3536,26813240,thyroid neoplasms,thyroid neoplasms
 3536,26813240,thyroidectomy,thyroid disease
@@ -10142,10 +10142,10 @@
 3551,27478827,hypothyroidism,hypothyroidism
 3551,27478827,"thyroiditis, autoimmune",thyroiditis
 3551,27478827,thyroiditis,thyroiditis
-3552,26866718,graves ophthalmopathy,hyperthyroidism
-3553,26438397,graves disease,hyperthyroidism
-3553,26438397,graves' disease,hyperthyroidism
-3553,26438397,graves ophthalmopathy,hyperthyroidism
+3552,26438397,graves disease,hyperthyroidism
+3552,26438397,graves' disease,hyperthyroidism
+3552,26438397,graves ophthalmopathy,hyperthyroidism
+3553,26866718,graves ophthalmopathy,hyperthyroidism
 3554,28806880,goiter,goiter
 3554,28806880,"goiter, nodular",goiter
 3554,28806880,thyroid nodule,thyroid nodule
@@ -10198,11 +10198,11 @@
 3568,27172524,thyrotoxicosis,hyperthyroidism
 3568,27172524,thyroid neoplasms,thyroid neoplasms
 3568,27172524,thyroidectomy,thyroid disease
-3569,28077500,graves ophthalmopathy,hyperthyroidism
-3570,26337375,goiter,goiter
-3570,26337375,"goiter, nodular",goiter
-3570,26337375,thyroid gland,thyroid disease
-3570,26337375,thyroidectomy,thyroid disease
+3569,26337375,goiter,goiter
+3569,26337375,"goiter, nodular",goiter
+3569,26337375,thyroid gland,thyroid disease
+3569,26337375,thyroidectomy,thyroid disease
+3570,28077500,graves ophthalmopathy,hyperthyroidism
 3571,27923250,goiter,goiter
 3571,27923250,graves disease,hyperthyroidism
 3571,27923250,graves' disease,hyperthyroidism
@@ -10279,10 +10279,10 @@
 3596,28746208,hyperthyroidism,hyperthyroidism
 3596,28746208,graves disease,hyperthyroidism
 3596,28746208,hypothyroidism,hypothyroidism
-3597,26913729,graves disease,hyperthyroidism
-3597,26913729,graves' disease,hyperthyroidism
-3597,26913729,thyroid gland,thyroid disease
-3598,27834466,graves disease,hyperthyroidism
+3597,27834466,graves disease,hyperthyroidism
+3598,26913729,graves disease,hyperthyroidism
+3598,26913729,graves' disease,hyperthyroidism
+3598,26913729,thyroid gland,thyroid disease
 3599,26979989,goiter,goiter
 3599,26979989,thyroid gland,thyroid disease
 3600,27304449,goiter,goiter
@@ -10438,23 +10438,23 @@
 3644,28389487,thyroid disease,thyroid disease
 3644,28389487,thyroid diseases,thyroid disease
 3644,28389487,thyroidectomy,thyroid disease
-3645,28124062,goiter,goiter
-3645,28124062,hyperthyroidism,hyperthyroidism
-3646,27531964,graves disease,hyperthyroidism
-3646,27531964,graves' disease,hyperthyroidism
-3646,27531964,thyroid gland,thyroid disease
-3646,27531964,thyroidectomy,thyroid disease
+3645,27531964,graves disease,hyperthyroidism
+3645,27531964,graves' disease,hyperthyroidism
+3645,27531964,thyroid gland,thyroid disease
+3645,27531964,thyroidectomy,thyroid disease
+3646,28124062,goiter,goiter
+3646,28124062,hyperthyroidism,hyperthyroidism
 3647,27358549,goiter,goiter
 3647,27358549,thyroid gland,thyroid disease
 3647,27358549,thyroidectomy,thyroid disease
 3648,28225858,graves disease,hyperthyroidism
 3648,28225858,graves' disease,hyperthyroidism
 3648,28225858,graves ophthalmopathy,hyperthyroidism
-3649,27600197,hyperthyroidism,hyperthyroidism
-3649,27600197,graves disease,hyperthyroidism
-3649,27600197,graves' disease,hyperthyroidism
-3650,27241825,goiter,goiter
-3650,27241825,"goiter, nodular",goiter
+3649,27241825,goiter,goiter
+3649,27241825,"goiter, nodular",goiter
+3650,27600197,hyperthyroidism,hyperthyroidism
+3650,27600197,graves disease,hyperthyroidism
+3650,27600197,graves' disease,hyperthyroidism
 3651,27277378,graves disease,hyperthyroidism
 3652,29250672,goiter,goiter
 3652,29250672,"goiter, nodular",goiter
@@ -10474,14 +10474,14 @@
 3655,28719405,graves' disease,hyperthyroidism
 3656,28458607,graves disease,hyperthyroidism
 3656,28458607,graves' disease,hyperthyroidism
-3657,27553396,goiter,goiter
-3658,26546192,goiter,goiter
-3658,26546192,"goiter, nodular",goiter
-3658,26546192,graves disease,hyperthyroidism
-3658,26546192,graves' disease,hyperthyroidism
-3658,26546192,thyrotoxicosis,hyperthyroidism
-3658,26546192,thyroid gland,thyroid disease
-3658,26546192,thyroidectomy,thyroid disease
+3657,26546192,goiter,goiter
+3657,26546192,"goiter, nodular",goiter
+3657,26546192,graves disease,hyperthyroidism
+3657,26546192,graves' disease,hyperthyroidism
+3657,26546192,thyrotoxicosis,hyperthyroidism
+3657,26546192,thyroid gland,thyroid disease
+3657,26546192,thyroidectomy,thyroid disease
+3658,27553396,goiter,goiter
 3659,27040416,graves disease,hyperthyroidism
 3659,27040416,graves' disease,hyperthyroidism
 3660,26066526,goiter,goiter
@@ -13928,13 +13928,13 @@
 4845,10802519,thyrotoxicosis,hyperthyroidism
 4846,11079599,goiter,goiter
 4846,11079599,thyroid gland,thyroid disease
-4847,11078988,goiter,goiter
-4847,11078988,hyperthyroidism,hyperthyroidism
-4847,11078988,hypothyroidism,hypothyroidism
-4847,11078988,thyroid disease,thyroid disease
-4847,11078988,thyroid diseases,thyroid disease
-4848,10713742,goiter,goiter
-4848,10713742,thyroid gland,thyroid disease
+4847,10713742,goiter,goiter
+4847,10713742,thyroid gland,thyroid disease
+4848,11078988,goiter,goiter
+4848,11078988,hyperthyroidism,hyperthyroidism
+4848,11078988,hypothyroidism,hypothyroidism
+4848,11078988,thyroid disease,thyroid disease
+4848,11078988,thyroid diseases,thyroid disease
 4849,11589682,goiter,goiter
 4849,11589682,"goiter, nodular",goiter
 4849,11589682,hyperthyroidism,hyperthyroidism
@@ -17877,11 +17877,11 @@
 6173,19757207,thyroid gland,thyroid disease
 6174,20358791,goiter,goiter
 6174,20358791,thyroidectomy,thyroid disease
-6175,19262285,goiter,goiter
-6175,19262285,hypothyroidism,hypothyroidism
-6175,19262285,thyroid gland,thyroid disease
-6176,19468796,goiter,goiter
-6176,19468796,thyroidectomy,thyroid disease
+6175,19468796,goiter,goiter
+6175,19468796,thyroidectomy,thyroid disease
+6176,19262285,goiter,goiter
+6176,19262285,hypothyroidism,hypothyroidism
+6176,19262285,thyroid gland,thyroid disease
 6177,19265492,goiter,goiter
 6177,19265492,"goiter, nodular",goiter
 6177,19265492,hyperthyroidism,hyperthyroidism
@@ -17904,15 +17904,15 @@
 6183,18407753,graves disease,hyperthyroidism
 6183,18407753,graves' disease,hyperthyroidism
 6183,18407753,graves ophthalmopathy,hyperthyroidism
-6184,18506473,goiter,goiter
-6184,18506473,thyroidectomy,thyroid disease
-6185,18232004,goiter,goiter
-6185,18232004,"goiter, nodular",goiter
-6185,18232004,thyroid neoplasms,thyroid neoplasms
-6185,18232004,hashimoto disease,thyroiditis
-6186,18343210,goiter,goiter
-6186,18343210,thyroid neoplasms,thyroid neoplasms
-6186,18343210,thyroidectomy,thyroid disease
+6184,18343210,goiter,goiter
+6184,18343210,thyroid neoplasms,thyroid neoplasms
+6184,18343210,thyroidectomy,thyroid disease
+6185,18506473,goiter,goiter
+6185,18506473,thyroidectomy,thyroid disease
+6186,18232004,goiter,goiter
+6186,18232004,"goiter, nodular",goiter
+6186,18232004,thyroid neoplasms,thyroid neoplasms
+6186,18232004,hashimoto disease,thyroiditis
 6187,19644631,goiter,goiter
 6187,19644631,thyroid neoplasms,thyroid neoplasms
 6188,18971848,goiter,goiter
@@ -17987,13 +17987,13 @@
 6208,19915229,graves' disease,hyperthyroidism
 6208,19915229,thyrotoxicosis,hyperthyroidism
 6208,19915229,thyroiditis,thyroiditis
-6209,18803554,goiter,goiter
-6209,18803554,"goiter, nodular",goiter
-6209,18803554,hyperthyroidism,hyperthyroidism
-6209,18803554,hypothyroidism,hypothyroidism
-6210,19037649,graves disease,hyperthyroidism
-6210,19037649,graves' disease,hyperthyroidism
-6210,19037649,graves ophthalmopathy,hyperthyroidism
+6209,19037649,graves disease,hyperthyroidism
+6209,19037649,graves' disease,hyperthyroidism
+6209,19037649,graves ophthalmopathy,hyperthyroidism
+6210,18803554,goiter,goiter
+6210,18803554,"goiter, nodular",goiter
+6210,18803554,hyperthyroidism,hyperthyroidism
+6210,18803554,hypothyroidism,hypothyroidism
 6211,18528229,graves disease,hyperthyroidism
 6212,19092288,goiter,goiter
 6212,19092288,"goiter, nodular",goiter
@@ -18188,10 +18188,10 @@
 6264,18777457,thyroiditis,thyroiditis
 6264,18777457,thyroid disease,thyroid disease
 6264,18777457,thyroid diseases,thyroid disease
-6265,19438905,goiter,goiter
-6265,19438905,congenital hypothyroidism,hypothyroidism
-6265,19438905,hypothyroidism,hypothyroidism
-6266,19648736,goiter,goiter
+6265,19648736,goiter,goiter
+6266,19438905,goiter,goiter
+6266,19438905,congenital hypothyroidism,hypothyroidism
+6266,19438905,hypothyroidism,hypothyroidism
 6267,18399772,goiter,goiter
 6267,18399772,thyroid neoplasms,thyroid neoplasms
 6267,18399772,thyroid disease,thyroid disease
@@ -21499,13 +21499,13 @@
 7417,31977753,"goiter, nodular",goiter
 7417,31977753,hyperthyroidism,hyperthyroidism
 7417,31977753,hypothyroidism,hypothyroidism
-7418,32451543,graves ophthalmopathy,hyperthyroidism
-7419,32616715,graves disease,hyperthyroidism
-7419,32616715,graves' disease,hyperthyroidism
-7420,33759143,goiter,goiter
-7420,33759143,"goiter, nodular",goiter
-7421,33759142,goiter,goiter
-7421,33759142,"goiter, nodular",goiter
+7418,33759143,goiter,goiter
+7418,33759143,"goiter, nodular",goiter
+7419,33759142,goiter,goiter
+7419,33759142,"goiter, nodular",goiter
+7420,32616715,graves disease,hyperthyroidism
+7420,32616715,graves' disease,hyperthyroidism
+7421,32451543,graves ophthalmopathy,hyperthyroidism
 7422,33310200,goiter,goiter
 7422,33310200,"goiter, nodular",goiter
 7422,33310200,thyroid neoplasms,thyroid neoplasms
@@ -21545,12 +21545,12 @@
 7433,33126382,goiter,goiter
 7433,33126382,"goiter, substernal",goiter
 7433,33126382,thyroidectomy,thyroid disease
-7434,32812043,goiter,goiter
-7434,32812043,"goiter, nodular",goiter
-7434,32812043,hyperthyroidism,hyperthyroidism
-7435,32812038,goiter,goiter
-7435,32812038,"goiter, nodular",goiter
-7435,32812038,hyperthyroidism,hyperthyroidism
+7434,32812038,goiter,goiter
+7434,32812038,"goiter, nodular",goiter
+7434,32812038,hyperthyroidism,hyperthyroidism
+7435,32812043,goiter,goiter
+7435,32812043,"goiter, nodular",goiter
+7435,32812043,hyperthyroidism,hyperthyroidism
 7436,33252592,goiter,goiter
 7436,33252592,"goiter, substernal",goiter
 7436,33252592,hyperthyroidism,hyperthyroidism
@@ -21613,14 +21613,14 @@
 7452,33619720,thyrotoxicosis,hyperthyroidism
 7453,33735381,graves disease,hyperthyroidism
 7453,33735381,graves ophthalmopathy,hyperthyroidism
-7454,32749654,graves' disease,hyperthyroidism
-7454,32749654,graves ophthalmopathy,hyperthyroidism
-7455,33655885,graves disease,hyperthyroidism
-7455,33655885,graves' disease,hyperthyroidism
-7455,33655885,graves ophthalmopathy,hyperthyroidism
-7455,33655885,thyroid disease,thyroid disease
-7455,33655885,thyroid diseases,thyroid disease
-7456,32729049,graves ophthalmopathy,hyperthyroidism
+7454,33655885,graves disease,hyperthyroidism
+7454,33655885,graves' disease,hyperthyroidism
+7454,33655885,graves ophthalmopathy,hyperthyroidism
+7454,33655885,thyroid disease,thyroid disease
+7454,33655885,thyroid diseases,thyroid disease
+7455,32729049,graves ophthalmopathy,hyperthyroidism
+7456,32749654,graves' disease,hyperthyroidism
+7456,32749654,graves ophthalmopathy,hyperthyroidism
 7457,34027879,graves ophthalmopathy,hyperthyroidism
 7458,32826306,goiter,goiter
 7459,34112358,goiter,goiter
@@ -21655,13 +21655,13 @@
 7469,33630245,goiter,goiter
 7469,33630245,"goiter, nodular",goiter
 7469,33630245,thyroidectomy,thyroid disease
-7470,34362755,graves disease,hyperthyroidism
-7470,34362755,graves' disease,hyperthyroidism
-7470,34362755,thyrotoxicosis,hyperthyroidism
-7470,34362755,thyroid disease,thyroid disease
-7471,34313966,goiter,goiter
-7471,34313966,"goiter, nodular",goiter
-7471,34313966,thyroid gland,thyroid disease
+7470,34313966,goiter,goiter
+7470,34313966,"goiter, nodular",goiter
+7470,34313966,thyroid gland,thyroid disease
+7471,34362755,graves disease,hyperthyroidism
+7471,34362755,graves' disease,hyperthyroidism
+7471,34362755,thyrotoxicosis,hyperthyroidism
+7471,34362755,thyroid disease,thyroid disease
 7472,34297498,goiter,goiter
 7472,34297498,"goiter, nodular",goiter
 7473,34076524,goiter,goiter
@@ -21669,18 +21669,18 @@
 7474,33011882,"goiter, nodular",goiter
 7474,33011882,thyroid neoplasms,thyroid neoplasms
 7474,33011882,"thyroid cancer, papillary",thyroid neoplasms
-7475,32157662,graves disease,hyperthyroidism
-7475,32157662,graves' disease,hyperthyroidism
-7476,31904672,graves ophthalmopathy,hyperthyroidism
+7475,31904672,graves ophthalmopathy,hyperthyroidism
+7476,32157662,graves disease,hyperthyroidism
+7476,32157662,graves' disease,hyperthyroidism
 7477,34619658,graves ophthalmopathy,hyperthyroidism
 7478,32880074,goiter,goiter
 7479,32169148,goiter,goiter
 7479,32169148,"goiter, nodular",goiter
 7479,32169148,graves disease,hyperthyroidism
 7479,32169148,thyroid crisis,hyperthyroidism
-7480,33721204,graves ophthalmopathy,hyperthyroidism
-7481,33743532,graves ophthalmopathy,hyperthyroidism
-7482,33389596,graves ophthalmopathy,hyperthyroidism
+7480,33743532,graves ophthalmopathy,hyperthyroidism
+7481,33389596,graves ophthalmopathy,hyperthyroidism
+7482,33721204,graves ophthalmopathy,hyperthyroidism
 7483,32033825,goiter,goiter
 7483,32033825,hypothyroidism,hypothyroidism
 7483,32033825,"thyroiditis, autoimmune",thyroiditis
@@ -21697,9 +21697,9 @@
 7487,34766495,goiter,goiter
 7487,34766495,thyroid disease,thyroid disease
 7487,34766495,thyroid diseases,thyroid disease
-7488,32402171,graves ophthalmopathy,hyperthyroidism
-7489,32402170,graves ophthalmopathy,hyperthyroidism
-7490,31904673,graves ophthalmopathy,hyperthyroidism
+7488,31904673,graves ophthalmopathy,hyperthyroidism
+7489,32402171,graves ophthalmopathy,hyperthyroidism
+7490,32402170,graves ophthalmopathy,hyperthyroidism
 7491,34410066,graves disease,hyperthyroidism
 7491,34410066,graves' disease,hyperthyroidism
 7491,34410066,graves ophthalmopathy,hyperthyroidism
@@ -21721,15 +21721,15 @@
 7497,35004341,graves disease,hyperthyroidism
 7497,35004341,graves' disease,hyperthyroidism
 7497,35004341,graves ophthalmopathy,hyperthyroidism
-7498,33449383,graves disease,hyperthyroidism
-7498,33449383,graves' disease,hyperthyroidism
-7498,33449383,hashimoto disease,thyroiditis
-7498,33449383,thyroiditis,thyroiditis
-7498,33449383,thyroid disease,thyroid disease
-7498,33449383,thyroid diseases,thyroid disease
-7499,34026662,hyperthyroidism,hyperthyroidism
-7499,34026662,graves disease,hyperthyroidism
-7499,34026662,graves' disease,hyperthyroidism
+7498,34026662,hyperthyroidism,hyperthyroidism
+7498,34026662,graves disease,hyperthyroidism
+7498,34026662,graves' disease,hyperthyroidism
+7499,33449383,graves disease,hyperthyroidism
+7499,33449383,graves' disease,hyperthyroidism
+7499,33449383,hashimoto disease,thyroiditis
+7499,33449383,thyroiditis,thyroiditis
+7499,33449383,thyroid disease,thyroid disease
+7499,33449383,thyroid diseases,thyroid disease
 7500,34182968,goiter,goiter
 7500,34182968,"goiter, nodular",goiter
 7500,34182968,thyrotoxicosis,hyperthyroidism
@@ -21815,14 +21815,14 @@
 7525,33685911,graves disease,hyperthyroidism
 7525,33685911,graves' disease,hyperthyroidism
 7525,33685911,thyroid disease,thyroid disease
-7526,33444592,graves disease,hyperthyroidism
-7527,33270090,graves ophthalmopathy,hyperthyroidism
+7526,33270090,graves ophthalmopathy,hyperthyroidism
+7527,33444592,graves disease,hyperthyroidism
 7528,33749695,graves disease,hyperthyroidism
 7528,33749695,graves' disease,hyperthyroidism
 7528,33749695,thyrotoxicosis,hyperthyroidism
-7529,33587422,graves ophthalmopathy,hyperthyroidism
-7530,34061770,graves disease,hyperthyroidism
-7530,34061770,graves' disease,hyperthyroidism
+7529,34061770,graves disease,hyperthyroidism
+7529,34061770,graves' disease,hyperthyroidism
+7530,33587422,graves ophthalmopathy,hyperthyroidism
 7531,34214461,goiter,goiter
 7531,34214461,"goiter, nodular",goiter
 7531,34214461,graves disease,hyperthyroidism
@@ -21834,14 +21834,14 @@
 7533,32765422,hyperthyroidism,hyperthyroidism
 7533,32765422,graves disease,hyperthyroidism
 7533,32765422,graves' disease,hyperthyroidism
-7534,33661574,hyperthyroidism,hyperthyroidism
-7534,33661574,graves disease,hyperthyroidism
-7534,33661574,graves' disease,hyperthyroidism
-7535,33557156,graves disease,hyperthyroidism
-7535,33557156,graves' disease,hyperthyroidism
-7535,33557156,hashimoto disease,thyroiditis
-7535,33557156,thyroiditis,thyroiditis
-7535,33557156,thyroid gland,thyroid disease
+7534,33557156,graves disease,hyperthyroidism
+7534,33557156,graves' disease,hyperthyroidism
+7534,33557156,hashimoto disease,thyroiditis
+7534,33557156,thyroiditis,thyroiditis
+7534,33557156,thyroid gland,thyroid disease
+7535,33661574,hyperthyroidism,hyperthyroidism
+7535,33661574,graves disease,hyperthyroidism
+7535,33661574,graves' disease,hyperthyroidism
 7536,33899194,graves' disease,hyperthyroidism
 7536,33899194,graves ophthalmopathy,hyperthyroidism
 7536,33899194,thyroid neoplasms,thyroid neoplasms
@@ -21849,15 +21849,15 @@
 7537,34592165,graves ophthalmopathy,hyperthyroidism
 7538,34303550,graves' disease,hyperthyroidism
 7538,34303550,graves ophthalmopathy,hyperthyroidism
-7539,32976335,graves ophthalmopathy,hyperthyroidism
+7539,34753719,hyperthyroidism,hyperthyroidism
+7539,34753719,graves disease,hyperthyroidism
+7539,34753719,graves' disease,hyperthyroidism
+7539,34753719,thyrotoxicosis,hyperthyroidism
 7540,34725062,goiter,goiter
 7540,34725062,"goiter, substernal",goiter
 7540,34725062,thyroid disease,thyroid disease
 7540,34725062,thyroidectomy,thyroid disease
-7541,34753719,hyperthyroidism,hyperthyroidism
-7541,34753719,graves disease,hyperthyroidism
-7541,34753719,graves' disease,hyperthyroidism
-7541,34753719,thyrotoxicosis,hyperthyroidism
+7541,32976335,graves ophthalmopathy,hyperthyroidism
 7542,32441005,hyperthyroidism,hyperthyroidism
 7542,32441005,graves disease,hyperthyroidism
 7542,32441005,graves ophthalmopathy,hyperthyroidism
@@ -21886,12 +21886,12 @@
 7550,33420947,thyroidectomy,thyroid disease
 7551,33047905,graves disease,hyperthyroidism
 7551,33047905,graves' disease,hyperthyroidism
-7552,33743524,graves ophthalmopathy,hyperthyroidism
-7553,32910410,graves disease,hyperthyroidism
-7553,32910410,graves' disease,hyperthyroidism
-7554,34114197,goiter,goiter
-7554,34114197,graves' disease,hyperthyroidism
-7554,34114197,graves ophthalmopathy,hyperthyroidism
+7552,34114197,goiter,goiter
+7552,34114197,graves' disease,hyperthyroidism
+7552,34114197,graves ophthalmopathy,hyperthyroidism
+7553,33743524,graves ophthalmopathy,hyperthyroidism
+7554,32910410,graves disease,hyperthyroidism
+7554,32910410,graves' disease,hyperthyroidism
 7555,33146099,goiter,goiter
 7555,33146099,hyperthyroidism,hyperthyroidism
 7555,33146099,thyroid disease,thyroid disease
@@ -21946,29 +21946,29 @@
 7571,33710035,graves ophthalmopathy,hyperthyroidism
 7572,33597052,goiter,goiter
 7572,33597052,thyroid neoplasms,thyroid neoplasms
-7573,33367747,graves disease,hyperthyroidism
-7573,33367747,graves' disease,hyperthyroidism
-7573,33367747,graves ophthalmopathy,hyperthyroidism
-7574,33934566,graves disease,hyperthyroidism
-7574,33934566,graves' disease,hyperthyroidism
-7574,33934566,graves ophthalmopathy,hyperthyroidism
+7573,33934566,graves disease,hyperthyroidism
+7573,33934566,graves' disease,hyperthyroidism
+7573,33934566,graves ophthalmopathy,hyperthyroidism
+7574,33367747,graves disease,hyperthyroidism
+7574,33367747,graves' disease,hyperthyroidism
+7574,33367747,graves ophthalmopathy,hyperthyroidism
 7575,33914707,goiter,goiter
 7575,33914707,congenital hypothyroidism,hypothyroidism
 7575,33914707,hypothyroidism,hypothyroidism
 7575,33914707,thyroid disease,thyroid disease
 7575,33914707,thyroid gland,thyroid disease
 7576,32709793,graves ophthalmopathy,hyperthyroidism
-7577,33688954,goiter,goiter
-7577,33688954,"goiter, nodular",goiter
-7577,33688954,thyroid neoplasms,thyroid neoplasms
-7577,33688954,thyroiditis,thyroiditis
-7577,33688954,thyroidectomy,thyroid disease
-7578,34192497,goiter,goiter
-7578,34192497,thyroid gland,thyroid disease
-7578,34192497,thyroidectomy,thyroid disease
-7579,33914772,graves disease,hyperthyroidism
-7579,33914772,graves' disease,hyperthyroidism
-7579,33914772,thyrotoxicosis,hyperthyroidism
+7577,34192497,goiter,goiter
+7577,34192497,thyroid gland,thyroid disease
+7577,34192497,thyroidectomy,thyroid disease
+7578,33914772,graves disease,hyperthyroidism
+7578,33914772,graves' disease,hyperthyroidism
+7578,33914772,thyrotoxicosis,hyperthyroidism
+7579,33688954,goiter,goiter
+7579,33688954,"goiter, nodular",goiter
+7579,33688954,thyroid neoplasms,thyroid neoplasms
+7579,33688954,thyroiditis,thyroiditis
+7579,33688954,thyroidectomy,thyroid disease
 7580,33509724,hyperthyroidism,hyperthyroidism
 7580,33509724,graves disease,hyperthyroidism
 7581,33579884,goiter,goiter
@@ -21977,13 +21977,13 @@
 7583,33283314,graves disease,hyperthyroidism
 7583,33283314,graves' disease,hyperthyroidism
 7583,33283314,thyroid neoplasms,thyroid neoplasms
-7584,34560868,goiter,goiter
-7585,34224544,goiter,goiter
-7585,34224544,"goiter, nodular",goiter
-7586,33863564,graves disease,hyperthyroidism
-7586,33863564,graves' disease,hyperthyroidism
-7586,33863564,graves ophthalmopathy,hyperthyroidism
-7587,32847459,graves ophthalmopathy,hyperthyroidism
+7584,32847459,graves ophthalmopathy,hyperthyroidism
+7585,33863564,graves disease,hyperthyroidism
+7585,33863564,graves' disease,hyperthyroidism
+7585,33863564,graves ophthalmopathy,hyperthyroidism
+7586,34560868,goiter,goiter
+7587,34224544,goiter,goiter
+7587,34224544,"goiter, nodular",goiter
 7588,33994519,goiter,goiter
 7588,33994519,hyperthyroidism,hyperthyroidism
 7588,33994519,graves disease,hyperthyroidism
@@ -21993,22 +21993,22 @@
 7590,32553518,graves disease,hyperthyroidism
 7590,32553518,graves' disease,hyperthyroidism
 7590,32553518,thyroidectomy,thyroid disease
-7591,33530368,hyperthyroidism,hyperthyroidism
-7591,33530368,graves disease,hyperthyroidism
-7591,33530368,graves' disease,hyperthyroidism
-7592,32968816,graves disease,hyperthyroidism
-7592,32968816,graves ophthalmopathy,hyperthyroidism
+7591,32968816,graves disease,hyperthyroidism
+7591,32968816,graves ophthalmopathy,hyperthyroidism
+7592,33530368,hyperthyroidism,hyperthyroidism
+7592,33530368,graves disease,hyperthyroidism
+7592,33530368,graves' disease,hyperthyroidism
 7593,33532627,graves disease,hyperthyroidism
 7593,33532627,graves' disease,hyperthyroidism
 7593,33532627,graves ophthalmopathy,hyperthyroidism
 7594,32709792,graves ophthalmopathy,hyperthyroidism
-7595,33380646,goiter,goiter
-7595,33380646,thyroid neoplasms,thyroid neoplasms
-7595,33380646,thyroid gland,thyroid disease
-7595,33380646,thyroidectomy,thyroid disease
-7596,32130689,graves disease,hyperthyroidism
-7596,32130689,thyroiditis,thyroiditis
-7596,32130689,thyroidectomy,thyroid disease
+7595,32130689,graves disease,hyperthyroidism
+7595,32130689,thyroiditis,thyroiditis
+7595,32130689,thyroidectomy,thyroid disease
+7596,33380646,goiter,goiter
+7596,33380646,thyroid neoplasms,thyroid neoplasms
+7596,33380646,thyroid gland,thyroid disease
+7596,33380646,thyroidectomy,thyroid disease
 7597,34533016,goiter,goiter
 7597,34533016,thyroid neoplasms,thyroid neoplasms
 7598,32691849,graves disease,hyperthyroidism
@@ -22028,8 +22028,8 @@
 7604,33675208,graves' disease,hyperthyroidism
 7604,33675208,thyrotoxicosis,hyperthyroidism
 7604,33675208,thyroidectomy,thyroid disease
-7605,31567783,graves ophthalmopathy,hyperthyroidism
-7606,32034469,graves ophthalmopathy,hyperthyroidism
+7605,32034469,graves ophthalmopathy,hyperthyroidism
+7606,31567783,graves ophthalmopathy,hyperthyroidism
 7607,34497059,goiter,goiter
 7607,34497059,thyroid neoplasms,thyroid neoplasms
 7607,34497059,hashimoto disease,thyroiditis
@@ -22047,14 +22047,14 @@
 7610,34518175,graves' disease,hyperthyroidism
 7610,34518175,hypothyroidism,hypothyroidism
 7610,34518175,thyroid disease,thyroid disease
-7611,34725068,goiter,goiter
-7611,34725068,graves disease,hyperthyroidism
-7611,34725068,graves' disease,hyperthyroidism
-7611,34725068,thyrotoxicosis,hyperthyroidism
-7611,34725068,thyroid disease,thyroid disease
-7612,32427725,graves ophthalmopathy,hyperthyroidism
-7613,34382138,goiter,goiter
-7613,34382138,thyroid neoplasms,thyroid neoplasms
+7611,34382138,goiter,goiter
+7611,34382138,thyroid neoplasms,thyroid neoplasms
+7612,34725068,goiter,goiter
+7612,34725068,graves disease,hyperthyroidism
+7612,34725068,graves' disease,hyperthyroidism
+7612,34725068,thyrotoxicosis,hyperthyroidism
+7612,34725068,thyroid disease,thyroid disease
+7613,32427725,graves ophthalmopathy,hyperthyroidism
 7614,34448404,goiter,goiter
 7615,33779950,goiter,goiter
 7615,33779950,"goiter, substernal",goiter
@@ -22074,9 +22074,9 @@
 7617,32705333,thyroid disease,thyroid disease
 7617,32705333,thyroid diseases,thyroid disease
 7618,32046610,graves disease,hyperthyroidism
-7619,33060509,graves ophthalmopathy,hyperthyroidism
-7620,33481211,graves disease,hyperthyroidism
-7620,33481211,graves' disease,hyperthyroidism
+7619,33481211,graves disease,hyperthyroidism
+7619,33481211,graves' disease,hyperthyroidism
+7620,33060509,graves ophthalmopathy,hyperthyroidism
 7621,33169897,goiter,goiter
 7621,33169897,thyroid disease,thyroid disease
 7621,33169897,thyroid gland,thyroid disease
@@ -22127,21 +22127,21 @@
 7635,33177482,goiter,goiter
 7635,33177482,hypothyroidism,hypothyroidism
 7635,33177482,thyroiditis,thyroiditis
-7636,34194397,goiter,goiter
-7636,34194397,hyperthyroidism,hyperthyroidism
-7636,34194397,graves disease,hyperthyroidism
-7636,34194397,graves' disease,hyperthyroidism
-7636,34194397,thyrotoxicosis,hyperthyroidism
-7637,34689799,goiter,goiter
-7637,34689799,"goiter, nodular",goiter
-7637,34689799,thyroid neoplasms,thyroid neoplasms
-7637,34689799,thyroid nodule,thyroid nodule
-7638,34521015,graves ophthalmopathy,hyperthyroidism
-7639,34418335,hyperthyroidism,hyperthyroidism
-7639,34418335,graves disease,hyperthyroidism
-7639,34418335,graves' disease,hyperthyroidism
-7639,34418335,hypothyroidism,hypothyroidism
-7639,34418335,thyroid neoplasms,thyroid neoplasms
+7636,34418335,hyperthyroidism,hyperthyroidism
+7636,34418335,graves disease,hyperthyroidism
+7636,34418335,graves' disease,hyperthyroidism
+7636,34418335,hypothyroidism,hypothyroidism
+7636,34418335,thyroid neoplasms,thyroid neoplasms
+7637,34194397,goiter,goiter
+7637,34194397,hyperthyroidism,hyperthyroidism
+7637,34194397,graves disease,hyperthyroidism
+7637,34194397,graves' disease,hyperthyroidism
+7637,34194397,thyrotoxicosis,hyperthyroidism
+7638,34689799,goiter,goiter
+7638,34689799,"goiter, nodular",goiter
+7638,34689799,thyroid neoplasms,thyroid neoplasms
+7638,34689799,thyroid nodule,thyroid nodule
+7639,34521015,graves ophthalmopathy,hyperthyroidism
 7640,34448415,goiter,goiter
 7640,34448415,"goiter, nodular",goiter
 7640,34448415,thyroid neoplasms,thyroid neoplasms
@@ -22182,23 +22182,23 @@
 7649,34560890,graves' disease,hyperthyroidism
 7649,34560890,thyrotoxicosis,hyperthyroidism
 7650,34776504,graves ophthalmopathy,hyperthyroidism
-7651,33207860,goiter,goiter
-7651,33207860,thyroid neoplasms,thyroid neoplasms
-7651,33207860,"thyroid cancer, papillary",thyroid neoplasms
-7651,33207860,thyroid gland,thyroid disease
-7652,33474918,graves ophthalmopathy,hyperthyroidism
-7653,33345558,goiter,goiter
-7653,33345558,"goiter, substernal",goiter
-7653,33345558,thyroid gland,thyroid disease
-7653,33345558,thyroidectomy,thyroid disease
-7654,33237667,graves ophthalmopathy,hyperthyroidism
-7655,34331946,graves disease,hyperthyroidism
-7655,34331946,graves' disease,hyperthyroidism
-7655,34331946,graves ophthalmopathy,hyperthyroidism
-7655,34331946,thyroiditis,thyroiditis
-7656,32449092,graves disease,hyperthyroidism
-7656,32449092,graves' disease,hyperthyroidism
-7656,32449092,graves ophthalmopathy,hyperthyroidism
+7651,33474918,graves ophthalmopathy,hyperthyroidism
+7652,33207860,goiter,goiter
+7652,33207860,thyroid neoplasms,thyroid neoplasms
+7652,33207860,"thyroid cancer, papillary",thyroid neoplasms
+7652,33207860,thyroid gland,thyroid disease
+7653,33237667,graves ophthalmopathy,hyperthyroidism
+7654,34331946,graves disease,hyperthyroidism
+7654,34331946,graves' disease,hyperthyroidism
+7654,34331946,graves ophthalmopathy,hyperthyroidism
+7654,34331946,thyroiditis,thyroiditis
+7655,32449092,graves disease,hyperthyroidism
+7655,32449092,graves' disease,hyperthyroidism
+7655,32449092,graves ophthalmopathy,hyperthyroidism
+7656,33345558,goiter,goiter
+7656,33345558,"goiter, substernal",goiter
+7656,33345558,thyroid gland,thyroid disease
+7656,33345558,thyroidectomy,thyroid disease
 7657,33791385,graves ophthalmopathy,hyperthyroidism
 7658,32057544,goiter,goiter
 7658,32057544,hyperthyroidism,hyperthyroidism
@@ -22248,21 +22248,21 @@
 7672,35506803,hyperthyroidism,hyperthyroidism
 7672,35506803,graves disease,hyperthyroidism
 7673,33317853,graves ophthalmopathy,hyperthyroidism
-7674,34823306,graves disease,hyperthyroidism
-7674,34823306,graves' disease,hyperthyroidism
-7674,34823306,thyroid neoplasms,thyroid neoplasms
-7674,34823306,thyroid nodule,thyroid nodule
-7674,34823306,thyroidectomy,thyroid disease
-7675,34256242,graves disease,hyperthyroidism
-7675,34256242,graves' disease,hyperthyroidism
-7675,34256242,graves ophthalmopathy,hyperthyroidism
-7676,33728674,goiter,goiter
-7676,33728674,"goiter, nodular",goiter
-7676,33728674,graves disease,hyperthyroidism
-7676,33728674,graves' disease,hyperthyroidism
-7676,33728674,thyrotoxicosis,hyperthyroidism
-7676,33728674,thyroid gland,thyroid disease
-7677,34164724,graves ophthalmopathy,hyperthyroidism
+7674,34256242,graves disease,hyperthyroidism
+7674,34256242,graves' disease,hyperthyroidism
+7674,34256242,graves ophthalmopathy,hyperthyroidism
+7675,34823306,graves disease,hyperthyroidism
+7675,34823306,graves' disease,hyperthyroidism
+7675,34823306,thyroid neoplasms,thyroid neoplasms
+7675,34823306,thyroid nodule,thyroid nodule
+7675,34823306,thyroidectomy,thyroid disease
+7676,34164724,graves ophthalmopathy,hyperthyroidism
+7677,33728674,goiter,goiter
+7677,33728674,"goiter, nodular",goiter
+7677,33728674,graves disease,hyperthyroidism
+7677,33728674,graves' disease,hyperthyroidism
+7677,33728674,thyrotoxicosis,hyperthyroidism
+7677,33728674,thyroid gland,thyroid disease
 7678,34090378,graves ophthalmopathy,hyperthyroidism
 7679,32527309,goiter,goiter
 7680,33317492,hyperthyroidism,hyperthyroidism
@@ -22293,23 +22293,23 @@
 7687,33544540,thyroid gland,thyroid disease
 7688,34252869,graves ophthalmopathy,hyperthyroidism
 7689,32306294,graves ophthalmopathy,hyperthyroidism
-7690,32166667,goiter,goiter
-7690,32166667,"goiter, nodular",goiter
-7691,32798996,graves disease,hyperthyroidism
-7691,32798996,graves' disease,hyperthyroidism
-7691,32798996,thyroidectomy,thyroid disease
+7690,32798996,graves disease,hyperthyroidism
+7690,32798996,graves' disease,hyperthyroidism
+7690,32798996,thyroidectomy,thyroid disease
+7691,32166667,goiter,goiter
+7691,32166667,"goiter, nodular",goiter
 7692,31971949,goiter,goiter
 7692,31971949,"goiter, nodular",goiter
 7693,33860431,hyperthyroidism,hyperthyroidism
 7693,33860431,graves disease,hyperthyroidism
 7693,33860431,graves' disease,hyperthyroidism
-7694,34381549,goiter,goiter
-7694,34381549,"goiter, nodular",goiter
-7694,34381549,thyroid neoplasms,thyroid neoplasms
-7694,34381549,thyroid nodule,thyroid nodule
-7695,32734611,graves disease,hyperthyroidism
-7695,32734611,graves' disease,hyperthyroidism
-7695,32734611,thyroid neoplasms,thyroid neoplasms
+7694,32734611,graves disease,hyperthyroidism
+7694,32734611,graves' disease,hyperthyroidism
+7694,32734611,thyroid neoplasms,thyroid neoplasms
+7695,34381549,goiter,goiter
+7695,34381549,"goiter, nodular",goiter
+7695,34381549,thyroid neoplasms,thyroid neoplasms
+7695,34381549,thyroid nodule,thyroid nodule
 7696,34120661,goiter,goiter
 7696,34120661,"goiter, nodular",goiter
 7696,34120661,graves disease,hyperthyroidism
@@ -22325,11 +22325,11 @@
 7699,32524368,graves disease,hyperthyroidism
 7699,32524368,graves ophthalmopathy,hyperthyroidism
 7700,32461446,graves ophthalmopathy,hyperthyroidism
-7701,31910731,hyperthyroidism,hyperthyroidism
-7701,31910731,graves disease,hyperthyroidism
-7701,31910731,graves' disease,hyperthyroidism
-7702,33439464,graves disease,hyperthyroidism
-7702,33439464,graves' disease,hyperthyroidism
+7701,33439464,graves disease,hyperthyroidism
+7701,33439464,graves' disease,hyperthyroidism
+7702,31910731,hyperthyroidism,hyperthyroidism
+7702,31910731,graves disease,hyperthyroidism
+7702,31910731,graves' disease,hyperthyroidism
 7703,34659126,goiter,goiter
 7703,34659126,thyroid neoplasms,thyroid neoplasms
 7703,34659126,"thyroid cancer, papillary",thyroid neoplasms
@@ -22355,16 +22355,16 @@
 7708,32634841,"goiter, nodular",goiter
 7708,32634841,thyroid nodule,thyroid nodule
 7708,32634841,thyroid gland,thyroid disease
-7709,32218623,goiter,goiter
-7709,32218623,thyroid neoplasms,thyroid neoplasms
-7709,32218623,thyroid nodule,thyroid nodule
-7709,32218623,thyroid gland,thyroid disease
+7709,32527127,goiter,goiter
 7710,33023116,goiter,goiter
 7710,33023116,"goiter, endemic",goiter
 7710,33023116,congenital hypothyroidism,hypothyroidism
 7710,33023116,hypothyroidism,hypothyroidism
 7711,32709788,graves ophthalmopathy,hyperthyroidism
-7712,32527127,goiter,goiter
+7712,32218623,goiter,goiter
+7712,32218623,thyroid neoplasms,thyroid neoplasms
+7712,32218623,thyroid nodule,thyroid nodule
+7712,32218623,thyroid gland,thyroid disease
 7713,33947272,goiter,goiter
 7713,33947272,hyperthyroidism,hyperthyroidism
 7713,33947272,graves disease,hyperthyroidism
@@ -22418,8 +22418,8 @@
 7725,32188795,graves' disease,hyperthyroidism
 7726,32384426,goiter,goiter
 7726,32384426,"goiter, nodular",goiter
-7727,32316214,goiter,goiter
-7728,32451608,graves ophthalmopathy,hyperthyroidism
+7727,32451608,graves ophthalmopathy,hyperthyroidism
+7728,32316214,goiter,goiter
 7729,34741002,hyperthyroidism,hyperthyroidism
 7729,34741002,graves disease,hyperthyroidism
 7729,34741002,graves' disease,hyperthyroidism
@@ -22491,11 +22491,11 @@
 7748,32077044,graves disease,hyperthyroidism
 7748,32077044,graves ophthalmopathy,hyperthyroidism
 7748,32077044,thyroid nodule,thyroid nodule
-7749,32658864,hyperthyroidism,hyperthyroidism
-7749,32658864,graves disease,hyperthyroidism
-7749,32658864,graves' disease,hyperthyroidism
-7749,32658864,thyroidectomy,thyroid disease
-7750,32474767,graves ophthalmopathy,hyperthyroidism
+7749,32474767,graves ophthalmopathy,hyperthyroidism
+7750,32658864,hyperthyroidism,hyperthyroidism
+7750,32658864,graves disease,hyperthyroidism
+7750,32658864,graves' disease,hyperthyroidism
+7750,32658864,thyroidectomy,thyroid disease
 7751,32273492,goiter,goiter
 7751,32273492,thyroid nodule,thyroid nodule
 7752,32174327,graves ophthalmopathy,hyperthyroidism
@@ -25287,9 +25287,9 @@
 8782,16082318,goiter,goiter
 8782,16082318,thyroid neoplasms,thyroid neoplasms
 8782,16082318,thyroid gland,thyroid disease
-8783,16199963,graves ophthalmopathy,hyperthyroidism
-8784,16276298,graves disease,hyperthyroidism
-8784,16276298,graves' disease,hyperthyroidism
+8783,16276298,graves disease,hyperthyroidism
+8783,16276298,graves' disease,hyperthyroidism
+8784,16199963,graves ophthalmopathy,hyperthyroidism
 8785,16187910,goiter,goiter
 8785,16187910,hypothyroidism,hypothyroidism
 8786,15611828,goiter,goiter
@@ -25790,15 +25790,15 @@
 8940,14736524,"goiter, nodular",goiter
 8940,14736524,hyperthyroidism,hyperthyroidism
 8940,14736524,thyroid neoplasms,thyroid neoplasms
-8941,15785239,goiter,goiter
-8941,15785239,hyperthyroidism,hyperthyroidism
-8941,15785239,graves disease,hyperthyroidism
-8941,15785239,graves' disease,hyperthyroidism
-8941,15785239,thyroid gland,thyroid disease
-8942,15654642,goiter,goiter
-8942,15654642,"goiter, nodular",goiter
-8942,15654642,hyperthyroidism,hyperthyroidism
-8942,15654642,thyroidectomy,thyroid disease
+8941,15654642,goiter,goiter
+8941,15654642,"goiter, nodular",goiter
+8941,15654642,hyperthyroidism,hyperthyroidism
+8941,15654642,thyroidectomy,thyroid disease
+8942,15785239,goiter,goiter
+8942,15785239,hyperthyroidism,hyperthyroidism
+8942,15785239,graves disease,hyperthyroidism
+8942,15785239,graves' disease,hyperthyroidism
+8942,15785239,thyroid gland,thyroid disease
 8943,16478704,goiter,goiter
 8943,16478704,"goiter, nodular",goiter
 8944,15545707,goiter,goiter
@@ -25811,11 +25811,11 @@
 8944,15545707,thyroid neoplasms,thyroid neoplasms
 8945,16122040,goiter,goiter
 8945,16122040,"goiter, endemic",goiter
-8946,14722777,goiter,goiter
-8946,14722777,"goiter, nodular",goiter
-8946,14722777,thyroidectomy,thyroid disease
-8947,15024315,goiter,goiter
-8947,15024315,thyroid neoplasms,thyroid neoplasms
+8946,15024315,goiter,goiter
+8946,15024315,thyroid neoplasms,thyroid neoplasms
+8947,14722777,goiter,goiter
+8947,14722777,"goiter, nodular",goiter
+8947,14722777,thyroidectomy,thyroid disease
 8948,15521969,goiter,goiter
 8948,15521969,"goiter, nodular",goiter
 8948,15521969,hyperthyroidism,hyperthyroidism
@@ -25973,12 +25973,12 @@
 8996,15224471,"goiter, nodular",goiter
 8996,15224471,thyroid neoplasms,thyroid neoplasms
 8997,15185426,graves disease,hyperthyroidism
-8998,16436013,goiter,goiter
-8998,16436013,"goiter, endemic",goiter
-8998,16436013,thyroid neoplasms,thyroid neoplasms
-8999,16103706,goiter,goiter
-8999,16103706,"goiter, nodular",goiter
-8999,16103706,hyperthyroidism,hyperthyroidism
+8998,16103706,goiter,goiter
+8998,16103706,"goiter, nodular",goiter
+8998,16103706,hyperthyroidism,hyperthyroidism
+8999,16436013,goiter,goiter
+8999,16436013,"goiter, endemic",goiter
+8999,16436013,thyroid neoplasms,thyroid neoplasms
 9000,16457098,goiter,goiter
 9001,15817908,goiter,goiter
 9001,15817908,hyperthyroidism,hyperthyroidism
@@ -29999,11 +29999,11 @@
 10395,24464009,thyroid neoplasms,thyroid neoplasms
 10395,24464009,"thyroid cancer, papillary",thyroid neoplasms
 10395,24464009,thyroid gland,thyroid disease
-10396,22827602,goiter,goiter
-10396,22827602,thyroiditis,thyroiditis
-10396,22827602,thyroidectomy,thyroid disease
-10397,25825304,goiter,goiter
-10397,25825304,hyperthyroidism,hyperthyroidism
+10396,25825304,goiter,goiter
+10396,25825304,hyperthyroidism,hyperthyroidism
+10397,22827602,goiter,goiter
+10397,22827602,thyroiditis,thyroiditis
+10397,22827602,thyroidectomy,thyroid disease
 10398,23995003,graves disease,hyperthyroidism
 10398,23995003,graves' disease,hyperthyroidism
 10399,23334146,graves disease,hyperthyroidism
@@ -30032,11 +30032,11 @@
 10405,23329570,thyroid disease,thyroid disease
 10405,23329570,thyroid diseases,thyroid disease
 10405,23329570,thyroid gland,thyroid disease
-10406,22960778,goiter,goiter
-10406,22960778,thyroid neoplasms,thyroid neoplasms
-10406,22960778,thyroid nodule,thyroid nodule
-10407,24135192,goiter,goiter
-10407,24135192,"goiter, endemic",goiter
+10406,24135192,goiter,goiter
+10406,24135192,"goiter, endemic",goiter
+10407,22960778,goiter,goiter
+10407,22960778,thyroid neoplasms,thyroid neoplasms
+10407,22960778,thyroid nodule,thyroid nodule
 10408,22419189,goiter,goiter
 10408,22419189,"goiter, substernal",goiter
 10408,22419189,thyroidectomy,thyroid disease
@@ -30225,13 +30225,13 @@
 10463,23649532,thyroid neoplasms,thyroid neoplasms
 10463,23649532,"thyroid cancer, papillary",thyroid neoplasms
 10463,23649532,thyroidectomy,thyroid disease
-10464,24330874,goiter,goiter
-10464,24330874,"goiter, nodular",goiter
-10464,24330874,thyroid nodule,thyroid nodule
-10465,24285452,goiter,goiter
-10465,24285452,"goiter, nodular",goiter
-10465,24285452,hyperthyroidism,hyperthyroidism
-10465,24285452,thyroidectomy,thyroid disease
+10464,24285452,goiter,goiter
+10464,24285452,"goiter, nodular",goiter
+10464,24285452,hyperthyroidism,hyperthyroidism
+10464,24285452,thyroidectomy,thyroid disease
+10465,24330874,goiter,goiter
+10465,24330874,"goiter, nodular",goiter
+10465,24330874,thyroid nodule,thyroid nodule
 10466,22207295,goiter,goiter
 10466,22207295,"goiter, nodular",goiter
 10466,22207295,thyroid neoplasms,thyroid neoplasms
@@ -30245,14 +30245,14 @@
 10468,23013763,thyroid gland,thyroid disease
 10469,21435651,goiter,goiter
 10469,21435651,thyroid gland,thyroid disease
-10470,23027909,goiter,goiter
-10470,23027909,"goiter, substernal",goiter
-10470,23027909,thyroid neoplasms,thyroid neoplasms
-10471,22449686,graves disease,hyperthyroidism
-10471,22449686,graves' disease,hyperthyroidism
-10471,22449686,thyroid gland,thyroid disease
-10472,22310259,graves disease,hyperthyroidism
-10472,22310259,thyroid nodule,thyroid nodule
+10470,22449686,graves disease,hyperthyroidism
+10470,22449686,graves' disease,hyperthyroidism
+10470,22449686,thyroid gland,thyroid disease
+10471,22310259,graves disease,hyperthyroidism
+10471,22310259,thyroid nodule,thyroid nodule
+10472,23027909,goiter,goiter
+10472,23027909,"goiter, substernal",goiter
+10472,23027909,thyroid neoplasms,thyroid neoplasms
 10473,24429823,goiter,goiter
 10473,24429823,"goiter, nodular",goiter
 10474,23846785,goiter,goiter
@@ -30290,11 +30290,11 @@
 10481,23793427,thyroid diseases,thyroid disease
 10481,23793427,thyroid gland,thyroid disease
 10482,23650151,goiter,goiter
-10483,23860000,goiter,goiter
-10484,24186589,goiter,goiter
-10484,24186589,graves disease,hyperthyroidism
-10484,24186589,graves' disease,hyperthyroidism
-10484,24186589,thyroid gland,thyroid disease
+10483,24186589,goiter,goiter
+10483,24186589,graves disease,hyperthyroidism
+10483,24186589,graves' disease,hyperthyroidism
+10483,24186589,thyroid gland,thyroid disease
+10484,23860000,goiter,goiter
 10485,24167913,goiter,goiter
 10485,24167913,"goiter, endemic",goiter
 10485,24167913,thyroid gland,thyroid disease
@@ -30322,17 +30322,17 @@
 10490,24043280,graves disease,hyperthyroidism
 10490,24043280,graves' disease,hyperthyroidism
 10490,24043280,thyroid gland,thyroid disease
-10491,23690528,goiter,goiter
-10491,23690528,"goiter, substernal",goiter
-10491,23690528,thyroidectomy,thyroid disease
+10491,23873426,goiter,goiter
+10491,23873426,hyperthyroidism,hyperthyroidism
+10491,23873426,thyroid neoplasms,thyroid neoplasms
+10491,23873426,thyroidectomy,thyroid disease
 10492,23666798,goiter,goiter
 10492,23666798,"goiter, endemic",goiter
 10492,23666798,thyroid neoplasms,thyroid neoplasms
 10492,23666798,"thyroid carcinoma, anaplastic",thyroid neoplasms
-10493,23873426,goiter,goiter
-10493,23873426,hyperthyroidism,hyperthyroidism
-10493,23873426,thyroid neoplasms,thyroid neoplasms
-10493,23873426,thyroidectomy,thyroid disease
+10493,23690528,goiter,goiter
+10493,23690528,"goiter, substernal",goiter
+10493,23690528,thyroidectomy,thyroid disease
 10494,23414115,goiter,goiter
 10494,23414115,"goiter, nodular",goiter
 10495,23317391,goiter,goiter
@@ -30343,14 +30343,14 @@
 10496,23428758,goiter,goiter
 10497,22444735,goiter,goiter
 10497,22444735,"goiter, nodular",goiter
-10498,23206325,goiter,goiter
-10498,23206325,"goiter, endemic",goiter
-10498,23206325,hypothyroidism,hypothyroidism
-10498,23206325,thyroid gland,thyroid disease
-10499,23645248,goiter,goiter
-10499,23645248,"goiter, nodular",goiter
-10499,23645248,thyroid nodule,thyroid nodule
-10499,23645248,thyroid gland,thyroid disease
+10498,23645248,goiter,goiter
+10498,23645248,"goiter, nodular",goiter
+10498,23645248,thyroid nodule,thyroid nodule
+10498,23645248,thyroid gland,thyroid disease
+10499,23206325,goiter,goiter
+10499,23206325,"goiter, endemic",goiter
+10499,23206325,hypothyroidism,hypothyroidism
+10499,23206325,thyroid gland,thyroid disease
 10500,22833451,goiter,goiter
 10500,22833451,thyroid neoplasms,thyroid neoplasms
 10500,22833451,thyroid nodule,thyroid nodule
@@ -30375,21 +30375,21 @@
 10504,23435045,thyroidectomy,thyroid disease
 10505,23679109,goiter,goiter
 10505,23679109,"goiter, endemic",goiter
-10506,22696115,goiter,goiter
-10506,22696115,thyroidectomy,thyroid disease
-10507,23304909,goiter,goiter
-10507,23304909,"goiter, endemic",goiter
-10508,22543510,hyperthyroidism,hyperthyroidism
-10508,22543510,graves disease,hyperthyroidism
-10508,22543510,graves' disease,hyperthyroidism
-10509,22434524,goiter,goiter
-10509,22434524,hyperthyroidism,hyperthyroidism
-10509,22434524,graves disease,hyperthyroidism
-10509,22434524,hypothyroidism,hypothyroidism
-10509,22434524,"thyroiditis, autoimmune",thyroiditis
-10509,22434524,thyroiditis,thyroiditis
-10509,22434524,thyroid disease,thyroid disease
-10509,22434524,thyroid diseases,thyroid disease
+10506,23304909,goiter,goiter
+10506,23304909,"goiter, endemic",goiter
+10507,22543510,hyperthyroidism,hyperthyroidism
+10507,22543510,graves disease,hyperthyroidism
+10507,22543510,graves' disease,hyperthyroidism
+10508,22434524,goiter,goiter
+10508,22434524,hyperthyroidism,hyperthyroidism
+10508,22434524,graves disease,hyperthyroidism
+10508,22434524,hypothyroidism,hypothyroidism
+10508,22434524,"thyroiditis, autoimmune",thyroiditis
+10508,22434524,thyroiditis,thyroiditis
+10508,22434524,thyroid disease,thyroid disease
+10508,22434524,thyroid diseases,thyroid disease
+10509,22696115,goiter,goiter
+10509,22696115,thyroidectomy,thyroid disease
 10510,23149095,goiter,goiter
 10510,23149095,thyroid nodule,thyroid nodule
 10510,23149095,thyroid gland,thyroid disease
@@ -30398,12 +30398,12 @@
 10511,22976368,graves disease,hyperthyroidism
 10511,22976368,graves' disease,hyperthyroidism
 10511,22976368,thyroidectomy,thyroid disease
-10512,22287186,goiter,goiter
-10512,22287186,"goiter, nodular",goiter
-10512,22287186,thyroidectomy,thyroid disease
-10513,22893523,goiter,goiter
-10513,22893523,thyroid gland,thyroid disease
-10513,22893523,thyroidectomy,thyroid disease
+10512,22893523,goiter,goiter
+10512,22893523,thyroid gland,thyroid disease
+10512,22893523,thyroidectomy,thyroid disease
+10513,22287186,goiter,goiter
+10513,22287186,"goiter, nodular",goiter
+10513,22287186,thyroidectomy,thyroid disease
 10514,22484994,goiter,goiter
 10514,22484994,thyroid neoplasms,thyroid neoplasms
 10515,24144816,goiter,goiter
@@ -30471,11 +30471,11 @@
 10533,23055017,thyroid neoplasms,thyroid neoplasms
 10533,23055017,thyroid disease,thyroid disease
 10533,23055017,thyroid diseases,thyroid disease
-10534,23229214,goiter,goiter
-10534,23229214,"goiter, endemic",goiter
-10535,22960961,goiter,goiter
-10535,22960961,thyrotoxicosis,hyperthyroidism
-10535,22960961,thyroidectomy,thyroid disease
+10534,22960961,goiter,goiter
+10534,22960961,thyrotoxicosis,hyperthyroidism
+10534,22960961,thyroidectomy,thyroid disease
+10535,23229214,goiter,goiter
+10535,23229214,"goiter, endemic",goiter
 10536,22234657,goiter,goiter
 10536,22234657,hyperthyroidism,hyperthyroidism
 10536,22234657,graves disease,hyperthyroidism
@@ -30559,11 +30559,11 @@
 10556,23436921,thyroiditis,thyroiditis
 10556,23436921,thyroid disease,thyroid disease
 10556,23436921,thyroid diseases,thyroid disease
-10557,22228488,goiter,goiter
-10557,22228488,hyperthyroidism,hyperthyroidism
-10558,24295859,goiter,goiter
-10558,24295859,graves disease,hyperthyroidism
-10559,23164317,graves disease,hyperthyroidism
+10557,23164317,graves disease,hyperthyroidism
+10558,22228488,goiter,goiter
+10558,22228488,hyperthyroidism,hyperthyroidism
+10559,24295859,goiter,goiter
+10559,24295859,graves disease,hyperthyroidism
 10560,21889178,goiter,goiter
 10560,21889178,hyperthyroidism,hyperthyroidism
 10560,21889178,graves disease,hyperthyroidism
@@ -30580,15 +30580,15 @@
 10562,22977269,thyroidectomy,thyroid disease
 10563,22349787,goiter,goiter
 10563,22349787,thyroidectomy,thyroid disease
-10564,23878293,goiter,goiter
-10564,23878293,thyroid nodule,thyroid nodule
-10564,23878293,thyroid gland,thyroid disease
-10564,23878293,thyroidectomy,thyroid disease
-10565,23405871,goiter,goiter
-10565,23405871,"goiter, nodular",goiter
-10565,23405871,thyroid disease,thyroid disease
-10565,23405871,thyroid diseases,thyroid disease
-10565,23405871,thyroid gland,thyroid disease
+10564,23405871,goiter,goiter
+10564,23405871,"goiter, nodular",goiter
+10564,23405871,thyroid disease,thyroid disease
+10564,23405871,thyroid diseases,thyroid disease
+10564,23405871,thyroid gland,thyroid disease
+10565,23878293,goiter,goiter
+10565,23878293,thyroid nodule,thyroid nodule
+10565,23878293,thyroid gland,thyroid disease
+10565,23878293,thyroidectomy,thyroid disease
 10566,23485550,goiter,goiter
 10566,23485550,"goiter, nodular",goiter
 10566,23485550,graves disease,hyperthyroidism
@@ -30783,37 +30783,37 @@
 10623,22420618,graves disease,hyperthyroidism
 10623,22420618,graves' disease,hyperthyroidism
 10623,22420618,thyroid gland,thyroid disease
-10624,23395200,goiter,goiter
-10624,23395200,"goiter, endemic",goiter
-10624,23395200,thyroid nodule,thyroid nodule
-10624,23395200,thyroid gland,thyroid disease
-10625,23721189,goiter,goiter
-10625,23721189,hyperthyroidism,hyperthyroidism
-10625,23721189,graves disease,hyperthyroidism
-10625,23721189,graves' disease,hyperthyroidism
-10625,23721189,thyroiditis,thyroiditis
-10625,23721189,thyroid gland,thyroid disease
+10624,23721189,goiter,goiter
+10624,23721189,hyperthyroidism,hyperthyroidism
+10624,23721189,graves disease,hyperthyroidism
+10624,23721189,graves' disease,hyperthyroidism
+10624,23721189,thyroiditis,thyroiditis
+10624,23721189,thyroid gland,thyroid disease
+10625,23395200,goiter,goiter
+10625,23395200,"goiter, endemic",goiter
+10625,23395200,thyroid nodule,thyroid nodule
+10625,23395200,thyroid gland,thyroid disease
 10626,23290802,goiter,goiter
 10627,23250509,goiter,goiter
 10627,23250509,"goiter, nodular",goiter
 10627,23250509,thyroid dysgenesis,hypothyroidism
 10628,24376294,goiter,goiter
 10628,24376294,thyroidectomy,thyroid disease
-10629,24203649,hyperthyroidism,hyperthyroidism
-10629,24203649,graves disease,hyperthyroidism
-10629,24203649,graves' disease,hyperthyroidism
-10629,24203649,graves ophthalmopathy,hyperthyroidism
-10629,24203649,hypothyroidism,hypothyroidism
-10629,24203649,thyroid gland,thyroid disease
-10630,22314228,goiter,goiter
-10630,22314228,thyroid gland,thyroid disease
-10631,24330888,goiter,goiter
-10631,24330888,"goiter, nodular",goiter
-10631,24330888,thyroid neoplasms,thyroid neoplasms
-10632,23437028,goiter,goiter
-10632,23437028,"goiter, nodular",goiter
-10632,23437028,thyroid neoplasms,thyroid neoplasms
-10632,23437028,thyroid nodule,thyroid nodule
+10629,22314228,goiter,goiter
+10629,22314228,thyroid gland,thyroid disease
+10630,24203649,hyperthyroidism,hyperthyroidism
+10630,24203649,graves disease,hyperthyroidism
+10630,24203649,graves' disease,hyperthyroidism
+10630,24203649,graves ophthalmopathy,hyperthyroidism
+10630,24203649,hypothyroidism,hypothyroidism
+10630,24203649,thyroid gland,thyroid disease
+10631,23437028,goiter,goiter
+10631,23437028,"goiter, nodular",goiter
+10631,23437028,thyroid neoplasms,thyroid neoplasms
+10631,23437028,thyroid nodule,thyroid nodule
+10632,24330888,goiter,goiter
+10632,24330888,"goiter, nodular",goiter
+10632,24330888,thyroid neoplasms,thyroid neoplasms
 10633,22763296,goiter,goiter
 10633,22763296,thyroid gland,thyroid disease
 10633,22763296,thyroidectomy,thyroid disease
@@ -30830,11 +30830,11 @@
 10636,23285769,graves disease,hyperthyroidism
 10636,23285769,graves' disease,hyperthyroidism
 10636,23285769,thyrotoxicosis,hyperthyroidism
-10637,23437029,goiter,goiter
-10637,23437029,"goiter, nodular",goiter
-10637,23437029,thyroid neoplasms,thyroid neoplasms
-10637,23437029,thyroid nodule,thyroid nodule
-10638,23450451,goiter,goiter
+10637,23450451,goiter,goiter
+10638,23437029,goiter,goiter
+10638,23437029,"goiter, nodular",goiter
+10638,23437029,thyroid neoplasms,thyroid neoplasms
+10638,23437029,thyroid nodule,thyroid nodule
 10639,24346408,goiter,goiter
 10639,24346408,thyroidectomy,thyroid disease
 10640,22816208,goiter,goiter
@@ -30888,11 +30888,11 @@
 10653,23388537,goiter,goiter
 10653,23388537,hypothyroidism,hypothyroidism
 10653,23388537,thyroid gland,thyroid disease
-10654,24040657,goiter,goiter
-10655,23437031,goiter,goiter
-10655,23437031,"goiter, nodular",goiter
-10655,23437031,thyroid neoplasms,thyroid neoplasms
-10655,23437031,thyroid nodule,thyroid nodule
+10654,23437031,goiter,goiter
+10654,23437031,"goiter, nodular",goiter
+10654,23437031,thyroid neoplasms,thyroid neoplasms
+10654,23437031,thyroid nodule,thyroid nodule
+10655,24040657,goiter,goiter
 10656,24281434,goiter,goiter
 10656,24281434,thyroidectomy,thyroid disease
 10657,22763653,goiter,goiter
@@ -30983,12 +30983,12 @@
 10686,22184631,"goiter, nodular",goiter
 10686,22184631,thyroid gland,thyroid disease
 10687,22496035,graves ophthalmopathy,hyperthyroidism
-10688,23437026,goiter,goiter
-10688,23437026,"goiter, nodular",goiter
-10688,23437026,thyroid neoplasms,thyroid neoplasms
-10688,23437026,thyroid nodule,thyroid nodule
-10689,23494085,goiter,goiter
-10689,23494085,thyroidectomy,thyroid disease
+10688,23494085,goiter,goiter
+10688,23494085,thyroidectomy,thyroid disease
+10689,23437026,goiter,goiter
+10689,23437026,"goiter, nodular",goiter
+10689,23437026,thyroid neoplasms,thyroid neoplasms
+10689,23437026,thyroid nodule,thyroid nodule
 10690,24592769,goiter,goiter
 10690,24592769,"goiter, endemic",goiter
 10691,23033568,goiter,goiter
@@ -42288,17 +42288,17 @@
 14532,17785165,"goiter, endemic",goiter
 14533,17274755,goiter,goiter
 14533,17274755,thyroid gland,thyroid disease
-14534,17642437,graves disease,hyperthyroidism
-14534,17642437,graves ophthalmopathy,hyperthyroidism
-14535,17947947,goiter,goiter
-14535,17947947,"goiter, nodular",goiter
-14535,17947947,graves disease,hyperthyroidism
-14535,17947947,thyrotoxicosis,hyperthyroidism
-14535,17947947,thyroid neoplasms,thyroid neoplasms
-14535,17947947,thyroid nodule,thyroid nodule
-14535,17947947,thyroid disease,thyroid disease
-14535,17947947,thyroid diseases,thyroid disease
-14535,17947947,thyroidectomy,thyroid disease
+14534,17947947,goiter,goiter
+14534,17947947,"goiter, nodular",goiter
+14534,17947947,graves disease,hyperthyroidism
+14534,17947947,thyrotoxicosis,hyperthyroidism
+14534,17947947,thyroid neoplasms,thyroid neoplasms
+14534,17947947,thyroid nodule,thyroid nodule
+14534,17947947,thyroid disease,thyroid disease
+14534,17947947,thyroid diseases,thyroid disease
+14534,17947947,thyroidectomy,thyroid disease
+14535,17642437,graves disease,hyperthyroidism
+14535,17642437,graves ophthalmopathy,hyperthyroidism
 14536,17704020,goiter,goiter
 14536,17704020,hypothyroidism,hypothyroidism
 14536,17704020,"thyroiditis, autoimmune",thyroiditis
@@ -42369,11 +42369,11 @@
 14559,17005891,goiter,goiter
 14559,17005891,"goiter, nodular",goiter
 14559,17005891,thyroidectomy,thyroid disease
-14560,16776143,goiter,goiter
-14560,16776143,"goiter, nodular",goiter
-14560,16776143,graves disease,hyperthyroidism
-14560,16776143,thyrotoxicosis,hyperthyroidism
-14561,16776151,graves ophthalmopathy,hyperthyroidism
+14560,16776151,graves ophthalmopathy,hyperthyroidism
+14561,16776143,goiter,goiter
+14561,16776143,"goiter, nodular",goiter
+14561,16776143,graves disease,hyperthyroidism
+14561,16776143,thyrotoxicosis,hyperthyroidism
 14562,17709907,goiter,goiter
 14562,17709907,"goiter, endemic",goiter
 14563,17368294,goiter,goiter
@@ -42800,13 +42800,13 @@
 14694,17044431,goiter,goiter
 14694,17044431,"goiter, substernal",goiter
 14695,17595819,goiter,goiter
-14696,17199694,goiter,goiter
-14696,17199694,"goiter, nodular",goiter
-14696,17199694,thyroid disease,thyroid disease
-14696,17199694,thyroid diseases,thyroid disease
-14696,17199694,thyroidectomy,thyroid disease
-14697,16681541,goiter,goiter
-14697,16681541,thyroidectomy,thyroid disease
+14696,16681541,goiter,goiter
+14696,16681541,thyroidectomy,thyroid disease
+14697,17199694,goiter,goiter
+14697,17199694,"goiter, nodular",goiter
+14697,17199694,thyroid disease,thyroid disease
+14697,17199694,thyroid diseases,thyroid disease
+14697,17199694,thyroidectomy,thyroid disease
 14698,16848110,goiter,goiter
 14698,16848110,"goiter, endemic",goiter
 14699,17209470,goiter,goiter
@@ -43046,15 +43046,15 @@
 14765,17199444,"goiter, substernal",goiter
 14766,17256098,goiter,goiter
 14766,17256098,"goiter, endemic",goiter
-14767,16452537,goiter,goiter
-14767,16452537,"goiter, nodular",goiter
-14768,16728575,goiter,goiter
-14768,16728575,"goiter, nodular",goiter
-14768,16728575,thyroid neoplasms,thyroid neoplasms
-14768,16728575,thyroid gland,thyroid disease
-14769,16418208,goiter,goiter
-14769,16418208,"goiter, nodular",goiter
-14769,16418208,thyroid neoplasms,thyroid neoplasms
+14767,16728575,goiter,goiter
+14767,16728575,"goiter, nodular",goiter
+14767,16728575,thyroid neoplasms,thyroid neoplasms
+14767,16728575,thyroid gland,thyroid disease
+14768,16418208,goiter,goiter
+14768,16418208,"goiter, nodular",goiter
+14768,16418208,thyroid neoplasms,thyroid neoplasms
+14769,16452537,goiter,goiter
+14769,16452537,"goiter, nodular",goiter
 14770,17703499,goiter,goiter
 14770,17703499,"goiter, nodular",goiter
 14770,17703499,hypothyroidism,hypothyroidism
@@ -43101,11 +43101,11 @@
 14782,17359557,goiter,goiter
 14782,17359557,"goiter, substernal",goiter
 14782,17359557,thyroidectomy,thyroid disease
-14783,16400058,goiter,goiter
-14783,16400058,thyroid gland,thyroid disease
-14784,16804521,goiter,goiter
-14784,16804521,thyroid neoplasms,thyroid neoplasms
-14784,16804521,thyroid nodule,thyroid nodule
+14783,16804521,goiter,goiter
+14783,16804521,thyroid neoplasms,thyroid neoplasms
+14783,16804521,thyroid nodule,thyroid nodule
+14784,16400058,goiter,goiter
+14784,16400058,thyroid gland,thyroid disease
 14785,16720658,goiter,goiter
 14785,16720658,hypothyroidism,hypothyroidism
 14786,17188157,hyperthyroidism,hyperthyroidism
@@ -43130,8 +43130,8 @@
 14790,16868134,thyroid diseases,thyroid disease
 14791,16641399,goiter,goiter
 14791,16641399,"goiter, nodular",goiter
-14792,18042536,goiter,goiter
-14793,17547546,goiter,goiter
+14792,17547546,goiter,goiter
+14793,18042536,goiter,goiter
 14794,16434760,goiter,goiter
 14794,16434760,hyperthyroidism,hyperthyroidism
 14794,16434760,graves disease,hyperthyroidism
@@ -43245,12 +43245,12 @@
 14826,16409317,thyroidectomy,thyroid disease
 14827,16487021,graves disease,hyperthyroidism
 14827,16487021,graves' disease,hyperthyroidism
-14828,17956161,goiter,goiter
-14828,17956161,thyroid nodule,thyroid nodule
-14828,17956161,thyroid gland,thyroid disease
-14829,18087865,goiter,goiter
-14829,18087865,hyperthyroidism,hyperthyroidism
-14829,18087865,hypothyroidism,hypothyroidism
+14828,18087865,goiter,goiter
+14828,18087865,hyperthyroidism,hyperthyroidism
+14828,18087865,hypothyroidism,hypothyroidism
+14829,17956161,goiter,goiter
+14829,17956161,thyroid nodule,thyroid nodule
+14829,17956161,thyroid gland,thyroid disease
 14830,17996043,goiter,goiter
 14830,17996043,"goiter, endemic",goiter
 14831,16684826,goiter,goiter
@@ -43506,13 +43506,13 @@
 14902,17327628,graves disease,hyperthyroidism
 14902,17327628,graves' disease,hyperthyroidism
 14902,17327628,hypothyroidism,hypothyroidism
-14903,17199448,goiter,goiter
-14903,17199448,"goiter, endemic",goiter
-14904,16669286,goiter,goiter
-14904,16669286,"goiter, endemic",goiter
-14904,16669286,"goiter, nodular",goiter
-14904,16669286,thyroid nodule,thyroid nodule
-14904,16669286,thyroid gland,thyroid disease
+14903,16669286,goiter,goiter
+14903,16669286,"goiter, endemic",goiter
+14903,16669286,"goiter, nodular",goiter
+14903,16669286,thyroid nodule,thyroid nodule
+14903,16669286,thyroid gland,thyroid disease
+14904,17199448,goiter,goiter
+14904,17199448,"goiter, endemic",goiter
 14905,16932282,graves disease,hyperthyroidism
 14905,16932282,graves' disease,hyperthyroidism
 14905,16932282,graves ophthalmopathy,hyperthyroidism
@@ -43593,9 +43593,9 @@
 14927,17647147,"goiter, nodular",goiter
 14927,17647147,graves ophthalmopathy,hyperthyroidism
 14927,17647147,thyrotoxicosis,hyperthyroidism
-14928,16761864,graves ophthalmopathy,hyperthyroidism
-14929,16634188,goiter,goiter
-14929,16634188,"goiter, endemic",goiter
+14928,16634188,goiter,goiter
+14928,16634188,"goiter, endemic",goiter
+14929,16761864,graves ophthalmopathy,hyperthyroidism
 14930,17455883,goiter,goiter
 14930,17455883,thyroid neoplasms,thyroid neoplasms
 14931,17717506,goiter,goiter
@@ -43648,10 +43648,10 @@
 14945,17520843,goiter,goiter
 14945,17520843,"goiter, nodular",goiter
 14945,17520843,thyroidectomy,thyroid disease
-14946,17199446,goiter,goiter
-14946,17199446,"goiter, nodular",goiter
-14946,17199446,graves disease,hyperthyroidism
-14947,16841010,goiter,goiter
+14946,16841010,goiter,goiter
+14947,17199446,goiter,goiter
+14947,17199446,"goiter, nodular",goiter
+14947,17199446,graves disease,hyperthyroidism
 14948,16711206,goiter,goiter
 14948,16711206,"goiter, endemic",goiter
 14948,16711206,"goiter, nodular",goiter
@@ -44686,10 +44686,10 @@
 15323,17017437,goiter,goiter
 15323,17017437,thyroid neoplasms,thyroid neoplasms
 15323,17017437,thyroid gland,thyroid disease
-15324,17364495,graves disease,hyperthyroidism
-15324,17364495,graves' disease,hyperthyroidism
-15324,17364495,graves ophthalmopathy,hyperthyroidism
-15325,18048993,goiter,goiter
+15324,18048993,goiter,goiter
+15325,17364495,graves disease,hyperthyroidism
+15325,17364495,graves' disease,hyperthyroidism
+15325,17364495,graves ophthalmopathy,hyperthyroidism
 15326,17198352,hyperthyroidism,hyperthyroidism
 15326,17198352,graves disease,hyperthyroidism
 15326,17198352,graves' disease,hyperthyroidism

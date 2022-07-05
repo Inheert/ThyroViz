@@ -16,13 +16,10 @@ layout = html.Div([
         ],
         justify="center"
     ),
-    html.Br(style={"marginTop": "2vh"}),
-
-    dbc.Row(
-        general_filters
-    ),
 
     html.Br(style={"marginTop": "2vh"}),
+    html.Br(style={"marginTop": "2vh"}),
+
     dbc.Row(
         [
             dbc.Col(
@@ -48,33 +45,56 @@ layout = html.Div([
     ),
 
     html.Button(id="test_retrieve", children="Pubmed Retrieve"),
-    dcc.Store(id="dataframe_store")
+    dcc.Store(id="dataframe_store"),
+    dcc.Download(id="download_dataframe")
 ])
 
 
-@callback(Output("dataframe_store", "value"),
-          Input("dateCondition", "value"),
+@callback(Output("observational_type", "disabled"),
+          Input("onlyObservational", "value"))
+def EnableObservationalDropdown(only_obs: list):
+    if len(only_obs) > 0:
+        return False
+    else:
+        return True
+
+@callback(Output("dataframe_store", "data"),
+          Input("onlyObservational", "value"),
+          Input("dateCategory", "value"),
           Input("dateFrequency", "value"),
           Input("date_checklist", "value"),
           Input("articleDateOverview", "clickData"),
           Input("articles_input", "value"),
+          Input("publication_type", "value"),
+          Input("population", "value"),
           Input("articles_search_col", "value"))
-def UpdateArticlesOverview(condition: list, freq: str, checklist: list, graphClick: dict, txt_input: str,
-                           colToSearch: list):
+def UpdateArticlesOverview(only_obs: list, category: list, freq: str, checklist: list, graphClick: dict, txt_input: str,
+                           p_type: list, pop: list, colToSearch: list):
+
     checklist = ["None"] if checklist is None or len(checklist) < 1 else checklist
 
     df = articles.copy()
+
+    if len(only_obs) > 0:
+        df = df[df.PMID.isin(observational.PMID)]
+
     df["month"] = df["Entrez_date"].apply(lambda x: x.month)
     df["year"] = df["Entrez_date"].apply(lambda x: x.year)
 
+    if len(p_type) > 0:
+        df = df[df.PMID.isin(publication_type[publication_type.Publication_type.isin(p_type)]["PMID"])]
+
+    if len(pop) > 0:
+        df = df[df.PMID.isin(population[population.Population.isin(pop)]["PMID"])]
+
     if graphClick:
 
-        if len(condition) > 0 and checklist[0] == "Show graph by conditions":
+        if len(category) > 0 and checklist[0] == "Show graph by conditions":
             df = df[df.PMID.isin(
-                df_condition[df_condition.Category == condition[graphClick["points"][0]["curveNumber"]]]["PMID"])]
+                df_condition[df_condition.Category == category[graphClick["points"][0]["curveNumber"]]]["PMID"])]
 
-        elif len(condition) > 0 and checklist[0] == "None":
-            df = df[df.PMID.isin(df_condition[df_condition.Category.isin([x for x in condition])]["PMID"])]
+        elif len(category) > 0 and checklist[0] == "None":
+            df = df[df.PMID.isin(df_condition[df_condition.Category.isin([x for x in category])]["PMID"])]
 
         curve_date = datetime.strptime(graphClick["points"][0]["x"], "%Y-%m-%d")
         if freq == "Year":
@@ -87,8 +107,8 @@ def UpdateArticlesOverview(condition: list, freq: str, checklist: list, graphCli
         #     df = df[(df.Entrez_date == curve_date)]
 
     else:
-        if len(condition) > 0 and checklist[0] == "None":
-            df = df[df.PMID.isin(df_condition[df_condition.Category.isin([x for x in condition])]["PMID"])]
+        if len(category) > 0 and checklist[0] == "None":
+            df = df[df.PMID.isin(df_condition[df_condition.Category.isin([x for x in category])]["PMID"])]
 
     if (colToSearch and len(colToSearch) > 0) and (txt_input and len(txt_input) > 1):
 
@@ -96,7 +116,7 @@ def UpdateArticlesOverview(condition: list, freq: str, checklist: list, graphCli
 
         for col in colToSearch:
             print(col)
-            df["Input_found"] = df[col].apply(lambda x: True if txt_input.lower().strip() in str(x) else False)
+            df["Input_found"] = df[col].apply(lambda x: True if txt_input.lower().strip() in str(x) else True if x is True else False)
 
         df = df[df["Input_found"] == True]
 
@@ -118,15 +138,27 @@ def UpdateArticlesOverview(condition: list, freq: str, checklist: list, graphCli
     return df.to_dict('records')
 
 
+@callback(Output("download_dataframe", "data"),
+          Output("download_button", "n_clicks"),
+          Input("download_button", "n_clicks"),
+          Input("dataframe_store", "data"),
+          prevent_initial_call=True,)
+def DownloadData(n_clicks, df):
+    if n_clicks:
+        df = pd.DataFrame(df)
+        return dcc.send_data_frame(df.to_excel, "data.xlsx", sheet_name="data"), None
+    else:
+        return None, None
+
 @callback(Output("articles_pagination", "max_value"),
-          Input("dataframe_store", "value"))
+          Input("dataframe_store", "data"))
 def PaginationInitializing(df):
     df = pd.DataFrame(df)
     return math.ceil(df.shape[0] / 25)
 
 
 @callback(Output("accordionArticles", "children"),
-          Input("dataframe_store", "value"),
+          Input("dataframe_store", "data"),
           Input("articles_pagination", "active_page"))
 def UpdateAccordionArticles(df, page):
     df = pd.DataFrame(df)

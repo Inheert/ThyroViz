@@ -613,11 +613,11 @@
 300,12919152,journal article
 300,12919152,"research support, non-u.s. gov't"
 301,12870222,journal article
-302,12845488,clinical trial
-302,12845488,comparative study
-302,12845488,controlled clinical trial
-302,12845488,journal article
-303,12581471,journal article
+302,12581471,journal article
+303,12845488,clinical trial
+303,12845488,comparative study
+303,12845488,controlled clinical trial
+303,12845488,journal article
 304,14690034,journal article
 305,14974907,journal article
 306,12733841,journal article
@@ -650,12 +650,12 @@
 317,12915634,clinical trial
 317,12915634,journal article
 317,12915634,"research support, non-u.s. gov't"
-318,12508180,journal article
-319,14751036,journal article
+318,14751036,journal article
+319,12508180,journal article
 320,12906364,journal article
-321,11819103,journal article
-322,12463429,comparative study
-322,12463429,journal article
+321,12463429,comparative study
+321,12463429,journal article
+322,11819103,journal article
 323,12699595,clinical trial
 323,12699595,journal article
 323,12699595,"research support, non-u.s. gov't"
@@ -752,9 +752,9 @@
 370,12116555,journal article
 371,12720530,journal article
 371,12720530,multicenter study
-372,12376780,evaluation study
-372,12376780,journal article
-373,12532684,journal article
+372,12532684,journal article
+373,12376780,evaluation study
+373,12376780,journal article
 374,12134778,case reports
 374,12134778,journal article
 375,12748250,journal article
@@ -767,11 +767,11 @@
 379,12213665,clinical trial
 379,12213665,journal article
 379,12213665,randomized controlled trial
-380,11751062,clinical trial
-380,11751062,journal article
-380,11751062,"research support, non-u.s. gov't"
-381,11889201,journal article
-381,11889201,"research support, non-u.s. gov't"
+380,11889201,journal article
+380,11889201,"research support, non-u.s. gov't"
+381,11751062,clinical trial
+381,11751062,journal article
+381,11751062,"research support, non-u.s. gov't"
 382,12925983,comparative study
 382,12925983,journal article
 383,12082694,english abstract
@@ -815,8 +815,8 @@
 404,14655457,journal article
 405,12410951,journal article
 406,12773996,letter
-407,14586508,journal article
-408,12739739,journal article
+407,12739739,journal article
+408,14586508,journal article
 409,12148388,journal article
 410,11942013,case reports
 410,11942013,journal article
@@ -842,10 +842,10 @@
 423,12951976,letter
 424,12072037,journal article
 425,15072284,journal article
-426,14595788,journal article
-427,12695922,comparative study
-427,12695922,evaluation study
-427,12695922,journal article
+426,12695922,comparative study
+426,12695922,evaluation study
+426,12695922,journal article
+427,14595788,journal article
 428,12424934,journal article
 428,12424934,"research support, non-u.s. gov't"
 429,12411067,clinical trial
@@ -945,16 +945,16 @@
 475,12478541,comparative study
 475,12478541,journal article
 476,12371398,overall
-477,12882135,historical article
-477,12882135,journal article
-478,12660648,biography
-478,12660648,historical article
-478,12660648,journal article
-478,12660648,portrait
-479,15027738,case reports
-479,15027738,journal article
-480,14650793,case reports
-480,14650793,journal article
+477,12660648,biography
+477,12660648,historical article
+477,12660648,journal article
+477,12660648,portrait
+478,12882135,historical article
+478,12882135,journal article
+479,14650793,case reports
+479,14650793,journal article
+480,15027738,case reports
+480,15027738,journal article
 481,12955050,english abstract
 481,12955050,journal article
 482,11944374,english abstract
@@ -3420,9 +3420,9 @@
 1672,29452583,systematic review
 1673,29325833,journal article
 1673,29325833,multicenter study
-1674,30827828,comment
-1674,30827828,journal article
-1675,31208677,letter
+1674,31208677,letter
+1675,30827828,comment
+1675,30827828,journal article
 1676,30918165,journal article
 1677,29772533,journal article
 1678,30897952,case reports
@@ -3441,8 +3441,8 @@
 1685,29525760,journal article
 1686,29721730,historical article
 1686,29721730,journal article
-1687,28450378,journal article
-1688,29905638,journal article
+1687,29905638,journal article
+1688,28450378,journal article
 1689,30949910,journal article
 1689,30949910,"research support, non-u.s. gov't"
 1690,31424978,journal article
@@ -3466,9 +3466,9 @@
 1700,30504400,journal article
 1701,31496266,journal article
 1702,31449767,case reports
-1703,30929897,comment
-1703,30929897,letter
-1704,30742572,journal article
+1703,30742572,journal article
+1704,30929897,comment
+1704,30929897,letter
 1705,30742569,journal article
 1706,29027675,case reports
 1707,29285824,case reports
@@ -3522,10 +3522,10 @@
 1738,29803209,case reports
 1738,29803209,journal article
 1739,31859550,journal article
-1740,31155292,journal article
-1740,31155292,"research support, non-u.s. gov't"
-1741,30537006,journal article
-1741,30537006,"research support, non-u.s. gov't"
+1740,30537006,journal article
+1740,30537006,"research support, non-u.s. gov't"
+1741,31155292,journal article
+1741,31155292,"research support, non-u.s. gov't"
 1742,30184561,clinical trial
 1742,30184561,journal article
 1743,30587660,comment
@@ -3579,9 +3579,9 @@
 1772,31217394,journal article
 1773,30197021,comment
 1773,30197021,letter
-1774,30173328,journal article
-1775,30688164,journal article
-1775,30688164,multicenter study
+1774,30688164,journal article
+1774,30688164,multicenter study
+1775,30173328,journal article
 1776,30924917,journal article
 1777,30263008,journal article
 1777,30263008,"research support, non-u.s. gov't"
@@ -3611,8 +3611,8 @@
 1790,30339291,journal article
 1791,29325052,journal article
 1791,29325052,"research support, non-u.s. gov't"
-1792,31655515,journal article
-1793,30760283,journal article
+1792,30760283,journal article
+1793,31655515,journal article
 1794,31323889,journal article
 1795,29532142,journal article
 1796,30880636,journal article
@@ -3675,8 +3675,8 @@
 1830,29759035,journal article
 1830,29759035,"research support, n.i.h., extramural"
 1830,29759035,"research support, non-u.s. gov't"
-1831,29332250,journal article
-1832,30135996,journal article
+1831,30135996,journal article
+1832,29332250,journal article
 1833,29066572,journal article
 1834,29040161,journal article
 1835,30753531,journal article
@@ -3701,18 +3701,18 @@
 1846,30560608,case reports
 1846,30560608,journal article
 1847,29590674,journal article
-1848,30217613,journal article
-1849,30217607,journal article
-1850,29851756,journal article
+1848,29851756,journal article
+1849,30217613,journal article
+1850,30217607,journal article
 1851,29546048,journal article
-1852,31023276,comparative study
-1852,31023276,journal article
-1852,31023276,observational study
-1853,30132285,journal article
-1854,31641884,journal article
-1854,31641884,observational study
-1855,30862763,clinical trial
-1855,30862763,journal article
+1852,31641884,journal article
+1852,31641884,observational study
+1853,30862763,clinical trial
+1853,30862763,journal article
+1854,31023276,comparative study
+1854,31023276,journal article
+1854,31023276,observational study
+1855,30132285,journal article
 1856,31340806,journal article
 1856,31340806,meta-analysis
 1856,31340806,systematic review
@@ -3802,11 +3802,11 @@
 1908,30667296,"research support, non-u.s. gov't"
 1909,30392997,journal article
 1909,30392997,observational study
-1910,31065775,journal article
-1910,31065775,observational study
-1910,31065775,"research support, non-u.s. gov't"
-1911,31677639,journal article
-1911,31677639,"research support, non-u.s. gov't"
+1910,31677639,journal article
+1910,31677639,"research support, non-u.s. gov't"
+1911,31065775,journal article
+1911,31065775,observational study
+1911,31065775,"research support, non-u.s. gov't"
 1912,31860407,journal article
 1912,31860407,randomized controlled trial
 1912,31860407,"research support, non-u.s. gov't"
@@ -3820,9 +3820,9 @@
 1918,30834273,multicenter study
 1919,29722836,journal article
 1919,29722836,"research support, non-u.s. gov't"
-1920,31691654,journal article
-1921,30593716,journal article
-1921,30593716,observational study
+1920,30593716,journal article
+1920,30593716,observational study
+1921,31691654,journal article
 1922,30577987,comparative study
 1922,30577987,journal article
 1923,29363626,case reports
@@ -3860,10 +3860,10 @@
 1943,30885146,evaluation study
 1943,30885146,journal article
 1944,28656526,journal article
-1945,29983514,journal article
-1946,29026936,comparative study
-1946,29026936,journal article
-1946,29026936,randomized controlled trial
+1945,29026936,comparative study
+1945,29026936,journal article
+1945,29026936,randomized controlled trial
+1946,29983514,journal article
 1947,30572375,comparative study
 1947,30572375,journal article
 1948,28832090,case reports
@@ -5498,9 +5498,9 @@
 2888,35313358,journal article
 2889,33218789,case reports
 2889,33218789,journal article
-2890,35048575,journal article
-2891,34144800,comment
-2891,34144800,letter
+2890,34144800,comment
+2890,34144800,letter
+2891,35048575,journal article
 2892,35144345,case reports
 2892,35144345,journal article
 2893,34874796,journal article
@@ -5564,19 +5564,19 @@
 2925,35422184,journal article
 2926,35466606,journal article
 2926,35466606,review
-2927,33908335,journal article
-2928,35287535,journal article
-2929,34487995,comparative study
-2929,34487995,journal article
-2930,33775197,journal article
+2927,35287535,journal article
+2928,33908335,journal article
+2929,33775197,journal article
+2930,34487995,comparative study
+2930,34487995,journal article
 2931,34954838,journal article
 2931,34954838,review
-2932,35536720,journal article
-2932,35536720,"research support, non-u.s. gov't"
-2933,34663089,journal article
-2933,34663089,"research support, n.i.h., extramural"
-2934,35534869,journal article
-2934,35534869,"research support, non-u.s. gov't"
+2932,34663089,journal article
+2932,34663089,"research support, n.i.h., extramural"
+2933,35534869,journal article
+2933,35534869,"research support, non-u.s. gov't"
+2934,35536720,journal article
+2934,35536720,"research support, non-u.s. gov't"
 2935,35315985,journal article
 2936,35658138,journal article
 2937,34291428,journal article
@@ -5614,14 +5614,14 @@
 2956,35069441,journal article
 2956,35069441,"research support, non-u.s. gov't"
 2956,35069441,review
-2957,34637160,case reports
-2957,34637160,letter
-2958,34240778,case reports
+2957,34240778,case reports
+2958,34637160,case reports
+2958,34637160,letter
 2959,35039921,journal article
 2959,35039921,systematic review
-2960,34515780,journal article
-2961,34250837,journal article
-2962,33884704,journal article
+2960,34250837,journal article
+2961,33884704,journal article
+2962,34515780,journal article
 2963,34642808,journal article
 2964,35413468,case reports
 2964,35413468,letter
@@ -5638,8 +5638,8 @@
 2970,35504610,journal article
 2971,35168232,case reports
 2972,34365588,journal article
-2973,35488596,journal article
-2974,34983925,journal article
+2973,34983925,journal article
+2974,35488596,journal article
 2975,34895729,journal article
 2975,34895729,"research support, non-u.s. gov't"
 2975,34895729,review
@@ -5678,20 +5678,20 @@
 2996,35037368,letter
 2997,35614367,journal article
 2997,35614367,review
-2998,33865565,journal article
-2998,33865565,meta-analysis
-2999,35182078,journal article
+2998,35182078,journal article
+2999,33865565,journal article
+2999,33865565,meta-analysis
 3000,34347269,journal article
 3001,33910662,journal article
 3002,34487739,journal article
 3002,34487739,"research support, n.i.h., extramural"
 3002,34487739,"research support, non-u.s. gov't"
 3002,34487739,review
-3003,33059514,journal article
-3004,35432203,journal article
-3005,35482336,journal article
-3006,35628410,journal article
-3007,35528009,journal article
+3003,35432203,journal article
+3004,35482336,journal article
+3005,33059514,journal article
+3006,35528009,journal article
+3007,35628410,journal article
 3008,35466605,journal article
 3009,33172865,journal article
 3009,33172865,multicenter study
@@ -5720,9 +5720,9 @@
 3025,35459655,journal article
 3026,34599283,journal article
 3026,34599283,review
-3027,35338690,journal article
+3027,34799942,journal article
 3028,34193409,journal article
-3029,34799942,journal article
+3029,35338690,journal article
 3030,34933777,journal article
 3031,34291345,journal article
 3032,35018816,journal article
@@ -5739,26 +5739,26 @@
 3037,35135806,journal article
 3038,35024887,journal article
 3038,35024887,review
-3039,35692889,journal article
+3039,32878536,journal article
 3040,35381687,journal article
-3041,32878536,journal article
+3041,35692889,journal article
 3042,35624535,case reports
 3042,35624535,journal article
-3043,35273577,journal article
-3043,35273577,"research support, non-u.s. gov't"
-3044,34788857,journal article
-3044,34788857,"research support, n.i.h., intramural"
-3045,34324163,journal article
-3046,35429598,journal article
-3047,35078654,journal article
-3048,35663306,journal article
+3043,34788857,journal article
+3043,34788857,"research support, n.i.h., intramural"
+3044,35273577,journal article
+3044,35273577,"research support, non-u.s. gov't"
+3045,35663306,journal article
+3046,34324163,journal article
+3047,35429598,journal article
+3048,35078654,journal article
 3049,35018442,journal article
 3049,35018442,meta-analysis
 3050,35119800,journal article
 3050,35119800,review
-3051,35610583,journal article
-3052,35184917,journal article
-3053,35244288,journal article
+3051,35244288,journal article
+3052,35610583,journal article
+3053,35184917,journal article
 3054,35066781,journal article
 3054,35066781,systematic review
 3055,35220164,journal article
@@ -5780,27 +5780,27 @@
 3062,35189399,"research support, non-u.s. gov't"
 3063,35241008,journal article
 3063,35241008,"research support, non-u.s. gov't"
-3064,35615718,clinical study
-3064,35615718,journal article
-3065,35300630,journal article
-3066,34549377,journal article
-3067,35015120,journal article
+3064,35300630,journal article
+3065,34549377,journal article
+3066,35015120,journal article
+3067,35615718,clinical study
+3067,35615718,journal article
 3068,34532987,journal article
 3069,35565939,journal article
-3070,34988642,journal article
-3071,35508893,journal article
-3072,33103521,journal article
-3072,33103521,meta-analysis
+3070,33103521,journal article
+3070,33103521,meta-analysis
+3071,34988642,journal article
+3072,35508893,journal article
 3073,34850456,journal article
 3074,35518570,journal article
 3075,34347224,journal article
 3076,33390059,journal article
-3077,34871593,journal article
-3077,34871593,"research support, non-u.s. gov't"
-3078,35386700,journal article
-3078,35386700,"research support, non-u.s. gov't"
-3079,35428798,journal article
-3079,35428798,"research support, non-u.s. gov't"
+3077,35428798,journal article
+3077,35428798,"research support, non-u.s. gov't"
+3078,34871593,journal article
+3078,34871593,"research support, non-u.s. gov't"
+3079,35386700,journal article
+3079,35386700,"research support, non-u.s. gov't"
 3080,34605662,journal article
 3080,34605662,"research support, non-u.s. gov't"
 3081,35276742,journal article
@@ -5830,15 +5830,15 @@
 3094,35402292,"research support, non-u.s. gov't"
 3095,34982065,comment
 3095,34982065,letter
-3096,35187713,journal article
-3097,34778997,journal article
+3096,34489313,journal article
+3097,34060342,journal article
 3098,35713042,journal article
 3098,35713042,observational study
 3098,35713042,randomized controlled trial
 3099,35671049,journal article
 3100,35220890,journal article
-3101,34489313,journal article
-3102,34060342,journal article
+3101,35187713,journal article
+3102,34778997,journal article
 3103,35064543,journal article
 3104,33637620,journal article
 3105,35569928,journal article
@@ -5852,10 +5852,10 @@
 3110,34545512,journal article
 3111,34671950,journal article
 3111,34671950,observational study
-3112,34293782,journal article
-3113,35439657,journal article
-3114,35342747,journal article
-3115,34613563,journal article
+3112,35439657,journal article
+3113,35342747,journal article
+3114,34613563,journal article
+3115,34293782,journal article
 3116,34714163,journal article
 3116,34714163,"research support, non-u.s. gov't"
 3117,34927457,journal article
@@ -5867,15 +5867,15 @@
 3119,34973718,case reports
 3119,34973718,journal article
 3119,34973718,video-audio media
-3120,35477705,case reports
-3120,35477705,journal article
-3121,34544941,case reports
-3121,34544941,journal article
+3120,34544941,case reports
+3120,34544941,journal article
+3121,35477705,case reports
+3121,35477705,journal article
 3122,35089242,case reports
 3122,35089242,journal article
-3123,34781042,journal article
-3124,35278055,journal article
-3125,35555881,journal article
+3123,35278055,journal article
+3124,35555881,journal article
+3125,34781042,journal article
 3126,34241830,historical article
 3126,34241830,journal article
 3127,34979768,journal article
@@ -5888,24 +5888,24 @@
 3131,35396078,journal article
 3131,35396078,review
 3132,35330515,journal article
-3133,34714162,journal article
-3133,34714162,"research support, n.i.h., intramural"
-3134,35136950,journal article
-3134,35136950,"research support, non-u.s. gov't"
-3135,34743487,journal article
-3135,34743487,"research support, non-u.s. gov't"
-3136,35592782,journal article
-3136,35592782,"research support, non-u.s. gov't"
-3137,35413779,clinical study
-3137,35413779,journal article
-3138,35144579,journal article
-3138,35144579,observational study
-3139,34330200,journal article
+3133,34743487,journal article
+3133,34743487,"research support, non-u.s. gov't"
+3134,35592782,journal article
+3134,35592782,"research support, non-u.s. gov't"
+3135,35136950,journal article
+3135,35136950,"research support, non-u.s. gov't"
+3136,34714162,journal article
+3136,34714162,"research support, n.i.h., intramural"
+3137,34330200,journal article
+3138,35413779,clinical study
+3138,35413779,journal article
+3139,35144579,journal article
+3139,35144579,observational study
 3140,34774300,journal article
 3140,34774300,"research support, non-u.s. gov't"
-3141,34637060,journal article
-3142,35405579,journal article
-3143,35235144,journal article
+3141,35405579,journal article
+3142,35235144,journal article
+3143,34637060,journal article
 3144,34979862,journal article
 3145,35370997,journal article
 3145,35370997,"research support, non-u.s. gov't"
@@ -5914,10 +5914,10 @@
 3147,34453884,journal article
 3147,34453884,"research support, non-u.s. gov't"
 3148,34029245,journal article
-3149,35006119,case reports
-3149,35006119,journal article
-3150,34645767,case reports
-3150,34645767,journal article
+3149,34645767,case reports
+3149,34645767,journal article
+3150,35006119,case reports
+3150,35006119,journal article
 3151,35094312,journal article
 3152,34789694,case reports
 3152,34789694,journal article
@@ -5938,11 +5938,11 @@
 3161,34779257,"research support, non-u.s. gov't"
 3162,35265076,journal article
 3162,35265076,"research support, non-u.s. gov't"
-3163,35321340,journal article
-3163,35321340,"research support, non-u.s. gov't"
-3164,35175308,journal article
-3164,35175308,meta-analysis
-3164,35175308,"research support, non-u.s. gov't"
+3163,35175308,journal article
+3163,35175308,meta-analysis
+3163,35175308,"research support, non-u.s. gov't"
+3164,35321340,journal article
+3164,35321340,"research support, non-u.s. gov't"
 3165,33637966,journal article
 3166,35667695,case reports
 3166,35667695,journal article
@@ -5960,25 +5960,25 @@
 3175,34874354,case reports
 3175,34874354,journal article
 3176,35476054,journal article
-3177,34544076,journal article
-3178,34851466,journal article
-3179,35720300,journal article
-3180,35647837,journal article
+3177,34851466,journal article
+3178,34544076,journal article
+3179,35647837,journal article
+3180,35720300,journal article
 3181,35721705,journal article
-3182,33731890,journal article
-3182,33731890,randomized controlled trial
-3183,35698208,journal article
+3182,35698208,journal article
+3183,33731890,journal article
+3183,33731890,randomized controlled trial
 3184,35413827,case reports
 3184,35413827,journal article
-3185,35088429,"clinical trial, phase i"
-3185,35088429,journal article
-3186,35644958,journal article
-3186,35644958,randomized controlled trial
-3187,35229626,journal article
-3188,34468829,journal article
+3185,35644958,journal article
+3185,35644958,randomized controlled trial
+3186,35229626,journal article
+3187,34468829,journal article
+3188,35088429,"clinical trial, phase i"
+3188,35088429,journal article
 3189,34607373,journal article
-3190,34593713,journal article
-3191,35566351,journal article
+3190,35566351,journal article
+3191,34593713,journal article
 3192,33913798,case reports
 3192,33913798,journal article
 3193,34580763,journal article
@@ -5991,10 +5991,10 @@
 3198,35502113,letter
 3199,35538553,case reports
 3199,35538553,journal article
-3200,35144533,case reports
-3200,35144533,journal article
-3201,33443352,case reports
-3201,33443352,journal article
+3200,33443352,case reports
+3200,33443352,journal article
+3201,35144533,case reports
+3201,35144533,journal article
 3202,35767887,journal article
 3203,35441746,journal article
 3204,34854944,journal article
@@ -6118,12 +6118,12 @@
 3273,26545026,journal article
 3274,26585265,comment
 3274,26585265,letter
-3275,28079342,comment
-3275,28079342,letter
-3276,28079341,comment
-3276,28079341,letter
-3277,28076710,comment
-3277,28076710,letter
+3275,28076710,comment
+3275,28076710,letter
+3276,28079342,comment
+3276,28079342,letter
+3277,28079341,comment
+3277,28079341,letter
 3278,26742784,case reports
 3278,26742784,journal article
 3278,26742784,review
@@ -6335,12 +6335,12 @@
 3393,27565137,journal article
 3393,27565137,review
 3394,27304444,journal article
-3395,28748866,case reports
-3395,28748866,letter
-3396,27981628,case reports
-3396,27981628,journal article
-3397,28899873,case reports
-3397,28899873,journal article
+3395,28899873,case reports
+3395,28899873,journal article
+3396,28748866,case reports
+3396,28748866,letter
+3397,27981628,case reports
+3397,27981628,journal article
 3398,27806818,case reports
 3398,27806818,journal article
 3399,29075974,journal article
@@ -6384,10 +6384,10 @@
 3417,27780830,systematic review
 3418,27169853,journal article
 3418,27169853,review
-3419,27464276,case reports
-3419,27464276,journal article
-3420,27620717,case reports
-3420,27620717,journal article
+3419,27620717,case reports
+3419,27620717,journal article
+3420,27464276,case reports
+3420,27464276,journal article
 3421,27795799,case reports
 3421,27795799,journal article
 3421,27795799,review
@@ -6441,20 +6441,20 @@
 3448,27362288,systematic review
 3449,28363119,journal article
 3449,28363119,validation study
-3450,28278511,journal article
-3450,28278511,retracted publication
-3451,27609530,journal article
-3452,28755510,journal article
-3453,28606263,journal article
-3454,29890100,journal article
+3450,29890100,journal article
+3451,28755510,journal article
+3452,28606263,journal article
+3453,28278511,journal article
+3453,28278511,retracted publication
+3454,27609530,journal article
 3455,27157821,comment
 3455,27157821,journal article
 3456,27213802,english abstract
 3456,27213802,journal article
 3457,28436636,case reports
 3457,28436636,journal article
-3458,26331303,journal article
-3459,27647872,journal article
+3458,27647872,journal article
+3459,26331303,journal article
 3460,28635216,journal article
 3461,26096670,case reports
 3461,26096670,letter
@@ -6475,10 +6475,10 @@
 3469,27438374,case reports
 3469,27438374,journal article
 3469,27438374,review
-3470,27855978,case reports
-3470,27855978,letter
-3471,27555041,case reports
-3471,27555041,journal article
+3470,27555041,case reports
+3470,27555041,journal article
+3471,27855978,case reports
+3471,27855978,letter
 3472,27402179,journal article
 3472,27402179,observational study
 3473,28456099,journal article
@@ -6499,8 +6499,8 @@
 3481,27281483,journal article
 3482,29140920,comment
 3482,29140920,letter
-3483,27769546,letter
-3484,27848230,letter
+3483,27848230,letter
+3484,27769546,letter
 3485,26932403,case reports
 3485,26932403,letter
 3486,27117943,journal article
@@ -6527,14 +6527,14 @@
 3499,28906601,letter
 3500,26809019,case reports
 3500,26809019,letter
-3501,28039723,case reports
-3501,28039723,letter
-3502,26669296,case reports
-3502,26669296,journal article
-3503,28060697,case reports
-3503,28060697,journal article
-3504,27468062,case reports
-3504,27468062,journal article
+3501,28060697,case reports
+3501,28060697,journal article
+3502,27468062,case reports
+3502,27468062,journal article
+3503,28039723,case reports
+3503,28039723,letter
+3504,26669296,case reports
+3504,26669296,journal article
 3505,28173935,comment
 3505,28173935,letter
 3506,27222685,journal article
@@ -6555,10 +6555,10 @@
 3515,27216455,comment
 3515,27216455,letter
 3516,28606261,journal article
-3517,27791247,comment
-3517,27791247,journal article
-3518,27807691,historical article
-3518,27807691,letter
+3517,27807691,historical article
+3517,27807691,letter
+3518,27791247,comment
+3518,27791247,journal article
 3519,27383156,comparative study
 3519,27383156,journal article
 3520,26669779,journal article
@@ -6585,8 +6585,8 @@
 3532,26181502,case reports
 3532,26181502,journal article
 3533,28457178,journal article
-3534,28389359,journal article
-3535,28389809,journal article
+3534,28389809,journal article
+3535,28389359,journal article
 3536,26813240,case reports
 3536,26813240,evaluation study
 3536,26813240,journal article
@@ -6615,8 +6615,8 @@
 3550,26863422,multicenter study
 3550,26863422,observational study
 3551,27478827,journal article
-3552,26866718,journal article
-3553,26438397,journal article
+3552,26438397,journal article
+3553,26866718,journal article
 3554,28806880,journal article
 3554,28806880,multicenter study
 3554,28806880,observational study
@@ -6643,8 +6643,8 @@
 3567,29120123,journal article
 3568,27172524,comparative study
 3568,27172524,journal article
-3569,28077500,journal article
-3570,26337375,journal article
+3569,26337375,journal article
+3570,28077500,journal article
 3571,27923250,journal article
 3572,27777050,case reports
 3572,27777050,journal article
@@ -6686,10 +6686,10 @@
 3595,28771438,case reports
 3596,28746208,case reports
 3596,28746208,journal article
-3597,26913729,comment
-3597,26913729,letter
-3598,27834466,comment
-3598,27834466,journal article
+3597,27834466,comment
+3597,27834466,journal article
+3598,26913729,comment
+3598,26913729,letter
 3599,26979989,journal article
 3599,26979989,"research support, non-u.s. gov't"
 3599,26979989,"research support, u.s. gov't, non-p.h.s."
@@ -6775,14 +6775,14 @@
 3643,25389951,journal article
 3644,28389487,journal article
 3644,28389487,observational study
-3645,28124062,journal article
-3646,27531964,journal article
+3645,27531964,journal article
+3646,28124062,journal article
 3647,27358549,case reports
 3647,27358549,journal article
 3648,28225858,journal article
-3649,27600197,journal article
-3649,27600197,observational study
-3650,27241825,journal article
+3649,27241825,journal article
+3650,27600197,journal article
+3650,27600197,observational study
 3651,27277378,case reports
 3651,27277378,journal article
 3652,29250672,journal article
@@ -6793,8 +6793,8 @@
 3655,28719405,controlled clinical trial
 3655,28719405,journal article
 3656,28458607,journal article
-3657,27553396,journal article
-3658,26546192,journal article
+3657,26546192,journal article
+3658,27553396,journal article
 3659,27040416,journal article
 3660,26066526,journal article
 3661,28812921,case reports
@@ -8914,10 +8914,10 @@
 4845,10802519,journal article
 4846,11079599,case reports
 4846,11079599,journal article
-4847,11078988,journal article
-4847,11078988,"research support, non-u.s. gov't"
-4848,10713742,journal article
-4848,10713742,"research support, non-u.s. gov't"
+4847,10713742,journal article
+4847,10713742,"research support, non-u.s. gov't"
+4848,11078988,journal article
+4848,11078988,"research support, non-u.s. gov't"
 4849,11589682,comparative study
 4849,11589682,evaluation study
 4849,11589682,journal article
@@ -11638,10 +11638,10 @@
 6173,19757207,randomized controlled trial
 6174,20358791,comparative study
 6174,20358791,journal article
-6175,19262285,clinical trial
-6175,19262285,journal article
-6176,19468796,clinical trial
-6176,19468796,journal article
+6175,19468796,clinical trial
+6175,19468796,journal article
+6176,19262285,clinical trial
+6176,19262285,journal article
 6177,19265492,clinical trial
 6177,19265492,journal article
 6178,19488463,journal article
@@ -11651,9 +11651,9 @@
 6181,19227053,"research support, non-u.s. gov't"
 6182,18495207,journal article
 6183,18407753,journal article
-6184,18506473,journal article
-6185,18232004,journal article
-6186,18343210,journal article
+6184,18343210,journal article
+6185,18506473,journal article
+6186,18232004,journal article
 6187,19644631,journal article
 6187,19644631,"research support, non-u.s. gov't"
 6188,18971848,case reports
@@ -11697,11 +11697,11 @@
 6207,19627750,journal article
 6208,19915229,case reports
 6208,19915229,journal article
-6209,18803554,journal article
-6209,18803554,randomized controlled trial
-6209,18803554,"research support, non-u.s. gov't"
-6210,19037649,journal article
-6210,19037649,"research support, non-u.s. gov't"
+6209,19037649,journal article
+6209,19037649,"research support, non-u.s. gov't"
+6210,18803554,journal article
+6210,18803554,randomized controlled trial
+6210,18803554,"research support, non-u.s. gov't"
 6211,18528229,case reports
 6211,18528229,letter
 6212,19092288,journal article
@@ -11798,10 +11798,10 @@
 6264,18777457,evaluation study
 6264,18777457,journal article
 6264,18777457,"research support, non-u.s. gov't"
-6265,19438905,journal article
-6265,19438905,"research support, non-u.s. gov't"
-6266,19648736,journal article
-6266,19648736,"research support, non-u.s. gov't"
+6265,19648736,journal article
+6265,19648736,"research support, non-u.s. gov't"
+6266,19438905,journal article
+6266,19438905,"research support, non-u.s. gov't"
 6267,18399772,case reports
 6267,18399772,journal article
 6268,18840297,case reports
@@ -14088,12 +14088,12 @@
 7415,33837650,journal article
 7416,32744437,journal article
 7417,31977753,journal article
-7418,32451543,journal article
-7419,32616715,journal article
-7420,33759143,comment
-7420,33759143,letter
-7421,33759142,comment
-7421,33759142,letter
+7418,33759143,comment
+7418,33759143,letter
+7419,33759142,comment
+7419,33759142,letter
+7420,32616715,journal article
+7421,32451543,journal article
 7422,33310200,journal article
 7423,32320467,journal article
 7424,34320291,interactive tutorial
@@ -14113,10 +14113,10 @@
 7432,33391188,review
 7433,33126382,journal article
 7433,33126382,observational study
-7434,32812043,comment
-7434,32812043,letter
-7435,32812038,comment
-7435,32812038,letter
+7434,32812038,comment
+7434,32812038,letter
+7435,32812043,comment
+7435,32812043,letter
 7436,33252592,journal article
 7437,33351317,journal article
 7437,33351317,"research support, non-u.s. gov't"
@@ -14146,12 +14146,12 @@
 7452,33619720,journal article
 7453,33735381,comment
 7453,33735381,editorial
-7454,32749654,journal article
-7454,32749654,review
-7455,33655885,journal article
-7455,33655885,review
-7456,32729049,journal article
-7456,32729049,review
+7454,33655885,journal article
+7454,33655885,review
+7455,32729049,journal article
+7455,32729049,review
+7456,32749654,journal article
+7456,32749654,review
 7457,34027879,journal article
 7458,32826306,case reports
 7458,32826306,journal article
@@ -14175,37 +14175,37 @@
 7468,34680964,journal article
 7468,34680964,"research support, non-u.s. gov't"
 7469,33630245,letter
-7470,34362755,case reports
-7470,34362755,journal article
-7471,34313966,case reports
-7471,34313966,journal article
+7470,34313966,case reports
+7470,34313966,journal article
+7471,34362755,case reports
+7471,34362755,journal article
 7472,34297498,journal article
 7473,34076524,journal article
 7474,33011882,journal article
 7474,33011882,"research support, non-u.s. gov't"
-7475,32157662,letter
-7476,31904672,comment
-7476,31904672,letter
+7475,31904672,comment
+7475,31904672,letter
+7476,32157662,letter
 7477,34619658,comment
 7477,34619658,journal article
 7478,32880074,journal article
 7478,32880074,review
 7479,32169148,journal article
-7480,33721204,journal article
-7481,33743532,journal article
-7482,33389596,journal article
+7480,33743532,journal article
+7481,33389596,journal article
+7482,33721204,journal article
 7483,32033825,letter
 7483,32033825,observational study
 7484,34909893,journal article
 7485,34029917,journal article
 7486,33619715,journal article
 7487,34766495,letter
-7488,32402171,comment
-7488,32402171,letter
-7489,32402170,comment
-7489,32402170,letter
-7490,31904673,comment
-7490,31904673,letter
+7488,31904673,comment
+7488,31904673,letter
+7489,32402171,comment
+7489,32402171,letter
+7490,32402170,comment
+7490,32402170,letter
 7491,34410066,journal article
 7492,33506447,journal article
 7493,32571507,journal article
@@ -14218,10 +14218,10 @@
 7497,35004341,journal article
 7497,35004341,"research support, non-u.s. gov't"
 7497,35004341,review
-7498,33449383,journal article
-7498,33449383,"research support, non-u.s. gov't"
-7499,34026662,journal article
-7499,34026662,"research support, non-u.s. gov't"
+7498,34026662,journal article
+7498,34026662,"research support, non-u.s. gov't"
+7499,33449383,journal article
+7499,33449383,"research support, non-u.s. gov't"
 7500,34182968,journal article
 7501,34855196,journal article
 7502,30927742,case reports
@@ -14264,34 +14264,34 @@
 7524,33462034,journal article
 7525,33685911,case reports
 7525,33685911,journal article
-7526,33444592,case reports
-7527,33270090,case reports
+7526,33270090,case reports
+7527,33444592,case reports
 7528,33749695,case reports
 7528,33749695,journal article
-7529,33587422,journal article
-7530,34061770,journal article
-7530,34061770,systematic review
+7529,34061770,journal article
+7529,34061770,systematic review
+7530,33587422,journal article
 7531,34214461,case reports
 7532,32111974,comment
 7532,32111974,news
 7533,32765422,journal article
 7533,32765422,"research support, non-u.s. gov't"
 7533,32765422,review
-7534,33661574,journal article
-7534,33661574,review
-7535,33557156,journal article
-7535,33557156,review
+7534,33557156,journal article
+7534,33557156,review
+7535,33661574,journal article
+7535,33661574,review
 7536,33899194,journal article
 7537,34592165,comment
 7537,34592165,journal article
 7538,34303550,journal article
 7538,34303550,review
-7539,32976335,case reports
-7539,32976335,journal article
+7539,34753719,case reports
+7539,34753719,journal article
 7540,34725062,case reports
 7540,34725062,journal article
-7541,34753719,case reports
-7541,34753719,journal article
+7541,32976335,case reports
+7541,32976335,journal article
 7542,32441005,journal article
 7542,32441005,review
 7543,34961921,journal article
@@ -14313,10 +14313,10 @@
 7550,33420947,case reports
 7550,33420947,journal article
 7551,33047905,editorial
-7552,33743524,journal article
-7553,32910410,journal article
-7554,34114197,historical article
-7554,34114197,letter
+7552,34114197,historical article
+7552,34114197,letter
+7553,33743524,journal article
+7554,32910410,journal article
 7555,33146099,journal article
 7556,33569041,systematic review
 7557,32173798,journal article
@@ -14350,49 +14350,49 @@
 7571,33710035,"research support, non-u.s. gov't"
 7572,33597052,journal article
 7572,33597052,"research support, non-u.s. gov't"
-7573,33367747,journal article
-7573,33367747,"research support, non-u.s. gov't"
-7574,33934566,journal article
-7574,33934566,"research support, non-u.s. gov't"
+7573,33934566,journal article
+7573,33934566,"research support, non-u.s. gov't"
+7574,33367747,journal article
+7574,33367747,"research support, non-u.s. gov't"
 7575,33914707,journal article
 7575,33914707,"research support, n.i.h., extramural"
 7575,33914707,"research support, non-u.s. gov't"
 7576,32709793,comment
 7576,32709793,journal article
-7577,33688954,journal article
-7577,33688954,observational study
-7578,34192497,journal article
-7579,33914772,journal article
+7577,34192497,journal article
+7578,33914772,journal article
+7579,33688954,journal article
+7579,33688954,observational study
 7580,33509724,case reports
 7581,33579884,journal article
 7582,34619659,comment
 7582,34619659,letter
 7583,33283314,journal article
 7583,33283314,review
-7584,34560868,journal article
-7585,34224544,journal article
-7586,33863564,journal article
-7586,33863564,randomized controlled trial
-7587,32847459,journal article
+7584,32847459,journal article
+7585,33863564,journal article
+7585,33863564,randomized controlled trial
+7586,34560868,journal article
+7587,34224544,journal article
 7588,33994519,journal article
 7589,34753152,journal article
 7590,32553518,comparative study
 7590,32553518,journal article
 7590,32553518,"research support, n.i.h., extramural"
-7591,33530368,journal article
-7591,33530368,"research support, non-u.s. gov't"
-7592,32968816,journal article
-7592,32968816,"research support, n.i.h., extramural"
-7592,32968816,"research support, non-u.s. gov't"
+7591,32968816,journal article
+7591,32968816,"research support, n.i.h., extramural"
+7591,32968816,"research support, non-u.s. gov't"
+7592,33530368,journal article
+7592,33530368,"research support, non-u.s. gov't"
 7593,33532627,journal article
 7593,33532627,"research support, non-u.s. gov't"
 7593,33532627,review
 7594,32709792,journal article
-7595,33380646,case reports
-7595,33380646,journal article
-7595,33380646,systematic review
-7596,32130689,case reports
-7596,32130689,letter
+7595,32130689,case reports
+7595,32130689,letter
+7596,33380646,case reports
+7596,33380646,journal article
+7596,33380646,systematic review
 7597,34533016,journal article
 7598,32691849,journal article
 7598,32691849,meta-analysis
@@ -14408,21 +14408,21 @@
 7603,33593429,"research support, non-u.s. gov't"
 7603,33593429,video-audio media
 7604,33675208,case reports
-7605,31567783,journal article
-7605,31567783,systematic review
-7606,32034469,journal article
+7605,32034469,journal article
+7606,31567783,journal article
+7606,31567783,systematic review
 7607,34497059,case reports
 7607,34497059,journal article
 7608,32924380,journal article
 7609,34647611,journal article
 7610,34518175,case reports
 7610,34518175,journal article
-7611,34725068,case reports
-7611,34725068,journal article
-7612,32427725,case reports
-7612,32427725,journal article
-7613,34382138,case reports
-7613,34382138,journal article
+7611,34382138,case reports
+7611,34382138,journal article
+7612,34725068,case reports
+7612,34725068,journal article
+7613,32427725,case reports
+7613,32427725,journal article
 7614,34448404,case reports
 7614,34448404,journal article
 7614,34448404,review
@@ -14432,8 +14432,8 @@
 7617,32705333,journal article
 7618,32046610,comment
 7618,32046610,journal article
-7619,33060509,journal article
-7620,33481211,journal article
+7619,33481211,journal article
+7620,33060509,journal article
 7621,33169897,journal article
 7622,33926416,journal article
 7623,32893651,case reports
@@ -14463,10 +14463,10 @@
 7634,33106982,review
 7635,33177482,case reports
 7635,33177482,journal article
-7636,34194397,journal article
-7637,34689799,journal article
-7638,34521015,journal article
-7639,34418335,journal article
+7636,34418335,journal article
+7637,34194397,journal article
+7638,34689799,journal article
+7639,34521015,journal article
 7640,34448415,journal article
 7641,34893568,journal article
 7642,33128357,journal article
@@ -14482,13 +14482,13 @@
 7649,34560890,journal article
 7650,34776504,journal article
 7650,34776504,"research support, non-u.s. gov't"
-7651,33207860,journal article
-7652,33474918,journal article
-7653,33345558,journal article
-7654,33237667,journal article
-7655,34331946,journal article
-7656,32449092,comparative study
-7656,32449092,journal article
+7651,33474918,journal article
+7652,33207860,journal article
+7653,33237667,journal article
+7654,34331946,journal article
+7655,32449092,comparative study
+7655,32449092,journal article
+7656,33345558,journal article
 7657,33791385,journal article
 7657,33791385,randomized controlled trial
 7658,32057544,journal article
@@ -14515,13 +14515,13 @@
 7672,35506803,journal article
 7673,33317853,case reports
 7673,33317853,letter
-7674,34823306,journal article
-7674,34823306,multicenter study
-7675,34256242,journal article
-7676,33728674,comparative study
-7676,33728674,journal article
-7677,34164724,journal article
-7677,34164724,observational study
+7674,34256242,journal article
+7675,34823306,journal article
+7675,34823306,multicenter study
+7676,34164724,journal article
+7676,34164724,observational study
+7677,33728674,comparative study
+7677,33728674,journal article
 7678,34090378,case reports
 7678,34090378,journal article
 7678,34090378,review
@@ -14544,13 +14544,13 @@
 7688,34252869,journal article
 7689,32306294,comment
 7689,32306294,journal article
-7690,32166667,journal article
-7691,32798996,journal article
+7690,32798996,journal article
+7691,32166667,journal article
 7692,31971949,journal article
 7693,33860431,journal article
 7693,33860431,multicenter study
-7694,34381549,journal article
-7695,32734611,journal article
+7694,32734611,journal article
+7695,34381549,journal article
 7696,34120661,journal article
 7697,34806437,journal article
 7697,34806437,"research support, non-u.s. gov't"
@@ -14559,8 +14559,8 @@
 7699,32524368,multicenter study
 7699,32524368,observational study
 7700,32461446,journal article
-7701,31910731,journal article
-7702,33439464,journal article
+7701,33439464,journal article
+7702,31910731,journal article
 7703,34659126,journal article
 7703,34659126,"research support, non-u.s. gov't"
 7704,31927747,journal article
@@ -14571,10 +14571,10 @@
 7707,33136026,journal article
 7707,33136026,systematic review
 7708,32634841,journal article
-7709,32218623,journal article
+7709,32527127,journal article
 7710,33023116,journal article
 7711,32709788,journal article
-7712,32527127,journal article
+7712,32218623,journal article
 7713,33947272,journal article
 7714,32358735,journal article
 7715,32975031,journal article
@@ -14600,8 +14600,8 @@
 7726,32384426,"clinical trial, phase ii"
 7726,32384426,journal article
 7726,32384426,randomized controlled trial
-7727,32316214,journal article
-7728,32451608,journal article
+7727,32451608,journal article
+7728,32316214,journal article
 7729,34741002,case reports
 7729,34741002,journal article
 7730,33525304,case reports
@@ -14640,9 +14640,9 @@
 7747,33211758,"research support, non-u.s. gov't"
 7748,32077044,case reports
 7748,32077044,letter
-7749,32658864,journal article
-7750,32474767,journal article
-7750,32474767,multicenter study
+7749,32474767,journal article
+7749,32474767,multicenter study
+7750,32658864,journal article
 7751,32273492,case reports
 7751,32273492,journal article
 7752,32174327,journal article
@@ -16450,11 +16450,11 @@
 8781,15901626,"research support, non-u.s. gov't"
 8782,16082318,case reports
 8782,16082318,journal article
-8783,16199963,comparative study
-8783,16199963,journal article
-8783,16199963,review
-8784,16276298,journal article
-8784,16276298,review
+8783,16276298,journal article
+8783,16276298,review
+8784,16199963,comparative study
+8784,16199963,journal article
+8784,16199963,review
 8785,16187910,journal article
 8785,16187910,"research support, non-u.s. gov't"
 8785,16187910,review
@@ -16790,17 +16790,17 @@
 8939,16029132,case reports
 8939,16029132,journal article
 8940,14736524,journal article
-8941,15785239,journal article
-8942,15654642,journal article
+8941,15654642,journal article
+8942,15785239,journal article
 8943,16478704,english abstract
 8943,16478704,journal article
 8944,15545707,journal article
 8945,16122040,journal article
-8946,14722777,journal article
-8946,14722777,multicenter study
-8946,14722777,"research support, non-u.s. gov't"
-8947,15024315,journal article
-8947,15024315,"research support, non-u.s. gov't"
+8946,15024315,journal article
+8946,15024315,"research support, non-u.s. gov't"
+8947,14722777,journal article
+8947,14722777,multicenter study
+8947,14722777,"research support, non-u.s. gov't"
 8948,15521969,journal article
 8948,15521969,"research support, non-u.s. gov't"
 8949,16408653,english abstract
@@ -16897,10 +16897,10 @@
 8995,16356088,journal article
 8996,15224471,journal article
 8997,15185426,journal article
-8998,16436013,case reports
-8998,16436013,letter
-8999,16103706,case reports
-8999,16103706,journal article
+8998,16103706,case reports
+8998,16103706,journal article
+8999,16436013,case reports
+8999,16436013,letter
 9000,16457098,journal article
 9001,15817908,comparative study
 9001,15817908,journal article
@@ -19807,8 +19807,8 @@
 10394,22559902,journal article
 10395,24464009,case reports
 10395,24464009,journal article
-10396,22827602,journal article
-10397,25825304,journal article
+10396,25825304,journal article
+10397,22827602,journal article
 10398,23995003,case reports
 10398,23995003,journal article
 10399,23334146,case reports
@@ -19823,8 +19823,8 @@
 10404,23993801,journal article
 10405,23329570,clinical trial
 10405,23329570,journal article
-10406,22960778,journal article
-10407,24135192,journal article
+10406,24135192,journal article
+10407,22960778,journal article
 10408,22419189,case reports
 10408,22419189,journal article
 10409,24709784,journal article
@@ -19935,8 +19935,8 @@
 10462,24340959,journal article
 10463,23649532,comment
 10463,23649532,journal article
-10464,24330874,journal article
-10465,24285452,journal article
+10464,24285452,journal article
+10465,24330874,journal article
 10466,22207295,comparative study
 10466,22207295,journal article
 10466,22207295,"research support, non-u.s. gov't"
@@ -19945,12 +19945,12 @@
 10467,22751333,journal article
 10468,23013763,journal article
 10469,21435651,journal article
-10470,23027909,case reports
-10470,23027909,journal article
-10471,22449686,case reports
-10471,22449686,journal article
-10472,22310259,case reports
-10472,22310259,journal article
+10470,22449686,case reports
+10470,22449686,journal article
+10471,22310259,case reports
+10471,22310259,journal article
+10472,23027909,case reports
+10472,23027909,journal article
 10473,24429823,journal article
 10474,23846785,journal article
 10475,22108924,case reports
@@ -19967,11 +19967,11 @@
 10480,22282244,"research support, non-u.s. gov't"
 10481,23793427,journal article
 10482,23650151,letter
-10483,23860000,journal article
-10483,23860000,"research support, non-u.s. gov't"
-10484,24186589,clinical trial
-10484,24186589,journal article
-10484,24186589,"research support, non-u.s. gov't"
+10483,24186589,clinical trial
+10483,24186589,journal article
+10483,24186589,"research support, non-u.s. gov't"
+10484,23860000,journal article
+10484,23860000,"research support, non-u.s. gov't"
 10485,24167913,journal article
 10486,24327568,comparative study
 10486,24327568,journal article
@@ -19983,9 +19983,9 @@
 10489,22053869,"research support, non-u.s. gov't"
 10490,24043280,case reports
 10490,24043280,journal article
-10491,23690528,journal article
+10491,23873426,journal article
 10492,23666798,journal article
-10493,23873426,journal article
+10493,23690528,journal article
 10494,23414115,journal article
 10495,23317391,journal article
 10495,23317391,"research support, non-u.s. gov't"
@@ -19995,10 +19995,10 @@
 10497,22444735,comparative study
 10497,22444735,journal article
 10497,22444735,"research support, non-u.s. gov't"
-10498,23206325,journal article
-10498,23206325,"research support, non-u.s. gov't"
-10499,23645248,journal article
-10499,23645248,"research support, non-u.s. gov't"
+10498,23645248,journal article
+10498,23645248,"research support, non-u.s. gov't"
+10499,23206325,journal article
+10499,23206325,"research support, non-u.s. gov't"
 10500,22833451,journal article
 10500,22833451,"research support, non-u.s. gov't"
 10501,24082285,journal article
@@ -20008,17 +20008,17 @@
 10504,23435045,case reports
 10504,23435045,journal article
 10505,23679109,journal article
-10506,22696115,journal article
-10507,23304909,journal article
-10508,22543510,journal article
-10509,22434524,journal article
-10509,22434524,meta-analysis
+10506,23304909,journal article
+10507,22543510,journal article
+10508,22434524,journal article
+10508,22434524,meta-analysis
+10509,22696115,journal article
 10510,23149095,journal article
 10511,22976368,journal article
 10511,22976368,"research support, non-u.s. gov't"
-10512,22287186,comparative study
-10512,22287186,journal article
-10513,22893523,journal article
+10512,22893523,journal article
+10513,22287186,comparative study
+10513,22287186,journal article
 10514,22484994,journal article
 10515,24144816,english abstract
 10515,24144816,journal article
@@ -20055,8 +20055,8 @@
 10532,24081791,journal article
 10532,24081791,"research support, non-u.s. gov't"
 10533,23055017,journal article
-10534,23229214,journal article
-10535,22960961,journal article
+10534,22960961,journal article
+10535,23229214,journal article
 10536,22234657,journal article
 10536,22234657,multicenter study
 10537,21854403,journal article
@@ -20092,12 +20092,12 @@
 10555,22461634,letter
 10556,23436921,journal article
 10556,23436921,"research support, non-u.s. gov't"
-10557,22228488,case reports
-10557,22228488,journal article
-10558,24295859,case reports
-10558,24295859,journal article
-10559,23164317,case reports
-10559,23164317,journal article
+10557,23164317,case reports
+10557,23164317,journal article
+10558,22228488,case reports
+10558,22228488,journal article
+10559,24295859,case reports
+10559,24295859,journal article
 10560,21889178,case reports
 10560,21889178,journal article
 10561,22473756,clinical trial
@@ -20106,10 +20106,10 @@
 10562,22977269,journal article
 10563,22349787,english abstract
 10563,22349787,journal article
-10564,23878293,case reports
-10564,23878293,journal article
-10565,23405871,case reports
-10565,23405871,journal article
+10564,23405871,case reports
+10564,23405871,journal article
+10565,23878293,case reports
+10565,23878293,journal article
 10566,23485550,journal article
 10566,23485550,"research support, non-u.s. gov't"
 10567,23795896,case reports
@@ -20227,19 +20227,19 @@
 10621,23512414,journal article
 10622,22413111,journal article
 10623,22420618,journal article
-10624,23395200,journal article
-10625,23721189,journal article
+10624,23721189,journal article
+10625,23395200,journal article
 10626,23290802,english abstract
 10626,23290802,journal article
 10626,23290802,"research support, non-u.s. gov't"
 10627,23250509,case reports
 10627,23250509,journal article
 10628,24376294,journal article
-10629,24203649,journal article
-10630,22314228,journal article
-10631,24330888,journal article
-10632,23437028,comment
-10632,23437028,letter
+10629,22314228,journal article
+10630,24203649,journal article
+10631,23437028,comment
+10631,23437028,letter
+10632,24330888,journal article
 10633,22763296,comparative study
 10633,22763296,journal article
 10634,23320593,case reports
@@ -20249,11 +20249,11 @@
 10636,23285769,case reports
 10636,23285769,english abstract
 10636,23285769,journal article
-10637,23437029,comment
-10637,23437029,letter
-10638,23450451,biography
-10638,23450451,historical article
-10638,23450451,journal article
+10637,23450451,biography
+10637,23450451,historical article
+10637,23450451,journal article
+10638,23437029,comment
+10638,23437029,letter
 10639,24346408,comment
 10639,24346408,letter
 10640,22816208,journal article
@@ -20283,10 +20283,10 @@
 10652,23297512,english abstract
 10652,23297512,journal article
 10653,23388537,journal article
-10654,24040657,comment
-10654,24040657,letter
-10655,23437031,comment
-10655,23437031,letter
+10654,23437031,comment
+10654,23437031,letter
+10655,24040657,comment
+10655,24040657,letter
 10656,24281434,comment
 10656,24281434,letter
 10657,22763653,case reports
@@ -20344,10 +20344,10 @@
 10686,22184631,letter
 10687,22496035,case reports
 10687,22496035,journal article
-10688,23437026,comment
-10688,23437026,letter
-10689,23494085,comment
-10689,23494085,letter
+10688,23494085,comment
+10688,23494085,letter
+10689,23437026,comment
+10689,23437026,letter
 10690,24592769,comment
 10690,24592769,letter
 10691,23033568,english abstract
@@ -27973,12 +27973,12 @@
 14532,17785165,letter
 14533,17274755,case reports
 14533,17274755,journal article
-14534,17642437,english abstract
-14534,17642437,journal article
-14534,17642437,review
-14535,17947947,english abstract
-14535,17947947,journal article
-14535,17947947,review
+14534,17947947,english abstract
+14534,17947947,journal article
+14534,17947947,review
+14535,17642437,english abstract
+14535,17642437,journal article
+14535,17642437,review
 14536,17704020,journal article
 14537,16971728,comment
 14537,16971728,letter
@@ -28031,10 +28031,10 @@
 14558,18666468,randomized controlled trial
 14559,17005891,case reports
 14559,17005891,journal article
-14560,16776143,journal article
-14560,16776143,review
-14561,16776151,journal article
-14561,16776151,review
+14560,16776151,journal article
+14560,16776151,review
+14561,16776143,journal article
+14561,16776143,review
 14562,17709907,journal article
 14563,17368294,journal article
 14564,16913090,english abstract
@@ -28305,8 +28305,8 @@
 14693,17028474,journal article
 14694,17044431,journal article
 14695,17595819,journal article
-14696,17199694,journal article
-14697,16681541,journal article
+14696,16681541,journal article
+14697,17199694,journal article
 14698,16848110,journal article
 14698,16848110,"research support, non-u.s. gov't"
 14699,17209470,journal article
@@ -28436,13 +28436,13 @@
 14765,17199444,case reports
 14765,17199444,journal article
 14766,17256098,journal article
-14767,16452537,clinical trial
-14767,16452537,journal article
-14767,16452537,"research support, non-u.s. gov't"
-14768,16728575,journal article
-14768,16728575,"research support, non-u.s. gov't"
-14769,16418208,journal article
-14769,16418208,"research support, non-u.s. gov't"
+14767,16728575,journal article
+14767,16728575,"research support, non-u.s. gov't"
+14768,16418208,journal article
+14768,16418208,"research support, non-u.s. gov't"
+14769,16452537,clinical trial
+14769,16452537,journal article
+14769,16452537,"research support, non-u.s. gov't"
 14770,17703499,journal article
 14771,17497074,journal article
 14772,18039499,journal article
@@ -28462,12 +28462,12 @@
 14781,16415416,journal article
 14781,16415416,multicenter study
 14782,17359557,journal article
-14783,16400058,journal article
-14783,16400058,randomized controlled trial
-14783,16400058,"research support, non-u.s. gov't"
-14784,16804521,comparative study
-14784,16804521,journal article
-14784,16804521,"research support, non-u.s. gov't"
+14783,16804521,comparative study
+14783,16804521,journal article
+14783,16804521,"research support, non-u.s. gov't"
+14784,16400058,journal article
+14784,16400058,randomized controlled trial
+14784,16400058,"research support, non-u.s. gov't"
 14785,16720658,journal article
 14785,16720658,"research support, non-u.s. gov't"
 14786,17188157,journal article
@@ -28481,10 +28481,10 @@
 14790,16868134,journal article
 14791,16641399,case reports
 14791,16641399,journal article
-14792,18042536,journal article
-14792,18042536,"research support, non-u.s. gov't"
-14793,17547546,journal article
-14793,17547546,"research support, non-u.s. gov't"
+14792,17547546,journal article
+14792,17547546,"research support, non-u.s. gov't"
+14793,18042536,journal article
+14793,18042536,"research support, non-u.s. gov't"
 14794,16434760,case reports
 14794,16434760,journal article
 14795,17118838,journal article
@@ -28551,8 +28551,8 @@
 14826,16409317,letter
 14827,16487021,case reports
 14827,16487021,journal article
-14828,17956161,journal article
-14829,18087865,journal article
+14828,18087865,journal article
+14829,17956161,journal article
 14830,17996043,journal article
 14830,17996043,"research support, non-u.s. gov't"
 14831,16684826,case reports
@@ -28695,8 +28695,8 @@
 14902,17327628,english abstract
 14902,17327628,journal article
 14902,17327628,randomized controlled trial
-14903,17199448,letter
-14904,16669286,news
+14903,16669286,news
+14904,17199448,letter
 14905,16932282,journal article
 14906,16859877,letter
 14907,17111926,comparative study
@@ -28743,8 +28743,8 @@
 14926,18158890,letter
 14927,17647147,case reports
 14927,17647147,journal article
-14928,16761864,journal article
-14929,16634188,journal article
+14928,16634188,journal article
+14929,16761864,journal article
 14930,17455883,case reports
 14930,17455883,journal article
 14931,17717506,case reports
@@ -28778,10 +28778,10 @@
 14944,17918333,lecture
 14945,17520843,case reports
 14945,17520843,journal article
-14946,17199446,case reports
-14946,17199446,journal article
-14947,16841010,case reports
-14947,16841010,journal article
+14946,16841010,case reports
+14946,16841010,journal article
+14947,17199446,case reports
+14947,17199446,journal article
 14948,16711206,comparative study
 14948,16711206,journal article
 14949,19244736,english abstract
@@ -29554,10 +29554,10 @@
 15322,16524115,journal article
 15323,17017437,journal article
 15323,17017437,validation study
-15324,17364495,journal article
-15324,17364495,"research support, non-u.s. gov't"
-15325,18048993,case reports
-15325,18048993,journal article
+15324,18048993,case reports
+15324,18048993,journal article
+15325,17364495,journal article
+15325,17364495,"research support, non-u.s. gov't"
 15326,17198352,journal article
 15326,17198352,"research support, non-u.s. gov't"
 15327,17526951,journal article

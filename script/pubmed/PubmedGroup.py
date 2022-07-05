@@ -135,7 +135,7 @@ class PubmedGroup:
         self.dataframes["pubmedArticles"] = self.dataframes["pubmedArticles"][["PMID", "PII", "DOI", "Title",
                                                                                "Publication_date", "Entrez_date", "Place_of_publication",
                                                                                "Full_journal", "Investigator", "Abstract", "Mesh_terms", "Other_terms",
-                                                                               "Chemical"]]
+                                                                               "Chemical", "Condition"]]
         # dataframe = self.dataframes["pubmedArticles"]
         # dataframe = dataframe[~dataframe.PMID.isin(self.dataframes["Condition"].PMID)]
         # self.dataframes["pubmedArticles"] = dataframe

@@ -532,11 +532,11 @@
 1686,29721730,medical diagnosis
 1686,29721730,painting
 1686,29721730,raphael
-1687,28450378,*decompression
-1687,28450378,*diplopia
-1687,28450378,*graves ophthalmopathy
-1687,28450378,*orbital fat
-1687,28450378,*proptosis cois
+1688,28450378,*decompression
+1688,28450378,*diplopia
+1688,28450378,*graves ophthalmopathy
+1688,28450378,*orbital fat
+1688,28450378,*proptosis cois
 1689,30949910,*biomarker
 1689,30949910,*graves’ disease
 1689,30949910,*microrna
@@ -685,17 +685,17 @@
 1734,31408196,*genetic counselling
 1734,31408196,*multinodular goitre
 1734,31408196,*thyroid pathologies
-1740,31155292,*crispr/cas9
-1740,31155292,*hearing loss
-1740,31155292,*mouse model
-1740,31155292,*pendred syndrome
-1740,31155292,*slc26a4
-1740,31155292,*vestibular dysfunction
-1741,30537006,*graves' disease
-1741,30537006,*rln injury
-1741,30537006,*complications
-1741,30537006,*hypoparathyroidism
-1741,30537006,*thyroidectomy
+1740,30537006,*graves' disease
+1740,30537006,*rln injury
+1740,30537006,*complications
+1740,30537006,*hypoparathyroidism
+1740,30537006,*thyroidectomy
+1741,31155292,*crispr/cas9
+1741,31155292,*hearing loss
+1741,31155292,*mouse model
+1741,31155292,*pendred syndrome
+1741,31155292,*slc26a4
+1741,31155292,*vestibular dysfunction
 1744,31377715,"ear, nose and throat/otolaryngology"
 1744,31377715,hyperthyroidism
 1744,31377715,otolaryngology/ent
@@ -777,16 +777,16 @@
 1772,31217394,adenovirus
 1772,31217394,graves disease
 1772,31217394,model
-1774,30173328,*cognitive function
-1774,30173328,*graves’ disease
-1774,30173328,*graves’ ophthalmopathy
-1774,30173328,*hyperthyroidism
-1774,30173328,*quality of life
-1775,30688164,*graves' disease
-1775,30688164,*graves' ophthalmopathy
-1775,30688164,*graves' orbitopathy
-1775,30688164,*patient knowledge
-1775,30688164,*thyroid eye disease
+1774,30688164,*graves' disease
+1774,30688164,*graves' ophthalmopathy
+1774,30688164,*graves' orbitopathy
+1774,30688164,*patient knowledge
+1774,30688164,*thyroid eye disease
+1775,30173328,*cognitive function
+1775,30173328,*graves’ disease
+1775,30173328,*graves’ ophthalmopathy
+1775,30173328,*hyperthyroidism
+1775,30173328,*quality of life
 1776,30924917,*cancer
 1776,30924917,*inflammation
 1776,30924917,*neutrophil to lymphocyte ratio
@@ -852,17 +852,17 @@
 1790,30339291,*dysthyroid optic neuropathy
 1790,30339291,*orbital decompression
 1790,30339291,*sight-threatening graves’ orbitopathy
-1792,31655515,*lymphocyte
-1792,31655515,*monocyte
-1792,31655515,*neutrophil
-1792,31655515,*platelet
-1792,31655515,*ratio
-1792,31655515,*thyrotoxicosis cois
-1793,30760283,*myotonic dystrophy
-1793,30760283,*papillary thyroid carcinoma
-1793,30760283,*thyroid goiter
-1793,30760283,*thyroid nodule
-1793,30760283,"*ultrasound scan cois person (cpp), iorg 0009553 – institutional review board for the university hospital of lille. ethical committee under number: hp 1821 (benhamou_ethics_ojrd.pdf). consent for publication: na competing interests: the authors declare that they have no competing interests. publisher’s note: springer nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations."
+1792,30760283,*myotonic dystrophy
+1792,30760283,*papillary thyroid carcinoma
+1792,30760283,*thyroid goiter
+1792,30760283,*thyroid nodule
+1792,30760283,"*ultrasound scan cois person (cpp), iorg 0009553 – institutional review board for the university hospital of lille. ethical committee under number: hp 1821 (benhamou_ethics_ojrd.pdf). consent for publication: na competing interests: the authors declare that they have no competing interests. publisher’s note: springer nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations."
+1793,31655515,*lymphocyte
+1793,31655515,*monocyte
+1793,31655515,*neutrophil
+1793,31655515,*platelet
+1793,31655515,*ratio
+1793,31655515,*thyrotoxicosis cois
 1794,31323889,goiter
 1794,31323889,hypothyroidism
 1794,31323889,iodine deficiency
@@ -961,17 +961,17 @@
 1830,29759035,*goiter
 1830,29759035,*novel mutation
 1830,29759035,*sodium–iodide symporter cois
-1831,29332250,dysfunctional tear syndrome
-1831,29332250,hyperthyroidism
-1831,29332250,ocular surface inflammation
-1831,29332250,tear cytokines
-1831,29332250,thyroid-associated orbitopathy
-1832,30135996,graves’ disease
-1832,30135996,lipidomic analysis
-1832,30135996,ophthalmopathy
-1832,30135996,plasma
-1832,30135996,urine
-1832,30135996,nuplc-esi-ms/ms
+1831,30135996,graves’ disease
+1831,30135996,lipidomic analysis
+1831,30135996,ophthalmopathy
+1831,30135996,plasma
+1831,30135996,urine
+1831,30135996,nuplc-esi-ms/ms
+1832,29332250,dysfunctional tear syndrome
+1832,29332250,hyperthyroidism
+1832,29332250,ocular surface inflammation
+1832,29332250,tear cytokines
+1832,29332250,thyroid-associated orbitopathy
 1837,30696398,*acute airway obstruction
 1837,30696398,*goitre
 1837,30696398,*pregnancy
@@ -999,46 +999,46 @@
 1844,31201593,steroids
 1845,31237847,intraocular pressure
 1845,31237847,thyroid-associated orbitopathy
-1848,30217613,basedow
-1848,30217613,graves
-1848,30217613,quality of life
-1848,30217613,qualité de vie
-1848,30217613,questionnaire
-1848,30217613,strabisme
-1848,30217613,strabismus
-1848,30217613,thyroid
-1848,30217613,thyroïde
-1849,30217607,chirurgie de strabisme
-1849,30217607,diplopia
-1849,30217607,diplopie
-1849,30217607,dysthyroid orbitopathy
-1849,30217607,graves’ disease
-1849,30217607,maladie de basedow
-1849,30217607,orbitopathie dysthyroïdienne
-1849,30217607,strabismus surgery
-1852,31023276,bioassay
-1852,31023276,graves’ disease
-1852,31023276,trab
-1852,31023276,"thyroid cois involving human participants were in accordance with the ethical standards of the institutional and/or national research committee and with the 1964 helsinki declaration and its later amendments or comparable ethical standards. the study protocol was approved by the local ethics committee (ethikkommission nordwest und zentralschweiz (eknz) project no. 2015/227). need for informed consent was waived by the local ethics committee due retrospective nature of analysis with no impact on health outcome. consent for publication: not applicable. competing interests: bm and ps received research support by thermo fisher scientific, roche diagnostics, abbott and siemens unrelated to this study. all authors confirm that they do not have a conflict of interest associated with this manuscript. publisher’s note: springer nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations."
-1853,30132285,autoimmune thyroiditis
-1853,30132285,graves’ disease
-1853,30132285,graves’ ophthalmopathy
-1853,30132285,graves’ orbitopathy
-1853,30132285,insulin-like growth factor-1 receptor
-1853,30132285,thyroid
-1853,30132285,thyroid autoimmunity
-1853,30132285,thyroid eye disease
-1854,31641884,computed tomography
-1854,31641884,deep lateral orbital wall decompression
-1854,31641884,fat removal
-1854,31641884,graves’ orbitopathy
-1854,31641884,prediction
-1854,31641884,the greater wing of the sphenoid
-1855,30862763,graves’ disease
-1855,30862763,children
-1855,30862763,long-term outcome
-1855,30862763,methimazole treatment
-1855,30862763,remission
+1849,30217613,basedow
+1849,30217613,graves
+1849,30217613,quality of life
+1849,30217613,qualité de vie
+1849,30217613,questionnaire
+1849,30217613,strabisme
+1849,30217613,strabismus
+1849,30217613,thyroid
+1849,30217613,thyroïde
+1850,30217607,chirurgie de strabisme
+1850,30217607,diplopia
+1850,30217607,diplopie
+1850,30217607,dysthyroid orbitopathy
+1850,30217607,graves’ disease
+1850,30217607,maladie de basedow
+1850,30217607,orbitopathie dysthyroïdienne
+1850,30217607,strabismus surgery
+1852,31641884,computed tomography
+1852,31641884,deep lateral orbital wall decompression
+1852,31641884,fat removal
+1852,31641884,graves’ orbitopathy
+1852,31641884,prediction
+1852,31641884,the greater wing of the sphenoid
+1853,30862763,graves’ disease
+1853,30862763,children
+1853,30862763,long-term outcome
+1853,30862763,methimazole treatment
+1853,30862763,remission
+1854,31023276,bioassay
+1854,31023276,graves’ disease
+1854,31023276,trab
+1854,31023276,"thyroid cois involving human participants were in accordance with the ethical standards of the institutional and/or national research committee and with the 1964 helsinki declaration and its later amendments or comparable ethical standards. the study protocol was approved by the local ethics committee (ethikkommission nordwest und zentralschweiz (eknz) project no. 2015/227). need for informed consent was waived by the local ethics committee due retrospective nature of analysis with no impact on health outcome. consent for publication: not applicable. competing interests: bm and ps received research support by thermo fisher scientific, roche diagnostics, abbott and siemens unrelated to this study. all authors confirm that they do not have a conflict of interest associated with this manuscript. publisher’s note: springer nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations."
+1855,30132285,autoimmune thyroiditis
+1855,30132285,graves’ disease
+1855,30132285,graves’ ophthalmopathy
+1855,30132285,graves’ orbitopathy
+1855,30132285,insulin-like growth factor-1 receptor
+1855,30132285,thyroid
+1855,30132285,thyroid autoimmunity
+1855,30132285,thyroid eye disease
 1856,31340806,bleeding
 1856,31340806,hematoma
 1856,31340806,risk factor
@@ -1196,11 +1196,11 @@
 1909,30392997,paratohormona
 1909,30392997,thyroidectomy
 1909,30392997,tiroidectomía
-1911,31677639,*goiter
-1911,31677639,*salt iodine concentration
-1911,31677639,*shanghai
-1911,31677639,*thyroid volume
-1911,31677639,*urinary iodine concentration cois
+1910,31677639,*goiter
+1910,31677639,*salt iodine concentration
+1910,31677639,*shanghai
+1910,31677639,*thyroid volume
+1910,31677639,*urinary iodine concentration cois
 1912,31860407,*graves'
 1912,31860407,"*disease, graves'"
 1912,31860407,"*orbitopathy, radioiodine, glucocorticoids, tsh receptor antibodies"
@@ -1219,16 +1219,16 @@
 1917,30890403,mir-181b
 1917,30890403,mir-214
 1917,30890403,mir-222
-1920,31691654,mechanical high-speed bone removal
-1920,31691654,orbital bone decompression
-1920,31691654,osteodestruction
-1920,31691654,scanning electron microscopy
-1920,31691654,thyroid eye disease
-1920,31691654,ultrasonic bone removal
-1921,30593716,blinking
-1921,30593716,dry eye
-1921,30593716,meibomian gland dysfunction
-1921,30593716,thyroid eye disease
+1920,30593716,blinking
+1920,30593716,dry eye
+1920,30593716,meibomian gland dysfunction
+1920,30593716,thyroid eye disease
+1921,31691654,mechanical high-speed bone removal
+1921,31691654,orbital bone decompression
+1921,31691654,osteodestruction
+1921,31691654,scanning electron microscopy
+1921,31691654,thyroid eye disease
+1921,31691654,ultrasonic bone removal
 1922,30577987,thyroid surgery
 1922,30577987,transcutaneous laryngeal ultrasound
 1922,30577987,vocal cord mobility
@@ -1316,15 +1316,15 @@
 1944,28656526,ophthalmopathy
 1944,28656526,orbitopathy
 1944,28656526,vitamin c
-1945,29983514,goitre
-1945,29983514,difficult intubation
-1945,29983514,modified intubation difficulty score
-1945,29983514,predictive factors
-1945,29983514,thyroidectomy
-1946,29026936,*eyelid retraction
-1946,29026936,*graves’ orbitopathy
-1946,29026936,*lid surgery
-1946,29026936,*upper eyelid retraction
+1945,29026936,*eyelid retraction
+1945,29026936,*graves’ orbitopathy
+1945,29026936,*lid surgery
+1945,29026936,*upper eyelid retraction
+1946,29983514,goitre
+1946,29983514,difficult intubation
+1946,29983514,modified intubation difficulty score
+1946,29983514,predictive factors
+1946,29983514,thyroidectomy
 1947,30572375,cohort study
 1947,30572375,school-aged children
 1947,30572375,thyroid
@@ -4567,52 +4567,52 @@
 2925,35422184,optic neuropathy
 2925,35422184,peripheral ulcerative keratitis
 2925,35422184,tocilizumab
-2927,33908335,graves disease
-2927,33908335,antithyroid agents
-2927,33908335,hemodynamics
-2927,33908335,hyperthyroidism
-2927,33908335,thyroidectomy
-2927,33908335,thyrotropin
-2928,35287535,*graves’ disease
-2928,35287535,*graves’ orbitopathy
-2928,35287535,*k1-70
-2928,35287535,*antithyroid drugs
-2928,35287535,*hyperthyroidism
-2928,35287535,*iscalimab
-2928,35287535,*methimazole
-2928,35287535,*propylthiouracil
-2928,35287535,*radioactive iodine
-2928,35287535,*rituximab
-2928,35287535,*thyroidectomy
-2928,35287535,*thyrotropin receptor
-2929,34487995,diplopia
-2929,34487995,endoscopic
-2929,34487995,eye
-2929,34487995,graves'
-2929,34487995,oculoplastic
-2929,34487995,orbital decompression
-2929,34487995,proptosis
-2929,34487995,revision
-2929,34487995,rhinology
-2929,34487995,sinus
-2929,34487995,thyroid
-2930,33775197,entropion
-2930,33775197,eyelid retraction
-2930,33775197,orbital decompression
-2930,33775197,thyroid eye disease
-2930,33775197,ultrasound biomicroscopy
+2927,35287535,*graves’ disease
+2927,35287535,*graves’ orbitopathy
+2927,35287535,*k1-70
+2927,35287535,*antithyroid drugs
+2927,35287535,*hyperthyroidism
+2927,35287535,*iscalimab
+2927,35287535,*methimazole
+2927,35287535,*propylthiouracil
+2927,35287535,*radioactive iodine
+2927,35287535,*rituximab
+2927,35287535,*thyroidectomy
+2927,35287535,*thyrotropin receptor
+2928,33908335,graves disease
+2928,33908335,antithyroid agents
+2928,33908335,hemodynamics
+2928,33908335,hyperthyroidism
+2928,33908335,thyroidectomy
+2928,33908335,thyrotropin
+2929,33775197,entropion
+2929,33775197,eyelid retraction
+2929,33775197,orbital decompression
+2929,33775197,thyroid eye disease
+2929,33775197,ultrasound biomicroscopy
+2930,34487995,diplopia
+2930,34487995,endoscopic
+2930,34487995,eye
+2930,34487995,graves'
+2930,34487995,oculoplastic
+2930,34487995,orbital decompression
+2930,34487995,proptosis
+2930,34487995,revision
+2930,34487995,rhinology
+2930,34487995,sinus
+2930,34487995,thyroid
 2931,34954838,graves' disease
 2931,34954838,head and neck
 2931,34954838,hyperthyroidism
 2931,34954838,surgery
-2933,34663089,*graves'
-2933,34663089,*disease
-2933,34663089,*patient-reported outcomes
-2933,34663089,*quality of life
-2933,34663089,*thyroidectomy cois
-2934,35534869,*autoimmune thyroid disease
-2934,35534869,*human leucocyte antigen
-2934,35534869,*relapsing polychondritis cois
+2932,34663089,*graves'
+2932,34663089,*disease
+2932,34663089,*patient-reported outcomes
+2932,34663089,*quality of life
+2932,34663089,*thyroidectomy cois
+2933,35534869,*autoimmune thyroid disease
+2933,35534869,*human leucocyte antigen
+2933,35534869,*relapsing polychondritis cois
 2935,35315985,graves' ophthalmopathy
 2935,35315985,proptosis
 2935,35315985,thiol-disulfide
@@ -4701,19 +4701,19 @@
 2959,35039921,parathyroid adenoma
 2959,35039921,parathyroid cancer
 2959,35039921,parathyroid neoplasms
-2960,34515780,graves’ disease
-2960,34515780,juvenile dermatomyositis
-2960,34515780,anti-melanoma differentiation antigen 5
-2960,34515780,soluble interleukin-2 receptor
-2961,34250837,choroidal vascularity
-2961,34250837,graves’ disease
-2961,34250837,binarization
-2961,34250837,choroidal thickness
-2961,34250837,thyroid
-2962,33884704,graves' disease
-2962,33884704,tsh receptor antibody
-2962,33884704,antithyroid drug
-2962,33884704,remission
+2960,34250837,choroidal vascularity
+2960,34250837,graves’ disease
+2960,34250837,binarization
+2960,34250837,choroidal thickness
+2960,34250837,thyroid
+2961,33884704,graves' disease
+2961,33884704,tsh receptor antibody
+2961,33884704,antithyroid drug
+2961,33884704,remission
+2962,34515780,graves’ disease
+2962,34515780,juvenile dermatomyositis
+2962,34515780,anti-melanoma differentiation antigen 5
+2962,34515780,soluble interleukin-2 receptor
 2963,34642808,dysthyroid optic neuropathy
 2963,34642808,graves orbitopathy
 2963,34642808,magnetic resonance imaging
@@ -4825,16 +4825,16 @@
 2997,35614367,graves ophthalmopathy (go)
 2997,35614367,teprotumumab
 2997,35614367,thyroid eye disease (ted)
-2998,33865565,graves’ disease
-2998,33865565,iodine therapy
-2998,33865565,meta-analysis
-2998,33865565,radioactive iodine
-2998,33865565,thyroid diseases
-2999,35182078,c-reactive protein
-2999,35182078,graves' disease
-2999,35182078,hashimoto's thyroiditis
-2999,35182078,interleukin-39
-2999,35182078,white blood cell cois
+2998,35182078,c-reactive protein
+2998,35182078,graves' disease
+2998,35182078,hashimoto's thyroiditis
+2998,35182078,interleukin-39
+2998,35182078,white blood cell cois
+2999,33865565,graves’ disease
+2999,33865565,iodine therapy
+2999,33865565,meta-analysis
+2999,33865565,radioactive iodine
+2999,33865565,thyroid diseases
 3000,34347269,*antiquity
 3000,34347269,*endocrinology
 3000,34347269,*etruscan
@@ -4853,27 +4853,27 @@
 3002,34487739,*orbital fibroblast
 3002,34487739,*teprotumumab
 3002,34487739,"*therapeutics, targeted therapy cois"
-3003,33059514,epiblepharon
-3003,33059514,singapore
-3003,33059514,graves’ ophthalmopathy
-3003,33059514,pediatric
-3003,33059514,thyroid eye disease
-3004,35432203,*22q11.2 deletion syndrome
-3004,35432203,*digeorge syndrome
-3004,35432203,*growth disorders
-3004,35432203,*hypoparathyroidism
-3004,35432203,*thyroid disorders cois commercial or financial relationships that could be construed as a potential conflict of interest.
-3006,35628410,smad
-3006,35628410,tgfβ
-3006,35628410,adipogenesis
-3006,35628410,hpmscs
-3006,35628410,thyroid disease
-3006,35628410,thyroid-associated ophthalmopathy cois
-3007,35528009,hashimoto thyroiditis
-3007,35528009,anti-parietal cell antibodies
-3007,35528009,gastric malignancies
-3007,35528009,organ-specific autoimmunity
-3007,35528009,systemic autoimmunity cois commercial or financial relationships that could be construed as a potential conflict of interest.
+3003,35432203,*22q11.2 deletion syndrome
+3003,35432203,*digeorge syndrome
+3003,35432203,*growth disorders
+3003,35432203,*hypoparathyroidism
+3003,35432203,*thyroid disorders cois commercial or financial relationships that could be construed as a potential conflict of interest.
+3005,33059514,epiblepharon
+3005,33059514,singapore
+3005,33059514,graves’ ophthalmopathy
+3005,33059514,pediatric
+3005,33059514,thyroid eye disease
+3006,35528009,hashimoto thyroiditis
+3006,35528009,anti-parietal cell antibodies
+3006,35528009,gastric malignancies
+3006,35528009,organ-specific autoimmunity
+3006,35528009,systemic autoimmunity cois commercial or financial relationships that could be construed as a potential conflict of interest.
+3007,35628410,smad
+3007,35628410,tgfβ
+3007,35628410,adipogenesis
+3007,35628410,hpmscs
+3007,35628410,thyroid disease
+3007,35628410,thyroid-associated ophthalmopathy cois
 3009,33172865,*anatomy
 3009,33172865,*orbit
 3009,33172865,"*treatment medical cois ak—employer, horizon therapeutics."
@@ -4919,18 +4919,18 @@
 3025,35459655,cardiothoracic surgery
 3025,35459655,surgical oncology
 3025,35459655,thyroid disease cois
-3027,35338690,*childhood cancer survivors
-3027,35338690,*head and neck radiation
-3027,35338690,*hypoparathyroidism
-3027,35338690,*pediatric thyroidectomy
-3027,35338690,*recurrent laryngeal nerve paralysis
+3027,34799942,c-reactive protein
+3027,34799942,graves’ disease
+3027,34799942,hashimoto's thyroiditis
+3027,34799942,autoimmune thyroid disease
+3027,34799942,interleukin-38 cois
 3028,34193409,experimental and laboratory
 3028,34193409,orbit cois
-3029,34799942,c-reactive protein
-3029,34799942,graves’ disease
-3029,34799942,hashimoto's thyroiditis
-3029,34799942,autoimmune thyroid disease
-3029,34799942,interleukin-38 cois
+3029,35338690,*childhood cancer survivors
+3029,35338690,*head and neck radiation
+3029,35338690,*hypoparathyroidism
+3029,35338690,*pediatric thyroidectomy
+3029,35338690,*recurrent laryngeal nerve paralysis
 3030,34933777,b cell subsets
 3030,34933777,cd32b
 3030,34933777,graves’ disease
@@ -4969,50 +4969,50 @@
 3038,35024887,itmig classification
 3038,35024887,lymphadenopathy
 3038,35024887,thoracic radiography
+3039,32878536,ct imaging
+3039,32878536,extraocular muscle
+3039,32878536,fatty infiltration
+3039,32878536,thyroid eye disease
 3040,35381687,*antithyroid agents
 3040,35381687,*epidemiology
 3040,35381687,*graves disease
 3040,35381687,"*kidney failure, chronic cois was reported."
-3041,32878536,ct imaging
-3041,32878536,extraocular muscle
-3041,32878536,fatty infiltration
-3041,32878536,thyroid eye disease
 3042,35624535,graves’ disease
 3042,35624535,hyperthyroidism
 3042,35624535,hypercalcemia
 3042,35624535,liver damage
 3042,35624535,palpitation
 3042,35624535,vomiting cois non-financial interests to disclose.
-3043,35273577,*il-11
-3043,35273577,*clinical activity score
-3043,35273577,*fibrosis
-3043,35273577,*orbital fibroblast
-3043,35273577,*thyroid-associated ophthalmopathy cois commercial or financial relationships that could be construed as a potential conflict of interest.
-3044,34788857,*m22 (a monoclonal tsab)
-3044,34788857,*tsh receptor (tshr)
-3044,34788857,*tshr stimulating antibody (tsab)
-3044,34788857,*crosstalk
-3044,34788857,*insulin-like growth factor receptor 1 (igf1r)
-3044,34788857,*teprotumumab
-3044,34788857,*thyroid eye disease (ted)
-3045,34324163,autoimmune thyroid diseases
-3045,34324163,bioassay
-3045,34324163,disease
-3045,34324163,functional thyrotropin receptor antibodies
-3045,34324163,graves
-3045,34324163,orbitopathy
-3045,34324163,stimulatory antibodies
-3046,35429598,autoimmune thyroid diseases
-3046,35429598,high-throughput sequencing
-3046,35429598,immune repertoires
-3046,35429598,t cells receptor
-3048,35663306,erk
-3048,35663306,graves’ ophthalmopathy
-3048,35663306,stat3
-3048,35663306,dihydroartemisinin
-3048,35663306,fibrosis
-3048,35663306,inflammation
-3048,35663306,orbital fibroblast cois commercial or financial relationships that could be construed as a potential conflict of interest.
+3043,34788857,*m22 (a monoclonal tsab)
+3043,34788857,*tsh receptor (tshr)
+3043,34788857,*tshr stimulating antibody (tsab)
+3043,34788857,*crosstalk
+3043,34788857,*insulin-like growth factor receptor 1 (igf1r)
+3043,34788857,*teprotumumab
+3043,34788857,*thyroid eye disease (ted)
+3044,35273577,*il-11
+3044,35273577,*clinical activity score
+3044,35273577,*fibrosis
+3044,35273577,*orbital fibroblast
+3044,35273577,*thyroid-associated ophthalmopathy cois commercial or financial relationships that could be construed as a potential conflict of interest.
+3045,35663306,erk
+3045,35663306,graves’ ophthalmopathy
+3045,35663306,stat3
+3045,35663306,dihydroartemisinin
+3045,35663306,fibrosis
+3045,35663306,inflammation
+3045,35663306,orbital fibroblast cois commercial or financial relationships that could be construed as a potential conflict of interest.
+3046,34324163,autoimmune thyroid diseases
+3046,34324163,bioassay
+3046,34324163,disease
+3046,34324163,functional thyrotropin receptor antibodies
+3046,34324163,graves
+3046,34324163,orbitopathy
+3046,34324163,stimulatory antibodies
+3047,35429598,autoimmune thyroid diseases
+3047,35429598,high-throughput sequencing
+3047,35429598,immune repertoires
+3047,35429598,t cells receptor
 3049,35018442,*individual participant data
 3049,35018442,*meta-analysis
 3049,35018442,*muscle strength
@@ -5022,19 +5022,19 @@
 3050,35119800,severe cutaneous adverse drug reactions (scars)
 3050,35119800,thyroid dysfunction
 3050,35119800,thyroiditis
-3051,35610583,bayesian method
-3051,35610583,graves’ disease data
-3051,35610583,minnesota center for twin and family research data
-3051,35610583,penalized fieller’s method
-3051,35610583,skewed x chromosome inactivation cois
-3052,35184917,*decompression surgery
-3052,35184917,*endocrine orbitopathy
-3052,35184917,*fully digital analysis
-3052,35184917,*navigated surgery
-3053,35244288,99mtechnetium uptake
-3053,35244288,grave's disease
-3053,35244288,trab
-3053,35244288,nonuniform uptake
+3051,35244288,99mtechnetium uptake
+3051,35244288,grave's disease
+3051,35244288,trab
+3051,35244288,nonuniform uptake
+3052,35610583,bayesian method
+3052,35610583,graves’ disease data
+3052,35610583,minnesota center for twin and family research data
+3052,35610583,penalized fieller’s method
+3052,35610583,skewed x chromosome inactivation cois
+3053,35184917,*decompression surgery
+3053,35184917,*endocrine orbitopathy
+3053,35184917,*fully digital analysis
+3053,35184917,*navigated surgery
 3054,35066781,*blood markers
 3054,35066781,*clinical biomarkers
 3054,35066781,*graves’ ophthalmopathy
@@ -5087,20 +5087,20 @@
 3063,35241008,*polycystic kidney disease
 3063,35241008,*thyroid nodules
 3063,35241008,*ultrasonography cois commercial or financial relationships that could be construed as a potential conflict of interest.
-3064,35615718,graves’ disease
-3064,35615718,graves’ orbitopathy
-3064,35615718,antithymocyte globulin
-3064,35615718,proptosis
-3064,35615718,thyroid eye disease cois commercial or financial relationships that could be construed as a potential conflict of interest.
-3065,35300630,intraocular pressure
-3065,35300630,strabismus
-3065,35300630,surgery
-3065,35300630,thyroid eye disease cois
-3066,34549377,extra-cellular volume fraction
-3066,34549377,extraocular muscle
-3066,34549377,fibrosis
-3066,34549377,t1 mapping
-3066,34549377,thyroid-associated ophthalmopathy
+3064,35300630,intraocular pressure
+3064,35300630,strabismus
+3064,35300630,surgery
+3064,35300630,thyroid eye disease cois
+3065,34549377,extra-cellular volume fraction
+3065,34549377,extraocular muscle
+3065,34549377,fibrosis
+3065,34549377,t1 mapping
+3065,34549377,thyroid-associated ophthalmopathy
+3067,35615718,graves’ disease
+3067,35615718,graves’ orbitopathy
+3067,35615718,antithymocyte globulin
+3067,35615718,proptosis
+3067,35615718,thyroid eye disease cois commercial or financial relationships that could be construed as a potential conflict of interest.
 3068,34532987,graves’ eye disease
 3068,34532987,graves’ ophthalmopathy
 3068,34532987,graves’ orbitopathy
@@ -5114,22 +5114,22 @@
 3069,35565939,neonate
 3069,35565939,thyroid volume
 3069,35565939,ultrasound cois
-3070,34988642,benign goitre
-3070,34988642,quality of life
-3070,34988642,thypro 39 questionnaire
-3070,34988642,thyroidectomy
-3071,35508893,graves' disease
-3071,35508893,dosimetry
-3071,35508893,hyperthyroidism
-3071,35508893,multinodular goitre
-3071,35508893,radioiodine
-3071,35508893,theranostics
-3071,35508893,toxic adenoma
-3072,33103521,graves’ disease
-3072,33103521,hashimoto’s thyroiditis
-3072,33103521,autoimmune thyroid diseases
-3072,33103521,polymorphism
-3072,33103521,protein tyrosine phosphatase nonreceptor 22
+3070,33103521,graves’ disease
+3070,33103521,hashimoto’s thyroiditis
+3070,33103521,autoimmune thyroid diseases
+3070,33103521,polymorphism
+3070,33103521,protein tyrosine phosphatase nonreceptor 22
+3071,34988642,benign goitre
+3071,34988642,quality of life
+3071,34988642,thypro 39 questionnaire
+3071,34988642,thyroidectomy
+3072,35508893,graves' disease
+3072,35508893,dosimetry
+3072,35508893,hyperthyroidism
+3072,35508893,multinodular goitre
+3072,35508893,radioiodine
+3072,35508893,theranostics
+3072,35508893,toxic adenoma
 3073,34850456,autoimmune thyroid disease
 3073,34850456,interference
 3073,34850456,nonthyroid autoimmune diseases
@@ -5144,16 +5144,16 @@
 3076,33390059,orbital decompression
 3076,33390059,thyroid-associated orbitopathy
 3076,33390059,vertical diplopia
-3077,34871593,*autoimmune thyroid disease
-3077,34871593,*homogeneous camp biosensor
-3077,34871593,*thyroid blocking immunoglobulins or antibodies
-3077,34871593,*thyroid stimulating immunoglobulins or antibodies
-3077,34871593,*thyroid-stimulating hormone receptor
-3078,35386700,*cd11c+ b cells
-3078,35386700,*cxcr3-cxcl10
-3078,35386700,*graves’ disease
-3078,35386700,*trab
-3078,35386700,*cytokines cois commercial or financial relationships that could be construed as a potential conflict of interest.
+3078,34871593,*autoimmune thyroid disease
+3078,34871593,*homogeneous camp biosensor
+3078,34871593,*thyroid blocking immunoglobulins or antibodies
+3078,34871593,*thyroid stimulating immunoglobulins or antibodies
+3078,34871593,*thyroid-stimulating hormone receptor
+3079,35386700,*cd11c+ b cells
+3079,35386700,*cxcr3-cxcl10
+3079,35386700,*graves’ disease
+3079,35386700,*trab
+3079,35386700,*cytokines cois commercial or financial relationships that could be construed as a potential conflict of interest.
 3080,34605662,*graves'
 3080,34605662,*adipogenesis
 3080,34605662,*antifibrotic
@@ -5192,31 +5192,31 @@
 3094,35402292,*th17 & treg axis
 3094,35402292,*intestinal flora
 3094,35402292,*short chain fatty acids cois commercial or financial relationships that could be construed as a potential conflict of interest.
-3096,35187713,elisa
-3096,35187713,graves’ disease
-3096,35187713,tsh-receptor antibody
-3096,35187713,diagnostic performance
-3096,35187713,dot blot assay cois
-3097,34778997,*hirata disease
-3097,34778997,*human leukocyte antigen
-3097,34778997,*hyperinsulinaemic hypoglycaemia
-3097,34778997,*insulin autoantibody
-3097,34778997,*insulin autoimmune syndrome
-3097,34778997,*sulfhydryl group
+3096,34489313,*cardiomyopathies
+3096,34489313,*diastolic
+3096,34489313,*heart failure
+3096,34489313,*systolic cois
+3097,34060342,graves’ disease
+3097,34060342,hematoma
+3097,34060342,hypocalcemia
+3097,34060342,recurrent laryngeal nerve injury
+3097,34060342,"thyroidectomy cois conflicts of interest with respect to the research, authorship, and/or publication of this article."
 3098,35713042,"multinodular goitre, complications of total thyroidectomy, surgeons' experience  in thyroid surgery."
 3100,35220890,graves’ disease
 3100,35220890,nrcam
 3100,35220890,th1 cells
 3100,35220890,lncrna runx1-it1 cois
-3101,34489313,*cardiomyopathies
-3101,34489313,*diastolic
-3101,34489313,*heart failure
-3101,34489313,*systolic cois
-3102,34060342,graves’ disease
-3102,34060342,hematoma
-3102,34060342,hypocalcemia
-3102,34060342,recurrent laryngeal nerve injury
-3102,34060342,"thyroidectomy cois conflicts of interest with respect to the research, authorship, and/or publication of this article."
+3101,35187713,elisa
+3101,35187713,graves’ disease
+3101,35187713,tsh-receptor antibody
+3101,35187713,diagnostic performance
+3101,35187713,dot blot assay cois
+3102,34778997,*hirata disease
+3102,34778997,*human leukocyte antigen
+3102,34778997,*hyperinsulinaemic hypoglycaemia
+3102,34778997,*insulin autoantibody
+3102,34778997,*insulin autoimmune syndrome
+3102,34778997,*sulfhydryl group
 3103,35064543,bone mineral density
 3103,35064543,graves’ disease
 3103,35064543,muscle mass
@@ -5245,15 +5245,15 @@
 3111,34671950,plasmacells
 3111,34671950,t-cells
 3111,34671950,thyroid eye disease
-3113,35439657,dysthyroid optic neuropathy
-3113,35439657,graves' disease
-3113,35439657,orbital decompression surgery
-3113,35439657,orbital surgery
-3113,35439657,visual acuity
-3115,34613563,graves’ orbitopathy
-3115,34613563,immunoassay
-3115,34613563,thyroid stimulating immunoglobulin
-3115,34613563,thyroid-associated orbitopathy
+3112,35439657,dysthyroid optic neuropathy
+3112,35439657,graves' disease
+3112,35439657,orbital decompression surgery
+3112,35439657,orbital surgery
+3112,35439657,visual acuity
+3114,34613563,graves’ orbitopathy
+3114,34613563,immunoassay
+3114,34613563,thyroid stimulating immunoglobulin
+3114,34613563,thyroid-associated orbitopathy
 3116,34714163,*graves' disease
 3116,34714163,*trab assay
 3116,34714163,*thyroid autoimmunity-clinical
@@ -5264,27 +5264,27 @@
 3117,34927457,*tshr antibody
 3117,34927457,*teprotumumab cois
 3118,35320246,"sub acute thyroiditis, nuclear scan, pyrexia of unknown origin, thyroid  antibodies."
-3121,34544941,graves’ disease
-3121,34544941,graves’ ophthalmopathy
-3121,34544941,hyperthyroidism
-3121,34544941,internal ophthalmoplegia
-3121,34544941,tonic pupil
-3123,34781042,graves ophthalmopathy
-3123,34781042,diabetes
-3123,34781042,extraocular muscles
-3123,34781042,optic neuropathy
-3123,34781042,severity
-3123,34781042,thyroid eye disease
-3124,35278055,abuja
-3124,35278055,goitres
-3124,35278055,management outcome
-3124,35278055,pattern cois
-3125,35555881,fat-suppression
-3125,35555881,intravenous glucocorticoid therapy
-3125,35555881,magnetic resonance imaging
-3125,35555881,t2 mapping
-3125,35555881,thyroid-associated ophthalmopathy
-3125,35555881,treatment response cois
+3120,34544941,graves’ disease
+3120,34544941,graves’ ophthalmopathy
+3120,34544941,hyperthyroidism
+3120,34544941,internal ophthalmoplegia
+3120,34544941,tonic pupil
+3123,35278055,abuja
+3123,35278055,goitres
+3123,35278055,management outcome
+3123,35278055,pattern cois
+3124,35555881,fat-suppression
+3124,35555881,intravenous glucocorticoid therapy
+3124,35555881,magnetic resonance imaging
+3124,35555881,t2 mapping
+3124,35555881,thyroid-associated ophthalmopathy
+3124,35555881,treatment response cois
+3125,34781042,graves ophthalmopathy
+3125,34781042,diabetes
+3125,34781042,extraocular muscles
+3125,34781042,optic neuropathy
+3125,34781042,severity
+3125,34781042,thyroid eye disease
 3126,34241830,autoimmunity
 3126,34241830,goiter
 3126,34241830,lupus
@@ -5308,60 +5308,60 @@
 3131,35396078,thermal ablation
 3131,35396078,thyroid cancer
 3131,35396078,thyroid nodule
-3133,34714162,*graves' disease
-3133,34714162,*graves' orbitopathy
-3133,34714162,*orbital cell stimulation
-3133,34714162,*thyroid stimulation
-3133,34714162,"*thyrotropin receptor stimulatory autoantibodies cois germany, has received research-associated funding from the jgu medical faculty, advancecor (germany), apitope (united kingdom), berlin-chemie (germany), byondis (the netherlands), horizon therapeutics (usa), immunovant (usa), isar (germany), mediomics (usa), merck (germany), novartis (usa), quidel (usa), river vision (usa), and roche (switzerland). g.j.k. consults for glycoera (switzerland), immunovant, mediomics, merck, novartis, roivant (usa), quidel, and vasaragen (usa)."
-3135,34743487,*eyelids
-3135,34743487,*inflammation
-3135,34743487,*orbit
-3135,34743487,*selenium cois was reported.
-3136,35592782,*diffusion tensor imaging
-3136,35592782,*dysthyroid optic neuropathy
-3136,35592782,*magnetic resonance imaging
-3136,35592782,*optic nerve
-3136,35592782,*thyroid-associated ophthalmopathy cois commercial or financial relationships that could be construed as a potential conflict of interest.
-3137,35413779,*blood flow velocity
-3137,35413779,*graves disease
-3137,35413779,"*receptors, thyrotropin"
-3137,35413779,*thyroiditis
-3137,35413779,*thyrotoxicosis
-3137,35413779,"*ultrasonography, doppler, color cois samsung medison co., ltd. (seoul, korea). the sponsor had no role in the writing of the manuscript or in the decision to submit the manuscript for publication."
-3138,35144579,extraocular muscles
-3138,35144579,graves’ disease
-3138,35144579,lacrimal gland
-3138,35144579,magnetic resonance imaging
-3138,35144579,prolapse
-3138,35144579,proptosis
-3138,35144579,thyroid-associated ophthalmopathy cois
-3139,34330200,dry eye
-3139,34330200,graves’ ophthalmopathy
-3139,34330200,meibography
-3139,34330200,meibomian glands
-3139,34330200,ocular surface
+3133,34743487,*eyelids
+3133,34743487,*inflammation
+3133,34743487,*orbit
+3133,34743487,*selenium cois was reported.
+3134,35592782,*diffusion tensor imaging
+3134,35592782,*dysthyroid optic neuropathy
+3134,35592782,*magnetic resonance imaging
+3134,35592782,*optic nerve
+3134,35592782,*thyroid-associated ophthalmopathy cois commercial or financial relationships that could be construed as a potential conflict of interest.
+3136,34714162,*graves' disease
+3136,34714162,*graves' orbitopathy
+3136,34714162,*orbital cell stimulation
+3136,34714162,*thyroid stimulation
+3136,34714162,"*thyrotropin receptor stimulatory autoantibodies cois germany, has received research-associated funding from the jgu medical faculty, advancecor (germany), apitope (united kingdom), berlin-chemie (germany), byondis (the netherlands), horizon therapeutics (usa), immunovant (usa), isar (germany), mediomics (usa), merck (germany), novartis (usa), quidel (usa), river vision (usa), and roche (switzerland). g.j.k. consults for glycoera (switzerland), immunovant, mediomics, merck, novartis, roivant (usa), quidel, and vasaragen (usa)."
+3137,34330200,dry eye
+3137,34330200,graves’ ophthalmopathy
+3137,34330200,meibography
+3137,34330200,meibomian glands
+3137,34330200,ocular surface
+3138,35413779,*blood flow velocity
+3138,35413779,*graves disease
+3138,35413779,"*receptors, thyrotropin"
+3138,35413779,*thyroiditis
+3138,35413779,*thyrotoxicosis
+3138,35413779,"*ultrasonography, doppler, color cois samsung medison co., ltd. (seoul, korea). the sponsor had no role in the writing of the manuscript or in the decision to submit the manuscript for publication."
+3139,35144579,extraocular muscles
+3139,35144579,graves’ disease
+3139,35144579,lacrimal gland
+3139,35144579,magnetic resonance imaging
+3139,35144579,prolapse
+3139,35144579,proptosis
+3139,35144579,thyroid-associated ophthalmopathy cois
 3140,34774300,*drinking water
 3140,34774300,*goiter
 3140,34774300,*nitrate
 3140,34774300,*perchlorate
 3140,34774300,*sodium iodide symporter
 3140,34774300,*thiocyanate
-3141,34637060,dysthyroid optic neuropathy
-3141,34637060,octa
-3141,34637060,peripapillary vessel density
-3141,34637060,retinal nerve fiber layer thickness
-3141,34637060,thyroid-associated ophthalmopathy cois
-3142,35405579,clinical activity score prediction
-3142,35405579,disease activity differentiation
-3142,35405579,magnetic resonance imaging
-3142,35405579,magnetization transfer
-3142,35405579,thyroid-associated ophthalmopathy
-3143,35235144,angptl3
-3143,35235144,graves’ disease
-3143,35235144,hdl subfractions
-3143,35235144,hyperthyroidsim
-3143,35235144,hypothyroidism
-3143,35235144,pre-β1 hdl
+3141,35405579,clinical activity score prediction
+3141,35405579,disease activity differentiation
+3141,35405579,magnetic resonance imaging
+3141,35405579,magnetization transfer
+3141,35405579,thyroid-associated ophthalmopathy
+3142,35235144,angptl3
+3142,35235144,graves’ disease
+3142,35235144,hdl subfractions
+3142,35235144,hyperthyroidsim
+3142,35235144,hypothyroidism
+3142,35235144,pre-β1 hdl
+3143,34637060,dysthyroid optic neuropathy
+3143,34637060,octa
+3143,34637060,peripapillary vessel density
+3143,34637060,retinal nerve fiber layer thickness
+3143,34637060,thyroid-associated ophthalmopathy cois
 3144,34979862,central choroidal thickness
 3144,34979862,choroidal vascularity index
 3144,34979862,clinical activity score
@@ -5373,9 +5373,9 @@
 3145,35370997,*immunoglobulin g (igg)
 3145,35370997,*immunosuppressive therapy
 3145,35370997,*ultraperformance liquid chromatography  cois commercial or financial relationships that could be construed as a potential conflict of interest.
-3150,34645767,autoimmune polyglandular syndrome
-3150,34645767,superior mesenteric artery syndrome
-3150,34645767,type 1 diabetes
+3149,34645767,autoimmune polyglandular syndrome
+3149,34645767,superior mesenteric artery syndrome
+3149,34645767,type 1 diabetes
 3151,35094312,*antithyroid drugs
 3151,35094312,*efficacy
 3151,35094312,*graves
@@ -5425,11 +5425,11 @@
 3162,35265076,*glucocorticoid sensitivity
 3162,35265076,*mir-885-3p
 3162,35265076,*plasma exosomes cois commercial or financial relationships that could be construed as a potential conflict of interest.
-3163,35321340,*graves’ disease (gd)
-3163,35321340,*electronic medical record (emr)
-3163,35321340,*genome-wide association study (gwas)
-3163,35321340,*human leukocyte antigen (hla)
-3163,35321340,*phenome-wide association studies (phewas) cois commercial or financial relationships that could be construed as a potential conflict of interest.
+3164,35321340,*graves’ disease (gd)
+3164,35321340,*electronic medical record (emr)
+3164,35321340,*genome-wide association study (gwas)
+3164,35321340,*human leukocyte antigen (hla)
+3164,35321340,*phenome-wide association studies (phewas) cois commercial or financial relationships that could be construed as a potential conflict of interest.
 3166,35667695,"*ear, nose and throat"
 3166,35667695,*genetics
 3166,35667695,*thyroid disease cois
@@ -5455,51 +5455,51 @@
 3173,34477926,graves’ orbitopathy
 3173,34477926,quantitative analysis
 3173,34477926,thyroid eye disease
-3177,34544076,16s ribosomal rna
-3177,34544076,25(oh)d
-3177,34544076,graves’ disease
-3177,34544076,il-17
-3177,34544076,intestinal flora
-3178,34851466,bell’s phenomenon
-3178,34851466,graves
-3178,34851466,ophthalmopathy
-3178,34851466,orbital wall decompression
-3178,34851466,thyroid-associated ophthalmopathy
-3179,35720300,graves’ disease
-3179,35720300,hashimoto’s thyroiditis
-3179,35720300,cell communication
-3179,35720300,immune dysregulation
-3179,35720300,thyroid tissue cois commercial or financial relationships that could be construed as a potential conflict of interest.
+3177,34851466,bell’s phenomenon
+3177,34851466,graves
+3177,34851466,ophthalmopathy
+3177,34851466,orbital wall decompression
+3177,34851466,thyroid-associated ophthalmopathy
+3178,34544076,16s ribosomal rna
+3178,34544076,25(oh)d
+3178,34544076,graves’ disease
+3178,34544076,il-17
+3178,34544076,intestinal flora
+3180,35720300,graves’ disease
+3180,35720300,hashimoto’s thyroiditis
+3180,35720300,cell communication
+3180,35720300,immune dysregulation
+3180,35720300,thyroid tissue cois commercial or financial relationships that could be construed as a potential conflict of interest.
 3181,35721705,*graves’ disease
 3181,35721705,*biomedical modeling
 3181,35721705,*computer-aided treatment
 3181,35721705,*hyperthyroidism
 3181,35721705,*mathematical thyroid model cois commercial or financial relationships that could be construed as a potential conflict of interest.
-3183,35698208,biomechanical simulation
-3183,35698208,computer tomography data
-3183,35698208,decompression surgery
-3183,35698208,endocrine orbitopathy cois
+3182,35698208,biomechanical simulation
+3182,35698208,computer tomography data
+3182,35698208,decompression surgery
+3182,35698208,endocrine orbitopathy cois
 3184,35413827,antithyroid drug
 3184,35413827,maternal subtotal thyroidectomy
 3184,35413827,neonatal hyperthyroidism
 3184,35413827,thyroid function
 3184,35413827,thyroid-stimulating hormone receptor antibody cois
-3185,35088429,graves' disease
-3185,35088429,graves' ophthalmopathy
-3185,35088429,autoimmune diseases
-3185,35088429,hyperthyroidism
-3185,35088429,thyroid diseases
-3187,35229626,*graves' disease
-3187,35229626,*autoimmune thyroid disease
-3187,35229626,*primary thyroid lymphoma
-3188,34468829,octa
-3188,34468829,pulse therapy
-3188,34468829,thyroid-associated orbitopathy cois
-3191,35566351,graves orbitopathy (go)
-3191,35566351,alternative tobacco products
-3191,35566351,cigarette smoke extract
-3191,35566351,real time cell electronic sensing (rt ces)
-3191,35566351,retrobulbar fibroblast cois
+3186,35229626,*graves' disease
+3186,35229626,*autoimmune thyroid disease
+3186,35229626,*primary thyroid lymphoma
+3187,34468829,octa
+3187,34468829,pulse therapy
+3187,34468829,thyroid-associated orbitopathy cois
+3188,35088429,graves' disease
+3188,35088429,graves' ophthalmopathy
+3188,35088429,autoimmune diseases
+3188,35088429,hyperthyroidism
+3188,35088429,thyroid diseases
+3190,35566351,graves orbitopathy (go)
+3190,35566351,alternative tobacco products
+3190,35566351,cigarette smoke extract
+3190,35566351,real time cell electronic sensing (rt ces)
+3190,35566351,retrobulbar fibroblast cois
 3192,33913798,graves’ disease
 3192,33913798,medullary thyroid carcinoma
 3192,33913798,carcinogenesis
@@ -5531,14 +5531,14 @@
 3199,35538553,teprotumumab
 3199,35538553,thyroid eye disease
 3199,35538553,upgaze cois
-3200,35144533,case report
-3200,35144533,glucocorticoids
-3200,35144533,graves’ disease
-3200,35144533,hepatitis b virus
-3200,35144533,methimazole cois
-3201,33443352,*activating variant of tshr gene
-3201,33443352,*non-autoimmune hyperthyroidism
-3201,33443352,*neonatal hyperthyroidism
+3200,33443352,*activating variant of tshr gene
+3200,33443352,*non-autoimmune hyperthyroidism
+3200,33443352,*neonatal hyperthyroidism
+3201,35144533,case report
+3201,35144533,glucocorticoids
+3201,35144533,graves’ disease
+3201,35144533,hepatitis b virus
+3201,35144533,methimazole cois
 3203,35441746,benign thyroid nodule
 3203,35441746,papillary thyroid carcinoma
 3203,35441746,platelet count
@@ -6022,9 +6022,9 @@
 3393,27565137,*goiter
 3393,27565137,*iodine
 3393,27565137,*thyroid
-3397,28899873,endocrine system
-3397,28899873,paediatrics (drugs and medicines)
-3397,28899873,thyroid disease cois
+3395,28899873,endocrine system
+3395,28899873,paediatrics (drugs and medicines)
+3395,28899873,thyroid disease cois
 3399,29075974,adjuvant treatment
 3399,29075974,escape
 3399,29075974,hyperthyroidism
@@ -6098,31 +6098,31 @@
 3449,28363119,ct
 3449,28363119,grave's disease
 3449,28363119,pulmonary hypertension
-3450,28278511,graves ophthalmopathy
-3450,28278511,il-6
-3450,28278511,microrna-146a
-3450,28278511,notch2
-3450,28278511,orbital fibroblast reporter gene
-3450,28278511,qrt-pcr
-3451,27609530,diplopia
-3451,27609530,intraocular pressure
-3451,27609530,orbital decompression
-3451,27609530,proptosis
-3451,27609530,visual acuity
-3451,27609530,visual field
-3452,28755510,graves' disease
-3452,28755510,graves' hyperthyroidism
-3452,28755510,graves' orbitopathy
-3452,28755510,thyroid eye disease
-3453,28606263,"decompression, surgical"
-3453,28606263,graves ophthalmopathy
-3453,28606263,"imaging, three-dimensional"
-3453,28606263,orbit
-3454,29890100,*thyroidectomy
-3454,29890100,*thyroid nodule
-3454,29890100,*recurrent laryngeal nerve palsy
-3454,29890100,*hypoparathyroidism
-3454,29890100,*postoperative pain
+3450,29890100,*thyroidectomy
+3450,29890100,*thyroid nodule
+3450,29890100,*recurrent laryngeal nerve palsy
+3450,29890100,*hypoparathyroidism
+3450,29890100,*postoperative pain
+3451,28755510,graves' disease
+3451,28755510,graves' hyperthyroidism
+3451,28755510,graves' orbitopathy
+3451,28755510,thyroid eye disease
+3452,28606263,"decompression, surgical"
+3452,28606263,graves ophthalmopathy
+3452,28606263,"imaging, three-dimensional"
+3452,28606263,orbit
+3453,28278511,graves ophthalmopathy
+3453,28278511,il-6
+3453,28278511,microrna-146a
+3453,28278511,notch2
+3453,28278511,orbital fibroblast reporter gene
+3453,28278511,qrt-pcr
+3454,27609530,diplopia
+3454,27609530,intraocular pressure
+3454,27609530,orbital decompression
+3454,27609530,proptosis
+3454,27609530,visual acuity
+3454,27609530,visual field
 3460,28635216,"carcinoma, papillary"
 3460,28635216,multifocal tumor
 3460,28635216,ret/ ptcrearrangement
@@ -6149,11 +6149,11 @@
 3468,27494076,*hashimoto thyroiditis
 3468,27494076,*vegf
 3468,27494076,*splicing isoforms
-3471,27555041,calcium oxalate
-3471,27555041,colloid
-3471,27555041,crystals
-3471,27555041,cytology
-3471,27555041,thyroid
+3470,27555041,calcium oxalate
+3470,27555041,colloid
+3470,27555041,crystals
+3470,27555041,cytology
+3470,27555041,thyroid
 3472,27402179,bocio endémico
 3472,27402179,cirugía general
 3472,27402179,cooperación sanitaria
@@ -6249,14 +6249,14 @@
 3533,28457178,*outcomes
 3533,28457178,*safety
 3533,28457178,*thyroidectomy
-3534,28389359,aitd
-3534,28389359,ps
-3534,28389359,slc26a4
-3534,28389359,splicing minigene assay
-3535,28389809,computer-assisted
-3535,28389809,diagnosis
-3535,28389809,thyroid neoplasms
-3535,28389809,ultrasonography
+3534,28389809,computer-assisted
+3534,28389809,diagnosis
+3534,28389809,thyroid neoplasms
+3534,28389809,ultrasonography
+3535,28389359,aitd
+3535,28389359,ps
+3535,28389359,slc26a4
+3535,28389359,splicing minigene assay
 3537,27426718,cáncer de tiroides
 3537,27426718,cáncer tiroideo incidental
 3537,27426718,incidental thyroid cancer
@@ -6276,9 +6276,9 @@
 3545,29084476,*mortality
 3545,29084476,*suicide
 3545,29084476,*unnatural death
-3553,26438397,autophagy
-3553,26438397,graves’ orbitopathy
-3553,26438397,statins
+3552,26438397,autophagy
+3552,26438397,graves’ orbitopathy
+3552,26438397,statins
 3554,28806880,*goiter
 3554,28806880,*neck ultrasound
 3554,28806880,*nodular goiter
@@ -6312,9 +6312,9 @@
 3567,29120123,*multidetector computed tomography
 3567,29120123,*exophthalmos – diagnosis
 3567,29120123,*cross-sectional studies
-3570,26337375,multinodular goiter
-3570,26337375,thyroid autotransplantation
-3570,26337375,thyroidectomy
+3569,26337375,multinodular goiter
+3569,26337375,thyroid autotransplantation
+3569,26337375,thyroidectomy
 3573,27438852,slovenia
 3573,27438852,food supply
 3573,27438852,iodine
@@ -6452,21 +6452,21 @@
 3644,28389487,*surgery
 3644,28389487,*cancer
 3644,28389487,*overdiagnosis cois
-3645,28124062,papillon initiative
-3645,28124062,diffuse goitre
-3645,28124062,geriatric medicine
-3645,28124062,nodular goitre
-3645,28124062,thyroid dysfunction
-3646,27531964,surgery
+3645,27531964,surgery
+3646,28124062,papillon initiative
+3646,28124062,diffuse goitre
+3646,28124062,geriatric medicine
+3646,28124062,nodular goitre
+3646,28124062,thyroid dysfunction
 3647,27358549,*coronary artery bypass grafting
 3647,27358549,*subtotal thyroidectomy
 3647,27358549,*surgery
-3650,27241825,cochlear implantation
-3650,27241825,pendred syndrome
-3650,27241825,enlarged vestibular aqueduct
-3650,27241825,gusher
-3650,27241825,malformations
-3650,27241825,surgical complications
+3649,27241825,cochlear implantation
+3649,27241825,pendred syndrome
+3649,27241825,enlarged vestibular aqueduct
+3649,27241825,gusher
+3649,27241825,malformations
+3649,27241825,surgical complications
 3656,28458607,*computed tomography
 3656,28458607,*euthyroidism
 3656,28458607,*graves' disease
@@ -8654,12 +8654,12 @@
 7432,33391188,*exophthalmos
 7432,33391188,*hyperthyroidism
 7432,33391188,*unilateral cois commercial or financial relationships that could be construed as a potential conflict of interest.
-7435,32812038,*15 mci
-7435,32812038,*fixed activity
-7435,32812038,*hyperthyroidism
-7435,32812038,*radioiodine
-7435,32812038,*toxic multinodular goiter
-7435,32812038,*volume reduction
+7434,32812038,*15 mci
+7434,32812038,*fixed activity
+7434,32812038,*hyperthyroidism
+7434,32812038,*radioiodine
+7434,32812038,*toxic multinodular goiter
+7434,32812038,*volume reduction
 7436,33252592,*grave’s disease
 7436,33252592,*trab
 7436,33252592,*ft3:ft4 ratio
@@ -8691,20 +8691,20 @@
 7453,33735381,*graves orbitopathy
 7453,33735381,*cholesterol
 7453,33735381,*statins
-7454,32749654,graves’ orbitopathy
-7454,32749654,pathogenesis
-7454,32749654,thyrotropin receptor
-7454,32749654,thyrotropin receptor antibodies cois
-7455,33655885,graves' orbitopathy
-7455,33655885,graves’ disease
-7455,33655885,graves’ ophthalmopathy
-7455,33655885,thyroid diseases
-7456,32729049,compressive optic neuropathy
-7456,32729049,dysthyroid optic neuropathy
-7456,32729049,graves orbitopathy
-7456,32729049,orbital decompression
-7456,32729049,stretch optic neuropathy
-7456,32729049,thyroid eye disease
+7454,33655885,graves' orbitopathy
+7454,33655885,graves’ disease
+7454,33655885,graves’ ophthalmopathy
+7454,33655885,thyroid diseases
+7455,32729049,compressive optic neuropathy
+7455,32729049,dysthyroid optic neuropathy
+7455,32729049,graves orbitopathy
+7455,32729049,orbital decompression
+7455,32729049,stretch optic neuropathy
+7455,32729049,thyroid eye disease
+7456,32749654,graves’ orbitopathy
+7456,32749654,pathogenesis
+7456,32749654,thyrotropin receptor
+7456,32749654,thyrotropin receptor antibodies cois
 7458,32826306,*oesophageal varices cois
 7459,34112358,biomarkers
 7459,34112358,dietary reference values
@@ -8740,8 +8740,8 @@
 7468,34680964,*pendred syndrome
 7468,34680964,*whole-exome sequencing
 7468,34680964,*genotype-phenotype correlation cois
-7470,34362755,covid-19
-7470,34362755,thyroid disease cois
+7471,34362755,covid-19
+7471,34362755,thyroid disease cois
 7474,33011882,*chemiluminescence
 7474,33011882,*cytochrome p450 reductase
 7474,33011882,*cytochrome b5-reductase
@@ -8783,16 +8783,16 @@
 7497,35004341,*th17 and treg cells
 7497,35004341,*veillonella
 7497,35004341,*gut microbiota cois commercial or financial relationships that could be construed as a potential conflict of interest.
-7498,33449383,*graves' disease
-7498,33449383,*hashimoto's thyroiditis
-7498,33449383,*interferon lambda 1
-7498,33449383,*interleukin-29
-7498,33449383,*subacute thyroiditis
-7499,34026662,*16s rrna
-7499,34026662,*graves’ disease
-7499,34026662,*clinical parameters
-7499,34026662,*gut microbiota
-7499,34026662,*next-generation sequencing cois commercial or financial relationships that could be construed as a potential conflict of interest.
+7498,34026662,*16s rrna
+7498,34026662,*graves’ disease
+7498,34026662,*clinical parameters
+7498,34026662,*gut microbiota
+7498,34026662,*next-generation sequencing cois commercial or financial relationships that could be construed as a potential conflict of interest.
+7499,33449383,*graves' disease
+7499,33449383,*hashimoto's thyroiditis
+7499,33449383,*interferon lambda 1
+7499,33449383,*interleukin-29
+7499,33449383,*subacute thyroiditis
 7500,34182968,dilated cardiomyopathy
 7500,34182968,ethiopia
 7500,34182968,methimazole
@@ -8874,21 +8874,21 @@
 7533,32765422,*hyperthyroidism
 7533,32765422,*inflammation
 7533,32765422,*natural killer cells
-7534,33661574,antithyroid drugs
-7534,33661574,hepatitis
-7534,33661574,hyperthyroidism
-7534,33661574,plasma exchange
-7534,33661574,plasmapheresis
-7535,33557156,*22q11.2 deletion syndrome
-7535,33557156,*down syndrome
-7535,33557156,*graves’ disease
-7535,33557156,*hashimoto’s thyroiditis
-7535,33557156,*klinefelter syndrome
-7535,33557156,*prader–willi syndrome
-7535,33557156,*rasopathies
-7535,33557156,*turner syndrome
-7535,33557156,*williams syndrome
-7535,33557156,*genetic syndromes cois
+7534,33557156,*22q11.2 deletion syndrome
+7534,33557156,*down syndrome
+7534,33557156,*graves’ disease
+7534,33557156,*hashimoto’s thyroiditis
+7534,33557156,*klinefelter syndrome
+7534,33557156,*prader–willi syndrome
+7534,33557156,*rasopathies
+7534,33557156,*turner syndrome
+7534,33557156,*williams syndrome
+7534,33557156,*genetic syndromes cois
+7535,33661574,antithyroid drugs
+7535,33661574,hepatitis
+7535,33661574,hyperthyroidism
+7535,33661574,plasma exchange
+7535,33661574,plasmapheresis
 7538,34303550,basedow
 7538,34303550,dysthyroidism
 7538,34303550,dysthyroïdie
@@ -8897,11 +8897,11 @@
 7538,34303550,graves’ disease
 7538,34303550,hypertonie intra-oculaire
 7538,34303550,ocular hypertension
+7539,34753719,hepatitis other
+7539,34753719,thyrotoxicosis cois
 7540,34725062,cardiothoracic surgery
 7540,34725062,otolaryngology / ent
 7540,34725062,thyroid disease cois
-7541,34753719,hepatitis other
-7541,34753719,thyrotoxicosis cois
 7542,32441005,antithyroid drugs
 7542,32441005,covid-19
 7542,32441005,glucocorticoids
@@ -8926,9 +8926,9 @@
 7550,33420947,*oropharynx
 7550,33420947,*robotic thyroidectomy
 7550,33420947,*thyroidectomy
-7553,32910410,art
-7553,32910410,graves’ disease
-7553,32910410,history
+7554,32910410,art
+7554,32910410,graves’ disease
+7554,32910410,history
 7556,33569041,*graves’ disease
 7556,33569041,*hyperthyroidism
 7556,33569041,*review
@@ -8978,23 +8978,23 @@
 7572,33597052,*iodine nutrition
 7572,33597052,*thyroid cancer
 7572,33597052,*urine iodine
-7573,33367747,*graves’ disease
-7573,33367747,*igf-1r
-7573,33367747,*thsr
-7573,33367747,*autoimmunity
-7573,33367747,*exosomes
-7574,33934566,*graves’ disease
-7574,33934566,*myh11
-7574,33934566,*itraq technique
-7574,33934566,*inflammatory response
-7574,33934566,*proteomics
-7574,33934566,*thyroid-associated obitopathy cois
+7573,33934566,*graves’ disease
+7573,33934566,*myh11
+7573,33934566,*itraq technique
+7573,33934566,*inflammatory response
+7573,33934566,*proteomics
+7573,33934566,*thyroid-associated obitopathy cois
+7574,33367747,*graves’ disease
+7574,33367747,*igf-1r
+7574,33367747,*thsr
+7574,33367747,*autoimmunity
+7574,33367747,*exosomes
 7575,33914707,*endocrinology
 7575,33914707,*thyroid disease cois exists.
-7578,34192497,complications
-7578,34192497,goitre
-7578,34192497,thyroidectomy
-7578,34192497,tracheomalacia
+7577,34192497,complications
+7577,34192497,goitre
+7577,34192497,thyroidectomy
+7577,34192497,tracheomalacia
 7580,33509724,excisional biopsy
 7580,33509724,foot
 7580,33509724,radiation therapy
@@ -9009,33 +9009,33 @@
 7583,33283314,*long-term atd
 7583,33283314,*surgery
 7583,33283314,*treatment
-7584,34560868,*amhara region
-7584,34560868,*dessie
-7584,34560868,*ethiopia
-7584,34560868,*iodine deficiency
-7584,34560868,*urinary iodine concentration cois
-7586,33863564,acuité visuelle
-7586,33863564,antioxidant therapy
-7586,33863564,cas score
-7586,33863564,exophthalmos
-7586,33863564,légère orbitopathie thyroïdienne
-7586,33863564,mild graves’ orbitopathy
-7586,33863564,ouverture palpébrale
-7586,33863564,oxidative stress
-7586,33863564,palpebral fissure
-7586,33863564,placebo
-7586,33863564,proptose
-7586,33863564,selenium
-7586,33863564,stress oxydatif
-7586,33863564,sélenium
-7586,33863564,traitement anti-oxydatif
-7586,33863564,visual acuity
-7587,32847459,dry eye disease
-7587,32847459,grave’s disease
-7587,32847459,grave’s eye disease
-7587,32847459,ocular inflammation
-7587,32847459,ocular surface
-7587,32847459,thyroid eye disease
+7584,32847459,dry eye disease
+7584,32847459,grave’s disease
+7584,32847459,grave’s eye disease
+7584,32847459,ocular inflammation
+7584,32847459,ocular surface
+7584,32847459,thyroid eye disease
+7585,33863564,acuité visuelle
+7585,33863564,antioxidant therapy
+7585,33863564,cas score
+7585,33863564,exophthalmos
+7585,33863564,légère orbitopathie thyroïdienne
+7585,33863564,mild graves’ orbitopathy
+7585,33863564,ouverture palpébrale
+7585,33863564,oxidative stress
+7585,33863564,palpebral fissure
+7585,33863564,placebo
+7585,33863564,proptose
+7585,33863564,selenium
+7585,33863564,stress oxydatif
+7585,33863564,sélenium
+7585,33863564,traitement anti-oxydatif
+7585,33863564,visual acuity
+7586,34560868,*amhara region
+7586,34560868,*dessie
+7586,34560868,*ethiopia
+7586,34560868,*iodine deficiency
+7586,34560868,*urinary iodine concentration cois
 7588,33994519,graves' disease
 7588,33994519,antithyroid drug
 7588,33994519,fetal goiter
@@ -9045,16 +9045,16 @@
 7590,32553518,*nsqip
 7590,32553518,*racial disparities
 7590,32553518,*thyroidectomy cois conflicts of interest to disclose.
-7591,33530368,*graves’ disease
-7591,33530368,*autoimmunity
-7591,33530368,*dendritic cells
-7591,33530368,*methimazole cois
-7592,32968816,*graves disease
-7592,32968816,*cytokine
-7592,32968816,*fibroblasts
-7592,32968816,*hyaluronan
-7592,32968816,*ophthalmopathy
-7592,32968816,*orbit
+7591,32968816,*graves disease
+7591,32968816,*cytokine
+7591,32968816,*fibroblasts
+7591,32968816,*hyaluronan
+7591,32968816,*ophthalmopathy
+7591,32968816,*orbit
+7592,33530368,*graves’ disease
+7592,33530368,*autoimmunity
+7592,33530368,*dendritic cells
+7592,33530368,*methimazole cois
 7593,33532627,*graves' disease
 7593,33532627,*trab
 7593,33532627,*multivariable analysis
@@ -9062,16 +9062,16 @@
 7594,32709792,*dysthyroid optic neuropathy
 7594,32709792,*indian
 7594,32709792,*thyroid eye disease cois
-7595,33380646,immunohistochemistry
-7595,33380646,molecular genetics
-7595,33380646,thyroid paraganglioma
-7595,33380646,thyroid tumor
-7595,33380646,total thyroidectomy cois
-7596,32130689,graves’ disease
-7596,32130689,multiple sclerosis
-7596,32130689,personalized medicine
-7596,32130689,thyroidectomy
-7596,32130689,thyroiditis
+7595,32130689,graves’ disease
+7595,32130689,multiple sclerosis
+7595,32130689,personalized medicine
+7595,32130689,thyroidectomy
+7595,32130689,thyroiditis
+7596,33380646,immunohistochemistry
+7596,33380646,molecular genetics
+7596,33380646,thyroid paraganglioma
+7596,33380646,thyroid tumor
+7596,33380646,total thyroidectomy cois
 7598,32691849,*graves’ disease
 7598,32691849,*graves’ ophthalmopathy
 7598,32691849,*eye diseases
@@ -9108,11 +9108,11 @@
 7604,33675208,pediatric thyroidology
 7604,33675208,thyroidectomy
 7604,33675208,thyrotoxicosis
-7606,32034469,endocrine orbitopathy
-7606,32034469,epidemiology
-7606,32034469,graves’ disease
-7606,32034469,healthcare research
-7606,32034469,interdisciplinary orbit center
+7605,32034469,endocrine orbitopathy
+7605,32034469,epidemiology
+7605,32034469,graves’ disease
+7605,32034469,healthcare research
+7605,32034469,interdisciplinary orbit center
 7607,34497059,endocrine system
 7607,34497059,respiratory system
 7607,34497059,thyroid disease cois
@@ -9129,10 +9129,10 @@
 7610,34518175,genetics
 7610,34518175,hyperthyroidism
 7610,34518175,thyroid disease cois
-7611,34725068,general practice / family medicine
-7611,34725068,otolaryngology / ent
-7611,34725068,thyroid disease
-7611,34725068,thyrotoxicosis cois
+7612,34725068,general practice / family medicine
+7612,34725068,otolaryngology / ent
+7612,34725068,thyroid disease
+7612,34725068,thyrotoxicosis cois
 7614,34448404,airway obstruction
 7614,34448404,asthma
 7614,34448404,goitre
@@ -9156,11 +9156,11 @@
 7617,32705333,epidemiology
 7617,32705333,taiwan’s national health insurance research database
 7617,32705333,thyroid disease
-7620,33481211,graves’ disease
-7620,33481211,gut microbiota
-7620,33481211,lactobacillus
-7620,33481211,ruminococcus
-7620,33481211,trab
+7619,33481211,graves’ disease
+7619,33481211,gut microbiota
+7619,33481211,lactobacillus
+7619,33481211,ruminococcus
+7619,33481211,trab
 7621,33169897,goiter
 7621,33169897,imaging mass spectrometry
 7621,33169897,obesity
@@ -9205,26 +9205,26 @@
 7634,33106982,fibulin-1
 7634,33106982,multinodular goiter
 7634,33106982,papillary thyroid cancer
-7636,34194397,*graves’ disease
-7636,34194397,*antithyroid drugs
-7636,34194397,*children
-7636,34194397,*hyperthyroidism
-7636,34194397,*remission cois commercial or financial relationships that could be construed as a potential conflict of interest.
-7637,34689799,fine-needle aspiration
-7637,34689799,midkine
-7637,34689799,multinodular goiter
-7637,34689799,thyroid cancer
-7637,34689799,thyroid nodule cois
-7638,34521015,epid dosimetry
-7638,34521015,machine learning
-7638,34521015,multifactorial error sources
-7638,34521015,positioning error detection
-7638,34521015,radiomics analysis
-7639,34418335,graves’ disease
-7639,34418335,hypothyroidism
-7639,34418335,radioiodine therapy
-7639,34418335,thyroid peroxidase antibody (tpoab)
-7639,34418335,thyrotropin receptor antibody (trab)
+7636,34418335,graves’ disease
+7636,34418335,hypothyroidism
+7636,34418335,radioiodine therapy
+7636,34418335,thyroid peroxidase antibody (tpoab)
+7636,34418335,thyrotropin receptor antibody (trab)
+7637,34194397,*graves’ disease
+7637,34194397,*antithyroid drugs
+7637,34194397,*children
+7637,34194397,*hyperthyroidism
+7637,34194397,*remission cois commercial or financial relationships that could be construed as a potential conflict of interest.
+7638,34689799,fine-needle aspiration
+7638,34689799,midkine
+7638,34689799,multinodular goiter
+7638,34689799,thyroid cancer
+7638,34689799,thyroid nodule cois
+7639,34521015,epid dosimetry
+7639,34521015,machine learning
+7639,34521015,multifactorial error sources
+7639,34521015,positioning error detection
+7639,34521015,radiomics analysis
 7640,34448415,fine-needle cytology
 7640,34448415,goitre
 7640,34448415,thyroid cancer
@@ -9261,26 +9261,26 @@
 7649,34560890,resistance to thyroid hormone
 7649,34560890,syndrome of inappropriate secretion of tsh
 7649,34560890,thyroid hormone receptor β cois
-7652,33474918,bony orbital decompression
-7652,33474918,dysthyroid optic neuropathy
-7652,33474918,endoscopic orbital decompression
-7652,33474918,surgical treatment
-7652,33474918,thyroid eye disease
-7653,33345558,body composition
-7653,33345558,hypocalcemia
-7653,33345558,hypoparathyroidism
-7653,33345558,thyroid
-7653,33345558,total thyroidectomy
-7655,34331946,diagnostic efficacy
-7655,34331946,graves’ disease
-7655,34331946,methimazole
-7655,34331946,responsiveness
-7655,34331946,thyroid-stimulating immunoglobulin
-7656,32449092,16s rrna gene
-7656,32449092,graves’ disease
-7656,32449092,graves’ orbitopathy
-7656,32449092,gut microbiota
-7656,32449092,metabolic functions
+7651,33474918,bony orbital decompression
+7651,33474918,dysthyroid optic neuropathy
+7651,33474918,endoscopic orbital decompression
+7651,33474918,surgical treatment
+7651,33474918,thyroid eye disease
+7654,34331946,diagnostic efficacy
+7654,34331946,graves’ disease
+7654,34331946,methimazole
+7654,34331946,responsiveness
+7654,34331946,thyroid-stimulating immunoglobulin
+7655,32449092,16s rrna gene
+7655,32449092,graves’ disease
+7655,32449092,graves’ orbitopathy
+7655,32449092,gut microbiota
+7655,32449092,metabolic functions
+7656,33345558,body composition
+7656,33345558,hypocalcemia
+7656,33345558,hypoparathyroidism
+7656,33345558,thyroid
+7656,33345558,total thyroidectomy
 7658,32057544,goiter size
 7658,32057544,graves' disease
 7658,32057544,outcome
@@ -9323,25 +9323,25 @@
 7671,31982255,maladie de basedow
 7671,31982255,myocardite
 7671,31982255,myocarditis
-7674,34823306,*aggression
-7674,34823306,*graves disease
-7674,34823306,*prevalence
-7674,34823306,*prognosis
-7674,34823306,*thyroid neoplasms cois was reported.
-7675,34256242,graves' disease
-7675,34256242,graves' orbitopathy
-7675,34256242,interleukin 17
-7675,34256242,interleukin 23
-7675,34256242,thyrotropin receptor cois
-7676,33728674,graves' disease
-7676,33728674,catalytic activity
-7676,33728674,thyroid proteomics
-7676,33728674,thyrotoxicosis
-7676,33728674,toxic multinodular goitre
-7677,34164724,deep lateral orbital wall decompression
-7677,34164724,extraocular muscle expansion
-7677,34164724,greater wing of sphenoid bone
-7677,34164724,orbital fat removal
+7674,34256242,graves' disease
+7674,34256242,graves' orbitopathy
+7674,34256242,interleukin 17
+7674,34256242,interleukin 23
+7674,34256242,thyrotropin receptor cois
+7675,34823306,*aggression
+7675,34823306,*graves disease
+7675,34823306,*prevalence
+7675,34823306,*prognosis
+7675,34823306,*thyroid neoplasms cois was reported.
+7676,34164724,deep lateral orbital wall decompression
+7676,34164724,extraocular muscle expansion
+7676,34164724,greater wing of sphenoid bone
+7676,34164724,orbital fat removal
+7677,33728674,graves' disease
+7677,33728674,catalytic activity
+7677,33728674,thyroid proteomics
+7677,33728674,thyrotoxicosis
+7677,33728674,toxic multinodular goitre
 7678,34090378,non-specific orbital inflammation
 7678,34090378,comorbidity
 7678,34090378,orbital mass
@@ -9391,29 +9391,29 @@
 7689,32306294,*igf-1 receptor
 7689,32306294,*teprotumumab
 7689,32306294,*thyroid eye disease
-7690,32166667,diabetes
-7690,32166667,euthyroid hormones
-7690,32166667,free thyroxine
-7690,32166667,free triiodothyronine
-7690,32166667,islet beta-cell function
-7691,32798996,*graves disease
-7691,32798996,*outcomes
-7691,32798996,*radioactive iodine ablation
-7691,32798996,*thyroidectomy
+7690,32798996,*graves disease
+7690,32798996,*outcomes
+7690,32798996,*radioactive iodine ablation
+7690,32798996,*thyroidectomy
+7691,32166667,diabetes
+7691,32166667,euthyroid hormones
+7691,32166667,free thyroxine
+7691,32166667,free triiodothyronine
+7691,32166667,islet beta-cell function
 7693,33860431,*antithyroid agents
 7693,33860431,*grave’s disease
 7693,33860431,*hyperthyroidism
 7693,33860431,*recurrence
 7693,33860431,*treatment outcome
-7694,34381549,cameroon
-7694,34381549,nodular goitre
-7694,34381549,cancer
-7694,34381549,thyroid cois
-7695,32734611,*graves' disease
-7695,32734611,*trabs
-7695,32734611,*age
-7695,32734611,*radioiodine
-7695,32734611,*thyroid hormones cois
+7694,32734611,*graves' disease
+7694,32734611,*trabs
+7694,32734611,*age
+7694,32734611,*radioiodine
+7694,32734611,*thyroid hormones cois
+7695,34381549,cameroon
+7695,34381549,nodular goitre
+7695,34381549,cancer
+7695,34381549,thyroid cois
 7696,34120661,complications
 7696,34120661,recurrent laryngeal nerve
 7696,34120661,surgery
@@ -9436,15 +9436,15 @@
 7700,32461446,*thyroid eye disease
 7700,32461446,*thyroid-related orbitopathy
 7700,32461446,*type-2 dm cois
-7701,31910731,graves’
-7701,31910731,timp-1
-7701,31910731,strain
-7701,31910731,thyroid
-7702,33439464,*effective half-life
-7702,33439464,*graves’ disease
-7702,33439464,*radioiodine therapy
-7702,33439464,*radioiodine uptake test
-7702,33439464,*thyroid cois
+7701,33439464,*effective half-life
+7701,33439464,*graves’ disease
+7701,33439464,*radioiodine therapy
+7701,33439464,*radioiodine uptake test
+7701,33439464,*thyroid cois
+7702,31910731,graves’
+7702,31910731,timp-1
+7702,31910731,strain
+7702,31910731,thyroid
 7703,34659126,*n1b metastasis
 7703,34659126,*nomogram
 7703,34659126,*papillary thyroid cancer
@@ -9463,8 +9463,9 @@
 7706,34266819,paediatric oncology
 7706,34266819,radiotherapy
 7706,34266819,thyroid disease cois
-7709,32218623,point of care
-7709,32218623,thyroid ultrasound cois
+7709,32527127,prolonged endotracheal intubation
+7709,32527127,retrosternal goitre (rsg)
+7709,32527127,tracheomalacia
 7710,33023116,endemic congenital hypothyroidism
 7710,33023116,endemic goitre
 7710,33023116,familial aggregation
@@ -9474,9 +9475,8 @@
 7711,32709788,*orbital decompression
 7711,32709788,*survey
 7711,32709788,*thyroid eye disease cois
-7712,32527127,prolonged endotracheal intubation
-7712,32527127,retrosternal goitre (rsg)
-7712,32527127,tracheomalacia
+7712,32218623,point of care
+7712,32218623,thyroid ultrasound cois
 7713,33947272,*graves'disease
 7713,33947272,*radioactive iodine therapy
 7713,33947272,*thyrotropin receptor antibody
@@ -9527,17 +9527,17 @@
 7725,32188795,graves’ hyperthyroidism
 7725,32188795,potassium iodide
 7725,32188795,wolff-chaikoff effect
-7727,32316214,goitre
-7727,32316214,iodine pregnant women
-7727,32316214,iodine schoolchildren
-7727,32316214,iodised salt
-7727,32316214,urine iodine
-7727,32316214,water iodine cois the views of the institutions with which they are affiliated. the authors declare that there is no conflict of interest.
-7728,32451608,compressive optic neuropathy
-7728,32451608,medial wall
-7728,32451608,orbital floor
-7728,32451608,spontaneous decompression
-7728,32451608,thyroid eye disease
+7727,32451608,compressive optic neuropathy
+7727,32451608,medial wall
+7727,32451608,orbital floor
+7727,32451608,spontaneous decompression
+7727,32451608,thyroid eye disease
+7728,32316214,goitre
+7728,32316214,iodine pregnant women
+7728,32316214,iodine schoolchildren
+7728,32316214,iodised salt
+7728,32316214,urine iodine
+7728,32316214,water iodine cois the views of the institutions with which they are affiliated. the authors declare that there is no conflict of interest.
 7733,32487052,131i−
 7733,32487052,euthyreosis
 7733,32487052,factors
@@ -9602,16 +9602,16 @@
 7748,32077044,hyperthyroidism
 7748,32077044,thyroid
 7748,32077044,thyroid nodules
-7749,32658864,graves’ disease
-7749,32658864,hashitoxicosis
-7749,32658864,sudan
-7749,32658864,adolescents
-7749,32658864,childhood
-7750,32474767,asymmetric
-7750,32474767,graves’
-7750,32474767,orbitopathy
-7750,32474767,thyroid
-7750,32474767,unilateral cois
+7749,32474767,asymmetric
+7749,32474767,graves’
+7749,32474767,orbitopathy
+7749,32474767,thyroid
+7749,32474767,unilateral cois
+7750,32658864,graves’ disease
+7750,32658864,hashitoxicosis
+7750,32658864,sudan
+7750,32658864,adolescents
+7750,32658864,childhood
 7752,32174327,*generative adversarial network
 7752,32174327,*orbital decompression
 7752,32174327,*postoperative appearance
@@ -12958,20 +12958,20 @@
 10490,24043280,neonatal graves’ disease
 10490,24043280,respiratory failure
 10490,24043280,thyroid
-10491,23690528,airway management
-10491,23690528,anesthesia
-10491,23690528,general
-10491,23690528,thyroidectomy
+10493,23690528,airway management
+10493,23690528,anesthesia
+10493,23690528,general
+10493,23690528,thyroidectomy
 10496,23428758,agreement
 10496,23428758,bocio
 10496,23428758,concordancia
 10496,23428758,goitre
 10496,23428758,interobservador
 10496,23428758,interobserver
-10499,23645248,oestrogen
-10499,23645248,progenitor cells
-10499,23645248,thyroid nodules
-10499,23645248,thyroid stem cells
+10498,23645248,oestrogen
+10498,23645248,progenitor cells
+10498,23645248,thyroid nodules
+10498,23645248,thyroid stem cells
 10501,24082285,radioiodine
 10501,24082285,hyperthyroidism
 10515,24144816,benign multinodular goiter

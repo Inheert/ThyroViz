@@ -77,30 +77,12 @@ general_filters = \
                 dbc.Row([
                     dbc.Col([
                         html.Plaintext("Publication type:"),
-                        dcc.Dropdown(
-                            id="publication_type",
-                            options=all_p_type,
-                            value=[],
-                            multi=True,
-                        )
                     ]),
                     dbc.Col([
                         html.Plaintext("Authors name:"),
-                        dcc.Dropdown(
-                            id="author",
-                            options=all_authors,
-                            value=[],
-                            multi=True,
-                        )
                     ]),
                     dbc.Col([
                         html.Plaintext("Population:"),
-                        dcc.Dropdown(
-                            id="population",
-                            options=all_population,
-                            value=[],
-                            multi=True,
-                        )
                     ]),
                 ])
             ]
@@ -195,7 +177,7 @@ articlesDateOverview = \
                                       html.Plaintext("Conditions:"),
                                       dcc.Dropdown(
                                           id="dateCondition",
-                                          options=[x for x in all_conditions],
+                                          options=[x for x in all_category],
                                           value=[],
                                           multi=True,
                                           style={
@@ -210,7 +192,7 @@ articlesDateOverview = \
                                   ])
             ],
                 style={"borderRadius": "15px"},
-                start_collapsed=False
+                start_collapsed=True
             )
         ]),
         class_name="card mb-4 border-1 shadow",
@@ -252,6 +234,15 @@ accordionArticles = \
             [
                 dbc.Row(
                     [
+                        dcc.Checklist(id="onlyObservational",
+                                      options=["Only show observational articles"],
+                                      value=[],
+                                      inputStyle={
+                                          "marginRight": "6px"
+                                      }
+                                      ),
+                        html.Br(),
+
                         dbc.Col(
                             [
                                 dbc.Input(id="articles_input",
@@ -259,7 +250,7 @@ accordionArticles = \
                                           size="lg",
                                           class_name="mb-3"),
                                 dcc.Checklist(id="articles_search_col",
-                                              options=["Abstract", "Title", "Mesh_terms", "Other_terms", "Chemical"],
+                                              options=["Abstract", "Title", "Mesh_terms", "Other_terms", "Condition", "Chemical"],
                                               value=["Abstract"],
                                               inputStyle={"marginRight": "6px",
                                                           "marginLeft": "20px"},
@@ -274,18 +265,67 @@ accordionArticles = \
                         ),
                         dbc.Col(
                             [
-                                dbc.Pagination(
-                                    id="articles_pagination",
-                                    fully_expanded=False,
-                                    max_value=5
+                                dcc.Dropdown(
+                                    id="publication_type",
+                                    options=all_p_type,
+                                    value=[],
+                                    placeholder="Select publication type...",
+                                    multi=True,
+                                ),
+
+                                html.Br(),
+
+                                dcc.Dropdown(
+                                    id="population",
+                                    options=all_population,
+                                    value=[],
+                                    placeholder="Select population group...",
+                                    multi=True,
+                                ),
+                            ]
+                        ),
+                        dbc.Col(
+                            [
+                                dcc.Dropdown(
+                                    id="dateCategory",
+                                    options=[x for x in all_category],
+                                    value=[],
+                                    multi=True,
+                                    placeholder="Select category...",
+                                ),
+
+                                html.Br(),
+
+                                dcc.Dropdown(
+                                    id="observational_type",
+                                    options=[x for x in all_obs_value],
+                                    value=[],
+                                    multi=True,
+                                    disabled=True,
+                                    placeholder="Select observational characteristics",
                                 )
+                            ]
+                        ),
+                        dbc.Col(
+                            [
+                                html.Div(
+                                    [
+                                        dbc.Pagination(
+                                            id="articles_pagination",
+                                            fully_expanded=False,
+                                            max_value=5
+                                        ),
+
+                                        html.Br(),
+
+                                        html.Button(id="download_button", children="Download excel")
+                                    ],
+                                    style={"float": "right",
+                                           "alignItems": "center",
+                                           }
+                                ),
                             ],
                             width=True,
-                            style={
-                                "display": "flex",
-                                "alignItems": "center",
-                                "justifyContent": "right",
-                            }
                         )
                     ],
                 ),
