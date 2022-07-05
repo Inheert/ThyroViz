@@ -1,7 +1,7 @@
 from pages.utilities.pubmed_dashboard.components import *
 from pages.utilities.pubmed_const import *
 import plotly.graph_objects as go
-
+import math
 
 @callback(Output("categoryRepartition", "figure"),
           Input("categoryRepartition", "figure"),
@@ -167,26 +167,3 @@ def SelectAllCategory(check, dropdown_options, actual_value):
     else:
         return actual_value
 
-@callback(Output("test", "children"),
-          Input("articleDateOverview", "clickData"))
-def TestClick(value):
-   # print(value)
-    return None
-
-
-# @callback(Output("stat_average", "children"),
-#           Input("articleDateOverview", "clickData"),
-#           Input("dateCondition", "value"),
-#           Input("dateFrequency", "value"))
-# def CreateDataframeForStatistics(graph_data, conditions, frequency):
-#     df = articles.copy()
-#
-#     if graph_data:
-#         print(graph_data)
-#         print(df.shape)
-#         df["Year"] = df["Entrez_date"].apply(lambda x: x.year)
-#         date = datetime.strptime(graph_data["points"][0]["x"], "%Y-%m-%d")
-#         df = df[df.Year == date.year]
-#         print(df.shape)
-#     else:
-#         return "Average:"

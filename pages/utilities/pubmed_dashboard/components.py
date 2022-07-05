@@ -254,19 +254,42 @@ accordionArticles = \
                     [
                         dbc.Col(
                             [
-                                html.P("Sort by:"),
-                                dcc.Dropdown(id="accordion_sortby",
-                                             options=["most recent", "older"],
-                                             value="most recent",
-                                             style={
-                                                 "maxWidth": "50vmax"
-                                             }
-                                             )
+                                dbc.Input(id="articles_input",
+                                          placeholder="Search text...",
+                                          size="lg",
+                                          class_name="mb-3"),
+                                dcc.Checklist(id="articles_search_col",
+                                              options=["Abstract", "Title", "Mesh_terms", "Other_terms", "Chemical"],
+                                              value=["Abstract"],
+                                              inputStyle={"marginRight": "6px",
+                                                          "marginLeft": "20px"},
+                                              inline=True)
                             ],
-                            style={"display": "flex"}
+                            width=4,
+                            style={
+                                "display": "block",
+                                "alignItems": "center",
+                                "justifyContent": "left",
+                            }
+                        ),
+                        dbc.Col(
+                            [
+                                dbc.Pagination(
+                                    id="articles_pagination",
+                                    fully_expanded=False,
+                                    max_value=5
+                                )
+                            ],
+                            width=True,
+                            style={
+                                "display": "flex",
+                                "alignItems": "center",
+                                "justifyContent": "right",
+                            }
                         )
-                    ]
+                    ],
                 ),
+                html.Br(style={"marginTop": "10px"}),
                 dbc.Row(
                     [
                         dbc.Col(

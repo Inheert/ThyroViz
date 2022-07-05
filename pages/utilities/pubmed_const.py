@@ -17,7 +17,7 @@ all_authors = [x for x in full_author_name.sort_values(by="Without_special_chara
 df_condition = pd.read_csv("script/pubmed/data/Condition.csv", index_col=[0])
 all_conditions = [x for x in df_condition.sort_values(by="Category").Category.unique()]
 
-other_term = pd.read_csv("script/pubmed/data/Other_term.csv", index_col=[0])
+other_term = pd.read_csv("script/pubmed/data/Other_terms.csv", index_col=[0])
 observational = pd.read_csv("script/pubmed/data/Observational_study_characteristics.csv", index_col=[0])
 mesh_term = pd.read_csv("script/pubmed/data/Mesh_terms.csv", index_col=[0])
 chemical = pd.read_csv("script/pubmed/data/Chemical.csv", index_col=[0])

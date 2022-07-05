@@ -30,7 +30,7 @@ layout = html.Div([
                 width="auto"
             ),
             dbc.Col(
-                [categoryRepartition, html.H5(id="test"), dateGraphKPI],
+                [categoryRepartition],
                 width="auto"
             ),
         ],
@@ -56,11 +56,12 @@ layout = html.Div([
           Input("dateCondition", "value"),
           Input("dateFrequency", "value"),
           Input("date_checklist", "value"),
-          Input("articleDateOverview", "clickData"))
-def UpdateArticlesOverview(condition, freq, checklist, graphClick):
+          Input("articleDateOverview", "clickData"),
+          Input("articles_input", "value"),
+          Input("articles_search_col", "value"))
+def UpdateArticlesOverview(condition: list, freq: str, checklist: list, graphClick: dict, txt_input: str,
+                           colToSearch: list):
     checklist = ["None"] if checklist is None or len(checklist) < 1 else checklist
-
-    print(graphClick)
 
     df = articles.copy()
     df["month"] = df["Entrez_date"].apply(lambda x: x.month)
@@ -89,15 +90,50 @@ def UpdateArticlesOverview(condition, freq, checklist, graphClick):
         if len(condition) > 0 and checklist[0] == "None":
             df = df[df.PMID.isin(df_condition[df_condition.Category.isin([x for x in condition])]["PMID"])]
 
+    if (colToSearch and len(colToSearch) > 0) and (txt_input and len(txt_input) > 1):
+
+        df["Input_found"] = False
+
+        for col in colToSearch:
+            print(col)
+            df["Input_found"] = df[col].apply(lambda x: True if txt_input.lower().strip() in str(x) else False)
+
+        df = df[df["Input_found"] == True]
+
+        # df_list = []
+        # print("pass")
+        #
+        # for col in colToSearch:
+        #     temp_df = df.copy()
+        #     temp_df = temp_df[txt_input in temp_df[col]]
+        #     df_list.append(temp_df)
+        #
+        # new_df = pd.DataFrame()
+        #
+        # for temp_df in df_list:
+        #     new_df = pd.concat(new_df, temp_df)
+        #
+        # df = new_df
+
     return df.to_dict('records')
 
 
-@callback(Output("accordionArticles", "children"),
+@callback(Output("articles_pagination", "max_value"),
           Input("dataframe_store", "value"))
-def UpdateAccordionArticles(df):
+def PaginationInitializing(df):
     df = pd.DataFrame(df)
-    end_range = 100 if df.shape[0] > 100 else df.shape[0]
+    return math.ceil(df.shape[0] / 25)
 
+
+@callback(Output("accordionArticles", "children"),
+          Input("dataframe_store", "value"),
+          Input("articles_pagination", "active_page"))
+def UpdateAccordionArticles(df, page):
+    df = pd.DataFrame(df)
+    page = 1 if page is None else page
+    page = page - 1
+    start_range = 25 * page
+    end_range = start_range + 25 if df.shape[0] >= start_range + 25 else df.shape[0]
     accordion = \
         [
             dbc.Accordion(
@@ -128,13 +164,92 @@ def UpdateAccordionArticles(df):
                                         ],
                                         width=3
                                     ),
-                                    dbc.Col(),
-                                ]
+                                    dbc.Col(
+                                        [
+                                            dbc.Accordion(
+                                                [
+                                                    dbc.AccordionItem(
+                                                        [
+                                                            html.P(children=value)
+                                                            for value in
+                                                            df_condition[df_condition.PMID == df["PMID"].iloc[idx]][
+                                                                "Condition"]
+                                                        ],
+                                                        title="Conditions"
+                                                    ),
+                                                    dbc.AccordionItem(
+                                                        [
+                                                            html.P(children=value)
+                                                            for value in
+                                                            mesh_term[mesh_term.PMID == df["PMID"].iloc[idx]][
+                                                                "Mesh_terms"]
+                                                        ],
+                                                        title="Mesh terms"
+                                                    ),
+                                                    dbc.AccordionItem(
+                                                        [
+                                                            html.P(children=value)
+                                                            for value in
+                                                            other_term[other_term.PMID == df["PMID"].iloc[idx]][
+                                                                "Other_terms"]
+                                                        ],
+                                                        title="Other terms"
+                                                    ),
+                                                    dbc.AccordionItem(
+                                                        [
+                                                            html.P(children=value)
+                                                            for value in
+                                                            population[population.PMID == df["PMID"].iloc[idx]][
+                                                                "Population"]
+                                                        ],
+                                                        title="Population type"
+                                                    ),
+                                                    dbc.AccordionItem(
+                                                        [
+                                                            html.P(children=value)
+                                                            for value in publication_type[
+                                                            publication_type.PMID == df["PMID"].iloc[idx]][
+                                                            "Publication_type"]
+                                                        ],
+                                                        title="Publication type"
+                                                    ),
+                                                    dbc.AccordionItem(
+                                                        [
+                                                            html.P(children=value)
+                                                            for value in full_author_name[
+                                                            full_author_name.PMID == df["PMID"].iloc[idx]][
+                                                            "Full_author_name"]
+                                                        ],
+                                                        title="Authors name"
+                                                    ),
+                                                    dbc.AccordionItem(
+                                                        [
+                                                            html.P(children=value)
+                                                            for value in
+                                                            chemical[chemical.PMID == df["PMID"].iloc[idx]]["Chemical"]
+                                                        ],
+                                                        title="Chemicals"
+                                                    ),
+                                                    dbc.AccordionItem(
+                                                        [
+                                                            html.P(children=value)
+                                                            for value in
+                                                            observational[observational.PMID == df["PMID"].iloc[idx]][
+                                                                "Observational_study_characteristics"]
+                                                        ],
+                                                        title="Observational study characteristics"
+                                                    ),
+                                                ],
+                                            ),
+                                        ],
+                                    ),
+                                ],
+                                justify="between"
                             )
                         ],
                         title=f"{df['PMID'].iloc[idx]} - {df['Title'].iloc[idx]}"
                     )
-                    for idx in range(0, end_range)]
+                    for idx in range(start_range, end_range)]
             )
         ]
     return accordion
@@ -147,4 +262,5 @@ def RetrieveData(click):
         group = PubmedGroup(pathologies=["goiter"], filters=["humans"], threadingObject=5, delay=0.8)
         group.StartRetrieve()
         group.JoinAndCleanDataframe()
+        print("fini")
     return None
