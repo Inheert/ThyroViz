@@ -171,24 +171,6 @@ articlesDateOverview = \
                                               }),
 
                                       ], align="start"),
-
-                                      html.Br(),
-
-                                      html.Plaintext("Conditions:"),
-                                      dcc.Dropdown(
-                                          id="dateCondition",
-                                          options=[x for x in all_category],
-                                          value=[],
-                                          multi=True,
-                                          style={
-                                              "maxWidth": "50vmax"
-                                          }
-                                      ),
-                                      dcc.Checklist(
-                                          id="selectAllCategory",
-                                          options=["Select all category"],
-                                          inputStyle={"marginRight": "6px"}
-                                      )
                                   ])
             ],
                 style={"borderRadius": "15px"},
