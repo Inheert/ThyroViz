@@ -1,7 +1,7 @@
 import pandas as pd
 from datetime import datetime, date
 
-s_base = pd.read_csv("script/clinical_trials/sql/visualisation/CSV_files/studies.csv")
+s_base = pd.read_csv("script/clinical_trials/sql/visualisation/CSV_files/studies.csv", index_col=[0])
 s_base["study_first_submitted_date"] = pd.to_datetime(s_base["study_first_submitted_date"])
 s_base["primary_completion_date"] = pd.to_datetime(s_base["primary_completion_date"])
 s_base["completion_date"] = pd.to_datetime(s_base["completion_date"])
@@ -10,15 +10,15 @@ s_base.drop(labels="all_conditions", axis=1, inplace=True)
 studies = s_base.copy()
 studies = studies[studies["overall_status"].isin(["Recruiting", "Not yet recruiting", "Active, not recruiting"])]
 
-sponsors = pd.read_csv("script/clinical_trials/sql/visualisation/CSV_files/df_sponsorsName.csv")
+sponsors = pd.read_csv("script/clinical_trials/sql/visualisation/CSV_files/df_sponsorsName.csv", index_col=[0])
 # ct_sponsors = ct_sponsors[ct_sponsors["nct_id"].isin(ct_studies.nct_id)]
 
-investigators = pd.read_csv("script/clinical_trials/sql/visualisation/CSV_files/df_investigators.csv")
+investigators = pd.read_csv("script/clinical_trials/sql/visualisation/CSV_files/df_investigators.csv", index_col=[0])
 # ct_investigators = ct_investigators[ct_investigators["nct_id"].isin(ct_studies.nct_id)]
 
-intervention_types = pd.read_csv("script/clinical_trials/sql/visualisation/CSV_files/df_intervention_types.csv")
+intervention_types = pd.read_csv("script/clinical_trials/sql/visualisation/CSV_files/df_intervention_types.csv", index_col=[0])
 
-country = pd.read_csv("script/clinical_trials/sql/visualisation/CSV_files/df_country.csv")
+country = pd.read_csv("script/clinical_trials/sql/visualisation/CSV_files/df_country.csv", index_col=[0])
 
 all_category = [x for x in s_base.category.sort_values().unique()]
 all_sub_category = [x for x in s_base.sub_category.sort_values().unique()]

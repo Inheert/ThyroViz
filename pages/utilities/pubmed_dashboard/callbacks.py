@@ -232,12 +232,12 @@ def UpdateArticlesOverview(only_obs: list, category: list, freq: str, checklist:
         df["Input_found"] = False
 
         for col in colToSearch:
-            df["Input_found"] = df[col].apply(lambda x: True if txt_input.lower().strip() in str(x) else True if x is True else False)
+            df["Input_found"] = df[col].apply(lambda x: True if txt_input.lower().strip() in str(x) else False)
 
         df = df[df["Input_found"] == True]
 
     shape = SpaceInNumber(df.shape[0])
-
+    print(df.info())
     return df.to_dict('records'), f"Number of results: __{shape}__"
 
 

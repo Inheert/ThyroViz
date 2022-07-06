@@ -11,3 +11,5 @@ def SpaceInNumber(number):
         count += 1
 
     return shape_clean
+
+

@@ -120,7 +120,7 @@ keys_word_dict = {
         {
             "Nodule": kw_c8_sub1
         },
-    "Non specific thyroid deseases":
+    "Non specific thyroid diseases":
         {
             "Non specific thyroid deseases": kw_c9_sub1
         }

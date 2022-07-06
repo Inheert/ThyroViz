@@ -205,7 +205,7 @@ allStudiesDatatable = \
         id="allStudiesDatatable",
         data=s_base.to_dict('records'),
         columns=[{"name": i, "id": i} for i in
-                 s_base.drop(columns=["Unnamed: 0", "intervention_types", "investigators", "sponsors_name",
+                 s_base.drop(columns=["intervention_types", "investigators", "sponsors_name",
                                       "downcase_mesh_term", "minimum_age_num", "maximum_age_num", "intervention_model",
                                       "observational_model", "time_perspective"]).columns],
         page_size=10,

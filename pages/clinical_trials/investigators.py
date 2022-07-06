@@ -224,3 +224,17 @@ def StudiesDatatableUpdating(loc, idx, dfLoc):
         return df.to_dict('records')
 
     return df.to_dict('records')
+
+
+@callback(Output("subCategorySelection", "options"),
+          Input("categorySelection", "value"))
+def UpdateOptionsForSubCategory(category: list):
+    df = s_base[["category", "sub_category"]].copy()
+
+    if category and len(category) > 0:
+
+        df["keep"] = df["category"].apply(lambda x: True if x in category else False)
+        df = df[df.keep == True]
+
+    return [x for x in df.sort_values(by=["category", "sub_category"])["sub_category"].unique()]
+
