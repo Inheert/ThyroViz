@@ -4,7 +4,7 @@ from script.pubmed.Pubmed import *
 class PubmedGroup:
     directory = f"{os.path.abspath(os.curdir)}/script/pubmed/data"
 
-    col_to_df = ["Full_author_name", "Mesh_terms", "Other_term", "Publication_type", "Chemical", "Condition",
+    col_to_df = ["Full_author_name", "Mesh_terms", "Other_terms", "Publication_type", "Chemical", "Condition",
                  "Observational_study_characteristics"]
 
     col_to_drop = [x for x in col_to_df]
@@ -96,6 +96,7 @@ class PubmedGroup:
 
             if column == "Chemical":
                 df[column] = df[column].apply(lambda x: f"{str(x).split('(', maxsplit=1)[1]}" if "(" in x else x)
+                df[column] = df[column].apply(lambda x: x.strip(")"))
                 df[column] = df[column].apply(
                     lambda x: x.replace("type i", "type 1") if "type i" in x
                     else x.replace("type ii", "type 2") if "type ii" in x
@@ -124,11 +125,17 @@ class PubmedGroup:
 
             self._CreateNewDataframes("population", column)
 
-        self.dataframes["pubmedArticles"] = self.dataframes["pubmedArticles"].drop(columns=[col for col in PubmedGroup.col_to_drop])
-        self.dataframes["pubmedArticles"] = self.dataframes["pubmedArticles"].drop_duplicates()
+        # self.dataframes["pubmedArticles"] = self.dataframes["pubmedArticles"].drop(columns=[col for col in PubmedGroup.col_to_drop])
+        keep = []
+        for col in self.dataframes["pubmedArticles"].columns:
+            if col not in self.col_to_drop:
+                keep.append(col)
+
+        self.dataframes["pubmedArticles"] = self.dataframes["pubmedArticles"].drop_duplicates(subset=keep)
         self.dataframes["pubmedArticles"] = self.dataframes["pubmedArticles"][["PMID", "PII", "DOI", "Title",
                                                                                "Publication_date", "Entrez_date", "Place_of_publication",
-                                                                               "Full_journal", "Investigator", "Abstract"]]
+                                                                               "Full_journal", "Investigator", "Abstract", "Mesh_terms", "Other_terms",
+                                                                               "Chemical", "Condition"]]
         # dataframe = self.dataframes["pubmedArticles"]
         # dataframe = dataframe[~dataframe.PMID.isin(self.dataframes["Condition"].PMID)]
         # self.dataframes["pubmedArticles"] = dataframe

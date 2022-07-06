@@ -235,7 +235,7 @@ class Pubmed:
                                 df.loc[idx, "Condition"].append(term)
                                 break
 
-                    for mesh_terms in df.loc[idx, "Other_term"]:
+                    for mesh_terms in df.loc[idx, "Other_terms"]:
                         mesh_term_without_slash = mesh_terms.split("/")
                         for mesh_term in mesh_term_without_slash:
                             if term in mesh_term or term == mesh_term:
@@ -268,7 +268,7 @@ class Pubmed:
                             df.loc[idx, "Observational_study_characteristics"].append(term)
                             break
 
-                for mesh_terms in df.loc[idx, "Other_term"]:
+                for mesh_terms in df.loc[idx, "Other_terms"]:
                     mesh_term_without_slash = mesh_terms.replace("*", "").split("/")
                     for mesh_term in mesh_term_without_slash:
                         if term in mesh_term or term == mesh_term:
@@ -334,7 +334,7 @@ class Pubmed:
 
     tag_translation = {"AB": "Abstract", "AD": "Affiliation", "AID": "Article_identifier",
                        "DP": "Publication_date", "EDAT": "Entrez_date", "FAU": "Full_author_name", "IR": "Investigator",
-                       "JT": "Full_journal", "MH": "Mesh_terms", "OT": "Other_term",
+                       "JT": "Full_journal", "MH": "Mesh_terms", "OT": "Other_terms",
                        "PL": "Place_of_publication", "PMID": "PMID", "PT": "Publication_type",
                        "RN": "Chemical", "TI": "Title"}
 
@@ -363,7 +363,7 @@ class Pubmed:
                     "review": "pubt.review",
                     "systematic review": "pubt.systematicreview"}
 
-    col_str_to_list = ["Article_identifier", "Full_author_name", "Mesh_terms", "Publication_type", "Chemical"]
+    col_str_to_list = ["Article_identifier", "Full_author_name", "Mesh_terms", "Other_terms", "Publication_type", "Chemical"]
 
     category = {
         "euthyroid sick syndromes": ["euthyroid sick syndromes"],

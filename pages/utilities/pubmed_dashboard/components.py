@@ -4,14 +4,16 @@ import dash_daq as daq
 from datetime import datetime, date, timedelta
 
 from pages.utilities.pubmed_const import *
+from pages.utilities.pubmed_helpers import *
 
+articles_count = SpaceInNumber(articles['PMID'].nunique())
 topCard1 = \
     dbc.CardGroup(
         [
             dbc.Card(
                 dbc.CardBody(
                     [
-                        html.H1(f"{articles['PMID'].nunique()}",
+                        html.H1(children=articles_count,
                                 className="card-title"),
                         html.P("Total articles", className="card-text"),
                     ],
@@ -26,15 +28,15 @@ topCard1 = \
         className="mt-4 shadow",
     )
 
+new_articles_this_month = SpaceInNumber(articles[(articles['Entrez_date'] >= f'{datetime.now().year}-{datetime.now().month - 1}') & (articles['Entrez_date'] < f'{datetime.now().year}-{datetime.now().month}')].shape[0])
 topCard2 = \
     dbc.CardGroup(
         [
             dbc.Card(
                 dbc.CardBody(
                     [
-                        html.H1(
-                            f"{articles[(articles['Entrez_date'] >= f'{datetime.now().year}-{datetime.now().month - 1}') & (articles['Entrez_date'] < f'{datetime.now().year}-{datetime.now().month}')].shape[0]}",
-                            className="card-title"),
+                        html.H1(children=new_articles_this_month,
+                                className="card-title"),
                         html.P("new articles this month", className="card-text", ),
                     ]
                 )
@@ -48,13 +50,14 @@ topCard2 = \
         className="mt-4 shadow",
     )
 
+total_authors = SpaceInNumber(full_author_name['Full_author_name'].nunique())
 topCard3 = \
     dbc.CardGroup(
         [
             dbc.Card(
                 dbc.CardBody(
                     [
-                        html.H1(f"{full_author_name['Full_author_name'].nunique()}",
+                        html.H1(total_authors,
                                 className="card-title"),
                         html.P("Total authors", className="card-text"),
                     ],
@@ -77,30 +80,12 @@ general_filters = \
                 dbc.Row([
                     dbc.Col([
                         html.Plaintext("Publication type:"),
-                        dcc.Dropdown(
-                            id="publication_type",
-                            options=all_p_type,
-                            value=[],
-                            multi=True,
-                        )
                     ]),
                     dbc.Col([
                         html.Plaintext("Authors name:"),
-                        dcc.Dropdown(
-                            id="author",
-                            options=all_authors,
-                            value=[],
-                            multi=True,
-                        )
                     ]),
                     dbc.Col([
                         html.Plaintext("Population:"),
-                        dcc.Dropdown(
-                            id="population",
-                            options=all_population,
-                            value=[],
-                            multi=True,
-                        )
                     ]),
                 ])
             ]
@@ -189,28 +174,10 @@ articlesDateOverview = \
                                               }),
 
                                       ], align="start"),
-
-                                      html.Br(),
-
-                                      html.Plaintext("Conditions:"),
-                                      dcc.Dropdown(
-                                          id="dateCondition",
-                                          options=[x for x in all_conditions],
-                                          value=[],
-                                          multi=True,
-                                          style={
-                                              "maxWidth": "50vmax"
-                                          }
-                                      ),
-                                      dcc.Checklist(
-                                          id="selectAllCategory",
-                                          options=["Select all category"],
-                                          inputStyle={"marginRight": "6px"}
-                                      )
                                   ])
             ],
                 style={"borderRadius": "15px"},
-                start_collapsed=False
+                start_collapsed=True
             )
         ]),
         class_name="card mb-4 border-1 shadow",
@@ -252,25 +219,107 @@ accordionArticles = \
             [
                 dbc.Row(
                     [
+                        dcc.Checklist(id="onlyObservational",
+                                      options=["Only show observational articles"],
+                                      value=[],
+                                      inputStyle={
+                                          "marginRight": "6px"
+                                      }
+                                      ),
+                        html.Br(),
+
                         dbc.Col(
                             [
-                                html.P("Sort by:"),
-                                dcc.Dropdown(id="accordion_sortby",
-                                             options=["most recent", "older"],
-                                             value="most recent",
-                                             style={
-                                                 "maxWidth": "50vmax"
-                                             }
-                                             )
+                                dbc.Input(id="articles_input",
+                                          placeholder="Search text...",
+                                          size="lg",
+                                          class_name="mb-3"),
+                                dcc.Checklist(id="articles_search_col",
+                                              options=["Abstract", "Title", "Mesh_terms", "Other_terms", "Condition", "Chemical"],
+                                              value=["Abstract"],
+                                              inputStyle={"marginRight": "6px",
+                                                          "marginLeft": "20px"},
+                                              inline=True),
                             ],
-                            style={"display": "flex"}
+                            width=4,
+                            style={
+                                "display": "block",
+                                "alignItems": "center",
+                                "justifyContent": "left",
+                            }
+                        ),
+                        dbc.Col(
+                            [
+                                dcc.Dropdown(
+                                    id="publication_type",
+                                    options=all_p_type,
+                                    value=[],
+                                    placeholder="Select publication type...",
+                                    multi=True,
+                                ),
+
+                                html.Br(),
+
+                                dcc.Dropdown(
+                                    id="population",
+                                    options=all_population,
+                                    value=[],
+                                    placeholder="Select population group...",
+                                    multi=True,
+                                ),
+                            ]
+                        ),
+                        dbc.Col(
+                            [
+                                dcc.Dropdown(
+                                    id="dateCategory",
+                                    options=[x for x in all_category],
+                                    value=[],
+                                    multi=True,
+                                    placeholder="Select category...",
+                                ),
+
+                                html.Br(),
+
+                                dcc.Dropdown(
+                                    id="observational_type",
+                                    options=[x for x in all_obs_value],
+                                    value=[],
+                                    multi=True,
+                                    disabled=True,
+                                    placeholder="Select observational characteristics",
+                                )
+                            ]
+                        ),
+                        dbc.Col(
+                            [
+                                html.Div(
+                                    [
+                                        dbc.Pagination(
+                                            id="articles_pagination",
+                                            fully_expanded=False,
+                                            max_value=5
+                                        ),
+
+                                        html.Br(),
+
+                                        html.Button(id="download_button", children="Download excel")
+                                    ],
+                                    style={"float": "right",
+                                           "alignItems": "center",
+                                           }
+                                ),
+                            ],
+                            width=True,
                         )
-                    ]
+                    ],
                 ),
+                html.Br(style={"marginTop": "10px"}),
                 dbc.Row(
                     [
                         dbc.Col(
                             [
+                                dcc.Markdown(children="number of results: NOT LOADED", id="results_number"),
                                 html.Div(id="accordionArticles")
                             ]
                         ),
