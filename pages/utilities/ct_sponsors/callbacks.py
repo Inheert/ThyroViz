@@ -9,11 +9,12 @@ from pages.utilities.ct_sponsors.components import *
           )
 def RepartitionPieUpdate(data):
     df = sponsors
+    print(df.info())
     df = df.groupby("new_class").count().reset_index().sort_values(by="new_class", ascending=False)
-    df["Unnamed: 0"] = df["Unnamed: 0"].apply(lambda x: round((x/df["Unnamed: 0"].sum())*100, 2))
+    df["id"] = df["id"].apply(lambda x: round((x/df["id"].sum())*100, 2))
     fig = go.Figure(data=[go.Pie(
         labels=df["new_class"],
-        values=df["Unnamed: 0"],
+        values=df["id"],
         marker=dict(
             colors=df["new_class"]
         )

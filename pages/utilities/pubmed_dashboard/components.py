@@ -100,6 +100,7 @@ categoryRepartition = \
     dbc.Card(
         dbc.CardBody(
             [
+                html.H5("Category repartition", style={"textAlign": "center"}),
                 dcc.Graph(
                     id="categoryRepartition",
                     style={
@@ -121,6 +122,7 @@ categoryRepartition = \
 articlesDateOverview = \
     dbc.Card(
         dbc.CardBody([
+            html.H5("Articles date overview", style={"textAlign": "center"}),
             dcc.Graph(
                 id="articleDateOverview",
                 style={
@@ -143,7 +145,7 @@ articlesDateOverview = \
                                           dbc.Col([
                                               html.Plaintext("Frequency:"),
                                               dcc.RadioItems(id="dateFrequency",
-                                                             options=["Year", "Month", "Weekly", "Day"],
+                                                             options=["Year", "Month", "Week", "Day"],
                                                              value="Year",
                                                              inputStyle={
                                                                  "marginRight": "6px"

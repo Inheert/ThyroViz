@@ -129,7 +129,23 @@ def DisplayArticlesDateOverview(p_type, pop, cond, freq, startDate, endDate, che
             df = df[df.PMID.isin(df_condition[df_condition.Category.isin(cond)]["PMID"])]
 
         df = df.groupby(pd.Grouper(key="Entrez_date", freq=freq[0])).count().reset_index().sort_values(by="Entrez_date")
-        df = df[(df["Entrez_date"] >= datetime(startDate[0], startDate[1], startDate[2])) & (df["Entrez_date"] <= datetime(endDate[0], endDate[1], endDate[2]))]
+
+        df["Entrez_date"] = df["Entrez_date"].apply(lambda x: datetime(x.year, 1 if freq == "Year" else x.month, 1 if freq in ["Year", "Month"] else x.day))
+
+        if freq == "Year":
+            df = df[(df["Entrez_date"] >= datetime(startDate[0], 1, 1)) & (
+                        df["Entrez_date"] <= datetime(endDate[0], 1, 31))]
+
+        elif freq == "Month":
+            df = df[(df["Entrez_date"] >= datetime(startDate[0], startDate[1], 1)) & (
+                        df["Entrez_date"] <= datetime(endDate[0], endDate[1], 31))]
+
+        elif freq in ["Week", "Day"]:
+            df = df[(df["Entrez_date"] >= datetime(startDate[0], startDate[1], startDate[2])) & (
+                        df["Entrez_date"] <= datetime(endDate[0], endDate[1], endDate[2]))]
+
+        # df = df[(df["Entrez_date"] >= datetime(startDate[0], startDate[1], startDate[2])) & (df["Entrez_date"] <= datetime(endDate[0], endDate[1], endDate[2]))]
+
         trace = go.Scatter(x=df["Entrez_date"],
                            y=df["PMID"],
                            name="sum of published articles in a period",
@@ -237,7 +253,7 @@ def UpdateArticlesOverview(only_obs: list, category: list, freq: str, checklist:
         df = df[df["Input_found"] == True]
 
     shape = SpaceInNumber(df.shape[0])
-    print(df.info())
+
     return df.to_dict('records'), f"Number of results: __{shape}__"
 
 
