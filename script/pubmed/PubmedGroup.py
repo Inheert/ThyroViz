@@ -88,7 +88,7 @@ class PubmedGroup:
             if column not in self.dataframes["pubmedArticles"]:
                 continue
 
-            df = pd.DataFrame(self.dataframes["pubmedArticles"][["PMID", column]].explode(column))
+            df = pd.DataFrame(self.dataframes["pubmedArticles"][["PMID", column]].explode(column)).reset_index(drop=True)
             df = df.drop_duplicates()
 
             df[column] = df[column].apply(lambda x: None if x == "" else x)
@@ -116,6 +116,18 @@ class PubmedGroup:
             elif column == "Condition":
                 df["Category"] = df[column].apply(
                     lambda x: self._GetCategoryCondition(x))
+
+                global_disease = df[df["Category"] == "thyroid disease"]
+                print(df.shape[0])
+
+                for idx in global_disease.index:
+
+                    if df[(df["PMID"] == global_disease.loc[idx, "PMID"]) & (
+                            df["Category"] != "thyroid disease")].shape[0] > 0:
+
+                        df = df.drop(labels=idx, axis=0)
+
+                print(df.shape[0])
 
             elif column == "Full_author_name":
                 df["Without_special_character"] = df[column].apply(lambda x: x.replace(",", ""))
