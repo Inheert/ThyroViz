@@ -5,9 +5,10 @@ import plotly.graph_objects as go
 import math
 
 @callback(Output("categoryRepartition", "figure"),
+          Input("dataframe_store", "data"),
           Input("publication_type", "value"),
           Input("population", "value"))
-def DisplayCategoryRepartitionChart(p_type, pop):
+def DisplayCategoryRepartitionChart(stored_dataframe, p_type, pop):
     """
 
 
@@ -17,8 +18,11 @@ def DisplayCategoryRepartitionChart(p_type, pop):
     :return: at the end this callback return the pie chart by condition category
     """
 
+    stored_dataframe = pd.DataFrame(stored_dataframe)
+
     df = df_condition.copy()
     df = df[["PMID", "Category"]]
+    df = df[df["PMID"].isin(stored_dataframe.PMID)]
 
     if len(p_type) > 0:
         df = df[df.PMID.isin(publication_type[publication_type.Publication_type.isin(p_type)]["PMID"])]
@@ -69,6 +73,7 @@ def DisplayCategoryRepartitionChart(p_type, pop):
 
 
 @callback(Output("articleDateOverview", "figure"),
+          Input("dataframe_store", "data"),
           Input("publication_type", "value"),
           Input("population", "value"),
           Input("dateCategory", "value"),
@@ -76,7 +81,7 @@ def DisplayCategoryRepartitionChart(p_type, pop):
           Input("datePickerRange", "start_date"),
           Input("datePickerRange", "end_date"),
           Input("date_checklist", "value"))
-def DisplayArticlesDateOverview(p_type, pop, cond, freq, startDate, endDate, checklist):
+def DisplayArticlesDateOverview(stored_dataframe, p_type, pop, cond, freq, startDate, endDate, checklist):
     """
 
     :param p_type: same utility than above
@@ -95,15 +100,19 @@ def DisplayArticlesDateOverview(p_type, pop, cond, freq, startDate, endDate, che
     endDate = endDate.split("-")
     endDate = [int(x) for x in endDate]
 
-    df = articles.copy()
+    stored_dataframe = pd.DataFrame(stored_dataframe)
+    stored_dataframe["Entrez_date"] = pd.to_datetime(stored_dataframe["Entrez_date"])
+    print(stored_dataframe.info())
+    df = stored_dataframe
     dff = df_condition.copy()
 
     df = df[df.PMID.isin(dff.PMID)]
+    # df = df[df.PMID.isin(pd.DataFrame(stored_dataframe).PMID)]
 
-    if len(p_type) > 0:
-        df = df[df.PMID.isin(publication_type[publication_type.Publication_type.isin(p_type)]["PMID"])]
-    if len(pop) > 0:
-        df = df[df.PMID.isin(population[population.Population.isin(pop)]["PMID"])]
+    # if len(p_type) > 0:
+    #     df = df[df.PMID.isin(publication_type[publication_type.Publication_type.isin(p_type)]["PMID"])]
+    # if len(pop) > 0:
+    #     df = df[df.PMID.isin(population[population.Population.isin(pop)]["PMID"])]
 
     traces = []
     if checklist and "Show graph by conditions" in checklist:
@@ -112,6 +121,7 @@ def DisplayArticlesDateOverview(p_type, pop, cond, freq, startDate, endDate, che
             dff = df[df.PMID.isin(df_condition[df_condition.Category == category]["PMID"])]
             dff = dff.groupby(pd.Grouper(key="Entrez_date", freq=freq[0])).count().reset_index().sort_values(
                 by="Entrez_date")
+
             dff = dff[(dff["Entrez_date"] >= datetime(startDate[0], startDate[1], startDate[2])) &
                       (dff["Entrez_date"] <= datetime(endDate[0], endDate[1], endDate[2]))]
 
@@ -130,19 +140,19 @@ def DisplayArticlesDateOverview(p_type, pop, cond, freq, startDate, endDate, che
 
         df = df.groupby(pd.Grouper(key="Entrez_date", freq=freq[0])).count().reset_index().sort_values(by="Entrez_date")
 
-        df["Entrez_date"] = df["Entrez_date"].apply(lambda x: datetime(x.year, 1 if freq == "Year" else x.month, 1 if freq in ["Year", "Month"] else x.day))
-
-        if freq == "Year":
-            df = df[(df["Entrez_date"] >= datetime(startDate[0], 1, 1)) & (
-                        df["Entrez_date"] <= datetime(endDate[0], 1, 31))]
-
-        elif freq == "Month":
-            df = df[(df["Entrez_date"] >= datetime(startDate[0], startDate[1], 1)) & (
-                        df["Entrez_date"] <= datetime(endDate[0], endDate[1], 31))]
-
-        elif freq in ["Week", "Day"]:
-            df = df[(df["Entrez_date"] >= datetime(startDate[0], startDate[1], startDate[2])) & (
-                        df["Entrez_date"] <= datetime(endDate[0], endDate[1], endDate[2]))]
+        # df["Entrez_date"] = df["Entrez_date"].apply(lambda x: datetime(x.year, 1 if freq == "Year" else x.month, 1 if freq in ["Year", "Month"] else x.day))
+        #
+        # if freq == "Year":
+        #     df = df[(df["Entrez_date"] >= datetime(startDate[0], 1, 1)) & (
+        #                 df["Entrez_date"] <= datetime(endDate[0], 1, 31))]
+        #
+        # elif freq == "Month":
+        #     df = df[(df["Entrez_date"] >= datetime(startDate[0], startDate[1], 1)) & (
+        #                 df["Entrez_date"] <= datetime(endDate[0], endDate[1], 31))]
+        #
+        # elif freq in ["Week", "Day"]:
+        #     df = df[(df["Entrez_date"] >= datetime(startDate[0], startDate[1], startDate[2])) & (
+        #                 df["Entrez_date"] <= datetime(endDate[0], endDate[1], endDate[2]))]
 
         # df = df[(df["Entrez_date"] >= datetime(startDate[0], startDate[1], startDate[2])) & (df["Entrez_date"] <= datetime(endDate[0], endDate[1], endDate[2]))]
 
@@ -188,9 +198,12 @@ def DisplayArticlesDateOverview(p_type, pop, cond, freq, startDate, endDate, che
           Input("publication_type", "value"),
           Input("population", "value"),
           Input("articles_search_col", "value"),
-          Input("observational_type", "value"))
+          Input("observational_type", "value"),
+          Input("datePickerRange", "start_date"),
+          Input("datePickerRange", "end_date"),
+          )
 def UpdateArticlesOverview(only_obs: list, category: list, freq: str, checklist: list, graphClick: dict, txt_input: str,
-                           p_type: list, pop: list, colToSearch: list, observational_char: list):
+                           p_type: list, pop: list, colToSearch: list, observational_char: list, startDate, endDate):
     """
 
     :param observational_char:
@@ -256,8 +269,29 @@ def UpdateArticlesOverview(only_obs: list, category: list, freq: str, checklist:
 
         df = df[df["Input_found"] == True]
 
+    df["Entrez_date"] = df["Entrez_date"].apply(
+        lambda x: datetime(x.year, 1 if freq == "Year" else x.month, 1 if freq in ["Year", "Month"] else x.day))
+
+    startDate = startDate.split("-")
+    startDate = [int(x) for x in startDate]
+
+    endDate = endDate.split("-")
+    endDate = [int(x) for x in endDate]
+
+    if freq == "Year":
+        df = df[(df["Entrez_date"] >= datetime(startDate[0], 1, 1)) & (
+                df["Entrez_date"] <= datetime(endDate[0], 1, 31))]
+
+    elif freq == "Month":
+        df = df[(df["Entrez_date"] >= datetime(startDate[0], startDate[1], 1)) & (
+                df["Entrez_date"] <= datetime(endDate[0], endDate[1], 31))]
+
+    elif freq in ["Week", "Day"]:
+        df = df[(df["Entrez_date"] >= datetime(startDate[0], startDate[1], startDate[2])) & (
+                df["Entrez_date"] <= datetime(endDate[0], endDate[1], endDate[2]))]
+
+    df = df.sort_values(by="Entrez_date", ascending=False)
     shape = SpaceInNumber(df.shape[0])
-    df = df.sort_values(by="Entrez_date")
 
     return df.to_dict('records'), f"Number of results: __{shape}__"
 

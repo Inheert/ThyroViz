@@ -177,6 +177,19 @@ sidebar = \
         ]
     )
 
+content = html.Div(dl.plugins.page_container, style=CONTENT_STYLE, id="page-content")
+# app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
+app.layout = html.Div(
+    dbc.Row(
+        [
+            dcc.Location(id="url"),
+            dbc.Col(sidebar, width="auto"),
+            dbc.Col(content),
+            dcc.Store(id="test")
+        ]
+    ),
+)
+
 
 @callback(Output('slideMenu', 'is_open'),
           Input('slideMenuButton', 'n_clicks'),
@@ -233,20 +246,6 @@ def updatingData(submit_n_clicks):
         appLaunch()
         return None, lastUpdate
     return None, lastUpdate
-
-
-content = html.Div(dl.plugins.page_container, style=CONTENT_STYLE, id="page-content")
-# app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
-app.layout = html.Div(
-    dbc.Row(
-        [
-            dcc.Location(id="url"),
-            dbc.Col(sidebar, width="auto"),
-            dbc.Col(content),
-            dcc.Store(id="test")
-        ]
-    ),
-)
 
 @callback(Output("page-content", "children"),
           Input("page-content", "children"))
