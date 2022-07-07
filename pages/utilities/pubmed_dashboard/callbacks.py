@@ -102,7 +102,7 @@ def DisplayArticlesDateOverview(stored_dataframe, p_type, pop, cond, freq, start
 
     stored_dataframe = pd.DataFrame(stored_dataframe)
     stored_dataframe["Entrez_date"] = pd.to_datetime(stored_dataframe["Entrez_date"])
-    print(stored_dataframe.info())
+
     df = stored_dataframe
     dff = df_condition.copy()
 
@@ -122,8 +122,11 @@ def DisplayArticlesDateOverview(stored_dataframe, p_type, pop, cond, freq, start
             dff = dff.groupby(pd.Grouper(key="Entrez_date", freq=freq[0])).count().reset_index().sort_values(
                 by="Entrez_date")
 
-            dff = dff[(dff["Entrez_date"] >= datetime(startDate[0], startDate[1], startDate[2])) &
-                      (dff["Entrez_date"] <= datetime(endDate[0], endDate[1], endDate[2]))]
+            dff["Entrez_date"] = dff["Entrez_date"].apply(
+                lambda x: datetime(x.year, 1 if freq == "Year" else x.month, 1 if freq in ["Year", "Month"] else x.day))
+
+            # dff = dff[(dff["Entrez_date"] >= datetime(startDate[0], startDate[1], startDate[2])) &
+            #           (dff["Entrez_date"] <= datetime(endDate[0], endDate[1], endDate[2]))]
 
             trace = go.Scatter(x=dff["Entrez_date"],
                                y=dff["PMID"],
@@ -140,8 +143,8 @@ def DisplayArticlesDateOverview(stored_dataframe, p_type, pop, cond, freq, start
 
         df = df.groupby(pd.Grouper(key="Entrez_date", freq=freq[0])).count().reset_index().sort_values(by="Entrez_date")
 
-        # df["Entrez_date"] = df["Entrez_date"].apply(lambda x: datetime(x.year, 1 if freq == "Year" else x.month, 1 if freq in ["Year", "Month"] else x.day))
-        #
+        df["Entrez_date"] = df["Entrez_date"].apply(lambda x: datetime(x.year, 1 if freq == "Year" else x.month, 1 if freq in ["Year", "Month"] else x.day))
+
         # if freq == "Year":
         #     df = df[(df["Entrez_date"] >= datetime(startDate[0], 1, 1)) & (
         #                 df["Entrez_date"] <= datetime(endDate[0], 1, 31))]
@@ -253,8 +256,6 @@ def UpdateArticlesOverview(only_obs: list, category: list, freq: str, checklist:
             df = df[(df.year == curve_date.year) & (df.month == curve_date.month)]
         elif freq == "Weekly":
             df = df[(df.Entrez_date >= curve_date - timedelta(days=6)) & (df.Entrez_date <= curve_date)]
-        # elif freq == "Day":
-        #     df = df[(df.Entrez_date == curve_date)]
 
     else:
         if len(category) > 0 and checklist[0] == "None":
