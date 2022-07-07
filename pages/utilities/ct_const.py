@@ -18,7 +18,7 @@ investigators = pd.read_csv("script/clinical_trials/sql/visualisation/CSV_files/
 
 intervention_types = pd.read_csv("script/clinical_trials/sql/visualisation/CSV_files/df_intervention_types.csv", index_col=[0])
 
-country = pd.read_csv("script/clinical_trials/sql/visualisation/CSV_files/df_country.csv", index_col=[0])
+country = pd.read_csv("script/clinical_trials/sql/visualisation/CSV_files/df_country.csv")
 
 all_category = [x for x in s_base.category.sort_values().unique()]
 all_sub_category = [x for x in s_base.sub_category.sort_values().unique()]

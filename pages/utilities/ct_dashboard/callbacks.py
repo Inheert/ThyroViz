@@ -91,11 +91,11 @@ def CardStatUpdate(firstYear, secondYear, data):
                             "fontSize": "1.2vmax",
                             "color": "#2CEC47"
                         }), \
-               html.H3(f"{variation}%",
+               html.H3(f"{diff} studies",
                        style={
                            "color": "#2CEC47"
                        }), \
-               html.Plaintext(f"+{diff} études",
+               html.Plaintext(f"+{variation}%",
                               style={
                                   "color": "#2CEC47"
                               }),
@@ -105,12 +105,12 @@ def CardStatUpdate(firstYear, secondYear, data):
                             "fontSize": "1.2vmax",
                             "color": "#F50C0C"
                         }), \
-               html.H3(f"{variation}%",
+               html.H3(f"{diff} studies",
                        id="card1Output2",
                        style={
                            "color": "#F50C0C"
                        }), \
-               html.Plaintext(f"{diff} études",
+               html.Plaintext(f"{variation}%",
                               style={
                                   "color": "#F50C0C"
                               }),
@@ -161,7 +161,7 @@ def CardStat2Update(sp_class, data):
                      "fontSize": "1.2vmax",
                  }), \
         html.H3(f"{repartition}%"), \
-        html.Plaintext(f"{studiesCount} études"),
+        html.Plaintext(f"{studiesCount} studies"),
 
 
 @callback(Output("card1Input1", "value"),
@@ -446,17 +446,20 @@ def FigureHistoricalUpdate(data, dateColumn, minYear, maxYear, periodDisplay, fi
     fig = go.Figure(data=StudiesByYear(data, dateColumn, minYear, maxYear, periodDisplay, figure))
 
     fig.update_layout(
+        title="test",
         xaxis=dict(
             showgrid=False,
             showline=False,
             showticklabels=True,
             zeroline=False,
+            title="Years"
         ),
         yaxis=dict(
             showgrid=True,
             showline=True,
             showticklabels=True,
             zeroline=False,
+            title="Number of studies"
         ),
         paper_bgcolor='rgba(0, 0, 0, 0)',
         plot_bgcolor='rgba(0, 0, 0, 0)',
@@ -475,27 +478,16 @@ def ParametersTabUpdating(*args):
     else:
         return parametersItem2
 
-
-"""
-SelectedStudy():
-    Store the row index in a dcc.Store component.
-OpenStudiesModal():
-    Open a modal (new window) when the "more informations" button is pressed, if no
-    study selected the modal can't be open.
-"""
-
-@callback(Output("studyIndex", "data"),
-          Input("datatable", "selected_rows"))
-def SelectedStudy(row):
-    return row
-
-
-@callback(Output("studiesModal", "children"),
-          Output("moreStudyInfo", "n_clicks"),
-          Input("studyIndex", "data"),
-          Input("moreStudyInfo", "n_clicks"))
-def OpenStudiesModal(data, n_clicks):
-    if n_clicks:
-        return ModalStudiesInfo(data if data is not None else [0], True), None
+@callback(Output("SDO_card", "class_name"),
+          Output("SDO_card", "style"),
+          Input("SDO_highlight", "value"))
+def HighlightPieTabs(highlight):
+    if highlight:
+        return "card mb-4 border-3", {"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
+                                      "borderRadius": "15px",
+                                      "borderColor": "#F8DF09"}
     else:
-        return None, None
+        return "card mb-4 border-1", {"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
+                                      "borderRadius": "15px"}
+
+

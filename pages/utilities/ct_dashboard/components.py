@@ -6,6 +6,7 @@ from geopy.geocoders import Nominatim
 from pages.utilities.ct_helpers import *
 from pages.utilities.ct_dashboard.graphParameters import *
 
+studies_in_progress = SpaceInNumber(len(studies['nct_id'].unique()))
 topCardNav1 = dbc.Nav(
     [
         dbc.NavItem(dbc.NavLink(
@@ -14,9 +15,9 @@ topCardNav1 = dbc.Nav(
                     dbc.Card(
                         dbc.CardBody(
                             [
-                                html.H1(f"{len(studies['nct_id'].unique())}",
+                                html.H1(studies_in_progress,
                                         className="card-title"),
-                                html.P("studies in progress", className="card-text"),
+                                html.P("Studies in progress", className="card-text"),
                             ],
                         ),
                     ),
@@ -37,6 +38,7 @@ topCardNav1 = dbc.Nav(
     fill=True
 )
 
+new_studies = SpaceInNumber(s_base[(s_base['study_first_submitted_date'] >= f'{datetime.now().year}-{datetime.now().month - 1}') & (s_base['study_first_submitted_date'] < f'{datetime.now().year}-{datetime.now().month}')].shape[0])
 topCardNav2 = dbc.Nav(
     [
         dbc.NavItem(dbc.NavLink(
@@ -46,10 +48,9 @@ topCardNav2 = dbc.Nav(
                     dbc.Card(
                         dbc.CardBody(
                             [
-                                html.H1(
-                                    f"{s_base[(s_base['study_first_submitted_date'] >= f'{datetime.now().year}-{datetime.now().month - 1}') & (s_base['study_first_submitted_date'] < f'{datetime.now().year}-{datetime.now().month}')].shape[0]}",
-                                    className="card-title"),
-                                html.P("new studies this month", className="card-text", ),
+                                html.H1(new_studies,
+                                        className="card-title"),
+                                html.P("New studies this month", className="card-text", ),
                             ]
                         )
                     ),
@@ -70,6 +71,7 @@ topCardNav2 = dbc.Nav(
     fill=True
 )
 
+sponsors_number = SpaceInNumber(len(sponsors.name.unique()))
 topCardNav3 = dbc.Nav(
     [
         dbc.NavItem(dbc.NavLink(
@@ -79,9 +81,8 @@ topCardNav3 = dbc.Nav(
                     dbc.Card(
                         dbc.CardBody(
                             [
-                                html.H1(
-                                    f"{len(sponsors.name.unique())}",
-                                    className="card-title"),
+                                html.H1(sponsors_number,
+                                        className="card-title"),
                                 html.P("Number of sponsors",
                                        className="card-text"),
                             ]
@@ -104,6 +105,7 @@ topCardNav3 = dbc.Nav(
     fill=True
 )
 
+investigators_number = SpaceInNumber(len(investigators.name.unique()))
 topCardNav4 = dbc.Nav(
     [
         dbc.NavItem(dbc.NavLink(
@@ -113,9 +115,8 @@ topCardNav4 = dbc.Nav(
                     dbc.Card(
                         dbc.CardBody(
                             [
-                                html.H1(
-                                    f"{len(investigators.name.unique())}",
-                                    className="card-title"),
+                                html.H1(investigators_number,
+                                        className="card-title"),
                                 html.P("Number of investigators",
                                        className="card-text", ),
                             ]
@@ -187,7 +188,7 @@ lightStatistic1 = \
                                     }
                                 ),
                                 dbc.Col(
-                                    html.P("to: ",
+                                    html.P("compared to: ",
                                            style={
                                                "verticalAlign": "bottom",
                                                "alignItems": "end"
@@ -293,7 +294,9 @@ lightStatistic2 = \
             ),
             class_name="card mb-4 border-1",
             style={"backgroundColor": "#fdfdfd",
-                   "borderRadius": "15px"}
+                   "borderRadius": "15px",
+                   "display": "flex",
+                   "height": "100%"}
         )
     )
 
@@ -350,17 +353,17 @@ leftCategoryCard = \
                                  always_open=True,
                                  children=[
                                      dbc.AccordionItem(
-                                         title="Category/Sub-category repartition",
+                                         title="Disease categories / disease",
                                          id="parametersItem1",
                                          children=parametersItem1,
                                      ),
                                      dbc.AccordionItem(
-                                         title="Studies overview based on date",
+                                         title="Studies by time period",
                                          id="parametersItem2",
                                          children=parametersItem2
                                      ),
                                      dbc.AccordionItem(
-                                         title="Studies repartition",
+                                         title="Studies repartition by different columns",
                                          id="parametersItem3",
                                          children=parametersItem3
                                      )
@@ -370,8 +373,6 @@ leftCategoryCard = \
                                      'fontSize': "0.6vmax"
                                  }
                              ),
-                             html.Div(id="param1"),
-                             html.Div(id="param2"),
                          ]),
              ],
              )

@@ -130,14 +130,7 @@ layout = html.Div(
                                     ]
                                 )
                             ],
-                            style={
-                                "display": "flex",
-                                "alignItems": "top",
-                                "justifyContent": "center",
-                                "horizontalAlign": "center",
-                            }
                         )
-
                     ],
                     style={
                         "margin": "auto",

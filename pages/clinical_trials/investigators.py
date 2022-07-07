@@ -44,6 +44,11 @@ layout = html.Div(
                 ),
                 dbc.Col(
                     [
+                        investigatorsLocations
+                    ]
+                ),
+                dbc.Col(
+                    [
                         investigatorInfos
                     ]
                 )
@@ -67,6 +72,57 @@ layout = html.Div(
 ),
 
 
+@callback(Output("invLocations", "children"),
+          Input("invDataMapOutput", "selected_rows"),
+          Input("dfStored", "data"))
+def DisplayInvestigatorsLocations(idx, dfStored):
+    df = pd.DataFrame(dfStored)
+
+    if idx:
+        row = dict(investigators[investigators.name == df.loc[idx, "name"].iloc[0]].iloc[0])
+        rows = investigators[investigators.name == df.loc[idx, "name"].iloc[0]]
+
+        table = dash_table.DataTable(
+                            data=rows.to_dict("records"),
+                            columns=[{"name": i, "id": i} for i in rows[["city", "state", "country", "zip", "continent"]].columns],
+                            page_size=15,
+                            filter_action="native",
+                            sort_action="native",
+                            row_selectable="single",
+                            style_cell={
+                                'height': 'auto',
+                                # all three widths are needed
+                                'minWidth': '100px', 'width': '100px', 'maxWidth': '100px',
+                                'whiteSpace': 'normal'
+                            },
+                            style_header={
+                                'backgroundColor': "#0D6986",
+                                "color": "white",
+                                "fontWeight": 900,
+                                "fontSize": "12px"
+                            },
+                            style_table={
+                                'borderRadius': '15px',
+                                'overflow': 'hidden',
+                                'overflowX': 'auto'
+                            },
+                            style_data_conditional=[
+                                {
+                                    'if': {'row_index': 'odd'},
+                                    'backgroundColor': 'rgb(223, 226, 232)',
+                                    'color': 'black'
+                                },
+                                {
+                                    'if': {'row_index': 'even'},
+                                    'backgroundColor': 'rgb(245, 249, 255)'
+                                }
+                            ]
+                        )
+        return table
+
+    else:
+        return None
+
 @callback(Output("name", "children"),
           Output("city", "children"),
           Output("state", "children"),
@@ -80,7 +136,7 @@ def InvestigatorInfosUpdate(idx, dfLoc):
         row = dict(investigators[investigators.name == df.loc[idx, "name"].iloc[0]].iloc[0])
         rows = investigators[investigators.name == df.loc[idx, "name"].iloc[0]]
         city, state, country, continent = [x for x in rows.city.unique()], [x for x in rows.state.unique()], [x for x in rows.country.unique()], [x for x in rows.continent.unique()]
-        print(city, state, country, continent)
+
         return f"**Name:** {row['name']}", f"**City:** {row['city']}", f"**State:** {row['state']}", f"**Country:** {row['country']}", f"**Continent:** {row['continent']}"
 
     return "**Name:** ", "**City:** ", "**State:** ", "**Country:** ", "**Continent:** "
@@ -100,8 +156,9 @@ def SelectedRowVerification(*args):
           Input("categorySelection", "value"),
           Input("stypeSelection", "value"),
           Input("statusSelection", "value"),
-          Input("phasesSelection", "value"))
-def GeoInvestigatorsUpdate(cat, stype, status, phase):
+          Input("phasesSelection", "value"),
+          Input("subCategorySelection", "value"))
+def GeoInvestigatorsUpdate(cat, stype, status, phase, sub_category):
     inv = investigators.copy()
     df = s_base.copy()
 
@@ -117,6 +174,9 @@ def GeoInvestigatorsUpdate(cat, stype, status, phase):
     if phase:
         df = df[df.study_phases.isin(phase)]
         inv = inv[inv["nct_id"].isin(s_base[s_base.study_phases.isin(phase)]["nct_id"])]
+    if sub_category:
+        df = df[df.sub_category.isin(sub_category)]
+        inv = inv[inv["nct_id"].isin(s_base[s_base.sub_category.isin(sub_category)]["nct_id"])]
 
     inv.drop_duplicates(subset=["name", "city", "country"], keep="first", inplace=True)
     count = inv[["name", "iso"]]
@@ -169,13 +229,15 @@ def GeoInvestigatorsUpdate(cat, stype, status, phase):
           Input("categorySelection", "value"),
           Input("stypeSelection", "value"),
           Input("statusSelection", "value"),
-          Input("phasesSelection", "value")
+          Input("phasesSelection", "value"),
+          Input("subCategorySelection", "value")
           )
-def DatatableUpdating(inp, cat, stype, status, phase):
+def DatatableUpdating(inp, cat, stype, status, phase, sub_category):
     if inp is None:
         df = investigators.copy()
     else:
         df = investigators[investigators["iso"] == inp["points"][0]["location"]].copy()
+
     if cat:
         df = df[df["nct_id"].isin(s_base[s_base.category.isin(cat)]["nct_id"])]
     if stype:
@@ -184,6 +246,8 @@ def DatatableUpdating(inp, cat, stype, status, phase):
         df = df[df["nct_id"].isin(s_base[s_base.overall_status.isin(status)]["nct_id"])]
     if phase:
         df = df[df["nct_id"].isin(s_base[s_base.study_phases.isin(phase)]["nct_id"])]
+    if sub_category:
+        df = df[df["nct_id"].isin(s_base[s_base.sub_category.isin(sub_category)]["nct_id"])]
 
     final = df[["name"]].copy()
     final["studies_count"] = 1
@@ -205,16 +269,16 @@ def StudiesDatatableUpdating(loc, idx, dfLoc):
     inv = investigators.copy()
     nameRetrieve = pd.DataFrame(dfLoc)
 
-    if loc and idx is None:
+    if loc and len(idx) == 0:
         iso = loc["points"][0]["location"]
         df = df[df.nct_id.isin(country[country.iso == iso]["nct_id"])]
 
-    elif idx and loc is None:
-        invName = nameRetrieve.loc[idx, "name"].iloc[0]
+    elif len(idx) > 0 and loc is None:
+        invName = nameRetrieve.loc[idx[0], "name"]
         df = df[df.nct_id.isin(inv[inv.name == invName]["nct_id"])]
 
-    elif loc and idx:
-        invName = nameRetrieve.loc[idx, "name"].iloc[0]
+    elif loc and len(idx) > 0:
+        invName = nameRetrieve.loc[idx[0], "name"]
         df = df[df.nct_id.isin(inv[inv.name == invName]["nct_id"])]
 
         iso = loc["points"][0]["location"]

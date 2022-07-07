@@ -251,7 +251,7 @@ def updatingData(submit_n_clicks):
           Input("page-content", "children"))
 def Test(children: dict):
     href = children["props"]["children"][0]["props"]["href"]
-    print(href)
+
     if href == "http://127.0.0.1:8050/":
         children["props"]["children"][0]["props"]["href"] = "http://127.0.0.1:8050/clinical-trials/dashboard"
         return children

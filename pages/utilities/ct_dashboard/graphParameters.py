@@ -257,7 +257,7 @@ parametersItem3 = \
             value="study_phases",
         ),
         html.Br(),
-        html.Plaintext("divide the source by:",
+        html.Plaintext("View the repartition source by:",
                        style={
                            "marginBottom": "0px"
                        }
@@ -265,8 +265,8 @@ parametersItem3 = \
         dcc.RadioItems(
             id="SR_radioItems",
             options=[
-                {'label': 'all ct_studies', 'value': 'all'},
-                {'label': 'valid ct_studies', 'value': 'only'}
+                {'label': 'all studies', 'value': 'all'},
+                {'label': 'the selected source', 'value': 'only'}
             ],
             value='all',
             inputStyle={

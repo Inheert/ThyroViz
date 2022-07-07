@@ -15,26 +15,31 @@ filterCard = \
                     html.P("Category selection:"),
                     dcc.Dropdown(id="categorySelection",
                                  options=all_category,
+                                 placeholder="Category...",
                                  multi=True),
                     html.Br(),
                     html.P("Sub-category selection:"),
                     dcc.Dropdown(id="subCategorySelection",
                                  options=all_sub_category,
+                                 placeholder="Sub-category...",
                                  multi=True),
                     html.Br(),
                     html.P("Study type selection: "),
                     dcc.Dropdown(id="stypeSelection",
                                  options=all_stype,
+                                 placeholder="Study types...",
                                  multi=True),
                     html.Br(),
                     html.P("Study status selection:"),
                     dcc.Dropdown(id="statusSelection",
                                  options=all_status,
+                                 placeholder="Study status",
                                  multi=True),
                     html.Br(),
                     html.P("Study phases selection: "),
                     dcc.Dropdown(id="phasesSelection",
                                  options=['Unknow' if x is None else x for x in all_phases],
+                                 placeholder="Study phases",
                                  multi=True),
                     # html.Br(),
                     # html.P("Sponsors class:"),
@@ -127,6 +132,23 @@ invDatatable = \
         style={"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
                "borderRadius": "15px",
                "marginTop": "15px"},
+        class_name="card mb-4 border-1"
+    )
+
+investigatorsLocations = \
+    dbc.Card(
+        [
+            dbc.CardBody(
+                [
+
+                ],
+                id="invLocations"
+            )
+        ],
+        style={"backgroundColor": "hsl(247.74, 52.54%, 98.43%)",
+               "borderRadius": "15px",
+               "marginTop": "15px",
+               "height": "64vh"},
         class_name="card mb-4 border-1"
     )
 
