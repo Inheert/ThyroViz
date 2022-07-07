@@ -187,11 +187,13 @@ def DisplayArticlesDateOverview(p_type, pop, cond, freq, startDate, endDate, che
           Input("articles_input", "value"),
           Input("publication_type", "value"),
           Input("population", "value"),
-          Input("articles_search_col", "value"))
+          Input("articles_search_col", "value"),
+          Input("observational_type", "value"))
 def UpdateArticlesOverview(only_obs: list, category: list, freq: str, checklist: list, graphClick: dict, txt_input: str,
-                           p_type: list, pop: list, colToSearch: list):
+                           p_type: list, pop: list, colToSearch: list, observational_char: list):
     """
 
+    :param observational_char:
     :param only_obs: checkbox used like a bool to keep only observation articles, id: 'onlyObservational'
     :param category: dropdown menu to filter all dataframe by category
     :param freq: here freq is used when point on line plot is clicked, for example if year is selected then we can only see all articles publish during the selected date (if i click on 2012 on graph then i will saw all articles from 2012)
@@ -210,6 +212,8 @@ def UpdateArticlesOverview(only_obs: list, category: list, freq: str, checklist:
 
     if len(only_obs) > 0:
         df = df[df.PMID.isin(observational.PMID)]
+    if len(observational_char) > 0:
+        df = df[df.PMID.isin(observational[observational.Observational_study_characteristics.isin(observational_char)]["PMID"])]
 
     df["month"] = df["Entrez_date"].apply(lambda x: x.month)
     df["year"] = df["Entrez_date"].apply(lambda x: x.year)
@@ -253,6 +257,7 @@ def UpdateArticlesOverview(only_obs: list, category: list, freq: str, checklist:
         df = df[df["Input_found"] == True]
 
     shape = SpaceInNumber(df.shape[0])
+    df = df.sort_values(by="Entrez_date")
 
     return df.to_dict('records'), f"Number of results: __{shape}__"
 

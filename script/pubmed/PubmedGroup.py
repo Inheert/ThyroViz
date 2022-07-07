@@ -98,19 +98,30 @@ class PubmedGroup:
                 df[column] = df[column].apply(lambda x: f"{str(x).split('(', maxsplit=1)[1]}" if "(" in x else x)
                 df[column] = df[column].apply(lambda x: x.strip(")"))
                 df[column] = df[column].apply(
-                    lambda x: x.replace("type i", "type 1") if "type i" in x
-                    else x.replace("type ii", "type 2") if "type ii" in x
-                    else x.replace("type iii", "type 3") if "type iii" in x
+                    lambda x: x.replace("type iii", "type 3") if "type iii" == x
+                    else x.replace("type ii", "type 2") if "type ii" == x
+                    else x.replace("type i", "type 1") if "type i" == x
                     else x)
 
-            elif column == "Mesh_terms":
+            elif column in "Mesh_terms":
                 df[column] = df[column].apply(
-                    lambda x: x.replace("type i", "type 1") if "type i" in x
+                    lambda x: x.replace("type iii", "type 3") if "type iii" in x
                     else x.replace("type ii", "type 2") if "type ii" in x
-                    else x.replace("type iii", "type 3") if "type iii" in x
-                    else x.replace("class i", "class 1") if "class i" in x
+                    else x.replace("type i", "type 1") if "type i" in x
+                    else x)
+
+                df[column] = df[column].apply(
+                    lambda x: x.replace("class iii", "class 3") if "class iii" in x
                     else x.replace("class ii", "class 2") if "class ii" in x
-                    else x.replace("class iii", "class 3") if "class iii" in x
+                    else x.replace("class i", "class 1") if "class i" in x
+                    else x)
+
+            elif column in "Publication_type":
+                df[column] = df[column].apply(
+                    lambda x: x.replace("clinical trial, phase iv", "clinical trial, phase 4") if x == "clinical trial, phase iv"
+                    else x.replace("clinical trial, phase iii", "clinical trial, phase 3") if x == "clinical trial, phase iii"
+                    else x.replace("clinical trial, phase ii", "clinical trial, phase 2") if x == "clinical trial, phase ii"
+                    else x.replace("clinical trial, phase i", "clinical trial, phase 1") if x == "clinical trial, phase i"
                     else x)
 
             elif column == "Condition":

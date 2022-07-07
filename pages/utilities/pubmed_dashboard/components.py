@@ -222,7 +222,7 @@ accordionArticles = \
                 dbc.Row(
                     [
                         dcc.Checklist(id="onlyObservational",
-                                      options=["Only show observational articles"],
+                                      options=["Only show observational studies"],
                                       value=[],
                                       inputStyle={
                                           "marginRight": "6px"

@@ -172,7 +172,8 @@ sidebar = \
                         style=SIDEBAR_STYLE,
                     )
                 ]
-            )
+            ),
+            dcc.Store(id="default_page", data=False)
         ]
     )
 
@@ -185,7 +186,6 @@ def ToggleSlideMenu(n1, is_open):
     if n1:
         return not is_open
     return is_open
-
 
 # Callback réagissant au clique du bouton de mise à jour afin d'afficher une notif d'avertissement pour le lancement
 # de la mise à jour des données
@@ -242,21 +242,22 @@ app.layout = html.Div(
         [
             dcc.Location(id="url"),
             dbc.Col(sidebar, width="auto"),
-            dbc.Col(content)
+            dbc.Col(content),
+            dcc.Store(id="test")
         ]
     ),
 )
 
-
-@callback(
-    [Output(f"page-{i}-link", "active") for i in range(1, 4)],
-    [Input("url", "pathname")],
-)
-def toggle_active_links(pathname):
-    if pathname == "/":
-        # Treat page 1 as the homepage / index
-        return True, False, False
-    return [pathname == f"/page-{i}" for i in range(1, 4)]
+@callback(Output("page-content", "children"),
+          Input("page-content", "children"))
+def Test(children: dict):
+    href = children["props"]["children"][0]["props"]["href"]
+    print(href)
+    if href == "http://127.0.0.1:8050/":
+        children["props"]["children"][0]["props"]["href"] = "http://127.0.0.1:8050/clinical-trials/dashboard"
+        return children
+    else:
+        return children
 
 
 if __name__ == "__main__":
