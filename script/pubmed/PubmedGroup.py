@@ -10,6 +10,7 @@ class PubmedGroup:
     col_to_drop = [x for x in col_to_df]
     col_to_drop.append("Article_identifier")
     col_to_drop.append("Affiliation")
+    col_to_drop.append("Population")
 
     population_terms = ["child", "infant, newborn", "infant", "child, preschool", "postmenopause", "adolescent",
                         "adult", "young adult", "pregnant women", "middle aged", "aged", "aged, 80 and over",
@@ -81,14 +82,14 @@ class PubmedGroup:
 
         dataframe = dataframe.reset_index(drop=True)
 
-        self.dataframes["pubmedArticles"] = dataframe
+        self.dataframes["PubmedArticles"] = dataframe
 
         for column in new_dataframe:
 
-            if column not in self.dataframes["pubmedArticles"]:
+            if column not in self.dataframes["PubmedArticles"]:
                 continue
 
-            df = pd.DataFrame(self.dataframes["pubmedArticles"][["PMID", column]].explode(column)).reset_index(drop=True)
+            df = pd.DataFrame(self.dataframes["PubmedArticles"][["PMID", column]].explode(column)).reset_index(drop=True)
             df = df.drop_duplicates()
 
             df[column] = df[column].apply(lambda x: None if x == "" else x)
@@ -129,7 +130,6 @@ class PubmedGroup:
                     lambda x: self._GetCategoryCondition(x))
 
                 global_disease = df[df["Category"] == "thyroid disease"]
-                print(df.shape[0])
 
                 for idx in global_disease.index:
 
@@ -138,8 +138,6 @@ class PubmedGroup:
 
                         df = df.drop(labels=idx, axis=0)
 
-                print(df.shape[0])
-
             elif column == "Full_author_name":
                 df["Without_special_character"] = df[column].apply(lambda x: x.replace(",", ""))
 
@@ -147,22 +145,24 @@ class PubmedGroup:
             self.dataframes[column].to_csv(f"{PubmedGroup.directory}/{column}.csv")
 
             self._CreateNewDataframes("population", column)
+            print(self.dataframes["PubmedArticles"].info())
 
         # self.dataframes["pubmedArticles"] = self.dataframes["pubmedArticles"].drop(columns=[col for col in PubmedGroup.col_to_drop])
         keep = []
-        for col in self.dataframes["pubmedArticles"].columns:
+        for col in self.dataframes["PubmedArticles"].columns:
             if col not in self.col_to_drop:
                 keep.append(col)
 
-        self.dataframes["pubmedArticles"] = self.dataframes["pubmedArticles"].drop_duplicates(subset=keep)
-        self.dataframes["pubmedArticles"] = self.dataframes["pubmedArticles"][["PMID", "PII", "DOI", "Title",
+        self.dataframes["PubmedArticles"] = self.dataframes["PubmedArticles"].drop_duplicates(subset=keep)
+        self.dataframes["PubmedArticles"] = self.dataframes["PubmedArticles"][["PMID", "PII", "DOI", "Title",
                                                                                "Publication_date", "Entrez_date", "Place_of_publication",
                                                                                "Full_journal", "Investigator", "Abstract", "Mesh_terms", "Other_terms",
-                                                                               "Chemical", "Condition"]]
+                                                                               "Chemical", "Condition", "Publication_type", "Population",
+                                                                               "Full_author_name", "Observational_study_characteristics"]]
         # dataframe = self.dataframes["pubmedArticles"]
         # dataframe = dataframe[~dataframe.PMID.isin(self.dataframes["Condition"].PMID)]
         # self.dataframes["pubmedArticles"] = dataframe
-        self.dataframes["pubmedArticles"].to_csv(f"{PubmedGroup.directory}/pubmedArticles.csv")
+        self.dataframes["PubmedArticles"].to_csv(f"{PubmedGroup.directory}/pubmedArticles.csv")
 
     def _CreateNewDataframes(self, newCol, column):
         if newCol == "population" and column == "Mesh_terms":
@@ -170,6 +170,8 @@ class PubmedGroup:
 
             df["Population"] = df["Mesh_terms"].apply(lambda x: x if x in PubmedGroup.population_terms else None)
             df.dropna(subset="Population", inplace=True)
+
+            self.dataframes["PubmedArticles"]["Population"] = self.dataframes["PubmedArticles"]["PMID"].apply(lambda x: [pop for pop in df[df.PMID == x]["Population"]])
 
             self.dataframes["Population"] = df[["PMID", "Population"]]
             self.dataframes["Population"].to_csv(f"{PubmedGroup.directory}/{'Population'}.csv")

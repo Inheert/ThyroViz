@@ -247,17 +247,16 @@ def updatingData(submit_n_clicks):
         return None, lastUpdate
     return None, lastUpdate
 
-@callback(Output("page-content", "children"),
-          Input("page-content", "children"))
-def Test(children: dict):
-    href = children["props"]["children"][0]["props"]["href"]
-
-    if href == "http://127.0.0.1:8050/":
-        children["props"]["children"][0]["props"]["href"] = "http://127.0.0.1:8050/clinical-trials/dashboard"
-        return children
-    else:
-        return children
-
+# @callback(Output("page-content", "children"),
+#           Input("page-content", "children"))
+# def Avoid404Page(children: dict):
+#     href = children["props"]["children"][0]["props"]["href"]
+#
+#     if href == "http://127.0.0.1:8050/":
+#         children["props"]["children"][0]["props"]["href"] = "http://127.0.0.1:8050/clinical-trials/dashboard"
+#         return children
+#     else:
+#         return children
 
 if __name__ == "__main__":
     app.run_server(debug=True)

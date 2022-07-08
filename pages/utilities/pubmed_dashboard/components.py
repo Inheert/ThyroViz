@@ -308,7 +308,7 @@ accordionArticles = \
                                         html.Button(id="download_button", children="Download excel")
                                     ],
                                     style={"float": "right",
-                                           "alignItems": "center",
+                                           "alignItems": "center"
                                            }
                                 ),
                             ],

@@ -1,8 +1,140 @@
 from dash import html, dcc, dash_table
 import dash_bootstrap_components as dbc
-
+import math
 from pages.utilities.ct_helpers import *
 
+funnel = \
+    dbc.CardGroup(
+        [
+            dbc.Card(
+                [
+                    dbc.CardHeader(children="Sponsors filters",
+                                   style={"textAlign": "center",
+                                          "fontSize": "15px"}),
+                    dbc.CardBody(
+                        [
+                            dcc.Dropdown(id="sponsors_class",
+                                         options=all_sponsors_class,
+                                         value=[],
+                                         placeholder="Select sponsors class...",
+                                         multi=True),
+                            html.Br(),
+                            dcc.Dropdown(id="studies_category",
+                                         options=all_category,
+                                         value=[],
+                                         placeholder="Select category...",
+                                         multi=True),
+                            html.Br(),
+                            dcc.Dropdown(id="studies_sub_category",
+                                         options=all_sub_category,
+                                         value=[],
+                                         placeholder="Select sub-category...",
+                                         multi=True),
+                            html.Br(),
+                            dcc.Dropdown(id="studies_type",
+                                         options=all_stype,
+                                         value=[],
+                                         placeholder="Select studies type...",
+                                         multi=True),
+                            html.Br(),
+                            dcc.Dropdown(id="studies_status",
+                                         options=all_status,
+                                         placeholder="Select studies status...",
+                                         value=[],
+                                         multi=True),
+                            html.Br(),
+                            dcc.Dropdown(id="studies_phases",
+                                         options=all_phases,
+                                         value=[],
+                                         placeholder="Select studies phases...",
+                                         multi=True),
+                            html.Hr(),
+                            dbc.Row(
+                                [
+                                    dbc.Col(html.P(children="Sort by:"),
+                                            width="auto"),
+                                    dbc.Col(
+                                        dcc.Dropdown(id="sort_by",
+                                                     options={"asc": "A -> Z",
+                                                              "desc": "Z -> A",
+                                                              "most": "Most amount of studies",
+                                                              "least": "Least amount of studies"},
+                                                     value="asc")
+                                    )
+                                ],
+                                align="end"
+                            ),
+                            html.Br(),
+                            html.Br(),
+                        ],
+                    ),
+                ],
+                style={
+                    "maxWidth": "12vw",
+                    "width": "12vw"
+                }
+            ),
+            dbc.Card(
+                [
+                    dbc.CardHeader("Sponsors list",
+                                   style={"textAlign": "center",
+                                          "fontSize": "15px"}
+                                   ),
+
+                    dbc.CardBody(
+                        children=[
+                            dbc.Row(id="sponsors_list"),
+                            dbc.Row(
+                                dbc.Col(
+                                    dbc.Pagination(id="sponsors_pagination",
+                                                   max_value=5,
+                                                   fully_expanded=False),
+                                    style={"display": "flex",
+                                           "justifyContent": "center",
+                                           "marginTop": "2vh"}
+                                ),
+                            )
+                        ]
+                    ),
+                ],
+                style={
+                    "maxWidth": "25vw",
+                    "width": "25vw",
+                    'height': "75vh",
+                    "maxHeight": "75vh"
+                }
+            ),
+            dbc.Card(
+                [
+                    dbc.CardHeader("Sponsors Informations", style={"textAlign": "center"}),
+                    dbc.CardBody(
+                        [
+                            dbc.Row(
+                                [
+                                    dbc.Col(
+                                        [
+                                            dcc.Markdown(children="__Name:__", id="sponsors_name"),
+                                        ]
+                                    ),
+                                    dbc.Col(
+                                        [
+                                            dcc.Markdown(children="__Class:__", id="sponsors_class")
+                                        ]
+                                    ),
+                                    dbc.Col(
+                                        [
+                                            dcc.Markdown(children="__Number of studies:__", id="sponsors_studies_count")
+                                        ]
+                                    )
+                                ],
+                                align="center"
+                            )
+                        ]
+                    )
+                ]
+            )
+        ]
+    )
 
 sponsorsClassPieChart = \
     dbc.Card(

@@ -294,6 +294,7 @@ def DownloadData(n_clicks, df):
     """
     if n_clicks:
         df = pd.DataFrame(df)
+        df.drop(columns=["year", "month"], inplace=True)
         return dcc.send_data_frame(df.to_excel, "data.xlsx", sheet_name="data"), None
     else:
         return None, None
